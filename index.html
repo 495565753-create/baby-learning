@@ -1290,8 +1290,8 @@ class EduApp {
     if (!this._spotData) return;
     const img = container.querySelector('img');
     const rect = img.getBoundingClientRect();
-    const scaleX = 400 / rect.width;
-    const scaleY = 300 / rect.height;
+    const scaleX = 800 / rect.width;
+    const scaleY = 600 / rect.height;
     const cx = (event.clientX - rect.left) * scaleX;
     const cy = (event.clientY - rect.top) * scaleY;
 
@@ -1308,8 +1308,8 @@ class EduApp {
     // Show circle on the image
     const markers = document.getElementById('spotMarkers');
     const d = this._spotData.diffs[hit];
-    const mx = ((d.x + d.w/2) / 400 * 100) + '%';
-    const my = ((d.y + d.h/2) / 300 * 100) + '%';
+    const mx = ((d.x + d.w/2) / 800 * 100) + '%';
+    const my = ((d.y + d.h/2) / 600 * 100) + '%';
     const mr = Math.max(d.w, d.h) * 0.3 + 'px';
     const mark = document.createElement('div');
     mark.style.cssText = `position:absolute;left:${mx};top:${my};width:${mr};height:${mr};border:3px solid #34C759;border-radius:50%;background:rgba(52,199,89,0.2);transform:translate(-50%,-50%);`;
