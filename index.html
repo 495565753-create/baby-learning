@@ -1383,8 +1383,7 @@ class EduApp {
 
   renderDrawing(container) {
     const tmpls = this._drawTemplates();
-    const colors = ['#FF3B30','#FF9500','#FFD60A','#34C759','#007AFF','#5856D6','#AF52DE','#FF6B8A','#8E8E93','#2D3436','#FFFFFF','#A2845E'];
-    const sizes = [3,8,16];
+    const colors = ['#FF3B30','#FF9500','#FFD60A','#34C759','#007AFF','#5856D6','#AF52DE','#FF6B8A','#FF8C42','#2ECC71','#FF69B4','#A2845E'];
 
     let tmplBtns = '<div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-bottom:8px;">';
     tmpls.forEach((t,i)=>tmplBtns+=`<button class="draw-size-btn" onclick="app.drawLoadTemplate(${i})" style="font-size:12px;white-space:nowrap;">${t.icon} ${t.name.slice(2)}</button>`);
@@ -1392,18 +1391,18 @@ class EduApp {
 
     container.innerHTML = `<div class="quiz-area" style="text-align:center;">
       <h3>🎨 创意画板</h3>
-      <div style="font-size:12px;color:#888;margin-bottom:4px;">选一个图案开始涂色吧！</div>
+      <div style="font-size:12px;color:#888;margin-bottom:4px;">选图案 → 选颜色 → <b>点区域自动填色</b>！</div>
       ${tmplBtns}
       <div class="draw-toolbar">
         ${colors.map((c,i)=>`<div class="draw-color${i===0?' active':''}" style="background:${c}" data-color="${c}" onclick="app.drawSetColor('${c}',this)"></div>`).join('')}
       </div>
       <div class="draw-toolbar">
-        <span style="font-size:13px;color:#888;">画笔:</span>
-        ${sizes.map((s,i)=>`<button class="draw-size-btn${i===1?' active':''}" onclick="app.drawSetSize(${s},this)">${s===3?'细':s===8?'中':'粗'}</button>`).join('')}
-        <button class="draw-size-btn" id="eraserBtn" onclick="app.drawToggleEraser(this)">🧹 橡皮</button>
-        <button class="draw-size-btn" onclick="app.drawClear()">🗑️ 清空</button>
+        <button class="draw-size-btn active" id="fillModeBtn" onclick="app.drawSetMode('fill')">🪣 填色</button>
+        <button class="draw-size-btn" id="brushModeBtn" onclick="app.drawSetMode('brush')">🖌️ 画笔</button>
+        <button class="draw-size-btn" onclick="app.drawUndo()" id="undoBtn">↩ 撤销</button>
+        <button class="draw-size-btn" onclick="app.drawClear()">🗑️ 重来</button>
       </div>
-      <div class="draw-canvas-wrap"><canvas id="drawCanvas" width="320" height="400" style="touch-action:none;cursor:crosshair;"></canvas></div>
+      <div class="draw-canvas-wrap"><canvas id="drawCanvas" width="320" height="400" style="touch-action:none;cursor:pointer;"></canvas></div>
     </div>`;
     setTimeout(()=>this.initDrawing(), 100);
   }
@@ -1414,30 +1413,110 @@ class EduApp {
     canvas._inited = true;
     this._drawCtx = canvas.getContext('2d');
     this._drawCanvas = canvas;
-    this._drawState = { color:'#FF3B30', size:8, eraser:false, drawing:false, templateImg:null };
+    this._drawState = { color:'#FF3B30', size:12, mode:'fill', drawing:false, templateImg:null, undoStack:[] };
 
-    const draw = (e) => {
-      if (!this._drawState.drawing) return;
-      const rect = canvas.getBoundingClientRect();
-      const x = (e.touches?e.touches[0].clientX:e.clientX) - rect.left;
-      const y = (e.touches?e.touches[0].clientY:e.clientY) - rect.top;
+    const doFloodFill = (x, y) => {
+      const ctx = this._drawCtx;
+      const w = canvas.width, h = canvas.height;
+      const imageData = ctx.getImageData(0, 0, w, h);
+      const pixels = imageData.data;
+      
+      const px = Math.floor(x), py = Math.floor(y);
+      if (px < 0 || px >= w || py < 0 || py >= h) return;
+      
+      const idx = (py * w + px) * 4;
+      const targetR = pixels[idx], targetG = pixels[idx+1], targetB = pixels[idx+2];
+      const fillHex = this._drawState.color;
+      const fillR = parseInt(fillHex.slice(1,3),16);
+      const fillG = parseInt(fillHex.slice(3,5),16);
+      const fillB = parseInt(fillHex.slice(5,7),16);
+      
+      // Don't fill if same color or if clicking on outline (dark pixels)
+      const isDark = targetR < 60 && targetG < 60 && targetB < 60;
+      if (isDark) return;  // Don't paint over outlines
+      if (Math.abs(targetR - fillR) < 5 && Math.abs(targetG - fillG) < 5 && Math.abs(targetB - fillB) < 5) return;
+      
+      // Save undo state
+      const undoData = ctx.getImageData(0, 0, w, h);
+      this._drawState.undoStack.push(undoData);
+      if (this._drawState.undoStack.length > 20) this._drawState.undoStack.shift();
+      
+      // Flood fill BFS
+      const queue = [[px, py]];
+      const visited = new Uint8Array(w * h);
+      const tolerance = 25;
+      let filled = 0, maxFill = 80000;
+      
+      while (queue.length > 0 && filled < maxFill) {
+        const [cx, cy] = queue.shift();
+        const ci = cy * w + cx;
+        if (visited[ci]) continue;
+        const pi = ci * 4;
+        const pr = pixels[pi], pg = pixels[pi+1], pb = pixels[pi+2];
+        if (Math.abs(pr - targetR) > tolerance || Math.abs(pg - targetG) > tolerance || Math.abs(pb - targetB) > tolerance) continue;
+        visited[ci] = 1; filled++;
+        pixels[pi] = fillR; pixels[pi+1] = fillG; pixels[pi+2] = fillB;
+        if (cx > 0) queue.push([cx-1, cy]);
+        if (cx < w-1) queue.push([cx+1, cy]);
+        if (cy > 0) queue.push([cx, cy-1]);
+        if (cy < h-1) queue.push([cx, cy+1]);
+      }
+      
+      ctx.putImageData(imageData, 0, 0);
+    };
+    
+    const doBrush = (x, y, isDown) => {
       const ctx = this._drawCtx;
       ctx.beginPath();
-      ctx.arc(x, y, this._drawState.eraser?18:this._drawState.size, 0, Math.PI*2);
-      ctx.fillStyle = this._drawState.eraser ? 'rgba(255,255,255,0.01)' : this._drawState.color;
-      ctx.globalCompositeOperation = this._drawState.eraser ? 'destination-out' : 'source-over';
+      ctx.arc(x, y, this._drawState.size, 0, Math.PI*2);
+      ctx.fillStyle = this._drawState.color;
       ctx.fill();
-      ctx.globalCompositeOperation = 'source-over';
     };
-    canvas.addEventListener('mousedown', e=>{this._drawState.drawing=true;draw(e);});
-    canvas.addEventListener('mousemove', draw);
-    canvas.addEventListener('mouseup', ()=>this._drawState.drawing=false);
-    canvas.addEventListener('mouseleave', ()=>this._drawState.drawing=false);
-    canvas.addEventListener('touchstart', e=>{e.preventDefault();this._drawState.drawing=true;draw(e);});
-    canvas.addEventListener('touchmove', e=>{e.preventDefault();draw(e);});
-    canvas.addEventListener('touchend', ()=>this._drawState.drawing=false);
+
+    canvas.onclick = (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      if (this._drawState.mode === 'fill') {
+        doFloodFill(x, y);
+      }
+    };
     
-    // Draw default canvas
+    let brushDown = false;
+    canvas.addEventListener('mousedown', e => {
+      if (this._drawState.mode !== 'brush') return;
+      brushDown = true;
+      const rect = canvas.getBoundingClientRect();
+      // Save undo on first stroke
+      const undoData = this._drawCtx.getImageData(0, 0, canvas.width, canvas.height);
+      this._drawState.undoStack.push(undoData);
+      doBrush(e.clientX - rect.left, e.clientY - rect.top);
+    });
+    canvas.addEventListener('mousemove', e => {
+      if (!brushDown) return;
+      const rect = canvas.getBoundingClientRect();
+      doBrush(e.clientX - rect.left, e.clientY - rect.top);
+    });
+    canvas.addEventListener('mouseup', () => brushDown = false);
+    canvas.addEventListener('mouseleave', () => brushDown = false);
+    
+    canvas.addEventListener('touchstart', e => {
+      e.preventDefault();
+      if (this._drawState.mode !== 'brush') return;
+      brushDown = true;
+      const rect = canvas.getBoundingClientRect();
+      const undoData = this._drawCtx.getImageData(0, 0, canvas.width, canvas.height);
+      this._drawState.undoStack.push(undoData);
+      doBrush(e.touches[0].clientX - rect.left, e.touches[0].clientY - rect.top);
+    });
+    canvas.addEventListener('touchmove', e => {
+      e.preventDefault();
+      if (!brushDown) return;
+      const rect = canvas.getBoundingClientRect();
+      doBrush(e.touches[0].clientX - rect.left, e.touches[0].clientY - rect.top);
+    });
+    canvas.addEventListener('touchend', () => brushDown = false);
+    
     this.drawClear();
   }
 
@@ -1446,36 +1525,38 @@ class EduApp {
     const canvas = this._drawCanvas;
     const ctx = this._drawCtx;
     if (!ctx || !canvas) return;
-    
-    // Load template image onto canvas
     const img = new Image();
     img.onload = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
       this._drawState.templateImg = img;
+      this._drawState.undoStack = [];
+      document.getElementById('undoBtn') && (document.getElementById('undoBtn').style.opacity = '0.5');
     };
     img.src = 'img/coloring/' + tmpl.file + '.png';
     this.audio.speak(tmpl.name);
   }
 
   drawSetColor(color, el) {
-    this._drawState.color = color; this._drawState.eraser = false;
-    document.getElementById('eraserBtn')?.classList.remove('active');
+    this._drawState.color = color;
     document.querySelectorAll('.draw-color').forEach(d=>d.classList.remove('active'));
     el.classList.add('active');
   }
 
-  drawSetSize(size, el) {
-    this._drawState.size = size; this._drawState.eraser = false;
-    document.getElementById('eraserBtn')?.classList.remove('active');
-    document.querySelectorAll('.draw-size-btn:not(#eraserBtn)').forEach(d=>d.classList.remove('active'));
-    el.classList.add('active');
+  drawSetMode(mode) {
+    this._drawState.mode = mode;
+    document.getElementById('fillModeBtn').classList.toggle('active', mode==='fill');
+    document.getElementById('brushModeBtn').classList.toggle('active', mode==='brush');
+    this._drawCanvas.style.cursor = mode==='fill' ? 'pointer' : 'crosshair';
   }
 
-  drawToggleEraser(el) {
-    this._drawState.eraser = !this._drawState.eraser;
-    el.classList.toggle('active', this._drawState.eraser);
-    document.querySelectorAll('.draw-color, .draw-size-btn:not(#eraserBtn)').forEach(d=>d.classList.remove('active'));
+  drawUndo() {
+    if (!this._drawState.undoStack.length) return;
+    const data = this._drawState.undoStack.pop();
+    this._drawCtx.putImageData(data, 0, 0);
+    if (!this._drawState.undoStack.length) {
+      document.getElementById('undoBtn').style.opacity = '0.5';
+    }
   }
 
   drawClear() {
@@ -1486,6 +1567,8 @@ class EduApp {
     if (this._drawState.templateImg) {
       ctx.drawImage(this._drawState.templateImg, 0, 0, canvas.width, canvas.height);
     }
+    this._drawState.undoStack = [];
+    document.getElementById('undoBtn') && (document.getElementById('undoBtn').style.opacity = '0.5');
   }
 
   renderAlphabet(container) {
