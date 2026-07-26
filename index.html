@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>宝宝启蒙学习</title>
+<style>
+:root {
+  --pink: #FF6B8A;
+  --blue: #4DA6FF;
+  --green: #4CD964;
+  --orange: #FF9500;
+  --purple: #AF52DE;
+  --yellow: #FFD60A;
+  --teal: #5AC8FA;
+  --bg: #FFF5F9;
+  --card-bg: #FFFFFF;
+  --text: #2D3436;
+  --shadow: 0 8px 32px rgba(0,0,0,0.08);
+  --radius: 24px;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: linear-gradient(135deg, #FFE8F0 0%, #E8F4FF 25%, #FFF8E8 50%, #E8FFEE 75%, #F8E8FF 100%);
+  background-size: 400% 400%;
+  animation: bgShift 20s ease infinite;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  color: var(--text);
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+@keyframes bgShift {
+  0%,100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Floating emojis */
+.floaties { position:fixed; inset:0; pointer-events:none; z-index:0; overflow:hidden; }
+.floaty {
+  position:absolute; font-size:28px; opacity:0.12;
+  animation: floatUp linear infinite;
+}
+@keyframes floatUp {
+  0% { transform:translateY(110vh) rotate(0deg); opacity:0.08; }
+  50% { opacity:0.16; }
+  100% { transform:translateY(-10vh) rotate(360deg); opacity:0.06; }
+}
+
+/* App Container */
+#app { position:relative; z-index:1; max-width:800px; margin:0 auto; padding:16px; min-height:100dvh; }
+
+/* Header */
+.header {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:16px 20px; background:rgba(255,255,255,0.85);
+  backdrop-filter:blur(20px); border-radius:20px;
+  margin-bottom:16px; box-shadow:var(--shadow);
+}
+.header h1 { font-size:22px; font-weight:700; background:linear-gradient(135deg, var(--pink), var(--purple)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.header .actions { display:flex; gap:10px; }
+.btn-icon {
+  width:42px; height:42px; border-radius:50%; border:none;
+  background:rgba(0,0,0,0.05); font-size:20px; cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  transition:all 0.2s;
+}
+.btn-icon:hover { background:rgba(0,0,0,0.1); transform:scale(1.1); }
+.btn-icon:active { transform:scale(0.95); }
+
+/* Content */
+.content { display:flex; flex-direction:column; gap:16px; }
+.page { display:none; }
+.page.active { display:flex; flex-direction:column; gap:16px; }
+.page.active.section { display:flex; }
+
+/* Home Cards */
+.home-cards { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:16px; }
+.home-card {
+  background:white; border-radius:var(--radius); padding:32px 24px;
+  text-align:center; cursor:pointer; box-shadow:var(--shadow);
+  transition:all 0.3s cubic-bezier(0.4,0,0.2,1);
+  position:relative; overflow:hidden;
+}
+.home-card:hover { transform:translateY(-4px); box-shadow:0 16px 48px rgba(0,0,0,0.12); }
+.home-card:active { transform:scale(0.97); }
+.home-card .icon { font-size:64px; margin-bottom:12px; display:block; }
+.home-card .title { font-size:22px; font-weight:700; margin-bottom:6px; }
+.home-card .subtitle { font-size:13px; color:#888; }
+.home-card.math { background:linear-gradient(135deg, #FFF0F3, #FFF5E6); border:2px solid #FFD1D1; }
+.home-card.english { background:linear-gradient(135deg, #E8F4FF, #F0E8FF); border:2px solid #C8DDFF; }
+
+/* Sub menu cards */
+.sub-cards { display:grid; grid-template-columns:repeat(auto-fill, minmax(140px,1fr)); gap:12px; }
+.sub-card {
+  background:white; border-radius:18px; padding:20px 14px;
+  text-align:center; cursor:pointer; box-shadow:0 4px 16px rgba(0,0,0,0.06);
+  transition:all 0.25s; border:2px solid transparent;
+}
+.sub-card:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,0.1); border-color:#E0E0E0; }
+.sub-card:active { transform:scale(0.96); }
+.sub-card .icon { font-size:36px; display:block; margin-bottom:8px; }
+.sub-card .label { font-size:15px; font-weight:600; }
+
+/* Item Cards Grid */
+.cards-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(100px,1fr)); gap:10px; }
+.item-card {
+  background:white; border-radius:18px; padding:16px 10px;
+  text-align:center; cursor:pointer; box-shadow:0 3px 12px rgba(0,0,0,0.05);
+  transition:all 0.25s; position:relative; overflow:hidden;
+  border:2px solid transparent;
+}
+.item-card:hover {
+  transform:translateY(-3px) scale(1.03);
+  box-shadow:0 8px 24px rgba(0,0,0,0.12);
+  border-color:var(--teal);
+}
+.item-card:active { transform:scale(0.95); }
+.item-card .num { font-size:32px; font-weight:800; margin-bottom:4px; }
+.item-card .cn { font-size:15px; color:#666; margin-bottom:2px; }
+.item-card .en { font-size:12px; color:#999; }
+.item-card .emoji-block { font-size:20px; letter-spacing:2px; margin-top:6px; line-height:1.4; word-break:break-all; }
+.item-card .word { font-size:18px; font-weight:700; margin-bottom:2px; }
+.item-card .meaning { font-size:13px; color:#888; }
+.item-card .letter { font-size:36px; font-weight:800; }
+.item-card .speaker-hint {
+  position:absolute; top:6px; right:6px; font-size:14px;
+  opacity:0.3; transition:opacity 0.2s;
+}
+.item-card:hover .speaker-hint { opacity:1; }
+.item-card.speaking {
+  border-color:var(--orange) !important;
+  animation:pulse 0.6s ease-in-out infinite;
+  box-shadow:0 0 0 4px rgba(255,149,0,0.15) !important;
+}
+@keyframes pulse {
+  0%,100% { box-shadow:0 0 0 4px rgba(255,149,0,0.15); }
+  50% { box-shadow:0 0 0 12px rgba(255,149,0,0.05); }
+}
+
+/* Quiz Section */
+.quiz-area {
+  background:white; border-radius:var(--radius); padding:28px 20px;
+  box-shadow:var(--shadow); text-align:center;
+}
+.quiz-area h3 { font-size:18px; margin-bottom:16px; color:#666; }
+.quiz-visual { font-size:52px; margin:20px 0; letter-spacing:6px; line-height:1.3; }
+.quiz-equation { font-size:32px; font-weight:700; margin:16px 0; }
+.quiz-equation .highlight { color:var(--orange); font-size:38px; }
+.quiz-options { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:16px; }
+.quiz-option {
+  width:64px; height:64px; border-radius:50%; border:3px solid #E0E0E0;
+  background:white; font-size:24px; font-weight:700; cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  transition:all 0.2s;
+}
+.quiz-option:hover { border-color:var(--blue); transform:scale(1.1); background:#F0F7FF; }
+.quiz-option:active { transform:scale(0.9); }
+.quiz-option.correct { background:#E8FFEE !important; border-color:var(--green) !important; }
+.quiz-option.wrong { background:#FFE8E8 !important; border-color:var(--pink) !important; }
+.quiz-feedback { font-size:28px; margin-top:12px; min-height:42px; font-weight:700; }
+.quiz-score { font-size:16px; color:#888; margin-top:8px; }
+.btn-next {
+  margin-top:16px; padding:12px 32px; border-radius:30px; border:none;
+  background:linear-gradient(135deg, var(--blue), var(--purple));
+  color:white; font-size:16px; font-weight:700; cursor:pointer;
+  transition:all 0.2s; box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+.btn-next:hover { transform:scale(1.05); box-shadow:0 6px 20px rgba(0,0,0,0.2); }
+.btn-next:active { transform:scale(0.97); }
+
+/* Counting game */
+.count-objects { display:flex; flex-wrap:wrap; justify-content:center; gap:6px; margin:16px 0; }
+.count-object { font-size:40px; cursor:pointer; transition:transform 0.15s; padding:4px; }
+.count-object:hover { transform:scale(1.3); }
+.count-object.counted { filter:grayscale(40%); opacity:0.5; }
+
+/* Color swatches */
+.color-swatch { width:60px; height:60px; border-radius:50%; margin:8px auto; border:3px solid #EEE; }
+
+/* Back button */
+.btn-back {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:10px 18px; border-radius:30px; border:none;
+  background:rgba(255,255,255,0.9); font-size:15px; font-weight:600;
+  cursor:pointer; transition:all 0.2s; box-shadow:0 2px 8px rgba(0,0,0,0.06);
+}
+.btn-back:hover { background:white; transform:scale(1.03); }
+.btn-back:active { transform:scale(0.97); }
+
+/* Celebration overlay */
+.celebration {
+  position:fixed; inset:0; pointer-events:none; z-index:999;
+  display:flex; align-items:center; justify-content:center;
+}
+.celebration .emoji { position:absolute; font-size:40px; animation:confetti 1.5s ease-out forwards; }
+@keyframes confetti {
+  0% { transform:translate(0,0) scale(0) rotate(0deg); opacity:1; }
+  100% { transform:translate(var(--dx), var(--dy)) scale(1.5) rotate(var(--dr)); opacity:0; }
+}
+
+/* Number writing canvas */
+.trace-area { display:flex; flex-direction:column; align-items:center; gap:12px; }
+.trace-canvas { border:3px dashed #DDD; border-radius:16px; cursor:crosshair; background:#FFFFF0; }
+.trace-controls { display:flex; gap:10px; }
+.trace-controls button {
+  padding:8px 20px; border-radius:20px; border:none;
+  background:#F0F0F0; font-size:14px; cursor:pointer; font-weight:600;
+  transition:all 0.2s;
+}
+.trace-controls button:hover { background:#E0E0E0; }
+.trace-controls button.active { background:var(--blue); color:white; }
+.trace-dotted-num { font-size:80px; color:#DDD; user-select:none; letter-spacing:4px; }
+
+/* Number line */
+.number-line {
+  display:flex; align-items:flex-end; gap:6px; justify-content:center;
+  padding:16px; flex-wrap:wrap;
+}
+.number-line .tick {
+  width:28px; text-align:center; font-size:12px; color:#AAA; cursor:pointer;
+  transition:all 0.2s;
+}
+.number-line .tick:hover { color:var(--blue); transform:scale(1.2); font-weight:700; }
+.number-line .tick.highlight { color:var(--orange); font-size:16px; font-weight:800; }
+
+/* Responsive */
+@media (max-width:500px) {
+  .home-cards { grid-template-columns:1fr; }
+  .cards-grid { grid-template-columns:repeat(auto-fill, minmax(80px,1fr)); gap:8px; }
+  .item-card { padding:12px 8px; border-radius:14px; }
+  .item-card .num { font-size:24px; }
+  .item-card .letter { font-size:28px; }
+  .quiz-option { width:52px; height:52px; font-size:20px; }
+  .header h1 { font-size:18px; }
+}
+</style>
+</head>
+<body>
+
+<div class="floaties" id="floaties"></div>
+
+<div id="app">
+  <div class="header">
+    <h1>🌟 宝宝启蒙学习</h1>
+    <div class="actions">
+      <button class="btn-icon" id="btnMute" title="声音开关">🔊</button>
+      <button class="btn-back" id="btnHome" style="display:none;">🏠 首页</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <!-- HOME PAGE -->
+    <div class="page active" id="page-home">
+      <div class="home-cards">
+        <div class="home-card math" onclick="app.navigate('math')" data-speak="数学启蒙">
+          <span class="icon">🔢</span>
+          <div class="title">数学启蒙</div>
+          <div class="subtitle">认识数字 · 数数 · 加减法</div>
+        </div>
+        <div class="home-card english" onclick="app.navigate('english')" data-speak="英语启蒙">
+          <span class="icon">🔤</span>
+          <div class="title">英语启蒙</div>
+          <div class="subtitle">字母 · 词汇 · 发音</div>
+        </div>
+        <div class="home-card" onclick="app.navigate('general')" data-speak="常识百科" style="background:linear-gradient(135deg,#E8FFEE,#FFF8E8);border:2px solid #B8E6C8;">
+          <span class="icon">📚</span>
+          <div class="title">常识百科</div>
+          <div class="subtitle">安全 · 科学 · 生活</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GENERAL KNOWLEDGE PAGE -->
+    <div class="page section" id="page-general">
+      <div class="sub-cards">
+        <div class="sub-card" onclick="app.showGeneralTab('safety')" data-speak="安全教育"><span class="icon">🛡️</span><span class="label">安全教育</span></div>
+        <div class="sub-card" onclick="app.showGeneralTab('science')" data-speak="科学常识"><span class="icon">🔬</span><span class="label">科学常识</span></div>
+      </div>
+      <div id="general-content"></div>
+    </div>
+
+    <!-- MATH PAGE -->
+    <div class="page section" id="page-math">
+      <div class="sub-cards">
+        <div class="sub-card" onclick="app.showMathTab('numbers')" data-speak="认识数字"><span class="icon">1️⃣</span><span class="label">认识数字</span></div>
+        <div class="sub-card" onclick="app.showMathTab('counting')" data-speak="数数练习"><span class="icon">🧮</span><span class="label">数数练习</span></div>
+        <div class="sub-card" onclick="app.showMathTab('addition')" data-speak="加法入门"><span class="icon">➕</span><span class="label">加法入门</span></div>
+        <div class="sub-card" onclick="app.showMathTab('subtraction')" data-speak="减法入门"><span class="icon">➖</span><span class="label">减法入门</span></div>
+        <div class="sub-card" onclick="app.showMathTab('trace')" data-speak="写数字"><span class="icon">✏️</span><span class="label">写数字</span></div>
+        <div class="sub-card" onclick="app.showMathTab('comparison')" data-speak="比较大小"><span class="icon">⚖️</span><span class="label">比较大小</span></div>
+        <div class="sub-card" onclick="app.showMathTab('multiplication')" data-speak="乘法入门"><span class="icon">✖️</span><span class="label">乘法入门</span></div>
+        <div class="sub-card" onclick="app.showMathTab('ordering')" data-speak="数字排序"><span class="icon">🔢</span><span class="label">数字排序</span></div>
+        <div class="sub-card" onclick="app.showMathTab('patterns')" data-speak="找规律"><span class="icon">🔮</span><span class="label">找规律</span></div>
+        <div class="sub-card" onclick="app.showMathTab('clock')" data-speak="认识钟表"><span class="icon">🕐</span><span class="label">认识钟表</span></div>
+        <div class="sub-card" onclick="app.showMathTab('money')" data-speak="认识钱币"><span class="icon">💴</span><span class="label">认识钱币</span></div>
+      </div>
+      <div id="math-content"></div>
+    </div>
+
+    <!-- ENGLISH PAGE -->
+    <div class="page section" id="page-english">
+      <div class="sub-cards">
+        <div class="sub-card" onclick="app.showEnglishTab('alphabet')" data-speak="字母学习"><span class="icon">🔤</span><span class="label">字母学习</span></div>
+        <div class="sub-card" onclick="app.showEnglishTab('phonics')" data-speak="自然拼读"><span class="icon">🗣️</span><span class="label">自然拼读</span></div>
+        <div class="sub-card" onclick="app.showEnglishTab('cvc')" data-speak="拼读练习"><span class="icon">🔡</span><span class="label">拼读练习</span></div>
+        <div class="sub-card" onclick="app.showEnglishTab('animals')" data-speak="动物词汇"><span class="icon">🐱</span><span class="label">动物词汇</span></div>
+        <div class="sub-card" onclick="app.showEnglishTab('colors')" data-speak="颜色词汇"><span class="icon">🎨</span><span class="label">颜色词汇</span></div>
+        <div class="sub-card" onclick="app.showEnglishTab('fruits')" data-speak="水果词汇"><span class="icon">🍎</span><span class="label">水果词汇</span></div>
+        <div class="sub-card" onclick="app.showEnglishTab('body')" data-speak="身体部位"><span class="icon">👶</span><span class="label">身体部位</span></div>
+        <div class="sub-card" onclick="app.showEnglishTab('dialogues')" data-speak="场景对话"><span class="icon">💬</span><span class="label">场景对话</span></div>
+        <div class="sub-card" onclick="app.showEnglishTab('places')" data-speak="地名国家"><span class="icon">🌍</span><span class="label">地名国家</span></div>
+        <div class="sub-card" onclick="app.showEnglishTab('food')" data-speak="食物饮品"><span class="icon">🍔</span><span class="label">食物饮品</span></div>
+        <div class="sub-card" onclick="app.showEnglishTab('family')" data-speak="家庭成员"><span class="icon">👨‍👩‍👧‍👦</span><span class="label">家庭成员</span></div>
+        <div class="sub-card" onclick="app.showEnglishTab('actions')" data-speak="动作词汇"><span class="icon">🏃</span><span class="label">动作词汇</span></div>
+        <div class="sub-card" onclick="app.showEnglishTab('weather')" data-speak="天气季节"><span class="icon">🌈</span><span class="label">天气季节</span></div>
+        <div class="sub-card" onclick="app.showEnglishTab('transport')" data-speak="交通工具"><span class="icon">🚗</span><span class="label">交通工具</span></div>
+        <div class="sub-card" onclick="app.showEnglishTab('shapes')" data-speak="形状词汇"><span class="icon">🔺</span><span class="label">形状词汇</span></div>
+        <div class="sub-card" onclick="app.showEnglishTab('days')" data-speak="星期与时间"><span class="icon">📅</span><span class="label">星期与时间</span></div>
+        <div class="sub-card" onclick="app.showEnglishTab('quiz')" data-speak="英语小测验"><span class="icon">🎮</span><span class="label">英语小测验</span></div>
+      </div>
+      <div id="english-content"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ==================== DATA ====================
+const MATH_NUMBERS = [
+  {n:0,cn:'零',en:'zero',e:'🍩'},
+  {n:1,cn:'一',en:'one',e:'⭐'},
+  {n:2,cn:'二',en:'two',e:'🐱'},
+  {n:3,cn:'三',en:'three',e:'🐶'},
+  {n:4,cn:'四',en:'four',e:'🐰'},
+  {n:5,cn:'五',en:'five',e:'🐻'},
+  {n:6,cn:'六',en:'six',e:'🐼'},
+  {n:7,cn:'七',en:'seven',e:'🦁'},
+  {n:8,cn:'八',en:'eight',e:'🐸'},
+  {n:9,cn:'九',en:'nine',e:'🐵'},
+  {n:10,cn:'十',en:'ten',e:'🐔'},
+  {n:11,cn:'十一',en:'eleven',e:'🐮'},
+  {n:12,cn:'十二',en:'twelve',e:'🐷'},
+  {n:13,cn:'十三',en:'thirteen',e:'🐑'},
+  {n:14,cn:'十四',en:'fourteen',e:'🐘'},
+  {n:15,cn:'十五',en:'fifteen',e:'🐧'},
+  {n:16,cn:'十六',en:'sixteen',e:'🐬'},
+  {n:17,cn:'十七',en:'seventeen',e:'🦋'},
+  {n:18,cn:'十八',en:'eighteen',e:'🐝'},
+  {n:19,cn:'十九',en:'nineteen',e:'🐞'},
+  {n:20,cn:'二十',en:'twenty',e:'🦄'},
+];
+
+const ALPHABET = [
+  {l:'A',w:'Apple',c:'苹果',e:'🍎'},{l:'B',w:'Bear',c:'熊',e:'🐻'},
+  {l:'C',w:'Cat',c:'猫',e:'🐱'},{l:'D',w:'Dog',c:'狗',e:'🐶'},
+  {l:'E',w:'Elephant',c:'大象',e:'🐘'},{l:'F',w:'Fish',c:'鱼',e:'🐟'},
+  {l:'G',w:'Giraffe',c:'长颈鹿',e:'🦒'},{l:'H',w:'House',c:'房子',e:'🏠'},
+  {l:'I',w:'Ice cream',c:'冰淇淋',e:'🍦'},{l:'J',w:'Juice',c:'果汁',e:'🧃'},
+  {l:'K',w:'Kite',c:'风筝',e:'🪁'},{l:'L',w:'Lion',c:'狮子',e:'🦁'},
+  {l:'M',w:'Monkey',c:'猴子',e:'🐵'},{l:'N',w:'Nose',c:'鼻子',e:'👃'},
+  {l:'O',w:'Orange',c:'橙子',e:'🍊'},{l:'P',w:'Panda',c:'熊猫',e:'🐼'},
+  {l:'Q',w:'Queen',c:'女王',e:'👸'},{l:'R',w:'Rabbit',c:'兔子',e:'🐰'},
+  {l:'S',w:'Sun',c:'太阳',e:'☀️'},{l:'T',w:'Tiger',c:'老虎',e:'🐯'},
+  {l:'U',w:'Umbrella',c:'雨伞',e:'☂️'},{l:'V',w:'Violin',c:'小提琴',e:'🎻'},
+  {l:'W',w:'Water',c:'水',e:'💧'},{l:'X',w:'Xylophone',c:'木琴',e:'🎵'},
+  {l:'Y',w:'Yellow',c:'黄色',e:'💛'},{l:'Z',w:'Zebra',c:'斑马',e:'🦓'},
+];
+
+const ANIMALS = [
+  {w:'cat',c:'猫',e:'🐱'},{w:'dog',c:'狗',e:'🐶'},{w:'rabbit',c:'兔子',e:'🐰'},
+  {w:'bear',c:'熊',e:'🐻'},{w:'panda',c:'熊猫',e:'🐼'},{w:'lion',c:'狮子',e:'🦁'},
+  {w:'monkey',c:'猴子',e:'🐵'},{w:'elephant',c:'大象',e:'🐘'},
+  {w:'bird',c:'鸟',e:'🐦'},{w:'fish',c:'鱼',e:'🐟'},
+  {w:'frog',c:'青蛙',e:'🐸'},{w:'duck',c:'鸭子',e:'🦆'},
+];
+
+const COLORS = [
+  {w:'red',c:'红色',h:'#FF3B30'},{w:'blue',c:'蓝色',h:'#007AFF'},
+  {w:'green',c:'绿色',h:'#34C759'},{w:'yellow',c:'黄色',h:'#FFD60A'},
+  {w:'orange',c:'橙色',h:'#FF9500'},{w:'purple',c:'紫色',h:'#AF52DE'},
+  {w:'pink',c:'粉色',h:'#FF6B8A'},{w:'white',c:'白色',h:'#F5F5F5'},
+  {w:'black',c:'黑色',h:'#2D3436'},{w:'brown',c:'棕色',h:'#A2845E'},
+];
+
+const FRUITS = [
+  {w:'apple',c:'苹果',e:'🍎'},{w:'banana',c:'香蕉',e:'🍌'},
+  {w:'orange',c:'橙子',e:'🍊'},{w:'grape',c:'葡萄',e:'🍇'},
+  {w:'watermelon',c:'西瓜',e:'🍉'},{w:'strawberry',c:'草莓',e:'🍓'},
+  {w:'peach',c:'桃子',e:'🍑'},{w:'cherry',c:'樱桃',e:'🍒'},
+  {w:'kiwi',c:'猕猴桃',e:'🥝'},{w:'mango',c:'芒果',e:'🥭'},
+];
+
+const BODY = [
+  {w:'head',c:'头',e:'🗣️'},{w:'eye',c:'眼睛',e:'👁️'},
+  {w:'nose',c:'鼻子',e:'👃'},{w:'mouth',c:'嘴巴',e:'👄'},
+  {w:'ear',c:'耳朵',e:'👂'},{w:'hand',c:'手',e:'✋'},
+  {w:'foot',c:'脚',e:'🦶'},{w:'arm',c:'胳膊',e:'💪'},
+  {w:'leg',c:'腿',e:'🦵'},{w:'tummy',c:'肚子',e:'🫄'},
+];
+
+// ===== NEW DATA: V2 EXPANSION =====
+const DIALOGUES = [
+  {k:'hello',en:'Hello!',cn:'你好！',e:'👋'},
+  {k:'good_morning',en:'Good morning!',cn:'早上好！',e:'🌅'},
+  {k:'good_afternoon',en:'Good afternoon!',cn:'下午好！',e:'☀️'},
+  {k:'good_evening',en:'Good evening!',cn:'晚上好！',e:'🌆'},
+  {k:'goodbye',en:'Goodbye!',cn:'再见！',e:'👋'},
+  {k:'how_are_you',en:'How are you?',cn:'你好吗？',e:'😊'},
+  {k:'im_fine',en:'I am fine, thank you.',cn:'我很好，谢谢。',e:'😄'},
+  {k:'nice_to_meet',en:'Nice to meet you.',cn:'很高兴认识你。',e:'🤝'},
+  {k:'whats_name',en:'What is your name?',cn:'你叫什么名字？',e:'❓'},
+  {k:'my_name_is',en:'My name is Tom.',cn:'我叫汤姆。',e:'🙋'},
+  {k:'how_old',en:'How old are you?',cn:'你几岁了？',e:'🎂'},
+  {k:'im_five',en:'I am five years old.',cn:'我五岁了。',e:'🖐️'},
+  {k:'where_from',en:'Where are you from?',cn:'你来自哪里？',e:'🌍'},
+  {k:'im_from_china',en:'I am from China.',cn:'我来自中国。',e:'🇨🇳'},
+  {k:'excuse_me',en:'Excuse me.',cn:'打扰一下。',e:'🙏'},
+  {k:'where_toilet',en:'Where is the toilet?',cn:'洗手间在哪里？',e:'🚻'},
+  {k:'thank_you',en:'Thank you!',cn:'谢谢你！',e:'💝'},
+  {k:'you_welcome',en:'You are welcome.',cn:'不客气。',e:'😊'},
+  {k:'sorry',en:'I am sorry.',cn:'对不起。',e:'😔'},
+  {k:'please',en:'Please.',cn:'请。',e:'🤲'},
+  {k:'i_like',en:'I like apples.',cn:'我喜欢苹果。',e:'❤️'},
+  {k:'i_want',en:'I want water.',cn:'我想要水。',e:'💧'},
+  {k:'see_you',en:'See you later!',cn:'回头见！',e:'👋'},
+  {k:'good_night',en:'Good night!',cn:'晚安！',e:'🌙'},
+  {k:'how_much',en:'How much is it?',cn:'这个多少钱？',e:'💰'},
+  {k:'lets_go',en:'Let us go!',cn:'我们走吧！',e:'🚶'},
+  {k:'come_in',en:'Come in, please.',cn:'请进。',e:'🚪'},
+  {k:'be_careful',en:'Be careful!',cn:'小心！',e:'⚠️'},
+  {k:'good_job',en:'Good job!',cn:'做得好！',e:'👍'},
+  {k:'happy_birthday',en:'Happy birthday!',cn:'生日快乐！',e:'🎂'},
+];
+
+const PLACES = [
+  {w:'China',c:'中国',e:'🇨🇳'},{w:'United States',c:'美国',e:'🇺🇸'},
+  {w:'England',c:'英国',e:'🇬🇧'},{w:'Japan',c:'日本',e:'🇯🇵'},
+  {w:'France',c:'法国',e:'🇫🇷'},{w:'Canada',c:'加拿大',e:'🇨🇦'},
+  {w:'Australia',c:'澳大利亚',e:'🇦🇺'},{w:'Zhejiang',c:'浙江',e:'🏞️'},
+  {w:'Shanghai',c:'上海',e:'🏙️'},{w:'Beijing',c:'北京',e:'🏛️'},
+  {w:'Guangdong',c:'广东',e:'🌴'},{w:'Sichuan',c:'四川',e:'🐼'},
+  {w:'school',c:'学校',e:'🏫'},{w:'hospital',c:'医院',e:'🏥'},
+  {w:'park',c:'公园',e:'🏞️'},{w:'supermarket',c:'超市',e:'🏪'},
+  {w:'bank',c:'银行',e:'🏦'},{w:'library',c:'图书馆',e:'📚'},
+  {w:'home',c:'家',e:'🏠'},{w:'restaurant',c:'餐厅',e:'🍽️'},
+  {w:'zoo',c:'动物园',e:'🦁'},{w:'museum',c:'博物馆',e:'🏛️'},
+];
+
+const FOODS = [
+  {w:'rice',c:'米饭',e:'🍚'},{w:'noodle',c:'面条',e:'🍜'},
+  {w:'bread',c:'面包',e:'🍞'},{w:'egg',c:'鸡蛋',e:'🥚'},
+  {w:'milk',c:'牛奶',e:'🥛'},{w:'water',c:'水',e:'💧'},
+  {w:'juice',c:'果汁',e:'🧃'},{w:'cake',c:'蛋糕',e:'🎂'},
+  {w:'ice cream',c:'冰淇淋',e:'🍦'},{w:'candy',c:'糖果',e:'🍬'},
+  {w:'pizza',c:'披萨',e:'🍕'},{w:'hamburger',c:'汉堡',e:'🍔'},
+  {w:'chicken',c:'鸡肉',e:'🍗'},{w:'cookie',c:'饼干',e:'🍪'},
+  {w:'chocolate',c:'巧克力',e:'🍫'},{w:'sandwich',c:'三明治',e:'🥪'},
+  {w:'soup',c:'汤',e:'🍲'},{w:'cheese',c:'奶酪',e:'🧀'},
+  {w:'salad',c:'沙拉',e:'🥗'},{w:'dumpling',c:'饺子',e:'🥟'},
+];
+
+const FAMILY = [
+  {w:'mother',c:'妈妈',e:'👩'},{w:'father',c:'爸爸',e:'👨'},
+  {w:'sister',c:'姐姐',e:'👧'},{w:'brother',c:'哥哥',e:'👦'},
+  {w:'grandma',c:'奶奶',e:'👵'},{w:'grandpa',c:'爷爷',e:'👴'},
+  {w:'baby',c:'宝宝',e:'👶'},{w:'uncle',c:'叔叔',e:'🧔'},
+  {w:'aunt',c:'阿姨',e:'👩‍🦰'},{w:'friend',c:'朋友',e:'🤝'},
+  {w:'family',c:'家人',e:'👨‍👩‍👧‍👦'},{w:'teacher',c:'老师',e:'👩‍🏫'},
+];
+
+const ACTIONS = [
+  {w:'run',c:'跑',e:'🏃'},{w:'jump',c:'跳',e:'🤸'},
+  {w:'walk',c:'走',e:'🚶'},{w:'swim',c:'游泳',e:'🏊'},
+  {w:'fly',c:'飞',e:'🕊️'},{w:'eat',c:'吃',e:'🍽️'},
+  {w:'drink',c:'喝',e:'🥤'},{w:'sleep',c:'睡觉',e:'😴'},
+  {w:'read',c:'阅读',e:'📖'},{w:'sing',c:'唱歌',e:'🎤'},
+  {w:'dance',c:'跳舞',e:'💃'},{w:'play',c:'玩',e:'🎮'},
+  {w:'draw',c:'画画',e:'🎨'},{w:'write',c:'写',e:'✍️'},
+  {w:'clap',c:'拍手',e:'👏'},{w:'smile',c:'微笑',e:'😊'},
+  {w:'cry',c:'哭',e:'😢'},{w:'sit',c:'坐',e:'🪑'},
+  {w:'stand',c:'站',e:'🧍'},{w:'open',c:'打开',e:'📂'},
+];
+
+const WEATHER = [
+  {w:'sunny',c:'晴天',e:'☀️'},{w:'rainy',c:'下雨',e:'🌧️'},
+  {w:'cloudy',c:'多云',e:'☁️'},{w:'snowy',c:'下雪',e:'❄️'},
+  {w:'windy',c:'刮风',e:'💨'},{w:'hot',c:'热',e:'🥵'},
+  {w:'cold',c:'冷',e:'🥶'},{w:'warm',c:'暖和',e:'🌤️'},
+  {w:'cool',c:'凉快',e:'🍃'},{w:'rainbow',c:'彩虹',e:'🌈'},
+  {w:'thunder',c:'打雷',e:'⚡'},{w:'foggy',c:'有雾',e:'🌫️'},
+];
+
+const TRANSPORT = [
+  {w:'car',c:'汽车',e:'🚗'},{w:'bus',c:'公交车',e:'🚌'},
+  {w:'train',c:'火车',e:'🚂'},{w:'airplane',c:'飞机',e:'✈️'},
+  {w:'bicycle',c:'自行车',e:'🚲'},{w:'boat',c:'船',e:'🚢'},
+  {w:'taxi',c:'出租车',e:'🚕'},{w:'subway',c:'地铁',e:'🚇'},
+  {w:'helicopter',c:'直升机',e:'🚁'},{w:'rocket',c:'火箭',e:'🚀'},
+  {w:'motorcycle',c:'摩托车',e:'🏍️'},{w:'truck',c:'卡车',e:'🚛'},
+  {w:'ship',c:'轮船',e:'🚢'},{w:'ambulance',c:'救护车',e:'🚑'},
+  {w:'fire truck',c:'消防车',e:'🚒'},
+];
+
+const SHAPES = [
+  {w:'circle',c:'圆形',e:'⭕'},{w:'square',c:'正方形',e:'🟦'},
+  {w:'triangle',c:'三角形',e:'🔺'},{w:'rectangle',c:'长方形',e:'📏'},
+  {w:'heart',c:'心形',e:'❤️'},{w:'star',c:'星形',e:'⭐'},
+  {w:'oval',c:'椭圆形',e:'🥚'},{w:'diamond',c:'菱形',e:'💎'},
+];
+
+const DAYS = [
+  {w:'Monday',c:'星期一',e:'📅'},{w:'Tuesday',c:'星期二',e:'📅'},
+  {w:'Wednesday',c:'星期三',e:'📅'},{w:'Thursday',c:'星期四',e:'📅'},
+  {w:'Friday',c:'星期五',e:'🎉'},{w:'Saturday',c:'星期六',e:'🎊'},
+  {w:'Sunday',c:'星期日',e:'🌞'},{w:'morning',c:'早上',e:'🌅'},
+  {w:'afternoon',c:'下午',e:'☀️'},{w:'evening',c:'傍晚',e:'🌆'},
+  {w:'night',c:'晚上',e:'🌙'},{w:'today',c:'今天',e:'📆'},
+  {w:'tomorrow',c:'明天',e:'🔜'},{w:'yesterday',c:'昨天',e:'🔙'},
+];
+
+// ===== V3 NEW DATA =====
+const PHONICS_LETTERS = [
+  {l:'A',s:'/æ/',w:'apple',c:'苹果',e:'🍎',h:'张大嘴'},
+  {l:'B',s:'/b/',w:'bear',c:'熊',e:'🐻',h:'闭双唇'},
+  {l:'C',s:'/k/',w:'cat',c:'猫',e:'🐱',h:'喉咙发音'},
+  {l:'D',s:'/d/',w:'dog',c:'狗',e:'🐶',h:'舌顶上颚'},
+  {l:'E',s:'/e/',w:'egg',c:'鸡蛋',e:'🥚',h:'短促发音'},
+  {l:'F',s:'/f/',w:'fish',c:'鱼',e:'🐟',h:'上牙咬下唇'},
+  {l:'G',s:'/g/',w:'goat',c:'山羊',e:'🐐',h:'喉咙发音'},
+  {l:'H',s:'/h/',w:'hat',c:'帽子',e:'🎩',h:'轻轻哈气'},
+  {l:'I',s:'/ɪ/',w:'igloo',c:'冰屋',e:'🏠',h:'短音i'},
+  {l:'J',s:'/dʒ/',w:'jump',c:'跳',e:'🤸',h:'嘴唇突出'},
+  {l:'K',s:'/k/',w:'kite',c:'风筝',e:'🪁',h:'喉咙发音'},
+  {l:'L',s:'/l/',w:'lion',c:'狮子',e:'🦁',h:'舌尖顶上颚'},
+  {l:'M',s:'/m/',w:'moon',c:'月亮',e:'🌙',h:'闭唇鼻音'},
+  {l:'N',s:'/n/',w:'nose',c:'鼻子',e:'👃',h:'舌尖鼻音'},
+  {l:'O',s:'/ɒ/',w:'octopus',c:'章鱼',e:'🐙',h:'圆嘴发音'},
+  {l:'P',s:'/p/',w:'pig',c:'猪',e:'🐷',h:'双唇爆破'},
+  {l:'Q',s:'/kw/',w:'queen',c:'女王',e:'👸',h:'k加w'},
+  {l:'R',s:'/r/',w:'red',c:'红色',e:'🔴',h:'卷舌发音'},
+  {l:'S',s:'/s/',w:'sun',c:'太阳',e:'☀️',h:'像蛇丝丝'},
+  {l:'T',s:'/t/',w:'tiger',c:'老虎',e:'🐯',h:'舌尖爆破'},
+  {l:'U',s:'/ʌ/',w:'umbrella',c:'雨伞',e:'☂️',h:'短音啊'},
+  {l:'V',s:'/v/',w:'van',c:'面包车',e:'🚐',h:'上牙咬下唇震动'},
+  {l:'W',s:'/w/',w:'water',c:'水',e:'💧',h:'嘴唇圆形'},
+  {l:'X',s:'/ks/',w:'fox',c:'狐狸',e:'🦊',h:'k加s'},
+  {l:'Y',s:'/j/',w:'yellow',c:'黄色',e:'💛',h:'像发y'},
+  {l:'Z',s:'/z/',w:'zebra',c:'斑马',e:'🦓',h:'像蜜蜂嗡嗡'},
+];
+
+const CVC_WORDS = [
+  {w:'cat',c:'猫',e:'🐱'},{w:'dog',c:'狗',e:'🐶'},{w:'hat',c:'帽子',e:'🎩'},
+  {w:'pig',c:'猪',e:'🐷'},{w:'bed',c:'床',e:'🛏️'},{w:'sun',c:'太阳',e:'☀️'},
+  {w:'bus',c:'公交车',e:'🚌'},{w:'cup',c:'杯子',e:'🥤'},{w:'pen',c:'笔',e:'🖊️'},
+  {w:'box',c:'盒子',e:'📦'},{w:'run',c:'跑',e:'🏃'},{w:'sit',c:'坐',e:'🪑'},
+  {w:'red',c:'红色',e:'🔴'},{w:'big',c:'大',e:'🦣'},{w:'hot',c:'热',e:'🔥'},
+  {w:'fan',c:'风扇',e:'🪭'},{w:'map',c:'地图',e:'🗺️'},{w:'net',c:'网',e:'🥅'},
+  {w:'lip',c:'嘴唇',e:'👄'},{w:'pot',c:'锅',e:'🍲'},
+];
+
+const SAFETY = [
+  {w:'Stop at the red light',c:'红灯停',e:'🚦'},
+  {w:'Go at the green light',c:'绿灯行',e:'🚶'},
+  {w:'Look both ways',c:'过马路左右看',e:'👀'},
+  {w:'Do not go with strangers',c:'不跟陌生人走',e:'🚫'},
+  {w:'Call 110 for help',c:'有危险打110',e:'📞'},
+  {w:'Call 119 for fire',c:'着火打119',e:'🚒'},
+  {w:'Stop drop and roll',c:'身上着火停趴滚',e:'🔥'},
+  {w:'Do not play with fire',c:'不要玩火',e:'🧯'},
+  {w:'Do not touch outlets',c:'不摸电源插座',e:'⚡'},
+  {w:'No playing with knives',c:'不玩刀具',e:'🔪'},
+  {w:'Wash hands before eating',c:'吃饭前要洗手',e:'🧼'},
+  {w:'Wear a mask when sick',c:'生病戴口罩',e:'😷'},
+  {w:'Do not swim alone',c:'不独自游泳',e:'🏊'},
+  {w:'Wear your seatbelt',c:'坐车系安全带',e:'🚗'},
+  {w:'Wear a helmet',c:'骑车戴头盔',e:'⛑️'},
+  {w:'Drop cover and hold',c:'地震躲桌下',e:'🏃'},
+  {w:'Do not eat unknown pills',c:'不乱吃药',e:'💊'},
+  {w:'Stay with your parents',c:'跟紧爸爸妈妈',e:'👨‍👩‍👧'},
+];
+
+const SCIENCE = [
+  {w:'Spring',c:'春天',e:'🌸'},{w:'Summer',c:'夏天',e:'☀️'},
+  {w:'Autumn',c:'秋天',e:'🍂'},{w:'Winter',c:'冬天',e:'❄️'},
+  {w:'Day',c:'白天',e:'🌞'},{w:'Night',c:'夜晚',e:'🌙'},
+  {w:'The Sun gives us light and heat',c:'太阳给我们光和热',e:'☀️'},
+  {w:'The Moon goes around the Earth',c:'月亮绕着地球转',e:'🌍'},
+  {w:'Stars twinkle at night',c:'星星在夜空闪烁',e:'⭐'},
+  {w:'Rain falls from clouds',c:'雨从云里落下来',e:'🌧️'},
+  {w:'A rainbow has seven colors',c:'彩虹有七种颜色',e:'🌈'},
+  {w:'Plants need water sun and soil',c:'植物需要水阳光和土壤',e:'🌱'},
+  {w:'A seed grows into a plant',c:'种子会长成植物',e:'🌰'},
+  {w:'A caterpillar turns into a butterfly',c:'毛毛虫变蝴蝶',e:'🐛'},
+  {w:'I see with my eyes',c:'我用眼睛看',e:'👁️'},
+  {w:'I hear with my ears',c:'我用耳朵听',e:'👂'},
+  {w:'I smell with my nose',c:'我用鼻子闻',e:'👃'},
+  {w:'I taste with my tongue',c:'我用舌头尝',e:'👅'},
+  {w:'I touch with my hands',c:'我用手触摸',e:'✋'},
+  {w:'Things fall because of gravity',c:'东西往下掉是因为重力',e:'🍎'},
+  {w:'We can recycle paper plastic and glass',c:'可以回收纸塑料玻璃',e:'♻️'},
+];
+
+
+// ==================== EMBEDDED MANIFEST ====================
+const EMBEDDED_MANIFEST = {"A is for Apple":"audio/alphabet/A_en.mp3","这是字母A":"audio/alphabet/A_zh.mp3","B is for Bear":"audio/alphabet/B_en.mp3","这是字母B":"audio/alphabet/B_zh.mp3","C is for Cat":"audio/alphabet/C_en.mp3","这是字母C":"audio/alphabet/C_zh.mp3","D is for Dog":"audio/alphabet/D_en.mp3","这是字母D":"audio/alphabet/D_zh.mp3","E is for Elephant":"audio/alphabet/E_en.mp3","这是字母E":"audio/alphabet/E_zh.mp3","F is for Fish":"audio/alphabet/F_en.mp3","这是字母F":"audio/alphabet/F_zh.mp3","G is for Giraffe":"audio/alphabet/G_en.mp3","这是字母G":"audio/alphabet/G_zh.mp3","H is for House":"audio/alphabet/H_en.mp3","这是字母H":"audio/alphabet/H_zh.mp3","I is for Ice cream":"audio/alphabet/I_en.mp3","这是字母I":"audio/alphabet/I_zh.mp3","J is for Juice":"audio/alphabet/J_en.mp3","这是字母J":"audio/alphabet/J_zh.mp3","K is for Kite":"audio/alphabet/K_en.mp3","这是字母K":"audio/alphabet/K_zh.mp3","L is for Lion":"audio/alphabet/L_en.mp3","这是字母L":"audio/alphabet/L_zh.mp3","M is for Monkey":"audio/alphabet/M_en.mp3","这是字母M":"audio/alphabet/M_zh.mp3","N is for Nose":"audio/alphabet/N_en.mp3","这是字母N":"audio/alphabet/N_zh.mp3","O is for Orange":"audio/alphabet/O_en.mp3","这是字母O":"audio/alphabet/O_zh.mp3","P is for Panda":"audio/alphabet/P_en.mp3","这是字母P":"audio/alphabet/P_zh.mp3","Q is for Queen":"audio/alphabet/Q_en.mp3","这是字母Q":"audio/alphabet/Q_zh.mp3","R is for Rabbit":"audio/alphabet/R_en.mp3","这是字母R":"audio/alphabet/R_zh.mp3","S is for Sun":"audio/alphabet/S_en.mp3","这是字母S":"audio/alphabet/S_zh.mp3","T is for Tiger":"audio/alphabet/T_en.mp3","这是字母T":"audio/alphabet/T_zh.mp3","U is for Umbrella":"audio/alphabet/U_en.mp3","这是字母U":"audio/alphabet/U_zh.mp3","V is for Violin":"audio/alphabet/V_en.mp3","这是字母V":"audio/alphabet/V_zh.mp3","W is for Water":"audio/alphabet/W_en.mp3","这是字母W":"audio/alphabet/W_zh.mp3","X is for Xylophone":"audio/alphabet/X_en.mp3","这是字母X":"audio/alphabet/X_zh.mp3","Y is for Yellow":"audio/alphabet/Y_en.mp3","这是字母Y":"audio/alphabet/Y_zh.mp3","Z is for Zebra":"audio/alphabet/Z_en.mp3","这是字母Z":"audio/alphabet/Z_zh.mp3","猫":"audio/cvc/cat_zh.mp3","cat":"audio/cvc/cat_en.mp3","狗":"audio/cvc/dog_zh.mp3","dog":"audio/cvc/dog_en.mp3","兔子":"audio/animals/rabbit_zh.mp3","rabbit":"audio/animals/rabbit_en.mp3","熊":"audio/animals/bear_zh.mp3","bear":"audio/animals/bear_en.mp3","熊猫":"audio/animals/panda_zh.mp3","panda":"audio/animals/panda_en.mp3","狮子":"audio/animals/lion_zh.mp3","lion":"audio/animals/lion_en.mp3","猴子":"audio/animals/monkey_zh.mp3","monkey":"audio/animals/monkey_en.mp3","大象":"audio/animals/elephant_zh.mp3","elephant":"audio/animals/elephant_en.mp3","鸟":"audio/animals/bird_zh.mp3","bird":"audio/animals/bird_en.mp3","鱼":"audio/animals/fish_zh.mp3","fish":"audio/animals/fish_en.mp3","青蛙":"audio/animals/frog_zh.mp3","frog":"audio/animals/frog_en.mp3","鸭子":"audio/animals/duck_zh.mp3","duck":"audio/animals/duck_en.mp3","老虎":"audio/animals/tiger_zh.mp3","tiger":"audio/animals/tiger_en.mp3","长颈鹿":"audio/animals/giraffe_zh.mp3","giraffe":"audio/animals/giraffe_en.mp3","斑马":"audio/animals/zebra_zh.mp3","zebra":"audio/animals/zebra_en.mp3","红色":"audio/cvc/red_zh.mp3","red":"audio/cvc/red_en.mp3","蓝色":"audio/colors/blue_zh.mp3","blue":"audio/colors/blue_en.mp3","绿色":"audio/colors/green_zh.mp3","green":"audio/colors/green_en.mp3","黄色":"audio/colors/yellow_zh.mp3","yellow":"audio/colors/yellow_en.mp3","橙色":"audio/colors/orange_zh.mp3","orange":"audio/fruits/orange_en.mp3","紫色":"audio/colors/purple_zh.mp3","purple":"audio/colors/purple_en.mp3","粉色":"audio/colors/pink_zh.mp3","pink":"audio/colors/pink_en.mp3","白色":"audio/colors/white_zh.mp3","white":"audio/colors/white_en.mp3","黑色":"audio/colors/black_zh.mp3","black":"audio/colors/black_en.mp3","棕色":"audio/colors/brown_zh.mp3","brown":"audio/colors/brown_en.mp3","灰色":"audio/colors/gray_zh.mp3","gray":"audio/colors/gray_en.mp3","金色":"audio/colors/gold_zh.mp3","gold":"audio/colors/gold_en.mp3","苹果":"audio/fruits/apple_zh.mp3","apple":"audio/fruits/apple_en.mp3","香蕉":"audio/fruits/banana_zh.mp3","banana":"audio/fruits/banana_en.mp3","橙子":"audio/fruits/orange_zh.mp3","葡萄":"audio/fruits/grape_zh.mp3","grape":"audio/fruits/grape_en.mp3","西瓜":"audio/fruits/watermelon_zh.mp3","watermelon":"audio/fruits/watermelon_en.mp3","草莓":"audio/fruits/strawberry_zh.mp3","strawberry":"audio/fruits/strawberry_en.mp3","桃子":"audio/fruits/peach_zh.mp3","peach":"audio/fruits/peach_en.mp3","樱桃":"audio/fruits/cherry_zh.mp3","cherry":"audio/fruits/cherry_en.mp3","猕猴桃":"audio/fruits/kiwi_zh.mp3","kiwi":"audio/fruits/kiwi_en.mp3","芒果":"audio/fruits/mango_zh.mp3","mango":"audio/fruits/mango_en.mp3","梨":"audio/fruits/pear_zh.mp3","pear":"audio/fruits/pear_en.mp3","菠萝":"audio/fruits/pineapple_zh.mp3","pineapple":"audio/fruits/pineapple_en.mp3","柠檬":"audio/fruits/lemon_zh.mp3","lemon":"audio/fruits/lemon_en.mp3","椰子":"audio/fruits/coconut_zh.mp3","coconut":"audio/fruits/coconut_en.mp3","蓝莓":"audio/fruits/blueberry_zh.mp3","blueberry":"audio/fruits/blueberry_en.mp3","米饭":"audio/foods/rice_zh.mp3","rice":"audio/foods/rice_en.mp3","面条":"audio/foods/noodle_zh.mp3","noodle":"audio/foods/noodle_en.mp3","面包":"audio/foods/bread_zh.mp3","bread":"audio/foods/bread_en.mp3","鸡蛋":"audio/foods/egg_zh.mp3","egg":"audio/foods/egg_en.mp3","牛奶":"audio/foods/milk_zh.mp3","milk":"audio/foods/milk_en.mp3","水":"audio/foods/water_zh.mp3","water":"audio/foods/water_en.mp3","果汁":"audio/foods/juice_zh.mp3","juice":"audio/foods/juice_en.mp3","蛋糕":"audio/foods/cake_zh.mp3","cake":"audio/foods/cake_en.mp3","冰淇淋":"audio/foods/ice_cream_zh.mp3","ice cream":"audio/foods/ice_cream_en.mp3","糖果":"audio/foods/candy_zh.mp3","candy":"audio/foods/candy_en.mp3","披萨":"audio/foods/pizza_zh.mp3","pizza":"audio/foods/pizza_en.mp3","汉堡":"audio/foods/hamburger_zh.mp3","hamburger":"audio/foods/hamburger_en.mp3","鸡肉":"audio/foods/chicken_zh.mp3","chicken":"audio/foods/chicken_en.mp3","饼干":"audio/foods/cookie_zh.mp3","cookie":"audio/foods/cookie_en.mp3","巧克力":"audio/foods/chocolate_zh.mp3","chocolate":"audio/foods/chocolate_en.mp3","三明治":"audio/foods/sandwich_zh.mp3","sandwich":"audio/foods/sandwich_en.mp3","汤":"audio/foods/soup_zh.mp3","soup":"audio/foods/soup_en.mp3","奶酪":"audio/foods/cheese_zh.mp3","cheese":"audio/foods/cheese_en.mp3","沙拉":"audio/foods/salad_zh.mp3","salad":"audio/foods/salad_en.mp3","饺子":"audio/foods/dumpling_zh.mp3","dumpling":"audio/foods/dumpling_en.mp3","头":"audio/body/head_zh.mp3","head":"audio/body/head_en.mp3","眼睛":"audio/body/eye_zh.mp3","eye":"audio/body/eye_en.mp3","鼻子":"audio/body/nose_zh.mp3","nose":"audio/body/nose_en.mp3","嘴巴":"audio/body/mouth_zh.mp3","mouth":"audio/body/mouth_en.mp3","耳朵":"audio/body/ear_zh.mp3","ear":"audio/body/ear_en.mp3","手":"audio/body/hand_zh.mp3","hand":"audio/body/hand_en.mp3","脚":"audio/body/foot_zh.mp3","foot":"audio/body/foot_en.mp3","胳膊":"audio/body/arm_zh.mp3","arm":"audio/body/arm_en.mp3","腿":"audio/body/leg_zh.mp3","leg":"audio/body/leg_en.mp3","肚子":"audio/body/tummy_zh.mp3","tummy":"audio/body/tummy_en.mp3","手指":"audio/body/finger_zh.mp3","finger":"audio/body/finger_en.mp3","牙齿":"audio/body/tooth_zh.mp3","tooth":"audio/body/tooth_en.mp3","头发":"audio/body/hair_zh.mp3","hair":"audio/body/hair_en.mp3","脸":"audio/body/face_zh.mp3","face":"audio/body/face_en.mp3","脖子":"audio/body/neck_zh.mp3","neck":"audio/body/neck_en.mp3","妈妈":"audio/family/mother_zh.mp3","mother":"audio/family/mother_en.mp3","爸爸":"audio/family/father_zh.mp3","father":"audio/family/father_en.mp3","姐姐":"audio/family/sister_zh.mp3","sister":"audio/family/sister_en.mp3","哥哥":"audio/family/brother_zh.mp3","brother":"audio/family/brother_en.mp3","奶奶":"audio/family/grandma_zh.mp3","grandma":"audio/family/grandma_en.mp3","爷爷":"audio/family/grandpa_zh.mp3","grandpa":"audio/family/grandpa_en.mp3","宝宝":"audio/family/baby_zh.mp3","baby":"audio/family/baby_en.mp3","叔叔":"audio/family/uncle_zh.mp3","uncle":"audio/family/uncle_en.mp3","阿姨":"audio/family/aunt_zh.mp3","aunt":"audio/family/aunt_en.mp3","朋友":"audio/family/friend_zh.mp3","friend":"audio/family/friend_en.mp3","家人":"audio/family/family_zh.mp3","family":"audio/family/family_en.mp3","老师":"audio/family/teacher_zh.mp3","teacher":"audio/family/teacher_en.mp3","跑":"audio/cvc/run_zh.mp3","run":"audio/cvc/run_en.mp3","跳":"audio/actions/jump_zh.mp3","jump":"audio/actions/jump_en.mp3","走":"audio/actions/walk_zh.mp3","walk":"audio/actions/walk_en.mp3","游泳":"audio/actions/swim_zh.mp3","swim":"audio/actions/swim_en.mp3","飞":"audio/actions/fly_zh.mp3","fly":"audio/actions/fly_en.mp3","吃":"audio/actions/eat_zh.mp3","eat":"audio/actions/eat_en.mp3","喝":"audio/actions/drink_zh.mp3","drink":"audio/actions/drink_en.mp3","睡觉":"audio/actions/sleep_zh.mp3","sleep":"audio/actions/sleep_en.mp3","读":"audio/actions/read_zh.mp3","read":"audio/actions/read_en.mp3","唱歌":"audio/actions/sing_zh.mp3","sing":"audio/actions/sing_en.mp3","跳舞":"audio/actions/dance_zh.mp3","dance":"audio/actions/dance_en.mp3","玩":"audio/actions/play_zh.mp3","play":"audio/actions/play_en.mp3","画画":"audio/actions/draw_zh.mp3","draw":"audio/actions/draw_en.mp3","写":"audio/actions/write_zh.mp3","write":"audio/actions/write_en.mp3","拍手":"audio/actions/clap_zh.mp3","clap":"audio/actions/clap_en.mp3","微笑":"audio/actions/smile_zh.mp3","smile":"audio/actions/smile_en.mp3","哭":"audio/actions/cry_zh.mp3","cry":"audio/actions/cry_en.mp3","坐":"audio/cvc/sit_zh.mp3","sit":"audio/cvc/sit_en.mp3","站":"audio/actions/stand_zh.mp3","stand":"audio/actions/stand_en.mp3","打开":"audio/actions/open_zh.mp3","open":"audio/actions/open_en.mp3","晴天":"audio/weather/sunny_zh.mp3","sunny":"audio/weather/sunny_en.mp3","下雨":"audio/weather/rainy_zh.mp3","rainy":"audio/weather/rainy_en.mp3","多云":"audio/weather/cloudy_zh.mp3","cloudy":"audio/weather/cloudy_en.mp3","下雪":"audio/weather/snowy_zh.mp3","snowy":"audio/weather/snowy_en.mp3","刮风":"audio/weather/windy_zh.mp3","windy":"audio/weather/windy_en.mp3","热":"audio/cvc/hot_zh.mp3","hot":"audio/cvc/hot_en.mp3","冷":"audio/weather/cold_zh.mp3","cold":"audio/weather/cold_en.mp3","暖和":"audio/weather/warm_zh.mp3","warm":"audio/weather/warm_en.mp3","凉快":"audio/weather/cool_zh.mp3","cool":"audio/weather/cool_en.mp3","彩虹":"audio/weather/rainbow_zh.mp3","rainbow":"audio/weather/rainbow_en.mp3","打雷":"audio/weather/thunder_zh.mp3","thunder":"audio/weather/thunder_en.mp3","有雾":"audio/weather/foggy_zh.mp3","foggy":"audio/weather/foggy_en.mp3","汽车":"audio/transport/car_zh.mp3","car":"audio/transport/car_en.mp3","公交车":"audio/cvc/bus_zh.mp3","bus":"audio/cvc/bus_en.mp3","火车":"audio/transport/train_zh.mp3","train":"audio/transport/train_en.mp3","飞机":"audio/transport/airplane_zh.mp3","airplane":"audio/transport/airplane_en.mp3","自行车":"audio/transport/bicycle_zh.mp3","bicycle":"audio/transport/bicycle_en.mp3","船":"audio/transport/boat_zh.mp3","boat":"audio/transport/boat_en.mp3","出租车":"audio/transport/taxi_zh.mp3","taxi":"audio/transport/taxi_en.mp3","地铁":"audio/transport/subway_zh.mp3","subway":"audio/transport/subway_en.mp3","直升机":"audio/transport/helicopter_zh.mp3","helicopter":"audio/transport/helicopter_en.mp3","火箭":"audio/transport/rocket_zh.mp3","rocket":"audio/transport/rocket_en.mp3","摩托车":"audio/transport/motorcycle_zh.mp3","motorcycle":"audio/transport/motorcycle_en.mp3","卡车":"audio/transport/truck_zh.mp3","truck":"audio/transport/truck_en.mp3","轮船":"audio/transport/ship_zh.mp3","ship":"audio/transport/ship_en.mp3","救护车":"audio/transport/ambulance_zh.mp3","ambulance":"audio/transport/ambulance_en.mp3","消防车":"audio/transport/fire_truck_zh.mp3","fire truck":"audio/transport/fire_truck_en.mp3","圆形":"audio/shapes/circle_zh.mp3","circle":"audio/shapes/circle_en.mp3","正方形":"audio/shapes/square_zh.mp3","square":"audio/shapes/square_en.mp3","三角形":"audio/shapes/triangle_zh.mp3","triangle":"audio/shapes/triangle_en.mp3","长方形":"audio/shapes/rectangle_zh.mp3","rectangle":"audio/shapes/rectangle_en.mp3","心形":"audio/shapes/heart_zh.mp3","heart":"audio/shapes/heart_en.mp3","星形":"audio/shapes/star_zh.mp3","star":"audio/shapes/star_en.mp3","椭圆形":"audio/shapes/oval_zh.mp3","oval":"audio/shapes/oval_en.mp3","菱形":"audio/shapes/diamond_zh.mp3","diamond":"audio/shapes/diamond_en.mp3","中国":"audio/places/China_zh.mp3","China":"audio/places/China_en.mp3","美国":"audio/places/United_States_zh.mp3","United States":"audio/places/United_States_en.mp3","英国":"audio/places/England_zh.mp3","England":"audio/places/England_en.mp3","日本":"audio/places/Japan_zh.mp3","Japan":"audio/places/Japan_en.mp3","法国":"audio/places/France_zh.mp3","France":"audio/places/France_en.mp3","加拿大":"audio/places/Canada_zh.mp3","Canada":"audio/places/Canada_en.mp3","澳大利亚":"audio/places/Australia_zh.mp3","Australia":"audio/places/Australia_en.mp3","浙江":"audio/places/Zhejiang_zh.mp3","Zhejiang":"audio/places/Zhejiang_en.mp3","上海":"audio/places/Shanghai_zh.mp3","Shanghai":"audio/places/Shanghai_en.mp3","北京":"audio/places/Beijing_zh.mp3","Beijing":"audio/places/Beijing_en.mp3","广东":"audio/places/Guangdong_zh.mp3","Guangdong":"audio/places/Guangdong_en.mp3","四川":"audio/places/Sichuan_zh.mp3","Sichuan":"audio/places/Sichuan_en.mp3","学校":"audio/places/school_zh.mp3","school":"audio/places/school_en.mp3","医院":"audio/places/hospital_zh.mp3","hospital":"audio/places/hospital_en.mp3","公园":"audio/places/park_zh.mp3","park":"audio/places/park_en.mp3","超市":"audio/places/supermarket_zh.mp3","supermarket":"audio/places/supermarket_en.mp3","银行":"audio/places/bank_zh.mp3","bank":"audio/places/bank_en.mp3","图书馆":"audio/places/library_zh.mp3","library":"audio/places/library_en.mp3","家":"audio/places/home_zh.mp3","home":"audio/places/home_en.mp3","餐厅":"audio/places/restaurant_zh.mp3","restaurant":"audio/places/restaurant_en.mp3","动物园":"audio/places/zoo_zh.mp3","zoo":"audio/places/zoo_en.mp3","博物馆":"audio/places/museum_zh.mp3","museum":"audio/places/museum_en.mp3","你好":"audio/dialogues/hello_zh.mp3","Hello":"audio/dialogues/hello_en.mp3","早上好":"audio/dialogues/good_morning_zh.mp3","Good morning":"audio/dialogues/good_morning_en.mp3","下午好":"audio/dialogues/good_afternoon_zh.mp3","Good afternoon":"audio/dialogues/good_afternoon_en.mp3","晚上好":"audio/dialogues/good_evening_zh.mp3","Good evening":"audio/dialogues/good_evening_en.mp3","再见":"audio/dialogues/goodbye_zh.mp3","Goodbye":"audio/dialogues/goodbye_en.mp3","你好吗":"audio/dialogues/how_are_you_zh.mp3","How are you":"audio/dialogues/how_are_you_en.mp3","我很好，谢谢":"audio/dialogues/im_fine_zh.mp3","I am fine, thank you":"audio/dialogues/im_fine_en.mp3","很高兴认识你":"audio/dialogues/nice_to_meet_zh.mp3","Nice to meet you":"audio/dialogues/nice_to_meet_en.mp3","你叫什么名字":"audio/dialogues/whats_name_zh.mp3","What is your name":"audio/dialogues/whats_name_en.mp3","我的名字是汤姆":"audio/dialogues/my_name_is_zh.mp3","My name is Tom":"audio/dialogues/my_name_is_en.mp3","你几岁了":"audio/dialogues/how_old_zh.mp3","How old are you":"audio/dialogues/how_old_en.mp3","我五岁了":"audio/dialogues/im_five_zh.mp3","I am five years old":"audio/dialogues/im_five_en.mp3","你来自哪里":"audio/dialogues/where_from_zh.mp3","Where are you from":"audio/dialogues/where_from_en.mp3","我来自中国":"audio/dialogues/im_from_china_zh.mp3","I am from China":"audio/dialogues/im_from_china_en.mp3","打扰一下":"audio/dialogues/excuse_me_zh.mp3","Excuse me":"audio/dialogues/excuse_me_en.mp3","洗手间在哪里":"audio/dialogues/where_toilet_zh.mp3","Where is the toilet":"audio/dialogues/where_toilet_en.mp3","谢谢你":"audio/dialogues/thank_you_zh.mp3","Thank you":"audio/dialogues/thank_you_en.mp3","不客气":"audio/dialogues/you_welcome_zh.mp3","You are welcome":"audio/dialogues/you_welcome_en.mp3","对不起":"audio/dialogues/sorry_zh.mp3","I am sorry":"audio/dialogues/sorry_en.mp3","请":"audio/dialogues/please_zh.mp3","Please":"audio/dialogues/please_en.mp3","我喜欢苹果":"audio/dialogues/i_like_zh.mp3","I like apples":"audio/dialogues/i_like_en.mp3","我想要水":"audio/dialogues/i_want_zh.mp3","I want water":"audio/dialogues/i_want_en.mp3","回头见":"audio/dialogues/see_you_zh.mp3","See you later":"audio/dialogues/see_you_en.mp3","晚安":"audio/dialogues/good_night_zh.mp3","Good night":"audio/dialogues/good_night_en.mp3","这个多少钱":"audio/dialogues/how_much_zh.mp3","How much is it":"audio/dialogues/how_much_en.mp3","我们走吧":"audio/dialogues/lets_go_zh.mp3","Let's go":"audio/dialogues/lets_go_en.mp3","请进":"audio/dialogues/come_in_zh.mp3","Come in, please":"audio/dialogues/come_in_en.mp3","小心":"audio/dialogues/be_careful_zh.mp3","Be careful":"audio/dialogues/be_careful_en.mp3","做得好":"audio/dialogues/good_job_zh.mp3","Good job":"audio/dialogues/good_job_en.mp3","生日快乐":"audio/dialogues/happy_birthday_zh.mp3","Happy birthday":"audio/dialogues/happy_birthday_en.mp3","A发æ音，apple苹果":"audio/phonics/A_zh.mp3","/æ/ as in apple":"audio/phonics/A_en.mp3","B发b音，bear熊":"audio/phonics/B_zh.mp3","/b/ as in bear":"audio/phonics/B_en.mp3","C发k音，cat猫":"audio/phonics/C_zh.mp3","/k/ as in cat":"audio/phonics/C_en.mp3","D发d音，dog狗":"audio/phonics/D_zh.mp3","/d/ as in dog":"audio/phonics/D_en.mp3","E发e音，egg鸡蛋":"audio/phonics/E_zh.mp3","/e/ as in egg":"audio/phonics/E_en.mp3","F发f音，fish鱼":"audio/phonics/F_zh.mp3","/f/ as in fish":"audio/phonics/F_en.mp3","G发g音，goat山羊":"audio/phonics/G_zh.mp3","/g/ as in goat":"audio/phonics/G_en.mp3","H发h音，hat帽子":"audio/phonics/H_zh.mp3","/h/ as in hat":"audio/phonics/H_en.mp3","I发i音，igloo冰屋":"audio/phonics/I_zh.mp3","/i/ as in igloo":"audio/phonics/I_en.mp3","J发j音，jump跳":"audio/phonics/J_zh.mp3","/dʒ/ as in jump":"audio/phonics/J_en.mp3","K发k音，kite风筝":"audio/phonics/K_zh.mp3","/k/ as in kite":"audio/phonics/K_en.mp3","L发l音，lion狮子":"audio/phonics/L_zh.mp3","/l/ as in lion":"audio/phonics/L_en.mp3","M发m音，moon月亮":"audio/phonics/M_zh.mp3","/m/ as in moon":"audio/phonics/M_en.mp3","N发n音，nose鼻子":"audio/phonics/N_zh.mp3","/n/ as in nose":"audio/phonics/N_en.mp3","O发o音，octopus章鱼":"audio/phonics/O_zh.mp3","/ɒ/ as in octopus":"audio/phonics/O_en.mp3","P发p音，pig猪":"audio/phonics/P_zh.mp3","/p/ as in pig":"audio/phonics/P_en.mp3","Q发kw音，queen女王":"audio/phonics/Q_zh.mp3","/kw/ as in queen":"audio/phonics/Q_en.mp3","R发r音，red红色":"audio/phonics/R_zh.mp3","/r/ as in red":"audio/phonics/R_en.mp3","S发s音，sun太阳":"audio/phonics/S_zh.mp3","/s/ as in sun":"audio/phonics/S_en.mp3","T发t音，tiger老虎":"audio/phonics/T_zh.mp3","/t/ as in tiger":"audio/phonics/T_en.mp3","U发ʌ音，umbrella雨伞":"audio/phonics/U_zh.mp3","/ʌ/ as in umbrella":"audio/phonics/U_en.mp3","V发v音，van面包车":"audio/phonics/V_zh.mp3","/v/ as in van":"audio/phonics/V_en.mp3","W发w音，water水":"audio/phonics/W_zh.mp3","/w/ as in water":"audio/phonics/W_en.mp3","X发ks音，fox狐狸":"audio/phonics/X_zh.mp3","/ks/ as in fox":"audio/phonics/X_en.mp3","Y发y音，yellow黄色":"audio/phonics/Y_zh.mp3","/j/ as in yellow":"audio/phonics/Y_en.mp3","Z发z音，zebra斑马":"audio/phonics/Z_zh.mp3","/z/ as in zebra":"audio/phonics/Z_en.mp3","帽子":"audio/cvc/hat_zh.mp3","hat":"audio/cvc/hat_en.mp3","猪":"audio/cvc/pig_zh.mp3","pig":"audio/cvc/pig_en.mp3","床":"audio/cvc/bed_zh.mp3","bed":"audio/cvc/bed_en.mp3","太阳":"audio/cvc/sun_zh.mp3","sun":"audio/cvc/sun_en.mp3","杯子":"audio/cvc/cup_zh.mp3","cup":"audio/cvc/cup_en.mp3","笔":"audio/cvc/pen_zh.mp3","pen":"audio/cvc/pen_en.mp3","盒子":"audio/cvc/box_zh.mp3","box":"audio/cvc/box_en.mp3","大":"audio/cvc/big_zh.mp3","big":"audio/cvc/big_en.mp3","风扇":"audio/cvc/fan_zh.mp3","fan":"audio/cvc/fan_en.mp3","地图":"audio/cvc/map_zh.mp3","map":"audio/cvc/map_en.mp3","网":"audio/cvc/net_zh.mp3","net":"audio/cvc/net_en.mp3","嘴唇":"audio/cvc/lip_zh.mp3","lip":"audio/cvc/lip_en.mp3","锅":"audio/cvc/pot_zh.mp3","pot":"audio/cvc/pot_en.mp3","红灯停":"audio/safety/stop_at_red_zh.mp3","Stop at the red light":"audio/safety/stop_at_red_en.mp3","绿灯行":"audio/safety/go_at_green_zh.mp3","Go at the green light":"audio/safety/go_at_green_en.mp3","过马路要左右看":"audio/safety/look_both_zh.mp3","Look both ways before crossing":"audio/safety/look_both_en.mp3","不要和陌生人说话":"audio/safety/no_stranger_zh.mp3","Do not talk to strangers":"audio/safety/no_stranger_en.mp3","有危险打110":"audio/safety/call_police_zh.mp3","Call the police at 110":"audio/safety/call_police_en.mp3","着火了打119":"audio/safety/fire_119_zh.mp3","Call 119 if there is fire":"audio/safety/fire_119_en.mp3","身上着火要停下趴倒打滚":"audio/safety/stop_drop_roll_zh.mp3","Stop, drop, and roll if on fire":"audio/safety/stop_drop_roll_en.mp3","不要玩火":"audio/safety/no_fire_play_zh.mp3","Do not play with fire":"audio/safety/no_fire_play_en.mp3","不要摸电源插座":"audio/safety/no_electric_zh.mp3","Do not touch electric outlets":"audio/safety/no_electric_en.mp3","不要玩刀具":"audio/safety/no_knife_zh.mp3","Do not play with knives":"audio/safety/no_knife_en.mp3","吃饭前要洗手":"audio/safety/wash_hands_zh.mp3","Wash your hands before eating":"audio/safety/wash_hands_en.mp3","生病要戴口罩":"audio/safety/wear_mask_zh.mp3","Wear a mask when sick":"audio/safety/wear_mask_en.mp3","不要独自游泳":"audio/safety/no_swim_alone_zh.mp3","Do not swim alone":"audio/safety/no_swim_alone_en.mp3","坐车要系安全带":"audio/safety/seatbelt_zh.mp3","Always wear your seatbelt":"audio/safety/seatbelt_en.mp3","骑车要戴头盔":"audio/safety/helmet_zh.mp3","Wear a helmet when biking":"audio/safety/helmet_en.mp3","地震要躲到桌子下":"audio/safety/earthquake_zh.mp3","Drop, cover, and hold during earthquake":"audio/safety/earthquake_en.mp3","不乱吃药":"audio/safety/no_medicine_zh.mp3","Do not eat unknown medicine":"audio/safety/no_medicine_en.mp3","跟紧爸爸妈妈":"audio/safety/stay_with_parents_zh.mp3","Stay close to your parents":"audio/safety/stay_with_parents_en.mp3","春天":"audio/science/spring_zh.mp3","Spring":"audio/science/spring_en.mp3","夏天":"audio/science/summer_zh.mp3","Summer":"audio/science/summer_en.mp3","秋天":"audio/science/autumn_zh.mp3","Autumn":"audio/science/autumn_en.mp3","冬天":"audio/science/winter_zh.mp3","Winter":"audio/science/winter_en.mp3","白天":"audio/science/day_zh.mp3","Day":"audio/science/day_en.mp3","夜晚":"audio/science/night_zh.mp3","Night":"audio/science/night_en.mp3","太阳给我们光和热":"audio/science/sun_zh.mp3","The Sun gives us light and heat":"audio/science/sun_en.mp3","月亮绕着地球转":"audio/science/moon_zh.mp3","The Moon goes around the Earth":"audio/science/moon_en.mp3","星星在夜空中闪烁":"audio/science/star_zh.mp3","Stars shine in the night sky":"audio/science/star_en.mp3","雨从云里落下来":"audio/science/rain_zh.mp3","Rain falls from clouds":"audio/science/rain_en.mp3","彩虹有七种颜色":"audio/science/rainbow_zh.mp3","A rainbow has seven colors":"audio/science/rainbow_en.mp3","植物需要水阳光和土壤":"audio/science/plant_zh.mp3","Plants need water, sun and soil to grow":"audio/science/plant_en.mp3","种子会长成植物":"audio/science/seed_zh.mp3","A seed grows into a plant":"audio/science/seed_en.mp3","毛毛虫会变成蝴蝶":"audio/science/butterfly_zh.mp3","A caterpillar turns into a butterfly":"audio/science/butterfly_en.mp3","我用眼睛看":"audio/science/see_sense_zh.mp3","I can see with my eyes":"audio/science/see_sense_en.mp3","我用耳朵听":"audio/science/hear_sense_zh.mp3","I can hear with my ears":"audio/science/hear_sense_en.mp3","我用鼻子闻":"audio/science/smell_sense_zh.mp3","I can smell with my nose":"audio/science/smell_sense_en.mp3","我用舌头尝":"audio/science/taste_sense_zh.mp3","I can taste with my tongue":"audio/science/taste_sense_en.mp3","我用手触摸":"audio/science/touch_sense_zh.mp3","I can touch with my hands":"audio/science/touch_sense_en.mp3","水变成水蒸气升上去形成云再下雨":"audio/science/water_cycle_zh.mp3","Water goes up, forms clouds, then rains down":"audio/science/water_cycle_en.mp3","东西往下掉是因为有重力":"audio/science/gravity_zh.mp3","Things fall down because of gravity":"audio/science/gravity_en.mp3","我们可以回收纸塑料和玻璃":"audio/science/recycle_zh.mp3","We can recycle paper, plastic and glass":"audio/science/recycle_en.mp3","点整":"audio/clock/oclock_zh.mp3","o'clock":"audio/clock/oclock_en.mp3","点半":"audio/clock/half_past_zh.mp3","half past":"audio/clock/half_past_en.mp3","一点钟":"audio/clock/one_oclock_zh.mp3","one o'clock":"audio/clock/one_oclock_en.mp3","两点钟":"audio/clock/two_oclock_zh.mp3","two o'clock":"audio/clock/two_oclock_en.mp3","三点钟":"audio/clock/three_oclock_zh.mp3","three o'clock":"audio/clock/three_oclock_en.mp3","四点钟":"audio/clock/four_oclock_zh.mp3","four o'clock":"audio/clock/four_oclock_en.mp3","五点钟":"audio/clock/five_oclock_zh.mp3","five o'clock":"audio/clock/five_oclock_en.mp3","六点钟":"audio/clock/six_oclock_zh.mp3","six o'clock":"audio/clock/six_oclock_en.mp3","七点钟":"audio/clock/seven_oclock_zh.mp3","seven o'clock":"audio/clock/seven_oclock_en.mp3","八点钟":"audio/clock/eight_oclock_zh.mp3","eight o'clock":"audio/clock/eight_oclock_en.mp3","九点钟":"audio/clock/nine_oclock_zh.mp3","nine o'clock":"audio/clock/nine_oclock_en.mp3","十点钟":"audio/clock/ten_oclock_zh.mp3","ten o'clock":"audio/clock/ten_oclock_en.mp3","十一点钟":"audio/clock/eleven_oclock_zh.mp3","eleven o'clock":"audio/clock/eleven_oclock_en.mp3","十二点钟":"audio/clock/twelve_oclock_zh.mp3","twelve o'clock":"audio/clock/twelve_oclock_en.mp3","现在几点了":"audio/clock/what_time_zh.mp3","What time is it":"audio/clock/what_time_en.mp3","时针":"audio/clock/hour_hand_zh.mp3","hour hand":"audio/clock/hour_hand_en.mp3","分针":"audio/clock/minute_hand_zh.mp3","minute hand":"audio/clock/minute_hand_en.mp3","三点半":"audio/clock/half_three_zh.mp3","half past three":"audio/clock/half_three_en.mp3","六点半":"audio/clock/half_six_zh.mp3","half past six":"audio/clock/half_six_en.mp3","九点半":"audio/clock/half_nine_zh.mp3","half past nine":"audio/clock/half_nine_en.mp3","1点半":"audio/clock/half_1_zh.mp3","half past 1":"audio/clock/half_1_en.mp3","2点半":"audio/clock/half_2_zh.mp3","half past 2":"audio/clock/half_2_en.mp3","3点半":"audio/clock/half_3_zh.mp3","half past 3":"audio/clock/half_3_en.mp3","4点半":"audio/clock/half_4_zh.mp3","half past 4":"audio/clock/half_4_en.mp3","5点半":"audio/clock/half_5_zh.mp3","half past 5":"audio/clock/half_5_en.mp3","6点半":"audio/clock/half_6_zh.mp3","half past 6":"audio/clock/half_6_en.mp3","7点半":"audio/clock/half_7_zh.mp3","half past 7":"audio/clock/half_7_en.mp3","8点半":"audio/clock/half_8_zh.mp3","half past 8":"audio/clock/half_8_en.mp3","9点半":"audio/clock/half_9_zh.mp3","half past 9":"audio/clock/half_9_en.mp3","10点半":"audio/clock/half_10_zh.mp3","half past 10":"audio/clock/half_10_en.mp3","11点半":"audio/clock/half_11_zh.mp3","half past 11":"audio/clock/half_11_en.mp3","12点半":"audio/clock/half_12_zh.mp3","half past 12":"audio/clock/half_12_en.mp3","一元":"audio/money/one_yuan_zh.mp3","one yuan":"audio/money/one_yuan_en.mp3","五元":"audio/money/five_yuan_zh.mp3","five yuan":"audio/money/five_yuan_en.mp3","十元":"audio/money/ten_yuan_zh.mp3","ten yuan":"audio/money/ten_yuan_en.mp3","二十元":"audio/money/twenty_yuan_zh.mp3","twenty yuan":"audio/money/twenty_yuan_en.mp3","五十元":"audio/money/fifty_yuan_zh.mp3","fifty yuan":"audio/money/fifty_yuan_en.mp3","一百元":"audio/money/hundred_yuan_zh.mp3","one hundred yuan":"audio/money/hundred_yuan_en.mp3","一角":"audio/money/one_jiao_zh.mp3","one jiao":"audio/money/one_jiao_en.mp3","五角":"audio/money/five_jiao_zh.mp3","five jiao":"audio/money/five_jiao_en.mp3","一共多少钱":"audio/money/how_much_money_zh.mp3","How much money is it":"audio/money/how_much_money_en.mp3","我们去买东西":"audio/money/buy_things_zh.mp3","Let us go shopping":"audio/money/buy_things_en.mp3","这是找你的钱":"audio/money/change_zh.mp3","Here is your change":"audio/money/change_en.mp3","便宜":"audio/money/cheap_zh.mp3","cheap":"audio/money/cheap_en.mp3","贵":"audio/money/expensive_zh.mp3","这是数字零":"audio/numbers/n0_zh.mp3","zero":"audio/numbers/n0_en.mp3","这是数字一":"audio/numbers/n1_zh.mp3","one":"audio/numbers/n1_en.mp3","这是数字二":"audio/numbers/n2_zh.mp3","two":"audio/numbers/n2_en.mp3","这是数字三":"audio/numbers/n3_zh.mp3","three":"audio/numbers/n3_en.mp3","这是数字四":"audio/numbers/n4_zh.mp3","four":"audio/numbers/n4_en.mp3","这是数字五":"audio/numbers/n5_zh.mp3","five":"audio/numbers/n5_en.mp3","这是数字六":"audio/numbers/n6_zh.mp3","six":"audio/numbers/n6_en.mp3","这是数字七":"audio/numbers/n7_zh.mp3","seven":"audio/numbers/n7_en.mp3","这是数字八":"audio/numbers/n8_zh.mp3","eight":"audio/numbers/n8_en.mp3","这是数字九":"audio/numbers/n9_zh.mp3","nine":"audio/numbers/n9_en.mp3","这是数字十":"audio/numbers/n10_zh.mp3","ten":"audio/numbers/n10_en.mp3","这是数字十一":"audio/numbers/n11_zh.mp3","eleven":"audio/numbers/n11_en.mp3","这是数字十二":"audio/numbers/n12_zh.mp3","twelve":"audio/numbers/n12_en.mp3","这是数字十三":"audio/numbers/n13_zh.mp3","thirteen":"audio/numbers/n13_en.mp3","这是数字十四":"audio/numbers/n14_zh.mp3","fourteen":"audio/numbers/n14_en.mp3","这是数字十五":"audio/numbers/n15_zh.mp3","fifteen":"audio/numbers/n15_en.mp3","这是数字十六":"audio/numbers/n16_zh.mp3","sixteen":"audio/numbers/n16_en.mp3","这是数字十七":"audio/numbers/n17_zh.mp3","seventeen":"audio/numbers/n17_en.mp3","这是数字十八":"audio/numbers/n18_zh.mp3","eighteen":"audio/numbers/n18_en.mp3","这是数字十九":"audio/numbers/n19_zh.mp3","nineteen":"audio/numbers/n19_en.mp3","这是数字二十":"audio/numbers/n20_zh.mp3","twenty":"audio/numbers/n20_en.mp3","自然拼读":"audio/nav/phonics.mp3","拼读练习":"audio/nav/cvc.mp3","拼读":"audio/nav/cvc.mp3","安全教育":"audio/nav/safety.mp3","科学常识":"audio/nav/science.mp3","认识钟表":"audio/nav/clock.mp3","认识钱币":"audio/nav/money.mp3"};
+// ==================== AUDIO MANAGER (Edge Neural TTS MP3) ====================
+class AudioManager {
+  constructor() {
+    this.manifest = {};
+    this.currentAudios = [];
+    this.muted = false;
+    this.speakingCard = null;
+    this.loaded = false;
+    this._load();
+  }
+  _load() {
+    try {
+      this.manifest = EMBEDDED_MANIFEST;
+      this.loaded = true;
+      console.log('🎙️ 神经网络语音已就绪 ('+Object.keys(this.manifest).length+' 条)');
+    } catch(e) {
+      console.warn('⚠️ 语音包未加载，使用浏览器备用语音');
+    }
+  }
+  _path(text) { return this.loaded ? (this.manifest[text] || null) : null; }
+  _playFile(path, onEnd) {
+    if (this.muted || !path) { if (onEnd) onEnd(); return; }
+    const a = new Audio(path);
+    a.preload = 'auto';
+    this.currentAudios.push(a);
+    const cleanup = () => {
+      const i = this.currentAudios.indexOf(a);
+      if (i >= 0) this.currentAudios.splice(i, 1);
+      if (onEnd) onEnd();
+    };
+    a.addEventListener('ended', cleanup, {once:true});
+    a.addEventListener('error', cleanup, {once:true});
+    a.play().catch(cleanup);
+  }
+  _ttsFallback(text, onEnd) {
+    if (!window.speechSynthesis) { if (onEnd) onEnd(); return; }
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85; u.pitch = 1.1;
+    if (onEnd) u.onend = onEnd;
+    window.speechSynthesis.speak(u);
+  }
+  speakCard(el, textZh, textEn) {
+    if (this.muted) return;
+    if (el === this.speakingCard) return;
+    this.cancel();
+    if (this.speakingCard) this.speakingCard.classList.remove('speaking');
+    this.speakingCard = el;
+    el.classList.add('speaking');
+    const zhPath = this._path(textZh);
+    const enPath = this._path(textEn);
+    const done = () => { el.classList.remove('speaking'); this.speakingCard = null; };
+    if (zhPath) {
+      this._playFile(zhPath, () => {
+        if (enPath) this._playFile(enPath, done); else done();
+      });
+    } else if (enPath) {
+      this._playFile(enPath, done);
+    } else {
+      this._ttsFallback(textZh || textEn || '', done);
+    }
+  }
+  speak(text) {
+    if (this.muted) return;
+    this.cancel();
+    const path = this._path(text);
+    if (path) this._playFile(path);
+    else this._ttsFallback(text);
+  }
+  cancel() {
+    this.currentAudios.forEach(a => { a.pause(); a.src = ''; });
+    this.currentAudios = [];
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
+  }
+  toggleMute() {
+    this.muted = !this.muted;
+    if (this.muted) this.cancel();
+    return this.muted;
+  }
+}
+
+// ==================== APP ====================
+class EduApp {
+  constructor() {
+    this.audio = new AudioManager();
+    this.state = { mathTab:'numbers', englishTab:'alphabet', generalTab:'safety', quizScore:0, quizTotal:0, quizAnswered:false };
+    this.init();
+  }
+
+  init() {
+    this.renderFloaties();
+    this.bindGlobalEvents();
+    document.getElementById('btnMute').addEventListener('click', () => {
+      const muted = this.audio.toggleMute();
+      document.getElementById('btnMute').textContent = muted ? '🔇' : '🔊';
+    });
+    document.getElementById('btnHome').addEventListener('click', () => this.navigate('home'));
+  }
+
+  renderFloaties() {
+    const c = document.getElementById('floaties');
+    const emojis = ['⭐','🌟','💫','✨','🌸','🦋','🎈','🎵','💖','🍀','☁️','🌈'];
+    for (let i=0; i<25; i++) {
+      const el = document.createElement('span');
+      el.className = 'floaty';
+      el.textContent = emojis[i % emojis.length];
+      el.style.left = Math.random()*95 + '%';
+      el.style.animationDuration = (12 + Math.random()*20) + 's';
+      el.style.animationDelay = Math.random()*15 + 's';
+      el.style.fontSize = (18 + Math.random()*30) + 'px';
+      c.appendChild(el);
+    }
+  }
+
+  bindGlobalEvents() {
+    this._lastHovered = null;
+    document.addEventListener('mouseover', e => {
+      const card = e.target.closest('[data-speak]');
+      if (card && card !== this._lastHovered) {
+        this._lastHovered = card;
+        this.handleCardHover(card);
+      }
+    }, true);
+    document.addEventListener('click', e => {
+      const card = e.target.closest('[data-speak]');
+      if (card && 'ontouchstart' in window) this.handleCardHover(card);
+    }, true);
+  }
+
+  handleCardHover(el) {
+    const zh = el.dataset.speak;
+    const en = el.dataset.speakEn;
+    this.audio.speakCard(el, zh, en);
+  }
+
+  navigate(page) {
+    this.audio.cancel();
+    this._lastHovered = null;
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    const target = document.getElementById('page-'+page);
+    if (target) target.classList.add('active');
+    document.getElementById('btnHome').style.display = page==='home' ? 'none' : 'inline-flex';
+    if (page === 'math') this.renderMathTab();
+    if (page === 'english') this.renderEnglishTab();
+    if (page === 'general') this.renderGeneralTab();
+  }
+
+  // ==================== MATH ====================
+  showMathTab(tab) {
+    this.audio.cancel();
+    this.state.mathTab = tab;
+    this.renderMathTab();
+  }
+
+  renderMathTab() {
+    const t = this.state.mathTab;
+    const c = document.getElementById('math-content');
+    if (t === 'numbers') this.renderNumbers(c);
+    else if (t === 'counting') this.renderCounting(c);
+    else if (t === 'addition') this.renderQuiz(c, '+');
+    else if (t === 'subtraction') this.renderQuiz(c, '-');
+    else if (t === 'multiplication') this.renderMultiplication(c);
+    else if (t === 'comparison') this.renderComparison(c);
+    else if (t === 'ordering') this.renderOrdering(c);
+    else if (t === 'patterns') this.renderPatterns(c);
+    else if (t === 'trace') this.renderTrace(c);
+    else if (t === 'clock') this.renderClock(c);
+    else if (t === 'money') this.renderMoney(c);
+  }
+
+  renderNumbers(container) {
+    let h = '<div class="cards-grid">';
+    MATH_NUMBERS.forEach(m => {
+      const objs = m.n > 0 ? m.e.repeat(Math.min(m.n, 15)) : '';
+      h += `<div class="item-card" data-speak="这是数字${m.cn}" data-speak-en="${m.en}" data-n="${m.n}">
+        <span class="speaker-hint">🔊</span>
+        <div class="num">${m.n}</div>
+        <div class="cn">${m.cn}</div>
+        <div class="en">${m.en}</div>
+        ${objs ? `<div class="emoji-block">${objs}</div>` : ''}
+      </div>`;
+    });
+    h += '</div>';
+    container.innerHTML = h;
+  }
+
+  renderCounting(container) {
+    const count = Math.floor(Math.random()*15)+1;
+    const objs = MATH_NUMBERS.find(m=>m.n===count);
+    const emoji = objs ? objs.e : '⭐';
+    const wrongOptions = new Set();
+    while(wrongOptions.size < 3) {
+      const w = Math.floor(Math.random()*20)+1;
+      if (w !== count) wrongOptions.add(w);
+    }
+    const options = [count, ...wrongOptions].sort(()=>Math.random()-0.5);
+
+    container.innerHTML = `
+      <div class="quiz-area">
+        <h3>🧮 数一数，有多少个？</h3>
+        <div class="quiz-visual count-objects" id="countObjs">
+          ${emoji.repeat(count)}
+        </div>
+        <div class="quiz-options">
+          ${options.map(o => `<button class="quiz-option" data-ans="${o}" onclick="app.checkCounting(${count},${o},this)">${o}</button>`).join('')}
+        </div>
+        <div class="quiz-feedback" id="countFeedback"></div>
+        <button class="btn-next" onclick="app.renderMathTab()" style="display:none" id="countNext">再来一题 ⭐</button>
+      </div>`;
+  }
+
+  checkCounting(correct, chosen, btn) {
+    const fb = document.getElementById('countFeedback');
+    const next = document.getElementById('countNext');
+    document.querySelectorAll('.quiz-option').forEach(b => b.disabled = true);
+    if (chosen === correct) {
+      btn.classList.add('correct');
+      fb.textContent = '🎉 答对了！太棒了！';
+      fb.style.color = '#34C759';
+      this.audio.speak('答对了！你真聪明！');
+      this.celebrate();
+    } else {
+      btn.classList.add('wrong');
+      fb.textContent = `😊 正确答案是 ${correct}，再试试吧！`;
+      fb.style.color = '#FF9500';
+      this.audio.speak(`正确答案是${correct}`);
+      document.querySelector(`.quiz-option[data-ans="${correct}"]`).classList.add('correct');
+    }
+    next.style.display = 'inline-block';
+  }
+
+  renderQuiz(container, op) {
+    const a = Math.floor(Math.random()*8)+1;
+    let b, correct;
+    if (op === '+') { b = Math.floor(Math.random()*8)+1; correct = a+b; }
+    else { b = Math.floor(Math.random()*a)+1; correct = a-b; }
+    const emoji = MATH_NUMBERS.find(m=>m.n===1).e;
+    const wrongOptions = new Set();
+    while(wrongOptions.size < 3) {
+      const w = Math.floor(Math.random()*20);
+      if (w !== correct && w >= 0) wrongOptions.add(w);
+    }
+    const options = [correct, ...wrongOptions].sort(()=>Math.random()-0.5);
+
+    const visA = emoji.repeat(Math.min(a,12));
+    const visB = emoji.repeat(Math.min(b,12));
+
+    container.innerHTML = `
+      <div class="quiz-area">
+        <h3>${op==='+' ? '➕ 加法练习' : '➖ 减法练习'}</h3>
+        <div style="display:flex;justify-content:center;gap:20px;align-items:center;flex-wrap:wrap;font-size:28px;margin:16px 0;">
+          <div style="text-align:center;"><div style="font-size:16px;color:#888;">${a}</div><div style="font-size:22px;">${visA}</div></div>
+          <div style="font-size:32px;font-weight:700;">${op}</div>
+          <div style="text-align:center;"><div style="font-size:16px;color:#888;">${b}</div><div style="font-size:22px;">${visB}</div></div>
+          <div style="font-size:32px;font-weight:700;">=</div>
+          <div style="font-size:36px;color:var(--orange);">?</div>
+        </div>
+        <div class="quiz-options">
+          ${options.map(o => `<button class="quiz-option" data-ans="${o}" onclick="app.checkQuiz(${correct},${o},this)">${o}</button>`).join('')}
+        </div>
+        <div class="quiz-feedback" id="quizFeedback"></div>
+        <button class="btn-next" onclick="app.renderMathTab()" style="display:none" id="quizNext">再来一题 ⭐</button>
+      </div>`;
+  }
+
+  checkQuiz(correct, chosen, btn) {
+    const fb = document.getElementById('quizFeedback');
+    const next = document.getElementById('quizNext');
+    document.querySelectorAll('.quiz-option').forEach(b => b.disabled = true);
+    if (chosen === correct) {
+      btn.classList.add('correct');
+      fb.textContent = '🎉 太厉害了！';
+      fb.style.color = '#34C759';
+      this.audio.speak('答对了！宝宝真棒！');
+      this.celebrate();
+    } else {
+      btn.classList.add('wrong');
+      fb.textContent = `😊 答案是 ${correct}`;
+      fb.style.color = '#FF9500';
+      this.audio.speak(`正确答案是${correct}`);
+      document.querySelector(`.quiz-option[data-ans="${correct}"]`).classList.add('correct');
+    }
+    next.style.display = 'inline-block';
+  }
+
+  renderTrace(container) {
+    const num = Math.floor(Math.random()*10);
+    const item = MATH_NUMBERS.find(m=>m.n===num);
+    container.innerHTML = `
+      <div class="quiz-area" style="text-align:center;">
+        <h3>✏️ 写数字练习</h3>
+        <div style="font-size:18px;margin:8px 0;color:#666;">${item.cn} (${item.en})</div>
+        <div style="font-size:100px;color:#DDD;letter-spacing:8px;margin-top:-70px;margin-bottom:-70px;line-height:1.8;">${num}</div>
+        <canvas class="trace-canvas" id="traceCanvas" width="280" height="200" style="touch-action:none;" data-trace-num="${num}"></canvas>
+        <div class="trace-controls">
+          <button onclick="app.clearTrace()">🗑️ 擦除</button>
+          <button onclick="app.renderMathTab()">🔄 下一个</button>
+        </div>
+        <div class="quiz-feedback" id="traceFeedback"></div>
+      </div>`;
+    this.initTraceCanvas(num);
+  }
+
+  initTraceCanvas(num) {
+    const canvas = document.getElementById('traceCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle = '#EEE';
+    ctx.font = '120px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(num, canvas.width/2, canvas.height/2);
+
+    let drawing = false;
+    const draw = (e) => {
+      if (!drawing) return;
+      const rect = canvas.getBoundingClientRect();
+      const x = (e.touches?e.touches[0].clientX:e.clientX) - rect.left;
+      const y = (e.touches?e.touches[0].clientY:e.clientY) - rect.top;
+      ctx.beginPath();
+      ctx.arc(x, y, 3, 0, Math.PI*2);
+      ctx.fillStyle = '#FF6B8A';
+      ctx.fill();
+    };
+    canvas.addEventListener('mousedown', e => { drawing=true; draw(e); });
+    canvas.addEventListener('mousemove', draw);
+    canvas.addEventListener('mouseup', () => drawing=false);
+    canvas.addEventListener('mouseleave', () => drawing=false);
+    canvas.addEventListener('touchstart', e => { e.preventDefault(); drawing=true; draw(e); });
+    canvas.addEventListener('touchmove', e => { e.preventDefault(); draw(e); });
+    canvas.addEventListener('touchend', () => drawing=false);
+  }
+
+  clearTrace() {
+    const canvas = document.getElementById('traceCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle = '#EEE';
+    ctx.font = '120px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    const num = parseInt(canvas.dataset.traceNum) || 5;
+    ctx.fillText(num, canvas.width/2, canvas.height/2);
+  }
+
+  // ============== MATH: MULTIPLICATION ==============
+  renderMultiplication(container) {
+    const a = Math.floor(Math.random()*4)+2; // 2-5
+    const b = Math.floor(Math.random()*4)+2; // 2-5
+    const correct = a * b;
+    const emoji = ['⭐','🐱','🐶','🍎','🌟'][a%5];
+    const wrongs = new Set();
+    while(wrongs.size < 3) { const w = Math.floor(Math.random()*30)+1; if(w !== correct) wrongs.add(w); }
+    const opts = [correct, ...wrongs].sort(()=>Math.random()-0.5);
+
+    let vis = '';
+    for (let r=0; r<a; r++) { vis += '<div>'+emoji.repeat(Math.min(b,8))+'</div>'; }
+
+    container.innerHTML = `<div class="quiz-area">
+      <h3>✖️ 乘法入门</h3>
+      <div style="font-size:28px;font-weight:700;margin:8px 0;">${a} × ${b} = ？</div>
+      <div style="font-size:24px;line-height:1.6;margin:8px 0;">${vis}</div>
+      <div style="font-size:14px;color:#888;">${a} 排，每排 ${b} 个，一共多少个？</div>
+      <div class="quiz-options">${opts.map(o=>`<button class="quiz-option" data-ans="${o}" onclick="app.checkQuiz(${correct},${o},this)">${o}</button>`).join('')}</div>
+      <div class="quiz-feedback" id="quizFeedback"></div>
+      <button class="btn-next" onclick="app.renderMathTab()" style="display:none" id="quizNext">再来一题 ⭐</button>
+    </div>`;
+  }
+
+  // ============== MATH: COMPARISON ==============
+  renderComparison(container) {
+    const type = Math.random()>0.5?'bigger':'smaller';
+    let n1 = Math.floor(Math.random()*15)+1, n2 = n1;
+    while(n2 === n1) n2 = Math.floor(Math.random()*15)+1;
+    const correct = type==='bigger' ? Math.max(n1,n2) : Math.min(n1,n2);
+    const e = MATH_NUMBERS.find(m=>m.n===1).e;
+    const wrongs = new Set(); wrongs.add(correct);
+    while(wrongs.size<4) { const w=Math.floor(Math.random()*15)+1; wrongs.add(w); }
+    const opts = [...wrongs].sort(()=>Math.random()-0.5);
+
+    container.innerHTML = `<div class="quiz-area">
+      <h3>⚖️ 比较大小</h3>
+      <div style="font-size:20px;color:#666;margin:8px 0;">${type==='bigger'?'哪个更多/更大？':'哪个更少/更小？'}</div>
+      <div style="display:flex;justify-content:center;gap:30px;align-items:flex-end;margin:12px 0;">
+        <div style="text-align:center;"><div style="font-size:14px;color:#888;">${n1}</div><div style="font-size:20px;">${e.repeat(Math.min(n1,10))}</div></div>
+        <div style="font-size:30px;font-weight:700;">VS</div>
+        <div style="text-align:center;"><div style="font-size:14px;color:#888;">${n2}</div><div style="font-size:20px;">${e.repeat(Math.min(n2,10))}</div></div>
+      </div>
+      <div class="quiz-options">${opts.map(o=>`<button class="quiz-option" data-ans="${o}" onclick="app.checkComparison(${correct},${o},this)">${o}</button>`).join('')}</div>
+      <div class="quiz-feedback" id="countFeedback"></div>
+      <button class="btn-next" onclick="app.renderMathTab()" style="display:none" id="countNext">再来一题 ⭐</button>
+    </div>`;
+  }
+
+  checkComparison(correct, chosen, btn) {
+    document.querySelectorAll('.quiz-option').forEach(b=>b.disabled=true);
+    const fb = document.getElementById('countFeedback'), next = document.getElementById('countNext');
+    if (chosen===correct) {
+      btn.classList.add('correct'); fb.textContent='🎉 答对了！'; fb.style.color='#34C759';
+      this.audio.speak('答对了！'); this.celebrate();
+    } else {
+      btn.classList.add('wrong'); fb.textContent=`😊 答案是 ${correct}`; fb.style.color='#FF9500';
+      this.audio.speak(`正确答案是${correct}`);
+      document.querySelector(`.quiz-option[data-ans="${correct}"]`).classList.add('correct');
+    }
+    next.style.display='inline-block';
+  }
+
+  // ============== MATH: NUMBER ORDERING ==============
+  renderOrdering(container) {
+    const nums = new Set();
+    while(nums.size < 4) nums.add(Math.floor(Math.random()*15)+1);
+    const arr = [...nums]; const sorted = [...nums].sort((a,b)=>a-b);
+    const shuffled = [...arr].sort(()=>Math.random()-0.5);
+    this._orderingData = { shuffled, sorted, selected:[] };
+
+    container.innerHTML = `<div class="quiz-area">
+      <h3>🔢 数字排序</h3>
+      <div style="font-size:18px;color:#666;margin:8px 0;">按从小到大的顺序点击数字</div>
+      <div class="quiz-options" id="orderingBtns">${shuffled.map(n=>`<button class="quiz-option" data-n="${n}" onclick="app.selectOrder(${n},this)" style="width:56px;height:56px;">${n}</button>`).join('')}</div>
+      <div style="margin:12px 0;font-size:22px;min-height:36px;" id="orderResult"></div>
+      <div class="quiz-feedback" id="orderFeedback"></div>
+      <button class="btn-next" onclick="app.renderMathTab()" style="display:none" id="orderNext">再来一题 ⭐</button>
+    </div>`;
+  }
+
+  selectOrder(n, btn) {
+    const data = this._orderingData;
+    if (!data || btn.classList.contains('selected')) return;
+    btn.classList.add('selected'); btn.style.background='#E8F4FF'; btn.style.borderColor='var(--blue)';
+    data.selected.push(n);
+    document.getElementById('orderResult').textContent = data.selected.join(' → ');
+    if (data.selected.length === data.sorted.length) {
+      const correct = data.selected.every((v,i)=>v===data.sorted[i]);
+      const fb = document.getElementById('orderFeedback');
+      const next = document.getElementById('orderNext');
+      if (correct) {
+        fb.textContent='🎉 完全正确！'; fb.style.color='#34C759';
+        this.audio.speak('答对了！宝宝真棒！'); this.celebrate();
+      } else {
+        fb.textContent=`😊 正确顺序是 ${data.sorted.join(' → ')}`; fb.style.color='#FF9500';
+        this.audio.speak(`正确答案是${data.sorted.join(' ')}`);
+      }
+      next.style.display='inline-block';
+      document.querySelectorAll('#orderingBtns .quiz-option').forEach(b=>b.disabled=true);
+    }
+  }
+
+  // ============== MATH: PATTERNS ==============
+  renderPatterns(container) {
+    const patterns = [
+      {seq:['⭐','🌟','⭐','🌟','⭐','?'], opts:['🌟','⭐','✨','💫'], ans:0},
+      {seq:['🍎','🍎','🍊','🍎','🍎','?'], opts:['🍎','🍊','🍋','🍌'], ans:1},
+      {seq:['🔴','🔵','🔴','🔵','🔴','?'], opts:['🟢','🔴','🔵','🟡'], ans:2},
+      {seq:['1','2','3','4','5','?'], opts:['4','7','6','8'], ans:2},
+      {seq:['🐱','🐶','🐱','🐶','🐱','?'], opts:['🐰','🐱','🐶','🐻'], ans:2},
+      {seq:['2','4','6','8','10','?'], opts:['11','10','12','14'], ans:2},
+    ];
+    const p = patterns[Math.floor(Math.random()*patterns.length)];
+    this._patternData = { correctIdx:p.ans };
+
+    container.innerHTML = `<div class="quiz-area">
+      <h3>🔮 找规律</h3>
+      <div style="font-size:18px;color:#666;margin:8px 0;">下一个是什么？</div>
+      <div style="font-size:44px;letter-spacing:8px;margin:12px 0;">${p.seq.join(' ')}</div>
+      <div class="quiz-options">${p.opts.map((o,i)=>`<button class="quiz-option" data-idx="${i}" onclick="app.checkPattern(${i},this)" style="font-size:30px;">${o}</button>`).join('')}</div>
+      <div class="quiz-feedback" id="patternFeedback"></div>
+      <button class="btn-next" onclick="app.renderMathTab()" style="display:none" id="patternNext">再来一题 ⭐</button>
+    </div>`;
+  }
+
+  checkPattern(idx, btn) {
+    document.querySelectorAll('.quiz-option').forEach(b=>b.disabled=true);
+    const fb = document.getElementById('patternFeedback'), next = document.getElementById('patternNext');
+    if (idx === this._patternData.correctIdx) {
+      btn.classList.add('correct'); fb.textContent='🎉 正确！'; fb.style.color='#34C759';
+      this.audio.speak('答对了！太厉害了！'); this.celebrate();
+    } else {
+      btn.classList.add('wrong'); fb.textContent='😊 再观察一下规律吧'; fb.style.color='#FF9500';
+      this.audio.speak('没关系，再试试吧');
+      document.querySelector(`.quiz-option[data-idx="${this._patternData.correctIdx}"]`).classList.add('correct');
+    }
+    next.style.display='inline-block';
+  }
+
+  // ============== ENGLISH: DIALOGUES ==============
+  renderDialogues(container) {
+    const stripPunct = s => s.replace(/[！？。，、\.\!\?,]/g, '');
+    let h = '<div class="cards-grid">';
+    DIALOGUES.forEach(d => {
+      h += `<div class="item-card" data-speak="${stripPunct(d.cn)}" data-speak-en="${stripPunct(d.en)}" style="min-height:120px;">
+        <span class="speaker-hint">🔊</span>
+        <div class="emoji-block" style="font-size:28px;">${d.e}</div>
+        <div class="word" style="font-size:14px;">${d.en}</div>
+        <div class="meaning">${d.cn}</div>
+      </div>`;
+    });
+    h += '</div>';
+    container.innerHTML = h;
+  }
+
+  // ==================== ENGLISH ====================
+  showEnglishTab(tab) {
+    this.audio.cancel();
+    this.state.englishTab = tab;
+    this.renderEnglishTab();
+  }
+
+  renderEnglishTab() {
+    const t = this.state.englishTab;
+    const c = document.getElementById('english-content');
+    if (t === 'alphabet') this.renderAlphabet(c);
+    else if (t === 'animals') this.renderVocab(c, ANIMALS);
+    else if (t === 'colors') this.renderColors(c, COLORS);
+    else if (t === 'fruits') this.renderVocab(c, FRUITS);
+    else if (t === 'body') this.renderVocab(c, BODY);
+    else if (t === 'dialogues') this.renderDialogues(c);
+    else if (t === 'places') this.renderVocab(c, PLACES);
+    else if (t === 'food') this.renderVocab(c, FOODS);
+    else if (t === 'family') this.renderVocab(c, FAMILY);
+    else if (t === 'actions') this.renderVocab(c, ACTIONS);
+    else if (t === 'weather') this.renderVocab(c, WEATHER);
+    else if (t === 'transport') this.renderVocab(c, TRANSPORT);
+    else if (t === 'shapes') this.renderVocab(c, SHAPES);
+    else if (t === 'days') this.renderVocab(c, DAYS);
+    else if (t === 'phonics') this.renderPhonics(c);
+    else if (t === 'cvc') this.renderVocab(c, CVC_WORDS);
+    else if (t === 'quiz') this.renderEnglishQuiz(c);
+  }
+
+  // ==================== GENERAL KNOWLEDGE ====================
+  showGeneralTab(tab) {
+    this.audio.cancel();
+    this.state.generalTab = tab;
+    this.renderGeneralTab();
+  }
+
+  renderGeneralTab() {
+    const t = this.state.generalTab;
+    const c = document.getElementById('general-content');
+    if (t === 'safety') this.renderVocab(c, SAFETY);
+    else if (t === 'science') this.renderVocab(c, SCIENCE);
+  }
+
+  // ============== PHONICS ==============
+  renderPhonics(container) {
+    let h = '<div class="cards-grid">';
+    PHONICS_LETTERS.forEach(p => {
+      h += `<div class="item-card" data-speak="${p.l}发${p.s}音，${p.w}${p.c}" data-speak-en="${p.s} as in ${p.w}" style="min-height:130px;">
+        <span class="speaker-hint">🔊</span>
+        <div class="letter" style="color:${this.letterColor(p.l)};font-size:32px;">${p.l}</div>
+        <div style="font-size:16px;color:var(--orange);font-weight:700;">${p.s}</div>
+        <div class="emoji-block" style="font-size:24px;">${p.e}</div>
+        <div style="font-size:13px;">${p.w} <span style="color:#888;">${p.c}</span></div>
+        <div style="font-size:11px;color:#AAA;margin-top:2px;">👄 ${p.h}</div>
+      </div>`;
+    });
+    h += '</div>';
+    container.innerHTML = h;
+  }
+
+  // ============== CLOCK ==============
+  renderClock(container) {
+    const h = Math.floor(Math.random()*12)+1;
+    const m = Math.random()>0.4 ? 0 : 30;
+    const correct = m===0 ? `${h}点` : `${h}点半`;
+    const opts = new Set(); opts.add(correct);
+    while(opts.size < 4) {
+      const rh = Math.floor(Math.random()*12)+1;
+      const rm = Math.random()>0.5 ? 0 : 30;
+      opts.add(rm===0 ? `${rh}点` : `${rh}点半`);
+    }
+    const optsArr = [...opts].sort(()=>Math.random()-0.5);
+    this._clockData = {h, m, correct};
+
+    container.innerHTML = `<div class="quiz-area">
+      <h3>🕐 认识钟表</h3>
+      <canvas id="clockCanvas" width="220" height="220" style="margin:8px auto;display:block;"></canvas>
+      <div style="font-size:12px;color:#888;">时针短，分针长</div>
+      <div class="quiz-options" style="flex-wrap:wrap;">${optsArr.map(o=>`<button class="quiz-option" style="width:auto;padding:8px 16px;border-radius:20px;font-size:15px;" onclick="app.checkClock('${o}',this)">${o}</button>`).join('')}</div>
+      <div class="quiz-feedback" id="clockFeedback"></div>
+      <button class="btn-next" onclick="app.renderMathTab()" style="display:none" id="clockNext">再来一题 ⭐</button>
+    </div>`;
+    setTimeout(()=>this.drawClock(),50);
+  }
+
+  drawClock() {
+    const c = document.getElementById('clockCanvas');
+    if (!c) return;
+    const ctx = c.getContext('2d');
+    const cx=110, cy=110, r=95;
+    ctx.clearRect(0,0,220,220);
+    // face
+    ctx.beginPath(); ctx.arc(cx,cy,r,0,Math.PI*2); ctx.fillStyle='#FFFEF0'; ctx.fill(); ctx.strokeStyle='#CCC'; ctx.lineWidth=3; ctx.stroke();
+    // ticks
+    for (let i=0; i<12; i++) {
+      const a = (i-3)*Math.PI/6;
+      const outer = i%3===0 ? r-14 : r-8;
+      ctx.beginPath(); ctx.moveTo(cx+Math.cos(a)*(r-4), cy+Math.sin(a)*(r-4));
+      ctx.lineTo(cx+Math.cos(a)*outer, cy+Math.sin(a)*outer);
+      ctx.strokeStyle=i%3===0?'#333':'#AAA'; ctx.lineWidth=i%3===0?3:1.5; ctx.stroke();
+      if (i%3===0) { ctx.fillStyle='#333'; ctx.font='16px sans-serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
+        ctx.fillText(i===0?'12':''+i, cx+Math.cos(a)*(r-26), cy+Math.sin(a)*(r-26)); }
+    }
+    // hands
+    const d = this._clockData;
+    const ha = ((d.h%12)+d.m/60-3)*Math.PI/6;
+    const ma = (d.m/60*12-3)*Math.PI/6;
+    ctx.strokeStyle='#333'; ctx.lineWidth=5; ctx.lineCap='round';
+    ctx.beginPath(); ctx.moveTo(cx,cy); ctx.lineTo(cx+Math.cos(ha)*45, cy+Math.sin(ha)*45); ctx.stroke();
+    ctx.strokeStyle='#666'; ctx.lineWidth=3;
+    ctx.beginPath(); ctx.moveTo(cx,cy); ctx.lineTo(cx+Math.cos(ma)*70, cy+Math.sin(ma)*70); ctx.stroke();
+    // center
+    ctx.beginPath(); ctx.arc(cx,cy,5,0,Math.PI*2); ctx.fillStyle='#FF6B8A'; ctx.fill();
+  }
+
+  checkClock(ans, btn) {
+    document.querySelectorAll('.quiz-option').forEach(b=>b.disabled=true);
+    const fb = document.getElementById('clockFeedback'), next = document.getElementById('clockNext');
+    if (ans === this._clockData.correct) {
+      btn.classList.add('correct'); fb.textContent='🎉 答对了！'; fb.style.color='#34C759';
+      this.audio.speak('答对了！太厉害了！'); this.celebrate();
+    } else {
+      btn.classList.add('wrong'); fb.textContent=`😊 现在是 ${this._clockData.correct}`; fb.style.color='#FF9500';
+      this.audio.speak(`正确答案是${this._clockData.correct}`);
+      document.querySelectorAll('.quiz-option').forEach(b=>{if(b.textContent===this._clockData.correct)b.classList.add('correct');});
+    }
+    next.style.display='inline-block';
+  }
+
+  // ============== MONEY ==============
+  renderMoney(container) {
+    const coins = [
+      {val:1,label:'1元',e:'🪙'},{val:5,label:'5元',e:'🪙'},
+      {val:10,label:'10元',e:'💵'},{val:20,label:'20元',e:'💵'},
+    ];
+    // Pick 2-3 coins
+    const n = Math.floor(Math.random()*3)+2;
+    const selected = [];
+    let total = 0;
+    for (let i=0;i<n;i++) {
+      const coin = coins[Math.floor(Math.random()*coins.length)];
+      selected.push(coin); total += coin.val;
+    }
+    const opts = new Set(); opts.add(total);
+    while(opts.size<4) { opts.add(total + (Math.floor(Math.random()*11)-5)); if([...opts].some(v=>v<0)) opts.delete([...opts].find(v=>v<0)); }
+    const optsArr = [...opts].sort(()=>Math.random()-0.5);
+
+    container.innerHTML = `<div class="quiz-area">
+      <h3>💴 认识钱币</h3>
+      <div style="font-size:18px;color:#666;">一共有多少钱？</div>
+      <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:12px 0;font-size:18px;">
+        ${selected.map(s=>`<div style="text-align:center;"><div style="font-size:36px;">${s.e}</div><div>${s.label}</div></div>`).join('')}
+      </div>
+      <div class="quiz-options">${optsArr.map(o=>`<button class="quiz-option" style="width:auto;padding:8px 20px;border-radius:20px;font-size:15px;" onclick="app.checkMoney(${total},${o},this)">${o}元</button>`).join('')}</div>
+      <div class="quiz-feedback" id="moneyFeedback"></div>
+      <button class="btn-next" onclick="app.renderMathTab()" style="display:none" id="moneyNext">再来一题 ⭐</button>
+    </div>`;
+  }
+
+  checkMoney(correct, chosen, btn) {
+    document.querySelectorAll('.quiz-option').forEach(b=>b.disabled=true);
+    const fb = document.getElementById('moneyFeedback'), next = document.getElementById('moneyNext');
+    if (chosen===correct) {
+      btn.classList.add('correct'); fb.textContent='🎉 答对了！'; fb.style.color='#34C759';
+      this.audio.speak('答对了！宝宝真棒！'); this.celebrate();
+    } else {
+      btn.classList.add('wrong'); fb.textContent=`😊 一共 ${correct} 元`; fb.style.color='#FF9500';
+      this.audio.speak(`正确答案是${correct}`);
+      document.querySelectorAll('.quiz-option').forEach(b=>{if(parseInt(b.textContent)===correct)b.classList.add('correct');});
+    }
+    next.style.display='inline-block';
+  }
+
+  renderAlphabet(container) {
+    let h = '<div class="cards-grid">';
+    ALPHABET.forEach(a => {
+      h += `<div class="item-card" data-speak="这是字母${a.l}" data-speak-en="${a.l} is for ${a.w}" data-letter="${a.l}">
+        <span class="speaker-hint">🔊</span>
+        <div class="letter" style="color:${this.letterColor(a.l)}">${a.l}</div>
+        <div class="emoji-block" style="font-size:28px;">${a.e}</div>
+        <div class="word">${a.w.toLowerCase()}</div>
+        <div class="meaning">${a.c}</div>
+      </div>`;
+    });
+    h += '</div>';
+    container.innerHTML = h;
+  }
+
+  letterColor(l) {
+    const colors = ['#FF6B8A','#FF9500','#FFD60A','#34C759','#5AC8FA','#007AFF','#AF52DE','#FF6B8A'];
+    return colors[l.charCodeAt(0) % colors.length];
+  }
+
+  renderVocab(container, data) {
+    let h = '<div class="cards-grid">';
+    data.forEach(d => {
+      h += `<div class="item-card" data-speak="${d.c}" data-speak-en="${d.w}">
+        <span class="speaker-hint">🔊</span>
+        <div class="emoji-block" style="font-size:36px;">${d.e}</div>
+        <div class="word">${d.w}</div>
+        <div class="meaning">${d.c}</div>
+      </div>`;
+    });
+    h += '</div>';
+    container.innerHTML = h;
+  }
+
+  renderColors(container, data) {
+    let h = '<div class="cards-grid">';
+    data.forEach(d => {
+      h += `<div class="item-card" data-speak="${d.c}" data-speak-en="${d.w}" style="border-color:${d.h};">
+        <span class="speaker-hint">🔊</span>
+        <div class="color-swatch" style="background:${d.h};${d.w==='white'?'box-shadow:inset 0 0 0 2px #DDD;':''}${d.w==='black'?'border-color:white;':''}"></div>
+        <div class="word">${d.w}</div>
+        <div class="meaning">${d.c}</div>
+      </div>`;
+    });
+    h += '</div>';
+    container.innerHTML = h;
+  }
+
+  renderEnglishQuiz(container) {
+    if (!this.state.quizAnswered) this.generateEnglishQuestion();
+    const q = this.state.quizQuestion;
+    if (!q) { this.generateEnglishQuestion(); return; }
+    container.innerHTML = `
+      <div class="quiz-area">
+        <h3>🎮 英语小测验</h3>
+        <div class="quiz-score">⭐ 得分: ${this.state.quizScore} / ${this.state.quizTotal || 1}</div>
+        <div style="font-size:22px;margin:12px 0;color:#666;">
+          ${q.type==='emoji' ? '看到这个，它的英文是什么？' : '这个英文单词是什么意思？'}
+        </div>
+        ${q.type==='emoji' ? `<div style="font-size:64px;margin:12px 0;">${q.display}</div>` : `<div style="font-size:34px;font-weight:700;color:var(--blue);margin:12px 0;">${q.display}</div>`}
+        <div class="quiz-options" style="flex-wrap:wrap;">
+          ${q.options.map((o,i) => `<button class="quiz-option" style="width:auto;padding:10px 20px;border-radius:20px;font-size:15px;" data-idx="${i}" onclick="app.answerEnglishQuiz(${i},this)">${o}</button>`).join('')}
+        </div>
+        <div class="quiz-feedback" id="engFeedback"></div>
+        <button class="btn-next" onclick="app.nextEnglishQuiz()" style="display:none" id="engNext">下一题 ⭐</button>
+      </div>`;
+  }
+
+  generateEnglishQuestion() {
+    const allWords = [...ANIMALS, ...FRUITS, ...BODY, ...FOODS, ...FAMILY, ...ACTIONS, ...WEATHER, ...TRANSPORT, ...SHAPES, ...PLACES, ...DAYS, ...COLORS];
+    const correct = allWords[Math.floor(Math.random()*allWords.length)];
+    const wrongPool = allWords.filter(w => w.w !== correct.w);
+    const wrongs = [];
+    const pool = [...wrongPool];
+    for (let i=0; i<3 && pool.length>0; i++) {
+      const idx = Math.floor(Math.random()*pool.length);
+      wrongs.push(pool.splice(idx,1)[0]);
+    }
+
+    const type = Math.random() > 0.5 ? 'emoji' : 'word';
+    let display, correctAnswer, options;
+    if (type === 'emoji') {
+      display = correct.e;
+      correctAnswer = correct.w;
+      options = [correct.w, ...wrongs.map(w=>w.w)];
+    } else {
+      display = correct.w;
+      correctAnswer = correct.c;
+      options = [correct.c, ...wrongs.map(w=>w.c)];
+    }
+    options = options.sort(()=>Math.random()-0.5);
+
+    this.state.quizQuestion = { type, display, correctAnswer, options, correctIndex:options.indexOf(correctAnswer) };
+    this.state.quizAnswered = false;
+  }
+
+  answerEnglishQuiz(idx, btn) {
+    if (this.state.quizAnswered) return;
+    this.state.quizAnswered = true;
+    this.state.quizTotal++;
+    const q = this.state.quizQuestion;
+    document.querySelectorAll('.quiz-option').forEach(b => b.disabled = true);
+    const fb = document.getElementById('engFeedback');
+    const next = document.getElementById('engNext');
+    if (idx === q.correctIndex) {
+      btn.classList.add('correct');
+      fb.textContent = '🎉 正确！';
+      fb.style.color = '#34C759';
+      this.state.quizScore++;
+      this.audio.speak('答对了！');
+      this.celebrate();
+    } else {
+      btn.classList.add('wrong');
+      fb.textContent = `😊 正确答案是：${q.correctAnswer}`;
+      fb.style.color = '#FF9500';
+      this.audio.speak(`正确答案是${q.correctAnswer}`);
+      document.querySelectorAll('.quiz-option').forEach(b => {
+        if (parseInt(b.dataset.idx) === q.correctIndex) b.classList.add('correct');
+      });
+    }
+    next.style.display = 'inline-block';
+  }
+
+  nextEnglishQuiz() {
+    this.state.quizAnswered = false;
+    this.generateEnglishQuestion();
+    this.renderEnglishTab();
+  }
+
+  // ==================== CELEBRATION ====================
+  celebrate() {
+    const container = document.createElement('div');
+    container.className = 'celebration';
+    const emojis = ['🎉','⭐','🌟','💖','🎊','✨','👏','🏆','🥇','💯'];
+    for (let i=0; i<15; i++) {
+      const el = document.createElement('span');
+      el.className = 'emoji';
+      el.textContent = emojis[i%emojis.length];
+      el.style.setProperty('--dx', (Math.random()*300-150)+'px');
+      el.style.setProperty('--dy', (-100-Math.random()*200)+'px');
+      el.style.setProperty('--dr', (Math.random()*720-360)+'deg');
+      el.style.left = (40+Math.random()*20)+'%';
+      el.style.top = (40+Math.random()*20)+'%';
+      el.style.animationDelay = Math.random()*0.3+'s';
+      el.style.animationDuration = (1+Math.random()*1.5)+'s';
+      container.appendChild(el);
+    }
+    document.body.appendChild(container);
+    setTimeout(() => container.remove(), 2000);
+  }
+}
+
+// ==================== BOOT ====================
+const app = new EduApp();
+</script>
+</body>
+</html>

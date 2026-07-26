@@ -1,0 +1,5 @@
+generate_audio.py
+gen_v3_audio.py
+audio/manifest.json
+__pycache__/
+*.pyc
