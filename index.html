@@ -1304,46 +1304,73 @@ class EduApp {
     next.style.display='inline-block';
   }
 
-  // ============== SPOT THE DIFFERENCE ==============
+  // ============== SPOT THE DIFFERENCE v2 — 20 场景 ==============
+  _spotSceneData() {
+    return [
+      {name:'🏠 快乐农场',w:5,h:4,emojis:['🐮','🐷','🐔','🐑','🐴','🐶','🐱','🐰','🌳','🏠','☀️','🌻','🐤','🥕','🦆','🐐','🌽','🍎','🚜','🧑‍🌾']},
+      {name:'🌊 海底世界',w:5,h:4,emojis:['🐠','🐙','🦀','🐬','🐳','🐚','🐟','🦈','🦑','🦞','🐡','🪸','🐢','🦭','🪼','🐋','🦐','🐠','🪹','🐙']},
+      {name:'🌲 森林动物',w:5,h:4,emojis:['🐻','🦊','🐰','🦉','🦌','🐿️','🦔','🐗','🌲','🍄','🌸','🦋','🦝','🐺','🦫','🦇','🌳','🌿','🪺','🦡']},
+      {name:'🏙️ 城市街景',w:5,h:4,emojis:['🏠','🏢','🏫','🚗','🚌','🚕','🌳','🏥','🏪','🚶','🏦','🏛️','🚲','🚦','🏗️','🏘️','⛲','🚇','🏬','🏩']},
+      {name:'🚀 太空探险',w:5,h:4,emojis:['🌍','⭐','🌙','🚀','🛸','🪐','👨‍🚀','🛰️','☄️','🌟','💫','🌌','🛸','🪐','🌍','🚀','⭐','🌙','🛰️','👽']},
+      {name:'🌸 美丽花园',w:5,h:4,emojis:['🌸','🌻','🌹','🦋','🐝','🐞','🌱','🌿','🌺','🌷','💐','🐛','🪻','🌼','🪴','🍀','🐌','🦗','🪲','🌾']},
+      {name:'🏖️ 阳光沙滩',w:5,h:4,emojis:['🏖️','🌊','🐚','🦀','☀️','⛱️','🏄','🩴','🪣','🏐','🐠','🦐','🪨','🏝️','🌴','🦩','🐬','🪸','🏊','🛶']},
+      {name:'🍳 美味厨房',w:5,h:4,emojis:['🍎','🍞','🥛','🍳','🧀','🍪','🍕','🍔','🍟','🥗','🍜','🍰','🧃','🍌','🍇','🥚','🍗','🧁','🍩','🥐']},
+      {name:'🎪 欢乐公园',w:5,h:4,emojis:['🌳','🦆','🏞️','🚶','🐕','🪁','🎠','🎢','🎡','🎪','🍿','🎈','🎵','🤹','🎯','🛝','🧸','🎭','🦮','🎊']},
+      {name:'🦁 丛林探险',w:5,h:4,emojis:['🦁','🐘','🦒','🦓','🐒','🐍','🦜','🐊','🌴','🦥','🦧','🐆','🦛','🦏','🦩','🌺','🐅','🦎','🦜','🐸']},
+      {name:'🎂 生日派对',w:5,h:4,emojis:['🎂','🎈','🎁','🎉','🎊','🎀','🧁','🍰','🎵','🥳','🎶','🎤','🍕','🍹','🎇','🎆','🧸','🎮','🍬','🥤']},
+      {name:'🏫 快乐学校',w:5,h:4,emojis:['🏫','📚','✏️','📐','🎒','🚌','👩‍🏫','📝','🖍️','📖','🎨','🔬','⚽','🎹','🧮','🪑','📋','🖊️','📏','🏀']},
+      {name:'🎵 音乐舞台',w:5,h:4,emojis:['🎵','🎸','🎹','🥁','🎤','🎻','🎺','🎷','🪗','🎼','🎧','🎶','🪘','🎙️','🎚️','🎛️','🪇','🎵','🎸','🎤']},
+      {name:'⚽ 运动赛场',w:5,h:4,emojis:['⚽','🏀','🎾','🏈','🏓','⛳','🏸','🏒','🥅','🏃','🏊','🚴','🤸','🏋️','⛹️','🤾','🏌️','🏄','🧗','🎿']},
+      {name:'🏰 童话城堡',w:5,h:4,emojis:['🏰','🐉','👸','🤴','🛡️','⚔️','🐎','👑','🌟','🏹','🗡️','🧙‍♂️','🧚','🦄','🐲','🏆','💎','🔮','📯','🏴']},
+      {name:'🌈 彩虹世界',w:5,h:4,emojis:['🌈','☀️','🌧️','🌸','🦄','✨','💖','🌻','🦋','☁️','💫','🌺','🪷','🦩','🎀','💐','🪻','🌼','🌷','💮']},
+      {name:'🐧 南极冰川',w:5,h:4,emojis:['🐧','❄️','🐻‍❄️','🧊','🌨️','🦭','🐋','⛸️','🏔️','🛷','🐳','🦌','🧤','🧣','⛄','🛞','🐕‍🦺','🎿','🏂','🦣']},
+      {name:'🐪 沙漠绿洲',w:5,h:4,emojis:['🐪','🌵','☀️','🦂','🏜️','🦎','🐍','🌴','💧','🏕️','🔥','🦅','🐫','🪨','🌙','⭐','🦜','🪶','🏺','🪔']},
+      {name:'🦋 蝴蝶山谷',w:5,h:4,emojis:['🦋','🌸','🌿','🐝','🌺','🪻','🌼','🐛','🌱','🌻','🍃','🪲','🐞','🌾','🦗','🌷','💮','🪴','🍀','🕊️']},
+      {name:'🎄 圣诞快乐',w:5,h:4,emojis:['🎄','🎅','🦌','🎁','⛄','🛷','🧦','🌟','🔔','❄️','☃️','🎀','🕯️','🍪','🥛','🧤','🎶','⭐','🕊️','🎊']},
+    ];
+  }
+
   renderSpotDiff(container) {
-    const allEmojis = ['🐱','🐶','🐰','🐻','🐼','🦁','🐸','🐵','🐔','🐮','🐷','🐑','🐘','🐧','🐬','🦋','🐝','🐞','🦄','🐙','🦀','🐠','🦜','🐢','🦩'];
-    const size = 3;
-    const diffCount = 3;
-    
-    // Generate original grid
+    const scenes = this._spotSceneData();
+    const s = scenes[Math.floor(Math.random()*scenes.length)];
+    const {w, h, emojis} = s;
+    const total = w*h;
+    const diffCount = 5;
+
+    // Build original grid from pool
     const grid = [];
-    for (let r=0; r<size; r++) { grid[r]=[]; for (let c=0; c<size; c++) grid[r][c]=allEmojis[Math.floor(Math.random()*allEmojis.length)]; }
-    
+    for (let r=0; r<h; r++) { grid[r]=[]; for (let c=0; c<w; c++) grid[r][c]=emojis[Math.floor(Math.random()*emojis.length)]; }
+
     // Create modified grid with differences
     const modGrid = grid.map(r=>[...r]);
     const diffs = new Set();
     while(diffs.size < diffCount) {
-      const r = Math.floor(Math.random()*size), c = Math.floor(Math.random()*size);
+      const r = Math.floor(Math.random()*h), c = Math.floor(Math.random()*w);
       const key = `${r},${c}`;
       if (!diffs.has(key)) {
         diffs.add(key);
-        let newEmoji = allEmojis[Math.floor(Math.random()*allEmojis.length)];
-        while(newEmoji === grid[r][c]) newEmoji = allEmojis[Math.floor(Math.random()*allEmojis.length)];
-        modGrid[r][c] = newEmoji;
+        let newE = emojis[Math.floor(Math.random()*emojis.length)];
+        while(newE === grid[r][c]) newE = emojis[Math.floor(Math.random()*emojis.length)];
+        modGrid[r][c] = newE;
       }
     }
-    this._spotData = { diffs, found:new Set(), grid, modGrid, size };
+    this._spotData = { diffs, found:new Set(), grid, modGrid, w, h };
 
     const renderGrid = (g, label, clickable) => {
-      let h = `<div><div class="spot-label">${label}</div><div class="spot-grid" style="grid-template-columns:repeat(${size},1fr);">`;
-      for (let r=0; r<size; r++)
-        for (let c=0; c<size; c++)
-          h += `<div class="spot-cell" data-r="${r}" data-c="${c}" ${clickable?`onclick="app.spotClick(${r},${c},this)"`:''}>${g[r][c]}</div>`;
-      h += '</div></div>';
-      return h;
+      let html = `<div style="margin:0 4px;"><div class="spot-label">${label}</div><div class="spot-grid" style="grid-template-columns:repeat(${w},1fr);">`;
+      for (let r=0; r<h; r++)
+        for (let c=0; c<w; c++)
+          html += `<div class="spot-cell" style="width:52px;height:52px;font-size:36px;" data-r="${r}" data-c="${c}" ${clickable?`onclick="app.spotClick(${r},${c},this)"`:''}>${g[r][c]}</div>`;
+      html += '</div></div>';
+      return html;
     };
 
     container.innerHTML = `<div class="quiz-area">
-      <h3>🔍 火眼金睛 —— 找不同</h3>
-      <div style="font-size:14px;color:#888;margin-bottom:4px;">右边有 ${diffCount} 处和左边不一样，找出来吧！</div>
-      <div class="spot-area">${renderGrid(grid,'原始图','')}${renderGrid(modGrid,'找不同','click')}</div>
-      <div class="spot-score" id="spotScore">已找到: 0 / ${diffCount}</div>
-      <button class="btn-next" onclick="app.renderGeneralTab()" style="display:none" id="spotNext">再来一局 🔄</button>
+      <h3>🔍 找茬游戏 —— ${s.name}</h3>
+      <div style="font-size:14px;color:#888;margin-bottom:4px;">左右两图有 <b>${diffCount}</b> 处不同，找出来吧！</div>
+      <div class="spot-area">${renderGrid(grid,'原图','')}${renderGrid(modGrid,'找不同','click')}</div>
+      <div class="spot-score" id="spotScore">✅ 已找到: 0 / ${diffCount}</div>
+      <button class="btn-next" onclick="app.renderGeneralTab()" style="display:none" id="spotNext">下一关 🔄</button>
     </div>`;
   }
 
@@ -1354,7 +1381,7 @@ class EduApp {
     if (this._spotData.diffs.has(key)) {
       el.classList.add('found');
       this._spotData.found.add(key);
-      document.getElementById('spotScore').textContent = `已找到: ${this._spotData.found.size} / ${this._spotData.diffs.size}`;
+      document.getElementById('spotScore').textContent = `✅ 已找到: ${this._spotData.found.size} / ${this._spotData.diffs.size}`;
       this.audio.speak('答对了！太厉害了！');
       if (this._spotData.found.size === this._spotData.diffs.size) {
         document.getElementById('spotNext').style.display='inline-block';
@@ -1366,12 +1393,55 @@ class EduApp {
     }
   }
 
-  // ============== DRAWING BOARD ==============
+  // ============== DRAWING BOARD v2 — 涂色模板 ==============
+  _drawTemplates() {
+    return [
+      {name:'🐱 小猫',icon:'🐱',draw:(ctx)=>{
+        ctx.beginPath(); ctx.arc(160,140,55,0,Math.PI*2); ctx.moveTo(160,85); ctx.arc(160,85,20,0,Math.PI,true); ctx.moveTo(105,72); ctx.arc(105,72,26,0,Math.PI,true); ctx.moveTo(215,72); ctx.arc(215,72,26,0,Math.PI,true); ctx.moveTo(135,160); ctx.arc(135,160,8,0,Math.PI*2); ctx.moveTo(185,160); ctx.arc(185,160,8,0,Math.PI*2); ctx.moveTo(160,170); ctx.arc(160,170,6,0,Math.PI*2); ctx.moveTo(145,175); ctx.quadraticCurveTo(160,185,175,175); ctx.stroke();
+      }},
+      {name:'🐶 小狗',icon:'🐶',draw:(ctx)=>{
+        ctx.beginPath(); ctx.arc(160,140,50,0,Math.PI*2); ctx.ellipse(112,100,20,35,0.2,0,Math.PI*2); ctx.ellipse(208,100,20,35,-0.2,0,Math.PI*2); ctx.moveTo(135,155); ctx.arc(135,155,7,0,Math.PI*2); ctx.moveTo(185,155); ctx.arc(185,155,7,0,Math.PI*2); ctx.moveTo(160,160); ctx.arc(160,160,8,0,Math.PI*2); ctx.moveTo(150,170); ctx.quadraticCurveTo(160,180,170,170); ctx.moveTo(160,85); ctx.ellipse(160,85,15,25,0,0,Math.PI*2); ctx.stroke();
+      }},
+      {name:'🐰 兔子',icon:'🐰',draw:(ctx)=>{
+        ctx.beginPath(); ctx.arc(160,150,45,0,Math.PI*2); ctx.ellipse(128,90,10,35,0.1,0,Math.PI*2); ctx.ellipse(192,90,10,35,-0.1,0,Math.PI*2); ctx.moveTo(140,152); ctx.arc(140,152,6,0,Math.PI*2); ctx.moveTo(180,152); ctx.arc(180,152,6,0,Math.PI*2); ctx.moveTo(157,157); ctx.lineTo(160,162); ctx.lineTo(163,157); ctx.moveTo(155,165); ctx.lineTo(160,170); ctx.lineTo(165,165); ctx.stroke();
+      }},
+      {name:'🐻 小熊',icon:'🐻',draw:(ctx)=>{
+        ctx.beginPath(); ctx.arc(160,140,60,0,Math.PI*2); ctx.moveTo(100,65); ctx.arc(100,65,20,0,Math.PI*2); ctx.moveTo(220,65); ctx.arc(220,65,20,0,Math.PI*2); ctx.moveTo(145,138); ctx.arc(145,138,7,0,Math.PI*2); ctx.moveTo(175,138); ctx.arc(175,138,7,0,Math.PI*2); ctx.moveTo(160,145); ctx.ellipse(160,145,6,4,0,0,Math.PI*2); ctx.moveTo(150,156); ctx.quadraticCurveTo(160,163,170,156); ctx.stroke();
+      }},
+      {name:'🐟 小鱼',icon:'🐟',draw:(ctx)=>{
+        ctx.beginPath(); ctx.ellipse(160,160,70,40,0,0,Math.PI*2); ctx.moveTo(230,160); ctx.lineTo(270,120); ctx.lineTo(250,160); ctx.lineTo(270,200); ctx.lineTo(230,160); ctx.moveTo(110,160); ctx.arc(110,160,8,0,Math.PI*2); ctx.fill(); ctx.beginPath(); ctx.moveTo(150,130); ctx.quadraticCurveTo(170,115,190,130); ctx.moveTo(150,190); ctx.quadraticCurveTo(170,205,190,190); ctx.stroke();
+      }},
+      {name:'🦋 蝴蝶',icon:'🦋',draw:(ctx)=>{
+        ctx.beginPath(); ctx.moveTo(160,200); ctx.lineTo(160,120); ctx.moveTo(160,120); ctx.ellipse(160,120,8,20,0,0,Math.PI*2); ctx.moveTo(160,100); ctx.ellipse(160,100,4,4,0,0,Math.PI*2); ctx.moveTo(160,120); ctx.quadraticCurveTo(80,60,110,120); ctx.quadraticCurveTo(140,160,160,120); ctx.quadraticCurveTo(180,160,210,120); ctx.quadraticCurveTo(240,60,160,120); ctx.moveTo(120,210); ctx.quadraticCurveTo(70,170,110,200); ctx.quadraticCurveTo(140,220,160,200); ctx.moveTo(200,210); ctx.quadraticCurveTo(250,170,210,200); ctx.quadraticCurveTo(180,220,160,200); ctx.stroke();
+      }},
+      {name:'🌸 花朵',icon:'🌸',draw:(ctx)=>{
+        ctx.beginPath(); ctx.moveTo(160,200); ctx.lineTo(160,160); for(let i=0;i<6;i++){const a=i*Math.PI/3-0.3,na=(i+1)*Math.PI/3-0.3;ctx.moveTo(160,130);ctx.quadraticCurveTo(160+45*Math.cos(a),130+45*Math.sin(a),160+30*Math.cos((a+na)/2),130+30*Math.sin((a+na)/2));} ctx.moveTo(160,130); ctx.arc(160,130,15,0,Math.PI*2); ctx.moveTo(140,200); ctx.ellipse(140,200,12,18,0.3,0,Math.PI*2); ctx.moveTo(180,200); ctx.ellipse(180,200,12,18,-0.3,0,Math.PI*2); ctx.stroke();
+      }},
+      {name:'⭐ 星星',icon:'⭐',draw:(ctx)=>{
+        ctx.beginPath(); const pts=[]; for(let i=0;i<10;i++){const a=(i*36-90)*Math.PI/180,r=i%2===0?80:35;pts.push({x:160+r*Math.cos(a),y:150+r*Math.sin(a)});} ctx.moveTo(pts[0].x,pts[0].y); for(let i=1;i<pts.length;i++)ctx.lineTo(pts[i].x,pts[i].y); ctx.closePath(); ctx.stroke();
+      }},
+      {name:'🏠 房子',icon:'🏠',draw:(ctx)=>{
+        ctx.beginPath(); ctx.moveTo(160,200); ctx.lineTo(90,200); ctx.lineTo(90,120); ctx.lineTo(160,70); ctx.lineTo(230,120); ctx.lineTo(230,200); ctx.lineTo(160,200); ctx.moveTo(140,200); ctx.lineTo(140,150); ctx.lineTo(180,150); ctx.lineTo(180,200); ctx.moveTo(130,110); ctx.rect(130,110,20,20); ctx.moveTo(170,110); ctx.rect(170,110,20,20); ctx.stroke();
+      }},
+      {name:'🌲 大树',icon:'🌲',draw:(ctx)=>{
+        ctx.beginPath(); ctx.moveTo(160,210); ctx.lineTo(130,210); ctx.lineTo(140,170); ctx.lineTo(120,170); ctx.quadraticCurveTo(100,170,110,140); ctx.lineTo(90,140); ctx.quadraticCurveTo(70,140,85,100); ctx.quadraticCurveTo(50,100,80,50); ctx.quadraticCurveTo(160,0,240,50); ctx.quadraticCurveTo(270,100,235,100); ctx.quadraticCurveTo(250,140,230,140); ctx.lineTo(210,140); ctx.quadraticCurveTo(220,170,200,170); ctx.lineTo(190,170); ctx.lineTo(190,210); ctx.closePath(); ctx.stroke();
+      }},
+    ];
+  }
+
   renderDrawing(container) {
+    const tmpls = this._drawTemplates();
     const colors = ['#FF3B30','#FF9500','#FFD60A','#34C759','#007AFF','#5856D6','#AF52DE','#FF6B8A','#8E8E93','#2D3436','#FFFFFF','#A2845E'];
     const sizes = [3,8,16];
+
+    let tmplBtns = '<div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-bottom:8px;">';
+    tmpls.forEach((t,i)=>tmplBtns+=`<button class="draw-size-btn" onclick="app.drawLoadTemplate(${i})" style="font-size:12px;white-space:nowrap;">${t.icon} ${t.name.slice(2)}</button>`);
+    tmplBtns += '</div>';
+
     container.innerHTML = `<div class="quiz-area" style="text-align:center;">
       <h3>🎨 创意画板</h3>
+      <div style="font-size:12px;color:#888;margin-bottom:4px;">选一个图案开始涂色吧！</div>
+      ${tmplBtns}
       <div class="draw-toolbar">
         ${colors.map((c,i)=>`<div class="draw-color${i===0?' active':''}" style="background:${c}" data-color="${c}" onclick="app.drawSetColor('${c}',this)"></div>`).join('')}
       </div>
@@ -1379,19 +1449,20 @@ class EduApp {
         <span style="font-size:13px;color:#888;">画笔:</span>
         ${sizes.map((s,i)=>`<button class="draw-size-btn${i===1?' active':''}" onclick="app.drawSetSize(${s},this)">${s===3?'细':s===8?'中':'粗'}</button>`).join('')}
         <button class="draw-size-btn" id="eraserBtn" onclick="app.drawToggleEraser(this)">🧹 橡皮</button>
-        <button class="btn-next" onclick="app.drawClear()" style="font-size:13px;padding:4px 12px;">🗑️ 清空</button>
+        <button class="draw-size-btn" onclick="app.drawClear()">🗑️ 清空</button>
       </div>
       <div class="draw-canvas-wrap"><canvas id="drawCanvas" width="320" height="400" style="touch-action:none;cursor:crosshair;"></canvas></div>
     </div>`;
-    setTimeout(()=>this.initDrawing(), 50);
+    setTimeout(()=>this.initDrawing(), 100);
   }
 
   initDrawing() {
     const canvas = document.getElementById('drawCanvas');
     if (!canvas || canvas._inited) return;
     canvas._inited = true;
-    const ctx = canvas.getContext('2d');
-    ctx.fillStyle = '#FFFFFF'; ctx.fillRect(0,0,canvas.width,canvas.height);
+    this._drawCtx = canvas.getContext('2d');
+    this._drawCtx.fillStyle = '#FFFFFF';
+    this._drawCtx.fillRect(0,0,canvas.width,canvas.height);
     this._drawState = { color:'#FF3B30', size:8, eraser:false, drawing:false };
 
     const draw = (e) => {
@@ -1399,10 +1470,10 @@ class EduApp {
       const rect = canvas.getBoundingClientRect();
       const x = (e.touches?e.touches[0].clientX:e.clientX) - rect.left;
       const y = (e.touches?e.touches[0].clientY:e.clientY) - rect.top;
-      ctx.beginPath();
-      ctx.arc(x, y, this._drawState.eraser?16:this._drawState.size, 0, Math.PI*2);
-      ctx.fillStyle = this._drawState.eraser ? '#FFFFFF' : this._drawState.color;
-      ctx.fill();
+      this._drawCtx.beginPath();
+      this._drawCtx.arc(x, y, this._drawState.eraser?18:this._drawState.size, 0, Math.PI*2);
+      this._drawCtx.fillStyle = this._drawState.eraser ? '#FFFFFF' : this._drawState.color;
+      this._drawCtx.fill();
     };
     canvas.addEventListener('mousedown', e=>{this._drawState.drawing=true;draw(e);});
     canvas.addEventListener('mousemove', draw);
@@ -1413,17 +1484,25 @@ class EduApp {
     canvas.addEventListener('touchend', ()=>this._drawState.drawing=false);
   }
 
+  drawLoadTemplate(idx) {
+    const tmpl = this._drawTemplates()[idx];
+    const ctx = this._drawCtx;
+    if (!ctx) return;
+    ctx.fillStyle = '#FFFFFF'; ctx.fillRect(0,0,320,400);
+    ctx.strokeStyle = '#BBBBBB'; ctx.lineWidth = 2; ctx.fillStyle = 'transparent';
+    tmpl.draw(ctx);
+    this.audio.speak(tmpl.name);
+  }
+
   drawSetColor(color, el) {
-    this._drawState.color = color;
-    this._drawState.eraser = false;
+    this._drawState.color = color; this._drawState.eraser = false;
     document.getElementById('eraserBtn')?.classList.remove('active');
     document.querySelectorAll('.draw-color').forEach(d=>d.classList.remove('active'));
     el.classList.add('active');
   }
 
   drawSetSize(size, el) {
-    this._drawState.size = size;
-    this._drawState.eraser = false;
+    this._drawState.size = size; this._drawState.eraser = false;
     document.getElementById('eraserBtn')?.classList.remove('active');
     document.querySelectorAll('.draw-size-btn:not(#eraserBtn)').forEach(d=>d.classList.remove('active'));
     el.classList.add('active');
