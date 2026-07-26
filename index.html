@@ -225,7 +225,27 @@ body {
 .number-line .tick:hover { color:var(--blue); transform:scale(1.2); font-weight:700; }
 .number-line .tick.highlight { color:var(--orange); font-size:16px; font-weight:800; }
 
-/* Responsive */
+/* ===== Spot the Difference ===== */
+.spot-area { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin:12px 0; }
+.spot-grid { display:grid; gap:4px; border:3px solid #EEE; border-radius:16px; padding:8px; background:white; }
+.spot-cell { width:48px; height:48px; font-size:32px; display:flex; align-items:center; justify-content:center; cursor:pointer; border-radius:8px; transition:all 0.15s; user-select:none; }
+.spot-cell:hover { background:#FFF3CD; transform:scale(1.15); }
+.spot-cell.found { background:#D4EDDA; border:2px solid #34C759; }
+.spot-cell.found::after { content:'✅'; position:absolute; font-size:20px; }
+.spot-cell.wrong { background:#FFE8E8; animation:shake 0.3s; }
+@keyframes shake { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-4px)} 75%{transform:translateX(4px)} }
+.spot-label { text-align:center; font-size:13px; color:#888; margin-bottom:4px; }
+.spot-score { font-size:18px; font-weight:700; color:var(--orange); margin:8px 0; }
+
+/* ===== Drawing Board ===== */
+.draw-toolbar { display:flex; align-items:center; gap:8px; flex-wrap:wrap; justify-content:center; padding:8px 0; }
+.draw-color { width:30px; height:30px; border-radius:50%; border:3px solid #DDD; cursor:pointer; transition:transform 0.15s; }
+.draw-color:hover { transform:scale(1.2); }
+.draw-color.active { border-color:#333; box-shadow:0 0 0 2px #333; }
+.draw-size-btn { padding:4px 12px; border-radius:14px; border:2px solid #DDD; background:white; cursor:pointer; font-size:13px; font-weight:600; }
+.draw-size-btn.active { border-color:var(--blue); background:#E8F4FF; }
+.draw-canvas-wrap { border:3px dashed #DDD; border-radius:16px; overflow:hidden; background:white; margin:8px auto; display:inline-block; }
+
 @media (max-width:500px) {
   .home-cards { grid-template-columns:1fr; }
   .cards-grid { grid-template-columns:repeat(auto-fill, minmax(80px,1fr)); gap:8px; }
@@ -277,6 +297,8 @@ body {
       <div class="sub-cards">
         <div class="sub-card" onclick="app.showGeneralTab('safety')" data-speak="安全教育"><span class="icon">🛡️</span><span class="label">安全教育</span></div>
         <div class="sub-card" onclick="app.showGeneralTab('science')" data-speak="科学常识"><span class="icon">🔬</span><span class="label">科学常识</span></div>
+        <div class="sub-card" onclick="app.showGeneralTab('spotdiff')" data-speak="火眼金睛"><span class="icon">🔍</span><span class="label">火眼金睛</span></div>
+        <div class="sub-card" onclick="app.showGeneralTab('drawing')" data-speak="创意画板"><span class="icon">🎨</span><span class="label">创意画板</span></div>
       </div>
       <div id="general-content"></div>
     </div>
@@ -1148,6 +1170,8 @@ class EduApp {
     const c = document.getElementById('general-content');
     if (t === 'safety') this.renderVocab(c, SAFETY);
     else if (t === 'science') this.renderVocab(c, SCIENCE);
+    else if (t === 'spotdiff') this.renderSpotDiff(c);
+    else if (t === 'drawing') this.renderDrawing(c);
   }
 
   // ============== PHONICS ==============
@@ -1278,6 +1302,144 @@ class EduApp {
       document.querySelectorAll('.quiz-option').forEach(b=>{if(parseInt(b.textContent)===correct)b.classList.add('correct');});
     }
     next.style.display='inline-block';
+  }
+
+  // ============== SPOT THE DIFFERENCE ==============
+  renderSpotDiff(container) {
+    const allEmojis = ['🐱','🐶','🐰','🐻','🐼','🦁','🐸','🐵','🐔','🐮','🐷','🐑','🐘','🐧','🐬','🦋','🐝','🐞','🦄','🐙','🦀','🐠','🦜','🐢','🦩'];
+    const size = 3;
+    const diffCount = 3;
+    
+    // Generate original grid
+    const grid = [];
+    for (let r=0; r<size; r++) { grid[r]=[]; for (let c=0; c<size; c++) grid[r][c]=allEmojis[Math.floor(Math.random()*allEmojis.length)]; }
+    
+    // Create modified grid with differences
+    const modGrid = grid.map(r=>[...r]);
+    const diffs = new Set();
+    while(diffs.size < diffCount) {
+      const r = Math.floor(Math.random()*size), c = Math.floor(Math.random()*size);
+      const key = `${r},${c}`;
+      if (!diffs.has(key)) {
+        diffs.add(key);
+        let newEmoji = allEmojis[Math.floor(Math.random()*allEmojis.length)];
+        while(newEmoji === grid[r][c]) newEmoji = allEmojis[Math.floor(Math.random()*allEmojis.length)];
+        modGrid[r][c] = newEmoji;
+      }
+    }
+    this._spotData = { diffs, found:new Set(), grid, modGrid, size };
+
+    const renderGrid = (g, label, clickable) => {
+      let h = `<div><div class="spot-label">${label}</div><div class="spot-grid" style="grid-template-columns:repeat(${size},1fr);">`;
+      for (let r=0; r<size; r++)
+        for (let c=0; c<size; c++)
+          h += `<div class="spot-cell" data-r="${r}" data-c="${c}" ${clickable?`onclick="app.spotClick(${r},${c},this)"`:''}>${g[r][c]}</div>`;
+      h += '</div></div>';
+      return h;
+    };
+
+    container.innerHTML = `<div class="quiz-area">
+      <h3>🔍 火眼金睛 —— 找不同</h3>
+      <div style="font-size:14px;color:#888;margin-bottom:4px;">右边有 ${diffCount} 处和左边不一样，找出来吧！</div>
+      <div class="spot-area">${renderGrid(grid,'原始图','')}${renderGrid(modGrid,'找不同','click')}</div>
+      <div class="spot-score" id="spotScore">已找到: 0 / ${diffCount}</div>
+      <button class="btn-next" onclick="app.renderGeneralTab()" style="display:none" id="spotNext">再来一局 🔄</button>
+    </div>`;
+  }
+
+  spotClick(r, c, el) {
+    if (!this._spotData) return;
+    const key = `${r},${c}`;
+    if (this._spotData.found.has(key)) return;
+    if (this._spotData.diffs.has(key)) {
+      el.classList.add('found');
+      this._spotData.found.add(key);
+      document.getElementById('spotScore').textContent = `已找到: ${this._spotData.found.size} / ${this._spotData.diffs.size}`;
+      this.audio.speak('答对了！太厉害了！');
+      if (this._spotData.found.size === this._spotData.diffs.size) {
+        document.getElementById('spotNext').style.display='inline-block';
+        this.celebrate();
+      }
+    } else {
+      el.classList.add('wrong');
+      setTimeout(()=>el.classList.remove('wrong'), 400);
+    }
+  }
+
+  // ============== DRAWING BOARD ==============
+  renderDrawing(container) {
+    const colors = ['#FF3B30','#FF9500','#FFD60A','#34C759','#007AFF','#5856D6','#AF52DE','#FF6B8A','#8E8E93','#2D3436','#FFFFFF','#A2845E'];
+    const sizes = [3,8,16];
+    container.innerHTML = `<div class="quiz-area" style="text-align:center;">
+      <h3>🎨 创意画板</h3>
+      <div class="draw-toolbar">
+        ${colors.map((c,i)=>`<div class="draw-color${i===0?' active':''}" style="background:${c}" data-color="${c}" onclick="app.drawSetColor('${c}',this)"></div>`).join('')}
+      </div>
+      <div class="draw-toolbar">
+        <span style="font-size:13px;color:#888;">画笔:</span>
+        ${sizes.map((s,i)=>`<button class="draw-size-btn${i===1?' active':''}" onclick="app.drawSetSize(${s},this)">${s===3?'细':s===8?'中':'粗'}</button>`).join('')}
+        <button class="draw-size-btn" id="eraserBtn" onclick="app.drawToggleEraser(this)">🧹 橡皮</button>
+        <button class="btn-next" onclick="app.drawClear()" style="font-size:13px;padding:4px 12px;">🗑️ 清空</button>
+      </div>
+      <div class="draw-canvas-wrap"><canvas id="drawCanvas" width="320" height="400" style="touch-action:none;cursor:crosshair;"></canvas></div>
+    </div>`;
+    setTimeout(()=>this.initDrawing(), 50);
+  }
+
+  initDrawing() {
+    const canvas = document.getElementById('drawCanvas');
+    if (!canvas || canvas._inited) return;
+    canvas._inited = true;
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#FFFFFF'; ctx.fillRect(0,0,canvas.width,canvas.height);
+    this._drawState = { color:'#FF3B30', size:8, eraser:false, drawing:false };
+
+    const draw = (e) => {
+      if (!this._drawState.drawing) return;
+      const rect = canvas.getBoundingClientRect();
+      const x = (e.touches?e.touches[0].clientX:e.clientX) - rect.left;
+      const y = (e.touches?e.touches[0].clientY:e.clientY) - rect.top;
+      ctx.beginPath();
+      ctx.arc(x, y, this._drawState.eraser?16:this._drawState.size, 0, Math.PI*2);
+      ctx.fillStyle = this._drawState.eraser ? '#FFFFFF' : this._drawState.color;
+      ctx.fill();
+    };
+    canvas.addEventListener('mousedown', e=>{this._drawState.drawing=true;draw(e);});
+    canvas.addEventListener('mousemove', draw);
+    canvas.addEventListener('mouseup', ()=>this._drawState.drawing=false);
+    canvas.addEventListener('mouseleave', ()=>this._drawState.drawing=false);
+    canvas.addEventListener('touchstart', e=>{e.preventDefault();this._drawState.drawing=true;draw(e);});
+    canvas.addEventListener('touchmove', e=>{e.preventDefault();draw(e);});
+    canvas.addEventListener('touchend', ()=>this._drawState.drawing=false);
+  }
+
+  drawSetColor(color, el) {
+    this._drawState.color = color;
+    this._drawState.eraser = false;
+    document.getElementById('eraserBtn')?.classList.remove('active');
+    document.querySelectorAll('.draw-color').forEach(d=>d.classList.remove('active'));
+    el.classList.add('active');
+  }
+
+  drawSetSize(size, el) {
+    this._drawState.size = size;
+    this._drawState.eraser = false;
+    document.getElementById('eraserBtn')?.classList.remove('active');
+    document.querySelectorAll('.draw-size-btn:not(#eraserBtn)').forEach(d=>d.classList.remove('active'));
+    el.classList.add('active');
+  }
+
+  drawToggleEraser(el) {
+    this._drawState.eraser = !this._drawState.eraser;
+    el.classList.toggle('active', this._drawState.eraser);
+    document.querySelectorAll('.draw-color, .draw-size-btn:not(#eraserBtn)').forEach(d=>d.classList.remove('active'));
+  }
+
+  drawClear() {
+    const canvas = document.getElementById('drawCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#FFFFFF'; ctx.fillRect(0,0,canvas.width,canvas.height);
   }
 
   renderAlphabet(container) {
