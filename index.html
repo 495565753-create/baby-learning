@@ -23,10 +23,10 @@ body {
 /* Subtle floating orbs */
 body::before, body::after {
   content:''; position:fixed; border-radius:50%; pointer-events:none; z-index:0; opacity:0.08;
-  animation: orbFloat 20s ease-in-out infinite;
+  animation: orbFloat 60s ease-in-out infinite;
 }
 body::before { width:400px;height:400px;background:var(--blue);top:-100px;left:-100px;animation-delay:0s; }
-body::after  { width:350px;height:350px;background:var(--pink);bottom:-80px;right:-80px;animation-delay:-10s; }
+body::after  { width:350px;height:350px;background:var(--pink);bottom:-80px;right:-80px;animation-delay:-30s; }
 @keyframes orbFloat { 0%,100% { transform:translate(0,0) scale(1); } 50% { transform:translate(40px,30px) scale(1.15); } }
 
 /* Floating emojis */
