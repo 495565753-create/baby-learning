@@ -1305,50 +1305,16 @@ class EduApp {
   }
 
   // ============== SPOT THE DIFFERENCE v3 — 真实图片 ==============
-  _spotSceneData() {
-    // Each scene: {name, img (base name), diffs: [{x,y,r,label}]}
-    return [
-      {name:'🏠 快乐农场',img:'farm',diffs:[
-        {x:170,y:195,r:25},{x:320,y:200,r:40},{x:300,y:220,r:35},{x:340,y:50,r:20}
-      ]},
-      {name:'🌊 海底世界',img:'ocean',diffs:[
-        {x:345,y:45,r:22},{x:250,y:195,r:30},{x:230,y:230,r:25},{x:150,y:195,r:40}
-      ]},
-      {name:'🏙️ 城市街景',img:'city',diffs:[
-        {x:50,y:150,r:40},{x:100,y:190,r:35},{x:290,y:190,r:30}
-      ]},
-      {name:'🚀 太空探险',img:'space',diffs:[
-        {x:310,y:60,r:30},{x:95,y:75,r:30},{x:230,y:230,r:30},{x:170,y:115,r:25}
-      ]},
-      {name:'🌸 美丽花园',img:'garden',diffs:[
-        {x:190,y:200,r:30},{x:240,y:95,r:30},{x:325,y:185,r:30},{x:320,y:50,r:20}
-      ]},
-      {name:'🎪 欢乐公园',img:'park',diffs:[
-        {x:60,y:210,r:30},{x:170,y:250,r:40},{x:40,y:205,r:25},{x:300,y:70,r:25}
-      ]},
-      {name:'🍳 美味厨房',img:'kitchen',diffs:[
-        {x:85,y:112,r:25},{x:185,y:115,r:25},{x:230,y:118,r:30},{x:285,y:115,r:30}
-      ]},
-      {name:'🏔️ 高山风景',img:'mountain',diffs:[
-        {x:125,y:180,r:35},{x:330,y:40,r:20},{x:160,y:235,r:20},{x:80,y:70,r:25}
-      ]},
-      {name:'🏖️ 阳光沙滩',img:'beach',diffs:[
-        {x:195,y:125,r:25},{x:160,y:220,r:25},{x:260,y:35,r:20}
-      ]},
-      {name:'🎄 圣诞快乐',img:'christmas',diffs:[
-        {x:185,y:120,r:20},{x:70,y:200,r:35},{x:335,y:55,r:30}
-      ]},
-    ];
-  }
+  _spotSceneData() { return [{"name":"🏠 快乐农场","img":"farm","differences":[{"x":155,"y":205,"w":50,"h":30,"desc":"少一朵花"},{"x":310,"y":195,"w":40,"h":30,"desc":"小猫不见了"},{"x":280,"y":215,"w":40,"h":35,"desc":"树变大了"},{"x":320,"y":35,"w":25,"h":25,"desc":"太阳变小了"},{"x":65,"y":30,"w":40,"h":30,"desc":"云彩变大"}]},{"name":"🌊 海底世界","img":"ocean","differences":[{"x":325,"y":35,"w":25,"h":25,"desc":"太阳变小"},{"x":115,"y":155,"w":50,"h":30,"desc":"帆船颜色变"},{"x":90,"y":235,"w":30,"h":15,"desc":"鱼消失了"},{"x":270,"y":228,"w":30,"h":15,"desc":"鱼颜色变了"},{"x":45,"y":20,"w":35,"h":25,"desc":"云不见了"}]},{"name":"🏙️ 城市街景","img":"city","differences":[{"x":20,"y":130,"w":48,"h":70,"desc":"楼变红色"},{"x":80,"y":178,"w":45,"h":22,"desc":"车不见了"},{"x":270,"y":185,"w":35,"h":25,"desc":"树变大了"},{"x":325,"y":32,"w":22,"h":22,"desc":"太阳变小"}]},{"name":"🚀 太空探险","img":"space","differences":[{"x":275,"y":35,"w":55,"h":55,"desc":"行星颜色变"},{"x":65,"y":35,"w":55,"h":55,"desc":"行星消失"},{"x":215,"y":185,"w":55,"h":55,"desc":"黄色行星变小"},{"x":148,"y":125,"w":37,"h":25,"desc":"火箭头变蓝"}]},{"name":"🌸 美丽花园","img":"garden","differences":[{"x":185,"y":95,"w":40,"h":40,"desc":"蝴蝶位置变了"},{"x":310,"y":175,"w":30,"h":25,"desc":"兔子不见了"},{"x":140,"y":195,"w":40,"h":25,"desc":"花变少了"},{"x":295,"y":30,"w":35,"h":25,"desc":"云变小了"}]},{"name":"🎄 圣诞快乐","img":"christmas","differences":[{"x":172,"y":58,"w":20,"h":20,"desc":"星星变红色"},{"x":50,"y":190,"w":30,"h":50,"desc":"雪人不见了"},{"x":290,"y":20,"w":70,"h":70,"desc":"月亮消失了"}]},{"name":"🎪 欢乐公园","img":"park","differences":[{"x":50,"y":205,"w":30,"h":25,"desc":"树变矮了"},{"x":135,"y":230,"w":85,"h":50,"desc":"池塘变大了"},{"x":30,"y":198,"w":35,"h":25,"desc":"猫消失了"},{"x":295,"y":65,"w":30,"h":20,"desc":"鸟换了位置"}]},{"name":"🍳 美味厨房","img":"kitchen","differences":[{"x":60,"y":80,"w":50,"h":50,"desc":"苹果变绿"},{"x":180,"y":78,"w":44,"h":50,"desc":"牛奶变粉红"},{"x":215,"y":90,"w":35,"h":35,"desc":"鸡蛋不见了"},{"x":265,"y":85,"w":40,"h":30,"desc":"面包变小"}]},{"name":"🏖️ 阳光沙滩","img":"beach","differences":[{"x":155,"y":95,"w":70,"h":55,"desc":"伞变蓝色"},{"x":135,"y":200,"w":30,"h":20,"desc":"球消失了"},{"x":320,"y":25,"w":30,"h":25,"desc":"云变小了"}]},{"name":"🌲 森林动物","img":"forest","differences":[{"x":110,"y":195,"w":35,"h":30,"desc":"树消失了"},{"x":190,"y":180,"w":40,"h":30,"desc":"大树变矮"},{"x":340,"y":188,"w":25,"h":22,"desc":"兔子不见了"},{"x":90,"y":25,"w":30,"h":25,"desc":"云变大"}]}]; }
 
   renderSpotDiff(container) {
     const scenes = this._spotSceneData();
     const s = scenes[Math.floor(Math.random()*scenes.length)];
-    this._spotData = { diffs:s.diffs, found:new Set(), total:s.diffs.length };
+    this._spotData = { diffs:s.differences, found:new Set(), total:s.differences.length };
 
     container.innerHTML = `<div class="quiz-area" style="text-align:center;">
       <h3>🔍 找茬游戏 —— ${s.name}</h3>
-      <div style="font-size:14px;color:#888;margin:4px 0;">左右两图有 <b>${s.diffs.length}</b> 处不同，在右图上点击找出来！</div>
+      <div style="font-size:14px;color:#888;margin:4px 0;">左右两图有 <b>${s.differences.length}</b> 处不同，在右图上点击找出来！</div>
       <div class="spot-area" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
         <div><div class="spot-label">原图</div><img src="img/spotdiff/${s.img}_orig.png" style="width:100%;max-width:360px;border-radius:12px;border:2px solid #EEE;" alt="原图"></div>
         <div style="position:relative;display:inline-block;" onclick="app.spotImageClick(event,this)">
@@ -1374,8 +1340,7 @@ class EduApp {
     let hit = null;
     for (let i = 0; i < this._spotData.diffs.length; i++) {
       const d = this._spotData.diffs[i];
-      const dx = cx - d.x, dy = cy - d.y;
-      if (Math.sqrt(dx*dx+dy*dy) < d.r*1.5) { hit = i; break; }
+      if (cx >= d.x-5 && cx <= d.x+d.w+5 && cy >= d.y-5 && cy <= d.y+d.h+5) { hit = i; break; }
     }
     if (hit === null) return;
 
@@ -1385,9 +1350,9 @@ class EduApp {
     // Show circle on the image
     const markers = document.getElementById('spotMarkers');
     const d = this._spotData.diffs[hit];
-    const mx = (d.x / 400 * 100) + '%';
-    const my = (d.y / 300 * 100) + '%';
-    const mr = (d.r / 4) + 'px';
+    const mx = ((d.x + d.w/2) / 400 * 100) + '%';
+    const my = ((d.y + d.h/2) / 300 * 100) + '%';
+    const mr = Math.max(d.w, d.h) * 0.3 + 'px';
     const mark = document.createElement('div');
     mark.style.cssText = `position:absolute;left:${mx};top:${my};width:${mr};height:${mr};border:3px solid #34C759;border-radius:50%;background:rgba(52,199,89,0.2);transform:translate(-50%,-50%);`;
     markers.appendChild(mark);
