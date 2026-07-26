@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>找茬标记工具</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,sans-serif;background:#F5F5F5;padding:16px;min-height:100vh;}
+h1{font-size:20px;margin-bottom:8px;text-align:center;}
+.step{background:white;border-radius:16px;padding:20px;margin-bottom:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
+.step h3{margin-bottom:8px;}
+.input-row{display:flex;gap:8px;align-items:center;margin:8px 0;}
+.input-row label{font-weight:600;min-width:80px;}
+.input-row input{border:2px solid #DDD;border-radius:8px;padding:6px 10px;font-size:14px;width:200px;}
+.file-area{border:3px dashed #CCC;border-radius:12px;padding:24px;text-align:center;cursor:pointer;margin:8px 0;transition:border 0.2s;}
+.file-area:hover{border-color:#007AFF;}
+.file-area img{max-width:100%;max-height:200px;display:block;margin:8px auto;border-radius:8px;}
+.canvas-wrap{position:relative;display:inline-block;cursor:crosshair;border:3px solid #FF9500;border-radius:8px;overflow:hidden;}
+.canvas-wrap canvas{display:block;}
+.diff-list{margin:8px 0;}
+.diff-item{display:flex;align-items:center;gap:8px;padding:6px 10px;background:#FFF3CD;border-radius:8px;margin:4px 0;font-size:13px;}
+.diff-item button{background:#FF3B30;color:white;border:none;border-radius:50%;width:22px;height:22px;cursor:pointer;font-weight:bold;}
+.btn{background:#007AFF;color:white;border:none;border-radius:20px;padding:10px 24px;font-size:15px;font-weight:600;cursor:pointer;transition:all 0.2s;}
+.btn:hover{transform:scale(1.03);}
+.btn.copy{background:#34C759;}
+.output{background:#F0F0F0;border-radius:12px;padding:16px;font-family:monospace;font-size:12px;max-height:300px;overflow:auto;white-space:pre-wrap;word-break:break-all;}
+.flex{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;}
+</style>
+</head>
+<body>
+
+<h1>🔍 找茬标记工具</h1>
+<p style="text-align:center;color:#888;margin-bottom:16px;">用 Tux Paint 画好两幅图后，用这个工具标记差异位置</p>
+
+<div class="step">
+  <h3>📸 第1步：上传两幅图</h3>
+  <div class="flex">
+    <div style="flex:1;min-width:250px;">
+      <div class="file-area" onclick="document.getElementById('origInput').click()">
+        <span id="origLabel">📷 点击上传原图</span>
+        <img id="origPreview" style="display:none;">
+      </div>
+      <input type="file" id="origInput" accept="image/*" style="display:none;" onchange="loadImage(this,'orig')">
+    </div>
+    <div style="flex:1;min-width:250px;">
+      <div class="file-area" onclick="document.getElementById('diffInput').click()">
+        <span id="diffLabel">🔍 点击上传找茬版（有不同）</span>
+        <img id="diffPreview" style="display:none;">
+      </div>
+      <input type="file" id="diffInput" accept="image/*" style="display:none;" onchange="loadImage(this,'diff')">
+    </div>
+  </div>
+</div>
+
+<div class="step" id="step2" style="display:none;">
+  <h3>✏️ 第2步：在找茬图上拉框标记差异</h3>
+  <p style="font-size:13px;color:#888;margin-bottom:8px;">在图片上按住拖动画矩形框，框住和原图不一样的地方</p>
+  <div style="text-align:center;">
+    <div class="canvas-wrap" id="canvasWrap"></div>
+  </div>
+  <div class="diff-list" id="diffList"></div>
+  <button class="btn" onclick="undoDiff()" style="margin-right:8px;">↩ 撤销上一个</button>
+  <button class="btn" onclick="clearDiffs()">🗑️ 清除全部</button>
+</div>
+
+<div class="step" id="step3" style="display:none;">
+  <h3>📝 第3步：输入场景名称</h3>
+  <div class="input-row">
+    <label>场景名：</label>
+    <input type="text" id="sceneName" placeholder="如: 🏠 我的农场" style="width:250px;">
+  </div>
+  <div class="input-row">
+    <label>文件名：</label>
+    <input type="text" id="sceneFile" placeholder="如: my_farm" style="width:250px;">
+  </div>
+</div>
+
+<div class="step" id="step4" style="display:none;">
+  <h3>📋 第4步：获取配置</h3>
+  <div class="output" id="output"></div>
+  <br>
+  <button class="btn copy" onclick="copyOutput()">📋 复制配置</button>
+  <span id="copyMsg" style="color:#34C759;margin-left:8px;display:none;">✅ 已复制</span>
+</div>
+
+<script>
+let diffs=[], origImg=null, diffImg=null, diffCanvas=null, drawing=false, startX=0, startY=0;
+let imgScale=1, imgOffX=0, imgOffY=0, imgW=0, imgH=0;
+
+function loadImage(input, type) {
+  const file=input.files[0]; if(!file) return;
+  const reader=new FileReader();
+  reader.onload=e=>{
+    const img=new Image(); img.onload=()=>{
+      if(type==='orig'){ origImg=img; showPreview('orig',e.target.result); }
+      else{ diffImg=img; showPreview('diff',e.target.result); setupCanvas(); }
+    };
+    img.src=e.target.result;
+    if(type==='diff' && !document.getElementById('sceneFile').value){
+      document.getElementById('sceneFile').value=file.name.replace(/\.[^.]+$/,'');
+    }
+  };
+  reader.readAsDataURL(file);
+}
+
+function showPreview(type,src) {
+  const label=document.getElementById(type+'Label');
+  const preview=document.getElementById(type+'Preview');
+  label.style.display='none';
+  preview.style.display='block';
+  preview.src=src;
+}
+
+function setupCanvas() {
+  if(!diffImg) return;
+  const wrap=document.getElementById('canvasWrap');
+  wrap.innerHTML='';
+  const canvas=document.createElement('canvas');
+  diffCanvas=canvas;
+  
+  const maxW=Math.min(600,window.innerWidth-40);
+  imgScale=maxW/diffImg.width;
+  imgW=diffImg.width*imgScale;
+  imgH=diffImg.height*imgScale;
+  imgOffX=0; imgOffY=0;
+  
+  canvas.width=imgW; canvas.height=imgH;
+  canvas.style.width=imgW+'px'; canvas.style.height=imgH+'px';
+  wrap.appendChild(canvas);
+  
+  const ctx=canvas.getContext('2d');
+  ctx.drawImage(diffImg,0,0,imgW,imgH);
+  drawExistingDiffs(ctx);
+  
+  canvas.addEventListener('mousedown',e=>{
+    const rect=canvas.getBoundingClientRect();
+    startX=(e.clientX-rect.left)/imgScale*imgScale;
+    startY=(e.clientY-rect.top)/imgScale*imgScale;
+    drawing=true;
+  });
+  canvas.addEventListener('mousemove',e=>{
+    if(!drawing) return;
+    const rect=canvas.getBoundingClientRect();
+    const cx=(e.clientX-rect.left)/imgScale*imgScale;
+    const cy=(e.clientY-rect.top)/imgScale*imgScale;
+    const ctx=canvas.getContext('2d');
+    ctx.drawImage(diffImg,0,0,imgW,imgH);
+    drawExistingDiffs(ctx);
+    ctx.strokeStyle='#34C759'; ctx.lineWidth=2; ctx.setLineDash([6,3]);
+    ctx.strokeRect(startX,startY,cx-startX,cy-startY);
+  });
+  canvas.addEventListener('mouseup',e=>{
+    if(!drawing) return;
+    drawing=false;
+    const rect=canvas.getBoundingClientRect();
+    const ex=(e.clientX-rect.left)/imgScale*imgScale;
+    const ey=(e.clientY-rect.top)/imgScale*imgScale;
+    const rx=Math.min(startX,ex), ry=Math.min(startY,ey);
+    const rw=Math.abs(ex-startX), rh=Math.abs(ey-startY);
+    if(rw>5 && rh>5) {
+      const desc=prompt('这个差异是什么？（如: 花颜色变了）','差异'+(diffs.length+1));
+      diffs.push({x:Math.round(rx/imgScale),y:Math.round(ry/imgScale),w:Math.round(rw/imgScale),h:Math.round(rh/imgScale),desc:desc||'差异'+(diffs.length+1)});
+      updateDiffList();
+      const ctx=canvas.getContext('2d');
+      ctx.drawImage(diffImg,0,0,imgW,imgH);
+      drawExistingDiffs(ctx);
+    }
+    const ctx=canvas.getContext('2d');
+    ctx.drawImage(diffImg,0,0,imgW,imgH);
+    drawExistingDiffs(ctx);
+  });
+  
+  document.getElementById('step2').style.display='block';
+}
+
+function drawExistingDiffs(ctx) {
+  diffs.forEach((d,i)=>{
+    ctx.strokeStyle='#34C759'; ctx.lineWidth=2; ctx.setLineDash([]);
+    ctx.strokeRect(d.x*imgScale,d.y*imgScale,d.w*imgScale,d.h*imgScale);
+    ctx.fillStyle='rgba(52,199,89,0.15)';
+    ctx.fillRect(d.x*imgScale,d.y*imgScale,d.w*imgScale,d.h*imgScale);
+    ctx.fillStyle='#34C759'; ctx.font='bold 14px sans-serif';
+    ctx.fillText('✅'+(i+1),d.x*imgScale+2,d.y*imgScale+14);
+  });
+}
+
+function updateDiffList() {
+  const list=document.getElementById('diffList');
+  list.innerHTML=diffs.map((d,i)=>`
+    <div class="diff-item">
+      <span>✅${i+1} [${d.x},${d.y} ${d.w}×${d.h}] ${d.desc}</span>
+      <button onclick="diffs.splice(${i},1);updateDiffList();refreshCanvas();">×</button>
+    </div>
+  `).join('');
+  document.getElementById('step3').style.display='block';
+  generateOutput();
+}
+
+function refreshCanvas() {
+  if(!diffCanvas) return;
+  const ctx=diffCanvas.getContext('2d');
+  ctx.drawImage(diffImg,0,0,imgW,imgH);
+  drawExistingDiffs(ctx);
+}
+
+function undoDiff() { if(diffs.length>0){diffs.pop();updateDiffList();refreshCanvas();} }
+function clearDiffs() { diffs=[]; updateDiffList(); refreshCanvas(); }
+
+function generateOutput() {
+  const name=document.getElementById('sceneName').value||'新场景';
+  const file=document.getElementById('sceneFile').value||'scene';
+  const entry={name:name,img:file,differences:diffs.map(d=>({x:d.x,y:d.y,w:d.w,h:d.h,desc:d.desc}))};
+  document.getElementById('output').textContent=JSON.stringify(entry,null,2);
+  document.getElementById('step4').style.display='block';
+}
+
+document.getElementById('sceneName').addEventListener('input',generateOutput);
+document.getElementById('sceneFile').addEventListener('input',generateOutput);
+
+function copyOutput() {
+  const text=document.getElementById('output').textContent;
+  navigator.clipboard.writeText(text).then(()=>{
+    const msg=document.getElementById('copyMsg');
+    msg.style.display='inline'; setTimeout(()=>msg.style.display='none',2000);
+  });
+}
+</script>
+</body>
+</html>
