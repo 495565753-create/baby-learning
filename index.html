@@ -846,7 +846,33 @@ class EduApp {
   showMathTab(tab) {
     this.audio.cancel();
     this.state.mathTab = tab;
+    // Hide sub-cards, show content
+    const subCards = document.querySelector('#page-math .sub-cards');
+    const content = document.getElementById('math-content');
+    if (subCards) subCards.style.display = 'none';
+    if (content) { content.style.display = 'block'; content.innerHTML = '<div style="text-align:center;padding:40px;color:#888;">加载中...</div>'; }
     this.renderMathTab();
+    // Add back button for sub-menu
+    if (!document.getElementById('mathBack')) {
+      const backBtn = document.createElement('button');
+      backBtn.id = 'mathBack';
+      backBtn.className = 'btn-back';
+      backBtn.textContent = '⬅ 返回数学菜单';
+      backBtn.onclick = () => this.showMathMenu();
+      backBtn.style.marginBottom = '8px';
+      content.parentNode.insertBefore(backBtn, content);
+    } else {
+      document.getElementById('mathBack').style.display = 'inline-flex';
+    }
+  }
+  
+  showMathMenu() {
+    const subCards = document.querySelector('#page-math .sub-cards');
+    const content = document.getElementById('math-content');
+    if (subCards) subCards.style.display = '';
+    if (content) content.style.display = 'none';
+    const backBtn = document.getElementById('mathBack');
+    if (backBtn) backBtn.style.display = 'none';
   }
 
   renderMathTab() {
@@ -1202,7 +1228,31 @@ class EduApp {
   showEnglishTab(tab) {
     this.audio.cancel();
     this.state.englishTab = tab;
+    const subCards = document.querySelector('#page-english .sub-cards');
+    const content = document.getElementById('english-content');
+    if (subCards) subCards.style.display = 'none';
+    if (content) { content.style.display = 'block'; content.innerHTML = '<div style="text-align:center;padding:40px;color:#888;">加载中...</div>'; }
     this.renderEnglishTab();
+    if (!document.getElementById('engBack')) {
+      const backBtn = document.createElement('button');
+      backBtn.id = 'engBack';
+      backBtn.className = 'btn-back';
+      backBtn.textContent = '⬅ 返回英语菜单';
+      backBtn.onclick = () => this.showEnglishMenu();
+      backBtn.style.marginBottom = '8px';
+      content.parentNode.insertBefore(backBtn, content);
+    } else {
+      document.getElementById('engBack').style.display = 'inline-flex';
+    }
+  }
+  
+  showEnglishMenu() {
+    const subCards = document.querySelector('#page-english .sub-cards');
+    const content = document.getElementById('english-content');
+    if (subCards) subCards.style.display = '';
+    if (content) content.style.display = 'none';
+    const backBtn = document.getElementById('engBack');
+    if (backBtn) backBtn.style.display = 'none';
   }
 
   renderEnglishTab() {
