@@ -645,6 +645,28 @@ const STORIES = [{
     {text:'画画时间到了，佩奇用彩笔画了一朵大大的太阳花。她把画送给老师，老师夸她画得真漂亮。', kw:'draw', img:'img/story1/page5.png', audio:'audio/story1/page5_zh.mp3'},
     {text:'午饭香喷喷的，佩奇和大家一起吃三明治和水果。放学时，佩奇对妈妈开心地说：幼儿园真好玩，我明天还要来！', kw:'goodbye', img:'img/story1/page6.png', audio:'audio/story1/page6_zh.mp3'},
   ]
+}, {
+  id: 'paw1', title: '汪汪队：大火救援', icon: '🐶',
+  coverImg: 'img/paw/cover.png',
+  pages: [
+    {text:'莱德和汪汪队在瞭望塔里玩耍。突然，电话铃响了，莱德赶紧接起电话。', kw:'瞭望塔 电话 着火', img:'img/paw/page1.png', audio:'audio/paw/page1_zh.mp3'},
+    {text:'不好了，城中心的大楼着火了！火苗呼呼地往上蹿，浓烟滚滚。', kw:'大楼 着火 浓烟', img:'img/paw/page2.png', audio:'audio/paw/page2_zh.mp3'},
+    {text:'毛毛立刻跳上消防车，呜哇呜哇开向火场。天天开着直升机，在空中紧紧跟着。', kw:'消防车 直升机 出发', img:'img/paw/page3.png', audio:'audio/paw/page3_zh.mp3'},
+    {text:'阿奇大声喊：请大家不要慌，跟我走！路马举起水炮，对准大火用力喷水。', kw:'疏导 人群 水炮', img:'img/paw/page4.png', audio:'audio/paw/page4_zh.mp3'},
+    {text:'大家齐心协力，水花哗啦啦地浇灭了大火。大楼终于安全了，没有人受伤。', kw:'齐心协力 灭火 安全', img:'img/paw/page5.png', audio:'audio/paw/page5_zh.mp3'},
+    {text:'大火扑灭啦！市长给汪汪队颁发了奖章，大家都为他们鼓掌欢呼。汪汪队真棒！', kw:'奖章 英雄 鼓掌', img:'img/paw/page6.png', audio:'audio/paw/page6_zh.mp3'},
+  ]
+}, {
+  id: 'judy1', title: '朱迪的交通大救援', icon: '🐰',
+  coverImg: 'img/judy/cover.png',
+  pages: [
+    {text:'兔子警官朱迪在动物城巡逻，开着警车在街道上慢慢地走，看着小动物们来来往往。', kw:'巡逻 警车 动物城', img:'img/judy/page1.png', audio:'audio/judy/page1_zh.mp3'},
+    {text:'哎呀，前面怎么堵车了？长长的车队一动也不动，喇叭嘀嘀嘀响个不停。', kw:'堵车 街道 喇叭', img:'img/judy/page2.png', audio:'audio/judy/page2_zh.mp3'},
+    {text:'朱迪走上前一看，原来是一只小羊的推车坏了，正好堵在路中间，小羊急得团团转。', kw:'推车 坏掉 小羊', img:'img/judy/page3.png', audio:'audio/judy/page3_zh.mp3'},
+    {text:'别着急，我来帮你！朱迪拿出工具，叮叮当当几下就把推车修好了。', kw:'修理 工具 帮助', img:'img/judy/page4.png', audio:'audio/judy/page4_zh.mp3'},
+    {text:'朱迪站在路中间，认真地指挥交通。一辆辆车子又开始动起来，道路恢复了通畅。', kw:'指挥 交通 通畅', img:'img/judy/page5.png', audio:'audio/judy/page5_zh.mp3'},
+    {text:'小羊开心地说：谢谢你，朱迪！朱迪笑着说：帮助别人是我最快乐的事！大家继续快乐地出发啦。', kw:'谢谢 快乐 帮助', img:'img/judy/page6.png', audio:'audio/judy/page6_zh.mp3'},
+  ]
 }];
 
 
@@ -1185,15 +1207,32 @@ class EduApp {
 
   // ==================== STORYBOOK READER ====================
   renderStory() {
-    this._storyIdx = 0;
+    const c = document.getElementById('story-content');
+    let h = '<div class="cards-grid" style="gap:14px;">';
+    STORIES.forEach((s,i) => {
+      h += `<div class="item-card" onclick="app.openStory(${i})" style="min-height:100px;">
+        <div class="emoji-block" style="font-size:40px;">${s.icon}</div>
+        <div class="word">${s.title}</div>
+        <div class="meaning">${s.pages.length} 页 · AI插图+语音</div>
+      </div>`;
+    });
+    h += '</div>';
+    c.innerHTML = `<div class="quiz-area">
+      <h3>📖 故事书</h3>
+      <div style="font-size:14px;color:#888;margin-bottom:8px;">选一个故事开始阅读吧！</div>
+      ${h}
+    </div>`;
+  }
+
+  openStory(idx) {
+    this._storyIdx = idx;
     this._storyPage = 0;
-    const s = STORIES[this._storyIdx];
     const c = document.getElementById('story-content');
     c.innerHTML = `<div class="quiz-area" style="text-align:center;padding:0;overflow:hidden;">
-      <div id="storyReader" style="position:relative;min-height:500px;">
-        ${this._renderStoryPage()}
-      </div>
+      <button class="btn-back" onclick="app.renderStory()" style="margin-bottom:8px;">📚 故事列表</button>
+      <div id="storyReader">${this._renderStoryPage()}</div>
     </div>`;
+    setTimeout(()=>this.storySpeak(), 600);
   }
 
   _renderStoryPage() {
