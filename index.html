@@ -266,7 +266,7 @@ body::after  { width:350px;height:350px;background:var(--pink);bottom:-80px;righ
     <h1>🌟 宝宝启蒙学习</h1>
     <div class="actions">
       <button class="btn-icon" id="btnMute" title="声音开关">🔊</button>
-      <button class="btn-back" id="btnHome" style="display:none;">🏠 首页</button>
+      <button class="btn-back" id="btnHome" style="display:none;">⬅ 返回</button>
     </div>
   </div>
 
@@ -768,7 +768,7 @@ class EduApp {
       const muted = this.audio.toggleMute();
       document.getElementById('btnMute').textContent = muted ? '🔇' : '🔊';
     });
-    document.getElementById('btnHome').addEventListener('click', () => this.navigate('home'));
+    document.getElementById('btnHome').addEventListener('click', () => this.goBack());
   }
 
   renderFloaties() {
@@ -810,14 +810,36 @@ class EduApp {
   navigate(page) {
     this.audio.cancel();
     this._lastHovered = null;
+    this._pageHistory = this._pageHistory || [];
+    if (page !== 'home') this._pageHistory.push(page);
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     const target = document.getElementById('page-'+page);
     if (target) target.classList.add('active');
-    document.getElementById('btnHome').style.display = page==='home' ? 'none' : 'inline-flex';
+    document.getElementById('btnHome').style.display = 'inline-flex';
     if (page === 'math') this.renderMathTab();
     if (page === 'english') this.renderEnglishTab();
     if (page === 'general') this.renderGeneralTab();
     if (page === 'story') this.renderStory();
+  }
+  
+  goBack() {
+    this._pageHistory = this._pageHistory || [];
+    if (this._pageHistory.length > 0) {
+      const prev = this._pageHistory.pop();
+      // Don't push to history when going back
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      const target = document.getElementById('page-'+prev);
+      if (target) target.classList.add('active');
+      if (prev === 'math') this.renderMathTab();
+      if (prev === 'english') this.renderEnglishTab();
+      if (prev === 'general') this.renderGeneralTab();
+      if (prev === 'story') this.renderStory();
+      if (this._pageHistory.length === 0) {
+        document.getElementById('btnHome').style.display = 'none';
+      }
+    } else {
+      this.navigate('home');
+    }
   }
 
   // ==================== MATH ====================
@@ -1302,7 +1324,7 @@ class EduApp {
           <button class="btn-next" ${p===0?'disabled style="opacity:0.4"':''} onclick="app.storyPrev()">⬅ 上一页</button>
           <button class="btn-next" ${p>=total-1?'disabled style="opacity:0.4"':''} onclick="app.storyNext()">下一页 ➡</button>
         </div>
-        <button class="btn-back" onclick="app.navigate('home')" style="margin-top:8px;">🏠 回到首页</button>
+        <button class="btn-back" onclick="app.goBack()" style="margin-top:8px;">⬅ 返回</button>
       </div>`;
   }
 
