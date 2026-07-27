@@ -1529,7 +1529,7 @@ class EduApp {
     const my = ((d.y + d.h/2) / 600 * 100) + '%';
     const mr = Math.max(d.w, d.h) * 0.3 + 'px';
     const mark = document.createElement('div');
-    mark.style.cssText = `position:absolute;left:${mx};top:${my};width:${mr};height:${mr};border:3px solid #34C759;border-radius:50%;background:rgba(52,199,89,0.2);transform:translate(-50%,-50%);`;
+    mark.style.cssText = `position:absolute;left:${mx};top:${my};width:${mr};height:${mr};border:3px solid #34C759;border-radius:50%;background:rgba(52,199,89,0.2);transform:translate(-50%,-50%);pointer-events:none;`;
     markers.appendChild(mark);
 
     document.getElementById('spotScore').textContent = `✅ 已找到: ${this._spotData.found.size} / ${this._spotData.total}`;
@@ -1606,9 +1606,9 @@ class EduApp {
       const fillG = parseInt(fillHex.slice(3,5),16);
       const fillB = parseInt(fillHex.slice(5,7),16);
       
-      // Don't fill if same color or if clicking on outline (dark pixels)
-      const isDark = targetR < 60 && targetG < 60 && targetB < 60;
-      if (isDark) return;  // Don't paint over outlines
+      // Don't fill if clicking on outline (dark pixels) or already the target color
+      const isDark = (targetR < 80 && targetG < 80 && targetB < 80);
+      if (isDark) return;
       if (Math.abs(targetR - fillR) < 5 && Math.abs(targetG - fillG) < 5 && Math.abs(targetB - fillB) < 5) return;
       
       // Save undo state
@@ -1630,7 +1630,9 @@ class EduApp {
         const pr = pixels[pi], pg = pixels[pi+1], pb = pixels[pi+2];
         if (Math.abs(pr - targetR) > tolerance || Math.abs(pg - targetG) > tolerance || Math.abs(pb - targetB) > tolerance) continue;
         visited[ci] = 1; filled++;
-        pixels[pi] = fillR; pixels[pi+1] = fillG; pixels[pi+2] = fillB;
+        pixels[pi] = Math.round(fillR * 0.55 + pr * 0.45);
+        pixels[pi+1] = Math.round(fillG * 0.55 + pg * 0.45);
+        pixels[pi+2] = Math.round(fillB * 0.55 + pb * 0.45);
         if (cx > 0) queue.push([cx-1, cy]);
         if (cx < w-1) queue.push([cx+1, cy]);
         if (cy > 0) queue.push([cx, cy-1]);
@@ -1656,41 +1658,52 @@ class EduApp {
         doFloodFill(x, y);
       }
     };
+    // Mobile fill support (touch without brush drag)
+    let touchStartTime = 0, touchMoved = false;
+    canvas.addEventListener('touchstart', e => {
+      touchStartTime = Date.now(); touchMoved = false;
+      const rect = canvas.getBoundingClientRect();
+      this._touchStartX = e.touches[0].clientX - rect.left;
+      this._touchStartY = e.touches[0].clientY - rect.top;
+      if (this._drawState.mode === 'brush') {
+        e.preventDefault();
+        brushDown = true;
+        const undoData = this._drawCtx.getImageData(0, 0, canvas.width, canvas.height);
+        this._drawState.undoStack.push(undoData);
+        doBrush(this._touchStartX, this._touchStartY);
+      }
+    });
+    canvas.addEventListener('touchmove', e => {
+      touchMoved = true;
+      if (this._drawState.mode !== 'brush') return;
+      e.preventDefault();
+      if (!brushDown) return;
+      const rect = canvas.getBoundingClientRect();
+      doBrush(e.touches[0].clientX - rect.left, e.touches[0].clientY - rect.top);
+    });
+    canvas.addEventListener('touchend', e => {
+      if (this._drawState.mode === 'fill' && !touchMoved && Date.now() - touchStartTime < 300) {
+        doFloodFill(this._touchStartX, this._touchStartY);
+      }
+      brushDown = false;
+    });
     
+    // Desktop brush support
     let brushDown = false;
     canvas.addEventListener('mousedown', e => {
       if (this._drawState.mode !== 'brush') return;
       brushDown = true;
       const rect = canvas.getBoundingClientRect();
-      // Save undo on first stroke
       const undoData = this._drawCtx.getImageData(0, 0, canvas.width, canvas.height);
       this._drawState.undoStack.push(undoData);
       doBrush(e.clientX - rect.left, e.clientY - rect.top);
     });
     canvas.addEventListener('mousemove', e => {
       if (!brushDown) return;
-      const rect = canvas.getBoundingClientRect();
-      doBrush(e.clientX - rect.left, e.clientY - rect.top);
+      doBrush(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
     });
     canvas.addEventListener('mouseup', () => brushDown = false);
     canvas.addEventListener('mouseleave', () => brushDown = false);
-    
-    canvas.addEventListener('touchstart', e => {
-      e.preventDefault();
-      if (this._drawState.mode !== 'brush') return;
-      brushDown = true;
-      const rect = canvas.getBoundingClientRect();
-      const undoData = this._drawCtx.getImageData(0, 0, canvas.width, canvas.height);
-      this._drawState.undoStack.push(undoData);
-      doBrush(e.touches[0].clientX - rect.left, e.touches[0].clientY - rect.top);
-    });
-    canvas.addEventListener('touchmove', e => {
-      e.preventDefault();
-      if (!brushDown) return;
-      const rect = canvas.getBoundingClientRect();
-      doBrush(e.touches[0].clientX - rect.left, e.touches[0].clientY - rect.top);
-    });
-    canvas.addEventListener('touchend', () => brushDown = false);
     
     this.drawClear();
   }
