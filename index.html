@@ -1208,26 +1208,68 @@ class EduApp {
   // ==================== STORYBOOK READER ====================
   renderStory() {
     const c = document.getElementById('story-content');
-    let h = '<div class="cards-grid" style="gap:14px;">';
-    STORIES.forEach((s,i) => {
-      h += `<div class="item-card" onclick="app.openStory(${i})" style="min-height:100px;">
-        <div class="emoji-block" style="font-size:40px;">${s.icon}</div>
-        <div class="word">${s.title}</div>
-        <div class="meaning">${s.pages.length} 页 · AI插图+语音</div>
+    // Load all available stories from JSON
+    this._loadStories().then(stories => {
+      if (stories.length === 0) {
+        c.innerHTML = '<div class="quiz-area"><h3>📖 故事书</h3><p>正在生成故事，请稍后再来...</p></div>';
+        return;
+      }
+      let h = '<div class="cards-grid" style="gap:14px;">';
+      stories.forEach((s,i) => {
+        h += `<div class="item-card" onclick="app.openStory(${i})" style="min-height:100px;">
+          <div class="emoji-block" style="font-size:40px;">${s.icon||'📖'}</div>
+          <div class="word">${s.title}</div>
+          <div class="meaning">${(s.pages||[]).length} 页 · AI插图+语音</div>
+        </div>`;
+      });
+      h += '</div>';
+      c.innerHTML = `<div class="quiz-area">
+        <h3>📖 故事书</h3>
+        <div style="font-size:14px;color:#888;margin-bottom:8px;">已生成 ${stories.length} 集，持续更新中</div>
+        ${h}
       </div>`;
+      this._allStories = stories;
     });
-    h += '</div>';
-    c.innerHTML = `<div class="quiz-area">
-      <h3>📖 故事书</h3>
-      <div style="font-size:14px;color:#888;margin-bottom:8px;">选一个故事开始阅读吧！</div>
-      ${h}
-    </div>`;
+  }
+
+  async _loadStories() {
+    // First try to load manifest
+    let stories = [];
+    try {
+      const resp = await fetch('stories/manifest.json');
+      if (resp.ok) stories = await resp.json();
+    } catch(e) {}
+    if (stories.length === 0) {
+      // Fallback to embedded stories
+      stories = STORIES;
+    }
+    return stories;
   }
 
   openStory(idx) {
+    const stories = this._allStories || STORIES;
+    const s = stories[idx];
     this._storyIdx = idx;
     this._storyPage = 0;
     const c = document.getElementById('story-content');
+    const imgPrefix = s.img_prefix || `img/${s.id}/`;
+    const audioPrefix = s.audio_prefix || `audio/${s.id}/`;
+    
+    // Build pages with full paths
+    const pages = (s.pages || []).map((p,i) => ({
+      text: p.text || p.text_zh || '',
+      kw: p.kw || '',
+      img: `${imgPrefix}${i===0&&!s.pages[0].img?'cover':`page${i+1}`}.png`,
+      audio: `${audioPrefix}page${i+1}_zh.mp3`
+    }));
+    
+    // If there's a cover page, add it
+    if (!s.pages[0]?.img) {
+      // Pages already start from page1
+    }
+    
+    this._currentStory = { ...s, pages };
+    
     c.innerHTML = `<div class="quiz-area" style="text-align:center;padding:0;overflow:hidden;">
       <button class="btn-back" onclick="app.renderStory()" style="margin-bottom:8px;">📚 故事列表</button>
       <div id="storyReader">${this._renderStoryPage()}</div>
@@ -1236,7 +1278,7 @@ class EduApp {
   }
 
   _renderStoryPage() {
-    const s = STORIES[this._storyIdx];
+    const s = this._currentStory || STORIES[this._storyIdx];
     const p = this._storyPage;
     const page = s.pages[p];
     const total = s.pages.length;
@@ -1265,7 +1307,7 @@ class EduApp {
   }
 
   storySpeak() {
-    const s = STORIES[this._storyIdx];
+    const s = this._currentStory || STORIES[this._storyIdx];
     const page = s.pages[this._storyPage];
     if (page.audio) {
       this.audio.cancel();
@@ -1275,7 +1317,7 @@ class EduApp {
   }
 
   storyNext() {
-    const s = STORIES[this._storyIdx];
+    const s = this._currentStory || STORIES[this._storyIdx];
     if (this._storyPage < s.pages.length - 1) {
       this._storyPage++;
       document.getElementById('storyReader').innerHTML = this._renderStoryPage();
