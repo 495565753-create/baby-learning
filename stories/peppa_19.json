@@ -1,0 +1,33 @@
+{
+  "title": "佩奇做三明治",
+  "pages": [
+    {
+      "text": "佩奇和乔治饿了。他们想自己做三明治。",
+      "kw": "hungry"
+    },
+    {
+      "text": "妈妈猪拿出了面包、生菜和番茄。",
+      "kw": "ingredients"
+    },
+    {
+      "text": "佩奇小心地涂上黄油。乔治放上生菜。",
+      "kw": "spread"
+    },
+    {
+      "text": "再加上一片奶酪和番茄。三明治越堆越高啦！",
+      "kw": "tall"
+    },
+    {
+      "text": "妈妈猪帮忙把三明治切成三角形。",
+      "kw": "cut"
+    },
+    {
+      "text": "佩奇和乔治大口吃三明治。真是太好吃了！",
+      "kw": "yummy"
+    }
+  ],
+  "id": "peppa_19",
+  "icon": "🐷",
+  "img_prefix": "img/peppa/peppa_19",
+  "audio_prefix": "audio/peppa/peppa_19"
+}

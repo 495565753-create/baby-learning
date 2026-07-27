@@ -1,0 +1,33 @@
+{
+  "title": "下雨天室内乐",
+  "pages": [
+    {
+      "text": "下雨了，佩奇和乔治不能出去玩。他们在客厅里觉得有点无聊。",
+      "kw": "rainy day, indoor, bored"
+    },
+    {
+      "text": "妈妈猪拿来一个大纸箱。她说：“我们来做点好玩的！”",
+      "kw": "cardboard box, Mummy Pig, fun idea"
+    },
+    {
+      "text": "佩奇画了一个窗户，乔治画了一道门。纸箱变成了小房子！",
+      "kw": "draw, window, door, little house"
+    },
+    {
+      "text": "他们钻进小房子里喝茶。佩奇假装是妈妈，乔治假装是爸爸。",
+      "kw": "pretend play, tea party, role play"
+    },
+    {
+      "text": "爸爸猪也想进去，可是房子太小了！他把纸箱举起来，大家笑成一团。",
+      "kw": "Daddy Pig, too small, lift box, laugh"
+    },
+    {
+      "text": "雨停了，太阳出来了。佩奇说：“雨天在家里也很好玩！”",
+      "kw": "rain stops, sunshine, happy indoor play"
+    }
+  ],
+  "id": "peppa_17",
+  "icon": "🐷",
+  "img_prefix": "img/peppa/peppa_17",
+  "audio_prefix": "audio/peppa/peppa_17"
+}

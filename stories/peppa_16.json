@@ -1,0 +1,33 @@
+{
+  "title": "佩奇分享玩具",
+  "pages": [
+    {
+      "text": "佩奇在玩她的小恐龙。乔治跑过来，也想玩一玩。",
+      "kw": "Peppa playing with dinosaur toy, George coming"
+    },
+    {
+      "text": "佩奇抱紧恐龙说：“这是我的，不给你。”乔治伤心地哭了。",
+      "kw": "Peppa refusing to share, George crying"
+    },
+    {
+      "text": "猪妈妈走过来，温柔地说：“你们可以轮流玩呀。”",
+      "kw": "Mummy Pig suggesting taking turns"
+    },
+    {
+      "text": "佩奇想了想，把恐龙递给乔治。乔治破涕为笑。",
+      "kw": "Peppa handing dinosaur to George, George smiling"
+    },
+    {
+      "text": "他们一起玩恐龙，你追我赶，笑声不断。",
+      "kw": "Peppa and George playing together happily"
+    },
+    {
+      "text": "分享真好玩，大家都开心！佩奇和乔治抱在了一起。",
+      "kw": "Peppa and George hugging, sharing is fun"
+    }
+  ],
+  "id": "peppa_16",
+  "icon": "🐷",
+  "img_prefix": "img/peppa/peppa_16",
+  "audio_prefix": "audio/peppa/peppa_16"
+}
