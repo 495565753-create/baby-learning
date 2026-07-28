@@ -1331,7 +1331,7 @@ class EduApp {
     const pages = (s.pages || []).map((p,i) => ({
       text: p.text || p.text_zh || '',
       kw: p.kw || '',
-      img: `${imgPrefix}${i===0&&!s.pages[0].img?'cover':`page${i+1}`}.png`,
+      img: `${imgPrefix}${i===0 ? 'cover' : `page${i}`}.png`,
       audio: `${audioPrefix}page${i+1}_zh.mp3`
     }));
     
