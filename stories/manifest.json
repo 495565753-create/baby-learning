@@ -1947,326 +1947,6 @@
     "audio_prefix": "audio/peppa/peppa_20/"
   },
   {
-    "id": "idiom_01",
-    "title": "成语：守株待兔",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/01_守株待兔",
-    "pages": [
-      {
-        "text": "【成语】守株待兔\n\n从前有个农夫在田里干活，突然一只兔子撞在树桩上死了。农夫高兴地捡到兔子，从此他不再种地，天天守在树桩旁等兔子。可是再也没有兔子撞上来，他的田地也荒废了。\n\n💡 道理：不要总想着不劳而获，要主动努力，才能得到收获。",
-        "kw": "守株待兔",
-        "img": "img/idioms/01_守株待兔.png",
-        "audio": "audio/idioms/01_守株待兔.mp3"
-      }
-    ]
-  },
-  {
-    "id": "idiom_02",
-    "title": "成语：画龙点睛",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/02_画龙点睛",
-    "pages": [
-      {
-        "text": "【成语】画龙点睛\n\n古代有位画家在墙上画了四条龙，但都没有画眼睛。别人问他为什么，他说画上眼睛龙就会飞走。大家不信，他就给两条龙点上眼睛。突然电闪雷鸣，那两条龙破壁飞上了天。\n\n💡 道理：说话或做事时，关键的一笔能让整体变得生动有力，要抓住最重要的一点。",
-        "kw": "画龙点睛",
-        "img": "img/idioms/02_画龙点睛.png",
-        "audio": "audio/idioms/02_画龙点睛.mp3"
-      }
-    ]
-  },
-  {
-    "id": "idiom_03",
-    "title": "成语：掩耳盗铃",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/03_掩耳盗铃",
-    "pages": [
-      {
-        "text": "【成语】掩耳盗铃\n\n有个人想偷一口大钟，但他搬不动，就想把钟敲碎再拿走。他怕别人听到钟声，就捂住自己的耳朵去敲钟。结果声音传得很远，他立刻被抓住了。\n\n💡 道理：不要自己欺骗自己，明明掩盖不了的事情，偏要想办法掩盖，只会更糟糕。",
-        "kw": "掩耳盗铃",
-        "img": "img/idioms/03_掩耳盗铃.png",
-        "audio": "audio/idioms/03_掩耳盗铃.mp3"
-      }
-    ]
-  },
-  {
-    "id": "idiom_04",
-    "title": "成语：亡羊补牢",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/04_亡羊补牢",
-    "pages": [
-      {
-        "text": "【成语】亡羊补牢\n\n一个牧羊人发现羊圈破了个洞，邻居劝他赶快修，他却说‘羊已经丢了，修也没用’。第二天，又丢了一只羊，他这才后悔，马上把洞补好。从此，羊再也没有丢过。\n\n💡 道理：犯了错误或遇到问题，及时改正弥补，就还不算晚。",
-        "kw": "亡羊补牢",
-        "img": "img/idioms/04_亡羊补牢.png",
-        "audio": "audio/idioms/04_亡羊补牢.mp3"
-      }
-    ]
-  },
-  {
-    "id": "idiom_05",
-    "title": "成语：刻舟求剑",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/05_刻舟求剑",
-    "pages": [
-      {
-        "text": "【成语】刻舟求剑\n\n一个人坐船过河，不小心把剑掉进水里。他马上在船舷上刻了个记号，说‘我的剑是从这里掉下去的’。等船靠岸，他从刻记号的地方下水找剑，却怎么也找不到。\n\n💡 道理：情况变了，办法也要跟着变，不能死守老办法，要懂得灵活处理。",
-        "kw": "刻舟求剑",
-        "img": "img/idioms/05_刻舟求剑.png",
-        "audio": "audio/idioms/05_刻舟求剑.mp3"
-      }
-    ]
-  },
-  {
-    "id": "idiom_06",
-    "title": "成语：拔苗助长",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/06_拔苗助长",
-    "pages": [
-      {
-        "text": "【成语】拔苗助长\n\n古时候有个农夫，嫌禾苗长得太慢，就把每棵苗都往上拔高了一点。他累得满头大汗，回家对儿子说‘今天我帮苗长高了’。儿子跑到田里一看，禾苗全都枯死了。\n\n💡 道理：违反事物的发展规律，急于求成，反而会把事情弄坏。",
-        "kw": "拔苗助长",
-        "img": "img/idioms/06_拔苗助长.png",
-        "audio": "audio/idioms/06_拔苗助长.mp3"
-      }
-    ]
-  },
-  {
-    "id": "idiom_07",
-    "title": "成语：叶公好龙",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/07_叶公好龙",
-    "pages": [
-      {
-        "text": "【成语】叶公好龙\n\n叶公特别喜欢龙，家里到处都画着龙、刻着龙。天上的真龙知道了，很感动，就飞到叶公家里来探望他。叶公一看到真龙，吓得脸色发白，转身就跑。\n\n💡 道理：有的人表面上喜欢某样东西，其实并不是真的喜欢，只是做样子罢了。",
-        "kw": "叶公好龙",
-        "img": "img/idioms/07_叶公好龙.png",
-        "audio": "audio/idioms/07_叶公好龙.mp3"
-      }
-    ]
-  },
-  {
-    "id": "idiom_08",
-    "title": "成语：狐假虎威",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/08_狐假虎威",
-    "pages": [
-      {
-        "text": "【成语】狐假虎威\n\n老虎抓住一只狐狸，狐狸说‘你不能吃我，我是百兽之王’。老虎不信，狐狸就带着老虎在森林里走了一圈。小动物们看见老虎，都吓得逃跑了，狐狸却说是被自己吓跑的。\n\n💡 道理：借着别人的力量来吓唬人，自己其实并没有真本事，这种人很可笑。",
-        "kw": "狐假虎威",
-        "img": "img/idioms/08_狐假虎威.png",
-        "audio": "audio/idioms/08_狐假虎威.mp3"
-      }
-    ]
-  },
-  {
-    "id": "idiom_09",
-    "title": "成语：井底之蛙",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/09_井底之蛙",
-    "pages": [
-      {
-        "text": "【成语】井底之蛙\n\n一只青蛙住在井里，以为天空只有井口那么大。有一天，大海龟路过井口，青蛙得意地夸自己的井底世界。海龟告诉它大海有多么辽阔，青蛙听了，惊讶得说不出话来。\n\n💡 道理：眼光狭小，见识短浅，还自以为了不起，要多出去看看更广阔的世界。",
-        "kw": "井底之蛙",
-        "img": "img/idioms/09_井底之蛙.png",
-        "audio": "audio/idioms/09_井底之蛙.mp3"
-      }
-    ]
-  },
-  {
-    "id": "idiom_10",
-    "title": "成语：对牛弹琴",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/10_对牛弹琴",
-    "pages": [
-      {
-        "text": "【成语】对牛弹琴\n\n古代有位音乐家，对着牛弹起高雅的曲子。他弹得非常投入，可是牛却只顾低头吃草，一点反应都没有。音乐家这才明白，不是弹得不好，是牛根本听不懂。\n\n💡 道理：说话做事要看对象，对不懂道理的人讲道理，是白费力气。",
-        "kw": "对牛弹琴",
-        "img": "img/idioms/10_对牛弹琴.png",
-        "audio": "audio/idioms/10_对牛弹琴.mp3"
-      }
-    ]
-  },
-  {
-    "id": "poem_11",
-    "title": "古诗：静夜思",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/11_静夜思",
-    "pages": [
-      {
-        "text": "《静夜思》\n李白 · 唐\n\n床前明月光，疑是地上霜。举头望明月，低头思故乡。\n\n📖 明亮的月光照在床前，好像地上铺了一层白霜。我抬头看看天上的月亮，不由得低下头，想念起远方的家乡。",
-        "kw": "李白",
-        "img": "img/idioms/11_静夜思.png",
-        "audio": "audio/idioms/11_静夜思.mp3"
-      }
-    ]
-  },
-  {
-    "id": "poem_12",
-    "title": "古诗：春晓",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/12_春晓",
-    "pages": [
-      {
-        "text": "《春晓》\n孟浩然 · 唐\n\n春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。\n\n📖 春天睡懒觉，不知不觉天就亮了，到处都能听到小鸟在唱歌。想起昨晚的风雨声，不知道美丽的花儿落了多少片。",
-        "kw": "孟浩然",
-        "img": "img/idioms/12_春晓.png",
-        "audio": "audio/idioms/12_春晓.mp3"
-      }
-    ]
-  },
-  {
-    "id": "poem_13",
-    "title": "古诗：咏鹅",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/13_咏鹅",
-    "pages": [
-      {
-        "text": "《咏鹅》\n骆宾王 · 唐\n\n鹅，鹅，鹅，曲项向天歌。白毛浮绿水，红掌拨清波。\n\n📖 大白鹅弯着脖子朝天叫，好像在唱歌。它雪白的羽毛浮在绿色的水面上，红色的脚掌轻轻地划着清清的水波。",
-        "kw": "骆宾王",
-        "img": "img/idioms/13_咏鹅.png",
-        "audio": "audio/idioms/13_咏鹅.mp3"
-      }
-    ]
-  },
-  {
-    "id": "poem_14",
-    "title": "古诗：登鹳雀楼",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/14_登鹳雀楼",
-    "pages": [
-      {
-        "text": "《登鹳雀楼》\n王之涣 · 唐\n\n白日依山尽，黄河入海流。欲穷千里目，更上一层楼。\n\n📖 太阳靠着山边慢慢落下，黄河水滚滚地向大海流去。想要看得更远更远，那就要再登上一层高楼。",
-        "kw": "王之涣",
-        "img": "img/idioms/14_登鹳雀楼.png",
-        "audio": "audio/idioms/14_登鹳雀楼.mp3"
-      }
-    ]
-  },
-  {
-    "id": "poem_15",
-    "title": "古诗：悯农",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/15_悯农",
-    "pages": [
-      {
-        "text": "《悯农》\n李绅 · 唐\n\n锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。\n\n📖 农民伯伯在中午大太阳下给禾苗松土，汗水一滴一滴掉进泥土里。谁能想到碗里的米饭，每一粒都是用辛苦换来的呀。",
-        "kw": "李绅",
-        "img": "img/idioms/15_悯农.png",
-        "audio": "audio/idioms/15_悯农.mp3"
-      }
-    ]
-  },
-  {
-    "id": "poem_16",
-    "title": "古诗：望庐山瀑布",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/16_望庐山瀑布",
-    "pages": [
-      {
-        "text": "《望庐山瀑布》\n李白 · 唐\n\n日照香炉生紫烟，遥看瀑布挂前川。飞流直下三千尺，疑是银河落九天。\n\n📖 阳光照着香炉峰，升起紫色的烟雾，远远看去，瀑布像一条白布挂在山前。水流从很高很高的地方飞下来，真让人以为是天上的银河掉下来了。",
-        "kw": "李白",
-        "img": "img/idioms/16_望庐山瀑布.png",
-        "audio": "audio/idioms/16_望庐山瀑布.mp3"
-      }
-    ]
-  },
-  {
-    "id": "poem_17",
-    "title": "古诗：村居",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/17_村居",
-    "pages": [
-      {
-        "text": "《村居》\n高鼎 · 清\n\n草长莺飞二月天，拂堤杨柳醉春烟。儿童散学归来早，忙趁东风放纸鸢。\n\n📖 二月里小草长出来了，黄莺鸟飞来飞去，杨柳轻轻拂着堤岸，春天的雾气让人陶醉。小朋友们放学回来得早，赶紧趁着东风放起了风筝。",
-        "kw": "高鼎",
-        "img": "img/idioms/17_村居.png",
-        "audio": "audio/idioms/17_村居.mp3"
-      }
-    ]
-  },
-  {
-    "id": "poem_18",
-    "title": "古诗：所见",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/18_所见",
-    "pages": [
-      {
-        "text": "《所见》\n袁枚 · 清\n\n牧童骑黄牛，歌声振林樾。意欲捕鸣蝉，忽然闭口立。\n\n📖 放牛的小娃娃骑在黄牛背上，响亮的歌声在树林里回荡。他忽然想捉树上叫个不停的知了，就马上闭上嘴巴，一声不响地站住了。",
-        "kw": "袁枚",
-        "img": "img/idioms/18_所见.png",
-        "audio": "audio/idioms/18_所见.mp3"
-      }
-    ]
-  },
-  {
-    "id": "poem_19",
-    "title": "古诗：小池",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/19_小池",
-    "pages": [
-      {
-        "text": "《小池》\n杨万里 · 宋\n\n泉眼无声惜细流，树阴照水爱晴柔。小荷才露尖尖角，早有蜻蜓立上头。\n\n📖 细细的泉水舍不得流走，树荫映在水面上，喜欢晴朗柔和的天气。小小的荷叶刚刚露出尖尖的角，已经有蜻蜓飞过来，停在了上面。",
-        "kw": "杨万里",
-        "img": "img/idioms/19_小池.png",
-        "audio": "audio/idioms/19_小池.mp3"
-      }
-    ]
-  },
-  {
-    "id": "poem_20",
-    "title": "古诗：赠汪伦",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/idioms/",
-    "audio_prefix": "audio/idioms/20_赠汪伦",
-    "pages": [
-      {
-        "text": "《赠汪伦》\n李白 · 唐\n\n李白乘舟将欲行，忽闻岸上踏歌声。桃花潭水深千尺，不及汪伦送我情。\n\n📖 我坐着小船正要出发，忽然听到岸上传来好朋友汪伦边走边唱的声音。桃花潭的水虽然很深很深，但比不上汪伦送我的情谊那样深。",
-        "kw": "李白",
-        "img": "img/idioms/20_赠汪伦.png",
-        "audio": "audio/idioms/20_赠汪伦.mp3"
-      }
-    ]
-  },
-  {
     "id": "story1_01",
     "title": "佩奇的第一天幼儿园",
     "icon": "🐷",
@@ -2307,15 +1987,15 @@
     "audio_prefix": "audio/paw/",
     "pages": [
       {
-        "text": "莱德和汪汪队在瞭望塔里玩耍。",
+        "text": "莱德和汪汪队在瞭望塔里玩耍。突然电话铃响了！",
         "kw": "瞭望塔"
       },
       {
-        "text": "不好了，城中心的大楼着火了！",
+        "text": "不好了，城中心的大楼着火了！浓烟滚滚。",
         "kw": "着火"
       },
       {
-        "text": "毛毛跳上消防车，天天开直升机。",
+        "text": "毛毛跳上消防车，天天开直升机跟着。",
         "kw": "出发"
       },
       {
@@ -2323,11 +2003,11 @@
         "kw": "灭火"
       },
       {
-        "text": "大家齐心协力浇灭大火！",
-        "kw": "安全"
+        "text": "大家齐心协力浇灭了大火！",
+        "kw": "胜利"
       },
       {
-        "text": "市长给汪汪队颁发奖章！",
+        "text": "市长给汪汪队颁发奖章，大家欢呼！",
         "kw": "英雄"
       }
     ]
@@ -2340,27 +2020,27 @@
     "audio_prefix": "audio/judy/",
     "pages": [
       {
-        "text": "兔子警官朱迪在动物城巡逻。",
+        "text": "兔子警官朱迪在动物城巡逻，开着警车。",
         "kw": "巡逻"
       },
       {
-        "text": "前面怎么堵车了？",
+        "text": "前面堵车了！长长的车队一动不动。",
         "kw": "堵车"
       },
       {
-        "text": "原来是小羊的推车坏了！",
+        "text": "原来是小羊的推车坏在路中间。",
         "kw": "推车"
       },
       {
-        "text": "朱迪叮叮当当修好了推车。",
+        "text": "朱迪拿出工具修好了推车。",
         "kw": "修理"
       },
       {
-        "text": "朱迪指挥交通，道路通畅。",
+        "text": "朱迪指挥交通，道路恢复了通畅。",
         "kw": "指挥"
       },
       {
-        "text": "小羊说谢谢，朱迪说帮助别人最快乐！",
+        "text": "小羊说谢谢！朱迪说帮助别人最快乐！",
         "kw": "快乐"
       }
     ]
