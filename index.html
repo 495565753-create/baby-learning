@@ -199,6 +199,16 @@ body::after  { width:350px;height:350px;background:var(--pink);bottom:-80px;righ
 .draw-size-btn.active { border-color:var(--blue); background:#E8F2FF; color:var(--blue); }
 .draw-canvas-wrap { border:3px solid #E8ECF1; border-radius:16px; overflow:hidden; background:white; display:inline-block; box-shadow:var(--shadow-sm); }
 
+/* Book Reader Layout */
+.book-wrapper { max-width:760px; margin:0 auto; }
+.book-spread { display:flex; min-height:440px; border-radius:16px; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,0.1); }
+.book-left { flex:1; background:#F8F6F0; position:relative; border-right:2px solid #E8E0D0; min-width:0; }
+.book-right { flex:1; background:#FFFEF8; position:relative; min-width:0; }
+.book-left img { width:100%; height:100%; object-fit:cover; display:block; }
+.book-right .text-area { padding:28px 24px; font-size:18px; line-height:2.2; color:#3D3226; height:100%; overflow-y:auto; }
+.book-page-num { position:absolute; bottom:10px; right:14px; font-size:12px; color:#BBB; }
+@media (max-width:600px) { .book-spread { flex-direction:column; min-height:auto; } .book-left { height:240px; border-right:none; border-bottom:2px solid #E8E0D0; } }
+
 /* ===== V4 Enhancements ===== */
 /* 3D card tilt */
 .home-card { perspective:600px; }
@@ -1307,22 +1317,26 @@ class EduApp {
     const total = pages.length;
     const c = document.getElementById('story-content');
     
-    c.innerHTML = `<div class="quiz-area" style="text-align:center;padding:0;">
-      <button class="btn-back" onclick="app.renderStory()" style="margin:8px;">📚 故事列表</button>
-      <div style="position:relative;background:#FFFEF8;min-height:500px;border-radius:16px;overflow:hidden;">
-        <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:white;">
-          <span style="font-weight:800;color:#FF6B8A;">📖 ${s.title}</span>
-          <span style="font-size:13px;color:#888;">${p+1} / ${total}</span>
+    c.innerHTML = `<div class="quiz-area" style="padding:8px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <button class="btn-back" onclick="app.renderStory()">📚 书库</button>
+        <span style="font-weight:800;color:#FF6B8A;">📖 ${s.title}</span>
+        <span style="font-size:13px;color:#888;">${p+1}/${total}</span>
+      </div>
+      <div class="book-wrapper">
+        <div class="book-spread">
+          <div class="book-left" onclick="app.bookSpeak()" style="cursor:pointer;">
+            <img src="${page.img}" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22320%22 height=%22400%22><rect fill=%22%23F0EDE5%22 width=%22320%22 height=%22400%22/><text x=%22160%22 y=%22200%22 text-anchor=%22middle%22 fill=%22%23CCC%22 font-size=%2218%22>插图</text></svg>';">
+          </div>
+          <div class="book-right">
+            <div class="text-area">${page.text}</div>
+            <div class="book-page-num">${p+1}</div>
+          </div>
         </div>
-        <div onclick="app.bookSpeak()" style="cursor:pointer;">
-          <img src="${page.img}" style="width:100%;max-height:320px;object-fit:cover;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
-          <div style="display:none;padding:40px;color:#AAA;">📷 插图加载中...</div>
-        </div>
-        <div style="padding:16px 20px;text-align:left;font-size:18px;line-height:2;color:#333;min-height:120px;">${page.text}</div>
-        <div style="display:flex;justify-content:center;gap:16px;padding:8px 0 16px;">
-          <button class="btn-next" ${p===0?'disabled':''} onclick="app.bookPrev()">◀ 上一页</button>
-          <button class="btn-next" ${p>=total-1?'disabled':''} onclick="app.bookNext()">下一页 ▶</button>
-        </div>
+      </div>
+      <div class="book-nav">
+        <button ${p===0?'disabled':''} onclick="app.bookPrev()">◀ 上一页</button>
+        <button ${p>=total-1?'disabled':''} onclick="app.bookNext()">下一页 ▶</button>
       </div>
     </div>`;
   }
