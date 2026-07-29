@@ -199,19 +199,6 @@ body::after  { width:350px;height:350px;background:var(--pink);bottom:-80px;righ
 .draw-size-btn.active { border-color:var(--blue); background:#E8F2FF; color:var(--blue); }
 .draw-canvas-wrap { border:3px solid #E8ECF1; border-radius:16px; overflow:hidden; background:white; display:inline-block; box-shadow:var(--shadow-sm); }
 
-/* Book Reader */
-.book { display:flex; align-items:stretch; justify-content:center; min-height:460px; perspective:1500px; margin:0 auto; max-width:720px; }
-.book-page { flex:1; min-width:0; overflow:hidden; background:#FFFEF8; }
-.book-page.left { border-radius:14px 0 0 14px; margin-right:2px; }
-.book-page.right { border-radius:0 14px 14px 0; margin-left:2px; }
-.book-page img { width:100%; height:280px; object-fit:cover; display:block; }
-.book-page .page-text { padding:18px 16px; font-size:17px; line-height:2; color:#333; text-align:left; min-height:140px; }
-.book-nav { display:flex; justify-content:center; gap:16px; margin-top:12px; }
-.book-nav button { padding:10px 30px; border-radius:24px; border:none; background:linear-gradient(135deg,#FF6B8A,#AF52DE); color:white; font-size:16px; font-weight:700; cursor:pointer; }
-.book-nav button:disabled { opacity:0.3; }
-.book-nav button:hover:not(:disabled) { transform:scale(1.05); }
-@media (max-width:600px) { .book { flex-direction:column; } .book-page img { height:200px; } .book-page .page-text { font-size:15px; } }
-
 /* ===== V4 Enhancements ===== */
 /* 3D card tilt */
 .home-card { perspective:600px; }
@@ -824,10 +811,11 @@ class EduApp {
     this.audio.cancel();
     this._lastHovered = null;
     this._pageHistory = this._pageHistory || [];
+    if (page !== 'home') this._pageHistory.push(page);
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     const target = document.getElementById('page-'+page);
     if (target) target.classList.add('active');
-    document.getElementById('btnHome').style.display = page==='home' ? 'none' : 'inline-flex';
+    document.getElementById('btnHome').style.display = 'inline-flex';
     if (page === 'math') this.renderMathTab();
     if (page === 'english') this.renderEnglishTab();
     if (page === 'general') this.renderGeneralTab();
@@ -1276,112 +1264,15 @@ class EduApp {
     else if (t === 'quiz') this.renderEnglishQuiz(c);
   }
 
-  // ==================== STORYBOOK READER v2 ====================
+  // ==================== STORYBOOK READER ====================
   renderStory() {
+    const c = document.getElementById('story-content');
+    // Load all available stories from JSON
     this._loadStories().then(stories => {
-      this._allStories = stories || STORIES;
-      const c = document.getElementById('story-content');
-      let h = '<div class="cards-grid" style="gap:12px;">';
-      this._allStories.forEach((s, i) => {
-        h += `<div class="item-card" onclick="app.openStory(${i})" style="min-height:90px;">
-          <div class="emoji-block" style="font-size:36px;">${s.icon||'📖'}</div>
-          <div class="word" style="font-size:14px;">${s.title}</div>
-          <div class="meaning">${(s.pages||[]).length}页</div>
-        </div>`;
-      });
-      h += '</div>';
-      c.innerHTML = `<div class="quiz-area"><h3>📖 故事书</h3>
-        <div style="font-size:13px;color:#888;margin-bottom:10px;">共 ${this._allStories.length} 本</div>${h}</div>`;
-    });
-  }
-
-  async _loadStories() {
-    try {
-      const r = await fetch('stories/manifest.json');
-      if (r.ok) return await r.json();
-    } catch(e) {}
-    return null; // will use embedded STORIES fallback
-  }
-
-  openStory(idx) {
-    const stories = this._allStories || STORIES;
-    const s = stories[idx];
-    const imgPrefix = s.img_prefix || `img/${s.id}/`;
-    const c = document.getElementById('story-content');
-    this._book = { story:s, page:0, imgPrefix };
-    
-    this._renderBook();
-  }
-
-  _renderBook() {
-    const s = this._book.story;
-    const p = this._book.page;
-    const pages = s.pages || [];
-    const total = pages.length;
-    const imgPrefix = this._book.imgPrefix;
-    const c = document.getElementById('story-content');
-    
-    if (p === 0) {
-      // Cover page
-      c.innerHTML = `<div class="quiz-area" style="text-align:center;">
-        <button class="btn-back" onclick="app.renderStory()" style="margin-bottom:8px;">📚 书库</button>
-        <div class="book-cover">
-          <img src="${imgPrefix}cover.png" onerror="this.src='img/coloring/cat.png'" style="max-width:280px;border-radius:16px;">
-          <h2>${s.title}</h2>
-          <div class="author">共 ${total} 页</div>
-          <button class="btn-next" onclick="app.bookNext()" style="margin-top:16px;">📖 开始阅读</button>
-        </div>
-      </div>`;
-    } else {
-      // Two-page spread
-      const pageIdx = p - 1; // 0-based page index
-      const page = pages[pageIdx] || {};
-      const text = page.text || page.text_zh || '';
-      const imgPath = `${imgPrefix}page${p}.png`;
-      
-      c.innerHTML = `<div class="quiz-area" style="padding:12px;">
-        <button class="btn-back" onclick="app.renderStory()" style="margin-bottom:8px;">📚 书库</button>
-        <div class="book">
-          <div class="book-page left"><img src="${imgPath}" onerror="this.style.display='none'" onclick="app.bookSpeak()"></div>
-          <div class="book-page right"><div class="page-text">${text}</div><div class="page-num">${p}/${total}</div></div>
-        </div>
-        <div class="book-nav">
-          <button ${p<=1?'disabled':''} onclick="app.bookPrev()">◀ 上一页</button>
-          <button ${p>=total?'disabled':''} onclick="app.bookNext()">下一页 ▶</button>
-        </div>
-      </div>`;
-    }
-    this._book.page = p;
-  }
-
-  bookNext() {
-    const s = this._book.story;
-    if (this._book.page < (s.pages||[]).length) {
-      this._book.page++;
-      this._renderBook();
-      setTimeout(()=>this.bookSpeak(), 400);
-    }
-  }
-
-  bookPrev() {
-    if (this._book.page > 0) {
-      this._book.page--;
-      this._renderBook();
-    }
-  }
-
-  bookSpeak() {
-    const s = this._book.story;
-    const p = this._book.page;
-    if (p < 1) return;
-    const page = (s.pages||[])[p-1];
-    const audioPrefix = s.audio_prefix || `audio/${s.id}/`;
-    const audioPath = page?.audio || `${audioPrefix}page${p}_zh.mp3`;
-    try {
-      this.audio.cancel();
-      new Audio(audioPath).play().catch(()=>{});
-    } catch(e) {}
-  }
+      if (stories.length === 0) {
+        c.innerHTML = '<div class="quiz-area"><h3>📖 故事书</h3><p>正在生成故事，请稍后再来...</p></div>';
+        return;
+      }
       let h = '<div class="cards-grid" style="gap:14px;">';
       stories.forEach((s,i) => {
         h += `<div class="item-card" onclick="app.openStory(${i})" style="min-height:100px;">
