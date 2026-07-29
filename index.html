@@ -1278,84 +1278,76 @@ class EduApp {
     this._storyIdx = idx;
     this._storyPage = 0;
     const c = document.getElementById('story-content');
-    const imgPrefix = s.img_prefix || `img/${s.id}/`;
-    const audioPrefix = s.audio_prefix || `audio/${s.id}/`;
+    const imgP = s.img_prefix || `img/${s.id}/`;
+    const audP = s.audio_prefix || `audio/${s.id}/`;
     
-    // Build pages with full paths
-    const pages = (s.pages || []).map((p,i) => ({
-      text: p.text || p.text_zh || '',
-      kw: p.kw || '',
-      img: `${imgPrefix}${i===0 ? 'cover' : `page${i}`}.png`,
-      audio: `${audioPrefix}page${i+1}_zh.mp3`
-    }));
+    // Store raw data for rendering
+    this._storyData = { story:s, imgP, audP };
     
-    // If there's a cover page, add it
-    if (!s.pages[0]?.img) {
-      // Pages already start from page1
-    }
+    // Build pages with explicit img and audio
+    const pages = (s.pages || []).map((p, i) => {
+      const imgFile = i === 0 ? 'cover.png' : `page${i}.png`;
+      const audFile = `page${i+1}_zh.mp3`;
+      return {
+        text: p.text || p.text_zh || '',
+        img: imgP + imgFile,
+        audio: audP + audFile
+      };
+    });
     
-    this._currentStory = { ...s, pages };
-    
-    c.innerHTML = `<div class="quiz-area" style="text-align:center;padding:0;overflow:hidden;">
-      <button class="btn-back" onclick="app.renderStory()" style="margin-bottom:8px;">📚 故事列表</button>
-      <div id="storyReader">${this._renderStoryPage()}</div>
-    </div>`;
-    setTimeout(()=>this.storySpeak(), 600);
+    this._storyPages = pages;
+    this._renderBook();
   }
 
-  _renderStoryPage() {
-    const s = this._currentStory || STORIES[this._storyIdx];
+  _renderBook() {
+    const s = this._storyData.story;
     const p = this._storyPage;
-    const page = s.pages[p];
-    const total = s.pages.length;
-    return `
-      <div style="position:relative;background:#FFFEF8;min-height:520px;padding:0 0 16px 0;border-radius:16px;">
-        <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;">
+    const pages = this._storyPages;
+    const page = pages[p];
+    const total = pages.length;
+    const c = document.getElementById('story-content');
+    
+    c.innerHTML = `<div class="quiz-area" style="text-align:center;padding:0;">
+      <button class="btn-back" onclick="app.renderStory()" style="margin:8px;">📚 故事列表</button>
+      <div style="position:relative;background:#FFFEF8;min-height:500px;border-radius:16px;overflow:hidden;">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:white;">
           <span style="font-weight:800;color:#FF6B8A;">📖 ${s.title}</span>
           <span style="font-size:13px;color:#888;">${p+1} / ${total}</span>
         </div>
-        <div onclick="app.storySpeak()" style="cursor:pointer;position:relative;">
-          <img src="${page.img}" style="width:100%;max-height:350px;object-fit:cover;border-radius:8px;" alt="">
-          <div style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.5);color:white;border-radius:20px;padding:4px 12px;font-size:13px;">🔊 点我朗读</div>
+        <div onclick="app.bookSpeak()" style="cursor:pointer;">
+          <img src="${page.img}" style="width:100%;max-height:320px;object-fit:cover;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <div style="display:none;padding:40px;color:#AAA;">📷 插图加载中...</div>
         </div>
-        <div style="padding:16px 20px;text-align:left;font-size:18px;line-height:1.8;color:#333;background:linear-gradient(to bottom,#FFFEF8,#FFF8F0);min-height:80px;">
-          ${page.text}
+        <div style="padding:16px 20px;text-align:left;font-size:18px;line-height:2;color:#333;min-height:120px;">${page.text}</div>
+        <div style="display:flex;justify-content:center;gap:16px;padding:8px 0 16px;">
+          <button class="btn-next" ${p===0?'disabled':''} onclick="app.bookPrev()">◀ 上一页</button>
+          <button class="btn-next" ${p>=total-1?'disabled':''} onclick="app.bookNext()">下一页 ▶</button>
         </div>
-        <div style="text-align:center;margin:4px 0;">
-          <span style="display:inline-block;background:#FFE0E8;color:#FF6B8A;padding:3px 14px;border-radius:20px;font-size:13px;font-weight:700;">🔤 ${page.kw}</span>
-        </div>
-        <div style="display:flex;justify-content:center;gap:20px;margin-top:8px;">
-          <button class="btn-next" ${p===0?'disabled style="opacity:0.4"':''} onclick="app.storyPrev()">⬅ 上一页</button>
-          <button class="btn-next" ${p>=total-1?'disabled style="opacity:0.4"':''} onclick="app.storyNext()">下一页 ➡</button>
-        </div>
-        <button class="btn-back" onclick="app.goBack()" style="margin-top:8px;">⬅ 返回</button>
-      </div>`;
+      </div>
+    </div>`;
   }
 
-  storySpeak() {
-    const s = this._currentStory || STORIES[this._storyIdx];
-    const page = s.pages[this._storyPage];
-    if (page.audio) {
-      this.audio.cancel();
-      const a = new Audio(page.audio);
-      a.play().catch(()=>{});
-    }
-  }
-
-  storyNext() {
-    const s = this._currentStory || STORIES[this._storyIdx];
-    if (this._storyPage < s.pages.length - 1) {
+  bookNext() {
+    if (this._storyPage < this._storyPages.length - 1) {
       this._storyPage++;
-      document.getElementById('storyReader').innerHTML = this._renderStoryPage();
-      setTimeout(()=>this.storySpeak(), 500);
+      this._renderBook();
+      setTimeout(()=>this.bookSpeak(), 400);
     }
   }
 
-  storyPrev() {
+  bookPrev() {
     if (this._storyPage > 0) {
       this._storyPage--;
-      document.getElementById('storyReader').innerHTML = this._renderStoryPage();
-      setTimeout(()=>this.storySpeak(), 500);
+      this._renderBook();
+    }
+  }
+
+  bookSpeak() {
+    const page = this._storyPages[this._storyPage];
+    if (page?.audio) {
+      this.audio.cancel();
+      const a = new Audio(page.audio);
+      a.play().catch(e => console.log('Audio play failed:', e));
     }
   }
 
