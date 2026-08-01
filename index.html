@@ -813,6 +813,12 @@ class EduApp {
   
   goBack() {
     this.audio.cancel();
+    if (this._currentAudio) { this._currentAudio.pause(); this._currentAudio = null; }
+    // If we're reading a story, go back to story list
+    if (this._storyPages && this._storyPages.length > 0) {
+      this.renderStory();
+      return;
+    }
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.getElementById('page-home').classList.add('active');
     document.getElementById('btnHome').style.display = 'none';
@@ -1318,7 +1324,9 @@ class EduApp {
     });
     
     this._storyPages = pages;
+    this._currentAudio = null;
     this._renderBook();
+    setTimeout(()=>this.bookSpeak(), 600);
   }
 
   _renderBook() {
