@@ -29,8 +29,8 @@
     ],
     "id": "judy_01",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_01/",
-    "audio_prefix": "audio/judy/judy_01/"
+    "img_prefix": "img/judy/judy_01",
+    "audio_prefix": "audio/judy/judy_01"
   },
   {
     "title": "朱迪警官找小猫",
@@ -62,8 +62,8 @@
     ],
     "id": "judy_02",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_02/",
-    "audio_prefix": "audio/judy/judy_02/"
+    "img_prefix": "img/judy/judy_02",
+    "audio_prefix": "audio/judy/judy_02"
   },
   {
     "title": "超市大堵车",
@@ -95,8 +95,8 @@
     ],
     "id": "judy_03",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_03/",
-    "audio_prefix": "audio/judy/judy_03/"
+    "img_prefix": "img/judy/judy_03",
+    "audio_prefix": "audio/judy/judy_03"
   },
   {
     "title": "朱迪的运动会执勤日",
@@ -128,8 +128,8 @@
     ],
     "id": "judy_04",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_04/",
-    "audio_prefix": "audio/judy/judy_04/"
+    "img_prefix": "img/judy/judy_04",
+    "audio_prefix": "audio/judy/judy_04"
   },
   {
     "title": "朱迪的雨天巡逻",
@@ -161,8 +161,8 @@
     ],
     "id": "judy_05",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_05/",
-    "audio_prefix": "audio/judy/judy_05/"
+    "img_prefix": "img/judy/judy_05",
+    "audio_prefix": "audio/judy/judy_05"
   },
   {
     "title": "动物城狂欢节",
@@ -194,8 +194,8 @@
     ],
     "id": "judy_06",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_06/",
-    "audio_prefix": "audio/judy/judy_06/"
+    "img_prefix": "img/judy/judy_06",
+    "audio_prefix": "audio/judy/judy_06"
   },
   {
     "title": "兔子警官的地铁冒险",
@@ -227,8 +227,8 @@
     ],
     "id": "judy_07",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_07/",
-    "audio_prefix": "audio/judy/judy_07/"
+    "img_prefix": "img/judy/judy_07",
+    "audio_prefix": "audio/judy/judy_07"
   },
   {
     "title": "朱迪警官抓小偷",
@@ -260,8 +260,8 @@
     ],
     "id": "judy_08",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_08/",
-    "audio_prefix": "audio/judy/judy_08/"
+    "img_prefix": "img/judy/judy_08",
+    "audio_prefix": "audio/judy/judy_08"
   },
   {
     "title": "朱迪帮助老山羊",
@@ -293,8 +293,8 @@
     ],
     "id": "judy_09",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_09/",
-    "audio_prefix": "audio/judy/judy_09/"
+    "img_prefix": "img/judy/judy_09",
+    "audio_prefix": "audio/judy/judy_09"
   },
   {
     "title": "朱迪的安全课",
@@ -326,8 +326,8 @@
     ],
     "id": "judy_10",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_10/",
-    "audio_prefix": "audio/judy/judy_10/"
+    "img_prefix": "img/judy/judy_10",
+    "audio_prefix": "audio/judy/judy_10"
   },
   {
     "title": "朱迪的快递大冒险",
@@ -359,8 +359,8 @@
     ],
     "id": "judy_11",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_11/",
-    "audio_prefix": "audio/judy/judy_11/"
+    "img_prefix": "img/judy/judy_11",
+    "audio_prefix": "audio/judy/judy_11"
   },
   {
     "title": "冰淇淋车坏了",
@@ -392,8 +392,8 @@
     ],
     "id": "judy_12",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_12/",
-    "audio_prefix": "audio/judy/judy_12/"
+    "img_prefix": "img/judy/judy_12",
+    "audio_prefix": "audio/judy/judy_12"
   },
   {
     "title": "朱迪兔和坏掉的红绿灯",
@@ -425,8 +425,8 @@
     ],
     "id": "judy_13",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_13/",
-    "audio_prefix": "audio/judy/judy_13/"
+    "img_prefix": "img/judy/judy_13",
+    "audio_prefix": "audio/judy/judy_13"
   },
   {
     "title": "朱迪和河马过马路",
@@ -458,8 +458,8 @@
     ],
     "id": "judy_14",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_14/",
-    "audio_prefix": "audio/judy/judy_14/"
+    "img_prefix": "img/judy/judy_14",
+    "audio_prefix": "audio/judy/judy_14"
   },
   {
     "title": "朱迪的马拉松比赛",
@@ -491,8 +491,8 @@
     ],
     "id": "judy_15",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_15/",
-    "audio_prefix": "audio/judy/judy_15/"
+    "img_prefix": "img/judy/judy_15",
+    "audio_prefix": "audio/judy/judy_15"
   },
   {
     "title": "闪电树懒开车啦",
@@ -524,8 +524,8 @@
     ],
     "id": "judy_16",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_16/",
-    "audio_prefix": "audio/judy/judy_16/"
+    "img_prefix": "img/judy/judy_16",
+    "audio_prefix": "audio/judy/judy_16"
   },
   {
     "title": "朱迪帮助迷路的小犀牛",
@@ -557,8 +557,8 @@
     ],
     "id": "judy_17",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_17/",
-    "audio_prefix": "audio/judy/judy_17/"
+    "img_prefix": "img/judy/judy_17",
+    "audio_prefix": "audio/judy/judy_17"
   },
   {
     "title": "朱迪在游乐园",
@@ -590,8 +590,8 @@
     ],
     "id": "judy_18",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_18/",
-    "audio_prefix": "audio/judy/judy_18/"
+    "img_prefix": "img/judy/judy_18",
+    "audio_prefix": "audio/judy/judy_18"
   },
   {
     "title": "朱迪和水獭建桥",
@@ -623,8 +623,8 @@
     ],
     "id": "judy_19",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_19/",
-    "audio_prefix": "audio/judy/judy_19/"
+    "img_prefix": "img/judy/judy_19",
+    "audio_prefix": "audio/judy/judy_19"
   },
   {
     "title": "朱迪帮助小考拉",
@@ -656,8 +656,8 @@
     ],
     "id": "judy_20",
     "icon": "🐰",
-    "img_prefix": "img/judy/judy_20/",
-    "audio_prefix": "audio/judy/judy_20/"
+    "img_prefix": "img/judy/judy_20",
+    "audio_prefix": "audio/judy/judy_20"
   },
   {
     "title": "汪汪队大火救援",
@@ -689,8 +689,8 @@
     ],
     "id": "paw_01",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_01/",
-    "audio_prefix": "audio/paw/paw_01/"
+    "img_prefix": "img/paw/paw_01",
+    "audio_prefix": "audio/paw/paw_01"
   },
   {
     "title": "小猫卡在树上啦！",
@@ -722,8 +722,8 @@
     ],
     "id": "paw_02",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_02/",
-    "audio_prefix": "audio/paw/paw_02/"
+    "img_prefix": "img/paw/paw_02",
+    "audio_prefix": "audio/paw/paw_02"
   },
   {
     "title": "汪汪队：洪水救援",
@@ -755,8 +755,8 @@
     ],
     "id": "paw_03",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_03/",
-    "audio_prefix": "audio/paw/paw_03/"
+    "img_prefix": "img/paw/paw_03",
+    "audio_prefix": "audio/paw/paw_03"
   },
   {
     "title": "汪汪队立大功：雪崩大救援",
@@ -788,8 +788,8 @@
     ],
     "id": "paw_04",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_04/",
-    "audio_prefix": "audio/paw/paw_04/"
+    "img_prefix": "img/paw/paw_04",
+    "audio_prefix": "audio/paw/paw_04"
   },
   {
     "title": "汪汪队立大功：火车脱轨大救援",
@@ -821,8 +821,8 @@
     ],
     "id": "paw_05",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_05/",
-    "audio_prefix": "audio/paw/paw_05/"
+    "img_prefix": "img/paw/paw_05",
+    "audio_prefix": "audio/paw/paw_05"
   },
   {
     "title": "游轮漏水大救援",
@@ -854,8 +854,8 @@
     ],
     "id": "paw_06",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_06/",
-    "audio_prefix": "audio/paw/paw_06/"
+    "img_prefix": "img/paw/paw_06",
+    "audio_prefix": "audio/paw/paw_06"
   },
   {
     "title": "飞机迫降大救援",
@@ -887,8 +887,8 @@
     ],
     "id": "paw_07",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_07/",
-    "audio_prefix": "audio/paw/paw_07/"
+    "img_prefix": "img/paw/paw_07",
+    "audio_prefix": "audio/paw/paw_07"
   },
   {
     "title": "大桥救援记",
@@ -920,8 +920,8 @@
     ],
     "id": "paw_08",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_08/",
-    "audio_prefix": "audio/paw/paw_08/"
+    "img_prefix": "img/paw/paw_08",
+    "audio_prefix": "audio/paw/paw_08"
   },
   {
     "title": "汪汪队立大功：地震大救援",
@@ -953,8 +953,8 @@
     ],
     "id": "paw_09",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_09/",
-    "audio_prefix": "audio/paw/paw_09/"
+    "img_prefix": "img/paw/paw_09",
+    "audio_prefix": "audio/paw/paw_09"
   },
   {
     "title": "汪汪队立大功：海啸预警",
@@ -986,8 +986,8 @@
     ],
     "id": "paw_10",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_10/",
-    "audio_prefix": "audio/paw/paw_10/"
+    "img_prefix": "img/paw/paw_10",
+    "audio_prefix": "audio/paw/paw_10"
   },
   {
     "title": "汪汪队立大功：火山爆发",
@@ -1019,8 +1019,8 @@
     ],
     "id": "paw_11",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_11/",
-    "audio_prefix": "audio/paw/paw_11/"
+    "img_prefix": "img/paw/paw_11",
+    "audio_prefix": "audio/paw/paw_11"
   },
   {
     "title": "汪汪队立大功：龙卷风来啦",
@@ -1052,8 +1052,8 @@
     ],
     "id": "paw_12",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_12/",
-    "audio_prefix": "audio/paw/paw_12/"
+    "img_prefix": "img/paw/paw_12",
+    "audio_prefix": "audio/paw/paw_12"
   },
   {
     "title": "蜜蜂大迁移",
@@ -1085,8 +1085,8 @@
     ],
     "id": "paw_13",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_13/",
-    "audio_prefix": "audio/paw/paw_13/"
+    "img_prefix": "img/paw/paw_13",
+    "audio_prefix": "audio/paw/paw_13"
   },
   {
     "title": "停电大救援",
@@ -1118,8 +1118,8 @@
     ],
     "id": "paw_14",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_14/",
-    "audio_prefix": "audio/paw/paw_14/"
+    "img_prefix": "img/paw/paw_14",
+    "audio_prefix": "audio/paw/paw_14"
   },
   {
     "title": "汪汪队：隧道大救援",
@@ -1151,8 +1151,8 @@
     ],
     "id": "paw_15",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_15/",
-    "audio_prefix": "audio/paw/paw_15/"
+    "img_prefix": "img/paw/paw_15",
+    "audio_prefix": "audio/paw/paw_15"
   },
   {
     "title": "汪汪队破冰救援",
@@ -1184,8 +1184,8 @@
     ],
     "id": "paw_16",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_16/",
-    "audio_prefix": "audio/paw/paw_16/"
+    "img_prefix": "img/paw/paw_16",
+    "audio_prefix": "audio/paw/paw_16"
   },
   {
     "title": "毒蛇入侵大冒险",
@@ -1217,8 +1217,8 @@
     ],
     "id": "paw_17",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_17/",
-    "audio_prefix": "audio/paw/paw_17/"
+    "img_prefix": "img/paw/paw_17",
+    "audio_prefix": "audio/paw/paw_17"
   },
   {
     "title": "烟花事故",
@@ -1250,8 +1250,8 @@
     ],
     "id": "paw_18",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_18/",
-    "audio_prefix": "audio/paw/paw_18/"
+    "img_prefix": "img/paw/paw_18",
+    "audio_prefix": "audio/paw/paw_18"
   },
   {
     "title": "赛车大救援",
@@ -1283,8 +1283,8 @@
     ],
     "id": "paw_19",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_19/",
-    "audio_prefix": "audio/paw/paw_19/"
+    "img_prefix": "img/paw/paw_19",
+    "audio_prefix": "audio/paw/paw_19"
   },
   {
     "title": "外星来客",
@@ -1316,8 +1316,8 @@
     ],
     "id": "paw_20",
     "icon": "🐶",
-    "img_prefix": "img/paw/paw_20/",
-    "audio_prefix": "audio/paw/paw_20/"
+    "img_prefix": "img/paw/paw_20",
+    "audio_prefix": "audio/paw/paw_20"
   },
   {
     "title": "佩奇第一天上幼儿园",
@@ -1349,8 +1349,8 @@
     ],
     "id": "peppa_01",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_01/",
-    "audio_prefix": "audio/peppa/peppa_01/"
+    "img_prefix": "img/peppa/peppa_01",
+    "audio_prefix": "audio/peppa/peppa_01"
   },
   {
     "title": "佩奇的音乐派对",
@@ -1382,8 +1382,8 @@
     ],
     "id": "peppa_03",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_03/",
-    "audio_prefix": "audio/peppa/peppa_03/"
+    "img_prefix": "img/peppa/peppa_03",
+    "audio_prefix": "audio/peppa/peppa_03"
   },
   {
     "title": "画画比赛",
@@ -1415,8 +1415,8 @@
     ],
     "id": "peppa_04",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_04/",
-    "audio_prefix": "audio/peppa/peppa_04/"
+    "img_prefix": "img/peppa/peppa_04",
+    "audio_prefix": "audio/peppa/peppa_04"
   },
   {
     "title": "佩奇玩传球游戏",
@@ -1448,8 +1448,8 @@
     ],
     "id": "peppa_05",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_05/",
-    "audio_prefix": "audio/peppa/peppa_05/"
+    "img_prefix": "img/peppa/peppa_05",
+    "audio_prefix": "audio/peppa/peppa_05"
   },
   {
     "title": "午餐时间",
@@ -1481,8 +1481,8 @@
     ],
     "id": "peppa_06",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_06/",
-    "audio_prefix": "audio/peppa/peppa_06/"
+    "img_prefix": "img/peppa/peppa_06",
+    "audio_prefix": "audio/peppa/peppa_06"
   },
   {
     "title": "小医生游戏",
@@ -1514,8 +1514,8 @@
     ],
     "id": "peppa_07",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_07/",
-    "audio_prefix": "audio/peppa/peppa_07/"
+    "img_prefix": "img/peppa/peppa_07",
+    "audio_prefix": "audio/peppa/peppa_07"
   },
   {
     "title": "佩奇搭积木房子",
@@ -1547,8 +1547,8 @@
     ],
     "id": "peppa_08",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_08/",
-    "audio_prefix": "audio/peppa/peppa_08/"
+    "img_prefix": "img/peppa/peppa_08",
+    "audio_prefix": "audio/peppa/peppa_08"
   },
   {
     "title": "户外滑滑梯",
@@ -1580,8 +1580,8 @@
     ],
     "id": "peppa_09",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_09/",
-    "audio_prefix": "audio/peppa/peppa_09/"
+    "img_prefix": "img/peppa/peppa_09",
+    "audio_prefix": "audio/peppa/peppa_09"
   },
   {
     "title": "讲故事时间",
@@ -1613,8 +1613,8 @@
     ],
     "id": "peppa_10",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_10/",
-    "audio_prefix": "audio/peppa/peppa_10/"
+    "img_prefix": "img/peppa/peppa_10",
+    "audio_prefix": "audio/peppa/peppa_10"
   },
   {
     "title": "佩奇做手工",
@@ -1646,8 +1646,8 @@
     ],
     "id": "peppa_11",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_11/",
-    "audio_prefix": "audio/peppa/peppa_11/"
+    "img_prefix": "img/peppa/peppa_11",
+    "audio_prefix": "audio/peppa/peppa_11"
   },
   {
     "title": "佩奇学数数",
@@ -1679,8 +1679,8 @@
     ],
     "id": "peppa_12",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_12/",
-    "audio_prefix": "audio/peppa/peppa_12/"
+    "img_prefix": "img/peppa/peppa_12",
+    "audio_prefix": "audio/peppa/peppa_12"
   },
   {
     "title": "佩奇的角色扮演游戏",
@@ -1712,8 +1712,8 @@
     ],
     "id": "peppa_13",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_13/",
-    "audio_prefix": "audio/peppa/peppa_13/"
+    "img_prefix": "img/peppa/peppa_13",
+    "audio_prefix": "audio/peppa/peppa_13"
   },
   {
     "title": "音乐课",
@@ -1745,8 +1745,8 @@
     ],
     "id": "peppa_14",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_14/",
-    "audio_prefix": "audio/peppa/peppa_14/"
+    "img_prefix": "img/peppa/peppa_14",
+    "audio_prefix": "audio/peppa/peppa_14"
   },
   {
     "title": "动物模仿游戏",
@@ -1778,8 +1778,8 @@
     ],
     "id": "peppa_15",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_15/",
-    "audio_prefix": "audio/peppa/peppa_15/"
+    "img_prefix": "img/peppa/peppa_15",
+    "audio_prefix": "audio/peppa/peppa_15"
   },
   {
     "title": "佩奇分享玩具",
@@ -1811,8 +1811,8 @@
     ],
     "id": "peppa_16",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_16/",
-    "audio_prefix": "audio/peppa/peppa_16/"
+    "img_prefix": "img/peppa/peppa_16",
+    "audio_prefix": "audio/peppa/peppa_16"
   },
   {
     "title": "下雨天室内乐",
@@ -1844,8 +1844,8 @@
     ],
     "id": "peppa_17",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_17/",
-    "audio_prefix": "audio/peppa/peppa_17/"
+    "img_prefix": "img/peppa/peppa_17",
+    "audio_prefix": "audio/peppa/peppa_17"
   },
   {
     "title": "佩奇运动会",
@@ -1877,8 +1877,8 @@
     ],
     "id": "peppa_18",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_18/",
-    "audio_prefix": "audio/peppa/peppa_18/"
+    "img_prefix": "img/peppa/peppa_18",
+    "audio_prefix": "audio/peppa/peppa_18"
   },
   {
     "title": "佩奇做三明治",
@@ -1910,8 +1910,8 @@
     ],
     "id": "peppa_19",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_19/",
-    "audio_prefix": "audio/peppa/peppa_19/"
+    "img_prefix": "img/peppa/peppa_19",
+    "audio_prefix": "audio/peppa/peppa_19"
   },
   {
     "title": "告别演出",
@@ -1943,386 +1943,169 @@
     ],
     "id": "peppa_20",
     "icon": "🐷",
-    "img_prefix": "img/peppa/peppa_20/",
-    "audio_prefix": "audio/peppa/peppa_20/"
+    "img_prefix": "img/peppa/peppa_20",
+    "audio_prefix": "audio/peppa/peppa_20"
   },
   {
-    "id": "story1_01",
-    "title": "佩奇的第一天幼儿园",
+    "title": "佩奇学成语：守株待兔",
+    "pages": [
+      {
+        "text": "猪爸爸在花园里种胡萝卜，他累得满头大汗。佩奇和乔治跑过来，想帮爸爸一起干活。"
+      },
+      {
+        "text": "突然，一只小兔子慌慌张张地冲过来，一头撞在了树桩上。猪爸爸开心地捡起兔子，说：“今天的运气真好！”"
+      },
+      {
+        "text": "从那天起，猪爸爸再也不去种胡萝卜了。他每天坐在树桩旁边，等着第二只兔子撞上来。"
+      },
+      {
+        "text": "佩奇问：“爸爸，你为什么不去种胡萝卜了？”猪爸爸说：“我等着兔子自己来呢，这样多省力气呀！”"
+      },
+      {
+        "text": "日子一天天过去，再也没有兔子撞到树桩上。猪爸爸的胡萝卜地却长满了杂草，一个胡萝卜都没剩下。"
+      },
+      {
+        "text": "猪爸爸难为情地说：“我明白了，不能只想着靠运气，还是要踏踏实实地劳动。”佩奇和乔治拉着爸爸的手，一起去重新种胡萝卜。"
+      }
+    ],
+    "id": "peppa_idiom_01",
     "icon": "🐷",
-    "img_prefix": "img/story1/",
-    "audio_prefix": "audio/story1/",
+    "img_prefix": "img/peppa_idiom/peppa_idiom_01/",
+    "audio_prefix": "audio/peppa_idiom/peppa_idiom_01/"
+  },
+  {
+    "title": "佩奇学成语：拔苗助长",
     "pages": [
       {
-        "text": "今天，佩奇要去幼儿园啦！她穿上红色的裙子，背起小书包。",
-        "kw": "school"
+        "text": "春天到了，猪爸爸带着佩奇和乔治在花园里种下了一排小幼苗。佩奇轻轻地给它们浇水，希望它们快快长大。"
       },
       {
-        "text": "羚羊老师笑眯眯地迎接佩奇，带她认识新朋友。",
-        "kw": "teacher"
+        "text": "第二天一早，猪爸爸跑到花园一看，幼苗只长高了一点点。他着急地说：“哎呀，长得太慢了，什么时候才能吃到蔬菜呀！”"
       },
       {
-        "text": "大家一起玩传球游戏，佩奇跑得很快！",
-        "kw": "game"
+        "text": "猪爸爸想了一个“好主意”，他把每一棵小幼苗都轻轻地往上拔高了一截。小幼苗一下子看起来高了好多，猪爸爸得意极了。"
       },
       {
-        "text": "小朋友们围坐在一起唱儿歌，佩奇唱得最大声。",
-        "kw": "song"
+        "text": "佩奇和乔治来到花园，奇怪地问：“爸爸，幼苗怎么突然长高了？”猪爸爸笑着说：“我帮了它们一点点小忙！”"
       },
       {
-        "text": "画画时间到了，佩奇画了一朵大大的太阳花。",
-        "kw": "draw"
+        "text": "可是到了下午，被拔高的幼苗全都耷拉下了脑袋，叶子也变得黄黄的。佩奇难过地喊：“爸爸，幼苗生病了！”"
       },
       {
-        "text": "午饭香喷喷，佩奇对妈妈说：幼儿园真好玩！",
-        "kw": "goodbye"
+        "text": "猪妈妈走过来看了看，温柔地说：“植物生长需要耐心等待，硬把它们拔高，只会伤害它们。”猪爸爸红着脸说：“我以后再也不拔苗了。”"
       }
-    ]
+    ],
+    "id": "peppa_idiom_02",
+    "icon": "🐷",
+    "img_prefix": "img/peppa_idiom/peppa_idiom_02/",
+    "audio_prefix": "audio/peppa_idiom/peppa_idiom_02/"
   },
   {
-    "id": "paw1_01",
-    "title": "汪汪队：大火救援",
-    "icon": "🐶",
-    "img_prefix": "img/paw/",
-    "audio_prefix": "audio/paw/",
+    "title": "佩奇学成语：画龙点睛",
     "pages": [
       {
-        "text": "莱德和汪汪队在瞭望塔里玩耍。突然电话铃响了！",
-        "kw": "瞭望塔"
+        "text": "幼儿园里，羚羊老师让小朋友们画自己最喜欢的动物。佩奇画了一条长长的龙，乔治画了一只恐龙，苏西画了一匹小马。"
       },
       {
-        "text": "不好了，城中心的大楼着火了！浓烟滚滚。",
-        "kw": "着火"
+        "text": "佩奇画的龙有漂亮的鳞片和弯弯的胡须，可是她总觉得少了点什么。苏西看了看说：“佩奇，你的龙没有眼睛呀！”"
       },
       {
-        "text": "毛毛跳上消防车，天天开直升机跟着。",
-        "kw": "出发"
+        "text": "猪爸爸来接佩奇，他拿起画笔，在龙的眼睛位置轻轻点了两下。哇，整条龙好像一下子变得神气活现，像要飞起来一样！"
       },
       {
-        "text": "路马用水炮对准大火喷水。",
-        "kw": "灭火"
+        "text": "小朋友们全都围过来，惊讶地叫起来：“佩奇的龙活过来了！”大家都觉得这条龙是全班最棒的一幅画。"
       },
       {
-        "text": "大家齐心协力浇灭了大火！",
-        "kw": "胜利"
+        "text": "佩奇好奇地问爸爸：“为什么只点了两个小点，龙就变得这么不一样呢？”猪爸爸笑着说：“最重要的地方常常就是那一点点呀。”"
       },
       {
-        "text": "市长给汪汪队颁发奖章，大家欢呼！",
-        "kw": "英雄"
+        "text": "佩奇高兴地把画贴在墙上，她明白了：有时候，关键的一小笔，就能让整件事情变得精彩起来。"
       }
-    ]
+    ],
+    "id": "peppa_idiom_03",
+    "icon": "🐷",
+    "img_prefix": "img/peppa_idiom/peppa_idiom_03/",
+    "audio_prefix": "audio/peppa_idiom/peppa_idiom_03/"
   },
   {
-    "id": "judy1_01",
-    "title": "朱迪的交通大救援",
-    "icon": "🐰",
-    "img_prefix": "img/judy/",
-    "audio_prefix": "audio/judy/",
+    "title": "佩奇学成语：亡羊补牢",
     "pages": [
       {
-        "text": "兔子警官朱迪在动物城巡逻，开着警车。",
-        "kw": "巡逻"
+        "text": "周末，佩奇和乔治去苏西家玩。苏西的爷爷在羊圈旁边皱着眉头说：“羊圈破了一个洞，我得赶紧修好。”"
       },
       {
-        "text": "前面堵车了！长长的车队一动不动。",
-        "kw": "堵车"
+        "text": "苏西拉着佩奇去玩蹦床，爷爷也放下工具说：“只破了一个小洞，明天再修也不迟。”于是大家都去休息了。"
       },
       {
-        "text": "原来是小羊的推车坏在路中间。",
-        "kw": "推车"
+        "text": "夜里，大风吹了起来，羊圈上的洞被吹得更大了。一只大灰狼悄悄地从洞口钻了进去，叼走了一只小羊。"
       },
       {
-        "text": "朱迪拿出工具修好了推车。",
-        "kw": "修理"
+        "text": "第二天早上，苏西发现少了一只小羊，急得哭了起来。佩奇说：“别难过，我们赶快把洞补好，剩下的羊就不会丢啦！”"
       },
       {
-        "text": "朱迪指挥交通，道路恢复了通畅。",
-        "kw": "指挥"
+        "text": "佩奇、乔治和苏西一起帮爷爷搬来木板，叮叮当当地把羊圈修得结结实实。大灰狼在远处转了一圈，灰溜溜地走了。"
       },
       {
-        "text": "小羊说谢谢！朱迪说帮助别人最快乐！",
-        "kw": "快乐"
+        "text": "苏西爷爷摸摸佩奇的头说：“犯了错及时补救，就不算晚。这就是‘亡羊补牢，为时未晚’的意思呀。”"
       }
-    ]
+    ],
+    "id": "peppa_idiom_04",
+    "icon": "🐷",
+    "img_prefix": "img/peppa_idiom/peppa_idiom_04/",
+    "audio_prefix": "audio/peppa_idiom/peppa_idiom_04/"
   },
   {
-    "id": "idiom_21",
-    "title": "成语：愚公移山",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms2/",
-    "audio_prefix": "audio/idioms2/21_愚公移山",
+    "title": "佩奇学成语：刻舟求剑",
     "pages": [
       {
-        "text": "【成语】愚公移山\n\n太行、王屋两座大山挡住了愚公一家的出路，愚公决心带领子孙挖山运土。河曲智叟笑他自不量力，愚公却说山不会增高，而子子孙孙无穷尽。天帝被感动，派夸娥氏二子将山背走了。\n\n💡 面对困难，只要有恒心和毅力，坚持不懈，终究能战胜它。",
-        "kw": "愚公移山"
+        "text": "阳光明媚的下午，猪爸爸一家去湖上划船。乔治抱着他心爱的玩具恐龙，坐在船边开心地玩着。"
+      },
+      {
+        "text": "小船摇摇晃晃，乔治一不小心，恐龙玩具“扑通”一声掉进了水里。乔治急得哇哇叫，佩奇也着急地喊：“恐龙掉下去啦！”"
+      },
+      {
+        "text": "猪爸爸不慌不忙地从口袋里掏出一支粉笔，在船边上画了一个大大的记号。他认真地说：“别担心，我在恐龙掉下去的地方做了标记。”"
+      },
+      {
+        "text": "佩奇奇怪地问：“爸爸，你在船上画记号有什么用呢？”猪爸爸自信地说：“等船靠了岸，我们就从这个记号下面下水去找，一定能找到。”"
+      },
+      {
+        "text": "船靠岸后，猪爸爸在记号下面的水里摸了半天，什么也没找到。佩奇笑着说：“爸爸，船一直在走，恐龙可没有跟着船一起走呀！”"
+      },
+      {
+        "text": "后来，猪妈妈用网兜在恐龙落水的地方捞回了玩具。猪爸爸挠挠头说：“我明白了，做事不能死守记号，要懂得变通！”"
       }
-    ]
+    ],
+    "id": "peppa_idiom_05",
+    "icon": "🐷",
+    "img_prefix": "img/peppa_idiom/peppa_idiom_05/",
+    "audio_prefix": "audio/peppa_idiom/peppa_idiom_05/"
   },
   {
-    "id": "idiom_22",
-    "title": "成语：精卫填海",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms2/",
-    "audio_prefix": "audio/idioms2/22_精卫填海",
+    "title": "佩奇去博物馆",
     "pages": [
       {
-        "text": "【成语】精卫填海\n\n炎帝的小女儿女娃在东海游玩时不幸溺亡，她的灵魂化作精卫鸟。精卫鸟每天从西山衔来树枝和石子，投向东海，发誓要把大海填平。大海嘲笑它的渺小，但它从不放弃。\n\n💡 即使力量微小，只要拥有坚定的意志和不屈的精神，就能做出震撼天地的壮举。",
-        "kw": "精卫填海"
-      }
-    ]
-  },
-  {
-    "id": "idiom_23",
-    "title": "成语：夸父逐日",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms2/",
-    "audio_prefix": "audio/idioms2/23_夸父逐日",
-    "pages": [
+        "text": "今天，猪爸爸和猪妈妈带着佩奇和乔治去城市博物馆。佩奇一进门，就看见一个巨大的恐龙化石，高高地站在大厅中间。"
+      },
       {
-        "text": "【成语】夸父逐日\n\n巨人夸父想要追上太阳，他迈开长腿拼命奔跑，离太阳越来越近，口渴难耐。他喝干了黄河和渭水，还是不解渴，想去北方大泽饮水，却在半路渴死了。他的手杖化为一片桃林。\n\n💡 夸父逐日象征着对光明和理想的执着追求，也提醒人们做事要量力而行，但那种奋力拼搏的精神永远值得敬佩。",
-        "kw": "夸父逐日"
-      }
-    ]
-  },
-  {
-    "id": "idiom_24",
-    "title": "成语：女娲补天",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms2/",
-    "audio_prefix": "audio/idioms2/24_女娲补天",
-    "pages": [
+        "text": "乔治瞪大眼睛，对着恐龙化石“哇”地叫了一声。讲解员兔小姐笑着说：“这可是很久很久以前生活在地球上的霸王龙哦。”"
+      },
       {
-        "text": "【成语】女娲补天\n\n远古时代，天崩塌了一角，大地裂开，洪水与猛兽肆虐。女娲熔炼五色石修补苍天，砍下神龟的四足撑起四方，又烧芦苇灰堵住洪水。最终天地恢复平静，人类重新过上安宁生活。\n\n💡 面对巨大的灾难，要敢于担当，用智慧和创造去拯救危局，造福苍生。",
-        "kw": "女娲补天"
-      }
-    ]
-  },
-  {
-    "id": "idiom_25",
-    "title": "成语：大禹治水",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms2/",
-    "audio_prefix": "audio/idioms2/25_大禹治水",
-    "pages": [
+        "text": "接着，他们来到了太空展区。佩奇坐上模拟火箭，按下按钮，椅子就轻轻地摇晃起来，窗外的星星好像真的在飞过。"
+      },
       {
-        "text": "【成语】大禹治水\n\n尧帝时期洪水泛滥，鲧用堵的办法失败，他的儿子禹接替治水。禹改变策略，开渠排水、疏通河道，将洪水引入大海。他三次路过家门都顾不上进去，历经十三年终于治水成功。\n\n💡 做事要顺应规律，用疏导代替堵塞；同时，为公众利益无私奉献、持之以恒的精神更值得学习。",
-        "kw": "大禹治水"
-      }
-    ]
-  },
-  {
-    "id": "idiom_26",
-    "title": "成语：闻鸡起舞",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms2/",
-    "audio_prefix": "audio/idioms2/26_闻鸡起舞",
-    "pages": [
+        "text": "在互动区，佩奇和乔治用小铲子挖沙子，挖出了一块“恐龙骨头”。佩奇兴奋地说：“我长大了要当古生物学家！”"
+      },
       {
-        "text": "【成语】闻鸡起舞\n\n东晋的祖逖与好友刘琨同住，半夜听到鸡鸣，祖逖便叫醒刘琨一起拔剑练武。从此，无论寒暑，只要鸡叫他们就起床舞剑，切磋武艺。后来两人都成为国家的栋梁之才。\n\n💡 有志者应当珍惜时光，奋发努力，勤学苦练，才能实现抱负。",
-        "kw": "闻鸡起舞"
-      }
-    ]
-  },
-  {
-    "id": "idiom_27",
-    "title": "成语：悬梁刺股",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms2/",
-    "audio_prefix": "audio/idioms2/27_悬梁刺股",
-    "pages": [
+        "text": "最后，佩奇一家来到了宝宝动物区。佩奇轻轻地摸着小羊羔，乔治学着羊叫，逗得猪妈妈哈哈大笑。"
+      },
       {
-        "text": "【成语】悬梁刺股\n\n汉朝的孙敬读书到深夜，为防止打瞌睡，他把头发系在屋梁上，一低头就会被扯痛。战国的苏秦读书困倦时，就用锥子刺自己的大腿，让疼痛赶走睡意。他们就这样刻苦攻读，终成大学问家。\n\n💡 学习需要超乎常人的刻苦和自律，只有付出艰辛的努力，才能获得真才实学。",
-        "kw": "悬梁刺股"
+        "text": "回家的路上，佩奇说：“博物馆太棒了，我看到了好多神奇的东西，学到了好多新知识！”猪爸爸说：“下次我们再来探索更多。”"
       }
-    ]
-  },
-  {
-    "id": "idiom_28",
-    "title": "成语：凿壁借光",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms2/",
-    "audio_prefix": "audio/idioms2/28_凿壁借光",
-    "pages": [
-      {
-        "text": "【成语】凿壁借光\n\n西汉的匡衡家境贫寒，晚上点不起灯。他见邻居家灯火通明，就在墙壁上凿了一个小孔，让微弱的光线透过来。他每天就着这点光读书，后来成为一代名相。\n\n💡 在艰苦的条件下，要主动创造条件学习，珍惜每一个求知的机会，用勤奋改变命运。",
-        "kw": "凿壁借光"
-      }
-    ]
-  },
-  {
-    "id": "idiom_29",
-    "title": "成语：程门立雪",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms2/",
-    "audio_prefix": "audio/idioms2/29_程门立雪",
-    "pages": [
-      {
-        "text": "【成语】程门立雪\n\n北宋的杨时和游酢去拜访老师程颐，正逢程颐在屋里闭目养神。两人不愿惊扰，便恭恭敬敬站在门外等候。天上下起大雪，等程颐醒来时，门外的雪已经积了一尺多深。\n\n💡 尊师重道、虚心求教是求学应有的态度，真诚和耐心往往能赢得宝贵的教诲。",
-        "kw": "程门立雪"
-      }
-    ]
-  },
-  {
-    "id": "idiom_30",
-    "title": "成语：负荆请罪",
-    "icon": "📚",
-    "type": "idiom",
-    "img_prefix": "img/idioms2/",
-    "audio_prefix": "audio/idioms2/30_负荆请罪",
-    "pages": [
-      {
-        "text": "【成语】负荆请罪\n\n赵国的蔺相如因功被封为上卿，老将廉颇不服，扬言要羞辱他。蔺相如处处躲避，说国家安危重于个人恩怨。廉颇听说后羞愧万分，脱掉上衣，背着荆条登门请罪，两人从此成为生死之交。\n\n💡 要顾全大局，宽厚待人；犯了错误能主动认错、诚恳道歉，更显品格的高尚。",
-        "kw": "负荆请罪"
-      }
-    ]
-  },
-  {
-    "id": "poem_21",
-    "title": "古诗：望天门山",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/poems2/",
-    "audio_prefix": "audio/poems2/21_望天门山",
-    "pages": [
-      {
-        "text": "《望天门山》\n李白\n\n天门大山中间断，/ 长江绿水弯又弯。/ 两岸青山像门开，/ 一只小船天边来。\n\n📖 高高的天门山被长江水从中间冲开，碧绿的江水在这里打着转儿。两岸的青山像两扇大门一样打开，一只小船从远远的天边飘了过来。",
-        "kw": "李白"
-      }
-    ]
-  },
-  {
-    "id": "poem_22",
-    "title": "古诗：早发白帝城",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/poems2/",
-    "audio_prefix": "audio/poems2/22_早发白帝城",
-    "pages": [
-      {
-        "text": "《早发白帝城》\n李白\n\n早上告别白云间，/ 千里江陵一日还。/ 两岸猿声叫不停，/ 轻舟已过万重山。\n\n📖 清晨，我告别了高在云中的白帝城，千里之外的江陵一天就能回去。两岸山上的猿猴不停地叫着，轻快的小船早已穿过了无数座大山。",
-        "kw": "李白"
-      }
-    ]
-  },
-  {
-    "id": "poem_23",
-    "title": "古诗：绝句",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/poems2/",
-    "audio_prefix": "audio/poems2/23_绝句",
-    "pages": [
-      {
-        "text": "《绝句》\n杜甫\n\n两只黄鹂叫喳喳，/ 一行白鹭上青天。/ 窗外千年大雪山，/ 门前万里大轮船。\n\n📖 两只黄鹂在翠绿的柳树间欢快地叫着，一行白鹭排着队飞上了蓝蓝的天空。从窗口望去，能看到远处千年不化的雪山，门前停着能航行到万里之外的大船。",
-        "kw": "杜甫"
-      }
-    ]
-  },
-  {
-    "id": "poem_24",
-    "title": "古诗：江雪",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/poems2/",
-    "audio_prefix": "audio/poems2/24_江雪",
-    "pages": [
-      {
-        "text": "《江雪》\n柳宗元\n\n一座座山鸟儿飞光，/ 一条条路人影不见。/ 江上小船有个老爷爷，/ 独自钓鱼在雪天。\n\n📖 所有山上的鸟儿都飞走了，所有路上都看不到人的影子。江面上有一条小船，船上有一位老爷爷，他戴着斗笠穿着蓑衣，独自在漫天大雪中钓鱼。",
-        "kw": "柳宗元"
-      }
-    ]
-  },
-  {
-    "id": "poem_25",
-    "title": "古诗：游子吟",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/poems2/",
-    "audio_prefix": "audio/poems2/25_游子吟",
-    "pages": [
-      {
-        "text": "《游子吟》\n孟郊\n\n妈妈手中细细的线，/ 缝成游子身上衣服。/ 出发前密密地缝啊，/ 担心孩子迟迟不归。/ 谁说小草一片心，/ 能报答春天太阳光？\n\n📖 妈妈用手中的针线，为要出远门的孩子缝衣服。临行前她缝得又密又结实，就怕孩子回来得太晚，衣服破了没人补。谁说小草那一点点孝心，能报答得了春天太阳那温暖的恩情呢？",
-        "kw": "孟郊"
-      }
-    ]
-  },
-  {
-    "id": "poem_26",
-    "title": "古诗：回乡偶书",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/poems2/",
-    "audio_prefix": "audio/poems2/26_回乡偶书",
-    "pages": [
-      {
-        "text": "《回乡偶书》\n贺知章\n\n小时候离开家乡，/ 老了才回到这里。/ 口音还没有改变，/ 头发胡子白花花。/ 小朋友看见了我，/ 笑着问：“客人，您从哪儿来呀？”\n\n📖 我很小的时候就离开了家乡，直到老了才回来。虽然说话的口音还和以前一样，但头发和胡子已经全白了。村里的孩子们看见我都不认识，笑眯眯地问我：“客人，您是从哪里来的呀？”",
-        "kw": "贺知章"
-      }
-    ]
-  },
-  {
-    "id": "poem_27",
-    "title": "古诗：出塞",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/poems2/",
-    "audio_prefix": "audio/poems2/27_出塞",
-    "pages": [
-      {
-        "text": "《出塞》\n王昌龄\n\n天上还是秦朝月亮，/ 地上还是汉朝边关。/ 万里长征的战士，/ 到现在也没回家。/ 如果飞将军还在的话，/ 绝不让敌人过阴山！\n\n📖 天上的月亮还是秦朝时的那一轮，边关还是汉朝时的那一道。那些离家万里去打仗的战士，到现在也还不能回家。要是英勇的飞将军李广还在，一定不会让敌人跨过阴山来侵犯我们。",
-        "kw": "王昌龄"
-      }
-    ]
-  },
-  {
-    "id": "poem_28",
-    "title": "古诗：鹿柴",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/poems2/",
-    "audio_prefix": "audio/poems2/28_鹿柴",
-    "pages": [
-      {
-        "text": "《鹿柴》\n王维\n\n空山不见一个人，/ 但能听到说话声。/ 夕阳照进深树林，/ 又照在青青苔藓上。\n\n📖 空荡荡的山里看不到一个人影，却隐隐约约听到有人说话的声音。夕阳的金光照进幽深的树林，又落在那片绿绿的苔藓上，显得格外明亮。",
-        "kw": "王维"
-      }
-    ]
-  },
-  {
-    "id": "poem_29",
-    "title": "古诗：送元二使安西",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/poems2/",
-    "audio_prefix": "audio/poems2/29_送元二使安西",
-    "pages": [
-      {
-        "text": "《送元二使安西》\n王维\n\n渭城早晨下小雨，/ 打湿地上轻灰尘。/ 客舍前柳树绿又新，/ 请你再喝一杯酒，/ 向西出了阳关，/ 就见不到老朋友啦。\n\n📖 渭城早晨下了一场小雨，把地上的尘土都打湿了。旅店前的柳树被雨水洗得翠绿新鲜。朋友啊，请你再喝干这一杯酒，因为等你向西走出了阳关，就再也见不到我这个老朋友了。",
-        "kw": "王维"
-      }
-    ]
-  },
-  {
-    "id": "poem_30",
-    "title": "古诗：黄鹤楼送孟浩然之广陵",
-    "icon": "📜",
-    "type": "poem",
-    "img_prefix": "img/poems2/",
-    "audio_prefix": "audio/poems2/30_黄鹤楼送孟浩然之广陵",
-    "pages": [
-      {
-        "text": "《黄鹤楼送孟浩然之广陵》\n李白\n\n老朋友辞别黄鹤楼，/ 在这烟花三月去扬州。/ 孤帆远影渐渐消失，/ 只看见长江水在天边流。\n\n📖 我的老朋友在黄鹤楼和我告别，在柳絮如烟、繁花似锦的三月，他要顺江东下去扬州。那一片孤帆的远影慢慢消失在蓝天尽头，我只看见滚滚的长江水向着天边流去。",
-        "kw": "李白"
-      }
-    ]
+    ],
+    "id": "peppa_idiom_06",
+    "icon": "🐷",
+    "img_prefix": "img/peppa_idiom/peppa_idiom_06/",
+    "audio_prefix": "audio/peppa_idiom/peppa_idiom_06/"
   }
 ]

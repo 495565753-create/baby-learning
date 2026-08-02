@@ -1,0 +1,33 @@
+{
+  "title": "冰淇淋车坏了",
+  "pages": [
+    {
+      "text": "兔子警官朱迪在公园里巡逻。她看到冰淇淋车停着不动，小动物们都很伤心。",
+      "kw": "Judy patrolling park, sad animals"
+    },
+    {
+      "text": "朱迪找来了好朋友尼克。他们决定一起想办法修好冰淇淋车。",
+      "kw": "Judy and Nick together"
+    },
+    {
+      "text": "他们趴下一看，原来是车轮坏了。尼克拿出工具箱，朱迪也来帮忙。",
+      "kw": "broken wheel, toolbox"
+    },
+    {
+      "text": "朱迪扶着轮子，尼克用扳手拧紧螺丝。咔嚓咔嚓，车轮修好啦！",
+      "kw": "fixing wheel with wrench"
+    },
+    {
+      "text": "冰淇淋车又能开动了！小动物们排起了长长的队伍，等着买好吃的冰淇淋。",
+      "kw": "ice cream truck working, queue"
+    },
+    {
+      "text": "朱迪和尼克也得到了冰淇淋。他们开心地舔着，这是最棒的一天。",
+      "kw": "Judy and Nick eating ice cream, happy"
+    }
+  ],
+  "id": "judy_12",
+  "icon": "🐰",
+  "img_prefix": "img/judy/judy_12",
+  "audio_prefix": "audio/judy/judy_12"
+}

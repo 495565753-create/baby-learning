@@ -1,0 +1,33 @@
+{
+  "title": "朱迪的马拉松比赛",
+  "pages": [
+    {
+      "text": "朱迪宣布动物城要举办马拉松比赛。所有小动物都可以参加。",
+      "kw": "Judy Hopps announcing a marathon, colorful Zootopia background, happy animals"
+    },
+    {
+      "text": "朱迪和尼克一起在公园里练习跑步。尼克说：“我也要参加比赛！”",
+      "kw": "Judy Hopps and Nick Wilde jogging in park, sunny day, trees"
+    },
+    {
+      "text": "比赛当天，起跑线站满了动物。有乌龟、大象，还有小羊。",
+      "kw": "Starting line of marathon, many animals gathering, turtle, elephant, sheep, city hall"
+    },
+    {
+      "text": "比赛开始啦！朱迪跑得飞快，尼克骑着自行车跟在旁边，为她加油。",
+      "kw": "Judy running fast, Nick riding a bicycle next to her, cheering, race track"
+    },
+    {
+      "text": "朱迪有点累了，但朋友们都在喊：“加油，朱迪！”她又充满了力量。",
+      "kw": "Judy looking tired, friends cheering, crowd with signs, Clawhauser and others"
+    },
+    {
+      "text": "朱迪冲过终点线，赢得了亮闪闪的奖牌。大家开心地抱在一起，友谊第一！",
+      "kw": "Judy crossing finish line, winning medal, happy celebration, confetti, Nick hugging her"
+    }
+  ],
+  "id": "judy_15",
+  "icon": "🐰",
+  "img_prefix": "img/judy/judy_15",
+  "audio_prefix": "audio/judy/judy_15"
+}

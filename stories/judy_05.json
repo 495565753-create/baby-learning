@@ -1,0 +1,33 @@
+{
+  "title": "朱迪的雨天巡逻",
+  "pages": [
+    {
+      "text": "滴答滴答，下雨啦！朱迪穿上雨衣和雨靴，出门巡逻。",
+      "kw": "Judy Hopps in raincoat, rainy street, puddles"
+    },
+    {
+      "text": "小蜗牛慢慢爬，雨点打在身上。朱迪轻轻把它移到树叶下。",
+      "kw": "Judy helping snail under leaf, rainy garden"
+    },
+    {
+      "text": "小兔子迷路了，害怕得直哭。朱迪撑着伞，送它回家。",
+      "kw": "Judy holding umbrella, walking with a lost bunny in rain"
+    },
+    {
+      "text": "哎呀，路上有个大水坑！朱迪搬来树枝，盖住水坑，保护大家。",
+      "kw": "Judy covering a big puddle with branches, rainy path"
+    },
+    {
+      "text": "雨停了，彩虹出来了！小动物们笑着对朱迪说谢谢。",
+      "kw": "rainbow after rain, Judy waving, happy animals"
+    },
+    {
+      "text": "朱迪开心地敬个礼：“明天继续巡逻，帮助大家！”",
+      "kw": "Judy saluting with smile, sunny day after rain"
+    }
+  ],
+  "id": "judy_05",
+  "icon": "🐰",
+  "img_prefix": "img/judy/judy_05",
+  "audio_prefix": "audio/judy/judy_05"
+}
