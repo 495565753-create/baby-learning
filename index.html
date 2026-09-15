@@ -693,6 +693,124 @@ body::before {
 .btn-speak:active { transform:translateY(4px); box-shadow:0 2px 0 #2A62D8; }
 
 button, .home-card, .sub-card, .item-card, .story-card, .chip, .mem-card, .bin, .listen-card, .tile, .seq-card, .shadow-opt, .puz { touch-action:manipulation; }
+
+/* ==================== 板块头部 ==================== */
+.sec-head {
+  display:flex; align-items:center; gap:12px; padding:14px 16px; margin-bottom:14px;
+  border-radius:var(--radius); border:1px solid rgba(255,255,255,.72); box-shadow:var(--shadow-sm);
+}
+.sec-head .sec-ic {
+  width:48px; height:48px; flex:0 0 auto; border-radius:16px;
+  display:flex; align-items:center; justify-content:center; font-size:25px;
+  background:rgba(255,255,255,.78); box-shadow:0 4px 12px rgba(120,90,60,.12);
+}
+.sec-head .sec-txt { flex:1; min-width:0; }
+.sec-head .sec-t { font-size:18px; font-weight:900; }
+.sec-head .sec-s { font-size:12px; font-weight:700; color:var(--ink-2); margin-top:3px; }
+.sec-head .sec-star {
+  font-size:12.5px; font-weight:900; padding:5px 11px; border-radius:999px;
+  background:rgba(255,255,255,.82); color:#A9741A; white-space:nowrap;
+}
+.sec-head.math    { background:linear-gradient(135deg,#FFE9CF,#FFD3AE); }
+.sec-head.english { background:linear-gradient(135deg,#E2ECFF,#C9DBFF); }
+.sec-head.general { background:linear-gradient(135deg,#DCF7EB,#B9EBD4); }
+.sec-head.games   { background:linear-gradient(135deg,#FFE1EC,#FFC2D6); }
+.sec-head.story   { background:linear-gradient(135deg,#EEE3FF,#DCC9FF); }
+
+/* 首页欢迎条里的小按钮 */
+.hero-btn {
+  margin-top:11px; padding:8px 15px; border-radius:999px; border:1.5px solid rgba(255,255,255,.9);
+  background:rgba(255,255,255,.74); font-size:12.5px; font-weight:900; color:#A9542F; cursor:pointer;
+  box-shadow:0 4px 12px rgba(200,120,80,.16); transition:transform .14s, background .16s;
+}
+.hero-btn:hover { background:#fff; }
+.hero-btn:active { transform:scale(.95); }
+
+/* ==================== 我的成长 ==================== */
+.me-hero {
+  display:flex; align-items:center; gap:14px; padding:18px; margin-bottom:14px;
+  border-radius:var(--radius); border:1px solid rgba(255,255,255,.78);
+  background:linear-gradient(135deg,#FFF0D6,#FFE3EF 50%,#E4EDFF);
+  box-shadow:0 10px 26px rgba(255,160,120,.18);
+}
+.me-avatar { font-size:58px; line-height:1; animation:heroFloat 3.6s ease-in-out infinite; }
+.me-info { flex:1; min-width:0; }
+.me-lv { font-size:12.5px; font-weight:900; color:#B4682F; }
+.me-title { font-size:20px; font-weight:900; margin-top:2px; }
+.me-sub { font-size:12.5px; color:#8A6A55; font-weight:700; margin-top:5px; }
+.me-bar { height:10px; border-radius:999px; background:rgba(255,255,255,.72); overflow:hidden; margin-top:9px; }
+.me-bar i { display:block; height:100%; border-radius:999px; background:linear-gradient(90deg,#FFC53D,#FF8A3D); transition:width .4s ease; }
+
+.me-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:16px; }
+.me-stat {
+  padding:14px 8px; border-radius:var(--radius-sm); text-align:center;
+  background:var(--surface); border:1.5px solid var(--line); box-shadow:var(--shadow-sm);
+}
+.me-stat .v { font-size:22px; font-weight:900; color:#E07A1F; }
+.me-stat .k { font-size:11.5px; color:var(--ink-2); font-weight:800; margin-top:3px; }
+
+.me-sec { margin-bottom:18px; }
+.me-sec h3 { font-size:16px; font-weight:900; margin-bottom:10px; display:flex; align-items:center; gap:7px; }
+.me-sec h3 span { font-size:12px; font-weight:800; color:var(--ink-3); }
+
+.badge-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(96px,1fr)); gap:10px; }
+.badge {
+  position:relative; padding:14px 8px; border-radius:18px; text-align:center;
+  background:var(--surface); border:2px solid var(--line); box-shadow:var(--shadow-sm);
+}
+.badge .be { font-size:32px; line-height:1.25; filter:grayscale(1); opacity:.4; display:block; }
+.badge .bn { font-size:11.5px; font-weight:800; margin-top:6px; line-height:1.35; color:var(--ink-3); }
+.badge .bp { font-size:10.5px; color:var(--ink-3); margin-top:3px; font-weight:800; }
+.badge .lock { position:absolute; top:8px; right:9px; font-size:11px; opacity:.45; }
+.badge.on { border-color:#F5D98A; background:linear-gradient(135deg,#FFFDF5,#FFF4D6); box-shadow:0 6px 16px rgba(240,180,60,.22); }
+.badge.on .be { filter:none; opacity:1; animation:badgePop .55s ease; }
+.badge.on .bn { color:#8A6420; }
+.badge.on .bp { color:#B08A38; }
+.badge.on .lock { display:none; }
+@keyframes badgePop { 0% { transform:scale(.6) rotate(-12deg); } 60% { transform:scale(1.16) rotate(6deg); } 100% { transform:scale(1) rotate(0); } }
+
+.cal { display:grid; grid-template-columns:repeat(7,1fr); gap:6px; }
+.cal .c {
+  aspect-ratio:1; border-radius:11px; display:flex; align-items:center; justify-content:center;
+  font-size:12px; font-weight:800; color:var(--ink-3); background:var(--bg); border:1.5px solid transparent;
+}
+.cal .c.on { background:linear-gradient(135deg,#FFD98A,#FFB44D); color:#fff; box-shadow:0 3px 9px rgba(240,160,60,.30); }
+.cal .c.today { border-color:#FF8A3D; }
+.cal .wk { font-size:10.5px; font-weight:800; color:var(--ink-3); text-align:center; padding-bottom:2px; }
+
+/* ==================== 打地鼠 / 数字寻宝 ==================== */
+.whack-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; max-width:330px; margin:16px auto 0; }
+.whack-hole {
+  aspect-ratio:1; border-radius:50%; border:3px solid var(--line-2); cursor:pointer;
+  background:radial-gradient(circle at 50% 68%, #F0E3D3, #E0CEBA);
+  box-shadow:inset 0 6px 14px rgba(120,90,60,.22);
+  display:flex; align-items:center; justify-content:center; font-size:34px;
+  transition:transform .12s, background .14s, border-color .14s;
+}
+.whack-hole.up { background:radial-gradient(circle at 50% 40%, #FFE9CF, #FFC98A); border-color:#FFB873; }
+.whack-hole.up:active { transform:scale(.92); }
+.whack-hole.hit { background:radial-gradient(circle at 50% 40%, #D7F6E8, #A9E3CC); border-color:#7ED9B6; }
+.whack-time { height:10px; border-radius:999px; background:var(--line); overflow:hidden; margin:14px 0 8px; }
+.whack-time i { display:block; height:100%; border-radius:999px; background:linear-gradient(90deg,#7EE0BC,#22C08D); transition:width .3s linear; }
+
+.hunt-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; max-width:330px; margin:16px auto 0; }
+.hunt-cell {
+  aspect-ratio:1; border-radius:18px; border:2.5px solid var(--line-2); background:var(--surface);
+  font-size:26px; font-weight:900; color:var(--ink); cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 4px 0 var(--line-2);
+  transition:transform .12s, box-shadow .12s, background .16s, border-color .16s;
+}
+.hunt-cell:hover { border-color:var(--accent); background:var(--accent-soft); }
+.hunt-cell:active { transform:translateY(3px); box-shadow:0 0 0 var(--line-2); }
+.hunt-cell.done { background:#DFF7EC; border-color:#22C08D; color:#0A8F6B; box-shadow:0 4px 0 #A9E3CC; pointer-events:none; }
+.hunt-cell.next { border-color:#FFB873; background:#FFF8EE; }
+.hunt-cell.wrong { background:#FFE7EE; border-color:#FF7BA0; color:#D9436A; animation:huntShake .3s ease; }
+@keyframes huntShake { 0%,100% { transform:translateX(0); } 25% { transform:translateX(-4px); } 75% { transform:translateX(4px); } }
+
+/* 词汇卡再精细一点 */
+.item-card { border:1.5px solid var(--line); }
+.item-card .emoji-block { font-size:21px; }
 @media (hover:none) {
   .item-card .speaker-hint { opacity:.3; }
 }
@@ -747,7 +865,7 @@ button, .home-card, .sub-card, .item-card, .story-card, .chip, .mem-card, .bin, 
       <span class="brand-name">宝宝启蒙学习</span>
     </div>
     <div class="actions">
-      <div class="star-badge" id="starBadge" title="我的星星" onclick="app.showStars()"><span class="s">⭐</span><span id="starCount">0</span></div>
+      <div class="star-badge" id="starBadge" title="我的星星" onclick="app.navigate('me')"><span class="s">⭐</span><span id="starCount">0</span></div>
       <button class="btn-icon" id="btnMute" title="声音开关">🔊</button>
       <button class="btn-home" id="btnHome" style="display:none;">⬅ 返回</button>
     </div>
@@ -757,10 +875,11 @@ button, .home-card, .sub-card, .item-card, .story-card, .chip, .mem-card, .bin, 
     <!-- HOME PAGE -->
     <div class="page active" id="page-home">
       <div class="hero">
-        <div class="hero-text">
+      <div class="hero-text">
           <div class="hero-greet" id="heroGreet">你好呀！</div>
           <div class="hero-title">今天也要加油哦</div>
           <div class="hero-sub" id="heroSub">每天进步一点点，就很了不起 ✨</div>
+          <button class="hero-btn" onclick="app.navigate('me')">🏅 我的奖章</button>
         </div>
         <div class="hero-mascot" id="heroMascot">🐻</div>
       </div>
@@ -815,6 +934,11 @@ button, .home-card, .sub-card, .item-card, .story-card, .chip, .mem-card, .bin, 
 
     <!-- GENERAL KNOWLEDGE PAGE -->
     <div class="page section" id="page-general">
+      <div class="sec-head general">
+        <span class="sec-ic">📚</span>
+        <div class="sec-txt"><div class="sec-t">常识百科</div><div class="sec-s">安全 · 科学 · 情绪 · 环保</div></div>
+        <span class="sec-star" data-mod="general">⭐ 0</span>
+      </div>
       <div class="sub-cards">
         <div class="sub-card" onclick="app.showGeneralTab('safety')" data-speak="安全教育"><span class="icon">🛡️</span><span class="label">安全教育</span></div>
         <div class="sub-card" onclick="app.showGeneralTab('science')" data-speak="科学常识"><span class="icon">🔬</span><span class="label">科学常识</span></div>
@@ -828,6 +952,11 @@ button, .home-card, .sub-card, .item-card, .story-card, .chip, .mem-card, .bin, 
 
     <!-- MATH PAGE -->
     <div class="page section" id="page-math">
+      <div class="sec-head math">
+        <span class="sec-ic">🔢</span>
+        <div class="sec-txt"><div class="sec-t">数学启蒙</div><div class="sec-s">数字 · 加减 · 图形 · 时间</div></div>
+        <span class="sec-star" data-mod="math">⭐ 0</span>
+      </div>
       <div class="sub-cards">
         <div class="sub-card" onclick="app.showMathTab('numbers')" data-speak="认识数字"><span class="icon">1️⃣</span><span class="label">认识数字</span></div>
         <div class="sub-card" onclick="app.showMathTab('counting')" data-speak="数数练习"><span class="icon">🧮</span><span class="label">数数练习</span></div>
@@ -848,6 +977,11 @@ button, .home-card, .sub-card, .item-card, .story-card, .chip, .mem-card, .bin, 
 
     <!-- ENGLISH PAGE -->
     <div class="page section" id="page-english">
+      <div class="sec-head english">
+        <span class="sec-ic">🔤</span>
+        <div class="sec-txt"><div class="sec-t">英语启蒙</div><div class="sec-s">字母 · 单词 · 发音 · 游戏</div></div>
+        <span class="sec-star" data-mod="english">⭐ 0</span>
+      </div>
       <div class="sub-cards">
         <div class="sub-card" onclick="app.showEnglishTab('alphabet')" data-speak="字母学习"><span class="icon">🔤</span><span class="label">字母学习</span></div>
         <div class="sub-card" onclick="app.showEnglishTab('phonics')" data-speak="自然拼读"><span class="icon">🗣️</span><span class="label">自然拼读</span></div>
@@ -875,14 +1009,26 @@ button, .home-card, .sub-card, .item-card, .story-card, .chip, .mem-card, .bin, 
 
     <!-- GAMES PAGE -->
     <div class="page section" id="page-games">
+      <div class="sec-head games">
+        <span class="sec-ic">🎮</span>
+        <div class="sec-txt"><div class="sec-t">游戏乐园</div><div class="sec-s">益智动脑 · 越玩越聪明</div></div>
+        <span class="sec-star" data-mod="games">⭐ 0</span>
+      </div>
       <div class="sub-cards">
         <div class="sub-card" onclick="app.showGameTab('puzzle')" data-speak="拼图乐园"><span class="icon">🧩</span><span class="label">拼图乐园</span></div>
         <div class="sub-card" onclick="app.showGameTab('sequence')" data-speak="记忆序列"><span class="icon">🧠</span><span class="label">记忆序列</span></div>
         <div class="sub-card" onclick="app.showGameTab('shadow')" data-speak="影子配对"><span class="icon">🎨</span><span class="label">影子配对</span></div>
         <div class="sub-card" onclick="app.showGameTab('maze')" data-speak="迷宫冒险"><span class="icon">🌀</span><span class="label">迷宫冒险</span></div>
         <div class="sub-card" onclick="app.showGameTab('sprint')" data-speak="口算闯关"><span class="icon">⚡</span><span class="label">口算闯关</span></div>
+        <div class="sub-card" onclick="app.showGameTab('whack')" data-speak="打地鼠"><span class="icon">🐹</span><span class="label">打地鼠</span></div>
+        <div class="sub-card" onclick="app.showGameTab('hunt')" data-speak="数字寻宝"><span class="icon">🔍</span><span class="label">数字寻宝</span></div>
       </div>
       <div id="games-content"></div>
+    </div>
+
+    <!-- ME PAGE -->
+    <div class="page section" id="page-me">
+      <div id="me-content"></div>
     </div>
   </div>
 </div>
@@ -1372,11 +1518,36 @@ class Progress {
       const raw = JSON.parse(localStorage.getItem(PROGRESS_KEY) || '{}');
       return {
         stars: raw.stars || 0, byMod: raw.byMod || {}, read: raw.read || {},
-        best: raw.best || {}, today: raw.today || ''
+        best: raw.best || {}, today: raw.today || '', games: raw.games || {}, days: raw.days || {}
       };
-    } catch (e) { return { stars: 0, byMod: {}, read: {}, best: {}, today: '' }; }
+    } catch (e) { return { stars: 0, byMod: {}, read: {}, best: {}, today: '', games: {}, days: {} }; }
   }
   save() { try { localStorage.setItem(PROGRESS_KEY, JSON.stringify(this.data)); } catch (e) {} }
+  markGame(k) {
+    this.data.games = this.data.games || {};
+    if (!this.data.games[k]) { this.data.games[k] = 1; this.save(); }
+  }
+  flagGame(k) {
+    this.data.games = this.data.games || {};
+    this.data.games[k] = 1;
+    this.save();
+  }
+  markDay(key) {
+    this.data.days = this.data.days || {};
+    if (!this.data.days[key]) { this.data.days[key] = 1; this.save(); }
+  }
+  streak() {
+    const days = this.data.days || {};
+    let n = 0;
+    const d = new Date();
+    for (let i = 0; i < 400; i++) {
+      const k = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+      if (!days[k]) break;
+      n++;
+      d.setDate(d.getDate() - 1);
+    }
+    return n;
+  }
   get stars() { return this.data.stars || 0; }
   total(mod) { return (this.data.byMod || {})[mod] || 0; }
   readCount() { return Object.keys(this.data.read || {}).length; }
@@ -1418,6 +1589,7 @@ class EduApp {
 
   init() {
     this.bindGlobalEvents();
+    this.progress.markDay(this._dayKey());   // 打卡
     this.renderStarBar();
     this.renderHome();
     document.getElementById('btnMute').addEventListener('click', () => {
@@ -1436,6 +1608,9 @@ class EduApp {
       const n = p.total(cs.dataset.mod);
       cs.textContent = '⭐ ' + n;
       cs.classList.toggle('on', n > 0);
+    });
+    document.querySelectorAll('.sec-star').forEach(ss => {
+      ss.textContent = '⭐ ' + p.total(ss.dataset.mod);
     });
   }
 
@@ -1613,6 +1788,7 @@ class EduApp {
 
   navigate(page) {
     this.audio.cancel();
+    if (page !== 'games') this._stopGameTimers();
     this._lastHovered = null;
     if (page !== 'home') this._module = page;   // 星星按模块累计
     this._pageHistory = this._pageHistory || [];
@@ -1626,6 +1802,7 @@ class EduApp {
     if (page === 'english') { this.renderEnglishTab(); this.showEnglishMenu(); }
     if (page === 'general') { this.renderGeneralTab(); this.showGeneralMenu(); }
     if (page === 'games') this.showGameMenu();
+    if (page === 'me') this.renderMe();
     if (page === 'story') this.renderStory();
     if (page === 'home') this.renderHome();
   }
@@ -3427,10 +3604,118 @@ class EduApp {
     this.renderEnglishTab();
   }
 
+  // ==================== 我的成长 / 奖章墙 ====================
+  _levels() {
+    return [
+      { min:0,   e:'🌱', n:'小种子', tip:'刚种下的种子，浇浇水就会发芽' },
+      { min:10,  e:'🌿', n:'小嫩芽', tip:'发芽啦！继续加油' },
+      { min:30,  e:'🪴', n:'小树苗', tip:'越长越高了' },
+      { min:70,  e:'🌳', n:'小树',   tip:'长成一棵小树啦' },
+      { min:150, e:'🌲', n:'大树',   tip:'好大一棵树！' },
+      { min:300, e:'🌸', n:'开花树', tip:'开花了，太棒了！' }
+    ];
+  }
+
+  _level(stars) {
+    const lv = this._levels();
+    let cur = lv[0], next = lv[1] || null;
+    lv.forEach((l, i) => { if (stars >= l.min) { cur = l; next = lv[i + 1] || null; } });
+    return { cur, next };
+  }
+
+  _badges() {
+    const p = this.progress;
+    const g = p.data.games || {};
+    const best = p.data.best || {};
+    const readN = p.readCount();
+    const st = p.streak();
+    const played = ['puzzle','sequence','shadow','maze','sprint','whack','hunt'].filter(k => g[k]).length;
+    const sprint = (best.sprint && best.sprint.right) || 0;
+    return [
+      { e:'🌱', n:'第一颗星星',     got:p.stars >= 1,        now:Math.min(p.stars, 1), need:1 },
+      { e:'⭐', n:'收集 20 颗星',   got:p.stars >= 20,       now:p.stars, need:20 },
+      { e:'🌟', n:'收集 100 颗星',  got:p.stars >= 100,      now:p.stars, need:100 },
+      { e:'🏆', n:'收集 300 颗星',  got:p.stars >= 300,      now:p.stars, need:300 },
+      { e:'📖', n:'读完 1 个故事',  got:readN >= 1,          now:readN, need:1 },
+      { e:'📚', n:'读满 10 个故事', got:readN >= 10,         now:readN, need:10 },
+      { e:'🎮', n:'玩过全部游戏',   got:played >= 7,         now:played, need:7 },
+      { e:'🧩', n:'拼好一幅拼图',   got:!!g.puzzleDone,      now:g.puzzleDone ? 1 : 0, need:1 },
+      { e:'🌀', n:'走出一次迷宫',   got:!!g.mazeDone,        now:g.mazeDone ? 1 : 0, need:1 },
+      { e:'🧠', n:'记忆序列过 5 关', got:(best.seq || 0) >= 5, now:best.seq || 0, need:5 },
+      { e:'⚡', n:'口算答对 8 题',   got:sprint >= 8,         now:sprint, need:8 },
+      { e:'🔍', n:'30 秒内寻宝',    got:!!(best.hunt && best.hunt <= 30), now:best.hunt ? 1 : 0, need:1 },
+      { e:'🐹', n:'打地鼠得 15 分',  got:((best.whack || 0) >= 15), now:best.whack || 0, need:15 },
+      { e:'🔥', n:'连续打卡 3 天',   got:st >= 3,             now:st, need:3 },
+      { e:'🌈', n:'连续打卡 7 天',   got:st >= 7,             now:st, need:7 }
+    ];
+  }
+
+  renderMe() {
+    const p = this.progress;
+    const c = document.getElementById('me-content');
+    if (!c) return;
+    const lv = this._level(p.stars);
+    const base = lv.cur.min, top = lv.next ? lv.next.min : null;
+    const pct = top ? Math.min(100, Math.round((p.stars - base) / Math.max(1, top - base) * 100)) : 100;
+    const badges = this._badges();
+    const gotN = badges.filter(b => b.got).length;
+
+    const now = new Date(), y = now.getFullYear(), m = now.getMonth();
+    const firstDay = new Date(y, m, 1).getDay();
+    const dayNum = new Date(y, m + 1, 0).getDate();
+    const days = p.data.days || {};
+    let cal = '<div class="cal">';
+    ['日','一','二','三','四','五','六'].forEach(t => { cal += `<div class="wk">${t}</div>`; });
+    for (let i = 0; i < firstDay; i++) cal += '<div class="c" style="background:transparent"></div>';
+    for (let dd = 1; dd <= dayNum; dd++) {
+      const k = y + '-' + (m + 1) + '-' + dd;
+      cal += `<div class="c${days[k] ? ' on' : ''}${dd === now.getDate() ? ' today' : ''}">${dd}</div>`;
+    }
+    cal += '</div>';
+
+    c.innerHTML = `
+      <div class="me-hero">
+        <div class="me-avatar">${lv.cur.e}</div>
+        <div class="me-info">
+          <div class="me-lv">我的成长 · ${lv.cur.n}</div>
+          <div class="me-title">${lv.next ? '再得 ' + (lv.next.min - p.stars) + ' 颗星，就能变成' + lv.next.n : '你已经长成' + lv.cur.n + '啦！'}</div>
+          <div class="me-sub">${lv.cur.tip}</div>
+          <div class="me-bar"><i style="width:${pct}%"></i></div>
+        </div>
+      </div>
+      <div class="me-cards">
+        <div class="me-stat"><div class="v">${p.stars}</div><div class="k">总星星</div></div>
+        <div class="me-stat"><div class="v">${gotN}/${badges.length}</div><div class="k">已得奖章</div></div>
+        <div class="me-stat"><div class="v">${p.streak()}</div><div class="k">连续打卡</div></div>
+      </div>
+      <div class="me-sec">
+        <h3>🏅 奖章墙 <span>多努力一点就能解锁新的</span></h3>
+        <div class="badge-grid">
+          ${badges.map(b => `<div class="badge${b.got ? ' on' : ''}">
+            ${b.got ? '' : '<span class="lock">🔒</span>'}
+            <span class="be">${b.e}</span>
+            <div class="bn">${b.n}</div>
+            <div class="bp">${b.got ? '已获得' : Math.min(b.now, b.need) + ' / ' + b.need}</div>
+          </div>`).join('')}
+        </div>
+      </div>
+      <div class="me-sec">
+        <h3>📅 本月打卡 <span>每天来玩一会儿就会亮一格</span></h3>
+        ${cal}
+      </div>
+      <button class="btn-back" onclick="app.navigate('home')">⬅ 回到首页</button>`;
+    window.scrollTo(0, 0);
+  }
+
+  // 兼容旧调用
+  showStars() { this.navigate('me'); }
+
   // ==================== 游戏乐园 ====================
   showGameTab(tab) {
     this.audio.cancel();
     this.state.gameTab = tab;
+    this.progress.markGame(tab);
+    this._stopGameTimers();
     const subCards = document.querySelector('#page-games .sub-cards');
     const content = document.getElementById('games-content');
     if (subCards) subCards.style.display = 'none';
@@ -3462,11 +3747,21 @@ class EduApp {
     const t = this.state.gameTab;
     const c = document.getElementById('games-content');
     if (!c) return;
+    this._stopGameTimers();
     if (t === 'puzzle') this.renderPuzzle(c);
     else if (t === 'sequence') this.renderSequence(c);
     else if (t === 'shadow') this.renderShadow(c);
     else if (t === 'maze') this.renderMaze(c);
     else if (t === 'sprint') this.renderSprint(c);
+    else if (t === 'whack') this.renderWhack(c);
+    else if (t === 'hunt') this.renderHunt(c);
+  }
+
+  _stopGameTimers() {
+    ['_whackTimer', '_whackSpawn', '_huntTimer'].forEach(k => {
+      if (this[k]) { clearInterval(this[k]); this[k] = null; }
+    });
+    if (this._whack && !this._whack.done) this._whack.done = true;
   }
 
   // ============== 游戏 1：拼图乐园 ==============
@@ -3594,6 +3889,7 @@ class EduApp {
     if (fb) { fb.textContent = `🎉 拼好啦！一共用了 ${d.moves} 步，你真有耐心！`; fb.style.color = '#0A8F6B'; }
     const next = document.getElementById('quizNext');
     if (next) next.style.display = 'inline-block';
+    this.progress.flagGame('puzzleDone');
     this.reward(3, 'games');
     this.celebrate(true);
     this.audio.speak('拼好啦，你真专心！');
@@ -3872,6 +4168,7 @@ class EduApp {
     if (fb) { fb.textContent = `🎉 走到终点啦！一共走了 ${d.steps} 步`; fb.style.color = '#0A8F6B'; }
     const next = document.getElementById('quizNext');
     if (next) next.style.display = 'inline-block';
+    this.progress.flagGame('mazeDone');
     this.reward(3, 'games');
     this.celebrate(true);
     this.audio.speak('走出迷宫啦，你真有耐心！');
@@ -3976,6 +4273,167 @@ class EduApp {
     this.reward(Math.max(2, Math.round(s.right / 2)), 'games');
     this.celebrate(true);
     this.audio.speak(s.right >= 8 ? '太厉害了，你是个口算小达人！' : '完成挑战啦，多练几次会更快哦！');
+  }
+
+  // ============== 游戏 6：打地鼠 ==============
+  renderWhack(container) {
+    const N = 9;
+    const best = (this.progress.data.best && this.progress.data.best.whack) || 0;
+    this._whack = { score:0, left:30, holes:new Array(N).fill(false), done:false };
+    container.innerHTML = `<div class="quiz-area">
+      <h3>🐹 打地鼠</h3>
+      <div class="quiz-sub">小地鼠冒出来就赶紧点它！一共 30 秒</div>
+      <div class="whack-time"><i id="whackBar" style="width:100%"></i></div>
+      <div class="sprint-meta"><span>剩余 <b id="whackLeft">30</b> 秒</span><span>得分 <b id="whackScore">0</b> 分</span></div>
+      <div class="whack-grid" id="whackGrid">
+        ${Array.from({ length:N }, (_, i) => `<div class="whack-hole" id="hole${i}" onclick="app.whackHit(${i})"></div>`).join('')}
+      </div>
+      <div class="mem-bar"><span>最好成绩 <b>${best}</b> 分</span></div>
+      <div class="quiz-feedback" id="quizFeedback">准备……开始！</div>
+      <button class="btn-next" onclick="app.renderGameTab()" style="display:none" id="quizNext">再玩一次 ⭐</button>
+    </div>`;
+    this._whackTimer = setInterval(() => {
+      const w = this._whack;
+      if (!w || w.done) return;
+      w.left--;
+      const l = document.getElementById('whackLeft');
+      if (l) l.textContent = Math.max(0, w.left);
+      const bar = document.getElementById('whackBar');
+      if (bar) bar.style.width = Math.max(0, w.left / 30 * 100) + '%';
+      if (w.left <= 0) this._whackEnd();
+    }, 1000);
+    this._whackSpawn = setInterval(() => this._whackPop(), 760);
+    this._whackPop();
+  }
+
+  _whackPop() {
+    const w = this._whack;
+    if (!w || w.done) return;
+    for (let i = 0; i < 9; i++) {
+      if (w.holes[i]) {
+        w.holes[i] = false;
+        const el = document.getElementById('hole' + i);
+        if (el) { el.classList.remove('up'); el.textContent = ''; }
+      }
+    }
+    const n = Math.random() < 0.3 ? 2 : 1;
+    for (let k = 0; k < n; k++) {
+      const i = Math.floor(Math.random() * 9);
+      if (w.holes[i]) continue;
+      w.holes[i] = true;
+      const el = document.getElementById('hole' + i);
+      if (el) { el.classList.add('up'); el.textContent = '🐹'; }
+    }
+  }
+
+  whackHit(i) {
+    const w = this._whack;
+    if (!w || w.done || !w.holes[i]) return;
+    w.holes[i] = false;
+    w.score++;
+    const el = document.getElementById('hole' + i);
+    if (el) {
+      el.classList.remove('up'); el.classList.add('hit'); el.textContent = '💥';
+      setTimeout(() => { if (el) { el.classList.remove('hit'); el.textContent = ''; } }, 220);
+    }
+    const s = document.getElementById('whackScore');
+    if (s) s.textContent = w.score;
+  }
+
+  _whackEnd() {
+    const w = this._whack;
+    if (!w || w.done) return;
+    w.done = true;
+    this._stopGameTimers();
+    const best = this.progress.data.best = this.progress.data.best || {};
+    const prev = best.whack || 0;
+    const improved = w.score > prev;
+    if (improved) { best.whack = w.score; this.progress.save(); }
+    document.querySelectorAll('.whack-hole').forEach(el => { el.classList.remove('up'); el.textContent = ''; });
+    const fb = document.getElementById('quizFeedback');
+    if (fb) {
+      fb.textContent = prev === 0
+        ? `🐹 第一次就打了 ${w.score} 分！记住这个成绩，下次超过它`
+        : improved ? `🎉 打了 ${w.score} 分，比上次多了 ${w.score - prev} 分，有进步！`
+                   : `🐹 打了 ${w.score} 分（最好成绩 ${best.whack} 分），再试一次吧`;
+      fb.style.color = improved ? '#0A8F6B' : '#E07A1F';
+    }
+    const next = document.getElementById('quizNext');
+    if (next) next.style.display = 'inline-block';
+    this.reward(Math.max(1, Math.round(w.score / 4)), 'games');
+    this.celebrate(true);
+    this.audio.speak(w.score >= 15 ? '手真快，你反应好灵敏！' : '反应很快哦，再来一次吧！');
+  }
+
+  // ============== 游戏 7：数字寻宝 ==============
+  renderHunt(container) {
+    const N = 9;
+    const nums = [];
+    for (let i = 1; i <= N; i++) nums.push(i);
+    nums.sort(() => Math.random() - 0.5);
+    const best = (this.progress.data.best && this.progress.data.best.hunt) || 0;
+    this._hunt = { nums, next:1, t0:Date.now(), elapsed:0, done:false };
+    container.innerHTML = `<div class="quiz-area">
+      <h3>🔍 数字寻宝</h3>
+      <div class="quiz-sub">按 1 → 9 的顺序快点找出来，越快越好</div>
+      <div class="sprint-meta" style="margin-top:12px;"><span>下一个找：<b id="huntNext">1</b></span><span>用时 <b id="huntTime">0.0</b> 秒</span></div>
+      <div class="hunt-grid" id="huntGrid">
+        ${nums.map(n => `<div class="hunt-cell" data-n="${n}" onclick="app.huntTap(${n},this)">${n}</div>`).join('')}
+      </div>
+      <div class="mem-bar"><span>最好成绩 <b id="huntBest">${best ? best.toFixed(1) + ' 秒' : '还没挑战过'}</b></span></div>
+      <div class="quiz-feedback" id="quizFeedback"></div>
+      <button class="btn-next" onclick="app.renderGameTab()" style="display:none" id="quizNext">再玩一次 ⭐</button>
+    </div>`;
+    this._huntTimer = setInterval(() => {
+      const h = this._hunt;
+      if (!h || h.done) return;
+      h.elapsed = (Date.now() - h.t0) / 1000;
+      const t = document.getElementById('huntTime');
+      if (t) t.textContent = h.elapsed.toFixed(1);
+    }, 100);
+  }
+
+  huntTap(n, el) {
+    const h = this._hunt;
+    if (!h || h.done) return;
+    if (n !== h.next) {
+      el.classList.add('wrong');
+      setTimeout(() => el.classList.remove('wrong'), 260);
+      this.audio.speak('先找' + h.next);
+      return;
+    }
+    el.classList.add('done');
+    h.next++;
+    const nl = document.getElementById('huntNext');
+    if (nl) nl.textContent = h.next <= 9 ? h.next : '完成 ✓';
+    if (h.next > 9) this._huntEnd();
+  }
+
+  _huntEnd() {
+    const h = this._hunt;
+    if (!h || h.done) return;
+    h.done = true;
+    this._stopGameTimers();
+    h.elapsed = (Date.now() - h.t0) / 1000;
+    const best = this.progress.data.best = this.progress.data.best || {};
+    const prev = best.hunt || 0;
+    const improved = !prev || h.elapsed < prev;
+    if (improved) { best.hunt = Math.round(h.elapsed * 10) / 10; this.progress.save(); }
+    const fb = document.getElementById('quizFeedback');
+    if (fb) {
+      fb.textContent = prev === 0
+        ? `🎉 第一次就用 ${h.elapsed.toFixed(1)} 秒找齐了！下次争取更快`
+        : improved ? `🎉 ${h.elapsed.toFixed(1)} 秒完成，比上次快了 ${(prev - h.elapsed).toFixed(1)} 秒！`
+                   : `${h.elapsed.toFixed(1)} 秒完成，最好成绩 ${best.hunt.toFixed(1)} 秒`;
+      fb.style.color = improved ? '#0A8F6B' : '#E07A1F';
+    }
+    const bb = document.getElementById('huntBest');
+    if (bb) bb.textContent = best.hunt.toFixed(1) + ' 秒';
+    const next = document.getElementById('quizNext');
+    if (next) next.style.display = 'inline-block';
+    this.reward(2, 'games');
+    this.celebrate(true);
+    this.audio.speak(h.elapsed <= 30 ? '找得真快，眼力真好！' : '完成啦，多练几次会更快哦！');
   }
 
   // ==================== CELEBRATION ====================
