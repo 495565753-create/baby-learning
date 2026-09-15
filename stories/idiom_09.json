@@ -1,0 +1,17 @@
+{
+  "id": "idiom_09",
+  "title": "成语：程门立雪",
+  "icon": "📚",
+  "type": "idiom",
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】程门立雪\n\n北宋的杨时和游酢去拜访老师程颐，正逢程颐在屋里闭目养神。两人不愿惊扰，便恭恭敬敬站在门外等候。天上下起大雪，等程颐醒来时，门外的雪已经积了一尺多深。\n\n💡 尊师重道、虚心求教是求学应有的态度，真诚和耐心往往能赢得宝贵的教诲。",
+      "kw": "程门立雪",
+      "img": "img/idioms/09_井底之蛙.png",
+      "audio": "audio/idioms/09_井底之蛙.mp3"
+    }
+  ],
+  "single_img": true
+}

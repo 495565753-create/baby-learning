@@ -1,0 +1,17 @@
+{
+  "id": "idiom_06",
+  "title": "成语：闻鸡起舞",
+  "icon": "📚",
+  "type": "idiom",
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】闻鸡起舞\n\n东晋的祖逖与好友刘琨同住，半夜听到鸡鸣，祖逖便叫醒刘琨一起拔剑练武。从此，无论寒暑，只要鸡叫他们就起床舞剑，切磋武艺。后来两人都成为国家的栋梁之才。\n\n💡 有志者应当珍惜时光，奋发努力，勤学苦练，才能实现抱负。",
+      "kw": "闻鸡起舞",
+      "img": "img/idioms/06_拔苗助长.png",
+      "audio": "audio/idioms/06_拔苗助长.mp3"
+    }
+  ],
+  "single_img": true
+}

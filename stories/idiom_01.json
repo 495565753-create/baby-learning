@@ -1,0 +1,17 @@
+{
+  "id": "idiom_01",
+  "title": "成语：愚公移山",
+  "icon": "📚",
+  "type": "idiom",
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】愚公移山\n\n太行、王屋两座大山挡住了愚公一家的出路，愚公决心带领子孙挖山运土。河曲智叟笑他自不量力，愚公却说山不会增高，而子子孙孙无穷尽。天帝被感动，派夸娥氏二子将山背走了。\n\n💡 面对困难，只要有恒心和毅力，坚持不懈，终究能战胜它。",
+      "kw": "愚公移山",
+      "img": "img/idioms/01_守株待兔.png",
+      "audio": "audio/idioms/01_守株待兔.mp3"
+    }
+  ],
+  "single_img": true
+}

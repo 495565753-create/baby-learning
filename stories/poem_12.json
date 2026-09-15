@@ -1,0 +1,17 @@
+{
+  "id": "poem_12",
+  "title": "古诗：早发白帝城",
+  "icon": "📜",
+  "type": "poem",
+  "img_prefix": "img/poems2/",
+  "audio_prefix": "audio/poems2/",
+  "pages": [
+    {
+      "text": "《早发白帝城》\n李白\n\n早上告别白云间，/ 千里江陵一日还。/ 两岸猿声叫不停，/ 轻舟已过万重山。\n\n📖 清晨，我告别了高在云中的白帝城，千里之外的江陵一天就能回去。两岸山上的猿猴不停地叫着，轻快的小船早已穿过了无数座大山。",
+      "kw": "李白",
+      "img": "img/poems2/22_早发白帝城.png",
+      "audio": "audio/poems2/22_早发白帝城.mp3"
+    }
+  ],
+  "single_img": true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "宝宝启蒙学习",
+  "short_name": "宝宝启蒙",
+  "description": "宝宝启蒙学习：数学、英语、常识、故事书，带语音朗读",
+  "lang": "zh-CN",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#F0F4FF",
+  "theme_color": "#F0F4FF",
+  "icons": [
+    { "src": "img/icon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "img/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

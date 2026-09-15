@@ -1,0 +1,17 @@
+{
+  "id": "poem_14",
+  "title": "古诗：江雪",
+  "icon": "📜",
+  "type": "poem",
+  "img_prefix": "img/poems2/",
+  "audio_prefix": "audio/poems2/",
+  "pages": [
+    {
+      "text": "《江雪》\n柳宗元\n\n一座座山鸟儿飞光，/ 一条条路人影不见。/ 江上小船有个老爷爷，/ 独自钓鱼在雪天。\n\n📖 所有山上的鸟儿都飞走了，所有路上都看不到人的影子。江面上有一条小船，船上有一位老爷爷，他戴着斗笠穿着蓑衣，独自在漫天大雪中钓鱼。",
+      "kw": "柳宗元",
+      "img": "img/poems2/24_江雪.png",
+      "audio": "audio/poems2/24_江雪.mp3"
+    }
+  ],
+  "single_img": true
+}

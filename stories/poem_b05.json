@@ -1,0 +1,17 @@
+{
+  "id": "poem_b05",
+  "title": "古诗：悯农",
+  "icon": "📜",
+  "type": "poem",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "《悯农》\n李绅 · 唐\n\n锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。\n\n📖 农民在烈日下锄草，汗水滴进了泥土里。谁知道碗里的米饭，每一粒都包含着辛苦的劳动。",
+      "img": "img/idioms/15_悯农.png",
+      "audio": "audio/idioms/15_悯农.mp3",
+      "kw": "李绅"
+    }
+  ]
+}

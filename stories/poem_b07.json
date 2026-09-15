@@ -1,0 +1,17 @@
+{
+  "id": "poem_b07",
+  "title": "古诗：村居",
+  "icon": "📜",
+  "type": "poem",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "《村居》\n高鼎 · 清\n\n草长莺飞二月天，拂堤杨柳醉春烟。儿童散学归来早，忙趁东风放纸鸢。\n\n📖 二月天里小草生长黄莺飞舞，杨柳轻拂着堤岸在春烟中醉人。孩子们放学回来得早，趁着东风放起了风筝。",
+      "img": "img/idioms/17_村居.png",
+      "audio": "audio/idioms/17_村居.mp3",
+      "kw": "高鼎"
+    }
+  ]
+}

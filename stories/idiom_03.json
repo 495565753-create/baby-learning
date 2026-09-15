@@ -1,0 +1,17 @@
+{
+  "id": "idiom_03",
+  "title": "成语：夸父逐日",
+  "icon": "📚",
+  "type": "idiom",
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】夸父逐日\n\n巨人夸父想要追上太阳，他迈开长腿拼命奔跑，离太阳越来越近，口渴难耐。他喝干了黄河和渭水，还是不解渴，想去北方大泽饮水，却在半路渴死了。他的手杖化为一片桃林。\n\n💡 夸父逐日象征着对光明和理想的执着追求，也提醒人们做事要量力而行，但那种奋力拼搏的精神永远值得敬佩。",
+      "kw": "夸父逐日",
+      "img": "img/idioms/03_掩耳盗铃.png",
+      "audio": "audio/idioms/03_掩耳盗铃.mp3"
+    }
+  ],
+  "single_img": true
+}

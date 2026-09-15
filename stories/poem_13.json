@@ -1,0 +1,17 @@
+{
+  "id": "poem_13",
+  "title": "古诗：绝句",
+  "icon": "📜",
+  "type": "poem",
+  "img_prefix": "img/poems2/",
+  "audio_prefix": "audio/poems2/",
+  "pages": [
+    {
+      "text": "《绝句》\n杜甫\n\n两只黄鹂叫喳喳，/ 一行白鹭上青天。/ 窗外千年大雪山，/ 门前万里大轮船。\n\n📖 两只黄鹂在翠绿的柳树间欢快地叫着，一行白鹭排着队飞上了蓝蓝的天空。从窗口望去，能看到远处千年不化的雪山，门前停着能航行到万里之外的大船。",
+      "kw": "杜甫",
+      "img": "img/poems2/23_绝句.png",
+      "audio": "audio/poems2/23_绝句.mp3"
+    }
+  ],
+  "single_img": true
+}

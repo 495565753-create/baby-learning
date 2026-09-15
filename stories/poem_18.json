@@ -1,0 +1,17 @@
+{
+  "id": "poem_18",
+  "title": "古诗：鹿柴",
+  "icon": "📜",
+  "type": "poem",
+  "img_prefix": "img/poems2/",
+  "audio_prefix": "audio/poems2/",
+  "pages": [
+    {
+      "text": "《鹿柴》\n王维\n\n空山不见一个人，/ 但能听到说话声。/ 夕阳照进深树林，/ 又照在青青苔藓上。\n\n📖 空荡荡的山里看不到一个人影，却隐隐约约听到有人说话的声音。夕阳的金光照进幽深的树林，又落在那片绿绿的苔藓上，显得格外明亮。",
+      "kw": "王维",
+      "img": "img/poems2/28_鹿柴.png",
+      "audio": "audio/poems2/28_鹿柴.mp3"
+    }
+  ],
+  "single_img": true
+}

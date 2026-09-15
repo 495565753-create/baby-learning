@@ -1,0 +1,17 @@
+{
+  "id": "idiom_a07",
+  "title": "成语：叶公好龙",
+  "icon": "📚",
+  "type": "idiom",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】叶公好龙\n\n叶公非常喜欢龙，家里的墙上画着龙，柱子上刻着龙。天上真龙听说后很高兴，就飞到叶公家里。叶公一见真龙，吓得转身就跑。\n\n💡 嘴上说喜欢不等于真心喜欢。",
+      "img": "img/idioms/07_叶公好龙.png",
+      "audio": "audio/idioms/07_叶公好龙.mp3",
+      "kw": "叶公好龙"
+    }
+  ]
+}

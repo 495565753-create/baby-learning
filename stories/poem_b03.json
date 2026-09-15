@@ -1,0 +1,17 @@
+{
+  "id": "poem_b03",
+  "title": "古诗：咏鹅",
+  "icon": "📜",
+  "type": "poem",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "《咏鹅》\n骆宾王 · 唐\n\n鹅鹅鹅，曲项向天歌。白毛浮绿水，红掌拨清波。\n\n📖 鹅啊鹅，弯着脖子朝天唱歌。雪白的羽毛浮在绿色的水面上，红色的脚掌拨动着清清的水波。",
+      "img": "img/idioms/13_咏鹅.png",
+      "audio": "audio/idioms/13_咏鹅.mp3",
+      "kw": "骆宾王"
+    }
+  ]
+}

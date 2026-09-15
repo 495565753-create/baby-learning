@@ -1,0 +1,17 @@
+{
+  "id": "idiom_02",
+  "title": "成语：精卫填海",
+  "icon": "📚",
+  "type": "idiom",
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】精卫填海\n\n炎帝的小女儿女娃在东海游玩时不幸溺亡，她的灵魂化作精卫鸟。精卫鸟每天从西山衔来树枝和石子，投向东海，发誓要把大海填平。大海嘲笑它的渺小，但它从不放弃。\n\n💡 即使力量微小，只要拥有坚定的意志和不屈的精神，就能做出震撼天地的壮举。",
+      "kw": "精卫填海",
+      "img": "img/idioms/02_画龙点睛.png",
+      "audio": "audio/idioms/02_画龙点睛.mp3"
+    }
+  ],
+  "single_img": true
+}

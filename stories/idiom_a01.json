@@ -1,0 +1,17 @@
+{
+  "id": "idiom_a01",
+  "title": "成语：守株待兔",
+  "icon": "📚",
+  "type": "idiom",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】守株待兔\n\n农夫在田里干活，一只兔子撞在树桩上死了。农夫从此不再种地，天天守在树桩旁等兔子。可是再也没有兔子撞上来，田地也荒废了。\n\n💡 不要不劳而获，要主动努力才能有收获。",
+      "img": "img/idioms/01_守株待兔.png",
+      "audio": "audio/idioms/01_守株待兔.mp3",
+      "kw": "守株待兔"
+    }
+  ]
+}

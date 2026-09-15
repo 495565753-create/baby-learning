@@ -1,0 +1,17 @@
+{
+  "id": "idiom_a04",
+  "title": "成语：亡羊补牢",
+  "icon": "📚",
+  "type": "idiom",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】亡羊补牢\n\n牧羊人发现羊圈破了个洞，邻居劝他赶快修。他说羊已经丢了修也没用。第二天又丢了一只羊，他才后悔，马上把洞补好。从此羊再没丢过。\n\n💡 犯了错误及时改正弥补还不算晚。",
+      "img": "img/idioms/04_亡羊补牢.png",
+      "audio": "audio/idioms/04_亡羊补牢.mp3",
+      "kw": "亡羊补牢"
+    }
+  ]
+}

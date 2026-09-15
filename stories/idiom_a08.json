@@ -1,0 +1,17 @@
+{
+  "id": "idiom_a08",
+  "title": "成语：狐假虎威",
+  "icon": "📚",
+  "type": "idiom",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】狐假虎威\n\n老虎抓到一只狐狸，狐狸说天帝派我来管理百兽，你吃我就是违抗天命。老虎半信半疑，狐狸让老虎跟在自己后面走。百兽看见老虎都吓得逃跑。\n\n💡 借别人的威风来吓唬人。",
+      "img": "img/idioms/08_狐假虎威.png",
+      "audio": "audio/idioms/08_狐假虎威.mp3",
+      "kw": "狐假虎威"
+    }
+  ]
+}

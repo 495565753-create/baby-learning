@@ -1,0 +1,17 @@
+{
+  "id": "idiom_a05",
+  "title": "成语：刻舟求剑",
+  "icon": "📚",
+  "type": "idiom",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】刻舟求剑\n\n一个人坐船时剑掉进水里，他赶紧在船边刻了个记号。船靠岸后，他从刻记号的地方下水找剑，却怎么也找不到。\n\n💡 情况变了，做事的方法也要改变。",
+      "img": "img/idioms/05_刻舟求剑.png",
+      "audio": "audio/idioms/05_刻舟求剑.mp3",
+      "kw": "刻舟求剑"
+    }
+  ]
+}

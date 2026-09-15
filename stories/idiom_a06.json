@@ -1,0 +1,17 @@
+{
+  "id": "idiom_a06",
+  "title": "成语：拔苗助长",
+  "icon": "📚",
+  "type": "idiom",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】拔苗助长\n\n农夫嫌禾苗长得太慢，就把它们一棵棵往上拔高。第二天他去田里一看，所有的禾苗都枯死了。\n\n💡 做事不能急于求成，要遵循自然规律。",
+      "img": "img/idioms/06_拔苗助长.png",
+      "audio": "audio/idioms/06_拔苗助长.mp3",
+      "kw": "拔苗助长"
+    }
+  ]
+}

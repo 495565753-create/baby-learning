@@ -1,0 +1,17 @@
+{
+  "id": "idiom_04",
+  "title": "成语：女娲补天",
+  "icon": "📚",
+  "type": "idiom",
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】女娲补天\n\n远古时代，天崩塌了一角，大地裂开，洪水与猛兽肆虐。女娲熔炼五色石修补苍天，砍下神龟的四足撑起四方，又烧芦苇灰堵住洪水。最终天地恢复平静，人类重新过上安宁生活。\n\n💡 面对巨大的灾难，要敢于担当，用智慧和创造去拯救危局，造福苍生。",
+      "kw": "女娲补天",
+      "img": "img/idioms/04_亡羊补牢.png",
+      "audio": "audio/idioms/04_亡羊补牢.mp3"
+    }
+  ],
+  "single_img": true
+}

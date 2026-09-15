@@ -1,0 +1,17 @@
+{
+  "id": "idiom_a03",
+  "title": "成语：掩耳盗铃",
+  "icon": "📚",
+  "type": "idiom",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】掩耳盗铃\n\n有人想偷一口大钟，搬不动就敲碎再拿。他怕别人听到钟声，就捂着自己耳朵去敲。结果声音传得很远，他立刻被抓住了。\n\n💡 不要自欺欺人，掩盖不了的事情偏要掩盖只会更糟。",
+      "img": "img/idioms/03_掩耳盗铃.png",
+      "audio": "audio/idioms/03_掩耳盗铃.mp3",
+      "kw": "掩耳盗铃"
+    }
+  ]
+}

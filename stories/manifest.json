@@ -2107,5 +2107,685 @@
     "icon": "🐷",
     "img_prefix": "img/peppa_idiom/peppa_idiom_06/",
     "audio_prefix": "audio/peppa_idiom/peppa_idiom_06/"
+  },
+  {
+    "id": "idiom_01",
+    "title": "成语：愚公移山",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】愚公移山\n\n太行、王屋两座大山挡住了愚公一家的出路，愚公决心带领子孙挖山运土。河曲智叟笑他自不量力，愚公却说山不会增高，而子子孙孙无穷尽。天帝被感动，派夸娥氏二子将山背走了。\n\n💡 面对困难，只要有恒心和毅力，坚持不懈，终究能战胜它。",
+        "kw": "愚公移山",
+        "img": "img/idioms2/21_愚公移山.png",
+        "audio": "audio/idioms2/21_愚公移山.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "idiom_02",
+    "title": "成语：精卫填海",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】精卫填海\n\n炎帝的小女儿女娃在东海游玩时不幸溺亡，她的灵魂化作精卫鸟。精卫鸟每天从西山衔来树枝和石子，投向东海，发誓要把大海填平。大海嘲笑它的渺小，但它从不放弃。\n\n💡 即使力量微小，只要拥有坚定的意志和不屈的精神，就能做出震撼天地的壮举。",
+        "kw": "精卫填海",
+        "img": "img/idioms2/22_精卫填海.png",
+        "audio": "audio/idioms2/22_精卫填海.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "idiom_03",
+    "title": "成语：夸父逐日",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】夸父逐日\n\n巨人夸父想要追上太阳，他迈开长腿拼命奔跑，离太阳越来越近，口渴难耐。他喝干了黄河和渭水，还是不解渴，想去北方大泽饮水，却在半路渴死了。他的手杖化为一片桃林。\n\n💡 夸父逐日象征着对光明和理想的执着追求，也提醒人们做事要量力而行，但那种奋力拼搏的精神永远值得敬佩。",
+        "kw": "夸父逐日",
+        "img": "img/idioms2/23_夸父逐日.png",
+        "audio": "audio/idioms2/23_夸父逐日.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "idiom_04",
+    "title": "成语：女娲补天",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】女娲补天\n\n远古时代，天崩塌了一角，大地裂开，洪水与猛兽肆虐。女娲熔炼五色石修补苍天，砍下神龟的四足撑起四方，又烧芦苇灰堵住洪水。最终天地恢复平静，人类重新过上安宁生活。\n\n💡 面对巨大的灾难，要敢于担当，用智慧和创造去拯救危局，造福苍生。",
+        "kw": "女娲补天",
+        "img": "img/idioms2/24_女娲补天.png",
+        "audio": "audio/idioms2/24_女娲补天.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "idiom_05",
+    "title": "成语：大禹治水",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】大禹治水\n\n尧帝时期洪水泛滥，鲧用堵的办法失败，他的儿子禹接替治水。禹改变策略，开渠排水、疏通河道，将洪水引入大海。他三次路过家门都顾不上进去，历经十三年终于治水成功。\n\n💡 做事要顺应规律，用疏导代替堵塞；同时，为公众利益无私奉献、持之以恒的精神更值得学习。",
+        "kw": "大禹治水",
+        "img": "img/idioms2/25_大禹治水.png",
+        "audio": "audio/idioms2/25_大禹治水.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "idiom_06",
+    "title": "成语：闻鸡起舞",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】闻鸡起舞\n\n东晋的祖逖与好友刘琨同住，半夜听到鸡鸣，祖逖便叫醒刘琨一起拔剑练武。从此，无论寒暑，只要鸡叫他们就起床舞剑，切磋武艺。后来两人都成为国家的栋梁之才。\n\n💡 有志者应当珍惜时光，奋发努力，勤学苦练，才能实现抱负。",
+        "kw": "闻鸡起舞",
+        "img": "img/idioms2/26_闻鸡起舞.png",
+        "audio": "audio/idioms2/26_闻鸡起舞.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "idiom_07",
+    "title": "成语：悬梁刺股",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】悬梁刺股\n\n汉朝的孙敬读书到深夜，为防止打瞌睡，他把头发系在屋梁上，一低头就会被扯痛。战国的苏秦读书困倦时，就用锥子刺自己的大腿，让疼痛赶走睡意。他们就这样刻苦攻读，终成大学问家。\n\n💡 学习需要超乎常人的刻苦和自律，只有付出艰辛的努力，才能获得真才实学。",
+        "kw": "悬梁刺股",
+        "img": "img/idioms2/27_悬梁刺股.png",
+        "audio": "audio/idioms2/27_悬梁刺股.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "idiom_08",
+    "title": "成语：凿壁借光",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】凿壁借光\n\n西汉的匡衡家境贫寒，晚上点不起灯。他见邻居家灯火通明，就在墙壁上凿了一个小孔，让微弱的光线透过来。他每天就着这点光读书，后来成为一代名相。\n\n💡 在艰苦的条件下，要主动创造条件学习，珍惜每一个求知的机会，用勤奋改变命运。",
+        "kw": "凿壁借光",
+        "img": "img/idioms2/28_凿壁借光.png",
+        "audio": "audio/idioms2/28_凿壁借光.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "idiom_09",
+    "title": "成语：程门立雪",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】程门立雪\n\n北宋的杨时和游酢去拜访老师程颐，正逢程颐在屋里闭目养神。两人不愿惊扰，便恭恭敬敬站在门外等候。天上下起大雪，等程颐醒来时，门外的雪已经积了一尺多深。\n\n💡 尊师重道、虚心求教是求学应有的态度，真诚和耐心往往能赢得宝贵的教诲。",
+        "kw": "程门立雪",
+        "img": "img/idioms2/29_程门立雪.png",
+        "audio": "audio/idioms2/29_程门立雪.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "idiom_10",
+    "title": "成语：负荆请罪",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】负荆请罪\n\n赵国的蔺相如因功被封为上卿，老将廉颇不服，扬言要羞辱他。蔺相如处处躲避，说国家安危重于个人恩怨。廉颇听说后羞愧万分，脱掉上衣，背着荆条登门请罪，两人从此成为生死之交。\n\n💡 要顾全大局，宽厚待人；犯了错误能主动认错、诚恳道歉，更显品格的高尚。",
+        "kw": "负荆请罪",
+        "img": "img/idioms2/30_负荆请罪.png",
+        "audio": "audio/idioms2/30_负荆请罪.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "poem_11",
+    "title": "古诗：望天门山",
+    "icon": "📜",
+    "type": "poem",
+    "img_prefix": "img/poems2/",
+    "audio_prefix": "audio/poems2/",
+    "pages": [
+      {
+        "text": "《望天门山》\n李白\n\n天门大山中间断，/ 长江绿水弯又弯。/ 两岸青山像门开，/ 一只小船天边来。\n\n📖 高高的天门山被长江水从中间冲开，碧绿的江水在这里打着转儿。两岸的青山像两扇大门一样打开，一只小船从远远的天边飘了过来。",
+        "kw": "李白",
+        "img": "img/poems2/21_望天门山.png",
+        "audio": "audio/poems2/21_望天门山.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "poem_12",
+    "title": "古诗：早发白帝城",
+    "icon": "📜",
+    "type": "poem",
+    "img_prefix": "img/poems2/",
+    "audio_prefix": "audio/poems2/",
+    "pages": [
+      {
+        "text": "《早发白帝城》\n李白\n\n早上告别白云间，/ 千里江陵一日还。/ 两岸猿声叫不停，/ 轻舟已过万重山。\n\n📖 清晨，我告别了高在云中的白帝城，千里之外的江陵一天就能回去。两岸山上的猿猴不停地叫着，轻快的小船早已穿过了无数座大山。",
+        "kw": "李白",
+        "img": "img/poems2/22_早发白帝城.png",
+        "audio": "audio/poems2/22_早发白帝城.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "poem_13",
+    "title": "古诗：绝句",
+    "icon": "📜",
+    "type": "poem",
+    "img_prefix": "img/poems2/",
+    "audio_prefix": "audio/poems2/",
+    "pages": [
+      {
+        "text": "《绝句》\n杜甫\n\n两只黄鹂叫喳喳，/ 一行白鹭上青天。/ 窗外千年大雪山，/ 门前万里大轮船。\n\n📖 两只黄鹂在翠绿的柳树间欢快地叫着，一行白鹭排着队飞上了蓝蓝的天空。从窗口望去，能看到远处千年不化的雪山，门前停着能航行到万里之外的大船。",
+        "kw": "杜甫",
+        "img": "img/poems2/23_绝句.png",
+        "audio": "audio/poems2/23_绝句.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "poem_14",
+    "title": "古诗：江雪",
+    "icon": "📜",
+    "type": "poem",
+    "img_prefix": "img/poems2/",
+    "audio_prefix": "audio/poems2/",
+    "pages": [
+      {
+        "text": "《江雪》\n柳宗元\n\n一座座山鸟儿飞光，/ 一条条路人影不见。/ 江上小船有个老爷爷，/ 独自钓鱼在雪天。\n\n📖 所有山上的鸟儿都飞走了，所有路上都看不到人的影子。江面上有一条小船，船上有一位老爷爷，他戴着斗笠穿着蓑衣，独自在漫天大雪中钓鱼。",
+        "kw": "柳宗元",
+        "img": "img/poems2/24_江雪.png",
+        "audio": "audio/poems2/24_江雪.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "poem_15",
+    "title": "古诗：游子吟",
+    "icon": "📜",
+    "type": "poem",
+    "img_prefix": "img/poems2/",
+    "audio_prefix": "audio/poems2/",
+    "pages": [
+      {
+        "text": "《游子吟》\n孟郊\n\n妈妈手中细细的线，/ 缝成游子身上衣服。/ 出发前密密地缝啊，/ 担心孩子迟迟不归。/ 谁说小草一片心，/ 能报答春天太阳光？\n\n📖 妈妈用手中的针线，为要出远门的孩子缝衣服。临行前她缝得又密又结实，就怕孩子回来得太晚，衣服破了没人补。谁说小草那一点点孝心，能报答得了春天太阳那温暖的恩情呢？",
+        "kw": "孟郊",
+        "img": "img/poems2/25_游子吟.png",
+        "audio": "audio/poems2/25_游子吟.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "poem_16",
+    "title": "古诗：回乡偶书",
+    "icon": "📜",
+    "type": "poem",
+    "img_prefix": "img/poems2/",
+    "audio_prefix": "audio/poems2/",
+    "pages": [
+      {
+        "text": "《回乡偶书》\n贺知章\n\n小时候离开家乡，/ 老了才回到这里。/ 口音还没有改变，/ 头发胡子白花花。/ 小朋友看见了我，/ 笑着问：“客人，您从哪儿来呀？”\n\n📖 我很小的时候就离开了家乡，直到老了才回来。虽然说话的口音还和以前一样，但头发和胡子已经全白了。村里的孩子们看见我都不认识，笑眯眯地问我：“客人，您是从哪里来的呀？”",
+        "kw": "贺知章",
+        "img": "img/poems2/26_回乡偶书.png",
+        "audio": "audio/poems2/26_回乡偶书.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "poem_17",
+    "title": "古诗：出塞",
+    "icon": "📜",
+    "type": "poem",
+    "img_prefix": "img/poems2/",
+    "audio_prefix": "audio/poems2/",
+    "pages": [
+      {
+        "text": "《出塞》\n王昌龄\n\n天上还是秦朝月亮，/ 地上还是汉朝边关。/ 万里长征的战士，/ 到现在也没回家。/ 如果飞将军还在的话，/ 绝不让敌人过阴山！\n\n📖 天上的月亮还是秦朝时的那一轮，边关还是汉朝时的那一道。那些离家万里去打仗的战士，到现在也还不能回家。要是英勇的飞将军李广还在，一定不会让敌人跨过阴山来侵犯我们。",
+        "kw": "王昌龄",
+        "img": "img/poems2/27_出塞.png",
+        "audio": "audio/poems2/27_出塞.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "poem_18",
+    "title": "古诗：鹿柴",
+    "icon": "📜",
+    "type": "poem",
+    "img_prefix": "img/poems2/",
+    "audio_prefix": "audio/poems2/",
+    "pages": [
+      {
+        "text": "《鹿柴》\n王维\n\n空山不见一个人，/ 但能听到说话声。/ 夕阳照进深树林，/ 又照在青青苔藓上。\n\n📖 空荡荡的山里看不到一个人影，却隐隐约约听到有人说话的声音。夕阳的金光照进幽深的树林，又落在那片绿绿的苔藓上，显得格外明亮。",
+        "kw": "王维",
+        "img": "img/poems2/28_鹿柴.png",
+        "audio": "audio/poems2/28_鹿柴.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "poem_19",
+    "title": "古诗：送元二使安西",
+    "icon": "📜",
+    "type": "poem",
+    "img_prefix": "img/poems2/",
+    "audio_prefix": "audio/poems2/",
+    "pages": [
+      {
+        "text": "《送元二使安西》\n王维\n\n渭城早晨下小雨，/ 打湿地上轻灰尘。/ 客舍前柳树绿又新，/ 请你再喝一杯酒，/ 向西出了阳关，/ 就见不到老朋友啦。\n\n📖 渭城早晨下了一场小雨，把地上的尘土都打湿了。旅店前的柳树被雨水洗得翠绿新鲜。朋友啊，请你再喝干这一杯酒，因为等你向西走出了阳关，就再也见不到我这个老朋友了。",
+        "kw": "王维",
+        "img": "img/poems2/29_送元二使安西.png",
+        "audio": "audio/poems2/29_送元二使安西.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "poem_20",
+    "title": "古诗：黄鹤楼送孟浩然之广陵",
+    "icon": "📜",
+    "type": "poem",
+    "img_prefix": "img/poems2/",
+    "audio_prefix": "audio/poems2/",
+    "pages": [
+      {
+        "text": "《黄鹤楼送孟浩然之广陵》\n李白\n\n老朋友辞别黄鹤楼，/ 在这烟花三月去扬州。/ 孤帆远影渐渐消失，/ 只看见长江水在天边流。\n\n📖 我的老朋友在黄鹤楼和我告别，在柳絮如烟、繁花似锦的三月，他要顺江东下去扬州。那一片孤帆的远影慢慢消失在蓝天尽头，我只看见滚滚的长江水向着天边流去。",
+        "kw": "李白",
+        "img": "img/poems2/30_黄鹤楼送孟浩然之广陵.png",
+        "audio": "audio/poems2/30_黄鹤楼送孟浩然之广陵.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "idiom_a01",
+    "title": "成语：守株待兔",
+    "icon": "📚",
+    "type": "idiom",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "【成语】守株待兔\n\n农夫在田里干活，一只兔子撞在树桩上死了。农夫从此不再种地，天天守在树桩旁等兔子。可是再也没有兔子撞上来，田地也荒废了。\n\n💡 不要不劳而获，要主动努力才能有收获。",
+        "img": "img/idioms/01_守株待兔.png",
+        "audio": "audio/idioms/01_守株待兔.mp3",
+        "kw": "守株待兔"
+      }
+    ]
+  },
+  {
+    "id": "idiom_a02",
+    "title": "成语：画龙点睛",
+    "icon": "📚",
+    "type": "idiom",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "【成语】画龙点睛\n\n画家在墙上画了四条龙，都没有画眼睛。他说画上眼睛龙就会飞走。大家不信，他给两条龙点上眼睛。突然电闪雷鸣，那两条龙破壁飞上了天。\n\n💡 关键的一笔能让整体变得生动有力。",
+        "img": "img/idioms/02_画龙点睛.png",
+        "audio": "audio/idioms/02_画龙点睛.mp3",
+        "kw": "画龙点睛"
+      }
+    ]
+  },
+  {
+    "id": "idiom_a03",
+    "title": "成语：掩耳盗铃",
+    "icon": "📚",
+    "type": "idiom",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "【成语】掩耳盗铃\n\n有人想偷一口大钟，搬不动就敲碎再拿。他怕别人听到钟声，就捂着自己耳朵去敲。结果声音传得很远，他立刻被抓住了。\n\n💡 不要自欺欺人，掩盖不了的事情偏要掩盖只会更糟。",
+        "img": "img/idioms/03_掩耳盗铃.png",
+        "audio": "audio/idioms/03_掩耳盗铃.mp3",
+        "kw": "掩耳盗铃"
+      }
+    ]
+  },
+  {
+    "id": "idiom_a04",
+    "title": "成语：亡羊补牢",
+    "icon": "📚",
+    "type": "idiom",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "【成语】亡羊补牢\n\n牧羊人发现羊圈破了个洞，邻居劝他赶快修。他说羊已经丢了修也没用。第二天又丢了一只羊，他才后悔，马上把洞补好。从此羊再没丢过。\n\n💡 犯了错误及时改正弥补还不算晚。",
+        "img": "img/idioms/04_亡羊补牢.png",
+        "audio": "audio/idioms/04_亡羊补牢.mp3",
+        "kw": "亡羊补牢"
+      }
+    ]
+  },
+  {
+    "id": "idiom_a05",
+    "title": "成语：刻舟求剑",
+    "icon": "📚",
+    "type": "idiom",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "【成语】刻舟求剑\n\n一个人坐船时剑掉进水里，他赶紧在船边刻了个记号。船靠岸后，他从刻记号的地方下水找剑，却怎么也找不到。\n\n💡 情况变了，做事的方法也要改变。",
+        "img": "img/idioms/05_刻舟求剑.png",
+        "audio": "audio/idioms/05_刻舟求剑.mp3",
+        "kw": "刻舟求剑"
+      }
+    ]
+  },
+  {
+    "id": "idiom_a06",
+    "title": "成语：拔苗助长",
+    "icon": "📚",
+    "type": "idiom",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "【成语】拔苗助长\n\n农夫嫌禾苗长得太慢，就把它们一棵棵往上拔高。第二天他去田里一看，所有的禾苗都枯死了。\n\n💡 做事不能急于求成，要遵循自然规律。",
+        "img": "img/idioms/06_拔苗助长.png",
+        "audio": "audio/idioms/06_拔苗助长.mp3",
+        "kw": "拔苗助长"
+      }
+    ]
+  },
+  {
+    "id": "idiom_a07",
+    "title": "成语：叶公好龙",
+    "icon": "📚",
+    "type": "idiom",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "【成语】叶公好龙\n\n叶公非常喜欢龙，家里的墙上画着龙，柱子上刻着龙。天上真龙听说后很高兴，就飞到叶公家里。叶公一见真龙，吓得转身就跑。\n\n💡 嘴上说喜欢不等于真心喜欢。",
+        "img": "img/idioms/07_叶公好龙.png",
+        "audio": "audio/idioms/07_叶公好龙.mp3",
+        "kw": "叶公好龙"
+      }
+    ]
+  },
+  {
+    "id": "idiom_a08",
+    "title": "成语：狐假虎威",
+    "icon": "📚",
+    "type": "idiom",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "【成语】狐假虎威\n\n老虎抓到一只狐狸，狐狸说天帝派我来管理百兽，你吃我就是违抗天命。老虎半信半疑，狐狸让老虎跟在自己后面走。百兽看见老虎都吓得逃跑。\n\n💡 借别人的威风来吓唬人。",
+        "img": "img/idioms/08_狐假虎威.png",
+        "audio": "audio/idioms/08_狐假虎威.mp3",
+        "kw": "狐假虎威"
+      }
+    ]
+  },
+  {
+    "id": "idiom_a09",
+    "title": "成语：井底之蛙",
+    "icon": "📚",
+    "type": "idiom",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "【成语】井底之蛙\n\n一只青蛙住在井底，它对路过的海龟说：你看我多快乐，整个井都是我的！海龟说：你见过大海吗？那才叫真正的广阔。青蛙听了目瞪口呆。\n\n💡 见识短浅的人以为世界只有自己看到那么大。",
+        "img": "img/idioms/09_井底之蛙.png",
+        "audio": "audio/idioms/09_井底之蛙.mp3",
+        "kw": "井底之蛙"
+      }
+    ]
+  },
+  {
+    "id": "idiom_a10",
+    "title": "成语：对牛弹琴",
+    "icon": "📚",
+    "type": "idiom",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "【成语】对牛弹琴\n\n有个音乐家对着牛弹奏美妙的乐曲，可是牛只顾低头吃草，一点反应也没有。\n\n💡 对不懂道理的人讲道理是白费力气。",
+        "img": "img/idioms/10_对牛弹琴.png",
+        "audio": "audio/idioms/10_对牛弹琴.mp3",
+        "kw": "对牛弹琴"
+      }
+    ]
+  },
+  {
+    "id": "poem_b01",
+    "title": "古诗：静夜思",
+    "icon": "📜",
+    "type": "poem",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "《静夜思》\n李白 · 唐\n\n床前明月光，疑是地上霜。举头望明月，低头思故乡。\n\n📖 明亮的月光照在床前，好像地上铺了一层白霜。抬头看着天上的明月，不由得低下头来思念远方的家乡。",
+        "img": "img/idioms/11_静夜思.png",
+        "audio": "audio/idioms/11_静夜思.mp3",
+        "kw": "李白"
+      }
+    ]
+  },
+  {
+    "id": "poem_b02",
+    "title": "古诗：春晓",
+    "icon": "📜",
+    "type": "poem",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "《春晓》\n孟浩然 · 唐\n\n春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。\n\n📖 春天的早晨睡得真香，不知不觉天已经亮了。到处都能听到小鸟的叫声。昨夜的风雨声还在耳边，不知道花儿被吹落了多少。",
+        "img": "img/idioms/12_春晓.png",
+        "audio": "audio/idioms/12_春晓.mp3",
+        "kw": "孟浩然"
+      }
+    ]
+  },
+  {
+    "id": "poem_b03",
+    "title": "古诗：咏鹅",
+    "icon": "📜",
+    "type": "poem",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "《咏鹅》\n骆宾王 · 唐\n\n鹅鹅鹅，曲项向天歌。白毛浮绿水，红掌拨清波。\n\n📖 鹅啊鹅，弯着脖子朝天唱歌。雪白的羽毛浮在绿色的水面上，红色的脚掌拨动着清清的水波。",
+        "img": "img/idioms/13_咏鹅.png",
+        "audio": "audio/idioms/13_咏鹅.mp3",
+        "kw": "骆宾王"
+      }
+    ]
+  },
+  {
+    "id": "poem_b04",
+    "title": "古诗：登鹳雀楼",
+    "icon": "📜",
+    "type": "poem",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "《登鹳雀楼》\n王之涣 · 唐\n\n白日依山尽，黄河入海流。欲穷千里目，更上一层楼。\n\n📖 太阳靠着山边慢慢落下，黄河水滚滚流向大海。想要看到更远的地方，就要再登上一层楼。",
+        "img": "img/idioms/14_登鹳雀楼.png",
+        "audio": "audio/idioms/14_登鹳雀楼.mp3",
+        "kw": "王之涣"
+      }
+    ]
+  },
+  {
+    "id": "poem_b05",
+    "title": "古诗：悯农",
+    "icon": "📜",
+    "type": "poem",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "《悯农》\n李绅 · 唐\n\n锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。\n\n📖 农民在烈日下锄草，汗水滴进了泥土里。谁知道碗里的米饭，每一粒都包含着辛苦的劳动。",
+        "img": "img/idioms/15_悯农.png",
+        "audio": "audio/idioms/15_悯农.mp3",
+        "kw": "李绅"
+      }
+    ]
+  },
+  {
+    "id": "poem_b06",
+    "title": "古诗：望庐山瀑布",
+    "icon": "📜",
+    "type": "poem",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "《望庐山瀑布》\n李白 · 唐\n\n日照香炉生紫烟，遥看瀑布挂前川。飞流直下三千尺，疑是银河落九天。\n\n📖 阳光照着香炉峰升起紫色烟雾，远远看见瀑布挂在山前。水流飞泻直下三千尺，好像是银河从天上落下来。",
+        "img": "img/idioms/16_望庐山瀑布.png",
+        "audio": "audio/idioms/16_望庐山瀑布.mp3",
+        "kw": "李白"
+      }
+    ]
+  },
+  {
+    "id": "poem_b07",
+    "title": "古诗：村居",
+    "icon": "📜",
+    "type": "poem",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "《村居》\n高鼎 · 清\n\n草长莺飞二月天，拂堤杨柳醉春烟。儿童散学归来早，忙趁东风放纸鸢。\n\n📖 二月天里小草生长黄莺飞舞，杨柳轻拂着堤岸在春烟中醉人。孩子们放学回来得早，趁着东风放起了风筝。",
+        "img": "img/idioms/17_村居.png",
+        "audio": "audio/idioms/17_村居.mp3",
+        "kw": "高鼎"
+      }
+    ]
+  },
+  {
+    "id": "poem_b08",
+    "title": "古诗：所见",
+    "icon": "📜",
+    "type": "poem",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "《所见》\n袁枚 · 清\n\n牧童骑黄牛，歌声振林樾。意欲捕鸣蝉，忽然闭口立。\n\n📖 牧童骑着黄牛，歌声在树林里回荡。他想要捕捉叫着的蝉，忽然闭上嘴站住了。",
+        "img": "img/idioms/18_所见.png",
+        "audio": "audio/idioms/18_所见.mp3",
+        "kw": "袁枚"
+      }
+    ]
+  },
+  {
+    "id": "poem_b09",
+    "title": "古诗：小池",
+    "icon": "📜",
+    "type": "poem",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "《小池》\n杨万里 · 宋\n\n泉眼无声惜细流，树阴照水爱晴柔。小荷才露尖尖角，早有蜻蜓立上头。\n\n📖 泉眼静静地流着细细的水，树荫映在水面上显得格外清凉。小荷叶刚刚露出尖尖的角，早就有蜻蜓站在上面了。",
+        "img": "img/idioms/19_小池.png",
+        "audio": "audio/idioms/19_小池.mp3",
+        "kw": "杨万里"
+      }
+    ]
+  },
+  {
+    "id": "poem_b10",
+    "title": "古诗：赠汪伦",
+    "icon": "📜",
+    "type": "poem",
+    "single_img": true,
+    "img_prefix": "img/idioms/",
+    "audio_prefix": "audio/idioms/",
+    "pages": [
+      {
+        "text": "《赠汪伦》\n李白 · 唐\n\n李白乘舟将欲行，忽闻岸上踏歌声。桃花潭水深千尺，不及汪伦送我情。\n\n📖 李白乘船正要出发，忽然听到岸上传来踏歌的声音。桃花潭的水有千尺深，也比不上汪伦送我的情谊深。",
+        "img": "img/idioms/20_赠汪伦.png",
+        "audio": "audio/idioms/20_赠汪伦.mp3",
+        "kw": "李白"
+      }
+    ]
   }
 ]

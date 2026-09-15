@@ -1,0 +1,17 @@
+{
+  "id": "poem_b08",
+  "title": "古诗：所见",
+  "icon": "📜",
+  "type": "poem",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "《所见》\n袁枚 · 清\n\n牧童骑黄牛，歌声振林樾。意欲捕鸣蝉，忽然闭口立。\n\n📖 牧童骑着黄牛，歌声在树林里回荡。他想要捕捉叫着的蝉，忽然闭上嘴站住了。",
+      "img": "img/idioms/18_所见.png",
+      "audio": "audio/idioms/18_所见.mp3",
+      "kw": "袁枚"
+    }
+  ]
+}

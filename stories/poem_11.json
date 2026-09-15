@@ -1,0 +1,17 @@
+{
+  "id": "poem_11",
+  "title": "古诗：望天门山",
+  "icon": "📜",
+  "type": "poem",
+  "img_prefix": "img/poems2/",
+  "audio_prefix": "audio/poems2/",
+  "pages": [
+    {
+      "text": "《望天门山》\n李白\n\n天门大山中间断，/ 长江绿水弯又弯。/ 两岸青山像门开，/ 一只小船天边来。\n\n📖 高高的天门山被长江水从中间冲开，碧绿的江水在这里打着转儿。两岸的青山像两扇大门一样打开，一只小船从远远的天边飘了过来。",
+      "kw": "李白",
+      "img": "img/poems2/21_望天门山.png",
+      "audio": "audio/poems2/21_望天门山.mp3"
+    }
+  ],
+  "single_img": true
+}

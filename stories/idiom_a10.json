@@ -1,0 +1,17 @@
+{
+  "id": "idiom_a10",
+  "title": "成语：对牛弹琴",
+  "icon": "📚",
+  "type": "idiom",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】对牛弹琴\n\n有个音乐家对着牛弹奏美妙的乐曲，可是牛只顾低头吃草，一点反应也没有。\n\n💡 对不懂道理的人讲道理是白费力气。",
+      "img": "img/idioms/10_对牛弹琴.png",
+      "audio": "audio/idioms/10_对牛弹琴.mp3",
+      "kw": "对牛弹琴"
+    }
+  ]
+}

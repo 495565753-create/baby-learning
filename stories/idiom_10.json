@@ -1,0 +1,17 @@
+{
+  "id": "idiom_10",
+  "title": "成语：负荆请罪",
+  "icon": "📚",
+  "type": "idiom",
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】负荆请罪\n\n赵国的蔺相如因功被封为上卿，老将廉颇不服，扬言要羞辱他。蔺相如处处躲避，说国家安危重于个人恩怨。廉颇听说后羞愧万分，脱掉上衣，背着荆条登门请罪，两人从此成为生死之交。\n\n💡 要顾全大局，宽厚待人；犯了错误能主动认错、诚恳道歉，更显品格的高尚。",
+      "kw": "负荆请罪",
+      "img": "img/idioms/10_对牛弹琴.png",
+      "audio": "audio/idioms/10_对牛弹琴.mp3"
+    }
+  ],
+  "single_img": true
+}

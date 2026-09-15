@@ -1,0 +1,17 @@
+{
+  "id": "idiom_05",
+  "title": "成语：大禹治水",
+  "icon": "📚",
+  "type": "idiom",
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】大禹治水\n\n尧帝时期洪水泛滥，鲧用堵的办法失败，他的儿子禹接替治水。禹改变策略，开渠排水、疏通河道，将洪水引入大海。他三次路过家门都顾不上进去，历经十三年终于治水成功。\n\n💡 做事要顺应规律，用疏导代替堵塞；同时，为公众利益无私奉献、持之以恒的精神更值得学习。",
+      "kw": "大禹治水",
+      "img": "img/idioms/05_刻舟求剑.png",
+      "audio": "audio/idioms/05_刻舟求剑.mp3"
+    }
+  ],
+  "single_img": true
+}

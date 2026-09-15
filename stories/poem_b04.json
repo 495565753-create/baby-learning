@@ -1,0 +1,17 @@
+{
+  "id": "poem_b04",
+  "title": "古诗：登鹳雀楼",
+  "icon": "📜",
+  "type": "poem",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "《登鹳雀楼》\n王之涣 · 唐\n\n白日依山尽，黄河入海流。欲穷千里目，更上一层楼。\n\n📖 太阳靠着山边慢慢落下，黄河水滚滚流向大海。想要看到更远的地方，就要再登上一层楼。",
+      "img": "img/idioms/14_登鹳雀楼.png",
+      "audio": "audio/idioms/14_登鹳雀楼.mp3",
+      "kw": "王之涣"
+    }
+  ]
+}

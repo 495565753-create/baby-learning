@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"></head><body>
+<h2>Audio Test</h2>
+<button onclick="play1()">Play Peppa Page1</button>
+<button onclick="play2()">Play Paw Page1</button>
+<button onclick="play3()">Play Judy Page1</button>
+<p id="status"></p>
+<script>
+function play(url) {
+  document.getElementById('status').textContent = 'Playing: '+url;
+  const a = new Audio(url);
+  a.onerror = (e) => document.getElementById('status').textContent = 'ERROR: '+url;
+  a.oncanplaythrough = () => document.getElementById('status').textContent = 'Loaded: '+url;
+  a.play().then(() => document.getElementById('status').textContent = 'Playing OK: '+url)
+    .catch(e => document.getElementById('status').textContent = 'Play failed: '+e.message);
+}
+function play1(){play('audio/peppa/peppa_01/page1_zh.mp3')}
+function play2(){play('audio/paw/paw_01/page1_zh.mp3')}
+function play3(){play('audio/judy/judy_01/page1_zh.mp3')}
+</script>
+</body></html>

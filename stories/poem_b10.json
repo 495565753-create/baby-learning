@@ -1,0 +1,17 @@
+{
+  "id": "poem_b10",
+  "title": "古诗：赠汪伦",
+  "icon": "📜",
+  "type": "poem",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "《赠汪伦》\n李白 · 唐\n\n李白乘舟将欲行，忽闻岸上踏歌声。桃花潭水深千尺，不及汪伦送我情。\n\n📖 李白乘船正要出发，忽然听到岸上传来踏歌的声音。桃花潭的水有千尺深，也比不上汪伦送我的情谊深。",
+      "img": "img/idioms/20_赠汪伦.png",
+      "audio": "audio/idioms/20_赠汪伦.mp3",
+      "kw": "李白"
+    }
+  ]
+}

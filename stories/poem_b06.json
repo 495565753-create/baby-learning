@@ -1,0 +1,17 @@
+{
+  "id": "poem_b06",
+  "title": "古诗：望庐山瀑布",
+  "icon": "📜",
+  "type": "poem",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "《望庐山瀑布》\n李白 · 唐\n\n日照香炉生紫烟，遥看瀑布挂前川。飞流直下三千尺，疑是银河落九天。\n\n📖 阳光照着香炉峰升起紫色烟雾，远远看见瀑布挂在山前。水流飞泻直下三千尺，好像是银河从天上落下来。",
+      "img": "img/idioms/16_望庐山瀑布.png",
+      "audio": "audio/idioms/16_望庐山瀑布.mp3",
+      "kw": "李白"
+    }
+  ]
+}

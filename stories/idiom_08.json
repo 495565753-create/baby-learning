@@ -1,0 +1,17 @@
+{
+  "id": "idiom_08",
+  "title": "成语：凿壁借光",
+  "icon": "📚",
+  "type": "idiom",
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】凿壁借光\n\n西汉的匡衡家境贫寒，晚上点不起灯。他见邻居家灯火通明，就在墙壁上凿了一个小孔，让微弱的光线透过来。他每天就着这点光读书，后来成为一代名相。\n\n💡 在艰苦的条件下，要主动创造条件学习，珍惜每一个求知的机会，用勤奋改变命运。",
+      "kw": "凿壁借光",
+      "img": "img/idioms/08_狐假虎威.png",
+      "audio": "audio/idioms/08_狐假虎威.mp3"
+    }
+  ],
+  "single_img": true
+}

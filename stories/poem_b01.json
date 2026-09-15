@@ -1,0 +1,17 @@
+{
+  "id": "poem_b01",
+  "title": "古诗：静夜思",
+  "icon": "📜",
+  "type": "poem",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "《静夜思》\n李白 · 唐\n\n床前明月光，疑是地上霜。举头望明月，低头思故乡。\n\n📖 明亮的月光照在床前，好像地上铺了一层白霜。抬头看着天上的明月，不由得低下头来思念远方的家乡。",
+      "img": "img/idioms/11_静夜思.png",
+      "audio": "audio/idioms/11_静夜思.mp3",
+      "kw": "李白"
+    }
+  ]
+}

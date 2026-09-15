@@ -1,0 +1,17 @@
+{
+  "id": "idiom_07",
+  "title": "成语：悬梁刺股",
+  "icon": "📚",
+  "type": "idiom",
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】悬梁刺股\n\n汉朝的孙敬读书到深夜，为防止打瞌睡，他把头发系在屋梁上，一低头就会被扯痛。战国的苏秦读书困倦时，就用锥子刺自己的大腿，让疼痛赶走睡意。他们就这样刻苦攻读，终成大学问家。\n\n💡 学习需要超乎常人的刻苦和自律，只有付出艰辛的努力，才能获得真才实学。",
+      "kw": "悬梁刺股",
+      "img": "img/idioms/07_叶公好龙.png",
+      "audio": "audio/idioms/07_叶公好龙.mp3"
+    }
+  ],
+  "single_img": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "poem_b02",
+  "title": "古诗：春晓",
+  "icon": "📜",
+  "type": "poem",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "《春晓》\n孟浩然 · 唐\n\n春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。\n\n📖 春天的早晨睡得真香，不知不觉天已经亮了。到处都能听到小鸟的叫声。昨夜的风雨声还在耳边，不知道花儿被吹落了多少。",
+      "img": "img/idioms/12_春晓.png",
+      "audio": "audio/idioms/12_春晓.mp3",
+      "kw": "孟浩然"
+    }
+  ]
+}

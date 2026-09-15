@@ -1,0 +1,17 @@
+{
+  "id": "poem_b09",
+  "title": "古诗：小池",
+  "icon": "📜",
+  "type": "poem",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "《小池》\n杨万里 · 宋\n\n泉眼无声惜细流，树阴照水爱晴柔。小荷才露尖尖角，早有蜻蜓立上头。\n\n📖 泉眼静静地流着细细的水，树荫映在水面上显得格外清凉。小荷叶刚刚露出尖尖的角，早就有蜻蜓站在上面了。",
+      "img": "img/idioms/19_小池.png",
+      "audio": "audio/idioms/19_小池.mp3",
+      "kw": "杨万里"
+    }
+  ]
+}

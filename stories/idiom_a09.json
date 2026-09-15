@@ -1,0 +1,17 @@
+{
+  "id": "idiom_a09",
+  "title": "成语：井底之蛙",
+  "icon": "📚",
+  "type": "idiom",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】井底之蛙\n\n一只青蛙住在井底，它对路过的海龟说：你看我多快乐，整个井都是我的！海龟说：你见过大海吗？那才叫真正的广阔。青蛙听了目瞪口呆。\n\n💡 见识短浅的人以为世界只有自己看到那么大。",
+      "img": "img/idioms/09_井底之蛙.png",
+      "audio": "audio/idioms/09_井底之蛙.mp3",
+      "kw": "井底之蛙"
+    }
+  ]
+}

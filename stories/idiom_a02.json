@@ -1,0 +1,17 @@
+{
+  "id": "idiom_a02",
+  "title": "成语：画龙点睛",
+  "icon": "📚",
+  "type": "idiom",
+  "single_img": true,
+  "img_prefix": "img/idioms/",
+  "audio_prefix": "audio/idioms/",
+  "pages": [
+    {
+      "text": "【成语】画龙点睛\n\n画家在墙上画了四条龙，都没有画眼睛。他说画上眼睛龙就会飞走。大家不信，他给两条龙点上眼睛。突然电闪雷鸣，那两条龙破壁飞上了天。\n\n💡 关键的一笔能让整体变得生动有力。",
+      "img": "img/idioms/02_画龙点睛.png",
+      "audio": "audio/idioms/02_画龙点睛.mp3",
+      "kw": "画龙点睛"
+    }
+  ]
+}
