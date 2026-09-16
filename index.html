@@ -811,6 +811,61 @@ button, .home-card, .sub-card, .item-card, .story-card, .chip, .mem-card, .bin, 
 /* 词汇卡再精细一点 */
 .item-card { border:1.5px solid var(--line); }
 .item-card .emoji-block { font-size:21px; }
+
+/* ==================== 画图乐园 ==================== */
+.home-card.draw { --hc-soft:#FFF0E0; --hc-line:#FFD7A8; --hc-grad:linear-gradient(135deg,#FFD08A,#FF8F5E); --hc-glow:rgba(255,143,94,.30); border-color:#FFE3C8; }
+.sec-head.draw { background:linear-gradient(135deg,#FFEFD9,#FFD9C2); }
+#page-draw .sub-card .icon { background:linear-gradient(135deg,#FFE9D2,#FFC9A8); box-shadow:0 4px 12px rgba(255,143,94,.22); }
+
+.paint-wrap { display:flex; flex-direction:column; align-items:center; gap:12px; margin-top:10px; }
+.paint-canvas {
+  display:block; width:100%; max-width:336px; border-radius:22px; background:#fff;
+  border:3px solid #fff; touch-action:none;
+  box-shadow:0 10px 24px rgba(120,90,60,.16), inset 0 0 0 1px var(--line);
+}
+.paint-tip { font-size:12.5px; color:var(--ink-2); font-weight:700; text-align:center; line-height:1.6; }
+.draw-toolbar { display:flex; align-items:center; gap:8px; flex-wrap:wrap; justify-content:center; padding:4px 0; }
+.draw-color {
+  width:34px; height:34px; border-radius:50%; cursor:pointer; border:3px solid #fff;
+  box-shadow:0 3px 9px rgba(120,90,60,.20); transition:transform .14s, box-shadow .14s;
+}
+.draw-color.active { transform:scale(1.16); box-shadow:0 0 0 3px rgba(61,125,255,.42); }
+.draw-size-btn {
+  padding:8px 14px; border-radius:14px; border:2px solid var(--line-2); background:var(--surface);
+  font-size:13px; font-weight:900; color:var(--ink); cursor:pointer;
+  box-shadow:0 3px 0 var(--line-2);
+  transition:transform .12s, box-shadow .12s, background .16s, border-color .16s;
+}
+.draw-size-btn.active { border-color:var(--accent); background:var(--accent-soft); color:var(--accent); }
+.draw-size-btn:active { transform:translateY(3px); box-shadow:0 0 0 var(--line-2); }
+
+.sticker-stage {
+  position:relative; width:100%; max-width:336px; aspect-ratio:5/4;
+  border-radius:22px; overflow:hidden; cursor:crosshair; touch-action:manipulation;
+  border:3px solid #fff; box-shadow:0 10px 24px rgba(120,90,60,.16);
+}
+.sticker-stage.bg-paper { background:linear-gradient(180deg,#FFFFFF,#FFFCF6); }
+.sticker-stage.bg-grass { background:linear-gradient(180deg,#CFEFFF 0%,#CFEFFF 46%,#C9F1D4 46%,#9FE0B0 100%); }
+.sticker-stage.bg-sea   { background:linear-gradient(180deg,#C4EBFF,#79C6F2); }
+.sticker-stage.bg-night { background:linear-gradient(180deg,#2E3A6E,#5B4B8A); }
+.sticker-stage .st { position:absolute; transform:translate(-50%,-50%); line-height:1; user-select:none; pointer-events:none; }
+.sticker-palette { display:flex; flex-wrap:wrap; gap:6px; justify-content:center; max-width:336px; }
+.sticker-palette button {
+  width:42px; height:42px; border-radius:14px; border:2px solid var(--line-2); background:var(--surface);
+  font-size:21px; line-height:1; cursor:pointer;
+  box-shadow:0 3px 0 var(--line-2);
+  transition:transform .12s, box-shadow .12s, background .16s, border-color .16s;
+}
+.sticker-palette button.active { border-color:var(--accent); background:var(--accent-soft); }
+.sticker-palette button:active { transform:translateY(3px); box-shadow:0 0 0 var(--line-2); }
+
+.img-mask {
+  position:fixed; inset:0; z-index:1002; background:rgba(20,26,40,.66);
+  display:flex; align-items:center; justify-content:center; padding:22px;
+}
+.img-mask .box { text-align:center; max-width:100%; }
+.img-mask img { max-width:100%; max-height:72vh; border-radius:18px; box-shadow:0 18px 46px rgba(0,0,0,.4); background:#fff; }
+.img-mask .tip { color:#fff; font-size:13.5px; font-weight:900; margin-top:14px; line-height:1.6; }
 @media (hover:none) {
   .item-card .speaker-hint { opacity:.3; }
 }
@@ -924,6 +979,12 @@ button, .home-card, .sub-card, .item-card, .story-card, .chip, .mem-card, .bin, 
           <div class="subtitle">拼图 · 迷宫 · 记忆 · 眼力 · 口算闯关</div>
           <span class="card-stars" data-mod="games"></span>
         </div>
+        <div class="home-card draw wide" data-mod="draw" onclick="app.navigate('draw')" data-speak="画图乐园">
+          <span class="icon">🎨</span>
+          <div class="title">画图乐园</div>
+          <div class="subtitle">涂色 · 万花筒 · 数字连线 · 对称画 · 贴纸画</div>
+          <span class="card-stars" data-mod="draw"></span>
+        </div>
       </div>
     </div>
 
@@ -945,7 +1006,6 @@ button, .home-card, .sub-card, .item-card, .story-card, .chip, .mem-card, .bin, 
         <div class="sub-card" onclick="app.showGeneralTab('emotion')" data-speak="认识情绪"><span class="icon">😊</span><span class="label">认识情绪</span></div>
         <div class="sub-card" onclick="app.showGeneralTab('recycle')" data-speak="垃圾分类"><span class="icon">♻️</span><span class="label">垃圾分类</span></div>
         <div class="sub-card" onclick="app.showGeneralTab('spotdiff')" data-speak="火眼金睛"><span class="icon">🔍</span><span class="label">火眼金睛</span></div>
-        <div class="sub-card" onclick="app.showGeneralTab('drawing')" data-speak="创意画板"><span class="icon">🎨</span><span class="label">创意画板</span></div>
       </div>
       <div id="general-content"></div>
     </div>
@@ -1029,6 +1089,23 @@ button, .home-card, .sub-card, .item-card, .story-card, .chip, .mem-card, .bin, 
     <!-- ME PAGE -->
     <div class="page section" id="page-me">
       <div id="me-content"></div>
+    </div>
+
+    <!-- DRAW PAGE -->
+    <div class="page section" id="page-draw">
+      <div class="sec-head draw">
+        <span class="sec-ic">🎨</span>
+        <div class="sec-txt"><div class="sec-t">画图乐园</div><div class="sec-s">涂色 · 涂鸦 · 画着玩</div></div>
+        <span class="sec-star" data-mod="draw">⭐ 0</span>
+      </div>
+      <div class="sub-cards">
+        <div class="sub-card" onclick="app.showDrawTab('color')" data-speak="涂色画板"><span class="icon">🖌️</span><span class="label">涂色画板</span></div>
+        <div class="sub-card" onclick="app.showDrawTab('kaleido')" data-speak="万花筒"><span class="icon">🌈</span><span class="label">万花筒</span></div>
+        <div class="sub-card" onclick="app.showDrawTab('dots')" data-speak="数字连线"><span class="icon">🔢</span><span class="label">数字连线</span></div>
+        <div class="sub-card" onclick="app.showDrawTab('mirror')" data-speak="对称画"><span class="icon">🪞</span><span class="label">对称画</span></div>
+        <div class="sub-card" onclick="app.showDrawTab('sticker')" data-speak="贴纸画"><span class="icon">🌟</span><span class="label">贴纸画</span></div>
+      </div>
+      <div id="draw-content"></div>
     </div>
   </div>
 </div>
@@ -1583,7 +1660,7 @@ class EduApp {
     this.audio = new AudioManager();
     this.progress = new Progress();
     this._module = 'math';
-    this.state = { mathTab:'numbers', englishTab:'alphabet', generalTab:'safety', gameTab:'puzzle', quizScore:0, quizTotal:0, quizAnswered:false };
+    this.state = { mathTab:'numbers', englishTab:'alphabet', generalTab:'safety', gameTab:'puzzle', drawTab:'color', quizScore:0, quizTotal:0, quizAnswered:false };
     this.init();
   }
 
@@ -1802,6 +1879,7 @@ class EduApp {
     if (page === 'english') { this.renderEnglishTab(); this.showEnglishMenu(); }
     if (page === 'general') { this.renderGeneralTab(); this.showGeneralMenu(); }
     if (page === 'games') this.showGameMenu();
+    if (page === 'draw') this.showDrawMenu();
     if (page === 'me') this.renderMe();
     if (page === 'story') this.renderStory();
     if (page === 'home') this.renderHome();
@@ -4434,6 +4512,503 @@ class EduApp {
     this.reward(2, 'games');
     this.celebrate(true);
     this.audio.speak(h.elapsed <= 30 ? '找得真快，眼力真好！' : '完成啦，多练几次会更快哦！');
+  }
+
+  // ==================== 画图乐园 ====================
+  showDrawTab(tab) {
+    this.audio.cancel();
+    this.state.drawTab = tab;
+    this.progress.markGame('draw_' + tab);
+    const subCards = document.querySelector('#page-draw .sub-cards');
+    const content = document.getElementById('draw-content');
+    if (subCards) subCards.style.display = 'none';
+    if (content) { content.style.display = 'block'; content.innerHTML = '<div style="text-align:center;padding:40px;color:#999;">加载中…</div>'; }
+    this.renderDrawTab();
+    if (!document.getElementById('drawBack')) {
+      const backBtn = document.createElement('button');
+      backBtn.id = 'drawBack';
+      backBtn.className = 'btn-back';
+      backBtn.textContent = '⬅ 返回画图菜单';
+      backBtn.onclick = () => this.showDrawMenu();
+      backBtn.style.marginBottom = '8px';
+      content.parentNode.insertBefore(backBtn, content);
+    } else {
+      document.getElementById('drawBack').style.display = 'inline-flex';
+    }
+  }
+
+  showDrawMenu() {
+    const subCards = document.querySelector('#page-draw .sub-cards');
+    const content = document.getElementById('draw-content');
+    if (subCards) subCards.style.display = '';
+    if (content) content.style.display = 'none';
+    const backBtn = document.getElementById('drawBack');
+    if (backBtn) backBtn.style.display = 'none';
+  }
+
+  renderDrawTab() {
+    const t = this.state.drawTab;
+    const c = document.getElementById('draw-content');
+    if (!c) return;
+    if (t === 'color') this.renderDrawing(c);
+    else if (t === 'kaleido') this.renderKaleido(c);
+    else if (t === 'dots') this.renderDots(c);
+    else if (t === 'mirror') this.renderMirror(c);
+    else if (t === 'sticker') this.renderSticker(c);
+  }
+
+  // canvas 指针绑定：自动按显示尺寸换算坐标
+  _bindCanvas(canvas, h) {
+    const pos = e => {
+      const r = canvas.getBoundingClientRect();
+      const t = (e.touches && e.touches[0]) ? e.touches[0] : e;
+      return {
+        x: (t.clientX - r.left) * (canvas.width / r.width),
+        y: (t.clientY - r.top) * (canvas.height / r.height)
+      };
+    };
+    let down = false;
+    const start = e => { e.preventDefault(); down = true; if (h.down) h.down(pos(e)); };
+    const move = e => { if (!down) return; e.preventDefault(); if (h.move) h.move(pos(e)); };
+    const end = () => { if (down && h.up) h.up(); down = false; };
+    canvas.addEventListener('touchstart', start, { passive:false });
+    canvas.addEventListener('touchmove', move, { passive:false });
+    canvas.addEventListener('touchend', end);
+    canvas.addEventListener('touchcancel', end);
+    canvas.addEventListener('mousedown', start);
+    canvas.addEventListener('mousemove', move);
+    canvas.addEventListener('mouseup', end);
+    canvas.addEventListener('mouseleave', end);
+  }
+
+  _showImage(dataUrl) {
+    const mask = document.createElement('div');
+    mask.className = 'img-mask';
+    mask.onclick = e => { if (e.target === mask || e.target.className === 'tip') mask.remove(); };
+    mask.innerHTML = '<div class="box">'
+      + '<img src="' + dataUrl + '" alt="我的画">'
+      + '<div class="tip">长按图片可以保存到相册<br>（点这里关闭）</div>'
+      + '</div>';
+    document.body.appendChild(mask);
+  }
+
+  _toggleBtn(scope, el) {
+    document.querySelectorAll(scope + ' .draw-size-btn, ' + scope + ' .draw-color')
+      .forEach(b => b.classList.remove('active'));
+    if (el) el.classList.add('active');
+  }
+
+  // ============== 画 1：万花筒 ==============
+  renderKaleido(container) {
+    container.innerHTML = `<div class="quiz-area">
+      <h3>🌈 万花筒</h3>
+      <div class="quiz-sub">在下面随便画，每一笔都会变成六角对称的花纹</div>
+      <div class="paint-wrap">
+        <canvas id="kCanvas" class="paint-canvas" width="480" height="480"></canvas>
+        <div class="draw-toolbar">
+          <button class="draw-size-btn active" onclick="app.kSize(3,this)">细笔</button>
+          <button class="draw-size-btn" onclick="app.kSize(8,this)">粗笔</button>
+          <button class="draw-size-btn" onclick="app.kSize(16,this)">大刷子</button>
+          <button class="draw-size-btn" onclick="app.kClear()">🗑️ 重来</button>
+          <button class="draw-size-btn" onclick="app.kSave()">💾 保存</button>
+        </div>
+        <div class="paint-tip">越画越漂亮，画完可以保存给爸爸妈妈看</div>
+      </div>
+      <div class="quiz-feedback" id="quizFeedback"></div>
+    </div>`;
+    const cv = document.getElementById('kCanvas');
+    this._k = { cv, ctx:cv.getContext('2d'), size:3, hue:Math.floor(Math.random() * 360), last:null, strokeN:0 };
+    this._kBase();
+    this._bindCanvas(cv, {
+      down: p => { this._k.last = p; },
+      move: p => { this._kDraw(this._k.last, p); this._k.last = p; },
+      up: () => { this._k.last = null; this._kMaybeReward(); }
+    });
+  }
+
+  _kBase() {
+    const k = this._k;
+    if (!k) return;
+    k.ctx.fillStyle = '#FFFDF8';
+    k.ctx.fillRect(0, 0, k.cv.width, k.cv.height);
+    k.ctx.beginPath();
+    k.ctx.arc(k.cv.width / 2, k.cv.height / 2, 6, 0, Math.PI * 2);
+    k.ctx.fillStyle = '#FFD9A8';
+    k.ctx.fill();
+  }
+
+  kSize(s, el) { if (this._k) this._k.size = s; this._toggleBtn('#draw-content', el); }
+
+  _kDraw(a, b) {
+    const k = this._k;
+    if (!k || !a || !b) return;
+    const ctx = k.ctx, cv = k.cv, cx = cv.width / 2, cy = cv.height / 2;
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.lineWidth = k.size;
+    for (let i = 0; i < 6; i++) {
+      ctx.strokeStyle = 'hsl(' + Math.round((k.hue + i * 42) % 360) + ',85%,62%)';
+      ctx.save();
+      ctx.translate(cx, cy); ctx.rotate(i * Math.PI / 3); ctx.translate(-cx, -cy);
+      ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(cv.width - a.x, a.y); ctx.lineTo(cv.width - b.x, b.y); ctx.stroke();
+      ctx.restore();
+    }
+    k.hue = (k.hue + 1.6) % 360;
+    k.strokeN++;
+  }
+
+  _kMaybeReward() {
+    const k = this._k;
+    if (!k || k.rewarded || k.strokeN < 90) return;
+    k.rewarded = true;
+    const fb = document.getElementById('quizFeedback');
+    if (fb) { fb.textContent = '🎉 好漂亮的花纹！你画得真棒！'; fb.style.color = '#0A8F6B'; }
+    this.reward(2, 'draw');
+    this.celebrate(true);
+    this.audio.speak('好漂亮的花纹，你画得真棒！');
+  }
+
+  kClear() {
+    this._kBase();
+    if (this._k) { this._k.strokeN = 0; this._k.rewarded = false; }
+    const fb = document.getElementById('quizFeedback');
+    if (fb) fb.textContent = '';
+  }
+
+  kSave() { if (this._k) this._showImage(this._k.cv.toDataURL('image/png')); }
+
+  // ============== 画 2：数字连线 ==============
+  _dotShapes() {
+    return [
+      { n:'小星星', p:[[.50,.08],[.62,.38],[.94,.38],[.68,.57],[.78,.90],[.50,.71],[.22,.90],[.32,.57],[.06,.38],[.38,.38]] },
+      { n:'小房子', p:[[.20,.88],[.20,.46],[.50,.14],[.80,.46],[.80,.88]] },
+      { n:'小鱼',   p:[[.12,.50],[.34,.26],[.62,.26],[.82,.50],[.62,.74],[.34,.74]] },
+      { n:'小火箭', p:[[.50,.06],[.66,.40],[.66,.76],[.34,.76],[.34,.40]] },
+      { n:'小帆船', p:[[.12,.64],[.88,.64],[.72,.88],[.28,.88]] },
+      { n:'小松树', p:[[.50,.06],[.74,.44],[.62,.44],[.84,.76],[.16,.76],[.38,.44],[.26,.44]] }
+    ];
+  }
+
+  renderDots(container) {
+    const shapes = this._dotShapes();
+    const sh = shapes[Math.floor(Math.random() * shapes.length)];
+    container.innerHTML = `<div class="quiz-area">
+      <h3>🔢 数字连线</h3>
+      <div class="quiz-sub">按 1、2、3…… 的顺序连起来，看看能画出什么</div>
+      <div class="paint-wrap">
+        <canvas id="dotCanvas" class="paint-canvas" width="480" height="430"></canvas>
+        <div class="dot-hint"><span>下一个：<b id="dotNext">1</b></span><span>已连 <b id="dotDone">0</b> / <b id="dotTotal">0</b></span></div>
+        <div class="draw-toolbar">
+          <button class="draw-size-btn" onclick="app.dotReveal()">👀 看答案</button>
+          <button class="draw-size-btn" onclick="app.renderDrawTab()">🔄 换一个</button>
+        </div>
+      </div>
+      <div class="quiz-feedback" id="quizFeedback"></div>
+      <button class="btn-next" onclick="app.renderDrawTab()" style="display:none" id="quizNext">再玩一个 ⭐</button>
+    </div>`;
+    const cv = document.getElementById('dotCanvas');
+    const pts = sh.p.map(q => ({ x:q[0] * cv.width, y:q[1] * cv.height }));
+    this._dots = { cv, ctx:cv.getContext('2d'), sh, pts, next:0, done:false };
+    const t = document.getElementById('dotTotal');
+    if (t) t.textContent = pts.length;
+    this._dotsPaint();
+    this._bindCanvas(cv, { down: p => this._dotsTap(p) });
+  }
+
+  _dotsPaint() {
+    const d = this._dots;
+    if (!d) return;
+    const ctx = d.ctx, cv = d.cv, pts = d.pts;
+    ctx.clearRect(0, 0, cv.width, cv.height);
+    ctx.fillStyle = '#FFFDF8';
+    ctx.fillRect(0, 0, cv.width, cv.height);
+    if (d.next > 0) {
+      ctx.strokeStyle = '#FF8A3D'; ctx.lineWidth = 7; ctx.lineJoin = 'round'; ctx.lineCap = 'round';
+      ctx.beginPath(); ctx.moveTo(pts[0].x, pts[0].y);
+      for (let i = 1; i < d.next; i++) ctx.lineTo(pts[i].x, pts[i].y);
+      ctx.stroke();
+    }
+    pts.forEach((q, i) => {
+      const isNext = (i === d.next) && !d.done;
+      ctx.beginPath(); ctx.arc(q.x, q.y, isNext ? 21 : 16, 0, Math.PI * 2);
+      ctx.fillStyle = i < d.next ? '#FFD08A' : isNext ? '#FFE9CF' : '#FFFFFF';
+      ctx.fill();
+      ctx.lineWidth = isNext ? 6 : 3;
+      ctx.strokeStyle = (i <= d.next) ? '#FF8A3D' : '#D9CDBE';
+      ctx.stroke();
+      ctx.fillStyle = i < d.next ? '#7A4A18' : '#8A6A55';
+      ctx.font = 'bold 21px sans-serif';
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText(String(i + 1), q.x, q.y);
+    });
+    const n = document.getElementById('dotNext');
+    if (n) n.textContent = d.done ? '完成 ✓' : (d.next < pts.length ? (d.next + 1) : '完成');
+    const dn = document.getElementById('dotDone');
+    if (dn) dn.textContent = d.next;
+  }
+
+  _dotsTap(p) {
+    const d = this._dots;
+    if (!d || d.done) return;
+    let best = -1, bd = 1e9;
+    d.pts.forEach((q, i) => {
+      const t = Math.hypot(q.x - p.x, q.y - p.y);
+      if (t < bd) { bd = t; best = i; }
+    });
+    if (bd > 52) return;
+    if (best !== d.next) {
+      const fb = document.getElementById('quizFeedback');
+      if (fb) { fb.textContent = '先连 ' + (d.next + 1) + ' 号哦～'; fb.style.color = '#E07A1F'; }
+      this.audio.speak('先连' + (d.next + 1));
+      return;
+    }
+    d.next++;
+    this._dotsPaint();
+    if (d.next >= d.pts.length) this._dotsDone();
+  }
+
+  _dotsDone() {
+    const d = this._dots;
+    if (!d || d.done) return;
+    d.done = true;
+    const ctx = d.ctx, pts = d.pts;
+    ctx.beginPath(); ctx.moveTo(pts[0].x, pts[0].y);
+    for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i].x, pts[i].y);
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(255,208,138,.45)'; ctx.fill();
+    ctx.strokeStyle = '#FF8A3D'; ctx.lineWidth = 7; ctx.lineJoin = 'round'; ctx.stroke();
+    const fb = document.getElementById('quizFeedback');
+    if (fb) { fb.textContent = '🎉 连好啦！这是一个' + d.sh.n; fb.style.color = '#0A8F6B'; }
+    const next = document.getElementById('quizNext');
+    if (next) next.style.display = 'inline-block';
+    this.progress.flagGame('drawDots');
+    this.reward(3, 'draw');
+    this.celebrate(true);
+    this.audio.speak('连好啦，这是一个' + d.sh.n);
+  }
+
+  dotReveal() {
+    const d = this._dots;
+    if (!d) return;
+    const ctx = d.ctx, pts = d.pts;
+    ctx.save();
+    ctx.setLineDash([9, 9]); ctx.strokeStyle = 'rgba(255,138,61,.55)'; ctx.lineWidth = 5;
+    ctx.beginPath(); ctx.moveTo(pts[0].x, pts[0].y);
+    for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i].x, pts[i].y);
+    ctx.stroke(); ctx.restore();
+    this.audio.speak('这是一个' + d.sh.n);
+  }
+
+  // ============== 画 3：对称画 ==============
+  _mirrorGuides() {
+    return [
+      { n:'蝴蝶', p:[[.46,.50],[.36,.30],[.22,.20],[.10,.28],[.06,.46],[.14,.66],[.28,.78],[.40,.70]] },
+      { n:'爱心', p:[[.46,.34],[.34,.22],[.18,.24],[.09,.40],[.15,.56],[.30,.72],[.46,.88]] },
+      { n:'小树', p:[[.46,.86],[.32,.86],[.32,.64],[.14,.64],[.30,.40],[.46,.14]] },
+      { n:'小鱼', p:[[.46,.50],[.32,.32],[.16,.36],[.06,.50],[.16,.64],[.32,.68]] },
+      { n:'星星', p:[[.46,.14],[.32,.36],[.08,.36],[.26,.54],[.18,.80],[.46,.64]] }
+    ];
+  }
+
+  renderMirror(container) {
+    const gs = this._mirrorGuides();
+    const g = gs[Math.floor(Math.random() * gs.length)];
+    container.innerHTML = `<div class="quiz-area">
+      <h3>🪞 对称画</h3>
+      <div class="quiz-sub">在任意一边画，另一边会自动变成一模一样的</div>
+      <div class="paint-wrap">
+        <canvas id="mCanvas" class="paint-canvas" width="480" height="430"></canvas>
+        <div class="draw-toolbar">
+          <span class="draw-size-btn" style="cursor:default;">参照：${g.n}</span>
+          <button class="draw-size-btn active" onclick="app.mSize(4,this)">细笔</button>
+          <button class="draw-size-btn" onclick="app.mSize(11,this)">粗笔</button>
+          <button class="draw-size-btn" onclick="app.mGuide()">👀 参照线</button>
+          <button class="draw-size-btn" onclick="app.mClear()">🗑️ 重来</button>
+          <button class="draw-size-btn" onclick="app.mSave()">💾 保存</button>
+        </div>
+        <div class="paint-tip">试着沿着虚线画一遍，就画出一整只${g.n}了</div>
+      </div>
+      <div class="quiz-feedback" id="quizFeedback"></div>
+    </div>`;
+    const cv = document.getElementById('mCanvas');
+    this._m = { cv, ctx:cv.getContext('2d'), size:4, hue:210, last:null, guide:g, showGuide:true, strokes:[] };
+    this._mPaint();
+    this._bindCanvas(cv, {
+      down: p => { this._m.last = p; },
+      move: p => { this._mStroke(this._m.last, p); this._m.last = p; },
+      up: () => { this._m.last = null; this._mMaybeReward(); }
+    });
+  }
+
+  _mPaint() {
+    const m = this._m;
+    if (!m) return;
+    const ctx = m.ctx, cv = m.cv;
+    ctx.clearRect(0, 0, cv.width, cv.height);
+    ctx.fillStyle = '#FFFDF8';
+    ctx.fillRect(0, 0, cv.width, cv.height);
+    if (m.showGuide && m.guide) {
+      ctx.save();
+      ctx.setLineDash([8, 8]);
+      ctx.strokeStyle = 'rgba(150,160,180,.55)';
+      ctx.lineWidth = 4; ctx.lineJoin = 'round';
+      ctx.beginPath();
+      m.guide.p.forEach((q, i) => {
+        const x = q[0] * cv.width, y = q[1] * cv.height;
+        if (i) ctx.lineTo(x, y); else ctx.moveTo(x, y);
+      });
+      ctx.stroke();
+      ctx.restore();
+    }
+    ctx.save();
+    ctx.setLineDash([10, 10]); ctx.strokeStyle = '#E0D4C6'; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(cv.width / 2, 10); ctx.lineTo(cv.width / 2, cv.height - 10); ctx.stroke();
+    ctx.restore();
+    m.strokes.forEach(s => this._mLine(s.a, s.b, s.hue, s.size));
+  }
+
+  _mLine(a, b, hue, size) {
+    const m = this._m;
+    if (!m || !a || !b) return;
+    const ctx = m.ctx, cv = m.cv;
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.lineWidth = size;
+    ctx.strokeStyle = 'hsl(' + (hue % 360) + ',80%,60%)';
+    ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(cv.width - a.x, a.y); ctx.lineTo(cv.width - b.x, b.y); ctx.stroke();
+  }
+
+  _mStroke(a, b) {
+    const m = this._m;
+    if (!m || !a || !b) return;
+    m.strokes.push({ a, b, hue:m.hue, size:m.size });
+    this._mLine(a, b, m.hue, m.size);
+    m.hue += 0.9;
+  }
+
+  mSize(s, el) { if (this._m) this._m.size = s; this._toggleBtn('#draw-content', el); }
+  mGuide() { if (!this._m) return; this._m.showGuide = !this._m.showGuide; this._mPaint(); }
+  mClear() { if (!this._m) return; this._m.strokes = []; this._m.rewarded = false; this._mPaint(); }
+  mSave() { if (this._m) this._showImage(this._m.cv.toDataURL('image/png')); }
+
+  _mMaybeReward() {
+    const m = this._m;
+    if (!m || m.rewarded || m.strokes.length < 60) return;
+    m.rewarded = true;
+    const fb = document.getElementById('quizFeedback');
+    if (fb) { fb.textContent = '🎉 左右一模一样，对称画成功！'; fb.style.color = '#0A8F6B'; }
+    this.progress.flagGame('drawMirror');
+    this.reward(2, 'draw');
+    this.celebrate(true);
+    this.audio.speak('左右一模一样，好厉害！');
+  }
+
+  // ============== 画 4：贴纸画 ==============
+  _stickerSet() {
+    return ['🌟','🌈','🐰','🐱','🐶','🦋','🌸','🌻','🍓','🍎','🎈','🚗','🏠','🌳','☁️','🐟','🐢','🦕','🍦','🎁'];
+  }
+
+  renderSticker(container) {
+    const set = this._stickerSet();
+    const bgs = [{ k:'paper', n:'白纸' }, { k:'grass', n:'草地' }, { k:'sea', n:'海底' }, { k:'night', n:'夜空' }];
+    const keep = this._st || { bg:'paper', size:48 };
+    this._st = { items:[], cur:set[0], size:keep.size || 48, bg:keep.bg || 'paper', rewarded:false };
+    container.innerHTML = `<div class="quiz-area">
+      <h3>🌟 贴纸画</h3>
+      <div class="quiz-sub">先选一个贴纸，再点下面的画面，就能贴上去</div>
+      <div class="paint-wrap">
+        <div class="sticker-stage bg-${this._st.bg}" id="stStage"></div>
+        <div class="sticker-palette" id="stPalette">
+          ${set.map((e, i) => `<button class="${i === 0 ? 'active' : ''}" onclick="app.stPick('${e}',this)">${e}</button>`).join('')}
+        </div>
+        <div class="draw-toolbar">
+          ${bgs.map(b => `<button class="draw-size-btn${b.k === this._st.bg ? ' active' : ''}" onclick="app.stBg('${b.k}',this)">${b.n}</button>`).join('')}
+        </div>
+        <div class="draw-toolbar">
+          <button class="draw-size-btn${this._st.size === 34 ? ' active' : ''}" onclick="app.stSize(34,this)">小</button>
+          <button class="draw-size-btn${this._st.size === 48 ? ' active' : ''}" onclick="app.stSize(48,this)">中</button>
+          <button class="draw-size-btn${this._st.size === 72 ? ' active' : ''}" onclick="app.stSize(72,this)">大</button>
+          <button class="draw-size-btn" onclick="app.stUndo()">↩ 撤销</button>
+          <button class="draw-size-btn" onclick="app.stClear()">🗑️ 清空</button>
+          <button class="draw-size-btn" onclick="app.stSave()">💾 保存</button>
+        </div>
+        <div class="paint-tip">贴好以后可以保存下来给爸爸妈妈看</div>
+      </div>
+      <div class="quiz-feedback" id="quizFeedback"></div>
+    </div>`;
+    const stage = document.getElementById('stStage');
+    stage.addEventListener('click', e => {
+      const r = stage.getBoundingClientRect();
+      this.stPlace((e.clientX - r.left) / r.width * 100, (e.clientY - r.top) / r.height * 100);
+    });
+    this._stPaint();
+  }
+
+  stPick(e, el) {
+    this._st.cur = e;
+    document.querySelectorAll('#stPalette button').forEach(b => b.classList.remove('active'));
+    if (el) el.classList.add('active');
+  }
+
+  stSize(s, el) { this._st.size = s; this._toggleBtn('#draw-content', el); }
+
+  stBg(k, el) {
+    this._st.bg = k;
+    const stage = document.getElementById('stStage');
+    if (stage) stage.className = 'sticker-stage bg-' + k;
+    this._toggleBtn('#draw-content', el);
+    if (el) el.classList.add('active');
+  }
+
+  stPlace(x, y) {
+    if (!this._st) return;
+    this._st.items.push({
+      e:this._st.cur,
+      x:Math.max(5, Math.min(95, x)),
+      y:Math.max(7, Math.min(93, y)),
+      s:this._st.size
+    });
+    this._stPaint();
+  }
+
+  stUndo() { if (!this._st) return; this._st.items.pop(); this._stPaint(); }
+  stClear() { if (!this._st) return; this._st.items = []; this._st.rewarded = false; this._stPaint(); }
+
+  _stPaint() {
+    const stage = document.getElementById('stStage');
+    if (!stage || !this._st) return;
+    stage.innerHTML = this._st.items.map(it =>
+      '<span class="st" style="left:' + it.x + '%;top:' + it.y + '%;font-size:' + it.s + 'px">' + it.e + '</span>').join('');
+    const n = this._st.items.length;
+    const fb = document.getElementById('quizFeedback');
+    if (fb) {
+      if (n === 0) fb.textContent = '';
+      else {
+        fb.textContent = n >= 12 ? '🎉 好丰富的一幅画！' : '已经贴了 ' + n + ' 个贴纸';
+        fb.style.color = '#5C6884';
+      }
+    }
+    if (n >= 12 && !this._st.rewarded) {
+      this._st.rewarded = true;
+      this.progress.flagGame('drawSticker');
+      this.reward(3, 'draw');
+      this.celebrate(true);
+      this.audio.speak('好丰富的一幅画，你真会创作！');
+    }
+  }
+
+  stSave() {
+    if (!this._st) return;
+    const cv = document.createElement('canvas');
+    cv.width = 672; cv.height = 538;
+    const ctx = cv.getContext('2d');
+    const bgs = { paper:'#FFFFFF', grass:'#C9F1D4', sea:'#9FD8F5', night:'#3A467A' };
+    ctx.fillStyle = bgs[this._st.bg] || '#fff';
+    ctx.fillRect(0, 0, cv.width, cv.height);
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    this._st.items.forEach(it => {
+      ctx.font = Math.round(it.s * cv.width / 336) + 'px sans-serif';
+      ctx.fillText(it.e, it.x / 100 * cv.width, it.y / 100 * cv.height);
+    });
+    this._showImage(cv.toDataURL('image/png'));
   }
 
   // ==================== CELEBRATION ====================
