@@ -1,0 +1,17 @@
+{
+  "id": "poem_35",
+  "title": "古诗：晓出净慈寺送林子方",
+  "icon": "📜",
+  "type": "poem",
+  "img_prefix": "img/poems2/",
+  "audio_prefix": "audio/poems2/",
+  "pages": [
+    {
+      "text": "《晓出净慈寺送林子方》\n杨万里 · 宋\n\n毕竟西湖六月中，风光不与四时同。接天莲叶无穷碧，映日荷花别样红。\n\n📖 六月的西湖，景色和其他季节都不一样。莲叶一直铺到天边，绿得望不到头；荷花被太阳一照，红得特别鲜艳。",
+      "kw": "晓出净慈寺送林子方",
+      "img": "img/poems2/35_晓出净慈寺送林子方.png",
+      "audio": "audio/poems2/35_晓出净慈寺送林子方.mp3"
+    }
+  ],
+  "single_img": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "poem_36",
+  "title": "古诗：池上",
+  "icon": "📜",
+  "type": "poem",
+  "img_prefix": "img/poems2/",
+  "audio_prefix": "audio/poems2/",
+  "pages": [
+    {
+      "text": "《池上》\n白居易 · 唐\n\n小娃撑小艇，偷采白莲回。不解藏踪迹，浮萍一道开。\n\n📖 一个小娃娃撑着小船，偷偷去采了白莲花回来。他不懂得藏起自己的行踪，水面上的浮萍被划开了一道长长的痕迹。",
+      "kw": "池上",
+      "img": "img/poems2/36_池上.png",
+      "audio": "audio/poems2/36_池上.mp3"
+    }
+  ],
+  "single_img": true
+}

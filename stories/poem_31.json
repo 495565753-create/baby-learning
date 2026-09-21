@@ -1,0 +1,17 @@
+{
+  "id": "poem_31",
+  "title": "古诗：山行",
+  "icon": "📜",
+  "type": "poem",
+  "img_prefix": "img/poems2/",
+  "audio_prefix": "audio/poems2/",
+  "pages": [
+    {
+      "text": "《山行》\n杜牧 · 唐\n\n远上寒山石径斜，白云生处有人家。停车坐爱枫林晚，霜叶红于二月花。\n\n📖 深秋沿着石头小路往山上走，白云飘起的地方住着人家。我停下车子，是因为喜爱傍晚的枫树林——被霜打过的枫叶，比二月的春花还要红。",
+      "kw": "山行",
+      "img": "img/poems2/31_山行.png",
+      "audio": "audio/poems2/31_山行.mp3"
+    }
+  ],
+  "single_img": true
+}

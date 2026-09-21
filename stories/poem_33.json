@@ -1,0 +1,17 @@
+{
+  "id": "poem_33",
+  "title": "古诗：咏柳",
+  "icon": "📜",
+  "type": "poem",
+  "img_prefix": "img/poems2/",
+  "audio_prefix": "audio/poems2/",
+  "pages": [
+    {
+      "text": "《咏柳》\n贺知章 · 唐\n\n碧玉妆成一树高，万条垂下绿丝绦。不知细叶谁裁出，二月春风似剪刀。\n\n📖 高高的柳树像是用碧玉打扮成的，千万条柳枝垂下来，像绿色的丝带。不知道这些细细的叶子是谁裁出来的呢？原来是二月的春风，它就像一把剪刀呀。",
+      "kw": "咏柳",
+      "img": "img/poems2/33_咏柳.png",
+      "audio": "audio/poems2/33_咏柳.mp3"
+    }
+  ],
+  "single_img": true
+}

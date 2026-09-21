@@ -1,0 +1,17 @@
+{
+  "id": "idiom_35",
+  "title": "成语：一鸣惊人",
+  "icon": "📚",
+  "type": "idiom",
+  "img_prefix": "img/idioms2/",
+  "audio_prefix": "audio/idioms2/",
+  "pages": [
+    {
+      "text": "【成语】一鸣惊人\n\n楚庄王当国君三年，从来不发号施令，大臣们都很着急。有人问他：\"有一只鸟落在山丘上，三年不飞也不叫，这是什么鸟？\"楚庄王笑着说：\"这只鸟不飞则已，一飞冲天；不鸣则已，一鸣惊人。\"从此他认真治理国家，很快成了霸主。\n\n💡 平时默默努力，一旦出手就做出惊人的成绩。",
+      "kw": "一鸣惊人",
+      "img": "img/idioms2/35_一鸣惊人.png",
+      "audio": "audio/idioms2/35_一鸣惊人.mp3"
+    }
+  ],
+  "single_img": true
+}

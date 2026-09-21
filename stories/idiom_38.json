@@ -1,0 +1,17 @@
+{
+  "id": "idiom_38",
+  "title": "成语：鹬蚌相争",
+  "icon": "📚",
+  "type": "idiom",
+  "img_prefix": "img/idioms2/",
+  "audio_prefix": "audio/idioms2/",
+  "pages": [
+    {
+      "text": "【成语】鹬蚌相争\n\n一只河蚌爬上岸晒太阳，一只鹬鸟飞过来啄它的肉。河蚌马上合上壳，夹住了鹬鸟的嘴。鹬鸟说：\"今天不下雨，明天不下雨，你就干死了。\"河蚌说：\"我今天不放你，明天不放你，你就饿死了。\"两个谁也不让谁。渔夫走过来，把它们一起捉走了。\n\n💡 双方互不相让，只会让别人得利。",
+      "kw": "鹬蚌相争",
+      "img": "img/idioms2/38_鹬蚌相争.png",
+      "audio": "audio/idioms2/38_鹬蚌相争.mp3"
+    }
+  ],
+  "single_img": true
+}

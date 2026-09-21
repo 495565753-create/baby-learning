@@ -1,0 +1,17 @@
+{
+  "id": "idiom_36",
+  "title": "成语：破釜沉舟",
+  "icon": "📚",
+  "type": "idiom",
+  "img_prefix": "img/idioms2/",
+  "audio_prefix": "audio/idioms2/",
+  "pages": [
+    {
+      "text": "【成语】破釜沉舟\n\n项羽带兵去救赵国。渡过河以后，他下令把渡船凿沉，把做饭的锅砸破，把营房烧掉，只带三天的干粮。他告诉士兵们：\"我们已经没有退路了，只能向前，打胜这一仗！\"士兵们明白后，个个拼死作战，终于大败秦军。\n\n💡 下定决心不留退路，就一定能成功。",
+      "kw": "破釜沉舟",
+      "img": "img/idioms2/36_破釜沉舟.png",
+      "audio": "audio/idioms2/36_破釜沉舟.mp3"
+    }
+  ],
+  "single_img": true
+}

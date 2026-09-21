@@ -2787,5 +2787,441 @@
         "kw": "李白"
       }
     ]
+  },
+  {
+    "id": "idiom_31",
+    "title": "成语：惊弓之鸟",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】惊弓之鸟\n\n更羸是魏国有名的射手。一天，他陪着魏王站在高台上，看见一只大雁慢慢飞来，叫声很凄凉。更羸说：\"我不用箭，只要拉一下弓，就能把这只雁射下来。\"魏王不信。更羸拉开弓弦，\"嗡\"的一声，大雁果然应声落地。魏王惊讶地问为什么。更羸说：\"这只雁飞得慢、叫得惨，说明它身上有旧伤，又离群很久。听到弓弦声，它吓得拼命往上飞，伤口裂开，就掉下来了。\"\n\n💡 受了惊吓的人，一有动静就害怕。",
+        "kw": "惊弓之鸟",
+        "img": "img/idioms2/31_惊弓之鸟.png",
+        "audio": "audio/idioms2/31_惊弓之鸟.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "idiom_32",
+    "title": "成语：画蛇添足",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】画蛇添足\n\n古时候，几个人分到一壶酒。酒只够一个人喝，有人提议：\"我们在地上画蛇，谁先画完谁喝。\"一个人很快画好了，他端起酒壶，得意地说：\"我还能给蛇添上脚呢！\"可是脚还没画完，另一个人画好了蛇，一把夺过酒壶：\"蛇本来就没有脚，你添上脚就不是蛇了！\"说完把酒喝光了。\n\n💡 做多余的事，反而把事情弄糟。",
+        "kw": "画蛇添足",
+        "img": "img/idioms2/32_画蛇添足.png",
+        "audio": "audio/idioms2/32_画蛇添足.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "idiom_33",
+    "title": "成语：滥竽充数",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】滥竽充数\n\n战国时，齐宣王喜欢听三百人一起吹竽。南郭先生根本不会吹，也混在队伍里装模作样。后来齐湣王即位，他喜欢听独奏。南郭先生吓坏了，只好偷偷逃走了。\n\n💡 没有真本事却混在里面，早晚会露馅。",
+        "kw": "滥竽充数",
+        "img": "img/idioms2/33_滥竽充数.png",
+        "audio": "audio/idioms2/33_滥竽充数.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "idiom_34",
+    "title": "成语：买椟还珠",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】买椟还珠\n\n一个楚国人把珍珠拿到郑国去卖。他做了一个非常漂亮的木匣子，用香料熏过，还镶上翡翠。一个郑国人看见了，非常喜欢这个匣子，买下来后，把里面的珍珠还给楚国人，只带走了匣子。\n\n💡 只看外表不看实质，反而丢掉了真正宝贵的东西。",
+        "kw": "买椟还珠",
+        "img": "img/idioms2/34_买椟还珠.png",
+        "audio": "audio/idioms2/34_买椟还珠.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "idiom_35",
+    "title": "成语：一鸣惊人",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】一鸣惊人\n\n楚庄王当国君三年，从来不发号施令，大臣们都很着急。有人问他：\"有一只鸟落在山丘上，三年不飞也不叫，这是什么鸟？\"楚庄王笑着说：\"这只鸟不飞则已，一飞冲天；不鸣则已，一鸣惊人。\"从此他认真治理国家，很快成了霸主。\n\n💡 平时默默努力，一旦出手就做出惊人的成绩。",
+        "kw": "一鸣惊人",
+        "img": "img/idioms2/35_一鸣惊人.png",
+        "audio": "audio/idioms2/35_一鸣惊人.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "idiom_36",
+    "title": "成语：破釜沉舟",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】破釜沉舟\n\n项羽带兵去救赵国。渡过河以后，他下令把渡船凿沉，把做饭的锅砸破，把营房烧掉，只带三天的干粮。他告诉士兵们：\"我们已经没有退路了，只能向前，打胜这一仗！\"士兵们明白后，个个拼死作战，终于大败秦军。\n\n💡 下定决心不留退路，就一定能成功。",
+        "kw": "破釜沉舟",
+        "img": "img/idioms2/36_破釜沉舟.png",
+        "audio": "audio/idioms2/36_破釜沉舟.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "idiom_37",
+    "title": "成语：指鹿为马",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】指鹿为马\n\n秦朝的赵高想试试谁听他的话。他牵来一只鹿，当着满朝大臣的面对皇帝说：\"这是一匹马。\"皇帝笑了：\"丞相看错了吧，明明是鹿。\"赵高就问大臣们。有的大臣害怕他，跟着说\"是马\"；有的大臣坚持说是鹿。后来，说真话的大臣都被他害了。\n\n💡 故意颠倒黑白，仗势压人。",
+        "kw": "指鹿为马",
+        "img": "img/idioms2/37_指鹿为马.png",
+        "audio": "audio/idioms2/37_指鹿为马.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "idiom_38",
+    "title": "成语：鹬蚌相争",
+    "icon": "📚",
+    "type": "idiom",
+    "img_prefix": "img/idioms2/",
+    "audio_prefix": "audio/idioms2/",
+    "pages": [
+      {
+        "text": "【成语】鹬蚌相争\n\n一只河蚌爬上岸晒太阳，一只鹬鸟飞过来啄它的肉。河蚌马上合上壳，夹住了鹬鸟的嘴。鹬鸟说：\"今天不下雨，明天不下雨，你就干死了。\"河蚌说：\"我今天不放你，明天不放你，你就饿死了。\"两个谁也不让谁。渔夫走过来，把它们一起捉走了。\n\n💡 双方互不相让，只会让别人得利。",
+        "kw": "鹬蚌相争",
+        "img": "img/idioms2/38_鹬蚌相争.png",
+        "audio": "audio/idioms2/38_鹬蚌相争.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "title": "小恐龙上幼儿园",
+    "id": "dino_01",
+    "icon": "🦕",
+    "img_prefix": "img/dino/dino_01",
+    "audio_prefix": "audio/dino/dino_01",
+    "pages": [
+      {
+        "text": "小恐龙奇奇第一天去幼儿园。妈妈牵着他的手，走到大门口。",
+        "kw": "cute little green dinosa"
+      },
+      {
+        "text": "奇奇抱住妈妈的腿不肯放，眼泪在眼眶里打转：\"我不想进去。\"",
+        "kw": "cute little green dinosa"
+      },
+      {
+        "text": "长颈鹿老师蹲下来，轻轻拉住奇奇的手：\"我们进去看看吧。\"",
+        "kw": "friendly giraffe teacher"
+      },
+      {
+        "text": "教室里，小兔子在搭积木，小猴子在画画。奇奇慢慢松开了妈妈的手。",
+        "kw": "bright kindergarten clas"
+      },
+      {
+        "text": "奇奇和小兔子一起搭了一座高高的桥。他笑了起来。",
+        "kw": "little dinosaur and rabb"
+      },
+      {
+        "text": "放学时，奇奇对妈妈说：\"明天我还要来！\"",
+        "kw": "little dinosaur running "
+      }
+    ]
+  },
+  {
+    "title": "小恐龙学分享",
+    "id": "dino_02",
+    "icon": "🦕",
+    "img_prefix": "img/dino/dino_02",
+    "audio_prefix": "audio/dino/dino_02",
+    "pages": [
+      {
+        "text": "奇奇带了一个红色的小皮球去幼儿园，球又圆又亮。",
+        "kw": "little dinosaur holding "
+      },
+      {
+        "text": "小兔子想玩，奇奇把球藏在身后：\"这是我的！\"",
+        "kw": "little dinosaur hiding a"
+      },
+      {
+        "text": "小兔子低下头走开了。奇奇一个人拍球，觉得没那么好玩。",
+        "kw": "little dinosaur playing "
+      },
+      {
+        "text": "长颈鹿老师说：\"球可以一起玩呀，你拍给我，我拍给你。\"",
+        "kw": "giraffe teacher talking "
+      },
+      {
+        "text": "奇奇把球递过去，小兔子笑得眼睛弯弯的。",
+        "kw": "little dinosaur handing "
+      },
+      {
+        "text": "两个人你拍一下、我拍一下，笑声传得很远很远。",
+        "kw": "little dinosaur and rabb"
+      }
+    ]
+  },
+  {
+    "title": "小恐龙不怕黑",
+    "id": "dino_03",
+    "icon": "🦕",
+    "img_prefix": "img/dino/dino_03",
+    "audio_prefix": "audio/dino/dino_03",
+    "pages": [
+      {
+        "text": "晚上，房间里黑黑的。奇奇把头蒙在被子里，只露出一只眼睛。",
+        "kw": "little dinosaur hiding u"
+      },
+      {
+        "text": "忽然\"咔哒\"一声，奇奇吓得心咚咚跳，把被子裹得更紧了。",
+        "kw": "little dinosaur peeking "
+      },
+      {
+        "text": "妈妈打开门，轻轻抱住他：\"我们一起去看看是什么声音。\"",
+        "kw": "mother dinosaur hugging "
+      },
+      {
+        "text": "原来是窗帘被风吹起来，碰到了小桌子。一点也不可怕。",
+        "kw": "curtain blown by wind to"
+      },
+      {
+        "text": "妈妈留下一盏小夜灯，光像月亮一样温柔。",
+        "kw": "cozy bedroom with a smal"
+      },
+      {
+        "text": "奇奇闭上眼睛，慢慢睡着了，还做了一个甜甜的梦。",
+        "kw": "little dinosaur sleeping"
+      }
+    ]
+  },
+  {
+    "title": "小恐龙做错事了",
+    "id": "dino_04",
+    "icon": "🦕",
+    "img_prefix": "img/dino/dino_04",
+    "audio_prefix": "audio/dino/dino_04",
+    "pages": [
+      {
+        "text": "奇奇在客厅里跑得太快，把妈妈的花瓶碰倒了，\"啪\"的一声碎了。",
+        "kw": "little dinosaur accident"
+      },
+      {
+        "text": "他吓坏了，赶紧把碎片扫到沙发后面，装作什么都没发生。",
+        "kw": "little dinosaur sweeping"
+      },
+      {
+        "text": "一整天，奇奇都不敢看妈妈的眼睛，心里像压着一块小石头。",
+        "kw": "little dinosaur sitting "
+      },
+      {
+        "text": "晚上，他终于小声说：\"妈妈，对不起，是我打碎的。\"",
+        "kw": "little dinosaur talking "
+      },
+      {
+        "text": "妈妈摸摸他的头：\"谢谢你告诉我。说实话，比不犯错更重要。\"",
+        "kw": "mother dinosaur gently p"
+      },
+      {
+        "text": "他们一起把碎片扫干净。奇奇松了一口气，心里亮堂堂的。",
+        "kw": "little dinosaur and moth"
+      }
+    ]
+  },
+  {
+    "title": "小恐龙学骑车",
+    "id": "dino_05",
+    "icon": "🦕",
+    "img_prefix": "img/dino/dino_05",
+    "audio_prefix": "audio/dino/dino_05",
+    "pages": [
+      {
+        "text": "奇奇得到一辆崭新的自行车，他高兴地跨了上去。",
+        "kw": "little dinosaur with a b"
+      },
+      {
+        "text": "刚蹬一下，车子歪了，\"哐当\"摔倒了，膝盖擦破了皮。",
+        "kw": "little dinosaur falling "
+      },
+      {
+        "text": "奇奇坐在地上，眼泪掉下来：\"我学不会了。\"",
+        "kw": "little dinosaur sitting "
+      },
+      {
+        "text": "爸爸蹲下来：\"摔倒是学骑车的一部分，我们再来一次。\"",
+        "kw": "father dinosaur kneeling"
+      },
+      {
+        "text": "奇奇扶着车把，爸爸在后面扶着。这一次他骑了三米远。",
+        "kw": "father dinosaur holding "
+      },
+      {
+        "text": "第二天，奇奇自己骑了一圈又一圈。原来坚持真的能学会。",
+        "kw": "little dinosaur riding a"
+      }
+    ]
+  },
+  {
+    "title": "小恐龙交新朋友",
+    "id": "dino_06",
+    "icon": "🦕",
+    "img_prefix": "img/dino/dino_06",
+    "audio_prefix": "audio/dino/dino_06",
+    "pages": [
+      {
+        "text": "幼儿园来了一位新同学——小刺猬球球。",
+        "kw": "new classmate hedgehog s"
+      },
+      {
+        "text": "大家都不敢靠近，因为球球身上长满了刺。",
+        "kw": "small hedgehog alone wit"
+      },
+      {
+        "text": "球球一个人坐在角落里，看起来很难过。",
+        "kw": "hedgehog sitting alone i"
+      },
+      {
+        "text": "奇奇拿了两块饼干走过去：\"你要吃吗？\"",
+        "kw": "little dinosaur offering"
+      },
+      {
+        "text": "球球小心地接过饼干，笑了：\"谢谢你，你真好。\"",
+        "kw": "hedgehog holding a cooki"
+      },
+      {
+        "text": "从那天起，他们成了最好的朋友。原来交朋友只要说一句话。",
+        "kw": "little dinosaur and hedg"
+      }
+    ]
+  },
+  {
+    "id": "poem_31",
+    "title": "古诗：山行",
+    "icon": "📜",
+    "type": "poem",
+    "img_prefix": "img/poems2/",
+    "audio_prefix": "audio/poems2/",
+    "pages": [
+      {
+        "text": "《山行》\n杜牧 · 唐\n\n远上寒山石径斜，白云生处有人家。停车坐爱枫林晚，霜叶红于二月花。\n\n📖 深秋沿着石头小路往山上走，白云飘起的地方住着人家。我停下车子，是因为喜爱傍晚的枫树林——被霜打过的枫叶，比二月的春花还要红。",
+        "kw": "山行",
+        "img": "img/poems2/31_山行.png",
+        "audio": "audio/poems2/31_山行.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "poem_32",
+    "title": "古诗：九月九日忆山东兄弟",
+    "icon": "📜",
+    "type": "poem",
+    "img_prefix": "img/poems2/",
+    "audio_prefix": "audio/poems2/",
+    "pages": [
+      {
+        "text": "《九月九日忆山东兄弟》\n王维 · 唐\n\n独在异乡为异客，每逢佳节倍思亲。遥知兄弟登高处，遍插茱萸少一人。\n\n📖 我一个人在外地，每逢过节就更加想念亲人。想到兄弟们今天登高，头上插着茱萸，一定会发现少了我一个人。",
+        "kw": "九月九日忆山东兄弟",
+        "img": "img/poems2/32_九月九日忆山东兄弟.png",
+        "audio": "audio/poems2/32_九月九日忆山东兄弟.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "poem_33",
+    "title": "古诗：咏柳",
+    "icon": "📜",
+    "type": "poem",
+    "img_prefix": "img/poems2/",
+    "audio_prefix": "audio/poems2/",
+    "pages": [
+      {
+        "text": "《咏柳》\n贺知章 · 唐\n\n碧玉妆成一树高，万条垂下绿丝绦。不知细叶谁裁出，二月春风似剪刀。\n\n📖 高高的柳树像是用碧玉打扮成的，千万条柳枝垂下来，像绿色的丝带。不知道这些细细的叶子是谁裁出来的呢？原来是二月的春风，它就像一把剪刀呀。",
+        "kw": "咏柳",
+        "img": "img/poems2/33_咏柳.png",
+        "audio": "audio/poems2/33_咏柳.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "poem_34",
+    "title": "古诗：元日",
+    "icon": "📜",
+    "type": "poem",
+    "img_prefix": "img/poems2/",
+    "audio_prefix": "audio/poems2/",
+    "pages": [
+      {
+        "text": "《元日》\n王安石 · 宋\n\n爆竹声中一岁除，春风送暖入屠苏。千门万户曈曈日，总把新桃换旧符。\n\n📖 在鞭炮声里旧的一年过去了，春风送暖，大家一起喝屠苏酒。初升的太阳照着千家万户，人们把旧桃符换成新的，迎接新的一年。",
+        "kw": "元日",
+        "img": "img/poems2/34_元日.png",
+        "audio": "audio/poems2/34_元日.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "poem_35",
+    "title": "古诗：晓出净慈寺送林子方",
+    "icon": "📜",
+    "type": "poem",
+    "img_prefix": "img/poems2/",
+    "audio_prefix": "audio/poems2/",
+    "pages": [
+      {
+        "text": "《晓出净慈寺送林子方》\n杨万里 · 宋\n\n毕竟西湖六月中，风光不与四时同。接天莲叶无穷碧，映日荷花别样红。\n\n📖 六月的西湖，景色和其他季节都不一样。莲叶一直铺到天边，绿得望不到头；荷花被太阳一照，红得特别鲜艳。",
+        "kw": "晓出净慈寺送林子方",
+        "img": "img/poems2/35_晓出净慈寺送林子方.png",
+        "audio": "audio/poems2/35_晓出净慈寺送林子方.mp3"
+      }
+    ],
+    "single_img": true
+  },
+  {
+    "id": "poem_36",
+    "title": "古诗：池上",
+    "icon": "📜",
+    "type": "poem",
+    "img_prefix": "img/poems2/",
+    "audio_prefix": "audio/poems2/",
+    "pages": [
+      {
+        "text": "《池上》\n白居易 · 唐\n\n小娃撑小艇，偷采白莲回。不解藏踪迹，浮萍一道开。\n\n📖 一个小娃娃撑着小船，偷偷去采了白莲花回来。他不懂得藏起自己的行踪，水面上的浮萍被划开了一道长长的痕迹。",
+        "kw": "池上",
+        "img": "img/poems2/36_池上.png",
+        "audio": "audio/poems2/36_池上.mp3"
+      }
+    ],
+    "single_img": true
   }
 ]

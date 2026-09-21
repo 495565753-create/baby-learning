@@ -1,0 +1,33 @@
+{
+  "title": "小恐龙上幼儿园",
+  "id": "dino_01",
+  "icon": "🦕",
+  "img_prefix": "img/dino/dino_01",
+  "audio_prefix": "audio/dino/dino_01",
+  "pages": [
+    {
+      "text": "小恐龙奇奇第一天去幼儿园。妈妈牵着他的手，走到大门口。",
+      "kw": "cute little green dinosa"
+    },
+    {
+      "text": "奇奇抱住妈妈的腿不肯放，眼泪在眼眶里打转：\"我不想进去。\"",
+      "kw": "cute little green dinosa"
+    },
+    {
+      "text": "长颈鹿老师蹲下来，轻轻拉住奇奇的手：\"我们进去看看吧。\"",
+      "kw": "friendly giraffe teacher"
+    },
+    {
+      "text": "教室里，小兔子在搭积木，小猴子在画画。奇奇慢慢松开了妈妈的手。",
+      "kw": "bright kindergarten clas"
+    },
+    {
+      "text": "奇奇和小兔子一起搭了一座高高的桥。他笑了起来。",
+      "kw": "little dinosaur and rabb"
+    },
+    {
+      "text": "放学时，奇奇对妈妈说：\"明天我还要来！\"",
+      "kw": "little dinosaur running "
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "idiom_37",
+  "title": "成语：指鹿为马",
+  "icon": "📚",
+  "type": "idiom",
+  "img_prefix": "img/idioms2/",
+  "audio_prefix": "audio/idioms2/",
+  "pages": [
+    {
+      "text": "【成语】指鹿为马\n\n秦朝的赵高想试试谁听他的话。他牵来一只鹿，当着满朝大臣的面对皇帝说：\"这是一匹马。\"皇帝笑了：\"丞相看错了吧，明明是鹿。\"赵高就问大臣们。有的大臣害怕他，跟着说\"是马\"；有的大臣坚持说是鹿。后来，说真话的大臣都被他害了。\n\n💡 故意颠倒黑白，仗势压人。",
+      "kw": "指鹿为马",
+      "img": "img/idioms2/37_指鹿为马.png",
+      "audio": "audio/idioms2/37_指鹿为马.mp3"
+    }
+  ],
+  "single_img": true
+}

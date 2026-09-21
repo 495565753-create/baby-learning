@@ -1,0 +1,33 @@
+{
+  "title": "小恐龙做错事了",
+  "id": "dino_04",
+  "icon": "🦕",
+  "img_prefix": "img/dino/dino_04",
+  "audio_prefix": "audio/dino/dino_04",
+  "pages": [
+    {
+      "text": "奇奇在客厅里跑得太快，把妈妈的花瓶碰倒了，\"啪\"的一声碎了。",
+      "kw": "little dinosaur accident"
+    },
+    {
+      "text": "他吓坏了，赶紧把碎片扫到沙发后面，装作什么都没发生。",
+      "kw": "little dinosaur sweeping"
+    },
+    {
+      "text": "一整天，奇奇都不敢看妈妈的眼睛，心里像压着一块小石头。",
+      "kw": "little dinosaur sitting "
+    },
+    {
+      "text": "晚上，他终于小声说：\"妈妈，对不起，是我打碎的。\"",
+      "kw": "little dinosaur talking "
+    },
+    {
+      "text": "妈妈摸摸他的头：\"谢谢你告诉我。说实话，比不犯错更重要。\"",
+      "kw": "mother dinosaur gently p"
+    },
+    {
+      "text": "他们一起把碎片扫干净。奇奇松了一口气，心里亮堂堂的。",
+      "kw": "little dinosaur and moth"
+    }
+  ]
+}

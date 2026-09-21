@@ -1,0 +1,17 @@
+{
+  "id": "idiom_34",
+  "title": "成语：买椟还珠",
+  "icon": "📚",
+  "type": "idiom",
+  "img_prefix": "img/idioms2/",
+  "audio_prefix": "audio/idioms2/",
+  "pages": [
+    {
+      "text": "【成语】买椟还珠\n\n一个楚国人把珍珠拿到郑国去卖。他做了一个非常漂亮的木匣子，用香料熏过，还镶上翡翠。一个郑国人看见了，非常喜欢这个匣子，买下来后，把里面的珍珠还给楚国人，只带走了匣子。\n\n💡 只看外表不看实质，反而丢掉了真正宝贵的东西。",
+      "kw": "买椟还珠",
+      "img": "img/idioms2/34_买椟还珠.png",
+      "audio": "audio/idioms2/34_买椟还珠.mp3"
+    }
+  ],
+  "single_img": true
+}

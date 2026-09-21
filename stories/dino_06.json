@@ -1,0 +1,33 @@
+{
+  "title": "小恐龙交新朋友",
+  "id": "dino_06",
+  "icon": "🦕",
+  "img_prefix": "img/dino/dino_06",
+  "audio_prefix": "audio/dino/dino_06",
+  "pages": [
+    {
+      "text": "幼儿园来了一位新同学——小刺猬球球。",
+      "kw": "new classmate hedgehog s"
+    },
+    {
+      "text": "大家都不敢靠近，因为球球身上长满了刺。",
+      "kw": "small hedgehog alone wit"
+    },
+    {
+      "text": "球球一个人坐在角落里，看起来很难过。",
+      "kw": "hedgehog sitting alone i"
+    },
+    {
+      "text": "奇奇拿了两块饼干走过去：\"你要吃吗？\"",
+      "kw": "little dinosaur offering"
+    },
+    {
+      "text": "球球小心地接过饼干，笑了：\"谢谢你，你真好。\"",
+      "kw": "hedgehog holding a cooki"
+    },
+    {
+      "text": "从那天起，他们成了最好的朋友。原来交朋友只要说一句话。",
+      "kw": "little dinosaur and hedg"
+    }
+  ]
+}

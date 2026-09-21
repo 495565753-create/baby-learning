@@ -309,6 +309,21 @@ body::before {
   border:1px solid #FFE6A8; color:#8A6420; font-size:12.5px; line-height:1.7;
 }
 .lib-note b { font-weight:800; color:#7A5410; }
+.lib-search {
+  display:flex; align-items:center; gap:8px; padding:10px 14px; margin:2px 0 4px;
+  background:var(--surface); border:1.5px solid var(--line); border-radius:var(--radius-sm);
+  box-shadow:var(--shadow-sm);
+}
+.lib-search span { font-size:15px; opacity:.55; }
+.lib-search input {
+  flex:1; min-width:0; border:none; outline:none; background:transparent;
+  font-size:14px; font-weight:700; color:var(--ink); font-family:inherit;
+}
+.lib-search input::placeholder { color:var(--ink-3); font-weight:600; }
+.lib-empty {
+  padding:36px 16px; text-align:center; font-size:13.5px; font-weight:700; color:var(--ink-2);
+  background:var(--surface); border:1.5px dashed var(--line-2); border-radius:var(--radius-sm);
+}
 .chips { display:flex; flex-wrap:wrap; gap:8px; padding:2px 0 2px; }
 .chip {
   display:inline-flex; align-items:center; gap:6px; padding:7px 13px;
@@ -812,6 +827,39 @@ button, .home-card, .sub-card, .item-card, .story-card, .chip, .mem-card, .bin, 
 .item-card { border:1.5px solid var(--line); }
 .item-card .emoji-block { font-size:21px; }
 
+/* 音乐小琴 */
+.piano { display:flex; gap:6px; justify-content:center; align-items:flex-end; margin:10px auto 0; max-width:360px; }
+.piano .key {
+  flex:1; height:150px; border-radius:0 0 14px 14px; border:2px solid rgba(0,0,0,.06);
+  background:linear-gradient(180deg,#FFFFFF,var(--kc));
+  box-shadow:0 6px 0 rgba(120,90,60,.14), inset 0 -10px 18px rgba(120,90,60,.10);
+  cursor:pointer; display:flex; align-items:flex-end; justify-content:center;
+  padding-bottom:9px; font-size:11px; font-weight:900; color:#5C6884;
+  transition:transform .08s, box-shadow .08s, filter .12s;
+}
+.piano .key.on { transform:translateY(4px) scaleY(.97); box-shadow:0 2px 0 rgba(120,90,60,.14); filter:brightness(1.12); }
+.piano .key:active { transform:translateY(4px); }
+
+/* 分类小达人 */
+.sort-item { text-align:center; margin:8px 0 4px; }
+.sort-item .si-e { font-size:64px; line-height:1.1; }
+.sort-item .si-n { font-size:17px; font-weight:900; margin-top:2px; }
+.sort-opts { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; max-width:380px; margin:16px auto 0; }
+.sort-opt {
+  padding:14px 8px; border-radius:18px; border:2.5px solid var(--line-2); background:var(--surface);
+  text-align:center; cursor:pointer; box-shadow:0 3px 0 var(--line-2);
+  transition:transform .12s, box-shadow .12s, background .16s, border-color .16s;
+}
+.sort-opt .so-e { font-size:28px; display:block; }
+.sort-opt .so-n { font-size:13px; font-weight:900; margin-top:4px; display:block; }
+.sort-opt:hover { border-color:var(--accent); background:var(--accent-soft); }
+.sort-opt:active { transform:translateY(3px); box-shadow:0 0 0 var(--line-2); }
+.sort-opt.correct { background:#DFF7EC !important; border-color:#22C08D !important; box-shadow:0 3px 0 #A9E3CC !important; }
+.sort-opt.wrong { background:#FFE7EE !important; border-color:#FF7BA0 !important; box-shadow:0 3px 0 #FFC2D3 !important; }
+
+/* 拼图难度 */
+.puzzle-diff { display:flex; gap:8px; justify-content:center; }
+
 /* ==================== 画图乐园 ==================== */
 .home-card.draw { --hc-soft:#FFF0E0; --hc-line:#FFD7A8; --hc-grad:linear-gradient(135deg,#FFD08A,#FF8F5E); --hc-glow:rgba(255,143,94,.30); border-color:#FFE3C8; }
 .sec-head.draw { background:linear-gradient(135deg,#FFEFD9,#FFD9C2); }
@@ -976,7 +1024,7 @@ button, .home-card, .sub-card, .item-card, .story-card, .chip, .mem-card, .bin, 
         <div class="home-card games wide" data-mod="games" onclick="app.navigate('games')" data-speak="游戏乐园">
           <span class="icon">🎮</span>
           <div class="title">游戏乐园</div>
-          <div class="subtitle">拼图 · 迷宫 · 记忆 · 眼力 · 口算闯关</div>
+          <div class="subtitle">拼图 · 迷宫 · 音乐 · 眼力 · 口算闯关</div>
           <span class="card-stars" data-mod="games"></span>
         </div>
         <div class="home-card draw wide" data-mod="draw" onclick="app.navigate('draw')" data-speak="画图乐园">
@@ -1082,6 +1130,8 @@ button, .home-card, .sub-card, .item-card, .story-card, .chip, .mem-card, .bin, 
         <div class="sub-card" onclick="app.showGameTab('sprint')" data-speak="口算闯关"><span class="icon">⚡</span><span class="label">口算闯关</span></div>
         <div class="sub-card" onclick="app.showGameTab('whack')" data-speak="打地鼠"><span class="icon">🐹</span><span class="label">打地鼠</span></div>
         <div class="sub-card" onclick="app.showGameTab('hunt')" data-speak="数字寻宝"><span class="icon">🔍</span><span class="label">数字寻宝</span></div>
+        <div class="sub-card" onclick="app.showGameTab('piano')" data-speak="音乐小琴"><span class="icon">🎹</span><span class="label">音乐小琴</span></div>
+        <div class="sub-card" onclick="app.showGameTab('sort')" data-speak="分类小达人"><span class="icon">🍎</span><span class="label">分类小达人</span></div>
       </div>
       <div id="games-content"></div>
     </div>
@@ -2661,7 +2711,8 @@ class EduApp {
       { id:'paw',   name:'汪汪队',   icon:'🐶' },
       { id:'judy',  name:'动物城',   icon:'🐰' },
       { id:'idiom', name:'成语故事', icon:'💡' },
-      { id:'poem',  name:'古诗诵读', icon:'📜' }
+      { id:'poem',  name:'古诗诵读', icon:'📜' },
+      { id:'dino',  name:'小恐龙',   icon:'🦕' }
     ];
   }
 
@@ -2673,6 +2724,7 @@ class EduApp {
     if (id.indexOf('peppa') === 0) return 'peppa';
     if (id.indexOf('paw')   === 0) return 'paw';
     if (id.indexOf('judy')  === 0) return 'judy';
+    if (id.indexOf('dino')  === 0) return 'dino';
     return 'other';
   }
 
@@ -2714,8 +2766,36 @@ class EduApp {
       h += `<button class="chip${g.id === tab ? ' active' : ''}" onclick="app.setStoryTab('${g.id}')">${g.icon} ${g.name}<span class="n">${counts[g.id]}</span></button>`;
     });
     h += '</div></div>';
+    h += `<div class="lib-search">
+      <span>🔍</span>
+      <input id="storySearch" type="search" placeholder="找一本故事书…" value="${(this._storyQuery || '').replace(/"/g, '&quot;')}" oninput="app.setStoryFilter(this.value)">
+    </div>`;
+    h += '<div id="storyGridWrap"></div>';
+    c.innerHTML = h;
+    this._renderStoryGrid();
+    window.scrollTo(0, 0);
+  }
 
-    h += '<div class="story-grid">';
+  setStoryFilter(q) {
+    this._storyQuery = q;
+    this._renderStoryGrid();
+  }
+
+  _renderStoryGrid() {
+    const wrap = document.getElementById('storyGridWrap');
+    if (!wrap) return;
+    const all = this._allStories || [];
+    const tab = this._storyTab || 'all';
+    const q = (this._storyQuery || '').trim();
+    const groups = this._storyGroups();
+    const nameOf = gid => { const g = groups.find(x => x.id === gid); return g ? g.name : '故事'; };
+    let list = tab === 'all' ? all : all.filter(s => this._groupOf(s) === tab);
+    if (q) list = list.filter(s => String(s.title || '').indexOf(q) >= 0);
+    if (!list.length) {
+      wrap.innerHTML = '<div class="lib-empty">没有找到「' + q + '」，换个词试试～</div>';
+      return;
+    }
+    let h = '<div class="story-grid">';
     list.forEach(s => {
       const i = all.indexOf(s);
       const t = this._storyThumb(s);
@@ -2731,8 +2811,7 @@ class EduApp {
       </div>`;
     });
     h += '</div>';
-    c.innerHTML = h;
-    window.scrollTo(0, 0);
+    wrap.innerHTML = h;
   }
 
   async _loadStories() {
@@ -3712,7 +3791,7 @@ class EduApp {
     const best = p.data.best || {};
     const readN = p.readCount();
     const st = p.streak();
-    const played = ['puzzle','sequence','shadow','maze','sprint','whack','hunt'].filter(k => g[k]).length;
+    const played = ['puzzle','sequence','shadow','maze','sprint','whack','hunt','piano','sort'].filter(k => g[k]).length;
     const sprint = (best.sprint && best.sprint.right) || 0;
     return [
       { e:'🌱', n:'第一颗星星',     got:p.stars >= 1,        now:Math.min(p.stars, 1), need:1 },
@@ -3721,7 +3800,7 @@ class EduApp {
       { e:'🏆', n:'收集 300 颗星',  got:p.stars >= 300,      now:p.stars, need:300 },
       { e:'📖', n:'读完 1 个故事',  got:readN >= 1,          now:readN, need:1 },
       { e:'📚', n:'读满 10 个故事', got:readN >= 10,         now:readN, need:10 },
-      { e:'🎮', n:'玩过全部游戏',   got:played >= 7,         now:played, need:7 },
+      { e:'🎮', n:'玩过全部游戏',   got:played >= 9,         now:played, need:9 },
       { e:'🧩', n:'拼好一幅拼图',   got:!!g.puzzleDone,      now:g.puzzleDone ? 1 : 0, need:1 },
       { e:'🌀', n:'走出一次迷宫',   got:!!g.mazeDone,        now:g.mazeDone ? 1 : 0, need:1 },
       { e:'🧠', n:'记忆序列过 5 关', got:(best.seq || 0) >= 5, now:best.seq || 0, need:5 },
@@ -3838,6 +3917,8 @@ class EduApp {
     else if (t === 'sprint') this.renderSprint(c);
     else if (t === 'whack') this.renderWhack(c);
     else if (t === 'hunt') this.renderHunt(c);
+    else if (t === 'piano') this.renderPiano(c);
+    else if (t === 'sort') this.renderSort(c);
   }
 
   _stopGameTimers() {
@@ -3887,15 +3968,20 @@ class EduApp {
   renderPuzzle(container) {
     const pics = this._puzzlePics();
     const pic = pics[Math.floor(Math.random() * pics.length)];
-    const s = this._shuffleTiles(3);
-    this._puz = { pic, n:3, order:s.order, blank:s.blank, moves:0, done:false };
+    const n = this._puzSize || 3;
+    const s = this._shuffleTiles(n);
+    this._puz = { pic, n, order:s.order, blank:s.blank, moves:0, done:false };
     container.innerHTML = `<div class="quiz-area">
       <h3>🧩 拼图乐园</h3>
       <div class="quiz-sub">点空格旁边的图块，把它挪进空格，拼回原来的样子</div>
       <div class="puzzle-wrap">
         <div class="puzzle-ref"><img src="${pic.src}" alt=""><span>目标图：${pic.name}</span></div>
-        <div class="puzzle-board" id="puzBoard"></div>
-        <div class="mem-bar"><span>已移动 <b id="puzMoves">0</b> 步</span><span>还差 <b id="puzLeft">8</b> 块</span></div>
+        <div class="puzzle-board" id="puzBoard" style="grid-template-columns:repeat(${n},1fr)"></div>
+        <div class="mem-bar"><span>已移动 <b id="puzMoves">0</b> 步</span><span>还差 <b id="puzLeft">0</b> 块</span></div>
+        <div class="puzzle-diff">
+          <button class="draw-size-btn${n === 3 ? ' active' : ''}" onclick="app.puzSize(3,this)">简单 3×3</button>
+          <button class="draw-size-btn${n === 4 ? ' active' : ''}" onclick="app.puzSize(4,this)">挑战 4×4</button>
+        </div>
       </div>
       <div class="quiz-feedback" id="quizFeedback"></div>
       <div class="wide-options">
@@ -3960,6 +4046,13 @@ class EduApp {
     const fb = document.getElementById('quizFeedback');
     if (fb) fb.textContent = '';
     this._puzPaint();
+  }
+
+  puzSize(n, el) {
+    this._puzSize = n;
+    if (el) this._toggleBtn('#games-content', el);
+    this.renderPuzzle(document.getElementById('games-content'));
+    this.audio.speak(n === 3 ? '简单模式' : '挑战模式');
   }
 
   _puzCheck() {
@@ -5016,6 +5109,198 @@ class EduApp {
       ctx.fillText(it.e, it.x / 100 * cv.width, it.y / 100 * cv.height);
     });
     this._showImage(cv.toDataURL('image/png'));
+  }
+
+  // ============== 游戏 8：音乐小琴 ==============
+  _notes() {
+    return [
+      { n:'do',  f:261.63, c:'#FF8FA8' },
+      { n:'re',  f:293.66, c:'#FFB25E' },
+      { n:'mi',  f:329.63, c:'#FFD84D' },
+      { n:'fa',  f:349.23, c:'#9BDB7C' },
+      { n:'sol', f:392.00, c:'#5FD6C0' },
+      { n:'la',  f:440.00, c:'#6FB0FF' },
+      { n:'si',  f:493.88, c:'#A88BFF' },
+      { n:'do2', f:523.25, c:'#FF8FD8' }
+    ];
+  }
+
+  // 用浏览器自带的振荡器发声，不需要任何音频文件
+  _tone(freq, dur) {
+    try {
+      const Ctx = window.AudioContext || window.webkitAudioContext;
+      if (!Ctx) return;
+      if (!this._actx) this._actx = new Ctx();
+      const ctx = this._actx;
+      if (ctx.state === 'suspended') ctx.resume();
+      const o = ctx.createOscillator(), g = ctx.createGain();
+      o.type = 'sine';
+      o.frequency.value = freq;
+      const t = ctx.currentTime;
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(0.22, t + 0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + (dur || 0.45));
+      o.connect(g); g.connect(ctx.destination);
+      o.start(t); o.stop(t + (dur || 0.45) + 0.03);
+    } catch (e) {}
+  }
+
+  renderPiano(container) {
+    const notes = this._notes();
+    this._piano = { notes, seq:[], input:[], mode:'free', playing:false };
+    container.innerHTML = `<div class="quiz-area">
+      <h3>🎹 音乐小琴</h3>
+      <div class="quiz-sub">点琴键就会发出声音，也可以让琴带你弹</div>
+      <div class="piano" id="piano">
+        ${notes.map((n, i) => `<button class="key" data-i="${i}" style="--kc:${n.c}" onclick="app.pianoTap(${i})"><span>${n.n}</span></button>`).join('')}
+      </div>
+      <div class="draw-toolbar" style="margin-top:16px;">
+        <button class="draw-size-btn active" onclick="app.pianoMode('free',this)">🎹 自由弹</button>
+        <button class="draw-size-btn" onclick="app.pianoMode('follow',this)">👂 跟我弹</button>
+        <button class="draw-size-btn" onclick="app.pianoSong()">⭐ 听《小星星》</button>
+      </div>
+      <div class="quiz-feedback" id="quizFeedback">随便弹，怎么弹都好听～</div>
+      <button class="btn-next" onclick="app.renderGameTab()" style="display:none" id="quizNext">再玩一次 ⭐</button>
+    </div>`;
+  }
+
+  _flashKey(i) {
+    const el = document.querySelector('.key[data-i="' + i + '"]');
+    if (!el) return;
+    el.classList.add('on');
+    setTimeout(() => el.classList.remove('on'), 250);
+  }
+
+  pianoTap(i) {
+    const d = this._piano;
+    if (!d) return;
+    this._tone(d.notes[i].f, 0.5);
+    this._flashKey(i);
+    if (d.mode !== 'follow' || d.playing) return;
+
+    d.input.push(i);
+    const k = d.input.length - 1;
+    const fb = document.getElementById('quizFeedback');
+    if (d.seq[k] !== i) {
+      const lv = d.seq.length - 1;
+      if (fb) { fb.textContent = lv > 0 ? '💪 你弹对了 ' + lv + ' 个音，再来一次会更好！' : '😊 没关系，再听一次～'; fb.style.color = '#E07A1F'; }
+      this.audio.playFile(this.audio._path('没关系，再试一次吧') || '', '没关系，再试一次吧');
+      if (lv >= 3) { this.reward(2, 'games'); this.celebrate(true); }
+      d.seq = []; d.input = [];
+      const next = document.getElementById('quizNext');
+      if (next) next.style.display = 'inline-block';
+      return;
+    }
+    if (d.input.length === d.seq.length) {
+      if (fb) { fb.textContent = '🎉 弹对啦！再加一个音'; fb.style.color = '#0A8F6B'; }
+      this.celebrate();
+      setTimeout(() => this._pianoNext(), 950);
+    }
+  }
+
+  pianoMode(m, el) {
+    const d = this._piano;
+    if (!d) return;
+    d.mode = m; d.seq = []; d.input = []; d.playing = false;
+    this._toggleBtn('#games-content', el);
+    const next = document.getElementById('quizNext');
+    if (next) next.style.display = 'none';
+    const fb = document.getElementById('quizFeedback');
+    if (m === 'follow') { if (fb) { fb.textContent = '听一听，然后照着弹一遍'; fb.style.color = '#5C6884'; } this._pianoNext(); }
+    else if (fb) fb.textContent = '随便弹，怎么弹都好听～';
+  }
+
+  _pianoNext() {
+    const d = this._piano;
+    if (!d) return;
+    d.seq.push(Math.floor(Math.random() * d.notes.length));
+    d.input = [];
+    d.playing = true;
+    this._pianoPlay(0);
+  }
+
+  _pianoPlay(i) {
+    const d = this._piano;
+    if (!d) return;
+    if (i >= d.seq.length) { d.playing = false; return; }
+    const idx = d.seq[i];
+    this._tone(d.notes[idx].f, 0.5);
+    this._flashKey(idx);
+    setTimeout(() => this._pianoPlay(i + 1), 620);
+  }
+
+  pianoSong() {
+    const d = this._piano;
+    if (!d) return;
+    // 小星星：1 1 5 5 6 6 5 / 4 4 3 3 2 2 1
+    const mel = [0,0,4,4,5,5,4, 3,3,2,2,1,1,0];
+    const fb = document.getElementById('quizFeedback');
+    if (fb) { fb.textContent = '⭐ 正在弹《小星星》…'; fb.style.color = '#5C6884'; }
+    mel.forEach((idx, k) => setTimeout(() => {
+      this._tone(d.notes[idx].f, 0.5);
+      this._flashKey(idx);
+    }, k * 470));
+  }
+
+  // ============== 游戏 9：分类小达人 ==============
+  _sortCats() {
+    return [
+      { k:'fruit',  n:'水果',     e:'🍎', pool:FRUITS },
+      { k:'animal', n:'动物',     e:'🐾', pool:ANIMALS },
+      { k:'car',    n:'交通工具', e:'🚗', pool:TRANSPORT },
+      { k:'food',   n:'食物',     e:'🍚', pool:FOODS }
+    ];
+  }
+
+  renderSort(container) {
+    const cats = this._sortCats();
+    const right = cats[Math.floor(Math.random() * cats.length)];
+    const item = right.pool[Math.floor(Math.random() * right.pool.length)];
+    const opts = [right];
+    let guard = 0;
+    while (opts.length < 3 && guard++ < 80) {
+      const c = cats[Math.floor(Math.random() * cats.length)];
+      if (opts.indexOf(c) < 0) opts.push(c);
+    }
+    opts.sort(() => Math.random() - 0.5);
+    this._sort = { right, item, done:false };
+    container.innerHTML = `<div class="quiz-area">
+      <h3>🍎 分类小达人</h3>
+      <div class="quiz-sub">它应该分到哪一类？</div>
+      <div class="sort-item">
+        <div class="si-e">${item.e}</div>
+        <div class="si-n">${item.c}</div>
+      </div>
+      <div class="sort-opts">
+        ${opts.map(c => `<div class="sort-opt" data-k="${c.k}" onclick="app.checkSort('${c.k}',this)">
+          <span class="so-e">${c.e}</span><span class="so-n">${c.n}</span></div>`).join('')}
+      </div>
+      <div class="quiz-feedback" id="quizFeedback"></div>
+      <button class="btn-next" onclick="app.renderGameTab()" style="display:none" id="quizNext">再来一题 ⭐</button>
+    </div>`;
+    setTimeout(() => this.audio.playFile(this.audio._path(item.c) || '', item.c), 350);
+  }
+
+  checkSort(k, el) {
+    const d = this._sort;
+    if (!d || d.done) return;
+    d.done = true;
+    document.querySelectorAll('.sort-opt').forEach(x => x.style.pointerEvents = 'none');
+    const fb = document.getElementById('quizFeedback'), next = document.getElementById('quizNext');
+    if (k === d.right.k) {
+      el.classList.add('correct');
+      fb.textContent = '🎉 答对了！' + d.item.c + ' 属于' + d.right.n;
+      fb.style.color = '#0A8F6B';
+      this.audio.playFile(this.audio._path(d.item.c) || '', d.item.c);
+      this.celebrate();
+    } else {
+      el.classList.add('wrong');
+      fb.textContent = '😊 ' + d.item.c + ' 应该分到「' + d.right.n + '」';
+      fb.style.color = '#E07A1F';
+      this.audio.speak(d.item.c + '是' + d.right.n);
+      document.querySelectorAll('.sort-opt').forEach(x => { if (x.dataset.k === d.right.k) x.classList.add('correct'); });
+    }
+    next.style.display = 'inline-block';
   }
 
   // ==================== CELEBRATION ====================

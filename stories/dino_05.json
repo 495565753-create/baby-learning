@@ -1,0 +1,33 @@
+{
+  "title": "小恐龙学骑车",
+  "id": "dino_05",
+  "icon": "🦕",
+  "img_prefix": "img/dino/dino_05",
+  "audio_prefix": "audio/dino/dino_05",
+  "pages": [
+    {
+      "text": "奇奇得到一辆崭新的自行车，他高兴地跨了上去。",
+      "kw": "little dinosaur with a b"
+    },
+    {
+      "text": "刚蹬一下，车子歪了，\"哐当\"摔倒了，膝盖擦破了皮。",
+      "kw": "little dinosaur falling "
+    },
+    {
+      "text": "奇奇坐在地上，眼泪掉下来：\"我学不会了。\"",
+      "kw": "little dinosaur sitting "
+    },
+    {
+      "text": "爸爸蹲下来：\"摔倒是学骑车的一部分，我们再来一次。\"",
+      "kw": "father dinosaur kneeling"
+    },
+    {
+      "text": "奇奇扶着车把，爸爸在后面扶着。这一次他骑了三米远。",
+      "kw": "father dinosaur holding "
+    },
+    {
+      "text": "第二天，奇奇自己骑了一圈又一圈。原来坚持真的能学会。",
+      "kw": "little dinosaur riding a"
+    }
+  ]
+}

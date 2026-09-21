@@ -1,0 +1,17 @@
+{
+  "id": "poem_34",
+  "title": "古诗：元日",
+  "icon": "📜",
+  "type": "poem",
+  "img_prefix": "img/poems2/",
+  "audio_prefix": "audio/poems2/",
+  "pages": [
+    {
+      "text": "《元日》\n王安石 · 宋\n\n爆竹声中一岁除，春风送暖入屠苏。千门万户曈曈日，总把新桃换旧符。\n\n📖 在鞭炮声里旧的一年过去了，春风送暖，大家一起喝屠苏酒。初升的太阳照着千家万户，人们把旧桃符换成新的，迎接新的一年。",
+      "kw": "元日",
+      "img": "img/poems2/34_元日.png",
+      "audio": "audio/poems2/34_元日.mp3"
+    }
+  ],
+  "single_img": true
+}

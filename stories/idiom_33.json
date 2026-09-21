@@ -1,0 +1,17 @@
+{
+  "id": "idiom_33",
+  "title": "成语：滥竽充数",
+  "icon": "📚",
+  "type": "idiom",
+  "img_prefix": "img/idioms2/",
+  "audio_prefix": "audio/idioms2/",
+  "pages": [
+    {
+      "text": "【成语】滥竽充数\n\n战国时，齐宣王喜欢听三百人一起吹竽。南郭先生根本不会吹，也混在队伍里装模作样。后来齐湣王即位，他喜欢听独奏。南郭先生吓坏了，只好偷偷逃走了。\n\n💡 没有真本事却混在里面，早晚会露馅。",
+      "kw": "滥竽充数",
+      "img": "img/idioms2/33_滥竽充数.png",
+      "audio": "audio/idioms2/33_滥竽充数.mp3"
+    }
+  ],
+  "single_img": true
+}

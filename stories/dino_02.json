@@ -1,0 +1,33 @@
+{
+  "title": "小恐龙学分享",
+  "id": "dino_02",
+  "icon": "🦕",
+  "img_prefix": "img/dino/dino_02",
+  "audio_prefix": "audio/dino/dino_02",
+  "pages": [
+    {
+      "text": "奇奇带了一个红色的小皮球去幼儿园，球又圆又亮。",
+      "kw": "little dinosaur holding "
+    },
+    {
+      "text": "小兔子想玩，奇奇把球藏在身后：\"这是我的！\"",
+      "kw": "little dinosaur hiding a"
+    },
+    {
+      "text": "小兔子低下头走开了。奇奇一个人拍球，觉得没那么好玩。",
+      "kw": "little dinosaur playing "
+    },
+    {
+      "text": "长颈鹿老师说：\"球可以一起玩呀，你拍给我，我拍给你。\"",
+      "kw": "giraffe teacher talking "
+    },
+    {
+      "text": "奇奇把球递过去，小兔子笑得眼睛弯弯的。",
+      "kw": "little dinosaur handing "
+    },
+    {
+      "text": "两个人你拍一下、我拍一下，笑声传得很远很远。",
+      "kw": "little dinosaur and rabb"
+    }
+  ]
+}

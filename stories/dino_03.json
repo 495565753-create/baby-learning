@@ -1,0 +1,33 @@
+{
+  "title": "小恐龙不怕黑",
+  "id": "dino_03",
+  "icon": "🦕",
+  "img_prefix": "img/dino/dino_03",
+  "audio_prefix": "audio/dino/dino_03",
+  "pages": [
+    {
+      "text": "晚上，房间里黑黑的。奇奇把头蒙在被子里，只露出一只眼睛。",
+      "kw": "little dinosaur hiding u"
+    },
+    {
+      "text": "忽然\"咔哒\"一声，奇奇吓得心咚咚跳，把被子裹得更紧了。",
+      "kw": "little dinosaur peeking "
+    },
+    {
+      "text": "妈妈打开门，轻轻抱住他：\"我们一起去看看是什么声音。\"",
+      "kw": "mother dinosaur hugging "
+    },
+    {
+      "text": "原来是窗帘被风吹起来，碰到了小桌子。一点也不可怕。",
+      "kw": "curtain blown by wind to"
+    },
+    {
+      "text": "妈妈留下一盏小夜灯，光像月亮一样温柔。",
+      "kw": "cozy bedroom with a smal"
+    },
+    {
+      "text": "奇奇闭上眼睛，慢慢睡着了，还做了一个甜甜的梦。",
+      "kw": "little dinosaur sleeping"
+    }
+  ]
+}

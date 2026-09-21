@@ -1,0 +1,17 @@
+{
+  "id": "poem_32",
+  "title": "古诗：九月九日忆山东兄弟",
+  "icon": "📜",
+  "type": "poem",
+  "img_prefix": "img/poems2/",
+  "audio_prefix": "audio/poems2/",
+  "pages": [
+    {
+      "text": "《九月九日忆山东兄弟》\n王维 · 唐\n\n独在异乡为异客，每逢佳节倍思亲。遥知兄弟登高处，遍插茱萸少一人。\n\n📖 我一个人在外地，每逢过节就更加想念亲人。想到兄弟们今天登高，头上插着茱萸，一定会发现少了我一个人。",
+      "kw": "九月九日忆山东兄弟",
+      "img": "img/poems2/32_九月九日忆山东兄弟.png",
+      "audio": "audio/poems2/32_九月九日忆山东兄弟.mp3"
+    }
+  ],
+  "single_img": true
+}
