@@ -82,6 +82,7 @@ NEW_NAV = [
     ('sprint', '口算闯关'), ('whack', '打地鼠'), ('hunt', '数字寻宝'),
     ('kaleido', '万花筒'), ('dots', '数字连线'), ('mirror', '对称画'), ('sticker', '贴纸画'),
     ('general', '常识百科'), ('hint', '看看这里哦'), ('found', '真棒，找到一个！'),
+    ('music', '音乐乐园'), ('box', '儿歌音乐盒'), ('drum', '节奏小鼓'),
 ]
 
 # 游戏里的固定台词（audio/fb2/<key>.mp3）
