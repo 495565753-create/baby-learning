@@ -1,16 +1,16 @@
 {
-  "name": "宝宝启蒙学习",
-  "short_name": "宝宝启蒙",
-  "description": "宝宝启蒙学习：数学、英语、常识、故事书，带语音朗读",
-  "lang": "zh-CN",
-  "start_url": "./index.html",
-  "scope": "./",
-  "display": "standalone",
-  "orientation": "any",
-  "background_color": "#F0F4FF",
-  "theme_color": "#F0F4FF",
-  "icons": [
-    { "src": "img/icon-180.png", "sizes": "180x180", "type": "image/png" },
-    { "src": "img/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  "name":"然然成长乐园",
+  "short_name":"然然乐园",
+  "description":"适合5岁孩子的故事、认知与益智游戏",
+  "lang":"zh-CN",
+  "start_url":"./",
+  "scope":"./",
+  "display":"standalone",
+  "orientation":"portrait-primary",
+  "background_color":"#fff8ec",
+  "theme_color":"#fff8ec",
+  "icons":[
+    {"src":"img/icon-180.png","sizes":"180x180","type":"image/png"},
+    {"src":"img/icon-512.png","sizes":"512x512","type":"image/png"}
   ]
 }
