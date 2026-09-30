@@ -1,0 +1,3066 @@
+{
+  "engine": "Microsoft neural text to speech",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "-12% stories / -15% poems",
+  "pitch": "-2Hz",
+  "normalization": "EBU R128 -18 LUFS, -2 dBTP",
+  "expected": 382,
+  "items": {
+    "莱德接到求救电话。他立刻召集汪汪队。狗狗们跑到总部集合。": {
+      "file": "4e299450e13589c1e39a.mp3",
+      "book": "paw_02",
+      "group": "paw",
+      "duration": 7.824,
+      "chars": 28,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德在空中驾驶直升机观察，指挥伙伴们：“干得好，左边还有一点火苗！”": {
+      "file": "4c7ee0b78f7c6f6e1713.mp3",
+      "book": "paw_01",
+      "group": "paw",
+      "duration": 8.112,
+      "chars": 34,
+      "qc": "decode-duration-loudness"
+    },
+    "汪汪队总部响起警报！莱德说：“城市里发生了大火，我们需要马上出发！”": {
+      "file": "94d2ef6ffa456e476b80.mp3",
+      "book": "paw_01",
+      "group": "paw",
+      "duration": 8.04,
+      "chars": 34,
+      "qc": "decode-duration-loudness"
+    },
+    "大火终于被扑灭，大家都安全了。市民们欢呼：“谢谢汪汪队，你们是最棒的！”": {
+      "file": "fc3dc9cd2002b11f2998.mp3",
+      "book": "paw_01",
+      "group": "paw",
+      "duration": 8.472,
+      "chars": 36,
+      "qc": "decode-duration-loudness"
+    },
+    "毛毛举起巨大的消防水管，对着火焰喷出高高的水柱。火焰慢慢变小了。": {
+      "file": "ee4091835d098d350e49.mp3",
+      "book": "paw_01",
+      "group": "paw",
+      "duration": 8.616,
+      "chars": 32,
+      "qc": "decode-duration-loudness"
+    },
+    "阿奇用扩音器让大家保持安全距离。他说：“请退后，这里很危险！”": {
+      "file": "0add0a05f6d104a0ab92.mp3",
+      "book": "paw_01",
+      "group": "paw",
+      "duration": 7.92,
+      "chars": 31,
+      "qc": "decode-duration-loudness"
+    },
+    "冒险湾阳光明媚。一只小猫咪爬上了高高的大树。它下不来了，喵喵叫。": {
+      "file": "598f009b540092de2fdc.mp3",
+      "book": "paw_02",
+      "group": "paw",
+      "duration": 8.88,
+      "chars": 32,
+      "qc": "decode-duration-loudness"
+    },
+    "勇敢的毛毛开着消防车，第一个冲向火场。他大声喊：“我来了，不要怕！”": {
+      "file": "fa46284d09bfae881b62.mp3",
+      "book": "paw_01",
+      "group": "paw",
+      "duration": 8.304,
+      "chars": 34,
+      "qc": "decode-duration-loudness"
+    },
+    "阿奇发现一只小猫咪被困在树上。他用云梯把小猫安全救下来。": {
+      "file": "bff090e0e7c7d4d27e8d.mp3",
+      "book": "paw_03",
+      "group": "paw",
+      "duration": 7.656,
+      "chars": 28,
+      "qc": "decode-duration-loudness"
+    },
+    "毛毛开车第一个到达。他架起云梯消防车，梯子伸向小猫。": {
+      "file": "89c6c2157647cc653603.mp3",
+      "book": "paw_02",
+      "group": "paw",
+      "duration": 6.816,
+      "chars": 26,
+      "qc": "decode-duration-loudness"
+    },
+    "毛毛用水上摩托艇靠近一座被水围住的小房子。里面有个小宝宝在哭。": {
+      "file": "a5ebcfff07f71ba41ffa.mp3",
+      "book": "paw_03",
+      "group": "paw",
+      "duration": 7.896,
+      "chars": 31,
+      "qc": "decode-duration-loudness"
+    },
+    "小猫害怕得发抖，不敢往下跳。毛毛爬上梯子，轻声安慰它。": {
+      "file": "2fdd78d8b5e95c08223d.mp3",
+      "book": "paw_02",
+      "group": "paw",
+      "duration": 7.272,
+      "chars": 27,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德奖励汪汪队小狗饼干。小猫开心地蹭着毛毛的腿。汪汪队又成功了！": {
+      "file": "f86bcc6c064f8b2dc51d.mp3",
+      "book": "paw_02",
+      "group": "paw",
+      "duration": 8.616,
+      "chars": 32,
+      "qc": "decode-duration-loudness"
+    },
+    "毛毛轻轻抱起小猫，慢慢爬下梯子。小猫安全地回到地面。": {
+      "file": "bbdc5bce1755793b5d70.mp3",
+      "book": "paw_02",
+      "group": "paw",
+      "duration": 7.008,
+      "chars": 26,
+      "qc": "decode-duration-loudness"
+    },
+    "冒险湾下起了大雨，河水涨得好高。汪汪队，我们要出发了！": {
+      "file": "0275fb1e12a56960530c.mp3",
+      "book": "paw_03",
+      "group": "paw",
+      "duration": 6.96,
+      "chars": 27,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德说：“小砾，用你的挖土机挡住水流！”小砾马上行动起来。": {
+      "file": "b06fe25a559ffbae07de.mp3",
+      "book": "paw_03",
+      "group": "paw",
+      "duration": 7.464,
+      "chars": 29,
+      "qc": "decode-duration-loudness"
+    },
+    "天天驾驶直升机，找到一条安全的路线，引导大家往高处走。": {
+      "file": "6a93286d78a6b2c77f7f.mp3",
+      "book": "paw_03",
+      "group": "paw",
+      "duration": 6.672,
+      "chars": 27,
+      "qc": "decode-duration-loudness"
+    },
+    "小兔子终于回到了妈妈身边，开心地跳来跳去。莱德说：“没有困难的工作，只有勇敢的狗狗！”": {
+      "file": "ea1df42178e7b37b9521.mp3",
+      "book": "paw_04",
+      "group": "paw",
+      "duration": 9.912,
+      "chars": 43,
+      "qc": "decode-duration-loudness"
+    },
+    "洪水退去，大家都安全了！冒险湾的居民们感谢汪汪队。汪汪队真棒！": {
+      "file": "e38bb3c59165945c2922.mp3",
+      "book": "paw_03",
+      "group": "paw",
+      "duration": 8.568,
+      "chars": 31,
+      "qc": "decode-duration-loudness"
+    },
+    "突然，山上传来轰隆隆的声音，雪崩来了！一只小兔子被困在了雪堆里，害怕得直发抖。": {
+      "file": "8817d813fae03f76c216.mp3",
+      "book": "paw_04",
+      "group": "paw",
+      "duration": 9.672,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "雪崩堵住了山路，大家回不去了。小砾开着推土机，把雪堆推到一边，清理出一条安全的小路。": {
+      "file": "0fd326c4e22ed2e5eb03.mp3",
+      "book": "paw_04",
+      "group": "paw",
+      "duration": 10.128,
+      "chars": 42,
+      "qc": "decode-duration-loudness"
+    },
+    "汪汪队飞快赶到雪山。阿奇用铲子小心地挖雪，毛毛用温暖的毛毯包住小兔子，小兔子不再发抖了。": {
+      "file": "685fc62c0e6da11642a3.mp3",
+      "book": "paw_04",
+      "group": "paw",
+      "duration": 10.848,
+      "chars": 44,
+      "qc": "decode-duration-loudness"
+    },
+    "小火车咔嚓咔嚓开过来，车上装着好多生日气球。突然，铁轨旁的山石轰隆隆滚下来！": {
+      "file": "53a8e657c08e684ec75c.mp3",
+      "book": "paw_05",
+      "group": "paw",
+      "duration": 10.104,
+      "chars": 38,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德立刻召集汪汪队，说：“绿色代表出发！阿奇驾驶警车，毛毛开灭火器，我们要去救小兔子！”": {
+      "file": "5a292ab3421f76ee464f.mp3",
+      "book": "paw_04",
+      "group": "paw",
+      "duration": 10.584,
+      "chars": 44,
+      "qc": "decode-duration-loudness"
+    },
+    "石头挡住铁轨，火车头一歪，“哐当”一声脱轨了。司机叔叔急得直冒汗，大声呼叫：“汪汪队，我们需要帮助！”": {
+      "file": "eec5b1e58d43fefb1e57.mp3",
+      "book": "paw_05",
+      "group": "paw",
+      "duration": 11.88,
+      "chars": 51,
+      "qc": "decode-duration-loudness"
+    },
+    "冬天到了，冒险湾的山上盖满了厚厚的白雪。莱德和汪汪队正在雪地里开心地玩耍。": {
+      "file": "f7e07612df44ff201d47.mp3",
+      "book": "paw_04",
+      "group": "paw",
+      "duration": 9.504,
+      "chars": 37,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德收到信号，立刻吹响汪汪哨。阿奇、毛毛、天天和小砾飞快跑到总部集合。": {
+      "file": "9b58cf6a45584819a38d.mp3",
+      "book": "paw_05",
+      "group": "paw",
+      "duration": 9.504,
+      "chars": 35,
+      "qc": "decode-duration-loudness"
+    },
+    "冒险湾的游轮上，突然破了一个洞，海水涌进来。船长急忙呼叫汪汪队，莱德马上集合狗狗们。": {
+      "file": "a45aa7c8d6b0bdd154b0.mp3",
+      "book": "paw_06",
+      "group": "paw",
+      "duration": 10.272,
+      "chars": 42,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德说：“别担心，汪汪队要出动了！”阿奇开着警车，毛毛开着消防车，天天驾驶直升机，飞速赶往码头。": {
+      "file": "3950314161c408b20204.mp3",
+      "book": "paw_06",
+      "group": "paw",
+      "duration": 11.808,
+      "chars": 48,
+      "qc": "decode-duration-loudness"
+    },
+    "聪明的莱德想到了办法，他让天天吊来一块大橡胶垫。阿奇和毛毛一起把垫子压在破洞上，水终于止住了！": {
+      "file": "0bff54f0899115594248.mp3",
+      "book": "paw_06",
+      "group": "paw",
+      "duration": 11.496,
+      "chars": 47,
+      "qc": "decode-duration-loudness"
+    },
+    "大家合力把火车推回铁轨上，司机叔叔开心地笑了：“谢谢汪汪队！”气球又飘起来，火车继续欢快地跑起来。": {
+      "file": "280031fdc5497687d7a0.mp3",
+      "book": "paw_05",
+      "group": "paw",
+      "duration": 11.976,
+      "chars": 49,
+      "qc": "decode-duration-loudness"
+    },
+    "阿奇用绞盘将救生圈抛给受惊的乘客，安抚他们。莱德说：“我们需要更大的塞子！”": {
+      "file": "6b8aa48069e7c0efc7bc.mp3",
+      "book": "paw_06",
+      "group": "paw",
+      "duration": 9.192,
+      "chars": 38,
+      "qc": "decode-duration-loudness"
+    },
+    "天天在空中发现游轮的位置，用对讲机告诉伙伴们。毛毛跳上船，用他的水炮管堵住小洞，但水还在漏。": {
+      "file": "224de8fd0b02945ee2fa.mp3",
+      "book": "paw_06",
+      "group": "paw",
+      "duration": 11.808,
+      "chars": 46,
+      "qc": "decode-duration-loudness"
+    },
+    "游轮安全了，所有人都欢呼起来。船长感谢汪汪队，狗狗们说：“没有困难的工作，只有勇敢的狗狗！”": {
+      "file": "f0d438e502c277fe7c4d.mp3",
+      "book": "paw_06",
+      "group": "paw",
+      "duration": 10.44,
+      "chars": 46,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德说：“阿奇，你用绞盘拉开石头。毛毛，你喷水冷却火车头。天天，你从空中查看情况。”": {
+      "file": "e01a306051414199e4fa.mp3",
+      "book": "paw_05",
+      "group": "paw",
+      "duration": 11.088,
+      "chars": 42,
+      "qc": "decode-duration-loudness"
+    },
+    "阿奇拉动绞盘，大石头滚开啦。毛毛用水枪喷水，火车头不再冒烟。天天在空中指挥方向。": {
+      "file": "95d2a816df70c0b63380.mp3",
+      "book": "paw_05",
+      "group": "paw",
+      "duration": 10.992,
+      "chars": 40,
+      "qc": "decode-duration-loudness"
+    },
+    "一架观光小飞机在冒险湾上空快乐地飞行。突然，引擎发出噗噗的怪声，飞机开始摇晃起来。飞行员着急地呼叫救援。": {
+      "file": "5017465a1c4d5df70b98.mp3",
+      "book": "paw_07",
+      "group": "paw",
+      "duration": 13.44,
+      "chars": 52,
+      "qc": "decode-duration-loudness"
+    },
+    "冒险湾的大桥轰隆一声塌了！车辆和行人都过不去。莱德立刻召集汪汪队。": {
+      "file": "8e92f1f1620008aadc43.mp3",
+      "book": "paw_08",
+      "group": "paw",
+      "duration": 8.76,
+      "chars": 33,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德召集汪汪队：“我们需要清理跑道，准备救援！”小砾开着推土机去清理碎石，阿奇用警车指挥大家远离跑道。": {
+      "file": "3ac8d61b34a8b8cb4cad.mp3",
+      "book": "paw_07",
+      "group": "paw",
+      "duration": 12.384,
+      "chars": 51,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德开心地说：“没有困难的工作，只有勇敢的狗狗！”冒险湾恢复了平静，汪汪队又立了一功。": {
+      "file": "b05e2cbcf55d5739dfa4.mp3",
+      "book": "paw_07",
+      "group": "paw",
+      "duration": 9.864,
+      "chars": 43,
+      "qc": "decode-duration-loudness"
+    },
+    "小砾开着挖土机，清理大石块。灰灰用回收工具，把碎木板变成临时桥板。": {
+      "file": "6bdac175a3e2f6e9f762.mp3",
+      "book": "paw_08",
+      "group": "paw",
+      "duration": 8.88,
+      "chars": 33,
+      "qc": "decode-duration-loudness"
+    },
+    "阿奇用绞盘拉起落水的木头。毛毛升起云梯，把被困的小猫救下来。": {
+      "file": "feda0687992a0f017fba.mp3",
+      "book": "paw_08",
+      "group": "paw",
+      "duration": 7.632,
+      "chars": 30,
+      "qc": "decode-duration-loudness"
+    },
+    "天天正在空中巡逻，发现了故障飞机。她立刻飞回总部告诉莱德：“有飞机需要紧急迫降！”": {
+      "file": "4f6b15d3f37d218d1bc7.mp3",
+      "book": "paw_07",
+      "group": "paw",
+      "duration": 9.84,
+      "chars": 41,
+      "qc": "decode-duration-loudness"
+    },
+    "飞机开始下降，天天在它旁边勇敢地引导：“别怕，跟着我，慢慢对准跑道！”毛毛也准备好了急救箱在跑道旁等待。": {
+      "file": "04cf1d368e890927ffe2.mp3",
+      "book": "paw_07",
+      "group": "paw",
+      "duration": 12.648,
+      "chars": 52,
+      "qc": "decode-duration-loudness"
+    },
+    "飞机安全着陆，颠簸了几下后稳稳停住。飞行员走下飞机，紧紧拥抱天天：“谢谢汪汪队，你们是最棒的！”": {
+      "file": "3745af8f79617f7bb477.mp3",
+      "book": "paw_07",
+      "group": "paw",
+      "duration": 11.76,
+      "chars": 48,
+      "qc": "decode-duration-loudness"
+    },
+    "路马启动气垫船，在河面搭建浮桥。大家喊：“加油，汪汪队！”": {
+      "file": "6a5bb8205d0fcef82ccf.mp3",
+      "book": "paw_08",
+      "group": "paw",
+      "duration": 7.752,
+      "chars": 29,
+      "qc": "decode-duration-loudness"
+    },
+    "小砾的挖掘机移开倒塌的石头，找到被压住的小鸟。": {
+      "file": "28eb874f9c97603ccc48.mp3",
+      "book": "paw_09",
+      "group": "paw",
+      "duration": 5.784,
+      "chars": 23,
+      "qc": "decode-duration-loudness"
+    },
+    "新桥暂时修好啦！人们小心地通过，笑着挥手说谢谢。狗狗们自豪地摇尾巴。": {
+      "file": "1e44bc36968a1c8f4448.mp3",
+      "book": "paw_08",
+      "group": "paw",
+      "duration": 9.048,
+      "chars": 34,
+      "qc": "decode-duration-loudness"
+    },
+    "阿奇用警车开路，引导大家安全到达空地。": {
+      "file": "dcf28129f53ca14a79fe.mp3",
+      "book": "paw_09",
+      "group": "paw",
+      "duration": 4.968,
+      "chars": 19,
+      "qc": "decode-duration-loudness"
+    },
+    "天天开着直升机从空中搜寻，发现山边有受困的兔子。": {
+      "file": "b99ef03f4d39d263af56.mp3",
+      "book": "paw_09",
+      "group": "paw",
+      "duration": 6.312,
+      "chars": 24,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德说：“没有困难的工作，只有勇敢的狗狗！”冒险湾又恢复了欢笑。": {
+      "file": "72af9604612d0057c372.mp3",
+      "book": "paw_08",
+      "group": "paw",
+      "duration": 7.56,
+      "chars": 32,
+      "qc": "decode-duration-loudness"
+    },
+    "汪汪队又一次救了大家！莱德说：“真是团结的好伙伴！”": {
+      "file": "b7a866939abd1b537126.mp3",
+      "book": "paw_09",
+      "group": "paw",
+      "duration": 6.12,
+      "chars": 26,
+      "qc": "decode-duration-loudness"
+    },
+    "冒险湾突然晃动起来，地震了！莱德赶紧召集汪汪队。": {
+      "file": "fe24bd974d5a5ff6dbee.mp3",
+      "book": "paw_09",
+      "group": "paw",
+      "duration": 6.288,
+      "chars": 24,
+      "qc": "decode-duration-loudness"
+    },
+    "毛毛用云梯救出被困高楼的小猫。它说：“别怕，我来啦！”": {
+      "file": "75aa1332850966a5361b.mp3",
+      "book": "paw_09",
+      "group": "paw",
+      "duration": 6.96,
+      "chars": 27,
+      "qc": "decode-duration-loudness"
+    },
+    "海啸过后，大家都很感谢汪汪队。莱德笑着说：“你们做得真棒！记住，听到警报就要立刻往高处跑。”": {
+      "file": "1e80d1d374607539deaf.mp3",
+      "book": "paw_10",
+      "group": "paw",
+      "duration": 11.352,
+      "chars": 46,
+      "qc": "decode-duration-loudness"
+    },
+    "小砾用推土机堆起高高的沙墙，想挡住海浪。天天驾驶直升机在空中巡逻，寻找还没走的人。": {
+      "file": "9c408244ebfbcdeab783.mp3",
+      "book": "paw_10",
+      "group": "paw",
+      "duration": 10.704,
+      "chars": 41,
+      "qc": "decode-duration-loudness"
+    },
+    "阿奇用警车拦住了海滩入口，提醒大家别再靠近。毛毛开着消防车，载着游客快快离开。": {
+      "file": "30587df8ae6b7013d022.mp3",
+      "book": "paw_10",
+      "group": "paw",
+      "duration": 10.248,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "“火山要爆发了，我们得赶紧让动物们安全撤离！”莱德说。毛毛驾驶直升机，阿奇用扩音器通知大家。": {
+      "file": "1579cb2645df8450204a.mp3",
+      "book": "paw_11",
+      "group": "paw",
+      "duration": 11.592,
+      "chars": 46,
+      "qc": "decode-duration-loudness"
+    },
+    "冒险湾的火山突然轰隆隆响，冒出浓浓的灰烟。莱德接到警报，立刻召唤汪汪队集合。": {
+      "file": "47f6e31f06db2a6f4925.mp3",
+      "book": "paw_11",
+      "group": "paw",
+      "duration": 9.984,
+      "chars": 38,
+      "qc": "decode-duration-loudness"
+    },
+    "今天，汪汪队在海滩上开心地玩耍。突然，莱德的平板电脑发出了“滴滴滴”的警报声。": {
+      "file": "fc605886eebf2eabca9a.mp3",
+      "book": "paw_10",
+      "group": "paw",
+      "duration": 9.672,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德赶紧集合大家，说：“海啸要来了，我们必须立刻行动！”他派汪汪队去帮助所有人安全撤离。": {
+      "file": "db31d162018a4f2a1779.mp3",
+      "book": "paw_10",
+      "group": "paw",
+      "duration": 10.44,
+      "chars": 44,
+      "qc": "decode-duration-loudness"
+    },
+    "巨大的海浪冲了过来，但海滩上已经没有人了。大家都安全地站在小山上，汪汪队也及时撤到了高处。": {
+      "file": "4fc9c56b1052da5cac9b.mp3",
+      "book": "paw_10",
+      "group": "paw",
+      "duration": 10.896,
+      "chars": 45,
+      "qc": "decode-duration-loudness"
+    },
+    "小砾开着推土机，在火山脚挖出一条安全通道。灰灰用回收爪搬开挡路的石头，帮助小兔子们通过。": {
+      "file": "87730a26587b80b94587.mp3",
+      "book": "paw_11",
+      "group": "paw",
+      "duration": 11.16,
+      "chars": 44,
+      "qc": "decode-duration-loudness"
+    },
+    "天空突然变黑了，大风呼呼地吹。树叶和帽子都被吹上了天。": {
+      "file": "c9717ed3adb61ba1a9be.mp3",
+      "book": "paw_12",
+      "group": "paw",
+      "duration": 7.32,
+      "chars": 27,
+      "qc": "decode-duration-loudness"
+    },
+    "火山喷出滚烫的岩浆，往森林流去。天天从空中洒水降温，路马驾驶气垫船挡住岩浆流。": {
+      "file": "17d4d2d5f3c0c4bd04cc.mp3",
+      "book": "paw_11",
+      "group": "paw",
+      "duration": 10.728,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "毛毛拉响警笛，提醒大家快进屋。路马开着气垫船，把岸边的鸭子带上船。": {
+      "file": "da705c1ded3a4be32d59.mp3",
+      "book": "paw_12",
+      "group": "paw",
+      "duration": 8.76,
+      "chars": 33,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德拿出平板一看，龙卷风马上要来了。他大声喊：“汪汪队，总部集合！”": {
+      "file": "e8eccc1e2b1fc894fe63.mp3",
+      "book": "paw_12",
+      "group": "paw",
+      "duration": 8.52,
+      "chars": 34,
+      "qc": "decode-duration-loudness"
+    },
+    "狗狗们飞快地滑下滑梯，坐上自己的车。莱德说：“大家要帮助朋友们躲进安全屋。”": {
+      "file": "f57adf88656a24b519de.mp3",
+      "book": "paw_12",
+      "group": "paw",
+      "duration": 9.216,
+      "chars": 38,
+      "qc": "decode-duration-loudness"
+    },
+    "火山终于安静下来，汪汪队累得坐在地上。莱德夸奖大家：“只要团结合作，再大的困难也不怕！”": {
+      "file": "18f0fd45a70bb1d2860c.mp3",
+      "book": "paw_11",
+      "group": "paw",
+      "duration": 10.488,
+      "chars": 44,
+      "qc": "decode-duration-loudness"
+    },
+    "汪汪队齐心协力，把岩浆引到了大海边。大家成功保护了冒险湾，动物们都安全了。": {
+      "file": "72cb3807b62d0c2cb381.mp3",
+      "book": "paw_11",
+      "group": "paw",
+      "duration": 9.12,
+      "chars": 37,
+      "qc": "decode-duration-loudness"
+    },
+    "小砾用推土机推开倒下的大树。灰灰修好了被风吹坏的屋顶。": {
+      "file": "f6d5da44fb1371ababa9.mp3",
+      "book": "paw_12",
+      "group": "paw",
+      "duration": 7.2,
+      "chars": 27,
+      "qc": "decode-duration-loudness"
+    },
+    "天天用她的直升机从空中撒下花瓣，吸引蜜蜂。蜜蜂们闻到花香，慢慢聚拢过来，飞进了新蜂箱。": {
+      "file": "4c86b89774c4a291dfbf.mp3",
+      "book": "paw_13",
+      "group": "paw",
+      "duration": 10.824,
+      "chars": 43,
+      "qc": "decode-duration-loudness"
+    },
+    "在农场，蜜蜂们嗡嗡嗡地飞着，找不到新家。阿奇架起梯子，灰灰轻轻用网兜引导蜜蜂飞向新蜂箱。": {
+      "file": "e5031d1bf06fcffdaee3.mp3",
+      "book": "paw_13",
+      "group": "paw",
+      "duration": 11.328,
+      "chars": 44,
+      "qc": "decode-duration-loudness"
+    },
+    "冒险湾突然停电了，到处黑乎乎的。": {
+      "file": "4ec2acbadbcf23da6bdf.mp3",
+      "book": "paw_14",
+      "group": "paw",
+      "duration": 4.08,
+      "chars": 16,
+      "qc": "decode-duration-loudness"
+    },
+    "龙卷风走了，太阳出来了。大家都安全了，笑着说：“谢谢汪汪队！”": {
+      "file": "fa5b25c7079551fa8a58.mp3",
+      "book": "paw_12",
+      "group": "paw",
+      "duration": 7.536,
+      "chars": 31,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德和汪汪队正在瞭望台玩耍。突然，电话铃响了，是农夫由美打来的。她说：“蜜蜂们要搬家，需要帮助！”": {
+      "file": "2813c142ac2ea614a71f.mp3",
+      "book": "paw_13",
+      "group": "paw",
+      "duration": 12.168,
+      "chars": 49,
+      "qc": "decode-duration-loudness"
+    },
+    "蜜蜂们在新家开心地跳起舞。农夫由美说：“谢谢汪汪队！你们是最棒的。”莱德说：“只要齐心协力，没有办不到的事！”": {
+      "file": "79086a1f5ff6ce23a9f2.mp3",
+      "book": "paw_13",
+      "group": "paw",
+      "duration": 13.272,
+      "chars": 55,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德立刻召集汪汪队。他说：“阿奇，我们需要你的梯子；灰灰，带上你的网兜。”大家迅速出发，赶往农场。": {
+      "file": "9a536d2f8fbc4a8263a0.mp3",
+      "book": "paw_13",
+      "group": "paw",
+      "duration": 12.216,
+      "chars": 49,
+      "qc": "decode-duration-loudness"
+    },
+    "突然，一阵大风吹来，把蜂箱盖子吹跑了。小蜜蜂们害怕极了，到处乱飞。毛毛拿出他的水枪，小心地喷水挡风。": {
+      "file": "3848cdbc26640b7c688e.mp3",
+      "book": "paw_13",
+      "group": "paw",
+      "duration": 12.84,
+      "chars": 50,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德接到电话，谷仓里的小动物需要保暖。": {
+      "file": "016edbdfbb4d437ab3db.mp3",
+      "book": "paw_14",
+      "group": "paw",
+      "duration": 4.944,
+      "chars": 19,
+      "qc": "decode-duration-loudness"
+    },
+    "阿奇用他的警车灯照亮道路，毛毛开着消防车来帮忙。": {
+      "file": "c5bc4b7bda7eb7622c02.mp3",
+      "book": "paw_14",
+      "group": "paw",
+      "duration": 6.072,
+      "chars": 24,
+      "qc": "decode-duration-loudness"
+    },
+    "小砾挖掘机挖开地面，发现断裂的电线。": {
+      "file": "aa3c6477572f3488db55.mp3",
+      "book": "paw_14",
+      "group": "paw",
+      "duration": 4.824,
+      "chars": 18,
+      "qc": "decode-duration-loudness"
+    },
+    "天天空降下新的电缆，路马在水边保证安全。": {
+      "file": "f3a722e9d7e3c84801e3.mp3",
+      "book": "paw_14",
+      "group": "paw",
+      "duration": 5.424,
+      "chars": 20,
+      "qc": "decode-duration-loudness"
+    },
+    "电修好了，灯光亮起，大家欢呼起来。": {
+      "file": "59104dd79307d65c5610.mp3",
+      "book": "paw_14",
+      "group": "paw",
+      "duration": 4.44,
+      "chars": 17,
+      "qc": "decode-duration-loudness"
+    },
+    "毛毛开着挖掘机，小心地挖开大石头。小砾用推土机把碎石推到一边。他们一起努力，很快看到了隧道口。": {
+      "file": "3aedf5aca413b53f3725.mp3",
+      "book": "paw_15",
+      "group": "paw",
+      "duration": 11.832,
+      "chars": 47,
+      "qc": "decode-duration-loudness"
+    },
+    "天天驾驶直升机在空中观察：“莱德，我看到小兔子了！它躲在角落里，没有受伤，只是有点害怕。”": {
+      "file": "04cb32d74dbe1c37dd97.mp3",
+      "book": "paw_15",
+      "group": "paw",
+      "duration": 10.944,
+      "chars": 45,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德立刻召集汪汪队：“毛毛，我们需要你的挖掘机挖开落石！小砾，你的推土机来清理碎石！”": {
+      "file": "759227e00c9f280ba676.mp3",
+      "book": "paw_15",
+      "group": "paw",
+      "duration": 10.392,
+      "chars": 43,
+      "qc": "decode-duration-loudness"
+    },
+    "汪汪队正在基地玩耍。突然，电话响了！莱德接到紧急通知：山上的隧道塌方了，小兔子被困在里面。": {
+      "file": "443019288c584125ddbb.mp3",
+      "book": "paw_15",
+      "group": "paw",
+      "duration": 11.976,
+      "chars": 45,
+      "qc": "decode-duration-loudness"
+    },
+    "阿奇钻进隧道，温柔地抱起小兔子：“别怕，小兔子，我们带你出去。”他慢慢爬出隧道，把兔子交给莱德。": {
+      "file": "12ddfd12e001e6280194.mp3",
+      "book": "paw_15",
+      "group": "paw",
+      "duration": 11.688,
+      "chars": 48,
+      "qc": "decode-duration-loudness"
+    },
+    "小兔子安全了，开心地跳起来。莱德夸奖汪汪队：“你们又完成了一次完美的救援！没有困难的工作，只有勇敢的狗狗！”": {
+      "file": "724db66f0c5a142b264f.mp3",
+      "book": "paw_15",
+      "group": "paw",
+      "duration": 12.288,
+      "chars": 54,
+      "qc": "decode-duration-loudness"
+    },
+    "冬天到了，冒险湾的湖面结冰了。小朋友们开心地在冰上滑来滑去。": {
+      "file": "2d87e0ba8fb9d09d60a8.mp3",
+      "book": "paw_16",
+      "group": "paw",
+      "duration": 7.584,
+      "chars": 30,
+      "qc": "decode-duration-loudness"
+    },
+    "突然，咔嚓一声，冰面裂开了！小莉掉进了冰冷的湖水里，害怕地哭喊。": {
+      "file": "2665423b3233d7e06cc3.mp3",
+      "book": "paw_16",
+      "group": "paw",
+      "duration": 8.16,
+      "chars": 32,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德接到求救电话，立刻召唤汪汪队：“阿奇、毛毛，出发救援！”汪汪队跳上车子，火速赶往湖边。": {
+      "file": "e23d816017de01fea57b.mp3",
+      "book": "paw_16",
+      "group": "paw",
+      "duration": 11.448,
+      "chars": 45,
+      "qc": "decode-duration-loudness"
+    },
+    "阿奇用安全绳拉住小莉，毛毛披上保暖毯靠近。大家小心地趴在冰面上，慢慢把小莉拉上来。": {
+      "file": "934d619618928c9abed8.mp3",
+      "book": "paw_16",
+      "group": "paw",
+      "duration": 10.584,
+      "chars": 41,
+      "qc": "decode-duration-loudness"
+    },
+    "小莉被救上岸，浑身发抖。毛毛用热风轻轻吹干她，阿奇递上热巧克力。小莉终于不哭了。": {
+      "file": "9bb5728cadc1b7a333fd.mp3",
+      "book": "paw_16",
+      "group": "paw",
+      "duration": 10.872,
+      "chars": 40,
+      "qc": "decode-duration-loudness"
+    },
+    "阳光明媚的早晨，冒险湾突然出现了一条小毒蛇。汪汪队接到警报，立刻集合出发！": {
+      "file": "40f6fed4df63bf9e9993.mp3",
+      "book": "paw_17",
+      "group": "paw",
+      "duration": 9.288,
+      "chars": 37,
+      "qc": "decode-duration-loudness"
+    },
+    "冒险湾的夜晚，烟花表演要开始了。大家都仰着头，等着看美丽的光。": {
+      "file": "4e29daa4ccd1a5716cdb.mp3",
+      "book": "paw_18",
+      "group": "paw",
+      "duration": 7.8,
+      "chars": 31,
+      "qc": "decode-duration-loudness"
+    },
+    "小砾用挖掘机铲斗轻轻围住小蛇，防止它乱跑。天天从空中观察，确保大家安全。": {
+      "file": "33f8d31549d90787d12c.mp3",
+      "book": "paw_17",
+      "group": "paw",
+      "duration": 9.768,
+      "chars": 36,
+      "qc": "decode-duration-loudness"
+    },
+    "小蛇跟着铃铛声慢慢爬进特制的运输箱里。路马把箱子搬上船，准备送回远处的森林。": {
+      "file": "55d0c83008fe1c13d49b.mp3",
+      "book": "paw_17",
+      "group": "paw",
+      "duration": 9.936,
+      "chars": 38,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德提醒大家：“春天冰面变薄，千万不能上冰玩哦！”小朋友们点头，和汪汪队一起安全回家。": {
+      "file": "3655b61fb7ff6c65364a.mp3",
+      "book": "paw_16",
+      "group": "paw",
+      "duration": 10.368,
+      "chars": 43,
+      "qc": "decode-duration-loudness"
+    },
+    "毛毛用热成像扫描，发现小蛇躲在大石头后面。阿奇提醒大家：“小心，不要惊吓它。”": {
+      "file": "ef277fb072188d4024aa.mp3",
+      "book": "paw_17",
+      "group": "paw",
+      "duration": 9.888,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "回到森林，小蛇愉快地游走了。莱德夸奖大家：“真棒！我们用智慧保护了大家和小蛇。”": {
+      "file": "446d7f5cd4ab0ce2183d.mp3",
+      "book": "paw_17",
+      "group": "paw",
+      "duration": 10.248,
+      "chars": 40,
+      "qc": "decode-duration-loudness"
+    },
+    "灰灰想起蛇怕噪音，拿来一个温柔的小铃铛，轻轻晃动引导小蛇离开。": {
+      "file": "86927934a7f92ca3edaa.mp3",
+      "book": "paw_17",
+      "group": "paw",
+      "duration": 7.656,
+      "chars": 31,
+      "qc": "decode-duration-loudness"
+    },
+    "突然，一颗烟花弹飞错了方向，点燃了旁边的彩旗。小火苗蹿了起来。": {
+      "file": "4a301b4366feaa652d87.mp3",
+      "book": "paw_18",
+      "group": "paw",
+      "duration": 8.136,
+      "chars": 31,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德拿出安全的小烟花，大家一起玩。今晚的冒险湾，还是那么快乐。": {
+      "file": "f9d1bfb72f9a588e8626.mp3",
+      "book": "paw_18",
+      "group": "paw",
+      "duration": 7.752,
+      "chars": 31,
+      "qc": "decode-duration-loudness"
+    },
+    "赛车冲向旋转木马，毛毛用消防车挡住去路。": {
+      "file": "bc7ee1c9977eae96ffd2.mp3",
+      "book": "paw_19",
+      "group": "paw",
+      "duration": 5.424,
+      "chars": 20,
+      "qc": "decode-duration-loudness"
+    },
+    "赛车又滑向冰淇淋摊，阿奇飞快地拉起了警戒线。": {
+      "file": "32bae514fc1e4970a671.mp3",
+      "book": "paw_19",
+      "group": "paw",
+      "duration": 5.808,
+      "chars": 22,
+      "qc": "decode-duration-loudness"
+    },
+    "冒险湾正在举行赛车比赛，小砾的赛车突然失控了！": {
+      "file": "3549493cbaa19865b0e8.mp3",
+      "book": "paw_19",
+      "group": "paw",
+      "duration": 5.832,
+      "chars": 23,
+      "qc": "decode-duration-loudness"
+    },
+    "毛毛开着消防车赶到，喷水灭火。狗狗们保护大家，远远地站好。": {
+      "file": "a90dffbdb580fecf9535.mp3",
+      "book": "paw_18",
+      "group": "paw",
+      "duration": 7.584,
+      "chars": 29,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德马上按下平板，呼叫汪汪队。毛毛，天天，阿奇，快集合！": {
+      "file": "48662ded6a9a7f2d1113.mp3",
+      "book": "paw_18",
+      "group": "paw",
+      "duration": 7.848,
+      "chars": 28,
+      "qc": "decode-duration-loudness"
+    },
+    "火很快被扑灭了，没有一个人受伤。大家都松了一口气，拍拍手。": {
+      "file": "c0cc8d0344235b7e685b.mp3",
+      "book": "paw_18",
+      "group": "paw",
+      "duration": 7.344,
+      "chars": 29,
+      "qc": "decode-duration-loudness"
+    },
+    "天天驾驶直升机放下救生绳，套住了赛车尾部。": {
+      "file": "f9ba2f3b2177b363d417.mp3",
+      "book": "paw_19",
+      "group": "paw",
+      "duration": 5.64,
+      "chars": 21,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德指挥大家合力拉紧绳子，赛车终于慢慢减速。": {
+      "file": "b2991dba91ea744f5d3b.mp3",
+      "book": "paw_19",
+      "group": "paw",
+      "duration": 6.168,
+      "chars": 22,
+      "qc": "decode-duration-loudness"
+    },
+    "天天用直升机吊起飞碟，飞向高高的夜空。外星小朋友向汪汪队挥手告别。": {
+      "file": "19fbf778f3786aec0aab.mp3",
+      "book": "paw_20",
+      "group": "paw",
+      "duration": 8.88,
+      "chars": 33,
+      "qc": "decode-duration-loudness"
+    },
+    "毛毛轻轻走上前，用鼻子碰了碰他。外星小朋友开心地笑了，发出叮咚的声音。": {
+      "file": "62b1ba3dcfe64cc8dd73.mp3",
+      "book": "paw_20",
+      "group": "paw",
+      "duration": 8.736,
+      "chars": 35,
+      "qc": "decode-duration-loudness"
+    },
+    "外星小朋友指着远处的星星，想要回家。莱德马上呼叫天天，启动直升机帮忙。": {
+      "file": "6134bb22543cab70bfe2.mp3",
+      "book": "paw_20",
+      "group": "paw",
+      "duration": 9.288,
+      "chars": 35,
+      "qc": "decode-duration-loudness"
+    },
+    "赛车安全停下，小砾开心地说：“谢谢汪汪队！”": {
+      "file": "5e9ab933584bfae22b34.mp3",
+      "book": "paw_19",
+      "group": "paw",
+      "duration": 5.208,
+      "chars": 22,
+      "qc": "decode-duration-loudness"
+    },
+    "一天晚上，冒险湾的天空中闪过一道亮光。一架小小的飞碟降落在瞭望塔附近。": {
+      "file": "d041694e358ef7310ea4.mp3",
+      "book": "paw_20",
+      "group": "paw",
+      "duration": 9.192,
+      "chars": 35,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德带着汪汪队赶来，发现了一位可爱的外星小朋友。他全身闪闪发光，看起来有点害怕。": {
+      "file": "2543c86ecfe2c17acc19.mp3",
+      "book": "paw_20",
+      "group": "paw",
+      "duration": 9.816,
+      "chars": 40,
+      "qc": "decode-duration-loudness"
+    },
+    "飞碟消失在了星星里，汪汪队仰头望着天空。这真是最奇妙的一次救援！": {
+      "file": "14c1f5c8758dfa1ab680.mp3",
+      "book": "paw_20",
+      "group": "paw",
+      "duration": 8.064,
+      "chars": 32,
+      "qc": "decode-duration-loudness"
+    },
+    "今天是佩奇第一天上幼儿园。她背着小书包，有点紧张。妈妈拉着她的手说：“别担心，会很好玩的。”": {
+      "file": "ca78fef0b1fd26b1c464.mp3",
+      "book": "peppa_01",
+      "group": "peppa",
+      "duration": 11.256,
+      "chars": 46,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇和乔治在客厅里，猪妈妈打开了音乐。大家都开心地拍手。": {
+      "file": "32d361d24673a8ebfc3f.mp3",
+      "book": "peppa_03",
+      "group": "peppa",
+      "duration": 7.392,
+      "chars": 28,
+      "qc": "decode-duration-loudness"
+    },
+    "大家围坐一圈，羚羊老师弹起吉他。佩奇跟着唱起歌，还拍起了小手。": {
+      "file": "da329f6579baf03aea6c.mp3",
+      "book": "peppa_01",
+      "group": "peppa",
+      "duration": 7.92,
+      "chars": 31,
+      "qc": "decode-duration-loudness"
+    },
+    "放学时，妈妈来接佩奇。佩奇扑进妈妈怀里：“幼儿园真好玩，明天我还要来！”": {
+      "file": "6df2ffff6f58e8a10d61.mp3",
+      "book": "peppa_01",
+      "group": "peppa",
+      "duration": 8.952,
+      "chars": 36,
+      "qc": "decode-duration-loudness"
+    },
+    "午餐时间到了，佩奇和小伙伴们一起吃面包和苹果。她学会了自己收拾餐盘。": {
+      "file": "843cda3655fda958e8ce.mp3",
+      "book": "peppa_01",
+      "group": "peppa",
+      "duration": 8.856,
+      "chars": 34,
+      "qc": "decode-duration-loudness"
+    },
+    "小羊苏西跑过来，拉着佩奇的手。“我们一起玩积木吧！”佩奇开心地笑了。": {
+      "file": "f1da26694835ab453ca6.mp3",
+      "book": "peppa_01",
+      "group": "peppa",
+      "duration": 8.376,
+      "chars": 34,
+      "qc": "decode-duration-loudness"
+    },
+    "猪爸爸拿起吉他，弹出好听的曲子。佩奇唱起歌来，啦啦啦，真好听。": {
+      "file": "e142139dd86edeb43c6b.mp3",
+      "book": "peppa_03",
+      "group": "peppa",
+      "duration": 8.064,
+      "chars": 31,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇跳起舞来，她转圈圈，像一只小蝴蝶。乔治也跟着跳，跳得高高的。": {
+      "file": "1db3b1ccb8205e6e9f47.mp3",
+      "book": "peppa_03",
+      "group": "peppa",
+      "duration": 8.28,
+      "chars": 32,
+      "qc": "decode-duration-loudness"
+    },
+    "教室里，羚羊老师笑眯眯地迎接佩奇。“欢迎你，佩奇！”她带佩奇认识其他小朋友。": {
+      "file": "d0799ed5d453998e92f1.mp3",
+      "book": "peppa_01",
+      "group": "peppa",
+      "duration": 10.104,
+      "chars": 38,
+      "qc": "decode-duration-loudness"
+    },
+    "小羊苏西来了，她敲起了小鼓。咚咚咚，大家一起合奏。": {
+      "file": "64a0552db9ae9d8ec3e1.mp3",
+      "book": "peppa_03",
+      "group": "peppa",
+      "duration": 6.624,
+      "chars": 25,
+      "qc": "decode-duration-loudness"
+    },
+    "乔治画了一辆小恐龙车。丹尼画了一架飞机。": {
+      "file": "937ba2921773cf8b2746.mp3",
+      "book": "peppa_04",
+      "group": "peppa",
+      "duration": 5.328,
+      "chars": 20,
+      "qc": "decode-duration-loudness"
+    },
+    "老师笑着说：“每个人都是小画家！”大家开心地拍手。": {
+      "file": "a5922ba3c84e1247df57.mp3",
+      "book": "peppa_04",
+      "group": "peppa",
+      "duration": 6.048,
+      "chars": 25,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇画了一朵大大的太阳花。苏西画了一只可爱的蝴蝶。": {
+      "file": "3313b924d7add36ca2f0.mp3",
+      "book": "peppa_04",
+      "group": "peppa",
+      "duration": 6.336,
+      "chars": 25,
+      "qc": "decode-duration-loudness"
+    },
+    "天黑了，音乐派对结束了。佩奇说：“唱歌跳舞真开心，下次再一起玩！”": {
+      "file": "21a28d7f378c635be2ff.mp3",
+      "book": "peppa_03",
+      "group": "peppa",
+      "duration": 8.352,
+      "chars": 33,
+      "qc": "decode-duration-loudness"
+    },
+    "老师把画贴在墙上。每一幅画都很好看。": {
+      "file": "85290b3cb7e3dc2ac072.mp3",
+      "book": "peppa_04",
+      "group": "peppa",
+      "duration": 5.352,
+      "chars": 18,
+      "qc": "decode-duration-loudness"
+    },
+    "小兔瑞贝卡画了一篮子胡萝卜。大家都画得很认真。": {
+      "file": "41eab113cf270542f7d8.mp3",
+      "book": "peppa_04",
+      "group": "peppa",
+      "duration": 6.144,
+      "chars": 23,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇和朋友们在草地上画画。老师说：“今天我们来比赛，画最喜欢的东西。”": {
+      "file": "2e27ca57567ab1186e9f.mp3",
+      "book": "peppa_04",
+      "group": "peppa",
+      "duration": 8.52,
+      "chars": 35,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇教乔治跳扭扭舞，扭扭屁股，摇摇手。乔治笑得咯咯咯。": {
+      "file": "a6fd9c019b592a924eac.mp3",
+      "book": "peppa_03",
+      "group": "peppa",
+      "duration": 7.656,
+      "chars": 27,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇和乔治在花园里。他们想玩传球游戏。": {
+      "file": "3901a1e0958e47e712f6.mp3",
+      "book": "peppa_05",
+      "group": "peppa",
+      "duration": 5.424,
+      "chars": 19,
+      "qc": "decode-duration-loudness"
+    },
+    "大家把球拿出来，洗干净。然后继续传球，直到太阳下山。": {
+      "file": "11242454875b273c6ab4.mp3",
+      "book": "peppa_05",
+      "group": "peppa",
+      "duration": 7.056,
+      "chars": 26,
+      "qc": "decode-duration-loudness"
+    },
+    "球不小心滚进了泥坑。佩奇说：“没关系，我们一起踩泥坑吧！”": {
+      "file": "45c069b81f5029a6afda.mp3",
+      "book": "peppa_05",
+      "group": "peppa",
+      "duration": 6.96,
+      "chars": 29,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇把球传给乔治。乔治用鼻子顶球，球飞起来了。": {
+      "file": "1683f1f3afd548ac6ee8.mp3",
+      "book": "peppa_05",
+      "group": "peppa",
+      "duration": 6.432,
+      "chars": 23,
+      "qc": "decode-duration-loudness"
+    },
+    "猪妈妈端来了美味的意大利面。佩奇开心地拍手。": {
+      "file": "2554975d0d8a60286953.mp3",
+      "book": "peppa_06",
+      "group": "peppa",
+      "duration": 5.88,
+      "chars": 22,
+      "qc": "decode-duration-loudness"
+    },
+    "妈妈猪把球传给佩奇。佩奇跳起来接住球，真开心！": {
+      "file": "0d684a7ca3a16e9eabf2.mp3",
+      "book": "peppa_05",
+      "group": "peppa",
+      "duration": 6.48,
+      "chars": 23,
+      "qc": "decode-duration-loudness"
+    },
+    "叮叮叮！午餐时间到了。佩奇和乔治好饿呀！": {
+      "file": "9c492d356929da023d9d.mp3",
+      "book": "peppa_06",
+      "group": "peppa",
+      "duration": 6.168,
+      "chars": 20,
+      "qc": "decode-duration-loudness"
+    },
+    "乔治用叉子卷起面条，呼噜呼噜吃得香。": {
+      "file": "d4c186129cabcd4d04dc.mp3",
+      "book": "peppa_06",
+      "group": "peppa",
+      "duration": 4.656,
+      "chars": 18,
+      "qc": "decode-duration-loudness"
+    },
+    "爸爸猪也来玩。他传给佩奇，佩奇传给妈妈。大家笑哈哈。": {
+      "file": "0c570749954347962e93.mp3",
+      "book": "peppa_05",
+      "group": "peppa",
+      "duration": 7.44,
+      "chars": 26,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇说：“乔治，要慢慢吃哦！”乔治点点头。": {
+      "file": "40ca32537048bceafd8b.mp3",
+      "book": "peppa_06",
+      "group": "peppa",
+      "duration": 5.736,
+      "chars": 21,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇戴上玩具听诊器，听听乔治的胸口。她说：“你有点咳嗽。”": {
+      "file": "2ab3ff20194a58d7498a.mp3",
+      "book": "peppa_07",
+      "group": "peppa",
+      "duration": 7.224,
+      "chars": 29,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇拿出玩具体温计，给乔治量一量。“体温正常，不用担心。”": {
+      "file": "4417104673a3573f9e4d.mp3",
+      "book": "peppa_07",
+      "group": "peppa",
+      "duration": 7.344,
+      "chars": 29,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇和乔治在玩小医生游戏。佩奇当医生，乔治当病人。": {
+      "file": "ce22ea95d0f40e495188.mp3",
+      "book": "peppa_07",
+      "group": "peppa",
+      "duration": 7.104,
+      "chars": 25,
+      "qc": "decode-duration-loudness"
+    },
+    "妈妈猪进来问：“小医生，我能看病吗？”佩奇高兴地说：“当然可以！”": {
+      "file": "3cd18b73cc12b2460f97.mp3",
+      "book": "peppa_07",
+      "group": "peppa",
+      "duration": 7.512,
+      "chars": 33,
+      "qc": "decode-duration-loudness"
+    },
+    "吃完午餐，佩奇和乔治吃水果。甜甜的苹果真好吃！": {
+      "file": "c9ba0a74bc8d8dc592cf.mp3",
+      "book": "peppa_06",
+      "group": "peppa",
+      "duration": 6.576,
+      "chars": 23,
+      "qc": "decode-duration-loudness"
+    },
+    "午餐结束了，大家一起收拾桌子。真是快乐的一餐！": {
+      "file": "f4ae73f35da2b49214b6.mp3",
+      "book": "peppa_06",
+      "group": "peppa",
+      "duration": 6.12,
+      "chars": 23,
+      "qc": "decode-duration-loudness"
+    },
+    "乔治张开嘴巴，佩奇用小电筒照一照。“啊——喉咙有点红。”": {
+      "file": "c5b1765b2ec35375f211.mp3",
+      "book": "peppa_07",
+      "group": "peppa",
+      "duration": 6.96,
+      "chars": 27,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇给妈妈猪贴上可爱的创可贴。大家一起开心地笑了。": {
+      "file": "96039d1eaccfb26e2706.mp3",
+      "book": "peppa_07",
+      "group": "peppa",
+      "duration": 6.768,
+      "chars": 25,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇和乔治在玩积木。他们想搭一个高高的房子。": {
+      "file": "04e58b5da44702a9f7e8.mp3",
+      "book": "peppa_08",
+      "group": "peppa",
+      "duration": 5.952,
+      "chars": 22,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇把积木一块一块叠起来。乔治也来帮忙。": {
+      "file": "808acd23af8aece812b5.mp3",
+      "book": "peppa_08",
+      "group": "peppa",
+      "duration": 5.472,
+      "chars": 20,
+      "qc": "decode-duration-loudness"
+    },
+    "哎呀，房子倒了！积木撒了一地。": {
+      "file": "53087e64bade4fbfbbb2.mp3",
+      "book": "peppa_08",
+      "group": "peppa",
+      "duration": 4.44,
+      "chars": 15,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇兴奋地爬上楼梯，她说：“我要滑下来啦！”乔治在下面开心地拍手。": {
+      "file": "d70df6aa9428f47e332f.mp3",
+      "book": "peppa_09",
+      "group": "peppa",
+      "duration": 8.064,
+      "chars": 33,
+      "qc": "decode-duration-loudness"
+    },
+    "房子搭好了！佩奇和乔治开心地拍手。妈妈猪也夸他们真棒。": {
+      "file": "de481ef0483e80f52f49.mp3",
+      "book": "peppa_08",
+      "group": "peppa",
+      "duration": 7.776,
+      "chars": 27,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇说：“没关系，我们再试一次。”他们把积木捡起来。": {
+      "file": "7ad0473b2259d49646d6.mp3",
+      "book": "peppa_08",
+      "group": "peppa",
+      "duration": 6.264,
+      "chars": 26,
+      "qc": "decode-duration-loudness"
+    },
+    "这次他们搭得稳稳的。房子越搭越高，真漂亮！": {
+      "file": "a16c27c1da763d92bf5e.mp3",
+      "book": "peppa_08",
+      "group": "peppa",
+      "duration": 5.976,
+      "chars": 21,
+      "qc": "decode-duration-loudness"
+    },
+    "今天阳光真好，佩奇和乔治去公园玩。公园里有一个又高又大的滑滑梯。": {
+      "file": "ebb9811a9bb2c9977dd1.mp3",
+      "book": "peppa_09",
+      "group": "peppa",
+      "duration": 8.064,
+      "chars": 32,
+      "qc": "decode-duration-loudness"
+    },
+    "小羊苏西也来了，大家一起排队滑滑梯。一个接一个，真有趣！": {
+      "file": "ee1b2630c60c4bf30b7d.mp3",
+      "book": "peppa_09",
+      "group": "peppa",
+      "duration": 7.536,
+      "chars": 28,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇从滑梯上滑下来，风在耳边呼呼响。她笑得合不拢嘴。": {
+      "file": "3ee502164f8162ae59c3.mp3",
+      "book": "peppa_09",
+      "group": "peppa",
+      "duration": 6.936,
+      "chars": 26,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇和乔治坐在地毯上，等着爸爸讲故事。爸爸拿来一本大大的故事书。": {
+      "file": "8b58d96dde40a4349d45.mp3",
+      "book": "peppa_10",
+      "group": "peppa",
+      "duration": 8.28,
+      "chars": 32,
+      "qc": "decode-duration-loudness"
+    },
+    "爸爸翻开书，清清嗓子说：“从前，有一只勇敢的小恐龙。”乔治高兴地拍手。": {
+      "file": "d7291d0b0f3eadc24aab.mp3",
+      "book": "peppa_10",
+      "group": "peppa",
+      "duration": 8.664,
+      "chars": 35,
+      "qc": "decode-duration-loudness"
+    },
+    "乔治鼓起勇气滑下来，大家都为他鼓掌。滑滑梯真好玩，他们玩得满头大汗。": {
+      "file": "11f1a05c482a62e19381.mp3",
+      "book": "peppa_09",
+      "group": "peppa",
+      "duration": 8.664,
+      "chars": 34,
+      "qc": "decode-duration-loudness"
+    },
+    "轮到乔治了，他有点害怕。佩奇张开手臂说：“别怕，乔治，我在下面等你！”": {
+      "file": "bbe6cefaade1d49603b3.mp3",
+      "book": "peppa_09",
+      "group": "peppa",
+      "duration": 8.808,
+      "chars": 35,
+      "qc": "decode-duration-loudness"
+    },
+    "小恐龙走啊走，遇到了会说话的大树。大树说：“你要去哪里呀？”": {
+      "file": "04fe8baeadb375512514.mp3",
+      "book": "peppa_10",
+      "group": "peppa",
+      "duration": 7.104,
+      "chars": 30,
+      "qc": "decode-duration-loudness"
+    },
+    "故事里，小恐龙帮助了小鸟，大家都为它鼓掌。佩奇说：“我也要帮助朋友！”": {
+      "file": "14033d315a6cbaf2440e.mp3",
+      "book": "peppa_10",
+      "group": "peppa",
+      "duration": 8.232,
+      "chars": 35,
+      "qc": "decode-duration-loudness"
+    },
+    "爸爸用粗粗的声音模仿大树，佩奇和乔治咯咯笑。猪妈妈也坐过来一起听。": {
+      "file": "ea929d09d5c586bf93bb.mp3",
+      "book": "peppa_10",
+      "group": "peppa",
+      "duration": 8.808,
+      "chars": 33,
+      "qc": "decode-duration-loudness"
+    },
+    "故事讲完了，爸爸合上书。佩奇和乔治给了爸爸一个大大的拥抱，说：“再讲一个吧！”": {
+      "file": "e1171ba62d1fece73646.mp3",
+      "book": "peppa_10",
+      "group": "peppa",
+      "duration": 9.192,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇和乔治想一起做手工。他们找来了彩纸和胶水。": {
+      "file": "0641f93ffbb161913e7a.mp3",
+      "book": "peppa_11",
+      "group": "peppa",
+      "duration": 6.384,
+      "chars": 23,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇和乔治在花园里玩。他们看到好多花朵。": {
+      "file": "3897d18d67473b0a5eec.mp3",
+      "book": "peppa_12",
+      "group": "peppa",
+      "duration": 5.736,
+      "chars": 20,
+      "qc": "decode-duration-loudness"
+    },
+    "爸爸拿来亮片和毛线，说：“还可以再装饰一下。”": {
+      "file": "ec81c47a87e6303d9bd5.mp3",
+      "book": "peppa_11",
+      "group": "peppa",
+      "duration": 5.112,
+      "chars": 23,
+      "qc": "decode-duration-loudness"
+    },
+    "乔治剪不好，有点着急。佩奇说：“别急，我来帮你。”": {
+      "file": "fa0835e1c4d28f1d9f88.mp3",
+      "book": "peppa_11",
+      "group": "peppa",
+      "duration": 6.6,
+      "chars": 25,
+      "qc": "decode-duration-loudness"
+    },
+    "手工完成啦！一幅闪闪发光的星星画，大家都好开心。": {
+      "file": "6e8a38881e737b20bcb3.mp3",
+      "book": "peppa_11",
+      "group": "peppa",
+      "duration": 6.336,
+      "chars": 24,
+      "qc": "decode-duration-loudness"
+    },
+    "妈妈说：“我们来剪小星星吧。”佩奇小心地拿起剪刀。": {
+      "file": "224b2f6a9f8205cf2bde.mp3",
+      "book": "peppa_11",
+      "group": "peppa",
+      "duration": 6.024,
+      "chars": 25,
+      "qc": "decode-duration-loudness"
+    },
+    "他们把小星星贴在蓝色卡纸上，像夜晚的天空。": {
+      "file": "3c61d7c8493df505bdaa.mp3",
+      "book": "peppa_11",
+      "group": "peppa",
+      "duration": 5.448,
+      "chars": 21,
+      "qc": "decode-duration-loudness"
+    },
+    "妈妈猪问：“这里有几朵花呢？”佩奇开始数：“一、二、三。”": {
+      "file": "a19113f157be8c8187f1.mp3",
+      "book": "peppa_12",
+      "group": "peppa",
+      "duration": 7.584,
+      "chars": 29,
+      "qc": "decode-duration-loudness"
+    },
+    "乔治也来数：“一、二、三、四、五！”大家都鼓掌。": {
+      "file": "722091618fa27fa76547.mp3",
+      "book": "peppa_12",
+      "group": "peppa",
+      "duration": 6.888,
+      "chars": 24,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇和乔治在房间里，想玩一个新游戏。佩奇说：“我们来玩角色扮演吧！我可以当医生。”": {
+      "file": "563c606fbd3a6f0bfb51.mp3",
+      "book": "peppa_13",
+      "group": "peppa",
+      "duration": 9.936,
+      "chars": 41,
+      "qc": "decode-duration-loudness"
+    },
+    "乔治找来玩具听诊器，佩奇戴上白帽子。她温柔地说：“乔治病人，请张开嘴，让我看看你的喉咙。”": {
+      "file": "a119d9ecf30ddc5211cc.mp3",
+      "book": "peppa_13",
+      "group": "peppa",
+      "duration": 10.896,
+      "chars": 45,
+      "qc": "decode-duration-loudness"
+    },
+    "爸爸猪拿出水果。“我们来数水果吧！”佩奇数苹果：“一、二、三、四。”": {
+      "file": "304ac0eb539eaa38cb32.mp3",
+      "book": "peppa_12",
+      "group": "peppa",
+      "duration": 8.856,
+      "chars": 34,
+      "qc": "decode-duration-loudness"
+    },
+    "这时，妈妈猪走进来，好奇地问：“小医生，我能看病吗？”佩奇高兴地点点头，让妈妈坐在小椅子上。": {
+      "file": "f88d9d2c3ff9854dcb57.mp3",
+      "book": "peppa_13",
+      "group": "peppa",
+      "duration": 11.016,
+      "chars": 46,
+      "qc": "decode-duration-loudness"
+    },
+    "乔治数香蕉：“一、二。”佩奇帮他：“三、四、五！”乔治开心地笑。": {
+      "file": "9882f26ee2346cc953f2.mp3",
+      "book": "peppa_12",
+      "group": "peppa",
+      "duration": 8.784,
+      "chars": 32,
+      "qc": "decode-duration-loudness"
+    },
+    "大家一起数：“一、二、三、四、五！”佩奇学会了数数，真开心。": {
+      "file": "24088ceca8960a0077cd.mp3",
+      "book": "peppa_12",
+      "group": "peppa",
+      "duration": 8.256,
+      "chars": 30,
+      "qc": "decode-duration-loudness"
+    },
+    "爸爸猪也来了，他假装摔倒了。乔治立刻跑去拿绷带，佩奇哈哈笑：“别担心，乔治护士会帮你包扎！”": {
+      "file": "50fac4c45eee39e8313c.mp3",
+      "book": "peppa_13",
+      "group": "peppa",
+      "duration": 11.184,
+      "chars": 46,
+      "qc": "decode-duration-loudness"
+    },
+    "妈妈猪假装咳嗽，佩奇认真听她的心跳。然后说：“你需要多喝温水，好好休息，就会好起来。”": {
+      "file": "f5d5ff11433c429ff7eb.mp3",
+      "book": "peppa_13",
+      "group": "peppa",
+      "duration": 10.248,
+      "chars": 43,
+      "qc": "decode-duration-loudness"
+    },
+    "最后，全家一起玩老师游戏。佩奇当老师，教大家唱字母歌，房间里充满了欢笑声。": {
+      "file": "b3e84c60a00f52a6acc1.mp3",
+      "book": "peppa_13",
+      "group": "peppa",
+      "duration": 9.672,
+      "chars": 37,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇和朋友们排成一排，一边跳舞一边敲乐器。乔治变成小指挥，小手挥来挥去。": {
+      "file": "af95dd9e8c9d039b616c.mp3",
+      "book": "peppa_14",
+      "group": "peppa",
+      "duration": 9.672,
+      "chars": 36,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇拿起小鼓咚咚敲，乔治摇着铃铛叮叮响。大家一起合奏，声音真好听。": {
+      "file": "cf64598a0f0d01990dea.mp3",
+      "book": "peppa_14",
+      "group": "peppa",
+      "duration": 8.856,
+      "chars": 33,
+      "qc": "decode-duration-loudness"
+    },
+    "羚羊老师教大家拍拍手，跟着节奏走。佩奇拍得很认真，乔治也扭起了小屁股。": {
+      "file": "164ec73e7b9c5a16936d.mp3",
+      "book": "peppa_14",
+      "group": "peppa",
+      "duration": 9.072,
+      "chars": 35,
+      "qc": "decode-duration-loudness"
+    },
+    "羚羊老师弹起吉他，大家跟着唱起歌。佩奇唱得很大声，小羊苏西也唱得笑眯眯。": {
+      "file": "7ef58c5420d944ee2775.mp3",
+      "book": "peppa_14",
+      "group": "peppa",
+      "duration": 9.168,
+      "chars": 36,
+      "qc": "decode-duration-loudness"
+    },
+    "今天，佩奇和乔治去幼儿园上音乐课。羚羊老师拿出小鼓和摇铃，大家都很开心。": {
+      "file": "cb31162af27d4ae5ce38.mp3",
+      "book": "peppa_14",
+      "group": "peppa",
+      "duration": 9.552,
+      "chars": 36,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇和朋友们在花园里玩。佩奇说：“我们来玩动物模仿游戏吧！”": {
+      "file": "c4e90733573bb2049d3b.mp3",
+      "book": "peppa_15",
+      "group": "peppa",
+      "duration": 7.248,
+      "chars": 30,
+      "qc": "decode-duration-loudness"
+    },
+    "音乐课结束了，大家都说真好玩。佩奇和乔治回家，还哼着刚学的歌给妈妈听。": {
+      "file": "061c92c17d1dfb50b38f.mp3",
+      "book": "peppa_14",
+      "group": "peppa",
+      "duration": 8.928,
+      "chars": 35,
+      "qc": "decode-duration-loudness"
+    },
+    "小羊苏西先来，她学小羊叫：“咩咩咩！”大家都猜对了，是小羊。": {
+      "file": "872d2996ea7ac70d54cf.mp3",
+      "book": "peppa_15",
+      "group": "peppa",
+      "duration": 7.584,
+      "chars": 30,
+      "qc": "decode-duration-loudness"
+    },
+    "小狗丹尼跳出来，他学小狗叫：“汪汪汪！”还摇摇尾巴，真可爱。": {
+      "file": "745d6f4451d70cd89e4c.mp3",
+      "book": "peppa_15",
+      "group": "peppa",
+      "duration": 7.536,
+      "chars": 30,
+      "qc": "decode-duration-loudness"
+    },
+    "小猫坎迪轻轻走，她学小猫叫：“喵喵喵！”还伸出爪子洗脸呢。": {
+      "file": "fc71ca32056cb0abc7d3.mp3",
+      "book": "peppa_15",
+      "group": "peppa",
+      "duration": 7.464,
+      "chars": 29,
+      "qc": "decode-duration-loudness"
+    },
+    "最后佩奇学小猪叫：“哼哼哼！”大家都说佩奇模仿得最像了。": {
+      "file": "c1815744de5e30223470.mp3",
+      "book": "peppa_15",
+      "group": "peppa",
+      "duration": 7.368,
+      "chars": 28,
+      "qc": "decode-duration-loudness"
+    },
+    "小兔瑞贝卡蹦蹦跳，她学小兔跳，还竖起长耳朵，大家都笑了。": {
+      "file": "c2e8d52c5a4510d04a19.mp3",
+      "book": "peppa_15",
+      "group": "peppa",
+      "duration": 6.984,
+      "chars": 28,
+      "qc": "decode-duration-loudness"
+    },
+    "他们一起玩恐龙，你追我赶，笑声不断。": {
+      "file": "28483e7537a8e211bfe5.mp3",
+      "book": "peppa_16",
+      "group": "peppa",
+      "duration": 4.56,
+      "chars": 18,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇想了想，把恐龙递给乔治。乔治破涕为笑。": {
+      "file": "579864b9df7bb13ba1fb.mp3",
+      "book": "peppa_16",
+      "group": "peppa",
+      "duration": 6.0,
+      "chars": 21,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇抱紧恐龙说：“这是我的，不给你。”乔治伤心地哭了。": {
+      "file": "ec88d33d067a92cb83b5.mp3",
+      "book": "peppa_16",
+      "group": "peppa",
+      "duration": 6.696,
+      "chars": 27,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇在玩她的小恐龙。乔治跑过来，也想玩一玩。": {
+      "file": "77d6613825aacfc1470b.mp3",
+      "book": "peppa_16",
+      "group": "peppa",
+      "duration": 5.904,
+      "chars": 22,
+      "qc": "decode-duration-loudness"
+    },
+    "猪妈妈走过来，温柔地说：“你们可以轮流玩呀。”": {
+      "file": "2e237d6f9923cce56976.mp3",
+      "book": "peppa_16",
+      "group": "peppa",
+      "duration": 4.944,
+      "chars": 23,
+      "qc": "decode-duration-loudness"
+    },
+    "分享真好玩，大家都开心！佩奇和乔治抱在了一起。": {
+      "file": "839d5859e259c49e6082.mp3",
+      "book": "peppa_16",
+      "group": "peppa",
+      "duration": 6.384,
+      "chars": 23,
+      "qc": "decode-duration-loudness"
+    },
+    "下雨了，佩奇和乔治不能出去玩。他们在客厅里觉得有点无聊。": {
+      "file": "c6bcfeec9edc26d87cc1.mp3",
+      "book": "peppa_17",
+      "group": "peppa",
+      "duration": 7.296,
+      "chars": 28,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇画了一个窗户，乔治画了一道门。纸箱变成了小房子！": {
+      "file": "6b7b1c9066771bc0e5cd.mp3",
+      "book": "peppa_17",
+      "group": "peppa",
+      "duration": 6.552,
+      "chars": 26,
+      "qc": "decode-duration-loudness"
+    },
+    "雨停了，太阳出来了。佩奇说：“雨天在家里也很好玩！”": {
+      "file": "d3c8d5b585b25bfd0586.mp3",
+      "book": "peppa_17",
+      "group": "peppa",
+      "duration": 6.36,
+      "chars": 26,
+      "qc": "decode-duration-loudness"
+    },
+    "第一个比赛是跑步。佩奇和小羊苏西一起跑，乔治在旁边加油。": {
+      "file": "486d670652639ea9b8ed.mp3",
+      "book": "peppa_18",
+      "group": "peppa",
+      "duration": 7.464,
+      "chars": 28,
+      "qc": "decode-duration-loudness"
+    },
+    "接下来是跳远。小兔瑞贝卡跳得最远，大家都为她鼓掌。": {
+      "file": "1d7f4ad991df307d695f.mp3",
+      "book": "peppa_18",
+      "group": "peppa",
+      "duration": 6.72,
+      "chars": 25,
+      "qc": "decode-duration-loudness"
+    },
+    "今天天气真好，佩奇和朋友们要开运动会。大家穿上运动服，来到草地上。": {
+      "file": "6ce9f5bef08a9de36564.mp3",
+      "book": "peppa_18",
+      "group": "peppa",
+      "duration": 8.712,
+      "chars": 33,
+      "qc": "decode-duration-loudness"
+    },
+    "妈妈猪拿来一个大纸箱。她说：“我们来做点好玩的！”": {
+      "file": "75d744b75d3f0e4b848b.mp3",
+      "book": "peppa_17",
+      "group": "peppa",
+      "duration": 5.832,
+      "chars": 25,
+      "qc": "decode-duration-loudness"
+    },
+    "爸爸猪也想进去，可是房子太小了！他把纸箱举起来，大家笑成一团。": {
+      "file": "b5e136e07016e34447e7.mp3",
+      "book": "peppa_17",
+      "group": "peppa",
+      "duration": 7.608,
+      "chars": 31,
+      "qc": "decode-duration-loudness"
+    },
+    "他们钻进小房子里喝茶。佩奇假装是妈妈，乔治假装是爸爸。": {
+      "file": "554bedc68635e2c16235.mp3",
+      "book": "peppa_17",
+      "group": "peppa",
+      "duration": 7.104,
+      "chars": 27,
+      "qc": "decode-duration-loudness"
+    },
+    "接力赛开始了！爸爸猪和妈妈猪也加入，大家跑得真开心。": {
+      "file": "bd000c527892b4772935.mp3",
+      "book": "peppa_18",
+      "group": "peppa",
+      "duration": 6.84,
+      "chars": 26,
+      "qc": "decode-duration-loudness"
+    },
+    "最后是拔河比赛。小朋友一队，大人一队，大家一起用力拉绳子。": {
+      "file": "0ed9334953e5b1ec7a97.mp3",
+      "book": "peppa_18",
+      "group": "peppa",
+      "duration": 7.344,
+      "chars": 29,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇和乔治饿了。他们想自己做三明治。": {
+      "file": "a2961d71e6b9c3a5e918.mp3",
+      "book": "peppa_19",
+      "group": "peppa",
+      "duration": 4.992,
+      "chars": 18,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇小心地涂上黄油。乔治放上生菜。": {
+      "file": "2033946fee2137272a6d.mp3",
+      "book": "peppa_19",
+      "group": "peppa",
+      "duration": 5.136,
+      "chars": 17,
+      "qc": "decode-duration-loudness"
+    },
+    "妈妈猪拿出了面包、生菜和番茄。": {
+      "file": "3450f2255e5161653c82.mp3",
+      "book": "peppa_19",
+      "group": "peppa",
+      "duration": 4.2,
+      "chars": 15,
+      "qc": "decode-duration-loudness"
+    },
+    "再加上一片奶酪和番茄。三明治越堆越高啦！": {
+      "file": "068d1fe43c8096823a97.mp3",
+      "book": "peppa_19",
+      "group": "peppa",
+      "duration": 5.568,
+      "chars": 20,
+      "qc": "decode-duration-loudness"
+    },
+    "运动会结束了，每个人都得到了一枚奖牌。佩奇说：“运动真快乐！”": {
+      "file": "fd146e170f5daf890b80.mp3",
+      "book": "peppa_18",
+      "group": "peppa",
+      "duration": 7.56,
+      "chars": 31,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇和乔治大口吃三明治。真是太好吃了！": {
+      "file": "a9ccafae2b56d791c10b.mp3",
+      "book": "peppa_19",
+      "group": "peppa",
+      "duration": 5.688,
+      "chars": 19,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇和朋友们要举办一场告别演出。大家都准备了精彩的节目。": {
+      "file": "dcc81eab5770b06c1fd6.mp3",
+      "book": "peppa_20",
+      "group": "peppa",
+      "duration": 7.152,
+      "chars": 28,
+      "qc": "decode-duration-loudness"
+    },
+    "妈妈猪帮忙把三明治切成三角形。": {
+      "file": "1664bebfcf18215b2353.mp3",
+      "book": "peppa_19",
+      "group": "peppa",
+      "duration": 4.248,
+      "chars": 15,
+      "qc": "decode-duration-loudness"
+    },
+    "小羊苏西跳了一段芭蕾舞。她转了一圈又一圈。": {
+      "file": "124f0b21d7a69141726b.mp3",
+      "book": "peppa_20",
+      "group": "peppa",
+      "duration": 5.76,
+      "chars": 21,
+      "qc": "decode-duration-loudness"
+    },
+    "演出结束了，大家都说再见。明年还要一起玩哦！": {
+      "file": "e8324152713dc5764288.mp3",
+      "book": "peppa_20",
+      "group": "peppa",
+      "duration": 5.856,
+      "chars": 22,
+      "qc": "decode-duration-loudness"
+    },
+    "小狗丹尼敲起了小鼓，咚咚咚。大家跟着节奏拍手。": {
+      "file": "6a3f6875d8d1c122e7c7.mp3",
+      "book": "peppa_20",
+      "group": "peppa",
+      "duration": 6.264,
+      "chars": 23,
+      "qc": "decode-duration-loudness"
+    },
+    "最后，大家一起唱了一首歌。歌声又响又快乐。": {
+      "file": "fffa3629c2e056399b6f.mp3",
+      "book": "peppa_20",
+      "group": "peppa",
+      "duration": 5.88,
+      "chars": 21,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇表演了吹泡泡。泡泡飘得高高的，真漂亮。": {
+      "file": "98be5041d18ca392321f.mp3",
+      "book": "peppa_20",
+      "group": "peppa",
+      "duration": 5.952,
+      "chars": 21,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇问：“爸爸，你为什么不去种胡萝卜了？”猪爸爸说：“我等着兔子自己来呢，这样多省力气呀！”": {
+      "file": "b7400343e8af9d68d4a4.mp3",
+      "book": "peppa_idiom_01",
+      "group": "peppa",
+      "duration": 10.176,
+      "chars": 46,
+      "qc": "decode-duration-loudness"
+    },
+    "从那天起，猪爸爸再也不去种胡萝卜了。他每天坐在树桩旁边，等着第二只兔子撞上来。": {
+      "file": "477c6e249ae3b00c7b18.mp3",
+      "book": "peppa_idiom_01",
+      "group": "peppa",
+      "duration": 9.744,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "突然，一只小兔子慌慌张张地冲过来，一头撞在了树桩上。猪爸爸开心地捡起兔子，说：“今天的运气真好！”": {
+      "file": "92724f077d8a9c27596d.mp3",
+      "book": "peppa_idiom_01",
+      "group": "peppa",
+      "duration": 11.52,
+      "chars": 49,
+      "qc": "decode-duration-loudness"
+    },
+    "猪爸爸在花园里种胡萝卜，他累得满头大汗。佩奇和乔治跑过来，想帮爸爸一起干活。": {
+      "file": "bd471c61a3cfec114041.mp3",
+      "book": "peppa_idiom_01",
+      "group": "peppa",
+      "duration": 9.72,
+      "chars": 38,
+      "qc": "decode-duration-loudness"
+    },
+    "日子一天天过去，再也没有兔子撞到树桩上。猪爸爸的胡萝卜地却长满了杂草，一个胡萝卜都没剩下。": {
+      "file": "42e68708668fd7447c8e.mp3",
+      "book": "peppa_idiom_01",
+      "group": "peppa",
+      "duration": 10.608,
+      "chars": 45,
+      "qc": "decode-duration-loudness"
+    },
+    "猪爸爸难为情地说：“我明白了，不能只想着靠运气，还是要踏踏实实地劳动。”佩奇和乔治拉着爸爸的手，一起去重新种胡萝卜。": {
+      "file": "037b5955bb4f08497426.mp3",
+      "book": "peppa_idiom_01",
+      "group": "peppa",
+      "duration": 13.488,
+      "chars": 58,
+      "qc": "decode-duration-loudness"
+    },
+    "春天到了，猪爸爸带着佩奇和乔治在花园里种下了一排小幼苗。佩奇轻轻地给它们浇水，希望它们快快长大。": {
+      "file": "ae2b305786eca1e0ec00.mp3",
+      "book": "peppa_idiom_02",
+      "group": "peppa",
+      "duration": 12.24,
+      "chars": 48,
+      "qc": "decode-duration-loudness"
+    },
+    "第二天一早，猪爸爸跑到花园一看，幼苗只长高了一点点。他着急地说：“哎呀，长得太慢了，什么时候才能吃到蔬菜呀！”": {
+      "file": "c1a794b39db6667adbc7.mp3",
+      "book": "peppa_idiom_02",
+      "group": "peppa",
+      "duration": 12.912,
+      "chars": 55,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇和乔治来到花园，奇怪地问：“爸爸，幼苗怎么突然长高了？”猪爸爸笑着说：“我帮了它们一点点小忙！”": {
+      "file": "eefc892920b4188542ec.mp3",
+      "book": "peppa_idiom_02",
+      "group": "peppa",
+      "duration": 11.304,
+      "chars": 50,
+      "qc": "decode-duration-loudness"
+    },
+    "猪爸爸想了一个“好主意”，他把每一棵小幼苗都轻轻地往上拔高了一截。小幼苗一下子看起来高了好多，猪爸爸得意极了。": {
+      "file": "ea0f7dab4f6df8d8bafb.mp3",
+      "book": "peppa_idiom_02",
+      "group": "peppa",
+      "duration": 12.024,
+      "chars": 55,
+      "qc": "decode-duration-loudness"
+    },
+    "幼儿园里，羚羊老师让小朋友们画自己最喜欢的动物。佩奇画了一条长长的龙，乔治画了一只恐龙，苏西画了一匹小马。": {
+      "file": "56e6ac544c7ac5f74a9d.mp3",
+      "book": "peppa_idiom_03",
+      "group": "peppa",
+      "duration": 12.672,
+      "chars": 53,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇画的龙有漂亮的鳞片和弯弯的胡须，可是她总觉得少了点什么。苏西看了看说：“佩奇，你的龙没有眼睛呀！”": {
+      "file": "e404f28184ac32d7958e.mp3",
+      "book": "peppa_idiom_03",
+      "group": "peppa",
+      "duration": 11.664,
+      "chars": 51,
+      "qc": "decode-duration-loudness"
+    },
+    "可是到了下午，被拔高的幼苗全都耷拉下了脑袋，叶子也变得黄黄的。佩奇难过地喊：“爸爸，幼苗生病了！”": {
+      "file": "00247462c500e356e4cb.mp3",
+      "book": "peppa_idiom_02",
+      "group": "peppa",
+      "duration": 11.352,
+      "chars": 49,
+      "qc": "decode-duration-loudness"
+    },
+    "小朋友们全都围过来，惊讶地叫起来：“佩奇的龙活过来了！”大家都觉得这条龙是全班最棒的一幅画。": {
+      "file": "21bc7e7221520ad549a0.mp3",
+      "book": "peppa_idiom_03",
+      "group": "peppa",
+      "duration": 10.584,
+      "chars": 46,
+      "qc": "decode-duration-loudness"
+    },
+    "猪妈妈走过来看了看，温柔地说：“植物生长需要耐心等待，硬把它们拔高，只会伤害它们。”猪爸爸红着脸说：“我以后再也不拔苗了。”": {
+      "file": "84ab973e93d9e0af9116.mp3",
+      "book": "peppa_idiom_02",
+      "group": "peppa",
+      "duration": 13.608,
+      "chars": 62,
+      "qc": "decode-duration-loudness"
+    },
+    "猪爸爸来接佩奇，他拿起画笔，在龙的眼睛位置轻轻点了两下。哇，整条龙好像一下子变得神气活现，像要飞起来一样！": {
+      "file": "c4764356e623e64a8292.mp3",
+      "book": "peppa_idiom_03",
+      "group": "peppa",
+      "duration": 12.936,
+      "chars": 53,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇好奇地问爸爸：“为什么只点了两个小点，龙就变得这么不一样呢？”猪爸爸笑着说：“最重要的地方常常就是那一点点呀。”": {
+      "file": "8cd97cd2d75707a64770.mp3",
+      "book": "peppa_idiom_03",
+      "group": "peppa",
+      "duration": 12.72,
+      "chars": 58,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇高兴地把画贴在墙上，她明白了：有时候，关键的一小笔，就能让整件事情变得精彩起来。": {
+      "file": "5d1e3aeeace7ac49524b.mp3",
+      "book": "peppa_idiom_03",
+      "group": "peppa",
+      "duration": 10.08,
+      "chars": 42,
+      "qc": "decode-duration-loudness"
+    },
+    "周末，佩奇和乔治去苏西家玩。苏西的爷爷在羊圈旁边皱着眉头说：“羊圈破了一个洞，我得赶紧修好。”": {
+      "file": "d887199aca114c553ddb.mp3",
+      "book": "peppa_idiom_04",
+      "group": "peppa",
+      "duration": 11.76,
+      "chars": 47,
+      "qc": "decode-duration-loudness"
+    },
+    "阳光明媚的下午，猪爸爸一家去湖上划船。乔治抱着他心爱的玩具恐龙，坐在船边开心地玩着。": {
+      "file": "e80f5fa0b66e81a67224.mp3",
+      "book": "peppa_idiom_05",
+      "group": "peppa",
+      "duration": 10.752,
+      "chars": 42,
+      "qc": "decode-duration-loudness"
+    },
+    "苏西爷爷摸摸佩奇的头说：“犯了错及时补救，就不算晚。这就是‘亡羊补牢，为时未晚’的意思呀。”": {
+      "file": "34a3b225dbdd3c0e91dc.mp3",
+      "book": "peppa_idiom_04",
+      "group": "peppa",
+      "duration": 10.296,
+      "chars": 46,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇、乔治和苏西一起帮爷爷搬来木板，叮叮当当地把羊圈修得结结实实。大灰狼在远处转了一圈，灰溜溜地走了。": {
+      "file": "0aa82d481b50eab50693.mp3",
+      "book": "peppa_idiom_04",
+      "group": "peppa",
+      "duration": 12.936,
+      "chars": 51,
+      "qc": "decode-duration-loudness"
+    },
+    "苏西拉着佩奇去玩蹦床，爷爷也放下工具说：“只破了一个小洞，明天再修也不迟。”于是大家都去休息了。": {
+      "file": "b70803f9e6574137a8f1.mp3",
+      "book": "peppa_idiom_04",
+      "group": "peppa",
+      "duration": 11.28,
+      "chars": 48,
+      "qc": "decode-duration-loudness"
+    },
+    "猪爸爸不慌不忙地从口袋里掏出一支粉笔，在船边上画了一个大大的记号。他认真地说：“别担心，我在恐龙掉下去的地方做了标记。”": {
+      "file": "5f28348f0110281c8901.mp3",
+      "book": "peppa_idiom_05",
+      "group": "peppa",
+      "duration": 13.728,
+      "chars": 60,
+      "qc": "decode-duration-loudness"
+    },
+    "夜里，大风吹了起来，羊圈上的洞被吹得更大了。一只大灰狼悄悄地从洞口钻了进去，叼走了一只小羊。": {
+      "file": "5ebc53907d219f74320a.mp3",
+      "book": "peppa_idiom_04",
+      "group": "peppa",
+      "duration": 11.4,
+      "chars": 46,
+      "qc": "decode-duration-loudness"
+    },
+    "第二天早上，苏西发现少了一只小羊，急得哭了起来。佩奇说：“别难过，我们赶快把洞补好，剩下的羊就不会丢啦！”": {
+      "file": "101efacf5dc45241cd90.mp3",
+      "book": "peppa_idiom_04",
+      "group": "peppa",
+      "duration": 12.768,
+      "chars": 53,
+      "qc": "decode-duration-loudness"
+    },
+    "小船摇摇晃晃，乔治一不小心，恐龙玩具“扑通”一声掉进了水里。乔治急得哇哇叫，佩奇也着急地喊：“恐龙掉下去啦！”": {
+      "file": "57d26772731d67124cdf.mp3",
+      "book": "peppa_idiom_05",
+      "group": "peppa",
+      "duration": 12.552,
+      "chars": 55,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇奇怪地问：“爸爸，你在船上画记号有什么用呢？”猪爸爸自信地说：“等船靠了岸，我们就从这个记号下面下水去找，一定能找到。”": {
+      "file": "805b61a99f18cdad70a9.mp3",
+      "book": "peppa_idiom_05",
+      "group": "peppa",
+      "duration": 13.776,
+      "chars": 62,
+      "qc": "decode-duration-loudness"
+    },
+    "后来，猪妈妈用网兜在恐龙落水的地方捞回了玩具。猪爸爸挠挠头说：“我明白了，做事不能死守记号，要懂得变通！”": {
+      "file": "5eb669c55e223dc0fea1.mp3",
+      "book": "peppa_idiom_05",
+      "group": "peppa",
+      "duration": 12.552,
+      "chars": 53,
+      "qc": "decode-duration-loudness"
+    },
+    "船靠岸后，猪爸爸在记号下面的水里摸了半天，什么也没找到。佩奇笑着说：“爸爸，船一直在走，恐龙可没有跟着船一起走呀！”": {
+      "file": "ef9e5fa9d22b16b2edcd.mp3",
+      "book": "peppa_idiom_05",
+      "group": "peppa",
+      "duration": 13.608,
+      "chars": 58,
+      "qc": "decode-duration-loudness"
+    },
+    "乔治瞪大眼睛，对着恐龙化石“哇”地叫了一声。讲解员兔小姐笑着说：“这可是很久很久以前生活在地球上的霸王龙哦。”": {
+      "file": "5bfaa07c59ae6dc7622f.mp3",
+      "book": "peppa_idiom_06",
+      "group": "peppa",
+      "duration": 12.72,
+      "chars": 55,
+      "qc": "decode-duration-loudness"
+    },
+    "回家的路上，佩奇说：“博物馆太棒了，我看到了好多神奇的东西，学到了好多新知识！”猪爸爸说：“下次我们再来探索更多。”": {
+      "file": "0e747e2c3b92d68fa52d.mp3",
+      "book": "peppa_idiom_06",
+      "group": "peppa",
+      "duration": 13.104,
+      "chars": 58,
+      "qc": "decode-duration-loudness"
+    },
+    "今天，猪爸爸和猪妈妈带着佩奇和乔治去城市博物馆。佩奇一进门，就看见一个巨大的恐龙化石，高高地站在大厅中间。": {
+      "file": "838c2d1d93859109b44a.mp3",
+      "book": "peppa_idiom_06",
+      "group": "peppa",
+      "duration": 13.368,
+      "chars": 53,
+      "qc": "decode-duration-loudness"
+    },
+    "最后，佩奇一家来到了宝宝动物区。佩奇轻轻地摸着小羊羔，乔治学着羊叫，逗得猪妈妈哈哈大笑。": {
+      "file": "67578315fa33b39cd0cd.mp3",
+      "book": "peppa_idiom_06",
+      "group": "peppa",
+      "duration": 10.944,
+      "chars": 44,
+      "qc": "decode-duration-loudness"
+    },
+    "接着，他们来到了太空展区。佩奇坐上模拟火箭，按下按钮，椅子就轻轻地摇晃起来，窗外的星星好像真的在飞过。": {
+      "file": "e20078ac4162a7e99633.mp3",
+      "book": "peppa_idiom_06",
+      "group": "peppa",
+      "duration": 12.552,
+      "chars": 51,
+      "qc": "decode-duration-loudness"
+    },
+    "在互动区，佩奇和乔治用小铲子挖沙子，挖出了一块“恐龙骨头”。佩奇兴奋地说：“我长大了要当古生物学家！”": {
+      "file": "bcb229fb7c32d8b91056.mp3",
+      "book": "peppa_idiom_06",
+      "group": "peppa",
+      "duration": 12.24,
+      "chars": 51,
+      "qc": "decode-duration-loudness"
+    },
+    "【成语】守株待兔\n\n农夫在田里干活，一只兔子撞在树桩上死了。农夫从此不再种地，天天守在树桩旁等兔子。可是再也没有兔子撞上来，田地也荒废了。\n\n💡 不要不劳而获，要主动努力才能有收获。": {
+      "file": "0ea7a5a5f0d0292d5e8b.mp3",
+      "book": "idiom_a01",
+      "group": "idiom",
+      "duration": 20.736,
+      "chars": 83,
+      "qc": "decode-duration-loudness"
+    },
+    "【成语】亡羊补牢\n\n牧羊人发现羊圈破了个洞，邻居劝他赶快修。他说羊已经丢了修也没用。第二天又丢了一只羊，他才后悔，马上把洞补好。从此羊再没丢过。\n\n💡 犯了错误及时改正弥补还不算晚。": {
+      "file": "effab802dbbf378e8e00.mp3",
+      "book": "idiom_a04",
+      "group": "idiom",
+      "duration": 21.504,
+      "chars": 83,
+      "qc": "decode-duration-loudness"
+    },
+    "《春晓》\n孟浩然 · 唐\n\n春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。\n\n📖 春天的早晨睡得真香，不知不觉天已经亮了。到处都能听到小鸟的叫声。昨夜的风雨声还在耳边，不知道花儿被吹落了多少。": {
+      "file": "2391ffcc88a3526af390.mp3",
+      "book": "poem_b02",
+      "group": "poem",
+      "duration": 23.784,
+      "chars": 91,
+      "qc": "decode-duration-loudness"
+    },
+    "《悯农》\n李绅 · 唐\n\n锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。\n\n📖 农民在烈日下锄草，汗水滴进了泥土里。谁知道碗里的米饭，每一粒都包含着辛苦的劳动。": {
+      "file": "bd59405392ba94a776c0.mp3",
+      "book": "poem_b05",
+      "group": "poem",
+      "duration": 20.016,
+      "chars": 75,
+      "qc": "decode-duration-loudness"
+    },
+    "《咏鹅》\n骆宾王 · 唐\n\n鹅鹅鹅，曲项向天歌。白毛浮绿水，红掌拨清波。\n\n📖 鹅啊鹅，弯着脖子朝天唱歌。雪白的羽毛浮在绿色的水面上，红色的脚掌拨动着清清的水波。": {
+      "file": "3bd4c203690dce0d6d7a.mp3",
+      "book": "poem_b03",
+      "group": "poem",
+      "duration": 20.52,
+      "chars": 75,
+      "qc": "decode-duration-loudness"
+    },
+    "《静夜思》\n李白 · 唐\n\n床前明月光，疑是地上霜。举头望明月，低头思故乡。\n\n📖 明亮的月光照在床前，好像地上铺了一层白霜。抬头看着天上的明月，不由得低下头来思念远方的家乡。": {
+      "file": "a9e02f4b0c4e295d3786.mp3",
+      "book": "poem_b01",
+      "group": "poem",
+      "duration": 21.408,
+      "chars": 82,
+      "qc": "decode-duration-loudness"
+    },
+    "【成语】拔苗助长\n\n农夫嫌禾苗长得太慢，就把它们一棵棵往上拔高。第二天他去田里一看，所有的禾苗都枯死了。\n\n💡 做事不能急于求成，要遵循自然规律。": {
+      "file": "50a79b106fccbe138276.mp3",
+      "book": "idiom_a06",
+      "group": "idiom",
+      "duration": 16.2,
+      "chars": 65,
+      "qc": "decode-duration-loudness"
+    },
+    "【成语】井底之蛙\n\n一只青蛙住在井底，它对路过的海龟说：你看我多快乐，整个井都是我的！海龟说：你见过大海吗？那才叫真正的广阔。青蛙听了目瞪口呆。\n\n💡 见识短浅的人以为世界只有自己看到那么大。": {
+      "file": "d86148578c5e39d56f3b.mp3",
+      "book": "idiom_a09",
+      "group": "idiom",
+      "duration": 21.744,
+      "chars": 88,
+      "qc": "decode-duration-loudness"
+    },
+    "《小池》\n杨万里 · 宋\n\n泉眼无声惜细流，树阴照水爱晴柔。小荷才露尖尖角，早有蜻蜓立上头。\n\n📖 泉眼静静地流着细细的水，树荫映在水面上显得格外清凉。小荷叶刚刚露出尖尖的角，早就有蜻蜓站在上面了。": {
+      "file": "14e53900a9d877cd95e3.mp3",
+      "book": "poem_b09",
+      "group": "poem",
+      "duration": 24.696,
+      "chars": 93,
+      "qc": "decode-duration-loudness"
+    },
+    "小恐龙奇奇第一天去幼儿园。妈妈牵着他的手，走到大门口。": {
+      "file": "34ccfbae6f43fed35175.mp3",
+      "book": "dino_01",
+      "group": "dino",
+      "duration": 7.152,
+      "chars": 27,
+      "qc": "decode-duration-loudness"
+    },
+    "放学时，奇奇对妈妈说：\"明天我还要来！\"": {
+      "file": "389ce4d485bd08e3a708.mp3",
+      "book": "dino_01",
+      "group": "dino",
+      "duration": 4.776,
+      "chars": 20,
+      "qc": "decode-duration-loudness"
+    },
+    "奇奇带了一个红色的小皮球去幼儿园，球又圆又亮。": {
+      "file": "b3ef9e3dfcabd97a638b.mp3",
+      "book": "dino_02",
+      "group": "dino",
+      "duration": 5.616,
+      "chars": 23,
+      "qc": "decode-duration-loudness"
+    },
+    "奇奇和小兔子一起搭了一座高高的桥。他笑了起来。": {
+      "file": "1e0d2a3ede1b176392c5.mp3",
+      "book": "dino_01",
+      "group": "dino",
+      "duration": 6.192,
+      "chars": 23,
+      "qc": "decode-duration-loudness"
+    },
+    "小兔子想玩，奇奇把球藏在身后：\"这是我的！\"": {
+      "file": "f7e011aa5c2118bb79be.mp3",
+      "book": "dino_02",
+      "group": "dino",
+      "duration": 4.992,
+      "chars": 22,
+      "qc": "decode-duration-loudness"
+    },
+    "教室里，小兔子在搭积木，小猴子在画画。奇奇慢慢松开了妈妈的手。": {
+      "file": "2310a71987c2b6b862b2.mp3",
+      "book": "dino_01",
+      "group": "dino",
+      "duration": 8.064,
+      "chars": 31,
+      "qc": "decode-duration-loudness"
+    },
+    "长颈鹿老师蹲下来，轻轻拉住奇奇的手：\"我们进去看看吧。\"": {
+      "file": "99925b2eab5dabb54bf6.mp3",
+      "book": "dino_01",
+      "group": "dino",
+      "duration": 6.12,
+      "chars": 28,
+      "qc": "decode-duration-loudness"
+    },
+    "奇奇抱住妈妈的腿不肯放，眼泪在眼眶里打转：\"我不想进去。\"": {
+      "file": "1e87361cfaa9a3c8f5c3.mp3",
+      "book": "dino_01",
+      "group": "dino",
+      "duration": 6.528,
+      "chars": 29,
+      "qc": "decode-duration-loudness"
+    },
+    "小兔子低下头走开了。奇奇一个人拍球，觉得没那么好玩。": {
+      "file": "e92a9a0becb419a3619f.mp3",
+      "book": "dino_02",
+      "group": "dino",
+      "duration": 6.528,
+      "chars": 26,
+      "qc": "decode-duration-loudness"
+    },
+    "奇奇把球递过去，小兔子笑得眼睛弯弯的。": {
+      "file": "9dc330b93031108f3ba1.mp3",
+      "book": "dino_02",
+      "group": "dino",
+      "duration": 4.68,
+      "chars": 19,
+      "qc": "decode-duration-loudness"
+    },
+    "妈妈打开门，轻轻抱住他：\"我们一起去看看是什么声音。\"": {
+      "file": "a1778fd320e8429c3efe.mp3",
+      "book": "dino_03",
+      "group": "dino",
+      "duration": 6.096,
+      "chars": 27,
+      "qc": "decode-duration-loudness"
+    },
+    "长颈鹿老师说：\"球可以一起玩呀，你拍给我，我拍给你。\"": {
+      "file": "3a37fbe3195f8f510185.mp3",
+      "book": "dino_02",
+      "group": "dino",
+      "duration": 6.048,
+      "chars": 27,
+      "qc": "decode-duration-loudness"
+    },
+    "忽然\"咔哒\"一声，奇奇吓得心咚咚跳，把被子裹得更紧了。": {
+      "file": "0890370fa0a610121f5a.mp3",
+      "book": "dino_03",
+      "group": "dino",
+      "duration": 6.072,
+      "chars": 27,
+      "qc": "decode-duration-loudness"
+    },
+    "原来是窗帘被风吹起来，碰到了小桌子。一点也不可怕。": {
+      "file": "04de236f3a7841416a64.mp3",
+      "book": "dino_03",
+      "group": "dino",
+      "duration": 6.432,
+      "chars": 25,
+      "qc": "decode-duration-loudness"
+    },
+    "妈妈留下一盏小夜灯，光像月亮一样温柔。": {
+      "file": "59abc5f3c3f03735a583.mp3",
+      "book": "dino_03",
+      "group": "dino",
+      "duration": 4.632,
+      "chars": 19,
+      "qc": "decode-duration-loudness"
+    },
+    "两个人你拍一下、我拍一下，笑声传得很远很远。": {
+      "file": "601708f00643cab72bdc.mp3",
+      "book": "dino_02",
+      "group": "dino",
+      "duration": 5.208,
+      "chars": 22,
+      "qc": "decode-duration-loudness"
+    },
+    "晚上，房间里黑黑的。奇奇把头蒙在被子里，只露出一只眼睛。": {
+      "file": "54886ab8fef0843bdf1c.mp3",
+      "book": "dino_03",
+      "group": "dino",
+      "duration": 7.68,
+      "chars": 28,
+      "qc": "decode-duration-loudness"
+    },
+    "奇奇闭上眼睛，慢慢睡着了，还做了一个甜甜的梦。": {
+      "file": "aabb9896b15f046dd325.mp3",
+      "book": "dino_03",
+      "group": "dino",
+      "duration": 5.616,
+      "chars": 23,
+      "qc": "decode-duration-loudness"
+    },
+    "奇奇得到一辆崭新的自行车，他高兴地跨了上去。": {
+      "file": "c572d5e9fa89d4b79da4.mp3",
+      "book": "dino_05",
+      "group": "dino",
+      "duration": 5.256,
+      "chars": 22,
+      "qc": "decode-duration-loudness"
+    },
+    "妈妈摸摸他的头：\"谢谢你告诉我。说实话，比不犯错更重要。\"": {
+      "file": "9cff0d292ee041847b20.mp3",
+      "book": "dino_04",
+      "group": "dino",
+      "duration": 6.984,
+      "chars": 29,
+      "qc": "decode-duration-loudness"
+    },
+    "一整天，奇奇都不敢看妈妈的眼睛，心里像压着一块小石头。": {
+      "file": "5c037fdad6fbb5389784.mp3",
+      "book": "dino_04",
+      "group": "dino",
+      "duration": 6.456,
+      "chars": 27,
+      "qc": "decode-duration-loudness"
+    },
+    "他们一起把碎片扫干净。奇奇松了一口气，心里亮堂堂的。": {
+      "file": "f55446029cf70e1a62cb.mp3",
+      "book": "dino_04",
+      "group": "dino",
+      "duration": 6.672,
+      "chars": 26,
+      "qc": "decode-duration-loudness"
+    },
+    "奇奇在客厅里跑得太快，把妈妈的花瓶碰倒了，\"啪\"的一声碎了。": {
+      "file": "0dcf0c553291fc6ade1c.mp3",
+      "book": "dino_04",
+      "group": "dino",
+      "duration": 6.72,
+      "chars": 30,
+      "qc": "decode-duration-loudness"
+    },
+    "他吓坏了，赶紧把碎片扫到沙发后面，装作什么都没发生。": {
+      "file": "ec6c5c88757e8e0166de.mp3",
+      "book": "dino_04",
+      "group": "dino",
+      "duration": 6.456,
+      "chars": 26,
+      "qc": "decode-duration-loudness"
+    },
+    "晚上，他终于小声说：\"妈妈，对不起，是我打碎的。\"": {
+      "file": "5976dd1140d7a545fb16.mp3",
+      "book": "dino_04",
+      "group": "dino",
+      "duration": 5.928,
+      "chars": 25,
+      "qc": "decode-duration-loudness"
+    },
+    "刚蹬一下，车子歪了，\"哐当\"摔倒了，膝盖擦破了皮。": {
+      "file": "f1e828014065cd66aa7f.mp3",
+      "book": "dino_05",
+      "group": "dino",
+      "duration": 5.904,
+      "chars": 25,
+      "qc": "decode-duration-loudness"
+    },
+    "奇奇扶着车把，爸爸在后面扶着。这一次他骑了三米远。": {
+      "file": "16b4ebbaf2cf727c2417.mp3",
+      "book": "dino_05",
+      "group": "dino",
+      "duration": 6.864,
+      "chars": 25,
+      "qc": "decode-duration-loudness"
+    },
+    "爸爸蹲下来：\"摔倒是学骑车的一部分，我们再来一次。\"": {
+      "file": "a2bd71abb6e8c8abf74e.mp3",
+      "book": "dino_05",
+      "group": "dino",
+      "duration": 5.76,
+      "chars": 26,
+      "qc": "decode-duration-loudness"
+    },
+    "奇奇坐在地上，眼泪掉下来：\"我学不会了。\"": {
+      "file": "f6761a73781e9142302b.mp3",
+      "book": "dino_05",
+      "group": "dino",
+      "duration": 4.872,
+      "chars": 21,
+      "qc": "decode-duration-loudness"
+    },
+    "第二天，奇奇自己骑了一圈又一圈。原来坚持真的能学会。": {
+      "file": "4519678d123ff04183fc.mp3",
+      "book": "dino_05",
+      "group": "dino",
+      "duration": 6.576,
+      "chars": 26,
+      "qc": "decode-duration-loudness"
+    },
+    "球球一个人坐在角落里，看起来很难过。": {
+      "file": "d111f243d2085fccd819.mp3",
+      "book": "dino_06",
+      "group": "dino",
+      "duration": 4.344,
+      "chars": 18,
+      "qc": "decode-duration-loudness"
+    },
+    "大家都不敢靠近，因为球球身上长满了刺。": {
+      "file": "d50e3cb8f58921566fde.mp3",
+      "book": "dino_06",
+      "group": "dino",
+      "duration": 4.704,
+      "chars": 19,
+      "qc": "decode-duration-loudness"
+    },
+    "幼儿园来了一位新同学——小刺猬球球。": {
+      "file": "6b9907cc02430cc83423.mp3",
+      "book": "dino_06",
+      "group": "dino",
+      "duration": 4.488,
+      "chars": 17,
+      "qc": "decode-duration-loudness"
+    },
+    "奇奇拿了两块饼干走过去：\"你要吃吗？\"": {
+      "file": "c1902265efd565644913.mp3",
+      "book": "dino_06",
+      "group": "dino",
+      "duration": 4.08,
+      "chars": 19,
+      "qc": "decode-duration-loudness"
+    },
+    "球球小心地接过饼干，笑了：\"谢谢你，你真好。\"": {
+      "file": "97d2e972868e03ab08bb.mp3",
+      "book": "dino_06",
+      "group": "dino",
+      "duration": 5.52,
+      "chars": 23,
+      "qc": "decode-duration-loudness"
+    },
+    "晚餐时，全家尝到了自己种的蔬菜。佩奇开心地说：认真照顾，小种子也能长成美味的食物。": {
+      "file": "830e89815c6bfb9fca23.mp3",
+      "book": "peppa_new_01",
+      "group": "peppa",
+      "duration": 10.728,
+      "chars": 41,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇每天给菜苗浇一点水，乔治认真数着新长出的叶子：一片、两片、三片！": {
+      "file": "caf7552dc90f3bd06f47.mp3",
+      "book": "peppa_new_01",
+      "group": "peppa",
+      "duration": 8.952,
+      "chars": 34,
+      "qc": "decode-duration-loudness"
+    },
+    "几天后，小番茄红了，胡萝卜也从土里探出了头。佩奇发现，植物需要阳光、水和耐心。": {
+      "file": "746b460f95abb915336c.mp3",
+      "book": "peppa_new_01",
+      "group": "peppa",
+      "duration": 10.248,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "春天到了，佩奇和乔治在院子里开了一块小菜园。猪爷爷教他们把种子轻轻放进泥土里。": {
+      "file": "604a255b274a41d39cce.mp3",
+      "book": "peppa_new_01",
+      "group": "peppa",
+      "duration": 9.912,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "从那天起，他们成了最好的朋友。原来交朋友只要说一句话。": {
+      "file": "8cbc6718229aff2c95ca.mp3",
+      "book": "dino_06",
+      "group": "dino",
+      "duration": 6.864,
+      "chars": 27,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇带着新滑板车来到公园。苏西也很想试一试，可佩奇一直舍不得停下来。": {
+      "file": "b649724a8148a40875c5.mp3",
+      "book": "peppa_new_02",
+      "group": "peppa",
+      "duration": 8.856,
+      "chars": 34,
+      "qc": "decode-duration-loudness"
+    },
+    "《咏柳》\n贺知章 · 唐\n\n碧玉妆成一树高，万条垂下绿丝绦。不知细叶谁裁出，二月春风似剪刀。\n\n📖 高高的柳树像是用碧玉打扮成的，千万条柳枝垂下来，像绿色的丝带。不知道这些细细的叶子是谁裁出来的呢？原来是二月的春风，它就像一把剪刀呀。": {
+      "file": "add950ec347f706cc6f9.mp3",
+      "book": "poem_33",
+      "group": "poem",
+      "duration": 28.272,
+      "chars": 111,
+      "qc": "decode-duration-loudness"
+    },
+    "羚羊老师画了一个小小的等待圈，说：每个人玩两圈，听到铃声就换下一位。": {
+      "file": "06b6a18c8d15bcc0cd1b.mp3",
+      "book": "peppa_new_02",
+      "group": "peppa",
+      "duration": 8.136,
+      "chars": 34,
+      "qc": "decode-duration-loudness"
+    },
+    "一阵小雨过后，天空亮了起来。佩奇抬头一看，一道彩虹从山坡一直伸到远方。": {
+      "file": "0ba659bcad79c207acea.mp3",
+      "book": "peppa_new_03",
+      "group": "peppa",
+      "duration": 9.0,
+      "chars": 35,
+      "qc": "decode-duration-loudness"
+    },
+    "轮到苏西时，佩奇站在等待圈里为她加油。苏西玩完两圈，马上把滑板车还给佩奇。": {
+      "file": "7d1699a8de538109db32.mp3",
+      "book": "peppa_new_02",
+      "group": "peppa",
+      "duration": 10.08,
+      "chars": 37,
+      "qc": "decode-duration-loudness"
+    },
+    "两个好朋友轮流玩了一下午。佩奇明白了，轮流不是少玩一会儿，而是让快乐多一个人。": {
+      "file": "ba39b3b9ae331ff1d418.mp3",
+      "book": "peppa_new_02",
+      "group": "peppa",
+      "duration": 9.288,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "佩奇和乔治穿上雨靴，沿着小路寻找彩虹的尽头。他们看见红花、橙色落叶和金黄的麦田。": {
+      "file": "c36843b01d7189c3aff4.mp3",
+      "book": "peppa_new_03",
+      "group": "peppa",
+      "duration": 11.016,
+      "chars": 40,
+      "qc": "decode-duration-loudness"
+    },
+    "莱德请灰灰清理瓶子和纸盒，阿奇在旁边围起安全线，提醒游客给小海龟留出安静的通道。": {
+      "file": "4ddd8ff75f50736f1200.mp3",
+      "book": "paw_new_01",
+      "group": "paw",
+      "duration": 10.344,
+      "chars": 40,
+      "qc": "decode-duration-loudness"
+    },
+    "走到小河边，彩虹倒映在水里，像一座会发光的桥。猪爸爸告诉他们，阳光照进小水滴就会变出许多颜色。": {
+      "file": "0fc9c4200c0374b4baea.mp3",
+      "book": "peppa_new_03",
+      "group": "peppa",
+      "duration": 11.856,
+      "chars": 47,
+      "qc": "decode-duration-loudness"
+    },
+    "彩虹慢慢淡去，佩奇却一点也不失望。她把一路看见的颜色画下来，做成了一本彩虹小书。": {
+      "file": "d75e6c589e2572546d28.mp3",
+      "book": "peppa_new_03",
+      "group": "peppa",
+      "duration": 9.936,
+      "chars": 40,
+      "qc": "decode-duration-loudness"
+    },
+    "最后一只小海龟也安全游走了。大家一起把海滩打扫干净，让这里继续成为动物们温暖的家。": {
+      "file": "ff472cd7637320caf2b2.mp3",
+      "book": "paw_new_01",
+      "group": "paw",
+      "duration": 10.152,
+      "chars": 41,
+      "qc": "decode-duration-loudness"
+    },
+    "天天从空中寻找最短的路线，路马守在浅水边。小海龟一步一步，终于碰到了清凉的海水。": {
+      "file": "8a045ad54b68f8f008f9.mp3",
+      "book": "paw_new_01",
+      "group": "paw",
+      "duration": 10.296,
+      "chars": 40,
+      "qc": "decode-duration-loudness"
+    },
+    "清晨，海滩上出现了一群刚出生的小海龟。它们要爬向大海，可沙滩上留下了许多杂物。": {
+      "file": "ca1bfecd397778d778d1.mp3",
+      "book": "paw_new_01",
+      "group": "paw",
+      "duration": 9.936,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "森林小火车载着动物朋友去野餐。经过木桥时，司机发现一根栏杆松了，只好把火车停下来。": {
+      "file": "c011c38eaea033357eb1.mp3",
+      "book": "paw_new_02",
+      "group": "paw",
+      "duration": 10.464,
+      "chars": 41,
+      "qc": "decode-duration-loudness"
+    },
+    "阿奇守住铁轨两端，小砾把松动的木板托稳。灰灰找来结实的旧木料，量好长度准备修理。": {
+      "file": "e902821838832c28cb0a.mp3",
+      "book": "paw_new_02",
+      "group": "paw",
+      "duration": 10.128,
+      "chars": 40,
+      "qc": "decode-duration-loudness"
+    },
+    "动物城的清晨，朱迪收到一箱要送去幼儿园的胡萝卜。尼克推来小车，两位伙伴一起出发。": {
+      "file": "868b0edf3525d2ad885e.mp3",
+      "book": "zoo_new_01",
+      "group": "zootopia",
+      "duration": 9.912,
+      "chars": 40,
+      "qc": "decode-duration-loudness"
+    },
+    "风慢慢小了，灰灰换好零件，灯塔却还没亮。毛毛发现开关里进了水，大家把它擦干后重新启动。": {
+      "file": "e936078c3ca984fefa3c.mp3",
+      "book": "paw_new_03",
+      "group": "paw",
+      "duration": 11.4,
+      "chars": 43,
+      "qc": "decode-duration-loudness"
+    },
+    "明亮的灯光一圈圈照向海面，小船安全回到港口。所有人都为认真合作的汪汪队鼓掌。": {
+      "file": "74c33d3c033277a3f7ab.mp3",
+      "book": "paw_new_03",
+      "group": "paw",
+      "duration": 9.84,
+      "chars": 38,
+      "qc": "decode-duration-loudness"
+    },
+    "小火车重新出发，动物朋友在车窗里挥手。汪汪队记住了：认真检查每一步，才能让大家平安到达。": {
+      "file": "dda566c8ca0f81f3b00b.mp3",
+      "book": "paw_new_02",
+      "group": "paw",
+      "duration": 11.208,
+      "chars": 44,
+      "qc": "decode-duration-loudness"
+    },
+    "天天飞到高处查看电线，灰灰带来新的零件。阿奇打开警灯，在岸边为小船标出临时方向。": {
+      "file": "dfea294f8d7b614af8ca.mp3",
+      "book": "paw_new_03",
+      "group": "paw",
+      "duration": 10.44,
+      "chars": 40,
+      "qc": "decode-duration-loudness"
+    },
+    "傍晚，一场大风吹坏了海边灯塔的电线。远处的小船看不清港口的方向，船长赶紧发出求助信号。": {
+      "file": "92b6446144b83af60669.mp3",
+      "book": "paw_new_03",
+      "group": "paw",
+      "duration": 11.208,
+      "chars": 43,
+      "qc": "decode-duration-loudness"
+    },
+    "大家一起拧紧螺丝，又让空车慢慢通过一次。天天在空中确认桥面平稳，才发出安全信号。": {
+      "file": "d6c951d4708bd7281d0a.mp3",
+      "book": "paw_new_02",
+      "group": "paw",
+      "duration": 10.296,
+      "chars": 40,
+      "qc": "decode-duration-loudness"
+    },
+    "路口正在修路，大车过不去。朱迪发现旁边有一条窄窄的步行道，尼克把胡萝卜分成几个小篮子。": {
+      "file": "ab9a2c76192ceac03cbf.mp3",
+      "book": "zoo_new_01",
+      "group": "zootopia",
+      "duration": 10.776,
+      "chars": 43,
+      "qc": "decode-duration-loudness"
+    },
+    "他们一篮一篮地搬，路过的小动物也来帮忙。河马搬大篮子，小老鼠抬小篮子，大家走得又稳又快。": {
+      "file": "e3fe1547644b346fef11.mp3",
+      "book": "zoo_new_01",
+      "group": "zootopia",
+      "duration": 10.584,
+      "chars": 44,
+      "qc": "decode-duration-loudness"
+    },
+    "动物城广场准备举行气球派对，可一阵风把彩色气球全吹跑了。朱迪和尼克沿着风的方向寻找。": {
+      "file": "14f9ba500d768f530a74.mp3",
+      "book": "zoo_new_02",
+      "group": "zootopia",
+      "duration": 11.04,
+      "chars": 42,
+      "qc": "decode-duration-loudness"
+    },
+    "红气球挂在长颈鹿的路牌上，蓝气球躲进河马区的喷泉旁，黄色气球停在小老鼠的屋顶。": {
+      "file": "43992dc3f1331b49e4b3.mp3",
+      "book": "zoo_new_02",
+      "group": "zootopia",
+      "duration": 9.864,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "夜晚的动物城车站里，一只小刺猬找不到妈妈，抱着书包悄悄哭。巡逻的朱迪马上蹲下来安慰他。": {
+      "file": "ad6aa4e34811b681fa4f.mp3",
+      "book": "zoo_new_03",
+      "group": "zootopia",
+      "duration": 10.968,
+      "chars": 43,
+      "qc": "decode-duration-loudness"
+    },
+    "尼克请站长广播寻人，朱迪问清小刺猬记得的线索：妈妈戴着紫色帽子，要乘月台三的列车。": {
+      "file": "a4dfd120b2028c007d3a.mp3",
+      "book": "zoo_new_03",
+      "group": "zootopia",
+      "duration": 10.152,
+      "chars": 41,
+      "qc": "decode-duration-loudness"
+    },
+    "所有气球回到广场，排成了漂亮的彩虹。尼克笑着说：仔细观察，线索就藏在颜色和方向里。": {
+      "file": "f92eb6ed7904e282ed1c.mp3",
+      "book": "zoo_new_02",
+      "group": "zootopia",
+      "duration": 10.704,
+      "chars": 41,
+      "qc": "decode-duration-loudness"
+    },
+    "朱迪负责记录颜色和数量，尼克想办法把气球轻轻取下来。他们每找到一个，就在清单上画一颗星。": {
+      "file": "e876a5fd035819ce7993.mp3",
+      "book": "zoo_new_02",
+      "group": "zootopia",
+      "duration": 10.992,
+      "chars": 44,
+      "qc": "decode-duration-loudness"
+    },
+    "胡萝卜准时送到，孩子们做成了香香的午餐。朱迪说，遇到堵路时，换个办法就能继续前进。": {
+      "file": "838409e3d18279a83612.mp3",
+      "book": "zoo_new_01",
+      "group": "zootopia",
+      "duration": 10.44,
+      "chars": 41,
+      "qc": "decode-duration-loudness"
+    },
+    "他们来到三号月台，看见一位刺猬妈妈正着急地四处寻找。小刺猬听见熟悉的声音，立刻跑了过去。": {
+      "file": "5b74deecfb11f64c07bd.mp3",
+      "book": "zoo_new_03",
+      "group": "zootopia",
+      "duration": 10.704,
+      "chars": 44,
+      "qc": "decode-duration-loudness"
+    },
+    "大家先停下来核对小票。原来两张订单号码很像，店员一忙就把盒子放反了。": {
+      "file": "2cce367169fe62b995d2.mp3",
+      "book": "zoo_new_04",
+      "group": "zootopia",
+      "duration": 9.264,
+      "chars": 34,
+      "qc": "decode-duration-loudness"
+    },
+    "尼克没有生气，北极熊也耐心等待。店员重新贴好标签，还用不同颜色的贴纸区分两份订单。": {
+      "file": "e65332b53aeccabc20dd.mp3",
+      "book": "zoo_new_04",
+      "group": "zootopia",
+      "duration": 10.608,
+      "chars": 41,
+      "qc": "decode-duration-loudness"
+    },
+    "尼克去冰淇淋店取草莓冰淇淋，店员却递给他一盒蓝莓口味。后面排队的北极熊说，那盒好像是我的。": {
+      "file": "e0c62b3a2f13011a483f.mp3",
+      "book": "zoo_new_04",
+      "group": "zootopia",
+      "duration": 11.592,
+      "chars": 45,
+      "qc": "decode-duration-loudness"
+    },
+    "白雪公主在城堡旁种了一座花园。她把红玫瑰、白雏菊和蓝风铃草分别种在阳光充足的地方。": {
+      "file": "5d4c277f3a62f60cc850.mp3",
+      "book": "princess_new_01",
+      "group": "princess",
+      "duration": 10.752,
+      "chars": 41,
+      "qc": "decode-duration-loudness"
+    },
+    "每个人都拿到了正确的冰淇淋。朱迪说，发生误会时先说明情况、一起检查，比大声争吵更有用。": {
+      "file": "93f732ab9f2127309b63.mp3",
+      "book": "zoo_new_04",
+      "group": "zootopia",
+      "duration": 11.088,
+      "chars": 43,
+      "qc": "decode-duration-loudness"
+    },
+    "小鹿每天带来清水，七位朋友也来松土。被踩弯的花苗慢慢挺直，开出了一朵特别明亮的花。": {
+      "file": "530d4602904583d31a0c.mp3",
+      "book": "princess_new_01",
+      "group": "princess",
+      "duration": 10.104,
+      "chars": 41,
+      "qc": "decode-duration-loudness"
+    },
+    "列车开走前，朱迪提醒小乘客：在人多的地方走散了，要留在原地，并向穿制服的工作人员求助。": {
+      "file": "55fbbd1933e08479d512.mp3",
+      "book": "zoo_new_03",
+      "group": "zootopia",
+      "duration": 10.512,
+      "chars": 43,
+      "qc": "decode-duration-loudness"
+    },
+    "一只小鹿不小心踩弯了花苗，害怕得躲到树后。白雪公主没有责怪它，只轻轻扶起花苗。": {
+      "file": "cf0414dca6591f626ffd.mp3",
+      "book": "princess_new_01",
+      "group": "princess",
+      "duration": 10.128,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "白雪公主把花园向大家开放。她说，友善就像阳光，能让受伤的心和小花一起重新长大。": {
+      "file": "44240178bc6485af4c28.mp3",
+      "book": "princess_new_01",
+      "group": "princess",
+      "duration": 10.44,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "歌声唱到一半停住了，因为后面的几页粘在一起。贝儿没有用力拉，而是请茶壶太太带来温暖的水汽。": {
+      "file": "bb9c6b1f39b6c0305052.mp3",
+      "book": "princess_new_03",
+      "group": "princess",
+      "duration": 10.896,
+      "chars": 45,
+      "qc": "decode-duration-loudness"
+    },
+    "孩子们快乐地滑下来。艾莎发现，勇敢不是一下子什么都不怕，而是害怕时还愿意试一小步。": {
+      "file": "72a22f3e3f2b1080ef88.mp3",
+      "book": "princess_new_02",
+      "group": "princess",
+      "duration": 10.176,
+      "chars": 41,
+      "qc": "decode-duration-loudness"
+    },
+    "一片、两片、三片，艾莎每次只完成一小步。雪花慢慢连成台阶，又变成了一座安全的滑梯。": {
+      "file": "81a2f25a37c3b08be0c4.mp3",
+      "book": "princess_new_02",
+      "group": "princess",
+      "duration": 11.16,
+      "chars": 41,
+      "qc": "decode-duration-loudness"
+    },
+    "安娜握住她的手说：先做一片小雪花吧。艾莎深吸一口气，一片亮晶晶的雪花落在掌心。": {
+      "file": "71d313d04dc19cb9abfa.mp3",
+      "book": "princess_new_02",
+      "group": "princess",
+      "duration": 9.888,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "贝儿公主在图书馆找到一本没有书名的旧书。她刚翻开第一页，书里就传出轻轻的歌声。": {
+      "file": "4ab161f0a3f38c90f2c6.mp3",
+      "book": "princess_new_03",
+      "group": "princess",
+      "duration": 9.6,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "贝儿把旧书修好，放在孩子们够得到的书架上。好故事被温柔对待，就能一遍又一遍唱给大家听。": {
+      "file": "5f09605645a325d01f68.mp3",
+      "book": "princess_new_03",
+      "group": "princess",
+      "duration": 10.224,
+      "chars": 43,
+      "qc": "decode-duration-loudness"
+    },
+    "艾莎公主准备为孩子们做一座冰雪滑梯，可她担心魔法太强，一直不敢开始。": {
+      "file": "5d95bd8e74fef49a4e55.mp3",
+      "book": "princess_new_02",
+      "group": "princess",
+      "duration": 8.52,
+      "chars": 34,
+      "qc": "decode-duration-loudness"
+    },
+    "水汽让书页慢慢松开，藏在里面的小鸟乐谱出现了。贝儿跟着音符哼唱，窗外的小鸟也加入进来。": {
+      "file": "f990244688d63551fe9a.mp3",
+      "book": "princess_new_03",
+      "group": "princess",
+      "duration": 10.68,
+      "chars": 43,
+      "qc": "decode-duration-loudness"
+    },
+    "小美人鱼邀请海底朋友参加音乐会。海马吹贝壳，小螃蟹敲石鼓，章鱼准备弹八排琴键。": {
+      "file": "f78fb9ae07d90fc2354b.mp3",
+      "book": "princess_new_04",
+      "group": "princess",
+      "duration": 10.512,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "海马吹一句，螃蟹轻轻回应；章鱼弹低音，小鱼唱高音。不同的声音终于像海浪一样连在一起。": {
+      "file": "490c667dc1d224c83bbc.mp3",
+      "book": "princess_new_04",
+      "group": "princess",
+      "duration": 10.68,
+      "chars": 42,
+      "qc": "decode-duration-loudness"
+    },
+    "米娅公主在山脚发现一只迷路的小火龙。它一紧张就打喷嚏，喷出的火星把自己也吓了一跳。": {
+      "file": "5671033694b04b5faf56.mp3",
+      "book": "princess_new_05",
+      "group": "princess",
+      "duration": 10.056,
+      "chars": 41,
+      "qc": "decode-duration-loudness"
+    },
+    "音乐会开始了，连鲸鱼也停下来倾听。小美人鱼说，合奏的秘密，是既勇敢发声，也认真听伙伴。": {
+      "file": "8ea25d20432fde3df8d9.mp3",
+      "book": "princess_new_04",
+      "group": "princess",
+      "duration": 10.896,
+      "chars": 43,
+      "qc": "decode-duration-loudness"
+    },
+    "小火龙慢慢平静下来，用尾巴在地上画出一座山。米娅看懂了，带它沿着有红色石头的小路往山上走。": {
+      "file": "63949426336a45f55a5d.mp3",
+      "book": "princess_new_05",
+      "group": "princess",
+      "duration": 11.352,
+      "chars": 45,
+      "qc": "decode-duration-loudness"
+    },
+    "米娅没有靠得太近，她放下一碗水，坐在石头上轻声说：等你准备好了，我们再一起回家。": {
+      "file": "f4f3fb9050ce60d15da3.mp3",
+      "book": "princess_new_05",
+      "group": "princess",
+      "duration": 9.096,
+      "chars": 40,
+      "qc": "decode-duration-loudness"
+    },
+    "排练时，大家都想让自己的声音最大，音乐听起来乱糟糟的。小美人鱼请每位朋友先听一听别人。": {
+      "file": "d69d1d438e4430736339.mp3",
+      "book": "princess_new_04",
+      "group": "princess",
+      "duration": 10.464,
+      "chars": 43,
+      "qc": "decode-duration-loudness"
+    },
+    "龙妈妈在山洞口等着它。米娅挥手告别，明白了真正的勇敢，也包括耐心、观察和温柔。": {
+      "file": "5683819749eafe4425de.mp3",
+      "book": "princess_new_05",
+      "group": "princess",
+      "duration": 9.96,
+      "chars": 39,
+      "qc": "decode-duration-loudness"
+    },
+    "《村居》，高鼎。草长莺飞二月天，拂堤杨柳醉春烟。儿童散学归来早，忙趁东风放纸鸢。春天草木生长，黄莺飞舞，孩子们放学后迎着东风快乐地放风筝。": {
+      "file": "7d1b4f71808127a2ed36.mp3",
+      "book": "poem_new_01",
+      "group": "poem",
+      "duration": 19.08,
+      "chars": 69,
+      "qc": "decode-duration-loudness"
+    },
+    "《画》，王维。远看山有色，近听水无声。春去花还在，人来鸟不惊。画里的山有颜色，流水却没有声音；春天过去花还开着，人走近时鸟儿也不会飞走。": {
+      "file": "1c75283e3e84943006e8.mp3",
+      "book": "poem_new_02",
+      "group": "poem",
+      "duration": 18.288,
+      "chars": 68,
+      "qc": "decode-duration-loudness"
+    },
+    "《江南》，汉乐府。江南可采莲，莲叶何田田。鱼戏莲叶间。鱼戏莲叶东，鱼戏莲叶西，鱼戏莲叶南，鱼戏莲叶北。荷叶又圆又密，小鱼在叶子四周自在地游来游去。": {
+      "file": "1c5f6ba847660b647254.mp3",
+      "book": "poem_new_03",
+      "group": "poem",
+      "duration": 20.664,
+      "chars": 73,
+      "qc": "decode-duration-loudness"
+    },
+    "《早发白帝城》，李白。朝辞白帝彩云间，千里江陵一日还。两岸猿声啼不住，轻舟已过万重山。清晨告别彩云环绕的白帝城，小船顺流而下，在猿声中轻快地穿过重重青山。": {
+      "file": "76b6346d69060aca4e59.mp3",
+      "book": "poem_new_06",
+      "group": "poem",
+      "duration": 20.832,
+      "chars": 77,
+      "qc": "decode-duration-loudness"
+    },
+    "《绝句》，杜甫。两个黄鹂鸣翠柳，一行白鹭上青天。窗含西岭千秋雪，门泊东吴万里船。黄鹂在翠绿的柳树间歌唱，白鹭排成一行飞上蓝天，窗外有雪山，门前停着远来的船。": {
+      "file": "779c61d0fb9c2bba8e48.mp3",
+      "book": "poem_new_05",
+      "group": "poem",
+      "duration": 21.48,
+      "chars": 78,
+      "qc": "decode-duration-loudness"
+    },
+    "《登鹳雀楼》，王之涣。白日依山尽，黄河入海流。欲穷千里目，更上一层楼。太阳靠着群山慢慢落下，黄河向大海奔流。想看得更远，就要再登上一层楼。": {
+      "file": "ed9c82b67fbef408b27b.mp3",
+      "book": "poem_new_04",
+      "group": "poem",
+      "duration": 19.176,
+      "chars": 69,
+      "qc": "decode-duration-loudness"
+    }
+  }
+}
