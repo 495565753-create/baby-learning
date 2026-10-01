@@ -6,12 +6,13 @@
   <meta name="theme-color" content="#f7fcf8">
   <meta name="description" content="5款儿童闯关游戏，每款50关，支持手机触控、语音提示和自动保存。">
   <title>果粒橙 · 50关闯关城</title>
-  <link rel="stylesheet" href="kids.css?v=6">
-  <link rel="stylesheet" href="levels.css?v=1">
+  <link rel="stylesheet" href="kids.css?v=7">
+  <link rel="stylesheet" href="levels.css?v=2">
+  <link rel="stylesheet" href="nav.css?v=1">
 </head>
-<body>
+<body class="kids-arcade-page">
   <header class="topbar">
-    <a id="back-link" class="icon-tool back-link" href="kids.html" aria-label="返回小游戏"><img src="assets/fluent/back.svg?v=2" alt=""></a>
+    <a id="back-link" class="arcade-home-link" href="../index.html?section=games" aria-label="返回游戏乐园"><span class="arcade-home-link__icon" aria-hidden="true">🏠</span><span>游戏乐园</span></a>
     <strong class="brand"><img src="assets/fluent/star.svg" alt=""><span class="sr-only">50关闯关城</span></strong>
     <button id="music-button" class="icon-tool music-button" type="button" aria-label="关闭音乐"><img src="assets/fluent/music.svg" alt=""></button>
   </header>
@@ -24,7 +25,7 @@
     <section id="play" class="play-section" aria-label="闯关区">
       <div class="play-heading">
         <div class="play-identity"><img id="play-icon" src="assets/fluent/car.svg" alt=""><h2 id="play-title" class="sr-only">车车出逃</h2></div>
-        <div class="play-tools"><button id="speak-button" class="icon-tool" type="button" aria-label="重听玩法"><img src="assets/fluent/sound.svg" alt=""></button><a href="#level-game-list" class="icon-tool" aria-label="换游戏"><img src="assets/fluent/home.svg" alt=""></a></div>
+        <div class="play-tools"><button id="speak-button" class="icon-tool" type="button" aria-label="重听玩法"><img src="assets/fluent/sound.svg" alt=""></button><button id="restart-level-button" class="icon-tool arcade-restart" type="button" aria-label="重新玩当前关"><img src="assets/fluent/repeat.svg" alt=""></button><a href="#level-game-list" class="icon-tool" aria-label="换游戏"><img src="assets/fluent/home.svg" alt=""></a></div>
       </div>
       <div class="level-nav">
         <button id="previous-level" type="button" aria-label="上一关">←</button>
@@ -41,6 +42,6 @@
     <footer>图标：Microsoft Fluent Emoji · 语音：Kokoro 中文模型</footer>
   </main>
   <script src="levels-data.js?v=1" defer></script>
-  <script src="levels.js?v=1" defer></script>
+  <script src="levels.js?v=2" defer></script>
 </body>
 </html>

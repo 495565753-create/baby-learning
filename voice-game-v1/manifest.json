@@ -1,0 +1,207 @@
+{
+  "created_at": "2026-10-01T23:23:54+08:00",
+  "generator": "Microsoft Edge neural TTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "style": "warm female teacher",
+  "rate": "-8%",
+  "pitch": "+0Hz",
+  "runtime_text_count": 49,
+  "files": {
+    "在草地上滑动手指，小虫就会跟着转弯。找到五个苹果就成功啦。": {
+      "file": "voice-game-v1/f4c5924528f73f8d5d4b.mp3?v=1",
+      "spoken": "在草地上滑动手指，小虫就会跟着转弯。找到五个苹果就成功啦。"
+    },
+    "按住阿奇，沿着浅色小路一直滑，找到小猫。走错了也没关系。": {
+      "file": "voice-game-v1/7130c197fea1ae61730a.mp3?v=1",
+      "spoken": "按住阿奇，沿着浅色小路一直滑，找到小猫。走错了也没关系。"
+    },
+    "按住小蜜蜂，在花园里自由滑动，把六朵花都找到。": {
+      "file": "voice-game-v1/b3540fa234d65d205ce5.mp3?v=1",
+      "spoken": "按住小蜜蜂，在花园里自由滑动，把六朵花都找到。"
+    },
+    "按住火箭，在太空里自由滑动，把八颗星星都收起来。": {
+      "file": "voice-game-v1/67294d21e6cf8cba3c5e.mp3?v=1",
+      "spoken": "按住火箭，在太空里自由滑动，把八颗星星都收起来。"
+    },
+    "按住中间的东西，把水果拖进果篮，把玩具拖进玩具箱。": {
+      "file": "voice-game-v1/bd2b010843f5b2241886.mp3?v=1",
+      "spoken": "按住中间的东西，把水果拖进果篮，把玩具拖进玩具箱。"
+    },
+    "按住小萤火虫，从发亮的圆点开始滑，按照小路把灯一盏一盏点亮。": {
+      "file": "voice-game-v1/340737114f0c751e1877.mp3?v=1",
+      "spoken": "按住小萤火虫，从发亮的圆点开始滑，按照小路把灯一盏一盏点亮。"
+    },
+    "按住彩色乘客，把它拖到一样颜色的车厢里。": {
+      "file": "voice-game-v1/0e785a085c7dea5040a1.mp3?v=1",
+      "spoken": "按住彩色乘客，把它拖到一样颜色的车厢里。"
+    },
+    "用小手点一点击破泡泡，帮小鸭把所有泡泡都洗干净。": {
+      "file": "voice-game-v1/0363ccc2e3ec99b577b7.mp3?v=1",
+      "spoken": "用小手点一点击破泡泡，帮小鸭把所有泡泡都洗干净。"
+    },
+    "听清楚要找的颜色，再把这种颜色的气球全部点出来。": {
+      "file": "voice-game-v1/e6b14dc135f2f8cb77ec.mp3?v=1",
+      "spoken": "听清楚要找的颜色，再把这种颜色的气球全部点出来。"
+    },
+    "数一数画面里有几个泥坑，再点正确的数字。": {
+      "file": "voice-game-v1/c6b7db9ab0b926753af0.mp3?v=1",
+      "spoken": "数一数画面里有几个泥坑，再点正确的数字。"
+    },
+    "先看小动物亮起来的顺序，再照着顺序点一遍。完成三轮就成功啦。": {
+      "file": "voice-game-v1/6c3daa81698a0ac01359.mp3?v=1",
+      "spoken": "先看小动物亮起来的顺序，再照着顺序点一遍。完成三轮就成功啦。"
+    },
+    "点喇叭听声音，再从图片里找到它。": {
+      "file": "voice-game-v1/06ed5951f0f0bce49937.mp3?v=1",
+      "spoken": "点喇叭听声音，再从图片里找到它。"
+    },
+    "认真看中间的图案，再找到和它一模一样的朋友。": {
+      "file": "voice-game-v1/fedbf96bcd0133ccd990.mp3?v=1",
+      "spoken": "认真看中间的图案，再找到和它一模一样的朋友。"
+    },
+    "每次翻两张卡片，记住它们的位置，把一样的动物找成一对。": {
+      "file": "voice-game-v1/86d2ce8a00b80b471877.mp3?v=1",
+      "spoken": "每次翻两张卡片，记住它们的位置，把一样的动物找成一对。"
+    },
+    "看看中间是什么，再选择它应该放进哪一个篮子。": {
+      "file": "voice-game-v1/5567276b53c2ea629892.mp3?v=1",
+      "spoken": "看看中间是什么，再选择它应该放进哪一个篮子。"
+    },
+    "看看这个东西适不适合带去野餐，再点正确的篮子。": {
+      "file": "voice-game-v1/a3f8cf391e3aceca4aef.mp3?v=1",
+      "spoken": "看看这个东西适不适合带去野餐，再点正确的篮子。"
+    },
+    "先看看发生了什么，再选一位最适合完成任务的救援伙伴。": {
+      "file": "voice-game-v1/e3adf796eeeab7b8a23a.mp3?v=1",
+      "spoken": "先看看发生了什么，再选一位最适合完成任务的救援伙伴。"
+    },
+    "每次翻两张卡片，找出两个一样的伙伴。": {
+      "file": "voice-game-v1/4423c54dbd1e854ab368.mp3?v=1",
+      "spoken": "每次翻两张卡片，找出两个一样的伙伴。"
+    },
+    "认真看看黑色影子的形状，再从下面找到它的好朋友。": {
+      "file": "voice-game-v1/588d2e758eb2be8b1a7a.mp3?v=1",
+      "spoken": "认真看看黑色影子的形状，再从下面找到它的好朋友。"
+    },
+    "慢慢数一数画面里有多少颗星星，再点正确的数字。": {
+      "file": "voice-game-v1/49ae85e422ae034b3c5b.mp3?v=1",
+      "spoken": "慢慢数一数画面里有多少颗星星，再点正确的数字。"
+    },
+    "想一想事情先做什么、再做什么，按照顺序点三张卡片。": {
+      "file": "voice-game-v1/3d610193296bafa26780.mp3?v=1",
+      "spoken": "想一想事情先做什么、再做什么，按照顺序点三张卡片。"
+    },
+    "故事读完啦": {
+      "file": "voice-game-v1/fba9219de2506c11876d.mp3?v=1",
+      "spoken": "故事读完啦"
+    },
+    "答对啦，真棒": {
+      "file": "voice-game-v1/ae01f9e50c929948ef5b.mp3?v=1",
+      "spoken": "答对啦，真棒"
+    },
+    "没关系，再试一题": {
+      "file": "voice-game-v1/e97b93cb97bedbc3e163.mp3?v=1",
+      "spoken": "没关系，再试一题"
+    },
+    "全部找到了，你的记忆力真棒！": {
+      "file": "voice-game-v1/6c5ef216cd2dbb5a2ee4.mp3?v=1",
+      "spoken": "全部找到了，你的记忆力真棒！"
+    },
+    "分类正确，真棒": {
+      "file": "voice-game-v1/a682a5fe0bfe37eece58.mp3?v=1",
+      "spoken": "分类正确，真棒"
+    },
+    "再想一想": {
+      "file": "voice-game-v1/a3a508175acf01a0db22.mp3?v=1",
+      "spoken": "再想一想"
+    },
+    "再看清楚颜色": {
+      "file": "voice-game-v1/9376de1fdd2a34097886.mp3?v=1",
+      "spoken": "再看清楚颜色"
+    },
+    "按住阿奇，沿着浅色小路滑到小猫身边": {
+      "file": "voice-game-v1/3ac0f85edda9c5c04fd4.mp3?v=1",
+      "spoken": "按住阿奇，沿着浅色小路滑到小猫身边"
+    },
+    "找到小猫啦，救援成功！": {
+      "file": "voice-game-v1/687a1c8a4ad267c13b94.mp3?v=1",
+      "spoken": "找到小猫啦，救援成功！"
+    },
+    "在草地上滑一下，小虫就会朝那个方向一直跑": {
+      "file": "voice-game-v1/d16c04b9e2b916b8d666.mp3?v=1",
+      "spoken": "在草地上滑一下，小虫就会朝那个方向一直跑"
+    },
+    "五个苹果都找到了，真棒！": {
+      "file": "voice-game-v1/4d3d9d80eb1834b36015.mp3?v=1",
+      "spoken": "五个苹果都找到了，真棒！"
+    },
+    "按住小蜜蜂，在花园里滑动，把六朵花都找到": {
+      "file": "voice-game-v1/c3238b22bfe74fe3439b.mp3?v=1",
+      "spoken": "按住小蜜蜂，在花园里滑动，把六朵花都找到"
+    },
+    "六朵花都采到了，真棒！": {
+      "file": "voice-game-v1/2e71a0f8a5144f55f855.mp3?v=1",
+      "spoken": "六朵花都采到了，真棒！"
+    },
+    "按住火箭，在太空里自由滑动，把星星都收起来": {
+      "file": "voice-game-v1/e1ed8ddfe21ce96d903d.mp3?v=1",
+      "spoken": "按住火箭，在太空里自由滑动，把星星都收起来"
+    },
+    "星星全部收好了，太棒了！": {
+      "file": "voice-game-v1/e996ccf0c18a2a537964.mp3?v=1",
+      "spoken": "星星全部收好了，太棒了！"
+    },
+    "泡泡都洗干净啦，你的小手真灵活！": {
+      "file": "voice-game-v1/53d488d3033f3abf130c.mp3?v=1",
+      "spoken": "泡泡都洗干净啦，你的小手真灵活！"
+    },
+    "换另一边试试": {
+      "file": "voice-game-v1/fe232c7e02a636321eca.mp3?v=1",
+      "spoken": "换另一边试试"
+    },
+    "水果和玩具都回到自己的家啦！": {
+      "file": "voice-game-v1/66f6176a0771c8a18512.mp3?v=1",
+      "spoken": "水果和玩具都回到自己的家啦！"
+    },
+    "再找找一样的颜色": {
+      "file": "voice-game-v1/5fece442d650d9561a59.mp3?v=1",
+      "spoken": "再找找一样的颜色"
+    },
+    "彩色乘客都坐上正确的车厢啦！": {
+      "file": "voice-game-v1/e5735cee5c9021873d6c.mp3?v=1",
+      "spoken": "彩色乘客都坐上正确的车厢啦！"
+    },
+    "再仔细看一看": {
+      "file": "voice-game-v1/f22035ce3eff639266ee.mp3?v=1",
+      "spoken": "再仔细看一看"
+    },
+    "五个影子都找到好朋友啦！": {
+      "file": "voice-game-v1/8786e3e30b4542e78400.mp3?v=1",
+      "spoken": "五个影子都找到好朋友啦！"
+    },
+    "萤火虫把整条星光小路都点亮啦！": {
+      "file": "voice-game-v1/3aa48d8227c08ca963bb.mp3?v=1",
+      "spoken": "萤火虫把整条星光小路都点亮啦！"
+    },
+    "没关系，再看一遍": {
+      "file": "voice-game-v1/b2a5dabef451b25f969c.mp3?v=1",
+      "spoken": "没关系，再看一遍"
+    },
+    "三轮节奏都记住啦，你是节奏小高手！": {
+      "file": "voice-game-v1/07f6e8dec481dea8e6dd.mp3?v=1",
+      "spoken": "三轮节奏都记住啦，你是节奏小高手！"
+    },
+    "故事顺序全对啦": {
+      "file": "voice-game-v1/aa71d9cca01933d42844.mp3?v=1",
+      "spoken": "故事顺序全对啦"
+    },
+    "想一想，哪件事先发生": {
+      "file": "voice-game-v1/c1f2f5fa98cda6dbff78.mp3?v=1",
+      "spoken": "想一想，哪件事先发生"
+    },
+    "画得真漂亮": {
+      "file": "voice-game-v1/4b77a79acc3cca652f88.mp3?v=1",
+      "spoken": "画得真漂亮"
+    }
+  }
+}

@@ -6,14 +6,18 @@
   <meta name="theme-color" content="#101729">
   <meta name="description" content="六个原创的轻量网页小游戏，打开浏览器就能玩。">
   <title>奇趣口袋 · 六款原创小游戏</title>
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="nav.css?v=1">
 </head>
 <body>
   <div class="ambient ambient-one" aria-hidden="true"></div>
   <div class="ambient ambient-two" aria-hidden="true"></div>
   <div class="shell">
     <header class="topbar">
-      <a class="brand" href="../index.html?section=games" id="brand-link" aria-label="返回果粒橙游戏乐园">
+      <a class="arcade-home-link arcade-home-link--dark" href="../index.html?section=games" aria-label="返回游戏乐园">
+        <span class="arcade-home-link__icon" aria-hidden="true">🏠</span><span>游戏乐园</span>
+      </a>
+      <a class="brand" href="#home" id="brand-link" aria-label="回到本页游戏列表">
         <span class="brand-mark" aria-hidden="true">✳</span>
         <span>奇趣口袋<span class="brand-dot">.</span></span>
       </a>
@@ -77,13 +81,14 @@
       <section class="play-section" id="play" aria-label="游戏区">
         <div class="play-header">
           <div>
-            <span class="play-kicker" id="play-kicker">01 / 物理闯关</span>
+            <span class="play-kicker" id="play-kicker">🚚 开小车</span>
             <h2 id="play-title">星邮快递</h2>
-            <p id="play-description">轻踩油门、稳住车身，把一封星星信送到终点。</p>
+            <p id="play-description">按住前进，把星星信送进邮箱。</p>
           </div>
           <div class="play-actions">
-            <button class="ghost-button" id="help-button" type="button">怎么玩 <span>?</span></button>
-            <button class="ghost-button" id="restart-button" type="button">重玩本关 <span>↻</span></button>
+            <button class="listen-button" id="listen-button" type="button" aria-label="听老师讲当前游戏玩法"><span aria-hidden="true">🔊</span><strong>听玩法</strong></button>
+            <button class="ghost-button" id="help-button" type="button">看玩法 <span>?</span></button>
+            <button class="ghost-button" id="restart-button" type="button">重玩 <span>↻</span></button>
           </div>
         </div>
         <div class="game-frame" id="game-frame">
@@ -99,21 +104,22 @@
               <span class="overlay-icon" id="overlay-icon">✦</span>
               <h3 id="overlay-title">关卡完成！</h3>
               <p id="overlay-message">星星信已经送到啦。</p>
-              <div class="overlay-actions"><button type="button" class="primary-button" id="overlay-primary">下一关 <span>→</span></button><button type="button" class="secondary-button" id="overlay-secondary">再玩一次</button></div>
+              <div class="overlay-actions"><button type="button" class="primary-button" id="overlay-primary">下一关 <span>→</span></button><button type="button" class="secondary-button" id="overlay-secondary">再玩一次</button><a class="overlay-home" href="../index.html?section=games">🏠 游戏乐园</a></div>
             </div>
           </div>
         </div>
-        <p class="under-game"><span class="under-dot"></span><span id="under-game-text">电脑按 ← → / A D，手机按住下方按钮。翻车后可立即重试。</span></p>
+        <p class="under-game"><span class="under-dot"></span><span id="under-game-text">手机按住前进或后退；飞起来时松手，稳稳落地。</span></p>
       </section>
     </main>
     <footer><span>奇趣口袋 · 原创玩法试验室</span><span>为手机与电脑浏览器设计</span></footer>
   </div>
+  <audio id="pocket-voice" preload="auto" hidden aria-hidden="true"></audio>
   <script src="games/car.js" defer></script>
   <script src="games/rings.js" defer></script>
   <script src="games/colony.js" defer></script>
   <script src="games/parking.js" defer></script>
   <script src="games/bubbles.js" defer></script>
   <script src="games/stack.js" defer></script>
-  <script src="app.js?v=2" defer></script>
+  <script src="app.js?v=3" defer></script>
 </body>
 </html>

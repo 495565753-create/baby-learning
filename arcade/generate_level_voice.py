@@ -9,11 +9,11 @@ from kokoro import KPipeline
 
 ROOT = Path(__file__).resolve().parent
 SCRIPTS = {
-    'traffic-intro': '点一辆车，再点方向箭头。把挡路的车挪开，让红色小车开到右边出口。',
-    'boxes-intro': '把箱子推到星星上。先看好路再推，走错了可以点弯箭头退回来。',
-    'maze-intro': '用方向箭头找路。先收集所有星星，再走进小房子。',
-    'pipes-intro': '轻点水管，它就会转身。把水龙头和小花连起来。',
-    'slide-intro': '点空格旁边的图片，把图案拼完整。上面的小图可以帮你看答案。',
+    'level-traffic-intro': '点一辆车，再用手指顺着车的方向滑动。把挡路的车挪开，让红色小车开到右边出口。',
+    'level-boxes-intro': '在画面上滑一滑，把箱子推到星星上。先看好路再推，走错了可以点弯箭头退回来。',
+    'level-maze-intro': '在画面上滑一滑来找路。先收集所有星星，再走进小房子。',
+    'level-pipes-intro': '轻点水管，它就会转身。把水龙头和小花连起来。',
+    'level-slide-intro': '点空格旁边的图片，把图案拼完整。上面的小图可以帮你看答案。',
     'levels-win': '太棒啦！这一关闯过去了。点箭头，去下一关！',
     'levels-next': '新的一关开始啦。慢慢看，想好了再动手。',
     'levels-final': '五十关全部完成啦！你真会动脑筋！',

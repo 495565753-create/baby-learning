@@ -13,3 +13,133 @@
 @media(max-width:620px){#parking-selection{display:block;width:100%;text-align:center}.bubble-color-note,.stack-progress{font-size:11px}}
 .fruit-return{flex:none;white-space:nowrap;padding:9px 11px;border:1px solid #ffffff38;border-radius:12px;color:#d8fb84;text-decoration:none;font-size:12px;font-weight:800}@media(max-width:620px){.fruit-return{font-size:10px;padding:8px 7px}}
 .kids-banner{display:flex;align-items:center;gap:20px;margin-top:24px;padding:22px 27px;border-radius:24px;background:linear-gradient(110deg,#fff1c8,#dff7e7);color:#263d38;text-decoration:none;box-shadow:0 14px 32px #0002}.kids-banner-icon{font-size:54px;line-height:1}.kids-banner span:nth-child(2){display:grid;gap:5px;flex:1}.kids-banner strong{font-size:24px}.kids-banner small{font-size:13px;color:#557267;line-height:1.5}.kids-banner b{white-space:nowrap;font-size:16px}.kids-banner:focus-visible{outline:3px solid #d8fb84;outline-offset:3px}@media(max-width:620px){.kids-banner{gap:12px;padding:18px 15px}.kids-banner-icon{font-size:38px}.kids-banner strong{font-size:18px}.kids-banner small{font-size:11px}.kids-banner b{font-size:13px}}
+
+/* Child-friendly play room: large actions, short instructions, clear outcomes. */
+.play-section{
+  scroll-margin-top:104px;
+  padding:28px;
+  border:3px solid #cdebdc;
+  border-radius:34px;
+  background:linear-gradient(145deg,#f8fff4,#eefaff);
+  color:#244b58;
+  box-shadow:0 12px 0 #b9dccc,0 28px 60px #02091455;
+}
+.play-kicker{
+  display:inline-flex;
+  align-items:center;
+  min-height:34px;
+  padding:5px 13px;
+  border-radius:99px;
+  background:#dff7e8;
+  color:#246c55;
+  font-size:14px;
+  font-weight:950;
+  letter-spacing:0;
+}
+.play-header h2{color:#173f50;font-size:40px;margin:8px 0 5px}
+.play-header p{color:#56717d;font-size:17px;font-weight:750;line-height:1.55}
+.play-actions{align-items:center;flex-wrap:wrap}
+.listen-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  min-width:158px;
+  min-height:68px;
+  padding:10px 20px;
+  border:3px solid #e6ad4f;
+  border-radius:22px;
+  background:#ffd878;
+  color:#503712;
+  box-shadow:0 6px 0 #d79b36;
+  font-size:20px;
+  touch-action:manipulation;
+}
+.listen-button span{font-size:28px;line-height:1}
+.listen-button strong{font-weight:1000;white-space:nowrap}
+.listen-button:active{transform:translateY(3px);box-shadow:0 3px 0 #d79b36}
+.listen-button.speaking{border-color:#69bd91;background:#aee7c1;box-shadow:0 6px 0 #65a982;animation:teacher-pulse 1.25s ease-in-out infinite}
+.ghost-button{
+  min-height:56px;
+  border:2px solid #c8e3d8;
+  border-radius:18px;
+  background:#fff;
+  color:#285a4d;
+  box-shadow:0 4px 0 #c8e3d8;
+  padding:10px 16px;
+  font-size:15px;
+  font-weight:900;
+}
+.ghost-button span{color:#dc7a49;font-size:19px}
+.ghost-button:hover{background:#f5fff9}
+.game-frame{border:4px solid #fff;border-radius:27px;box-shadow:0 12px 28px #1c665126}
+.game-toolbar{height:60px;background:#e4f7e9;color:#315f55;font-size:14px;font-weight:850}
+.level-chip{background:#ffd978;color:#553b13;font-size:14px}
+.canvas-wrap{background:#dceff1}
+.game-controls{min-height:88px;background:#eaf7ee;border-top:2px solid #cfe5d7}
+.control-button{
+  min-width:94px;
+  min-height:56px;
+  border:2px solid #c6dfd2;
+  border-radius:18px;
+  background:#fff;
+  color:#265849;
+  box-shadow:0 4px 0 #c6dfd2;
+  font-size:15px;
+  font-weight:900;
+}
+.control-button:hover,.control-button.pressed{background:#c9f0d7;color:#174d3b}
+.control-button.primary-control{background:#ffe09a;color:#513c18;border-color:#eac477;box-shadow:0 4px 0 #d7aa52}
+.control-button.primary-control:hover,.control-button.primary-control.pressed{background:#ffeca9}
+.control-divider{background:#b7d3c6}
+.control-hint,.drive-control span,.bubble-color-note,.stack-progress,#ring-selection,#parking-selection{color:#496b65}
+.under-game{min-height:44px;margin:14px 4px 0;color:#466b68;font-size:14px;font-weight:750;line-height:1.55}
+.under-dot{background:#59bd8b;box-shadow:0 0 0 4px #59bd8b22}
+.overlay{inset:60px 0 0;background:#173528cf}
+.overlay-card{border:4px solid #fff7d1;border-radius:30px;background:#fffdf3;padding:28px 22px}
+.overlay-icon{font-size:52px}
+.overlay-card h3{font-size:30px;color:#224b43}
+.overlay-card p{color:#597168;font-size:16px;font-weight:700}
+.primary-button,.secondary-button,.overlay-home{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:56px;
+  padding:11px 17px;
+  border-radius:17px;
+  font-size:16px;
+  font-weight:950;
+  text-decoration:none;
+  touch-action:manipulation;
+}
+.primary-button{background:#3f8f70;box-shadow:0 4px 0 #286c52}
+.secondary-button{border:2px solid #e7bb67;background:#ffe3a4;color:#624617;box-shadow:0 4px 0 #d5aa5b}
+.overlay-home{flex-basis:100%;border:2px solid #c8ddd4;background:#fff;color:#285b4b;box-shadow:0 4px 0 #c8ddd4}
+@keyframes teacher-pulse{50%{transform:translateY(-2px)}}
+@media(max-width:620px){
+  .play-section{margin-top:44px;padding:16px 12px 18px;border-radius:26px}
+  .play-header{gap:14px;margin-bottom:16px}
+  .play-header h2{font-size:32px}
+  .play-header p{font-size:15px}
+  .play-actions{display:grid;grid-template-columns:1fr 1fr;width:100%;gap:9px}
+  .listen-button{grid-column:1/-1;width:100%;min-height:66px}
+  .ghost-button{width:100%;min-height:56px}
+  .game-toolbar{height:58px;padding:0 10px;font-size:12px}
+  .game-frame{border-width:3px;border-radius:22px}
+  .game-controls{min-height:82px;padding:10px 7px;gap:7px}
+  .control-button{min-width:calc(50% - 8px);min-height:56px;padding:8px;font-size:14px}
+  .drive-control{width:min(46%,176px)}
+  .overlay{inset:58px 0 0;padding:12px}
+  .overlay-card{padding:24px 15px}
+  .overlay-card h3{font-size:27px}
+  .overlay-card p{font-size:15px}
+  .primary-button,.secondary-button{flex:1;min-width:132px}
+}
+@media(prefers-reduced-motion:reduce){.listen-button.speaking{animation:none!important}}
+@media(max-width:620px){
+  .overlay{place-items:start center;overflow-y:auto}
+  .overlay-card{margin-top:10px}
+  .overlay-icon{font-size:44px}
+  .overlay-card h3{margin:4px 0;font-size:25px}
+  .overlay-card p{margin:0 0 14px;line-height:1.45}
+}

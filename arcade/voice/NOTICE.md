@@ -6,3 +6,8 @@ The spoken scripts are in `scripts.json`; the generation program is
 
 The website serves these MP3 files directly and does not call an online
 text-to-speech service while a child plays.
+
+The swipe-game introductions and the `level-*` introductions were regenerated
+with Microsoft `zh-CN-XiaoxiaoNeural` (warm female voice). Their scripts are
+recorded in `scripts.json` and `level-scripts.json`. The distinct `level-*`
+names keep the 25-game page and 50-level page from overwriting one another.

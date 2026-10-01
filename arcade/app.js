@@ -5,13 +5,16 @@
   const ctx = canvas.getContext('2d');
   const controls = document.getElementById('game-controls');
   const overlay = document.getElementById('game-overlay');
+  const voice = document.getElementById('pocket-voice');
+  const listenButton = document.getElementById('listen-button');
+  let resumeMusicAfterVoice = false;
   const gameNames = {
-    car: {title:'星邮快递', kicker:'01 / 物理闯关', description:'轻踩油门、稳住车身，把一封星星信送到终点。', foot:'电脑按 ← → / A D，手机按住下方按钮。翻车后可立即重试。'},
-    rings: {title:'旋环工坊', kicker:'02 / 空间解谜', description:'转动机关，让每一层的缺口对准星标。', foot:'点选圆环后使用下方按钮，也可直接轻点圆环使它顺时针转动。'},
-    colony: {title:'森林搬搬队', kicker:'03 / 治愈解压', description:'选择颜色，派小队搬走画布边缘的色块。', foot:'点选颜色即可派出小队。先清理外层，再逐步搬出整幅像素画。'},
-    parking: {title:'车车出逃', kicker:'04 / 挪车解谜', description:'移动车辆，给红色小车腾出一条出口。', foot:'点一辆车选中，再点方向按钮；也可以沿着车的方向滑动。'},
-    bubbles: {title:'泡泡星球', kicker:'05 / 泡泡消除', description:'把同色泡泡凑成三个，让整片星空变清爽。', foot:'点击画面瞄准并发射。下方按钮可切换当前泡泡颜色。'},
-    stack: {title:'云上叠塔', kicker:'06 / 节奏挑战', description:'看准时机落下一层，建一座直上云端的小塔。', foot:'点击画面或下方按钮放下方块；电脑也可以按空格。'}
+    car: {title:'星邮快递', kicker:'🚚 开小车', description:'按住前进，把星星信送进邮箱。', foot:'手机按住前进或后退；飞起来时松手，稳稳落地。', instructions:'按住前进，让小邮车翻过小坡。快飞起来时松开一点，别让车翻倒。把星星信送到邮箱，就过关啦！'},
+    rings: {title:'旋环工坊', kicker:'⭕ 转一转', description:'轻点圆环，把开口转到星星。', foot:'点圆环直接转；也可以先选圆环，再点左右转动。', instructions:'轻点一个圆环，它就会转一格。把每一层的开口都转到上面的星星，就成功啦！'},
+    colony: {title:'森林搬搬队', kicker:'🐜 搬积木', description:'选一个颜色，把外圈色块搬走。', foot:'先搬能碰到外边的颜色，一层一层清空画布。', instructions:'先选一种颜色，小队会搬走外边能碰到的同色方块。把画布上的方块全部搬完，就过关啦！'},
+    parking: {title:'车车出逃', kicker:'🚗 挪车车', description:'顺着车身滑动，让红车到出口。', foot:'先点一辆车，再顺着车身方向滑动。', instructions:'先点一辆车，再顺着车身方向滑动。挪开挡路的车，让红色小车开到右边出口。'},
+    bubbles: {title:'泡泡星球', kicker:'🫧 打泡泡', description:'发射泡泡，三个同色就会消失。', foot:'轻点画面瞄准；下方按钮可以换泡泡颜色。', instructions:'轻点画面瞄准并发射泡泡。三个同色泡泡碰在一起就会消失。把泡泡全部清掉吧！'},
+    stack: {title:'云上叠塔', kicker:'🏗️ 叠高高', description:'看准重合的时候，轻点放下方块。', foot:'轻点画面或“放下方块”，把每一层稳稳叠好。', instructions:'方块左右移动时，看准它和下面一层重合的时刻，轻点画面把它放下。稳稳叠到目标层数，就过关啦！'}
   };
 
   const app = {
@@ -96,6 +99,32 @@
     button.setAttribute('aria-label', app.muted ? '开启背景音乐和操作音效' : '关闭背景音乐和操作音效');
   }
 
+  function updateListenButton(speaking=false) {
+    listenButton.classList.toggle('speaking', speaking);
+    listenButton.querySelector('span').textContent = speaking ? '👩‍🏫' : '🔊';
+    listenButton.querySelector('strong').textContent = speaking ? '老师在讲' : '听玩法';
+    listenButton.setAttribute('aria-label', speaking ? '正在讲当前游戏玩法，点一下重新播放' : '听老师讲当前游戏玩法');
+  }
+
+  function finishInstructions() {
+    updateListenButton(false);
+    if (resumeMusicAfterVoice && !app.muted) app.audioCtx?.resume().catch?.(() => {});
+    resumeMusicAfterVoice = false;
+  }
+
+  function playInstructions(id=app.gameId) {
+    if (!gameNames[id]) return;
+    try {
+      voice.pause();
+      voice.currentTime = 0;
+      voice.src = `voice/pocket-${id}-intro.mp3?v=1`;
+      resumeMusicAfterVoice ||= Boolean(app.audioCtx && app.audioCtx.state === 'running' && !app.muted);
+      if (resumeMusicAfterVoice) app.audioCtx.suspend().catch?.(() => {});
+      updateListenButton(true);
+      voice.play().catch(finishInstructions);
+    } catch (_) { finishInstructions(); }
+  }
+
   function selectGame(id, scroll=true) {
     if (!window.PocketGames?.[id]) return;
     app.game?.destroy?.();
@@ -114,6 +143,7 @@
     controls.replaceChildren();
     app.game.start();
     history.replaceState(null, '', `#${id}`);
+    if (scroll) playInstructions(id);
     if (scroll) document.getElementById('play').scrollIntoView({behavior:'smooth', block:'start'});
   }
 
@@ -132,10 +162,13 @@
   window.addEventListener('keydown', unlockAudio, {capture:true});
   document.addEventListener('visibilitychange', () => { if (!document.hidden) app.nextNoteTime = 0; });
   document.getElementById('restart-button').addEventListener('click', () => { app.hideOverlay(); app.game?.restart(); });
+  listenButton.addEventListener('click', () => playInstructions());
+  voice.addEventListener('ended', finishInstructions);
+  voice.addEventListener('error', finishInstructions);
   document.getElementById('help-button').addEventListener('click', () => {
     const game = app.game;
     if (!game) return;
-    app.showOverlay({icon:'?', title:'怎么玩', message:game.helpText, primary:'明白了，开始玩', secondary:'重玩本关', onPrimary:()=>{}, onSecondary:()=>game.restart()});
+    app.showOverlay({icon:'👩‍🏫', title:'这样玩', message:gameNames[app.gameId].instructions, primary:'我会啦，开始玩', secondary:'重玩本关', onPrimary:()=>{}, onSecondary:()=>game.restart()});
   });
   canvas.addEventListener('pointerdown', event => {
     const bounds = canvas.getBoundingClientRect();

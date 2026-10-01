@@ -45,3 +45,12 @@ footer{margin-top:30px}
 
 .level-link-list{margin-bottom:26px}.level-link-list .game-card{text-decoration:none;min-height:130px}.level-link-count{position:absolute;right:9px;bottom:8px;min-width:34px;padding:3px 6px;border-radius:99px;background:#fff;color:#358060;font-size:15px;font-weight:950;text-align:center}
 @media(max-width:480px){.level-link-list .game-card{min-height:105px}.level-link-count{right:5px;bottom:5px;font-size:12px}}
+
+/* Swipe-first controls for the six direction games. */
+.game-board.swipe-ready{position:relative;touch-action:none}
+.game-board.swipe-ready::after{content:"☝️ 手指滑一滑";position:absolute;z-index:4;left:50%;bottom:14px;transform:translateX(-50%);min-height:42px;display:flex;align-items:center;padding:0 16px;border:2px solid #fff;background:#245f51e8;color:#fff;border-radius:99px;box-shadow:0 5px 15px #173c3438;font-size:15px;font-weight:950;white-space:nowrap;pointer-events:none;animation:swipe-coach 1.5s ease-in-out infinite}
+.direction-controls-muted{min-height:62px;padding:7px 10px;opacity:.78}
+.direction-controls-muted button.control-icon{width:52px;height:50px;min-height:50px;border-radius:17px;font-size:28px;box-shadow:0 3px 0 #cde7d8}
+@keyframes swipe-coach{50%{transform:translateX(calc(-50% + 8px))}}
+@media(max-width:480px){.direction-controls-muted{min-height:58px;padding:5px}.direction-controls-muted button.control-icon{width:48px;height:48px;min-height:48px}.game-board.swipe-ready::after{bottom:9px;font-size:14px}}
+@media(prefers-reduced-motion:reduce){.game-board.swipe-ready::after{animation:none}}

@@ -2,9 +2,9 @@
 'use strict';
 
 const GAMES = [
-  {id:'traffic',name:'车车出逃',art:'car',help:'点一辆车，再点方向箭头。把挡路的车挪开，让红色小车开到右边出口。'},
-  {id:'boxes',name:'星星搬运队',art:'box',help:'把箱子推到星星上。先看好路再推，走错了可以点弯箭头退回来。'},
-  {id:'maze',name:'迷宫寻宝',art:'maze',help:'用方向箭头找路。先收集所有星星，再走进小房子。'},
+  {id:'traffic',name:'车车出逃',art:'car',help:'点一辆车，再用手指顺着车的方向滑动。把挡路的车挪开，让红色小车开到右边出口。'},
+  {id:'boxes',name:'星星搬运队',art:'box',help:'在画面上滑一滑，把箱子推到星星上。先看好路再推，走错了可以点弯箭头退回来。'},
+  {id:'maze',name:'迷宫寻宝',art:'maze',help:'在画面上滑一滑来找路。先收集所有星星，再走进小房子。'},
   {id:'pipes',name:'水管小工程师',art:'pipes',help:'轻点水管，它就会转身。把水龙头和小花连起来。'},
   {id:'slide',name:'图片拼拼乐',art:'slider',help:'点空格旁边的图片，把图案拼完整。上面的小图可以帮你看答案。'}
 ];
@@ -20,7 +20,7 @@ const music = {
   tone(f,d=.12,volume=.05,when){if(this.muted||!this.ctx)return;try{const t=when??this.ctx.currentTime,o=this.ctx.createOscillator(),g=this.ctx.createGain();o.type='triangle';o.frequency.value=f;g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(volume,t+.02);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g).connect(this.ctx.destination);o.start(t);o.stop(t+d+.025)}catch(_){}},
   tap(good=true){try{navigator.vibrate?.(good?16:9)}catch(_){}this.start();this.tone(good?690:260,.13,good?.055:.025)}
 };
-function say(key){try{voice.pause();voice.currentTime=0;voice.src=`voice/${key}.mp3`;voice.play().catch(()=>{})}catch(_){}}
+function say(key){try{voice.pause();voice.currentTime=0;voice.src=`voice/${key}.mp3?v=2`;voice.play().catch(()=>{})}catch(_){}}
 function note(message,spoken){status.textContent=message;if(spoken)say(spoken)}
 function completed(id){try{return new Set(JSON.parse(localStorage.getItem(`levels-done-${id}`)||'[]'))}catch(_){return new Set()}}
 function unlocked(id){return Math.min(50,Math.max(1,Number(localStorage.getItem(`levels-open-${id}`))||1))}
@@ -65,7 +65,7 @@ function startLevel(next=false){
   phase='playing';state=deepCopy(window.LevelData[current.id][number-1]);
   if(current.id==='maze')state.player=state.size+1;
   history=[];moves=0;selectedCar=0;music.start();draw();
-  say(next?'levels-next':`${current.id}-intro`);nav();
+  say(next?'levels-next':`level-${current.id}-intro`);nav();
 }
 function finish(){
   if(phase!=='playing')return;
@@ -212,7 +212,8 @@ $('#previous-level').addEventListener('click',()=>selectLevel(number-1));
 $('#next-level').addEventListener('click',()=>selectLevel(number+1));
 $('#level-picker').addEventListener('click',event=>{const target=event.target.closest('[data-pick]');if(target)selectLevel(Number(target.dataset.pick))});
 $('#reset-current').addEventListener('click',()=>{localStorage.removeItem(`levels-done-${current.id}`);localStorage.removeItem(`levels-open-${current.id}`);number=1;cards();showIntro()});
-$('#speak-button').addEventListener('click',()=>say(`${current.id}-intro`));
+$('#speak-button').addEventListener('click',()=>say(`level-${current.id}-intro`));
+$('#restart-level-button').addEventListener('click',()=>startLevel(true));
 $('#music-button').addEventListener('click',()=>{music.muted=!music.muted;localStorage.setItem('kid-challenge-muted',music.muted?'yes':'no');if(music.muted)music.ctx?.suspend();else{music.next=0;music.start()}updateMusic();say(music.muted?'music-off':'music-on')});
 function updateMusic(){const button=$('#music-button');button.innerHTML=icon(music.muted?'mute':'music');button.setAttribute('aria-label',music.muted?'打开音乐':'关闭音乐');button.setAttribute('aria-pressed',String(!music.muted))}
 window.addEventListener('keydown',event=>{const actionName={ArrowUp:'up',ArrowDown:'down',ArrowLeft:'left',ArrowRight:'right',w:'up',s:'down',a:'left',d:'right'}[event.key];if(actionName&&phase==='playing'){event.preventDefault();action(actionName)}});
