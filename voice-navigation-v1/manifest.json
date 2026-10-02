@@ -1,0 +1,44 @@
+{
+  "created_at": "2026-10-02T09:04:26+08:00",
+  "generator": "Microsoft Edge neural TTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "-8%",
+  "pitch": "+0Hz",
+  "expressive_style": null,
+  "note": "默认晓晓神经声线，语速减慢 8%；未启用教师或其他情感样式。",
+  "text_count": 8,
+  "files": {
+    "手指动一动。滑一滑，拖一拖，选一个喜欢的游戏吧。": {
+      "file": "voice-navigation-v1/d532f98655ca217c283c.mp3",
+      "spoken": "手指动一动。滑一滑，拖一拖，选一个喜欢的游戏吧。"
+    },
+    "点一点。轻轻点屏幕，小手也能玩游戏。": {
+      "file": "voice-navigation-v1/65625c8d0c33beaa426e.mp3",
+      "spoken": "点一点。轻轻点屏幕，小手也能玩游戏。"
+    },
+    "找一找。看看图片，找到一样的朋友。": {
+      "file": "voice-navigation-v1/615db953da19417fbe3e.mp3",
+      "spoken": "找一找。看看图片，找到一样的朋友。"
+    },
+    "想一想。慢慢想，试试看，答错也没有关系。": {
+      "file": "voice-navigation-v1/0b499128a58a3a8ce9ba.mp3",
+      "spoken": "想一想。慢慢想，试试看，答错也没有关系。"
+    },
+    "自由玩。画画，涂色，弹小琴，选一个喜欢的吧。": {
+      "file": "voice-navigation-v1/455f7f50dd16c63ef69c.mp3",
+      "spoken": "自由玩。画画，涂色，弹小琴，选一个喜欢的吧。"
+    },
+    "先选一种颜色，再点图画里的小块，就能涂上颜色啦。": {
+      "file": "voice-navigation-v1/b52a44d113e51164c8b3.mp3",
+      "spoken": "先选一种颜色，再点图画里的小块，就能涂上颜色啦。"
+    },
+    "先选一种颜色，再用小手在白纸上画画。也可以点图章，印上小星星。": {
+      "file": "voice-navigation-v1/bc1191c8a0b7cddcb513.mp3",
+      "spoken": "先选一种颜色，再用小手在白纸上画画。也可以点图章，印上小星星。"
+    },
+    "轻轻点彩色琴键，听听不同的声音。点播放按钮，还能听小星星。": {
+      "file": "voice-navigation-v1/f1b2913f49735ca258ce.mp3",
+      "spoken": "轻轻点彩色琴键，听听不同的声音。点播放按钮，还能听小星星。"
+    }
+  }
+}

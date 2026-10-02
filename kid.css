@@ -68,3 +68,6 @@ main{width:min(100%,980px);margin:auto;padding:16px}.hero{background:linear-grad
 @media(prefers-reduced-motion:reduce){.drag-item i,.train-passenger i,.firefly-hand,.firefly-light.next,.game-celebration>div{animation:none!important}}
 .creative-game-nav{max-width:720px;margin-left:auto;margin-right:auto}
 @media(max-width:360px){.game-exit b{display:inline;font-size:11px}.mini-game-name{display:none}.game-exit{padding:6px 9px}}
+
+.game-directory-help{display:flex;align-items:center;justify-content:center;gap:5px;flex:0 0 auto;min-height:48px;padding:9px 12px;border:2px solid color-mix(in srgb,var(--cat) 35%,white);border-radius:16px;background:#fff;color:#365e4a;font-size:18px;font-weight:850}.game-directory-help span{font-size:13px}.game-directory-help:active{transform:scale(.96)}
+@media(max-width:360px){.game-category-head{gap:8px}.game-category-head h2{font-size:21px}.game-category-head>span{width:46px;height:46px}.game-directory-help{padding:8px;gap:3px}.game-directory-help span{font-size:12px}}
