@@ -1,0 +1,7273 @@
+{
+  "book_count": 94,
+  "page_count": 454,
+  "original_books": 82,
+  "new_books": 12,
+  "tool": "built-in image_gen",
+  "files": [
+    {
+      "book": "paw_01",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_01/page1.webp",
+      "size": [
+        359,
+        357
+      ],
+      "crop_box": [
+        0,
+        0,
+        359,
+        357
+      ],
+      "sha256": "36ca7df73133e9da4dd7ee303d7bced5d4baa19b5ef0a2f04f45db86db33ed9f"
+    },
+    {
+      "book": "paw_01",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_01/page2.webp",
+      "size": [
+        360,
+        357
+      ],
+      "crop_box": [
+        362,
+        0,
+        722,
+        357
+      ],
+      "sha256": "de07546a76d7edaa227ccb638df22e190575f4e8a644570dcdb43ab34211cce0"
+    },
+    {
+      "book": "paw_01",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_01/page3.webp",
+      "size": [
+        359,
+        360
+      ],
+      "crop_box": [
+        0,
+        360,
+        359,
+        720
+      ],
+      "sha256": "cc99e40c15ad917effec997a42143d8ac3e0454366085b7c2aaa14d07bf46901"
+    },
+    {
+      "book": "paw_01",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_01/page4.webp",
+      "size": [
+        360,
+        360
+      ],
+      "crop_box": [
+        362,
+        360,
+        722,
+        720
+      ],
+      "sha256": "0668ed4f577e9074af2a90120be2e13eb65272586553639d2587276e1e62f2a0"
+    },
+    {
+      "book": "paw_01",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_01/page5.webp",
+      "size": [
+        359,
+        363
+      ],
+      "crop_box": [
+        0,
+        723,
+        359,
+        1086
+      ],
+      "sha256": "dcc4bb399e4a098ea8db70239b13934e123fab0bcc3913376eef7c1cba47fb13"
+    },
+    {
+      "book": "paw_01",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_01/page6.webp",
+      "size": [
+        360,
+        363
+      ],
+      "crop_box": [
+        362,
+        723,
+        722,
+        1086
+      ],
+      "sha256": "f388f2926d10bb62ccc31e02b809d9a0cc480775a80032efe6855fe1aa976041"
+    },
+    {
+      "book": "paw_02",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_02/page1.webp",
+      "size": [
+        359,
+        357
+      ],
+      "crop_box": [
+        726,
+        0,
+        1085,
+        357
+      ],
+      "sha256": "137c27e71c5117202e9b87cac4f10dbf4cceb8bca0d310a9d35490cc92d3b4b6"
+    },
+    {
+      "book": "paw_02",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_02/page2.webp",
+      "size": [
+        360,
+        357
+      ],
+      "crop_box": [
+        1088,
+        0,
+        1448,
+        357
+      ],
+      "sha256": "964f397766ed99115d01bf624018d0d24f97ffc8ae627660f08a0447562c48ca"
+    },
+    {
+      "book": "paw_02",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_02/page3.webp",
+      "size": [
+        359,
+        360
+      ],
+      "crop_box": [
+        726,
+        360,
+        1085,
+        720
+      ],
+      "sha256": "12a8ca339b1078c27d9ec74d4ff6030295dead2a5964dd57f556ee0dd7476adb"
+    },
+    {
+      "book": "paw_02",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_02/page4.webp",
+      "size": [
+        360,
+        360
+      ],
+      "crop_box": [
+        1088,
+        360,
+        1448,
+        720
+      ],
+      "sha256": "80a6f5673dac1cdcedcd8ec797f327855d0585161ff6b73551eacc1602f3885a"
+    },
+    {
+      "book": "paw_02",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_02/page5.webp",
+      "size": [
+        359,
+        363
+      ],
+      "crop_box": [
+        726,
+        723,
+        1085,
+        1086
+      ],
+      "sha256": "cb8214d3092630c08ad98dfddc006ac9017d9c1bbee2e4540ad9c40ebdcf82da"
+    },
+    {
+      "book": "paw_02",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_02/page6.webp",
+      "size": [
+        360,
+        363
+      ],
+      "crop_box": [
+        1088,
+        723,
+        1448,
+        1086
+      ],
+      "sha256": "20eddd4082ca81a74eca08297cb257110a9ffcd2b2eb23ac465d16a95d77f849"
+    },
+    {
+      "book": "paw_03",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_03/page1.webp",
+      "size": [
+        383,
+        339
+      ],
+      "crop_box": [
+        0,
+        0,
+        383,
+        339
+      ],
+      "sha256": "e86bcb426ed2f6d9cdde74866467f38d12daf2fab24f8be725f7ee1909a01ac8"
+    },
+    {
+      "book": "paw_03",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_03/page2.webp",
+      "size": [
+        383,
+        339
+      ],
+      "crop_box": [
+        384,
+        0,
+        767,
+        339
+      ],
+      "sha256": "5ff1af4316bb7288d5c8b261899ab9599dfbcdb9f0b3c366db3093eddb7db83e"
+    },
+    {
+      "book": "paw_03",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_03/page3.webp",
+      "size": [
+        383,
+        332
+      ],
+      "crop_box": [
+        0,
+        341,
+        383,
+        673
+      ],
+      "sha256": "d269db242340ac45e0b3ee55d8a8b0cd0b7cec0b910bb34b61c71100ee6c6b4d"
+    },
+    {
+      "book": "paw_03",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_03/page4.webp",
+      "size": [
+        383,
+        332
+      ],
+      "crop_box": [
+        384,
+        341,
+        767,
+        673
+      ],
+      "sha256": "0326d08b0288febe8dd0330bc39a2091be220406328843eab41a970c955ae4c6"
+    },
+    {
+      "book": "paw_03",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_03/page5.webp",
+      "size": [
+        383,
+        350
+      ],
+      "crop_box": [
+        0,
+        674,
+        383,
+        1024
+      ],
+      "sha256": "e5874927eef0162fd37ee2041601791113d488f69e52aef803bf6506e092f526"
+    },
+    {
+      "book": "paw_03",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_03/page6.webp",
+      "size": [
+        383,
+        350
+      ],
+      "crop_box": [
+        384,
+        674,
+        767,
+        1024
+      ],
+      "sha256": "550c1f0345f6e85643c903d00dcdac8638290dedb408b717ad43d4a5d281b92d"
+    },
+    {
+      "book": "paw_04",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_04/page1.webp",
+      "size": [
+        381,
+        339
+      ],
+      "crop_box": [
+        769,
+        0,
+        1150,
+        339
+      ],
+      "sha256": "63305ab00839888eefc4e2dacfcf84e46db65f0989426c97377604aa674bef1d"
+    },
+    {
+      "book": "paw_04",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_04/page2.webp",
+      "size": [
+        383,
+        339
+      ],
+      "crop_box": [
+        1153,
+        0,
+        1536,
+        339
+      ],
+      "sha256": "9a655cfce7e07f4e5160b096cae07b44202a9c39b42e776f21c1958bbf568ee5"
+    },
+    {
+      "book": "paw_04",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_04/page3.webp",
+      "size": [
+        381,
+        332
+      ],
+      "crop_box": [
+        769,
+        341,
+        1150,
+        673
+      ],
+      "sha256": "c86343f9da5c2476aa2d7e39fdbdc8bd8879a187a8958d817a1bc6919b8e5f7c"
+    },
+    {
+      "book": "paw_04",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_04/page4.webp",
+      "size": [
+        383,
+        332
+      ],
+      "crop_box": [
+        1153,
+        341,
+        1536,
+        673
+      ],
+      "sha256": "d386f0e62cf65d0f28e70dc7602074af35228e69cd173a822f9deed362986fcc"
+    },
+    {
+      "book": "paw_04",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_04/page5.webp",
+      "size": [
+        381,
+        349
+      ],
+      "crop_box": [
+        769,
+        675,
+        1150,
+        1024
+      ],
+      "sha256": "b0a3375de9ad8d3ab2403019543376710138c67c735f19f03c6e82e66a21b9fe"
+    },
+    {
+      "book": "paw_04",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_04/page6.webp",
+      "size": [
+        383,
+        349
+      ],
+      "crop_box": [
+        1153,
+        675,
+        1536,
+        1024
+      ],
+      "sha256": "18fe48b03e70911317d36ca26e8000d917c8d98ee32abf9b9567eee4f58070f8"
+    },
+    {
+      "book": "paw_05",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_05/page1.webp",
+      "size": [
+        361,
+        360
+      ],
+      "crop_box": [
+        0,
+        0,
+        361,
+        360
+      ],
+      "sha256": "b2ea4e610c16e952103d22e563a9d867fde205e05cca9ceb9b16915c9b3ddd56"
+    },
+    {
+      "book": "paw_05",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_05/page2.webp",
+      "size": [
+        359,
+        360
+      ],
+      "crop_box": [
+        364,
+        0,
+        723,
+        360
+      ],
+      "sha256": "33be78f7ec5da22fe3a03f6dfc073182c6f0abf55bb93dc0ee3b78565d895ea3"
+    },
+    {
+      "book": "paw_05",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_05/page3.webp",
+      "size": [
+        361,
+        360
+      ],
+      "crop_box": [
+        0,
+        363,
+        361,
+        723
+      ],
+      "sha256": "1ef8c65d9b2936770c14754483682d393bf8e5146177a27a90dea5c965ef5b67"
+    },
+    {
+      "book": "paw_05",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_05/page4.webp",
+      "size": [
+        359,
+        360
+      ],
+      "crop_box": [
+        364,
+        363,
+        723,
+        723
+      ],
+      "sha256": "529b6492843dc218f5c4ef3014ede2e6593fca4f34c96cc95d8a0661307b0892"
+    },
+    {
+      "book": "paw_05",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_05/page5.webp",
+      "size": [
+        361,
+        360
+      ],
+      "crop_box": [
+        0,
+        726,
+        361,
+        1086
+      ],
+      "sha256": "0fe046dfdd0fd5ebd0ba36dbaf71ffdbf06bec98bd9785585c278aacef155bf9"
+    },
+    {
+      "book": "paw_05",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_05/page6.webp",
+      "size": [
+        359,
+        360
+      ],
+      "crop_box": [
+        364,
+        726,
+        723,
+        1086
+      ],
+      "sha256": "bed7b23da25a6ff73000816c1e20606fd040c3cab6f1731ab04c68f1ee47aa86"
+    },
+    {
+      "book": "paw_06",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_06/page1.webp",
+      "size": [
+        358,
+        360
+      ],
+      "crop_box": [
+        726,
+        0,
+        1084,
+        360
+      ],
+      "sha256": "9ec0cb66ed0f71990fc629b26fb653f2de75ade69cbb97d1592396a4e8050e25"
+    },
+    {
+      "book": "paw_06",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_06/page2.webp",
+      "size": [
+        361,
+        360
+      ],
+      "crop_box": [
+        1087,
+        0,
+        1448,
+        360
+      ],
+      "sha256": "0f396dfade2918c86ba5ae5dcf5fecddc96225074de8730734b193d952ca73d3"
+    },
+    {
+      "book": "paw_06",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_06/page3.webp",
+      "size": [
+        358,
+        360
+      ],
+      "crop_box": [
+        726,
+        363,
+        1084,
+        723
+      ],
+      "sha256": "a230c60efe0cdb126f0891bec8e99b7096dee4fbadec9da8da2b6f7173444bed"
+    },
+    {
+      "book": "paw_06",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_06/page4.webp",
+      "size": [
+        361,
+        360
+      ],
+      "crop_box": [
+        1087,
+        363,
+        1448,
+        723
+      ],
+      "sha256": "ea1b07c8d1b47c95ab2cab015ba54cb26fa489568f3a30ac5e18648b9fa74b01"
+    },
+    {
+      "book": "paw_06",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_06/page5.webp",
+      "size": [
+        358,
+        360
+      ],
+      "crop_box": [
+        726,
+        726,
+        1084,
+        1086
+      ],
+      "sha256": "ef498ef2b6148cf7ecc793a70c988c61137998e720477fb45511a6c9f28d811e"
+    },
+    {
+      "book": "paw_06",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_06/page6.webp",
+      "size": [
+        361,
+        360
+      ],
+      "crop_box": [
+        1087,
+        726,
+        1448,
+        1086
+      ],
+      "sha256": "13d6c2d6da826ffbdc132ac20d3b364e5b648a459c4b72974eb88abf969d2bc1"
+    },
+    {
+      "book": "paw_07",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_07/page1.webp",
+      "size": [
+        356,
+        359
+      ],
+      "crop_box": [
+        0,
+        0,
+        356,
+        359
+      ],
+      "sha256": "8c8a3a56681c2da18a8b8f714b57bddbddcba05e2c8f4a9ad6f3140a9615ea9d"
+    },
+    {
+      "book": "paw_07",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_07/page2.webp",
+      "size": [
+        360,
+        359
+      ],
+      "crop_box": [
+        362,
+        0,
+        722,
+        359
+      ],
+      "sha256": "470898774fab8d4d3581caf0b63b2dcf981f68a6cd8fa8954c07b7cd1db946e4"
+    },
+    {
+      "book": "paw_07",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_07/page3.webp",
+      "size": [
+        356,
+        354
+      ],
+      "crop_box": [
+        0,
+        364,
+        356,
+        718
+      ],
+      "sha256": "2ed2a794f557af3a5a6b169138164be2da5e2947e56ddae4cb4e16b888c96998"
+    },
+    {
+      "book": "paw_07",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_07/page4.webp",
+      "size": [
+        360,
+        354
+      ],
+      "crop_box": [
+        362,
+        364,
+        722,
+        718
+      ],
+      "sha256": "c2dbdbe9cb5115e6cdfe8379885def7a6da59664d43cb20ce22c2286af62a6d8"
+    },
+    {
+      "book": "paw_07",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_07/page5.webp",
+      "size": [
+        356,
+        363
+      ],
+      "crop_box": [
+        0,
+        723,
+        356,
+        1086
+      ],
+      "sha256": "68b42da93c16aa9771917b07dd57f3ee35b79f28a92ec55859c71927038b9479"
+    },
+    {
+      "book": "paw_07",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_07/page6.webp",
+      "size": [
+        360,
+        363
+      ],
+      "crop_box": [
+        362,
+        723,
+        722,
+        1086
+      ],
+      "sha256": "378b49b2ef1f0d949695d44640405cb33555b7299f14d719af195f4def3eba17"
+    },
+    {
+      "book": "paw_08",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_08/page1.webp",
+      "size": [
+        359,
+        359
+      ],
+      "crop_box": [
+        727,
+        0,
+        1086,
+        359
+      ],
+      "sha256": "8589ef3ca49948c73b9feaae52c0f07cf61b8bc10cfa39221ffc6a82a8e82f84"
+    },
+    {
+      "book": "paw_08",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_08/page2.webp",
+      "size": [
+        356,
+        359
+      ],
+      "crop_box": [
+        1092,
+        0,
+        1448,
+        359
+      ],
+      "sha256": "e00d2141196542229f507dd69d191a1eb4237e424f289f5c4f725f5e32b8bbbe"
+    },
+    {
+      "book": "paw_08",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_08/page3.webp",
+      "size": [
+        359,
+        354
+      ],
+      "crop_box": [
+        727,
+        364,
+        1086,
+        718
+      ],
+      "sha256": "f74a2335675667354ceef44660587c6ff12553b4b07cd3b82cb9e04fd424f5c4"
+    },
+    {
+      "book": "paw_08",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_08/page4.webp",
+      "size": [
+        356,
+        354
+      ],
+      "crop_box": [
+        1092,
+        364,
+        1448,
+        718
+      ],
+      "sha256": "820c26fe62343856755f9bc65ed51364163e408c3d8b275330b321b9405d7684"
+    },
+    {
+      "book": "paw_08",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_08/page5.webp",
+      "size": [
+        359,
+        363
+      ],
+      "crop_box": [
+        727,
+        723,
+        1086,
+        1086
+      ],
+      "sha256": "8395ecefdcfc9c93f0879236f47a87f5811c91ef1e209e597a9c9cf2d9308639"
+    },
+    {
+      "book": "paw_08",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_08/page6.webp",
+      "size": [
+        356,
+        363
+      ],
+      "crop_box": [
+        1092,
+        723,
+        1448,
+        1086
+      ],
+      "sha256": "7ddb57a0449d8b0d35caf93e99a6ee0221b05217491cba84ba1e3f98dd8d4bcf"
+    },
+    {
+      "book": "paw_09",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_09/page1.webp",
+      "size": [
+        360,
+        360
+      ],
+      "crop_box": [
+        0,
+        0,
+        360,
+        360
+      ],
+      "sha256": "7b2e96284de0f5d2a790d73b6e56e6cabfd1212d041cde1ea17a405f62fbf337"
+    },
+    {
+      "book": "paw_09",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_09/page2.webp",
+      "size": [
+        360,
+        360
+      ],
+      "crop_box": [
+        363,
+        0,
+        723,
+        360
+      ],
+      "sha256": "b0b215e38f15750d4a131ce7c59876d49a22832943e3cb3ee85d5291480baf7d"
+    },
+    {
+      "book": "paw_09",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_09/page3.webp",
+      "size": [
+        360,
+        357
+      ],
+      "crop_box": [
+        0,
+        363,
+        360,
+        720
+      ],
+      "sha256": "e4267edadb37b609e2c483758ace9b90e5f4fc2242add233b0c0ac930fa47317"
+    },
+    {
+      "book": "paw_09",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_09/page4.webp",
+      "size": [
+        360,
+        357
+      ],
+      "crop_box": [
+        363,
+        363,
+        723,
+        720
+      ],
+      "sha256": "9e4f7fa0abbe2aa4792f2a84a2b36602710839bdb4509fd626872696313aa01f"
+    },
+    {
+      "book": "paw_09",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_09/page5.webp",
+      "size": [
+        360,
+        363
+      ],
+      "crop_box": [
+        0,
+        723,
+        360,
+        1086
+      ],
+      "sha256": "c7cba8ba652c92b127b3a1203f682b8cf5d79661210704f7889383f5a5381db5"
+    },
+    {
+      "book": "paw_09",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_09/page6.webp",
+      "size": [
+        360,
+        363
+      ],
+      "crop_box": [
+        363,
+        723,
+        723,
+        1086
+      ],
+      "sha256": "3b1cc8308468ca94cc5780ade6bd04fa3efa38ce67349735e85cedf5ef81c1c9"
+    },
+    {
+      "book": "paw_10",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_10/page1.webp",
+      "size": [
+        359,
+        360
+      ],
+      "crop_box": [
+        726,
+        0,
+        1085,
+        360
+      ],
+      "sha256": "23a68464bee0dee8adbec4e2b56f7f4d7d84d5be7ffed13cba6f7633c17cfa1b"
+    },
+    {
+      "book": "paw_10",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_10/page2.webp",
+      "size": [
+        360,
+        360
+      ],
+      "crop_box": [
+        1088,
+        0,
+        1448,
+        360
+      ],
+      "sha256": "0cb4eed894066c147fcd2e26bf82f4fd67fa5ed0ba17d2c464ea950cbc5c74f5"
+    },
+    {
+      "book": "paw_10",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_10/page3.webp",
+      "size": [
+        359,
+        356
+      ],
+      "crop_box": [
+        726,
+        363,
+        1085,
+        719
+      ],
+      "sha256": "74f7882f196c750ee7b205b4a60f59bcba8a97fd35dfdb238b344f9689f73978"
+    },
+    {
+      "book": "paw_10",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_10/page4.webp",
+      "size": [
+        360,
+        356
+      ],
+      "crop_box": [
+        1088,
+        363,
+        1448,
+        719
+      ],
+      "sha256": "37c88b1c4f76ddc72c3ddd5f5c72ce4c322d5bf8f435764f46ab60a9f030e0d6"
+    },
+    {
+      "book": "paw_10",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_10/page5.webp",
+      "size": [
+        359,
+        364
+      ],
+      "crop_box": [
+        726,
+        722,
+        1085,
+        1086
+      ],
+      "sha256": "5a124c9d21758bf64b3a8ff872589da3c498c1483d9ee893667f00a514636f02"
+    },
+    {
+      "book": "paw_10",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_10/page6.webp",
+      "size": [
+        360,
+        364
+      ],
+      "crop_box": [
+        1088,
+        722,
+        1448,
+        1086
+      ],
+      "sha256": "c33293a0e19bf38035f93476c375301137a056b309e13048560b9f96995a2eb9"
+    },
+    {
+      "book": "paw_11",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_11/page1.webp",
+      "size": [
+        384,
+        332
+      ],
+      "crop_box": [
+        0,
+        0,
+        384,
+        332
+      ],
+      "sha256": "6588d6a676ae9c2feaa1226aec9412c39ade0fd135c801c1f87eac9b7f913674"
+    },
+    {
+      "book": "paw_11",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_11/page2.webp",
+      "size": [
+        383,
+        332
+      ],
+      "crop_box": [
+        384,
+        0,
+        767,
+        332
+      ],
+      "sha256": "e6024f0ecf77ed9c6dd444a23077ce10bcc48296f0bd167ad95f1c8af116dc9e"
+    },
+    {
+      "book": "paw_11",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_11/page3.webp",
+      "size": [
+        384,
+        336
+      ],
+      "crop_box": [
+        0,
+        334,
+        384,
+        670
+      ],
+      "sha256": "c55a649785511be22a9edc971c4706f64a12ee052cb5e2bcc95eeb1b7de2f48e"
+    },
+    {
+      "book": "paw_11",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_11/page4.webp",
+      "size": [
+        383,
+        336
+      ],
+      "crop_box": [
+        384,
+        334,
+        767,
+        670
+      ],
+      "sha256": "7b01247efe4d922af4d20c9dd72569733ca9299f8cfc94d9add40b0b75e1db32"
+    },
+    {
+      "book": "paw_11",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_11/page5.webp",
+      "size": [
+        384,
+        353
+      ],
+      "crop_box": [
+        0,
+        671,
+        384,
+        1024
+      ],
+      "sha256": "f0b61984f9ff7472421168fe925375eb6c9d48bda8f7fbcf0deca9c2480162bb"
+    },
+    {
+      "book": "paw_11",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_11/page6.webp",
+      "size": [
+        383,
+        353
+      ],
+      "crop_box": [
+        384,
+        671,
+        767,
+        1024
+      ],
+      "sha256": "f56c1ccf39a19edd87e78ae31a8363aba78645e84d892132cd357e235ad50aa1"
+    },
+    {
+      "book": "paw_12",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_12/page1.webp",
+      "size": [
+        384,
+        333
+      ],
+      "crop_box": [
+        768,
+        0,
+        1152,
+        333
+      ],
+      "sha256": "8fbb50485afe8ece66c15848af8bff5cdd84cd7a3791522963b93a43b4601eb2"
+    },
+    {
+      "book": "paw_12",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_12/page2.webp",
+      "size": [
+        382,
+        333
+      ],
+      "crop_box": [
+        1154,
+        0,
+        1536,
+        333
+      ],
+      "sha256": "c7fbb0c898b3b4565b4f9f65e9fcef950fdc52ee5b98ffce8428b0fbab5d185e"
+    },
+    {
+      "book": "paw_12",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_12/page3.webp",
+      "size": [
+        384,
+        335
+      ],
+      "crop_box": [
+        768,
+        334,
+        1152,
+        669
+      ],
+      "sha256": "2f91b00c2d73d0f60a22a01555a9199159589772f4aac1ab974c26c8a66f4f31"
+    },
+    {
+      "book": "paw_12",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_12/page4.webp",
+      "size": [
+        382,
+        335
+      ],
+      "crop_box": [
+        1154,
+        334,
+        1536,
+        669
+      ],
+      "sha256": "0e4a6cdf6cc9815159339cf79362774c323887dd7ce8696cfa71cb55fcd9980b"
+    },
+    {
+      "book": "paw_12",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_12/page5.webp",
+      "size": [
+        384,
+        353
+      ],
+      "crop_box": [
+        768,
+        671,
+        1152,
+        1024
+      ],
+      "sha256": "3e06c62b0b7513de200a0b6046478dd3c3fcdaa1b4f547e7481c69531e46918e"
+    },
+    {
+      "book": "paw_12",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_12/page6.webp",
+      "size": [
+        382,
+        353
+      ],
+      "crop_box": [
+        1154,
+        671,
+        1536,
+        1024
+      ],
+      "sha256": "58090c4a49bffe44b8dd4636155fd2d18873d74de85b57004eb7b940bba71556"
+    },
+    {
+      "book": "paw_13",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_13/page1.webp",
+      "size": [
+        381,
+        340
+      ],
+      "crop_box": [
+        0,
+        0,
+        381,
+        340
+      ],
+      "sha256": "e42e2a46cdc5e63550c97412a50e583f43016669810d3562dfa8e4fe0f2f3e7c"
+    },
+    {
+      "book": "paw_13",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_13/page2.webp",
+      "size": [
+        385,
+        340
+      ],
+      "crop_box": [
+        382,
+        0,
+        767,
+        340
+      ],
+      "sha256": "88f00bf63d3cdb50a37bbdc5384d096491687185d429f37362168a59dd84943d"
+    },
+    {
+      "book": "paw_13",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_13/page3.webp",
+      "size": [
+        381,
+        322
+      ],
+      "crop_box": [
+        0,
+        341,
+        381,
+        663
+      ],
+      "sha256": "edcaf7e5c550610673c205829af00ce0ffc8b762cf8f36f58e57ee9ab6fccf40"
+    },
+    {
+      "book": "paw_13",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_13/page4.webp",
+      "size": [
+        385,
+        322
+      ],
+      "crop_box": [
+        382,
+        341,
+        767,
+        663
+      ],
+      "sha256": "415e40c769ee58cc2248a1fa9d484d0c376a42baf65c79ba61cbc9f8bc2206fd"
+    },
+    {
+      "book": "paw_13",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_13/page5.webp",
+      "size": [
+        381,
+        359
+      ],
+      "crop_box": [
+        0,
+        665,
+        381,
+        1024
+      ],
+      "sha256": "d8530b3ac5b497612187c70b6ca309393bdbe195ad99b9673922e9542e1ed507"
+    },
+    {
+      "book": "paw_13",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_13/page6.webp",
+      "size": [
+        385,
+        359
+      ],
+      "crop_box": [
+        382,
+        665,
+        767,
+        1024
+      ],
+      "sha256": "a81d1594fa771a7c4f313bcd62125719647ee96d0e652f84fdbd5c159a0c8171"
+    },
+    {
+      "book": "paw_14",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_14/page1.webp",
+      "size": [
+        383,
+        340
+      ],
+      "crop_box": [
+        769,
+        0,
+        1152,
+        340
+      ],
+      "sha256": "c63ea7b8a2e6e8d7c0aa243b446ad326d0aee9041771f3da24d4c70223e922a4"
+    },
+    {
+      "book": "paw_14",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_14/page2.webp",
+      "size": [
+        383,
+        340
+      ],
+      "crop_box": [
+        1153,
+        0,
+        1536,
+        340
+      ],
+      "sha256": "088f7d21d9fb6e07dc0d5c6fe8905d3eb242a03594db2dbdaa30da153b4b4582"
+    },
+    {
+      "book": "paw_14",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_14/page3.webp",
+      "size": [
+        383,
+        322
+      ],
+      "crop_box": [
+        769,
+        341,
+        1152,
+        663
+      ],
+      "sha256": "2cc225c5cc357982112cac9a126d8064dbd6e2fadafabad6c61a5b84ef31e9c2"
+    },
+    {
+      "book": "paw_14",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_14/page4.webp",
+      "size": [
+        383,
+        322
+      ],
+      "crop_box": [
+        1153,
+        341,
+        1536,
+        663
+      ],
+      "sha256": "7d243c38b69bc8313a885ea00c613287dbf5a54980e34464cc9fbbc355956c0b"
+    },
+    {
+      "book": "paw_14",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_14/page5.webp",
+      "size": [
+        383,
+        359
+      ],
+      "crop_box": [
+        769,
+        665,
+        1152,
+        1024
+      ],
+      "sha256": "b83d94a2d4e72f30138ce33d219c5c20d562fc742337fb6c90a1721bc6875979"
+    },
+    {
+      "book": "paw_14",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_14/page6.webp",
+      "size": [
+        383,
+        359
+      ],
+      "crop_box": [
+        1153,
+        665,
+        1536,
+        1024
+      ],
+      "sha256": "b2dc37070fcd2bdb205069aa2059d6498cb4776d0b299f6162777411e3386237"
+    },
+    {
+      "book": "paw_15",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_15/page1.webp",
+      "size": [
+        382,
+        338
+      ],
+      "crop_box": [
+        0,
+        0,
+        382,
+        338
+      ],
+      "sha256": "352aab5400547d964658488cc1d1971eac70ad5a6cf89dc6835e9fd8e8a24851"
+    },
+    {
+      "book": "paw_15",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_15/page2.webp",
+      "size": [
+        383,
+        338
+      ],
+      "crop_box": [
+        384,
+        0,
+        767,
+        338
+      ],
+      "sha256": "66c34652e335fa50705c8831bd9fe4d94f529b6230880d701697c0e40f2f12ad"
+    },
+    {
+      "book": "paw_15",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_15/page3.webp",
+      "size": [
+        382,
+        328
+      ],
+      "crop_box": [
+        0,
+        340,
+        382,
+        668
+      ],
+      "sha256": "d83b6329e7f33fc3bb4c083c8b710f465524b97a9cdc58e585e989fd76919f13"
+    },
+    {
+      "book": "paw_15",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_15/page4.webp",
+      "size": [
+        383,
+        328
+      ],
+      "crop_box": [
+        384,
+        340,
+        767,
+        668
+      ],
+      "sha256": "f3b9fdc34db7843d7a694d2f6a34307615b9164589745a4929760a6e15a2d774"
+    },
+    {
+      "book": "paw_15",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_15/page5.webp",
+      "size": [
+        382,
+        354
+      ],
+      "crop_box": [
+        0,
+        670,
+        382,
+        1024
+      ],
+      "sha256": "217bb28309af44e5fddf9ec430362cf8e870bc3c21b24cd2c3383acac5ef2fb0"
+    },
+    {
+      "book": "paw_15",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_15/page6.webp",
+      "size": [
+        383,
+        354
+      ],
+      "crop_box": [
+        384,
+        670,
+        767,
+        1024
+      ],
+      "sha256": "cf1d886d9bc6fbb4b1ad86b1dd9a16ad18d6ea25cce77944531d7911954637ab"
+    },
+    {
+      "book": "paw_16",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_16/page1.webp",
+      "size": [
+        382,
+        338
+      ],
+      "crop_box": [
+        770,
+        0,
+        1152,
+        338
+      ],
+      "sha256": "d437a4154d632231cac7f6d33a52201d74e702c034480a23c3b15c0cd8af9d70"
+    },
+    {
+      "book": "paw_16",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_16/page2.webp",
+      "size": [
+        382,
+        338
+      ],
+      "crop_box": [
+        1154,
+        0,
+        1536,
+        338
+      ],
+      "sha256": "797c5bae96476d3d866ddfde5085134bfa1844e99c7f03ed90217685324ae9c0"
+    },
+    {
+      "book": "paw_16",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_16/page3.webp",
+      "size": [
+        382,
+        327
+      ],
+      "crop_box": [
+        770,
+        341,
+        1152,
+        668
+      ],
+      "sha256": "2b111fff9bd2781eaccc3c500dc2a1c1737d9179145c755c1012874fd58ef7bf"
+    },
+    {
+      "book": "paw_16",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_16/page4.webp",
+      "size": [
+        382,
+        327
+      ],
+      "crop_box": [
+        1154,
+        341,
+        1536,
+        668
+      ],
+      "sha256": "313a5c5d6823c2d0407ba7181bbf0e926540ba8f3829e905d8e394273a29f07c"
+    },
+    {
+      "book": "paw_16",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_16/page5.webp",
+      "size": [
+        382,
+        353
+      ],
+      "crop_box": [
+        770,
+        671,
+        1152,
+        1024
+      ],
+      "sha256": "d32ce42aa6955284091c9c82929b4a73fb6cf8e52a35217ae728a75334211f79"
+    },
+    {
+      "book": "paw_16",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_16/page6.webp",
+      "size": [
+        382,
+        353
+      ],
+      "crop_box": [
+        1154,
+        671,
+        1536,
+        1024
+      ],
+      "sha256": "a173d4d5ea2ec1a4aa661e8485b3ec04466ae34d9e24d9b568ae5ab7e6440db7"
+    },
+    {
+      "book": "paw_17",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_17/page1.webp",
+      "size": [
+        382,
+        340
+      ],
+      "crop_box": [
+        0,
+        0,
+        382,
+        340
+      ],
+      "sha256": "1c86093d831bf722c9fd7f04db7172a02bade0bab2d4b6198f24a4c87b32fe75"
+    },
+    {
+      "book": "paw_17",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_17/page2.webp",
+      "size": [
+        383,
+        340
+      ],
+      "crop_box": [
+        384,
+        0,
+        767,
+        340
+      ],
+      "sha256": "7f7aa901632c32b567e445bf1d11234e04dadf59ac6e41bbcf2129f53ba48f5a"
+    },
+    {
+      "book": "paw_17",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_17/page3.webp",
+      "size": [
+        382,
+        324
+      ],
+      "crop_box": [
+        0,
+        342,
+        382,
+        666
+      ],
+      "sha256": "628e38d5dedb04073599d3a3ca40d4b034953581576e4047affe3bd03371ad2d"
+    },
+    {
+      "book": "paw_17",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_17/page4.webp",
+      "size": [
+        383,
+        324
+      ],
+      "crop_box": [
+        384,
+        342,
+        767,
+        666
+      ],
+      "sha256": "9b17f95f51a5b8e2b48540e37cce93828f582ca04f1e1c431ffac47423b9380b"
+    },
+    {
+      "book": "paw_17",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_17/page5.webp",
+      "size": [
+        382,
+        355
+      ],
+      "crop_box": [
+        0,
+        669,
+        382,
+        1024
+      ],
+      "sha256": "14cfa18c218198ad664b7dc05d6597f0657015ba44ff957951608d84128743d2"
+    },
+    {
+      "book": "paw_17",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_17/page6.webp",
+      "size": [
+        383,
+        355
+      ],
+      "crop_box": [
+        384,
+        669,
+        767,
+        1024
+      ],
+      "sha256": "114cbdaf486d180828073f33846c72b2403e46c71765ece81abd6aacba15c48c"
+    },
+    {
+      "book": "paw_18",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_18/page1.webp",
+      "size": [
+        383,
+        340
+      ],
+      "crop_box": [
+        770,
+        0,
+        1153,
+        340
+      ],
+      "sha256": "028c736f3f18ebeb0f1983e1b692d5d876744fe1374707d6efaa962e773ad480"
+    },
+    {
+      "book": "paw_18",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_18/page2.webp",
+      "size": [
+        381,
+        340
+      ],
+      "crop_box": [
+        1155,
+        0,
+        1536,
+        340
+      ],
+      "sha256": "c2701ef2457bfc204e357f7df78ad2c72ec21f29a849f24ad534bf64ccf6ed8b"
+    },
+    {
+      "book": "paw_18",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_18/page3.webp",
+      "size": [
+        383,
+        324
+      ],
+      "crop_box": [
+        770,
+        342,
+        1153,
+        666
+      ],
+      "sha256": "ff53d83f7a603ed0c299c1710edcef19d414c5f20ae95bc05e75ef67f71c4691"
+    },
+    {
+      "book": "paw_18",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_18/page4.webp",
+      "size": [
+        381,
+        324
+      ],
+      "crop_box": [
+        1155,
+        342,
+        1536,
+        666
+      ],
+      "sha256": "f4dd9ef15fbee7bec216cc4fa6038ab7fa7d01c21b33b1955d695e650071208d"
+    },
+    {
+      "book": "paw_18",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_18/page5.webp",
+      "size": [
+        383,
+        355
+      ],
+      "crop_box": [
+        770,
+        669,
+        1153,
+        1024
+      ],
+      "sha256": "308fbf1d680addf5cb2fe228c80543dc6c43865e1c2b5006e730986f45b87a20"
+    },
+    {
+      "book": "paw_18",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_18/page6.webp",
+      "size": [
+        381,
+        355
+      ],
+      "crop_box": [
+        1155,
+        669,
+        1536,
+        1024
+      ],
+      "sha256": "03eb0d0272389b8404f0a346af65d1af60d193104a5e6597718fd4c16edd2bee"
+    },
+    {
+      "book": "paw_19",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_19/page1.webp",
+      "size": [
+        384,
+        341
+      ],
+      "crop_box": [
+        0,
+        0,
+        384,
+        341
+      ],
+      "sha256": "b4b66d4cef9083fdbed84569884503a2be28c47fd7fd566e45f08b0f92140767"
+    },
+    {
+      "book": "paw_19",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_19/page2.webp",
+      "size": [
+        384,
+        341
+      ],
+      "crop_box": [
+        384,
+        0,
+        768,
+        341
+      ],
+      "sha256": "dc4260a63b3c1cb1c59be39d842b3be8e719a57eb6a487abc4225624178abc3b"
+    },
+    {
+      "book": "paw_19",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_19/page3.webp",
+      "size": [
+        384,
+        330
+      ],
+      "crop_box": [
+        0,
+        342,
+        384,
+        672
+      ],
+      "sha256": "41a54b4373a8387ae325f3a2191e7cf3d55ee0f2be45f548d46d6412d9bcf895"
+    },
+    {
+      "book": "paw_19",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_19/page4.webp",
+      "size": [
+        384,
+        330
+      ],
+      "crop_box": [
+        384,
+        342,
+        768,
+        672
+      ],
+      "sha256": "4aeb9c61636e68884365aacc52c8cf1e1d0b9ba3b87f5091dba62a32593b09fd"
+    },
+    {
+      "book": "paw_19",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_19/page5.webp",
+      "size": [
+        384,
+        351
+      ],
+      "crop_box": [
+        0,
+        673,
+        384,
+        1024
+      ],
+      "sha256": "96ff2cdb8b6d68404cdd7c285ff8d2b109376fc90b5e7644454d65a6419e6966"
+    },
+    {
+      "book": "paw_19",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_19/page6.webp",
+      "size": [
+        384,
+        351
+      ],
+      "crop_box": [
+        384,
+        673,
+        768,
+        1024
+      ],
+      "sha256": "51837b976f55744a4fc724fe026b2ec69075a6397c0ba13ec69ff865d67bf0b3"
+    },
+    {
+      "book": "paw_20",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_20/page1.webp",
+      "size": [
+        384,
+        341
+      ],
+      "crop_box": [
+        768,
+        0,
+        1152,
+        341
+      ],
+      "sha256": "54ffdd6d584f22a9e1f1abe29500a2d31993bf7b04dd9adf39050d6ca9e65db8"
+    },
+    {
+      "book": "paw_20",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_20/page2.webp",
+      "size": [
+        384,
+        341
+      ],
+      "crop_box": [
+        1152,
+        0,
+        1536,
+        341
+      ],
+      "sha256": "f89e9691515d7d0e46e43d76fd5dca28476261960766f950a33db1d9baa57c3f"
+    },
+    {
+      "book": "paw_20",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_20/page3.webp",
+      "size": [
+        384,
+        330
+      ],
+      "crop_box": [
+        768,
+        341,
+        1152,
+        671
+      ],
+      "sha256": "dc3f34ab022034035dd141a032834c3668294dd3bf06e76d87eb6d9fc4e16c22"
+    },
+    {
+      "book": "paw_20",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_20/page4.webp",
+      "size": [
+        384,
+        330
+      ],
+      "crop_box": [
+        1152,
+        341,
+        1536,
+        671
+      ],
+      "sha256": "91d306aafa0117d6c5b41a97fd8d053c4930cee994228d4971dfacf16031241f"
+    },
+    {
+      "book": "paw_20",
+      "page": 5,
+      "file": "art/story-refresh-v1/paw_20/page5.webp",
+      "size": [
+        384,
+        352
+      ],
+      "crop_box": [
+        768,
+        672,
+        1152,
+        1024
+      ],
+      "sha256": "79739411e6bffd13bebca8d2a06385ebc5fae0cce61f634bb16b9a26ed17a28c"
+    },
+    {
+      "book": "paw_20",
+      "page": 6,
+      "file": "art/story-refresh-v1/paw_20/page6.webp",
+      "size": [
+        384,
+        352
+      ],
+      "crop_box": [
+        1152,
+        672,
+        1536,
+        1024
+      ],
+      "sha256": "1f0e3f35054fbce32e36473a6061d23ddc089d8991d5ee80ded535b4ad3ecf88"
+    },
+    {
+      "book": "peppa_01",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_01/page1.webp",
+      "size": [
+        626,
+        402
+      ],
+      "crop_box": [
+        0,
+        0,
+        626,
+        402
+      ],
+      "sha256": "3842b53072a6de7f384801ffed79bdf49bf99d3150bb025bd741d638c8e55fbf"
+    },
+    {
+      "book": "peppa_01",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_01/page2.webp",
+      "size": [
+        626,
+        402
+      ],
+      "crop_box": [
+        628,
+        0,
+        1254,
+        402
+      ],
+      "sha256": "331d5825c79dc7705d70521ef759f47b8aeb314e8253ef7bc72e1f134ff15fe3"
+    },
+    {
+      "book": "peppa_01",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_01/page3.webp",
+      "size": [
+        626,
+        406
+      ],
+      "crop_box": [
+        0,
+        404,
+        626,
+        810
+      ],
+      "sha256": "ef67df6e332d76d4266a7a45fb99ad2a38c21c64820207b77a811b700a509319"
+    },
+    {
+      "book": "peppa_01",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_01/page4.webp",
+      "size": [
+        626,
+        406
+      ],
+      "crop_box": [
+        628,
+        404,
+        1254,
+        810
+      ],
+      "sha256": "e013a0540a65ac84fb621316716eb07af1fe50f172d5bce6ff9847e9585cd41b"
+    },
+    {
+      "book": "peppa_01",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_01/page5.webp",
+      "size": [
+        626,
+        441
+      ],
+      "crop_box": [
+        0,
+        813,
+        626,
+        1254
+      ],
+      "sha256": "05e9ed3385d311626795e9232ec5e2a24516846098d6360f070f5eb800f69a17"
+    },
+    {
+      "book": "peppa_01",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_01/page6.webp",
+      "size": [
+        626,
+        441
+      ],
+      "crop_box": [
+        628,
+        813,
+        1254,
+        1254
+      ],
+      "sha256": "8ba2ea2c589a522b31558eb2b98fbcb7875e22c6d2649c3a3f360df3a77e842a"
+    },
+    {
+      "book": "peppa_03",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_03/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "2e64b95b38038131ea677f1f880813b643da611065b2fd25c2037d1c474d88b6"
+    },
+    {
+      "book": "peppa_03",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_03/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "9da26b4516f0263cc5d44a59b52215db23b9cd76097c9774410497d42f20f278"
+    },
+    {
+      "book": "peppa_03",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_03/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "d7ea137a23e2f494d2752ccc3b22308a513901e889d620fc84c44b09a40023d3"
+    },
+    {
+      "book": "peppa_03",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_03/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "d92527107ced489be65df1d1c7c6106d2214a6f52c57711df069d43a763c0fd7"
+    },
+    {
+      "book": "peppa_03",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_03/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "fe008a2ddb691cc1008377bd8809511cb89d6fa73ff075782e1a1c061c380fa4"
+    },
+    {
+      "book": "peppa_03",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_03/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "e2720ed144530c2f3f6b77b60a7f5a8f8dd5351b124f1f6a12919165a627c301"
+    },
+    {
+      "book": "peppa_04",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_04/page1.webp",
+      "size": [
+        626,
+        414
+      ],
+      "crop_box": [
+        0,
+        0,
+        626,
+        414
+      ],
+      "sha256": "7470e02609518ddee7d70df8efa71f91c090f59c668fcc94e296ae2a7b771c22"
+    },
+    {
+      "book": "peppa_04",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_04/page2.webp",
+      "size": [
+        626,
+        414
+      ],
+      "crop_box": [
+        628,
+        0,
+        1254,
+        414
+      ],
+      "sha256": "5818b618ab42ecdec7ce35d97978545a86067d32d5a1d32e201e45a10e887105"
+    },
+    {
+      "book": "peppa_04",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_04/page3.webp",
+      "size": [
+        626,
+        393
+      ],
+      "crop_box": [
+        0,
+        417,
+        626,
+        810
+      ],
+      "sha256": "d00214fd1a57dc4be0a7f9090e02d66e5a8393d0d26f533853093fbc40bd9b0a"
+    },
+    {
+      "book": "peppa_04",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_04/page4.webp",
+      "size": [
+        626,
+        393
+      ],
+      "crop_box": [
+        628,
+        417,
+        1254,
+        810
+      ],
+      "sha256": "c4ee67e3492055975964d57aca70552809a14fd066a29982e66258798d061117"
+    },
+    {
+      "book": "peppa_04",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_04/page5.webp",
+      "size": [
+        626,
+        441
+      ],
+      "crop_box": [
+        0,
+        813,
+        626,
+        1254
+      ],
+      "sha256": "32dddec5462e1a54f61157aff2621328ba53d4278283c9e89c3d5d2c8d104b8c"
+    },
+    {
+      "book": "peppa_04",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_04/page6.webp",
+      "size": [
+        626,
+        441
+      ],
+      "crop_box": [
+        628,
+        813,
+        1254,
+        1254
+      ],
+      "sha256": "ffbd8c6670ef2a501413a64f2a0f03af568af27e9bbe4f9112430ead8560cfa8"
+    },
+    {
+      "book": "peppa_05",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_05/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "d012838e0a07d8327c9aab3e8760f620cc4a213e1ad805c47af1e3e53b2f26d7"
+    },
+    {
+      "book": "peppa_05",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_05/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "6fc3c8e7638322d71f5001247158f4dbb89fc6936b2a993fe364189cf62a292e"
+    },
+    {
+      "book": "peppa_05",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_05/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "2d8918b50ab3c8b76394e29af5d63404ac78b14e177f1cb9bb83bb8b0a5aca04"
+    },
+    {
+      "book": "peppa_05",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_05/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "4328d7c2308bf423ed319111e5aff418040db4dfe508a7be993fe3fafd98121a"
+    },
+    {
+      "book": "peppa_05",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_05/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "ec64301f03821d5133ee6457f74876653d8c303700192d5973152b7f276853a6"
+    },
+    {
+      "book": "peppa_05",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_05/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "cda119490e3bb8bbdfc76823971b5f5846648d3d3d1408250883e738d5b788a0"
+    },
+    {
+      "book": "peppa_06",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_06/page1.webp",
+      "size": [
+        623,
+        415
+      ],
+      "crop_box": [
+        0,
+        0,
+        623,
+        415
+      ],
+      "sha256": "f463ca18a50c67b88991bebca223ac0b2149f8b09ce07d5e62fea87ada039e99"
+    },
+    {
+      "book": "peppa_06",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_06/page2.webp",
+      "size": [
+        626,
+        415
+      ],
+      "crop_box": [
+        628,
+        0,
+        1254,
+        415
+      ],
+      "sha256": "2f277d60ef1ada47e15f783a72dffb0b03a9a11f4f67cd623c376cd92d782b06"
+    },
+    {
+      "book": "peppa_06",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_06/page3.webp",
+      "size": [
+        623,
+        405
+      ],
+      "crop_box": [
+        0,
+        420,
+        623,
+        825
+      ],
+      "sha256": "066cdf4e1f732aa8f2987d2735659dc3aed4c0fc8bb13d6ce8b7f5aa1dba4cb8"
+    },
+    {
+      "book": "peppa_06",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_06/page4.webp",
+      "size": [
+        626,
+        405
+      ],
+      "crop_box": [
+        628,
+        420,
+        1254,
+        825
+      ],
+      "sha256": "4358db2da63dfe799ebe2e82795b685e0bf61669d96116448e33e73aef10d5ab"
+    },
+    {
+      "book": "peppa_06",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_06/page5.webp",
+      "size": [
+        623,
+        424
+      ],
+      "crop_box": [
+        0,
+        830,
+        623,
+        1254
+      ],
+      "sha256": "d50e7c771a88b0894503ba4f269940e95e050de01991fa87f8d1d31974a24dd6"
+    },
+    {
+      "book": "peppa_06",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_06/page6.webp",
+      "size": [
+        626,
+        424
+      ],
+      "crop_box": [
+        628,
+        830,
+        1254,
+        1254
+      ],
+      "sha256": "135e12a4e1235622f7fdc3bd546010336698501ee20428b400bcee3fff628ef2"
+    },
+    {
+      "book": "peppa_07",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_07/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "63327be84495fc5388e549581a4f902ca555d5c62b5b2112c9a09ee8655cccaa"
+    },
+    {
+      "book": "peppa_07",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_07/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "1fb06a6c2f1f499d52d55d5ac3cb041b03f77c4ae39251b0a770c87516922f2b"
+    },
+    {
+      "book": "peppa_07",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_07/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "61c507dbd13d208214f5e8328186ffcdf896fb4031e5bd53dde512fcdd1e5040"
+    },
+    {
+      "book": "peppa_07",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_07/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "119132246dbf70daa61b9cd82e9efdba0dbdaf38f7a65ab04e74bf9d731fc430"
+    },
+    {
+      "book": "peppa_07",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_07/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "b1e61fc908ad8c291932bb25dc07352adef3e1e57243c32033eb32f93b633ac9"
+    },
+    {
+      "book": "peppa_07",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_07/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "bad5d4337bedea4d825a62916801f9bfab0fcd3e9f4ad1f8d858dbc2f82a8fda"
+    },
+    {
+      "book": "peppa_08",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_08/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "7764ac385707d0bf7f5050373a9090f72aca3051cf2e0fc0843bfba5f578355b"
+    },
+    {
+      "book": "peppa_08",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_08/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "82880b5022a767140ca51e7ffaa0b822b138ad1ff8fb3ead967c5e5b6cf495ce"
+    },
+    {
+      "book": "peppa_08",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_08/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "416013e23ed247e9da5615a3d9d6ecb99f4af1c247b4ad145081f7225367b1b2"
+    },
+    {
+      "book": "peppa_08",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_08/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "52f4ae1f917df8d9dcdb902a1ba88409872bc57dc99f33d6f8cf9d8504ce4893"
+    },
+    {
+      "book": "peppa_08",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_08/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "1fe3ac6571a77c3f9c961f37efc819867e168755c31cef4ef7d22f9408b51a04"
+    },
+    {
+      "book": "peppa_08",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_08/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "1defe336e1e490e9bba389a80ae674b6cdd6e33c17eb84c7dfb47b4a5df746a6"
+    },
+    {
+      "book": "peppa_09",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_09/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "16ed78a7145da7dc541d51fe4b8833dba7c27a95f4f1bd25b622d81205b21a39"
+    },
+    {
+      "book": "peppa_09",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_09/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "6b565dbbcc2e148aba794fada8ff8e744a0c8ca3eb2f22b3548ebe8065d6d30d"
+    },
+    {
+      "book": "peppa_09",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_09/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "9a6a0738c6b5a92468fbbd38f0b2b743a057cd72994cf947945c9630e79e1e2b"
+    },
+    {
+      "book": "peppa_09",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_09/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "6d657f785cd6005af704745d41e888d6e403cae001f28d9177ad6cea53c88af2"
+    },
+    {
+      "book": "peppa_09",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_09/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "bf99b99732420be916f8accdfbf19e4ebc02d1bf9e7bb402aaf533c9a7c32fb5"
+    },
+    {
+      "book": "peppa_09",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_09/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "45c9e9a3d129670b674e700cae189135f013b41be328356ed85730b7280611a6"
+    },
+    {
+      "book": "peppa_10",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_10/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "0600a41d821f422566586dc7e8be20ec39b2f9af7b854a9181d9f0467ec8e51c"
+    },
+    {
+      "book": "peppa_10",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_10/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "6fe4da7303e2d12b2e5b21edac472e00b2fc16c6955b228bae17c585787fe5c9"
+    },
+    {
+      "book": "peppa_10",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_10/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "b6460a67fc4073859cc035631c48462e576789dc91b74da8ca4b2e6280598d9a"
+    },
+    {
+      "book": "peppa_10",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_10/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "a101d23e0e3c420d1148a780babbb37148adb1281e6b5d745e8abc8e85f1e10f"
+    },
+    {
+      "book": "peppa_10",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_10/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "44ef9f045818601949756af99d4a2075aade013266f395ba93a94da30da7d1a5"
+    },
+    {
+      "book": "peppa_10",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_10/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "61636c4b044d58be9f81273531ba373836f16f3d5c955589f27413c445f8e0f7"
+    },
+    {
+      "book": "peppa_11",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_11/page1.webp",
+      "size": [
+        625,
+        415
+      ],
+      "crop_box": [
+        0,
+        0,
+        625,
+        415
+      ],
+      "sha256": "6acfd3923700fb7da47d1f7d7c67453c8a60442c295a9642fe93446049470d61"
+    },
+    {
+      "book": "peppa_11",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_11/page2.webp",
+      "size": [
+        626,
+        415
+      ],
+      "crop_box": [
+        628,
+        0,
+        1254,
+        415
+      ],
+      "sha256": "ca7548f34713717838070a5bba7c2c5d2cd40cf8a2924ade7a72e8b99c7c2cc1"
+    },
+    {
+      "book": "peppa_11",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_11/page3.webp",
+      "size": [
+        625,
+        396
+      ],
+      "crop_box": [
+        0,
+        418,
+        625,
+        814
+      ],
+      "sha256": "48827e2f73ceb275c38db4b6bf3b43a8ae61d28a71e156ac3f2b7baaea0aeb44"
+    },
+    {
+      "book": "peppa_11",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_11/page4.webp",
+      "size": [
+        626,
+        396
+      ],
+      "crop_box": [
+        628,
+        418,
+        1254,
+        814
+      ],
+      "sha256": "300087b709eec014fae1215fedaaba129c8a012f2149ba09fbf5ba36f27fa765"
+    },
+    {
+      "book": "peppa_11",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_11/page5.webp",
+      "size": [
+        625,
+        437
+      ],
+      "crop_box": [
+        0,
+        817,
+        625,
+        1254
+      ],
+      "sha256": "41f56fa6c58ee53b6f7806ff83f8583b9fcf184dd06d0bd0a018a8cde145d782"
+    },
+    {
+      "book": "peppa_11",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_11/page6.webp",
+      "size": [
+        626,
+        437
+      ],
+      "crop_box": [
+        628,
+        817,
+        1254,
+        1254
+      ],
+      "sha256": "4fd06daf68cfdea5abfe4a5bed7d6014a25c4721ef3f05777d6f95c545ab75e1"
+    },
+    {
+      "book": "peppa_12",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_12/page1.webp",
+      "size": [
+        626,
+        415
+      ],
+      "crop_box": [
+        0,
+        0,
+        626,
+        415
+      ],
+      "sha256": "e8cd1b7dcdfcafbb29a631986489310dd3a552731cae096626c6e3847ee6ad0d"
+    },
+    {
+      "book": "peppa_12",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_12/page2.webp",
+      "size": [
+        625,
+        415
+      ],
+      "crop_box": [
+        629,
+        0,
+        1254,
+        415
+      ],
+      "sha256": "c616a520e114126e10955040d5687d77ff5aff5208dbb1fd6fcaf3d731954ce8"
+    },
+    {
+      "book": "peppa_12",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_12/page3.webp",
+      "size": [
+        626,
+        419
+      ],
+      "crop_box": [
+        0,
+        418,
+        626,
+        837
+      ],
+      "sha256": "6ed17dc7b0d7f52d1f800c69fadb62d292e10796d0b021b9a1a36229644dc554"
+    },
+    {
+      "book": "peppa_12",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_12/page4.webp",
+      "size": [
+        625,
+        419
+      ],
+      "crop_box": [
+        629,
+        418,
+        1254,
+        837
+      ],
+      "sha256": "0ff8e40aaefd166281fadad5148cc103b58e0c0ba342c65b348d40736be590c4"
+    },
+    {
+      "book": "peppa_12",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_12/page5.webp",
+      "size": [
+        626,
+        415
+      ],
+      "crop_box": [
+        0,
+        839,
+        626,
+        1254
+      ],
+      "sha256": "1fe370973442c541144b06ff4f46acbe1cd62b90bf4be5f736bc150db9de361d"
+    },
+    {
+      "book": "peppa_12",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_12/page6.webp",
+      "size": [
+        625,
+        415
+      ],
+      "crop_box": [
+        629,
+        839,
+        1254,
+        1254
+      ],
+      "sha256": "0468d0d674087183654a5d82535d4a35dabdfd542c3ad56557908b1e567c30db"
+    },
+    {
+      "book": "peppa_13",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_13/page1.webp",
+      "size": [
+        626,
+        382
+      ],
+      "crop_box": [
+        0,
+        0,
+        626,
+        382
+      ],
+      "sha256": "5624f5ad95cd1e9ac7c2ba6bda08a58bad5d43900fc6c4139f414ff3131bc8aa"
+    },
+    {
+      "book": "peppa_13",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_13/page2.webp",
+      "size": [
+        626,
+        382
+      ],
+      "crop_box": [
+        628,
+        0,
+        1254,
+        382
+      ],
+      "sha256": "950fe6dd0e558b76b36da1960a31e9a904970a0f4b92a62512a0e711a20edeb8"
+    },
+    {
+      "book": "peppa_13",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_13/page3.webp",
+      "size": [
+        626,
+        427
+      ],
+      "crop_box": [
+        0,
+        383,
+        626,
+        810
+      ],
+      "sha256": "2f35b0878f6b7d56521173031bb89c4f061e3d4249d1d71242aab73bdfd0e40e"
+    },
+    {
+      "book": "peppa_13",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_13/page4.webp",
+      "size": [
+        626,
+        427
+      ],
+      "crop_box": [
+        628,
+        383,
+        1254,
+        810
+      ],
+      "sha256": "c0f142c00c967a8290868c0c6fb9663d25bf2ee2648685c54f33c0165eb463c2"
+    },
+    {
+      "book": "peppa_13",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_13/page5.webp",
+      "size": [
+        626,
+        442
+      ],
+      "crop_box": [
+        0,
+        812,
+        626,
+        1254
+      ],
+      "sha256": "edfe1b709ef42b0a855f74b7d1dc0109886739f320c959e92d7e40fa79804d30"
+    },
+    {
+      "book": "peppa_13",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_13/page6.webp",
+      "size": [
+        626,
+        442
+      ],
+      "crop_box": [
+        628,
+        812,
+        1254,
+        1254
+      ],
+      "sha256": "f81f802666ff688ce75f13d005e8e4752504f5129701d0448b74eb507789a7fb"
+    },
+    {
+      "book": "peppa_14",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_14/page1.webp",
+      "size": [
+        625,
+        388
+      ],
+      "crop_box": [
+        0,
+        0,
+        625,
+        388
+      ],
+      "sha256": "ac29e10149d99235ae70b33a32ee7e08d972b75ec031a7a5c2e9ba707ade9db3"
+    },
+    {
+      "book": "peppa_14",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_14/page2.webp",
+      "size": [
+        627,
+        388
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        388
+      ],
+      "sha256": "6c7054e62ff33b837c1e11e41c03571447f26c1599e6790cf39743d6af4bb369"
+    },
+    {
+      "book": "peppa_14",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_14/page3.webp",
+      "size": [
+        625,
+        397
+      ],
+      "crop_box": [
+        0,
+        391,
+        625,
+        788
+      ],
+      "sha256": "f3d8e10f16a4ba564423dd5543e491dacb93ada1d6988c648e243f2ed93a3c0c"
+    },
+    {
+      "book": "peppa_14",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_14/page4.webp",
+      "size": [
+        627,
+        397
+      ],
+      "crop_box": [
+        627,
+        391,
+        1254,
+        788
+      ],
+      "sha256": "04642aa7296138547aff59a449723320fc0525bc1216bbcd62d67ae15bf5a07b"
+    },
+    {
+      "book": "peppa_14",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_14/page5.webp",
+      "size": [
+        625,
+        463
+      ],
+      "crop_box": [
+        0,
+        791,
+        625,
+        1254
+      ],
+      "sha256": "d729cd069fd48b031de4513b4e462dc33a72058a0b9aa948ebe7f26bff757add"
+    },
+    {
+      "book": "peppa_14",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_14/page6.webp",
+      "size": [
+        627,
+        463
+      ],
+      "crop_box": [
+        627,
+        791,
+        1254,
+        1254
+      ],
+      "sha256": "a64d1de2c45fb2f9f0f6b44ade2b08ce34a9e3e8c096f7b08cb13d130921ad1b"
+    },
+    {
+      "book": "peppa_15",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_15/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "e30cdfcef0aa8a9a6f424687fa09ff76dc0c41fb8ca8ae49b47552166eae81a7"
+    },
+    {
+      "book": "peppa_15",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_15/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "4b07bd2a79e12b5a2543eff37050195b55c3252fcc13cbb9936d1d6af461017f"
+    },
+    {
+      "book": "peppa_15",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_15/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "79c218e9eacb707fb1560bad96d0b6fba17efd2271a1bb532e338152dba47729"
+    },
+    {
+      "book": "peppa_15",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_15/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "1e65a1bc32d760b3f295c02ff787a06122f3fef2906b98fefe933879c6e7c2c6"
+    },
+    {
+      "book": "peppa_15",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_15/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "81b3a2cfb1847ae4cf45eeb31d2abe4efa72e09a3f0f85e90fce6df1c2698b28"
+    },
+    {
+      "book": "peppa_15",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_15/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "27a0e4fe6166c8566466e3c2132e5ba43a4820884825b79a0b6bcfec9c22f644"
+    },
+    {
+      "book": "peppa_16",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_16/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "18c595d03c2c6d36b5fa14dbe7623c96d63f48837b335843431e8c3ca470e3bf"
+    },
+    {
+      "book": "peppa_16",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_16/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "2b7c77a46666d2e260c963ccf3ed5220d093619386ec9909856d0749481cfbb5"
+    },
+    {
+      "book": "peppa_16",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_16/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "496c425849be5f283449107c672ea78a44329ae75f5a9c65dafddde684c9c40e"
+    },
+    {
+      "book": "peppa_16",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_16/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "8134845361459939402f521713bc83a2c461c0efae89a82f985150ccef2b747a"
+    },
+    {
+      "book": "peppa_16",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_16/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "1f4090c275411e03ae68a1a5e465b339c35d128a6e912e27bafb23bac9f6f873"
+    },
+    {
+      "book": "peppa_16",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_16/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "0d65dcc47636a0eab54bce17a4d8316cf45304a61e0a9a701074a82fa11042b4"
+    },
+    {
+      "book": "peppa_17",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_17/page1.webp",
+      "size": [
+        625,
+        411
+      ],
+      "crop_box": [
+        0,
+        0,
+        625,
+        411
+      ],
+      "sha256": "aa9fc0e9892e41ed82419a6b1da79d80ea0205932dfc5c52667ba8917da198e9"
+    },
+    {
+      "book": "peppa_17",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_17/page2.webp",
+      "size": [
+        624,
+        411
+      ],
+      "crop_box": [
+        630,
+        0,
+        1254,
+        411
+      ],
+      "sha256": "5209ad989c3ac0edeb3267f47333ff3d28722305c79e4db7012c8ea96b5f6e6e"
+    },
+    {
+      "book": "peppa_17",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_17/page3.webp",
+      "size": [
+        625,
+        389
+      ],
+      "crop_box": [
+        0,
+        416,
+        625,
+        805
+      ],
+      "sha256": "91a70eb766a293dec6b4a0ab4d906947b5a523f867bb55b8e8bce34b250662f4"
+    },
+    {
+      "book": "peppa_17",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_17/page4.webp",
+      "size": [
+        624,
+        389
+      ],
+      "crop_box": [
+        630,
+        416,
+        1254,
+        805
+      ],
+      "sha256": "99eab6c29f45ccd09982bb3235d15bff76de4a8b52f499067eb4e9b75a7fbdf9"
+    },
+    {
+      "book": "peppa_17",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_17/page5.webp",
+      "size": [
+        625,
+        444
+      ],
+      "crop_box": [
+        0,
+        810,
+        625,
+        1254
+      ],
+      "sha256": "0d2727c9ee3f20de174c0e8f2a56bc9cadbdbbc9257a3b2818b184825c46b581"
+    },
+    {
+      "book": "peppa_17",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_17/page6.webp",
+      "size": [
+        624,
+        444
+      ],
+      "crop_box": [
+        630,
+        810,
+        1254,
+        1254
+      ],
+      "sha256": "dca28aaf0be087f34b7ce28ae4478c8e745ee4cc81f4d0e0261ee7028bd24d85"
+    },
+    {
+      "book": "peppa_18",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_18/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "84c0b354ea05e3c6bd06332b5e7270ad37d14b5afe05bf7bae25fd640db6b149"
+    },
+    {
+      "book": "peppa_18",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_18/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "c9e5c1e2481c887ed01ef3d8babdb9bd2a15a64cb498ec88917ba68e5391da54"
+    },
+    {
+      "book": "peppa_18",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_18/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "b6a1b13b8b1af663840b2bbd7f6d43a893e75492d4ba9c76deaff20d25c1fa6a"
+    },
+    {
+      "book": "peppa_18",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_18/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "5d510997c8ef82122b076a4fecbf53073cb0255cc2aecae1810b89c4a87795e2"
+    },
+    {
+      "book": "peppa_18",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_18/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "35061c1e13e6f428dd97eedf65831d8ceda310d3539c37ec649ee5d9c231798d"
+    },
+    {
+      "book": "peppa_18",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_18/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "5b5f6e679f0a3c323db6e92cb83ca5979062536ed98b29ddda2c013d6eda600b"
+    },
+    {
+      "book": "peppa_19",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_19/page1.webp",
+      "size": [
+        624,
+        407
+      ],
+      "crop_box": [
+        0,
+        0,
+        624,
+        407
+      ],
+      "sha256": "d87079f927e31f240984c52c0a687ae18a7ddfee417f33ff64401355036bcb9b"
+    },
+    {
+      "book": "peppa_19",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_19/page2.webp",
+      "size": [
+        625,
+        407
+      ],
+      "crop_box": [
+        629,
+        0,
+        1254,
+        407
+      ],
+      "sha256": "3af9612afdf99ca8c5b1196e6cb0b8dc802db9b523eff0b0785bb0875bcb1d08"
+    },
+    {
+      "book": "peppa_19",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_19/page3.webp",
+      "size": [
+        624,
+        377
+      ],
+      "crop_box": [
+        0,
+        412,
+        624,
+        789
+      ],
+      "sha256": "48891e172297f86521b4ff1aaddcb69342611abbad1f55e21beab1f9221c00b9"
+    },
+    {
+      "book": "peppa_19",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_19/page4.webp",
+      "size": [
+        625,
+        377
+      ],
+      "crop_box": [
+        629,
+        412,
+        1254,
+        789
+      ],
+      "sha256": "d0e35e518ff86fafca172fd82c10e0e0b476b45483f771e1dc84141149a41480"
+    },
+    {
+      "book": "peppa_19",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_19/page5.webp",
+      "size": [
+        624,
+        460
+      ],
+      "crop_box": [
+        0,
+        794,
+        624,
+        1254
+      ],
+      "sha256": "06cbe07b0fd631a7637bdfd1845b449f4a3737446f2bdc9f61d9169b6c3f619b"
+    },
+    {
+      "book": "peppa_19",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_19/page6.webp",
+      "size": [
+        625,
+        460
+      ],
+      "crop_box": [
+        629,
+        794,
+        1254,
+        1254
+      ],
+      "sha256": "23e03afb0b083c80ea2c614130dd0011f9eef8459100e081b87613e51ac40747"
+    },
+    {
+      "book": "peppa_20",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_20/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "858cf4feee503a7960c242b494f42849b96819de6ff7d4cd4340191d900c16c7"
+    },
+    {
+      "book": "peppa_20",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_20/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "e7425fb2568da79a9f4418431cc5da3f44b44ad06d8a154ad3fdd04d32c69d8b"
+    },
+    {
+      "book": "peppa_20",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_20/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "0e071b540e44c7a6eb3536c81343b5d2ef6ffa400654f3a7b9c9322e5af15ebe"
+    },
+    {
+      "book": "peppa_20",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_20/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "100d946204add20ea0af1ad11146fdc8f908234edcf99b2667b422003d13450f"
+    },
+    {
+      "book": "peppa_20",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_20/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "9938c4e6b50e2c851f4fe87911602d112c909c9a52f6f1cac6ad1b393bb073e0"
+    },
+    {
+      "book": "peppa_20",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_20/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "b4ba16d651f5ab2a9d99af0a4c6d1ebdfa6069e680dfee3dfd42890c4d5b51d4"
+    },
+    {
+      "book": "peppa_idiom_01",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_idiom_01/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "e61c81359f82a55ec70788c2c55892d147d2e255dbeec0390249224b242aa431"
+    },
+    {
+      "book": "peppa_idiom_01",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_idiom_01/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "82acb156eb181c18f18b58a66ed8ef2adc551189d74191390c8630067954fefe"
+    },
+    {
+      "book": "peppa_idiom_01",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_idiom_01/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "80b7ea1dd14e7c191ad712c95266b3dfc72e1a1b4bae8a43075a270a1f32e1d9"
+    },
+    {
+      "book": "peppa_idiom_01",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_idiom_01/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "788bb810a413327b00f6cf8e495bfc510dc596b1524d7bbe7af5e86c0b4bdc1e"
+    },
+    {
+      "book": "peppa_idiom_01",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_idiom_01/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "a73601ea38f0a1391aed9dae43b4e05157f8fd9dc30a265b5d16c0c26217ebf1"
+    },
+    {
+      "book": "peppa_idiom_01",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_idiom_01/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "0028b267de0c44f293db5459706cfd6f2db59c92967ed8a64d12cab3e4a7d2bd"
+    },
+    {
+      "book": "peppa_idiom_02",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_idiom_02/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "04c7579b1e35b097dd2d426f0acf3b69a67874be309ea3e6da559750ea9f17e1"
+    },
+    {
+      "book": "peppa_idiom_02",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_idiom_02/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "6960b296480543818f3f8e8243ac036fe5780e1a1f2a0cc5b0d432328366b9ee"
+    },
+    {
+      "book": "peppa_idiom_02",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_idiom_02/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "8c53e12300dd16178f8cb4c516430b7dc4da70ff03699de0943146e719429ba1"
+    },
+    {
+      "book": "peppa_idiom_02",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_idiom_02/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "b1fc3f9bb1d86d33d4cd1fac0b2c8c427a3f7a999001095aa8310dcfb5ab8010"
+    },
+    {
+      "book": "peppa_idiom_02",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_idiom_02/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "36ff689fd80a344925b0938fa1c4cb8285be1ca95b4287eecaf4950f85dce2ae"
+    },
+    {
+      "book": "peppa_idiom_02",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_idiom_02/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "8cc45e25bbcb35b4ab6d3b94ef4bc3e244c4fc44a97e5f194afb7bb30d73db33"
+    },
+    {
+      "book": "peppa_idiom_03",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_idiom_03/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "600356e98c03019e63e33f6a5738c458bb66fc7f06ca461acdfb7a88cebc218f"
+    },
+    {
+      "book": "peppa_idiom_03",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_idiom_03/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "382c13d51a5c29421515282891883b675b3534435f8982a48f62610960d1d6fb"
+    },
+    {
+      "book": "peppa_idiom_03",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_idiom_03/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "c1f54fc83c22d2dca3ffcf0b7f1d968938280b0018f042d73e7a02729c588d75"
+    },
+    {
+      "book": "peppa_idiom_03",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_idiom_03/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "0ab86707f257b09eb1113b32e3c087e9e916e744a2798d8e2bde00e7b2884cb1"
+    },
+    {
+      "book": "peppa_idiom_03",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_idiom_03/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "5cf127f0daf01b67e5baff1e207f3fb6af75c5786618f980c952e9688681113d"
+    },
+    {
+      "book": "peppa_idiom_03",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_idiom_03/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "2313f6775aac24beb4780c86f8ad8f94dfadacb094ebf3fd535dbb7c757d92a0"
+    },
+    {
+      "book": "peppa_idiom_04",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_idiom_04/page1.webp",
+      "size": [
+        625,
+        403
+      ],
+      "crop_box": [
+        0,
+        0,
+        625,
+        403
+      ],
+      "sha256": "4473049e900f8a485d6e2a55e549b834c8dd476bbad21410d86c33edf7f07bc7"
+    },
+    {
+      "book": "peppa_idiom_04",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_idiom_04/page2.webp",
+      "size": [
+        628,
+        403
+      ],
+      "crop_box": [
+        626,
+        0,
+        1254,
+        403
+      ],
+      "sha256": "dd126022acedf1b426c4e439861333557815310c9a8ec91b6b9e5cdf91d4414b"
+    },
+    {
+      "book": "peppa_idiom_04",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_idiom_04/page3.webp",
+      "size": [
+        625,
+        389
+      ],
+      "crop_box": [
+        0,
+        406,
+        625,
+        795
+      ],
+      "sha256": "6bb6555a12818b9cfb67607c2ff3ca9f315ad6e99a02f842fb0ce0a9e158d587"
+    },
+    {
+      "book": "peppa_idiom_04",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_idiom_04/page4.webp",
+      "size": [
+        628,
+        389
+      ],
+      "crop_box": [
+        626,
+        406,
+        1254,
+        795
+      ],
+      "sha256": "a8231803d8f2c42868812fa59e226d287a17983764c3aea794e4716a6f15d5f1"
+    },
+    {
+      "book": "peppa_idiom_04",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_idiom_04/page5.webp",
+      "size": [
+        625,
+        457
+      ],
+      "crop_box": [
+        0,
+        797,
+        625,
+        1254
+      ],
+      "sha256": "1034716caa601cdaf2bbcb6f430ae9f81961d8381ebe16cd6236a93058b1cc02"
+    },
+    {
+      "book": "peppa_idiom_04",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_idiom_04/page6.webp",
+      "size": [
+        628,
+        457
+      ],
+      "crop_box": [
+        626,
+        797,
+        1254,
+        1254
+      ],
+      "sha256": "d260f618097d3e2896e0a9e4c13b8e031ee789e8ccef051057d2f35e2d7fbed9"
+    },
+    {
+      "book": "peppa_idiom_05",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_idiom_05/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "5953a3443e23575739362c048c0243b0006054c09faa4a91d3718003f56c0ee9"
+    },
+    {
+      "book": "peppa_idiom_05",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_idiom_05/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "ed29250f0ec472849bad7ec623963fe929a4aed3900ad08fb2c634c83ae3f60c"
+    },
+    {
+      "book": "peppa_idiom_05",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_idiom_05/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "9713fa45c11f435929669cdf309b48d72b594dc158e7ad666165f0a2340190e9"
+    },
+    {
+      "book": "peppa_idiom_05",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_idiom_05/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "221367c01915d9226a1bb66608d14ab0d983a1b9d742702ce2b3bb3da57da5d8"
+    },
+    {
+      "book": "peppa_idiom_05",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_idiom_05/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "a55d4262079da548f2922548ff3749fbe4c6d13c479d795a539f914270e18ef0"
+    },
+    {
+      "book": "peppa_idiom_05",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_idiom_05/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "a0d0fef5cfb9407b758679c9c7b389bf8d86008879a5fdb41fbe047ffc77b4bb"
+    },
+    {
+      "book": "peppa_idiom_06",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_idiom_06/page1.webp",
+      "size": [
+        627,
+        416
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        416
+      ],
+      "sha256": "2d35a5ed71372c0bad0dc72b767bb7db120c1756c3125944cdb771e7f55fc764"
+    },
+    {
+      "book": "peppa_idiom_06",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_idiom_06/page2.webp",
+      "size": [
+        626,
+        416
+      ],
+      "crop_box": [
+        628,
+        0,
+        1254,
+        416
+      ],
+      "sha256": "f34dd98c6fd4d4019c9d2c2629dc0e4c30a59b09112868c0e83e4c86e3d02f64"
+    },
+    {
+      "book": "peppa_idiom_06",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_idiom_06/page3.webp",
+      "size": [
+        627,
+        415
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        833
+      ],
+      "sha256": "de3c68b818e139db362ddc64355cde086e48db631aefb0f34314403cc806ec39"
+    },
+    {
+      "book": "peppa_idiom_06",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_idiom_06/page4.webp",
+      "size": [
+        626,
+        415
+      ],
+      "crop_box": [
+        628,
+        418,
+        1254,
+        833
+      ],
+      "sha256": "bc344533ffc3f8ce95d89c3ad572c9a2656e26fd6f9abe1aedad2bbae954616d"
+    },
+    {
+      "book": "peppa_idiom_06",
+      "page": 5,
+      "file": "art/story-refresh-v1/peppa_idiom_06/page5.webp",
+      "size": [
+        627,
+        420
+      ],
+      "crop_box": [
+        0,
+        834,
+        627,
+        1254
+      ],
+      "sha256": "fda6b085c5135c913fa9285194e7a054ca6822bc7bddbc9c7479791bb0aec18f"
+    },
+    {
+      "book": "peppa_idiom_06",
+      "page": 6,
+      "file": "art/story-refresh-v1/peppa_idiom_06/page6.webp",
+      "size": [
+        626,
+        420
+      ],
+      "crop_box": [
+        628,
+        834,
+        1254,
+        1254
+      ],
+      "sha256": "79fbdee7cc77529cb0ab082bee060a2c9e634b898407f5e9ed5aa4f2e5f6307d"
+    },
+    {
+      "book": "idiom_a01",
+      "page": 1,
+      "file": "art/story-refresh-v1/idiom_a01/page1.webp",
+      "size": [
+        383,
+        511
+      ],
+      "crop_box": [
+        0,
+        0,
+        383,
+        511
+      ],
+      "sha256": "b566fe5f5c4705bb53083bb7b74761aecf6472fbbda232d46ddf0512a252f3e6"
+    },
+    {
+      "book": "idiom_a04",
+      "page": 1,
+      "file": "art/story-refresh-v1/idiom_a04/page1.webp",
+      "size": [
+        384,
+        511
+      ],
+      "crop_box": [
+        384,
+        0,
+        768,
+        511
+      ],
+      "sha256": "6fd2848fc78b7179b3d0449ecb57d1387a8199dbeb0fffe871031244ba435c44"
+    },
+    {
+      "book": "idiom_a06",
+      "page": 1,
+      "file": "art/story-refresh-v1/idiom_a06/page1.webp",
+      "size": [
+        384,
+        511
+      ],
+      "crop_box": [
+        768,
+        0,
+        1152,
+        511
+      ],
+      "sha256": "317e25b24f8a797b1d828a49c1c91dcf8fa4909b7163775e87756f1dc29bb9c9"
+    },
+    {
+      "book": "idiom_a09",
+      "page": 1,
+      "file": "art/story-refresh-v1/idiom_a09/page1.webp",
+      "size": [
+        383,
+        511
+      ],
+      "crop_box": [
+        1153,
+        0,
+        1536,
+        511
+      ],
+      "sha256": "ed6510f8a6bfdf18357c87f28b937a076824dfeb195802eb27476bb9c2b694bd"
+    },
+    {
+      "book": "poem_b01",
+      "page": 1,
+      "file": "art/story-refresh-v1/poem_b01/page1.webp",
+      "size": [
+        383,
+        512
+      ],
+      "crop_box": [
+        0,
+        512,
+        383,
+        1024
+      ],
+      "sha256": "c368e694eff035e3c4a4c83410a5edda9f42e480c64c15b5b2570dfc2c9534bf"
+    },
+    {
+      "book": "poem_b02",
+      "page": 1,
+      "file": "art/story-refresh-v1/poem_b02/page1.webp",
+      "size": [
+        384,
+        512
+      ],
+      "crop_box": [
+        384,
+        512,
+        768,
+        1024
+      ],
+      "sha256": "13901db3981b1fa762b0b23098109f9edab96a0d15ce3700232404783fbdcbb8"
+    },
+    {
+      "book": "poem_b03",
+      "page": 1,
+      "file": "art/story-refresh-v1/poem_b03/page1.webp",
+      "size": [
+        384,
+        512
+      ],
+      "crop_box": [
+        768,
+        512,
+        1152,
+        1024
+      ],
+      "sha256": "181b532f48e3a387ff176fdb3325a061686b109fa59359536559a83e6e3880c1"
+    },
+    {
+      "book": "poem_b05",
+      "page": 1,
+      "file": "art/story-refresh-v1/poem_b05/page1.webp",
+      "size": [
+        383,
+        512
+      ],
+      "crop_box": [
+        1153,
+        512,
+        1536,
+        1024
+      ],
+      "sha256": "743554621e71737b9248b1487b59619ddfc0a0cccb72d4027c4abcc419a4cb27"
+    },
+    {
+      "book": "poem_b09",
+      "page": 1,
+      "file": "art/story-refresh-v1/poem_b09/page1.webp",
+      "size": [
+        441,
+        442
+      ],
+      "crop_box": [
+        0,
+        0,
+        441,
+        442
+      ],
+      "sha256": "a72f3fd4709947fa6024b932fae6373d3d1a37154850d94a44ae09abbb5a9798"
+    },
+    {
+      "book": "dino_01",
+      "page": 1,
+      "file": "art/story-refresh-v1/dino_01/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "09825973f5811cae71631e6dc7cef7e7a45db9ecdba26fb654341f465a0f3d92"
+    },
+    {
+      "book": "dino_01",
+      "page": 2,
+      "file": "art/story-refresh-v1/dino_01/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "26bdf036a08f53355a8659c3c0777ea21fd194194dbf467081d8ace26d90a9c2"
+    },
+    {
+      "book": "dino_01",
+      "page": 3,
+      "file": "art/story-refresh-v1/dino_01/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "95e7232d198f10793db4f12652aafe365b831776b20b95202e156ac57108ca63"
+    },
+    {
+      "book": "dino_01",
+      "page": 4,
+      "file": "art/story-refresh-v1/dino_01/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "1b81ef9658aba74465febc8519d4a878a98d63324728fba1e16c73587a60c200"
+    },
+    {
+      "book": "dino_01",
+      "page": 5,
+      "file": "art/story-refresh-v1/dino_01/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "4a6a0023a9a8f546432e5c11d82348e4c5697ae448b1a06a29a30aaed75ec0d6"
+    },
+    {
+      "book": "dino_01",
+      "page": 6,
+      "file": "art/story-refresh-v1/dino_01/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "835a386992f105218a931be017e16c3b5e3f1982f1847f52da75a36c7ebcccee"
+    },
+    {
+      "book": "dino_02",
+      "page": 1,
+      "file": "art/story-refresh-v1/dino_02/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "eda24f38ff14cc9fd93788fb508b3fe29a317cee16dac2affe3a1c0d758aef26"
+    },
+    {
+      "book": "dino_02",
+      "page": 2,
+      "file": "art/story-refresh-v1/dino_02/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "1806d3ed3ce0b6477b92a8006d7ced6aa1872c61e5a5b3b46c2b18b157200222"
+    },
+    {
+      "book": "dino_02",
+      "page": 3,
+      "file": "art/story-refresh-v1/dino_02/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "cb913ae641ea8433f278bdb5a4c135921e1836373df35bba4d50bc50a6fd1587"
+    },
+    {
+      "book": "dino_02",
+      "page": 4,
+      "file": "art/story-refresh-v1/dino_02/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "0b1cfb33785610ab7faf93567616b6e4dc0631b5fa7c82f6f070d61c32c79523"
+    },
+    {
+      "book": "dino_02",
+      "page": 5,
+      "file": "art/story-refresh-v1/dino_02/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "add861110ad22ef1a595e42e17aebb34f5585accc63dd63065d8675f1786b8bf"
+    },
+    {
+      "book": "dino_02",
+      "page": 6,
+      "file": "art/story-refresh-v1/dino_02/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "4cd5bb8e1317e4b301be391fc0d5e9fdb76a34f732769d32ecb1be52e53ac44b"
+    },
+    {
+      "book": "dino_03",
+      "page": 1,
+      "file": "art/story-refresh-v1/dino_03/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "5dd6f521d26ea31281aa843a1316086a08d980b337d2deb2f077971c95570e50"
+    },
+    {
+      "book": "dino_03",
+      "page": 2,
+      "file": "art/story-refresh-v1/dino_03/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "742bd28aaf2e440a10e3493dffdc8cadeb404ce5a7080af52a7c4a696ebfb722"
+    },
+    {
+      "book": "dino_03",
+      "page": 3,
+      "file": "art/story-refresh-v1/dino_03/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "36a4390b91cf1cc28da754fc5a969a5c828539797c6832b089c7866a6161a619"
+    },
+    {
+      "book": "dino_03",
+      "page": 4,
+      "file": "art/story-refresh-v1/dino_03/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "1f5e52d66cedc6ba88068e9a669f2d1c8498dd6ae7db0712acb1e99604d01b00"
+    },
+    {
+      "book": "dino_03",
+      "page": 5,
+      "file": "art/story-refresh-v1/dino_03/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "74cc601b57396e6ba54cc0691e37cc69fa1aefa17031012799e6ffc25c5c076a"
+    },
+    {
+      "book": "dino_03",
+      "page": 6,
+      "file": "art/story-refresh-v1/dino_03/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "03f6fa40cced6210b5f3ec97151cdf9ffb933174c63b45356815611dc6fd9c25"
+    },
+    {
+      "book": "dino_04",
+      "page": 1,
+      "file": "art/story-refresh-v1/dino_04/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "c638b7ada44790f8b580edd3bcd7431d8ee39baf9e72965d91fd8912749ca7c7"
+    },
+    {
+      "book": "dino_04",
+      "page": 2,
+      "file": "art/story-refresh-v1/dino_04/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "1460b3a6f1b17d87bbfe080b7acf6b2617064311014b8dba20c494a81d4b78c4"
+    },
+    {
+      "book": "dino_04",
+      "page": 3,
+      "file": "art/story-refresh-v1/dino_04/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "f732e1b2bb18f49a73d9c160b0fbaeb8f729bce1bfcdfffa24c290064495fcb3"
+    },
+    {
+      "book": "dino_04",
+      "page": 4,
+      "file": "art/story-refresh-v1/dino_04/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "3bc901e15c933f1bdd78103b86bbe6823b3e89a27d4aaa779c4c0ac3fa8e5a9c"
+    },
+    {
+      "book": "dino_04",
+      "page": 5,
+      "file": "art/story-refresh-v1/dino_04/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "fbe791cc5f643e8670a8eb6065041c489855493d63a8c58660f942fb92276050"
+    },
+    {
+      "book": "dino_04",
+      "page": 6,
+      "file": "art/story-refresh-v1/dino_04/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "4e6b1aa5462df02cc40499d8765ef02495c6bddc59d788b4dee82bc4feaab305"
+    },
+    {
+      "book": "dino_05",
+      "page": 1,
+      "file": "art/story-refresh-v1/dino_05/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "fbb8630f95ac93bc776b84b5bdf4fe44434e7141b84b9e1f35d22d0f01825d6c"
+    },
+    {
+      "book": "dino_05",
+      "page": 2,
+      "file": "art/story-refresh-v1/dino_05/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "7f0405a963bf8347140cab5fce8cf85d93a1e21cc36d8a8e7583d52fe5f3bbd0"
+    },
+    {
+      "book": "dino_05",
+      "page": 3,
+      "file": "art/story-refresh-v1/dino_05/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "5132b9d1e65fa7ddb085e61ae10ef62e292c1f92c0240af32ac714f06e557758"
+    },
+    {
+      "book": "dino_05",
+      "page": 4,
+      "file": "art/story-refresh-v1/dino_05/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "62da6a654b698ec24a82d494da2b2eea28b339273b466f6c08cc6727f5cdc3d0"
+    },
+    {
+      "book": "dino_05",
+      "page": 5,
+      "file": "art/story-refresh-v1/dino_05/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "7de7d331b0243877d7f7ea036de1d6cd90a0d1ba9c976ed26c95eabad58538b9"
+    },
+    {
+      "book": "dino_05",
+      "page": 6,
+      "file": "art/story-refresh-v1/dino_05/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "8fccc775866d302206a7a4fa89a6565086093a102fd926cfd0875df89156ab47"
+    },
+    {
+      "book": "dino_06",
+      "page": 1,
+      "file": "art/story-refresh-v1/dino_06/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "1486b50eb16991e4a9ab438d835a4ade85f8f89e8cc095f8de59ee5c963fe837"
+    },
+    {
+      "book": "dino_06",
+      "page": 2,
+      "file": "art/story-refresh-v1/dino_06/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "671d643fa7bbce400fc3c6820dc6640674686ff6789e951456ae6162a068264e"
+    },
+    {
+      "book": "dino_06",
+      "page": 3,
+      "file": "art/story-refresh-v1/dino_06/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "acba86940d3b7cf1c202f90d7724f3a3fcec6f81aeebb3249a4501617c83dfce"
+    },
+    {
+      "book": "dino_06",
+      "page": 4,
+      "file": "art/story-refresh-v1/dino_06/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "7b87ed0d039f56d0b0fe467e148277cd9845fc8007cf9b61a904072c986c7577"
+    },
+    {
+      "book": "dino_06",
+      "page": 5,
+      "file": "art/story-refresh-v1/dino_06/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "35d036aaec68143d532522dbb77d6326cd5b38dab9c70f76ee19e86bb610fba5"
+    },
+    {
+      "book": "dino_06",
+      "page": 6,
+      "file": "art/story-refresh-v1/dino_06/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "03f8c918c98ed399f1a3eae13a170def934917ee1ca06eac1cb19052e054dcd3"
+    },
+    {
+      "book": "poem_33",
+      "page": 1,
+      "file": "art/story-refresh-v1/poem_33/page1.webp",
+      "size": [
+        442,
+        442
+      ],
+      "crop_box": [
+        444,
+        0,
+        886,
+        442
+      ],
+      "sha256": "cb2ff58b74e963ce6bbc6cfb1d89367c29f464c917926bfe17d80c0403da3dad"
+    },
+    {
+      "book": "peppa_new_01",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_new_01/page1.webp",
+      "size": [
+        768,
+        512
+      ],
+      "crop_box": [
+        0,
+        0,
+        768,
+        512
+      ],
+      "sha256": "1ccafe9d93eb2a00061d0b98bd42dc9da0c951b5b4f91ba036998f113b572634"
+    },
+    {
+      "book": "peppa_new_01",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_new_01/page2.webp",
+      "size": [
+        768,
+        512
+      ],
+      "crop_box": [
+        768,
+        0,
+        1536,
+        512
+      ],
+      "sha256": "f68e73a40c042d91bc84fbe2d4ae457a4e8246b0bcb06a4d85d3a1b086c4aa5b"
+    },
+    {
+      "book": "peppa_new_01",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_new_01/page3.webp",
+      "size": [
+        768,
+        512
+      ],
+      "crop_box": [
+        0,
+        512,
+        768,
+        1024
+      ],
+      "sha256": "c0811cd28d30c5138738a330038c3a9568c1cc921055dc0af2cc38997b34c2b9"
+    },
+    {
+      "book": "peppa_new_01",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_new_01/page4.webp",
+      "size": [
+        768,
+        512
+      ],
+      "crop_box": [
+        768,
+        512,
+        1536,
+        1024
+      ],
+      "sha256": "cb40d41a92bfb0c1ab4a50eafeebcf9ea1d0e5992907cbf9360070e499fd90c2"
+    },
+    {
+      "book": "peppa_new_02",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_new_02/page1.webp",
+      "size": [
+        768,
+        512
+      ],
+      "crop_box": [
+        0,
+        0,
+        768,
+        512
+      ],
+      "sha256": "444b7ffd303f7aaf3fc78a276e236265917791bb1a13f13c79550bd37a6cd638"
+    },
+    {
+      "book": "peppa_new_02",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_new_02/page2.webp",
+      "size": [
+        768,
+        512
+      ],
+      "crop_box": [
+        768,
+        0,
+        1536,
+        512
+      ],
+      "sha256": "5fd8dfb0c781d9c57d10ffe366b12efd1a4684cb8060219ae31cbc68e847ce64"
+    },
+    {
+      "book": "peppa_new_02",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_new_02/page3.webp",
+      "size": [
+        768,
+        512
+      ],
+      "crop_box": [
+        0,
+        512,
+        768,
+        1024
+      ],
+      "sha256": "d3a960cf5037c833724dcc6c3e3b8a5e2d30142fafc707e49e8679b03ee6da5c"
+    },
+    {
+      "book": "peppa_new_02",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_new_02/page4.webp",
+      "size": [
+        768,
+        512
+      ],
+      "crop_box": [
+        768,
+        512,
+        1536,
+        1024
+      ],
+      "sha256": "186feebadb7cba641dda7d5e066b2dc06a30e34813775541306235a75c57a844"
+    },
+    {
+      "book": "peppa_new_03",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_new_03/page1.webp",
+      "size": [
+        768,
+        512
+      ],
+      "crop_box": [
+        0,
+        0,
+        768,
+        512
+      ],
+      "sha256": "000363a421a519f8e80671d75bf5b1a4cad63c707fd734b459283fe00e95e23b"
+    },
+    {
+      "book": "peppa_new_03",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_new_03/page2.webp",
+      "size": [
+        768,
+        512
+      ],
+      "crop_box": [
+        768,
+        0,
+        1536,
+        512
+      ],
+      "sha256": "e271496e22a3633e1a1789e200ea55384d4b19523f302cb4ce25335b213c3dfe"
+    },
+    {
+      "book": "peppa_new_03",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_new_03/page3.webp",
+      "size": [
+        768,
+        512
+      ],
+      "crop_box": [
+        0,
+        512,
+        768,
+        1024
+      ],
+      "sha256": "414609284f4544d169618ebcd9fa5e0f4e00619ee323fc0cd72aa2701e545729"
+    },
+    {
+      "book": "peppa_new_03",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_new_03/page4.webp",
+      "size": [
+        768,
+        512
+      ],
+      "crop_box": [
+        768,
+        512,
+        1536,
+        1024
+      ],
+      "sha256": "f43690567185dfcf619ad932860935d47dff981a99b6a51139f6630094f10eca"
+    },
+    {
+      "book": "paw_new_01",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_new_01/page1.webp",
+      "size": [
+        442,
+        442
+      ],
+      "crop_box": [
+        0,
+        0,
+        442,
+        442
+      ],
+      "sha256": "d40bd9f1bcb4d5040a44e10e2cd114d2590ac1b01d07283328fe06a303f3f6fb"
+    },
+    {
+      "book": "paw_new_01",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_new_01/page2.webp",
+      "size": [
+        442,
+        442
+      ],
+      "crop_box": [
+        444,
+        0,
+        886,
+        442
+      ],
+      "sha256": "43d5c2db5b4c4114930c3e95d80c44c503b40f4f4208e1f392b9c589ed921538"
+    },
+    {
+      "book": "paw_new_01",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_new_01/page3.webp",
+      "size": [
+        442,
+        442
+      ],
+      "crop_box": [
+        0,
+        445,
+        442,
+        887
+      ],
+      "sha256": "bfc19255ed5875bfd06e1719769eb63e20e0fe321b84e9a2f19d6164a05a5912"
+    },
+    {
+      "book": "paw_new_01",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_new_01/page4.webp",
+      "size": [
+        442,
+        442
+      ],
+      "crop_box": [
+        444,
+        445,
+        886,
+        887
+      ],
+      "sha256": "785637d1639718a66d41d9507402f6191e0de183e164b358bf783d8c14b13c8b"
+    },
+    {
+      "book": "paw_new_02",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_new_02/page1.webp",
+      "size": [
+        442,
+        442
+      ],
+      "crop_box": [
+        888,
+        0,
+        1330,
+        442
+      ],
+      "sha256": "8837de96952b71ea404aebee1d506608b01a3a860e0d57a365479ebfa003171b"
+    },
+    {
+      "book": "paw_new_02",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_new_02/page2.webp",
+      "size": [
+        442,
+        442
+      ],
+      "crop_box": [
+        1332,
+        0,
+        1774,
+        442
+      ],
+      "sha256": "7af9b895c741378876f1377d588634e1832dc0a8012529d95dd7f7d4090902b7"
+    },
+    {
+      "book": "paw_new_02",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_new_02/page3.webp",
+      "size": [
+        442,
+        442
+      ],
+      "crop_box": [
+        888,
+        445,
+        1330,
+        887
+      ],
+      "sha256": "77071690f8f625011832fa9a411e15f6937191f561791941b2dd81dd19239dfc"
+    },
+    {
+      "book": "paw_new_02",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_new_02/page4.webp",
+      "size": [
+        442,
+        442
+      ],
+      "crop_box": [
+        1332,
+        445,
+        1774,
+        887
+      ],
+      "sha256": "54b52381d998ea4d01884eed0652ce0f513c8d0777aa70e2c9c28f1cdc7e5ade"
+    },
+    {
+      "book": "paw_new_03",
+      "page": 1,
+      "file": "art/story-refresh-v1/paw_new_03/page1.webp",
+      "size": [
+        380,
+        510
+      ],
+      "crop_box": [
+        0,
+        0,
+        380,
+        510
+      ],
+      "sha256": "b0e09be93e080f7196b7f76082e2e0ae12e1bfd7f699b6371ff71cfd1f3a9ea5"
+    },
+    {
+      "book": "paw_new_03",
+      "page": 2,
+      "file": "art/story-refresh-v1/paw_new_03/page2.webp",
+      "size": [
+        382,
+        510
+      ],
+      "crop_box": [
+        384,
+        0,
+        766,
+        510
+      ],
+      "sha256": "e1916df3e06128a59eb32cc04fde3ac84bc6f8469dd57a66b69e839a9d734c0b"
+    },
+    {
+      "book": "paw_new_03",
+      "page": 3,
+      "file": "art/story-refresh-v1/paw_new_03/page3.webp",
+      "size": [
+        380,
+        511
+      ],
+      "crop_box": [
+        0,
+        513,
+        380,
+        1024
+      ],
+      "sha256": "739ce4fe90f07f468596ff8e2836c3183b9b724a84157ffcc430ea8606c8fa80"
+    },
+    {
+      "book": "paw_new_03",
+      "page": 4,
+      "file": "art/story-refresh-v1/paw_new_03/page4.webp",
+      "size": [
+        382,
+        511
+      ],
+      "crop_box": [
+        384,
+        513,
+        766,
+        1024
+      ],
+      "sha256": "f636383fc93438fecefabceb37cc9451b2d9f3247ba7cd2a1e3fc814d852df6e"
+    },
+    {
+      "book": "zoo_new_01",
+      "page": 1,
+      "file": "art/story-refresh-v1/zoo_new_01/page1.webp",
+      "size": [
+        383,
+        510
+      ],
+      "crop_box": [
+        769,
+        0,
+        1152,
+        510
+      ],
+      "sha256": "bd50a0f6445287a6a80da3e7bb8f24150c65119f038b9234378bc2ba518eda5a"
+    },
+    {
+      "book": "zoo_new_01",
+      "page": 2,
+      "file": "art/story-refresh-v1/zoo_new_01/page2.webp",
+      "size": [
+        381,
+        510
+      ],
+      "crop_box": [
+        1155,
+        0,
+        1536,
+        510
+      ],
+      "sha256": "9fce1d736a0e7c5aca8fde648df9aff74d7e2be0a1084d2da9039cf3e7a2fcf7"
+    },
+    {
+      "book": "zoo_new_01",
+      "page": 3,
+      "file": "art/story-refresh-v1/zoo_new_01/page3.webp",
+      "size": [
+        383,
+        511
+      ],
+      "crop_box": [
+        769,
+        513,
+        1152,
+        1024
+      ],
+      "sha256": "7c9c4488ebf926720b94018b13c4dabf62e305936acfa134d49b59e059ae4f8e"
+    },
+    {
+      "book": "zoo_new_01",
+      "page": 4,
+      "file": "art/story-refresh-v1/zoo_new_01/page4.webp",
+      "size": [
+        381,
+        511
+      ],
+      "crop_box": [
+        1155,
+        513,
+        1536,
+        1024
+      ],
+      "sha256": "442f8257039d2b489264d08ab2d9f25d1ba7b3fc1626d54dd3fa8b7c8f87cd26"
+    },
+    {
+      "book": "zoo_new_02",
+      "page": 1,
+      "file": "art/story-refresh-v1/zoo_new_02/page1.webp",
+      "size": [
+        382,
+        510
+      ],
+      "crop_box": [
+        0,
+        0,
+        382,
+        510
+      ],
+      "sha256": "dffe1f907513a645c27af2f016df1cadbc5ff302f532cc7dc055fec7642abacd"
+    },
+    {
+      "book": "zoo_new_02",
+      "page": 2,
+      "file": "art/story-refresh-v1/zoo_new_02/page2.webp",
+      "size": [
+        380,
+        510
+      ],
+      "crop_box": [
+        386,
+        0,
+        766,
+        510
+      ],
+      "sha256": "92dfc8e145823e7d71e1e45cdc7f4af04a10331f885e41026be0da4226c48158"
+    },
+    {
+      "book": "zoo_new_02",
+      "page": 3,
+      "file": "art/story-refresh-v1/zoo_new_02/page3.webp",
+      "size": [
+        382,
+        510
+      ],
+      "crop_box": [
+        0,
+        514,
+        382,
+        1024
+      ],
+      "sha256": "087353c650278a45fa767f47a7d4426960a6f70d037b3b49854a89182f2b2d66"
+    },
+    {
+      "book": "zoo_new_02",
+      "page": 4,
+      "file": "art/story-refresh-v1/zoo_new_02/page4.webp",
+      "size": [
+        380,
+        510
+      ],
+      "crop_box": [
+        386,
+        514,
+        766,
+        1024
+      ],
+      "sha256": "a18cd4c6ca18122eac838caa25682c9067c00fd0eb89569f2b5dd80fd4442d2a"
+    },
+    {
+      "book": "zoo_new_03",
+      "page": 1,
+      "file": "art/story-refresh-v1/zoo_new_03/page1.webp",
+      "size": [
+        381,
+        510
+      ],
+      "crop_box": [
+        770,
+        0,
+        1151,
+        510
+      ],
+      "sha256": "7db097d44ac8b84454cf690938475e94c04d5c965325e5fd91662c20689fc4b1"
+    },
+    {
+      "book": "zoo_new_03",
+      "page": 2,
+      "file": "art/story-refresh-v1/zoo_new_03/page2.webp",
+      "size": [
+        381,
+        510
+      ],
+      "crop_box": [
+        1155,
+        0,
+        1536,
+        510
+      ],
+      "sha256": "49ef5a61ede78381363c8b874a9874f3fe533d7e895788769aab9c87886feae7"
+    },
+    {
+      "book": "zoo_new_03",
+      "page": 3,
+      "file": "art/story-refresh-v1/zoo_new_03/page3.webp",
+      "size": [
+        381,
+        510
+      ],
+      "crop_box": [
+        770,
+        514,
+        1151,
+        1024
+      ],
+      "sha256": "e61a0e751f93ce1fcddd60d54ad9567284baf976b21800f88ce69ac812136526"
+    },
+    {
+      "book": "zoo_new_03",
+      "page": 4,
+      "file": "art/story-refresh-v1/zoo_new_03/page4.webp",
+      "size": [
+        381,
+        510
+      ],
+      "crop_box": [
+        1155,
+        514,
+        1536,
+        1024
+      ],
+      "sha256": "4cb6a236c39a776b7a8b66f7e2332de6ad916c65df6f7a9af14e001b8f536fad"
+    },
+    {
+      "book": "zoo_new_04",
+      "page": 1,
+      "file": "art/story-refresh-v1/zoo_new_04/page1.webp",
+      "size": [
+        382,
+        510
+      ],
+      "crop_box": [
+        0,
+        0,
+        382,
+        510
+      ],
+      "sha256": "034ecf8212755a856022829e1883cb7bd00ffdd3f615c27aeaa27f5491867307"
+    },
+    {
+      "book": "zoo_new_04",
+      "page": 2,
+      "file": "art/story-refresh-v1/zoo_new_04/page2.webp",
+      "size": [
+        381,
+        510
+      ],
+      "crop_box": [
+        385,
+        0,
+        766,
+        510
+      ],
+      "sha256": "c477d17a6677c501f09902d6d36b3b0a685d8a173f769660ea65be091461bdf1"
+    },
+    {
+      "book": "zoo_new_04",
+      "page": 3,
+      "file": "art/story-refresh-v1/zoo_new_04/page3.webp",
+      "size": [
+        382,
+        510
+      ],
+      "crop_box": [
+        0,
+        514,
+        382,
+        1024
+      ],
+      "sha256": "f4575b218c27ea427cdb045f7cf21681211c5207b9f5642c00ccb58dc78a7bfc"
+    },
+    {
+      "book": "zoo_new_04",
+      "page": 4,
+      "file": "art/story-refresh-v1/zoo_new_04/page4.webp",
+      "size": [
+        381,
+        510
+      ],
+      "crop_box": [
+        385,
+        514,
+        766,
+        1024
+      ],
+      "sha256": "d69d81900f2068e9bad64ae392de851c8ea19af703f36e7d089af721830fe4e1"
+    },
+    {
+      "book": "princess_new_01",
+      "page": 1,
+      "file": "art/story-refresh-v1/princess_new_01/page1.webp",
+      "size": [
+        382,
+        510
+      ],
+      "crop_box": [
+        769,
+        0,
+        1151,
+        510
+      ],
+      "sha256": "c13b9e0b14789ea794d5c5a9d35ee181f395c9b0b1dcb924ad795191a146e3c3"
+    },
+    {
+      "book": "princess_new_01",
+      "page": 2,
+      "file": "art/story-refresh-v1/princess_new_01/page2.webp",
+      "size": [
+        382,
+        510
+      ],
+      "crop_box": [
+        1154,
+        0,
+        1536,
+        510
+      ],
+      "sha256": "ba92dd0fc86b2b389ba57c6571bbf9ea8ab38263db20cebfb47252b419ca8a8a"
+    },
+    {
+      "book": "princess_new_01",
+      "page": 3,
+      "file": "art/story-refresh-v1/princess_new_01/page3.webp",
+      "size": [
+        382,
+        511
+      ],
+      "crop_box": [
+        769,
+        513,
+        1151,
+        1024
+      ],
+      "sha256": "f2a38bf5d1c369ced9700f6c6c64598d0ea8701b0b1849f42c95d2fdc397d205"
+    },
+    {
+      "book": "princess_new_01",
+      "page": 4,
+      "file": "art/story-refresh-v1/princess_new_01/page4.webp",
+      "size": [
+        382,
+        511
+      ],
+      "crop_box": [
+        1154,
+        513,
+        1536,
+        1024
+      ],
+      "sha256": "1db24805c4da7df0153b5dc34ae4c0cbeb03d05015ee9fe5f3d244b184ba3471"
+    },
+    {
+      "book": "princess_new_02",
+      "page": 1,
+      "file": "art/story-refresh-v1/princess_new_02/page1.webp",
+      "size": [
+        382,
+        511
+      ],
+      "crop_box": [
+        0,
+        0,
+        382,
+        511
+      ],
+      "sha256": "aca1ebfc25e45cc0db171b6e444e281979468e524f24e4f4e0b89185a4e7b7c7"
+    },
+    {
+      "book": "princess_new_02",
+      "page": 2,
+      "file": "art/story-refresh-v1/princess_new_02/page2.webp",
+      "size": [
+        383,
+        511
+      ],
+      "crop_box": [
+        384,
+        0,
+        767,
+        511
+      ],
+      "sha256": "df191bcddf6e9838eced61b20b1636b67c1c755bcb4b4523b4eafe908a6323fb"
+    },
+    {
+      "book": "princess_new_02",
+      "page": 3,
+      "file": "art/story-refresh-v1/princess_new_02/page3.webp",
+      "size": [
+        382,
+        511
+      ],
+      "crop_box": [
+        0,
+        513,
+        382,
+        1024
+      ],
+      "sha256": "51bf258ca6a4c0d10c0f976a23b3da4d64849a58f253938ae0d01165c8b1f91a"
+    },
+    {
+      "book": "princess_new_02",
+      "page": 4,
+      "file": "art/story-refresh-v1/princess_new_02/page4.webp",
+      "size": [
+        383,
+        511
+      ],
+      "crop_box": [
+        384,
+        513,
+        767,
+        1024
+      ],
+      "sha256": "5e41f02b055418218598ea2745ad1270c966e55403bc5644bf783212ab35b4c6"
+    },
+    {
+      "book": "princess_new_03",
+      "page": 1,
+      "file": "art/story-refresh-v1/princess_new_03/page1.webp",
+      "size": [
+        383,
+        511
+      ],
+      "crop_box": [
+        769,
+        0,
+        1152,
+        511
+      ],
+      "sha256": "f8919db0452efcc234f44f12b2fc80ff132abf3be13eaaa281ff5a1e34b9171a"
+    },
+    {
+      "book": "princess_new_03",
+      "page": 2,
+      "file": "art/story-refresh-v1/princess_new_03/page2.webp",
+      "size": [
+        382,
+        511
+      ],
+      "crop_box": [
+        1154,
+        0,
+        1536,
+        511
+      ],
+      "sha256": "6257eec1e25825342874ee21463fac00e5cc0fe6585d0f3a1f25e08680712ce8"
+    },
+    {
+      "book": "princess_new_03",
+      "page": 3,
+      "file": "art/story-refresh-v1/princess_new_03/page3.webp",
+      "size": [
+        383,
+        511
+      ],
+      "crop_box": [
+        769,
+        513,
+        1152,
+        1024
+      ],
+      "sha256": "b404a62a6fc9bbac225a884a5a3722c963bfb240ac50acd8b5f332090a5b2f8c"
+    },
+    {
+      "book": "princess_new_03",
+      "page": 4,
+      "file": "art/story-refresh-v1/princess_new_03/page4.webp",
+      "size": [
+        382,
+        511
+      ],
+      "crop_box": [
+        1154,
+        513,
+        1536,
+        1024
+      ],
+      "sha256": "afe12793d943a459863e90a3620d5e704ac8bc9fbccaaff4f4afab2deba3352b"
+    },
+    {
+      "book": "princess_new_04",
+      "page": 1,
+      "file": "art/story-refresh-v1/princess_new_04/page1.webp",
+      "size": [
+        382,
+        510
+      ],
+      "crop_box": [
+        0,
+        0,
+        382,
+        510
+      ],
+      "sha256": "761e93a16a1873d3db74d8a52d88d267f6fd97ade26292313d5ab968ecb98016"
+    },
+    {
+      "book": "princess_new_04",
+      "page": 2,
+      "file": "art/story-refresh-v1/princess_new_04/page2.webp",
+      "size": [
+        381,
+        510
+      ],
+      "crop_box": [
+        385,
+        0,
+        766,
+        510
+      ],
+      "sha256": "cb957759ba3f758f5a19c8ce44311c4e432bf60deed991ac756f653877b0fe2b"
+    },
+    {
+      "book": "princess_new_04",
+      "page": 3,
+      "file": "art/story-refresh-v1/princess_new_04/page3.webp",
+      "size": [
+        382,
+        511
+      ],
+      "crop_box": [
+        0,
+        513,
+        382,
+        1024
+      ],
+      "sha256": "5005e07f966028be0c36786e4c4ce9b35592b12519b095e3e8ce228bc7f2234b"
+    },
+    {
+      "book": "princess_new_04",
+      "page": 4,
+      "file": "art/story-refresh-v1/princess_new_04/page4.webp",
+      "size": [
+        381,
+        511
+      ],
+      "crop_box": [
+        385,
+        513,
+        766,
+        1024
+      ],
+      "sha256": "5f95573c34dcf4c8f069d750583a64b5516bdf0485cfe6152091cc453760630b"
+    },
+    {
+      "book": "princess_new_05",
+      "page": 1,
+      "file": "art/story-refresh-v1/princess_new_05/page1.webp",
+      "size": [
+        381,
+        510
+      ],
+      "crop_box": [
+        770,
+        0,
+        1151,
+        510
+      ],
+      "sha256": "0f5daf6f41ce5e12693a4e7c032dc79373101746ca41a3ebcc4534f0152f5a7f"
+    },
+    {
+      "book": "princess_new_05",
+      "page": 2,
+      "file": "art/story-refresh-v1/princess_new_05/page2.webp",
+      "size": [
+        382,
+        510
+      ],
+      "crop_box": [
+        1154,
+        0,
+        1536,
+        510
+      ],
+      "sha256": "3d6b82343fe4c8b3513033ef08227f6eea2f34823b665498f3b833a3dd922064"
+    },
+    {
+      "book": "princess_new_05",
+      "page": 3,
+      "file": "art/story-refresh-v1/princess_new_05/page3.webp",
+      "size": [
+        381,
+        511
+      ],
+      "crop_box": [
+        770,
+        513,
+        1151,
+        1024
+      ],
+      "sha256": "16db522b2bb34fc250f836d49ffa483dcc89e1941ae0f2a723283b480a720f8a"
+    },
+    {
+      "book": "princess_new_05",
+      "page": 4,
+      "file": "art/story-refresh-v1/princess_new_05/page4.webp",
+      "size": [
+        382,
+        511
+      ],
+      "crop_box": [
+        1154,
+        513,
+        1536,
+        1024
+      ],
+      "sha256": "7f9809343dfe884ff371ee7935423f3bf05a19e28cd31bc12977f99ed0ba53c3"
+    },
+    {
+      "book": "poem_new_01",
+      "page": 1,
+      "file": "art/story-refresh-v1/poem_new_01/page1.webp",
+      "size": [
+        442,
+        442
+      ],
+      "crop_box": [
+        888,
+        0,
+        1330,
+        442
+      ],
+      "sha256": "89897ccf65083fdda0b2921455c73643e9ea30c42bf65a5471c2610bfff4d1e4"
+    },
+    {
+      "book": "poem_new_02",
+      "page": 1,
+      "file": "art/story-refresh-v1/poem_new_02/page1.webp",
+      "size": [
+        442,
+        442
+      ],
+      "crop_box": [
+        1332,
+        0,
+        1774,
+        442
+      ],
+      "sha256": "28641cfb776cadd5b5bb40827cbf43246c662995296a7faefef5fc01bc6985b7"
+    },
+    {
+      "book": "poem_new_03",
+      "page": 1,
+      "file": "art/story-refresh-v1/poem_new_03/page1.webp",
+      "size": [
+        441,
+        442
+      ],
+      "crop_box": [
+        0,
+        445,
+        441,
+        887
+      ],
+      "sha256": "748c41203441d9b6b9771d0d8f551148aa0f315f1b8285f442ca81dd6be257dc"
+    },
+    {
+      "book": "poem_new_04",
+      "page": 1,
+      "file": "art/story-refresh-v1/poem_new_04/page1.webp",
+      "size": [
+        442,
+        442
+      ],
+      "crop_box": [
+        444,
+        445,
+        886,
+        887
+      ],
+      "sha256": "5621c55fbe7a0f96cd1890cc5ee97f31dbf813d55ebe11f42771050cb3ea8e80"
+    },
+    {
+      "book": "poem_new_05",
+      "page": 1,
+      "file": "art/story-refresh-v1/poem_new_05/page1.webp",
+      "size": [
+        442,
+        442
+      ],
+      "crop_box": [
+        888,
+        445,
+        1330,
+        887
+      ],
+      "sha256": "ecfb60cbf4f6780e0643d163360a7627b61877118c0af4f3ef44ba9045e81306"
+    },
+    {
+      "book": "poem_new_06",
+      "page": 1,
+      "file": "art/story-refresh-v1/poem_new_06/page1.webp",
+      "size": [
+        442,
+        442
+      ],
+      "crop_box": [
+        1332,
+        445,
+        1774,
+        887
+      ],
+      "sha256": "99eefa8ea6a64ebbf2b13b7d79f60c246655837a2cc7e2c18f749f132053c3b8"
+    },
+    {
+      "book": "extra_elsa_snowlight",
+      "page": 1,
+      "file": "art/story-refresh-v1/extra_elsa_snowlight/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "8a32070c9f49968a6734504150c624702d2bdad096a935e4cc3208b661df8318"
+    },
+    {
+      "book": "extra_elsa_snowlight",
+      "page": 2,
+      "file": "art/story-refresh-v1/extra_elsa_snowlight/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "81b670b00db31f322c2d2a3451d1598f4ba1636df54055a51d5b9b79f09cc22b"
+    },
+    {
+      "book": "extra_elsa_snowlight",
+      "page": 3,
+      "file": "art/story-refresh-v1/extra_elsa_snowlight/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "854002d48b967510843730563e3b9c9176adaee181674f3495096db549ed1651"
+    },
+    {
+      "book": "extra_elsa_snowlight",
+      "page": 4,
+      "file": "art/story-refresh-v1/extra_elsa_snowlight/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "93dbab54c990c1ce1df259c34f4fbd901f31bd5a3e2771751facdd1eb553efb1"
+    },
+    {
+      "book": "extra_elsa_snowlight",
+      "page": 5,
+      "file": "art/story-refresh-v1/extra_elsa_snowlight/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "13900eb08bf51a2da08dfe875efe6eee9913e78cf9e672574f4b750463ed0763"
+    },
+    {
+      "book": "extra_elsa_snowlight",
+      "page": 6,
+      "file": "art/story-refresh-v1/extra_elsa_snowlight/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "f762b3de8a8a71aa5666c6a20daf40d9602f1c06dabdc3ef21500f3912fb18b5"
+    },
+    {
+      "book": "extra_elsa_snowfox",
+      "page": 1,
+      "file": "art/story-refresh-v1/extra_elsa_snowfox/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "f16500a8ff876ee7738eafa1901216c80b8e6e5474b454744a56e98d11337f17"
+    },
+    {
+      "book": "extra_elsa_snowfox",
+      "page": 2,
+      "file": "art/story-refresh-v1/extra_elsa_snowfox/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "fb0b0a79b077d3fdca33ab00ca278cf99dbf493b17bbe574e7acb80b52ad2251"
+    },
+    {
+      "book": "extra_elsa_snowfox",
+      "page": 3,
+      "file": "art/story-refresh-v1/extra_elsa_snowfox/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "88e864dce20faf3a2a7aa6ac12d49c71be2f4869960bc3b7476c9e5ec7e17713"
+    },
+    {
+      "book": "extra_elsa_snowfox",
+      "page": 4,
+      "file": "art/story-refresh-v1/extra_elsa_snowfox/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "280fadb63570af442bbede5d0324226338fb450ef5a0a97bdac5950f6a6a57bd"
+    },
+    {
+      "book": "extra_elsa_snowfox",
+      "page": 5,
+      "file": "art/story-refresh-v1/extra_elsa_snowfox/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "6c49c51b6df7bffebca054a1cd4a06997b0d60b35ff5b8c5d731645a37fd51ce"
+    },
+    {
+      "book": "extra_elsa_snowfox",
+      "page": 6,
+      "file": "art/story-refresh-v1/extra_elsa_snowfox/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "74ffdf6b5348f668d4db051e3f727e26b1d2e7989b7af18a9dfc7bb587e0dc36"
+    },
+    {
+      "book": "extra_zoo_bluehat",
+      "page": 1,
+      "file": "art/story-refresh-v1/extra_zoo_bluehat/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "594d4779b21bcb8bdea7eb738d4e10529b796cab12ecd19c41eb263654dd2628"
+    },
+    {
+      "book": "extra_zoo_bluehat",
+      "page": 2,
+      "file": "art/story-refresh-v1/extra_zoo_bluehat/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "2b7ce44814ac0b631b17bdbeb16e1d57cc827a6fe593facfb9559fd02e272f6a"
+    },
+    {
+      "book": "extra_zoo_bluehat",
+      "page": 3,
+      "file": "art/story-refresh-v1/extra_zoo_bluehat/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "e781f1c6b53320bad8ac81cfc4b4537a5806e37225cd7dd949f962f3d8edf002"
+    },
+    {
+      "book": "extra_zoo_bluehat",
+      "page": 4,
+      "file": "art/story-refresh-v1/extra_zoo_bluehat/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "10be9be77b6903f0eeee548066c349b38c3703ebff6e125dc805a7555b2d45de"
+    },
+    {
+      "book": "extra_zoo_bluehat",
+      "page": 5,
+      "file": "art/story-refresh-v1/extra_zoo_bluehat/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "17b68c1813463f4dea14b9b078e0bcdea3601588a01f8f34464fd769e7d8f665"
+    },
+    {
+      "book": "extra_zoo_bluehat",
+      "page": 6,
+      "file": "art/story-refresh-v1/extra_zoo_bluehat/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "683eb225684529343b5a81ac30195f81d7a404b19c39cabda802c17e7bd34aff"
+    },
+    {
+      "book": "extra_zoo_raincrossing",
+      "page": 1,
+      "file": "art/story-refresh-v1/extra_zoo_raincrossing/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "cabf7d7017809d78a251126437cbc8970c75cdcf52853dcd610bc349d30331d9"
+    },
+    {
+      "book": "extra_zoo_raincrossing",
+      "page": 2,
+      "file": "art/story-refresh-v1/extra_zoo_raincrossing/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "e96ff01c0f8db28a0aa2c0333236cee49e177c2d4d234d78b41451105f7f1ad2"
+    },
+    {
+      "book": "extra_zoo_raincrossing",
+      "page": 3,
+      "file": "art/story-refresh-v1/extra_zoo_raincrossing/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "248b16f640967b209fa5c83594f8b5b170f87e4931f89cc57ff9f858985b8073"
+    },
+    {
+      "book": "extra_zoo_raincrossing",
+      "page": 4,
+      "file": "art/story-refresh-v1/extra_zoo_raincrossing/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "cdf4c97a5e65a9ebd202b43c17ccfa1724060c7e40140bbc780bc24df226ef53"
+    },
+    {
+      "book": "extra_zoo_raincrossing",
+      "page": 5,
+      "file": "art/story-refresh-v1/extra_zoo_raincrossing/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "b6c9fc1442d8c2bb640dcaeeb814b3d2d311a363e024e17d70c0ee75017df4c4"
+    },
+    {
+      "book": "extra_zoo_raincrossing",
+      "page": 6,
+      "file": "art/story-refresh-v1/extra_zoo_raincrossing/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "5326cbae34f8ea0326a9aadd12087e1b2ec08e6444fd3f4ac567167bd687bb9b"
+    },
+    {
+      "book": "extra_princess_snowwhite",
+      "page": 1,
+      "file": "art/story-refresh-v1/extra_princess_snowwhite/page1.webp",
+      "size": [
+        510,
+        483
+      ],
+      "crop_box": [
+        0,
+        0,
+        510,
+        483
+      ],
+      "sha256": "e61bfb3b773d227976989e6b0434107a66b10b8f3b3cc5a97572f51977888b37"
+    },
+    {
+      "book": "extra_princess_snowwhite",
+      "page": 2,
+      "file": "art/story-refresh-v1/extra_princess_snowwhite/page2.webp",
+      "size": [
+        509,
+        483
+      ],
+      "crop_box": [
+        515,
+        0,
+        1024,
+        483
+      ],
+      "sha256": "077239b37cebcc416fee64f3b7ce7d516bf38207a1cc71982b7bd419b6cf10b4"
+    },
+    {
+      "book": "extra_princess_snowwhite",
+      "page": 3,
+      "file": "art/story-refresh-v1/extra_princess_snowwhite/page3.webp",
+      "size": [
+        510,
+        490
+      ],
+      "crop_box": [
+        0,
+        487,
+        510,
+        977
+      ],
+      "sha256": "38010e76a8a63a266ddca8419f3f749e604c525a1938995c526326aced8ca9b8"
+    },
+    {
+      "book": "extra_princess_snowwhite",
+      "page": 4,
+      "file": "art/story-refresh-v1/extra_princess_snowwhite/page4.webp",
+      "size": [
+        509,
+        490
+      ],
+      "crop_box": [
+        515,
+        487,
+        1024,
+        977
+      ],
+      "sha256": "b6ecf7c6abb2a7ece9e272dcbfbd0b45db2d8f18d7d3b33d35db92fd1e83cea4"
+    },
+    {
+      "book": "extra_princess_snowwhite",
+      "page": 5,
+      "file": "art/story-refresh-v1/extra_princess_snowwhite/page5.webp",
+      "size": [
+        510,
+        554
+      ],
+      "crop_box": [
+        0,
+        982,
+        510,
+        1536
+      ],
+      "sha256": "4924198a92f1bfc7471256b2603bc22ec40791c054de5bbf3cabf3c2dbe9a70f"
+    },
+    {
+      "book": "extra_princess_snowwhite",
+      "page": 6,
+      "file": "art/story-refresh-v1/extra_princess_snowwhite/page6.webp",
+      "size": [
+        509,
+        554
+      ],
+      "crop_box": [
+        515,
+        982,
+        1024,
+        1536
+      ],
+      "sha256": "bddd94443d5bad45fe43b68745efc426d995f46ffc7dd0b805247e28470678f5"
+    },
+    {
+      "book": "extra_princess_cinderella",
+      "page": 1,
+      "file": "art/story-refresh-v1/extra_princess_cinderella/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "e6f49344d47f1efb99d4f385ad874fa905530e1739f71d492b958dea4af0d073"
+    },
+    {
+      "book": "extra_princess_cinderella",
+      "page": 2,
+      "file": "art/story-refresh-v1/extra_princess_cinderella/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "93f7c11e20e518639ef2ec494b43d37b79a862a6ac470c59ef80ae9f83d4ec3c"
+    },
+    {
+      "book": "extra_princess_cinderella",
+      "page": 3,
+      "file": "art/story-refresh-v1/extra_princess_cinderella/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "95a7998f53011aaae37a3c9c84e96ed6e6b2e478014b84b2a561bddb14a4621a"
+    },
+    {
+      "book": "extra_princess_cinderella",
+      "page": 4,
+      "file": "art/story-refresh-v1/extra_princess_cinderella/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "51865c85ade989564fc0fbfa72bb4dcd9a6f156d67434080f41c506d4f0e3d8d"
+    },
+    {
+      "book": "extra_princess_cinderella",
+      "page": 5,
+      "file": "art/story-refresh-v1/extra_princess_cinderella/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "858261af428c954f677cbd61a1ee7a330f9a8c613de1591ee341838820326bed"
+    },
+    {
+      "book": "extra_princess_cinderella",
+      "page": 6,
+      "file": "art/story-refresh-v1/extra_princess_cinderella/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "a9e971cf91b478175e18f7c89ecdfb717c28e74d42adf397adbc1bf1e6175cde"
+    },
+    {
+      "book": "extra_life_backpack",
+      "page": 1,
+      "file": "art/story-refresh-v1/extra_life_backpack/page1.webp",
+      "size": [
+        512,
+        511
+      ],
+      "crop_box": [
+        0,
+        0,
+        512,
+        511
+      ],
+      "sha256": "ab82b2235d1527c284a9567c3cc46636a2e812376e69c6dcbe0096f4d0f0bedb"
+    },
+    {
+      "book": "extra_life_backpack",
+      "page": 2,
+      "file": "art/story-refresh-v1/extra_life_backpack/page2.webp",
+      "size": [
+        512,
+        511
+      ],
+      "crop_box": [
+        512,
+        0,
+        1024,
+        511
+      ],
+      "sha256": "05359fbe370b3ad786a4205cabb4b74f70ec207e24f1375448f83308d7a1b34a"
+    },
+    {
+      "book": "extra_life_backpack",
+      "page": 3,
+      "file": "art/story-refresh-v1/extra_life_backpack/page3.webp",
+      "size": [
+        512,
+        512
+      ],
+      "crop_box": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "sha256": "7b41c674b17df9ba34bba5fc799ce4ce6173bfd8b3f396b69142358ccfd49081"
+    },
+    {
+      "book": "extra_life_backpack",
+      "page": 4,
+      "file": "art/story-refresh-v1/extra_life_backpack/page4.webp",
+      "size": [
+        512,
+        512
+      ],
+      "crop_box": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "sha256": "b38c27e45468d53209111a50e72b66a8b92df3a587715df0a0ffbd1a0d5aa9ee"
+    },
+    {
+      "book": "extra_life_backpack",
+      "page": 5,
+      "file": "art/story-refresh-v1/extra_life_backpack/page5.webp",
+      "size": [
+        512,
+        512
+      ],
+      "crop_box": [
+        0,
+        1024,
+        512,
+        1536
+      ],
+      "sha256": "677cdd620ed18931bc72aeef5575432fe8deddfefb81adf2045e40e0c0f59e73"
+    },
+    {
+      "book": "extra_life_backpack",
+      "page": 6,
+      "file": "art/story-refresh-v1/extra_life_backpack/page6.webp",
+      "size": [
+        512,
+        512
+      ],
+      "crop_box": [
+        512,
+        1024,
+        1024,
+        1536
+      ],
+      "sha256": "70512477d4b3b775b863a13e78eea1aebe69241d60fbdb47e23693735773fb4a"
+    },
+    {
+      "book": "extra_life_dentist",
+      "page": 1,
+      "file": "art/story-refresh-v1/extra_life_dentist/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "c2be109c449cea51bbfeacf24af7680ffc20a50eefdd7a0c98fa6932293f1f95"
+    },
+    {
+      "book": "extra_life_dentist",
+      "page": 2,
+      "file": "art/story-refresh-v1/extra_life_dentist/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "d3fd655f71663a66ccbd8e812be421cd00927a0937f448a392f3c54a6534870a"
+    },
+    {
+      "book": "extra_life_dentist",
+      "page": 3,
+      "file": "art/story-refresh-v1/extra_life_dentist/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "cc0c9be5da955f90b8b2bdd661ed1205b066a02720ebf2b6fe2057cc4d0450a6"
+    },
+    {
+      "book": "extra_life_dentist",
+      "page": 4,
+      "file": "art/story-refresh-v1/extra_life_dentist/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "43fa7e48308d4b68c60ddc2d489790e9be939c182b7ffad9b6be659147bb58e8"
+    },
+    {
+      "book": "extra_life_dentist",
+      "page": 5,
+      "file": "art/story-refresh-v1/extra_life_dentist/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "a0a7e96ff122f3b8d6499881f03e36f936814c38b2813b82b81001107d1ca594"
+    },
+    {
+      "book": "extra_life_dentist",
+      "page": 6,
+      "file": "art/story-refresh-v1/extra_life_dentist/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "7e99883dc094f32892a02aeefeac38d1c0996516fd5f5fd4847f352c8bb7c4ae"
+    },
+    {
+      "book": "extra_poem_jingyesi",
+      "page": 1,
+      "file": "art/story-refresh-v1/extra_poem_jingyesi/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "8a955b5369c09fb31875280c0a8a4ac2874da2c728d19129313f0469af4e7969"
+    },
+    {
+      "book": "extra_poem_jingyesi",
+      "page": 2,
+      "file": "art/story-refresh-v1/extra_poem_jingyesi/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "aaaf2f19e48ae0daffae274a6a8a0d6e3f140c48bfae25257d9468ab783f5ea8"
+    },
+    {
+      "book": "extra_poem_jingyesi",
+      "page": 3,
+      "file": "art/story-refresh-v1/extra_poem_jingyesi/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "2485e324d4931e0524fe08b06e7ead18a20600da5ceb73f1dd9b237a49d794f3"
+    },
+    {
+      "book": "extra_poem_jingyesi",
+      "page": 4,
+      "file": "art/story-refresh-v1/extra_poem_jingyesi/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "ba49dc0b9fd0a2931908b7d6295badf481f1d2ceb3e3671741f2eea7b29c9a69"
+    },
+    {
+      "book": "extra_poem_jingyesi",
+      "page": 5,
+      "file": "art/story-refresh-v1/extra_poem_jingyesi/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "bc44ac1b43fe8740559fffd3d3c687a033fed73f951695652ebf23b329661173"
+    },
+    {
+      "book": "extra_poem_jingyesi",
+      "page": 6,
+      "file": "art/story-refresh-v1/extra_poem_jingyesi/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "8708b6af9aebf9faa5147b351ffc12784ee9cade4ae0c7c7d2ca5761ea3ac857"
+    },
+    {
+      "book": "extra_poem_chunxiao",
+      "page": 1,
+      "file": "art/story-refresh-v1/extra_poem_chunxiao/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "f30f7563d907f8b47408ae027173fa00a5e62c2e584c82a2b9812a58c4009535"
+    },
+    {
+      "book": "extra_poem_chunxiao",
+      "page": 2,
+      "file": "art/story-refresh-v1/extra_poem_chunxiao/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "3c55dee62b7c5de91faa2541fbfc13e4b3213cce40e3367e9b30e5a1424d046b"
+    },
+    {
+      "book": "extra_poem_chunxiao",
+      "page": 3,
+      "file": "art/story-refresh-v1/extra_poem_chunxiao/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "9226fcb6a737be991a4bc79cb1de0402e3057e6f5132791c784588d6b52ff482"
+    },
+    {
+      "book": "extra_poem_chunxiao",
+      "page": 4,
+      "file": "art/story-refresh-v1/extra_poem_chunxiao/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "586f4eab7342f11b9526542b8fcfbf6c86123ade25d0fea9bdac1896969f6107"
+    },
+    {
+      "book": "extra_poem_chunxiao",
+      "page": 5,
+      "file": "art/story-refresh-v1/extra_poem_chunxiao/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "92c567615eb5f39f9d8c79c492f1a55db8c789fc67882e4ef5b5936330bfe37c"
+    },
+    {
+      "book": "extra_poem_chunxiao",
+      "page": 6,
+      "file": "art/story-refresh-v1/extra_poem_chunxiao/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "9d6cc59bc207f0f7a9ba26c5e892f06dfb8b65fae89c5f78c2f942a0366790bc"
+    },
+    {
+      "book": "extra_poem_yonge",
+      "page": 1,
+      "file": "art/story-refresh-v1/extra_poem_yonge/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "0d96ae0ca3c46388756542b5767bdf6b755189d590f3bf57d18e535b674ea72e"
+    },
+    {
+      "book": "extra_poem_yonge",
+      "page": 2,
+      "file": "art/story-refresh-v1/extra_poem_yonge/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "b983ced482ecc8cf3eed8049649e6f8313b791aab18b518b029e21adb35e1141"
+    },
+    {
+      "book": "extra_poem_yonge",
+      "page": 3,
+      "file": "art/story-refresh-v1/extra_poem_yonge/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "55c9988673d489ce859980b3beef0fd99c8103ce2ec5fca8a4f8ecc9747f877f"
+    },
+    {
+      "book": "extra_poem_yonge",
+      "page": 4,
+      "file": "art/story-refresh-v1/extra_poem_yonge/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "812a1b1bee6912ea357e8a084daba06b87f1338c33cf4d182959c682c2e75cea"
+    },
+    {
+      "book": "extra_poem_yonge",
+      "page": 5,
+      "file": "art/story-refresh-v1/extra_poem_yonge/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "3fd245766d95e868bbc7ef62b2d05e4b9f3dc8f549b142d347d4e6b643360fd1"
+    },
+    {
+      "book": "extra_poem_yonge",
+      "page": 6,
+      "file": "art/story-refresh-v1/extra_poem_yonge/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "53967117b0498d43955d75672d9a2c2e93537b4d49ce225b048869574fdfceb2"
+    },
+    {
+      "book": "extra_ci_rumengling",
+      "page": 1,
+      "file": "art/story-refresh-v1/extra_ci_rumengling/page1.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        0,
+        627,
+        418
+      ],
+      "sha256": "59c649daea64e17033cc454186b1deafa6c71a081cc4766256eb031dc790944a"
+    },
+    {
+      "book": "extra_ci_rumengling",
+      "page": 2,
+      "file": "art/story-refresh-v1/extra_ci_rumengling/page2.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "0a4eafe1f7bb97becf073c476fde96afc4f1d1dc784119bfa98e0b00dfe5bdfa"
+    },
+    {
+      "book": "extra_ci_rumengling",
+      "page": 3,
+      "file": "art/story-refresh-v1/extra_ci_rumengling/page3.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        418,
+        627,
+        836
+      ],
+      "sha256": "0d0101573e43da33d38caf642239ce3e48cc2ea221a933e399160b04166054e4"
+    },
+    {
+      "book": "extra_ci_rumengling",
+      "page": 4,
+      "file": "art/story-refresh-v1/extra_ci_rumengling/page4.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "57786533adea53b84ffd86f8a7755ec05038336c1a5e91ea4847281a5f006fcb"
+    },
+    {
+      "book": "extra_ci_rumengling",
+      "page": 5,
+      "file": "art/story-refresh-v1/extra_ci_rumengling/page5.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        0,
+        836,
+        627,
+        1254
+      ],
+      "sha256": "d50199df25ccb870028ee9e9968982856bc574edb99e3b0315299d0f73ee5d25"
+    },
+    {
+      "book": "extra_ci_rumengling",
+      "page": 6,
+      "file": "art/story-refresh-v1/extra_ci_rumengling/page6.webp",
+      "size": [
+        627,
+        418
+      ],
+      "crop_box": [
+        627,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "fba37e6deac929142d78a135d3748c7296c83c6d3a94d4ad4a6503c182376e04"
+    }
+  ]
+}

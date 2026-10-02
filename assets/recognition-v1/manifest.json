@@ -1,0 +1,210 @@
+{
+  "count": 20,
+  "grid": [
+    4,
+    3
+  ],
+  "style": "original realistic preschool recognition illustrations; exact color and number concepts drawn in code",
+  "files": [
+    {
+      "category": "animals",
+      "file": "assets/recognition-v1/animals.webp",
+      "cover": "assets/recognition-v1/covers/animals.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "bc72df3514fa1d0936add6c74741fb376906ac52e75500f8bcc9d536027da1d6"
+    },
+    {
+      "category": "clothes",
+      "file": "assets/recognition-v1/clothes.webp",
+      "cover": "assets/recognition-v1/covers/clothes.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "f63a1c8eeae0d83411022fc15170ae2239a38c190e2cd4c99f286635ded7ee13"
+    },
+    {
+      "category": "colors",
+      "file": "assets/recognition-v1/colors.webp",
+      "cover": "assets/recognition-v1/covers/colors.webp",
+      "size": [
+        1680,
+        1260
+      ],
+      "sha256": "c6fa9cb0df681d0362da16f49729c4c7704e22ef040fae8fef642d036901a9b1"
+    },
+    {
+      "category": "community",
+      "file": "assets/recognition-v1/community.webp",
+      "cover": "assets/recognition-v1/covers/community.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "6c4cb883477cfb567ee2147d4f183a17db2901a42105a70f242683758216d8f6"
+    },
+    {
+      "category": "digital",
+      "file": "assets/recognition-v1/digital.webp",
+      "cover": "assets/recognition-v1/covers/digital.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "ce4e20790b7f5805f5dde24875021e2de9d6de811451ed873447d40d5a468690"
+    },
+    {
+      "category": "family",
+      "file": "assets/recognition-v1/family.webp",
+      "cover": "assets/recognition-v1/covers/family.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "b0d4c08dcc02c54e81a0c85d226a0e81c0c2624d9bf58445c5e19a15594d4fb9"
+    },
+    {
+      "category": "foods",
+      "file": "assets/recognition-v1/foods.webp",
+      "cover": "assets/recognition-v1/covers/foods.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "e5f27f3013f6d50c6e86e57fb61e4d6ef531adea3de92eb2dd048880c9bfe013"
+    },
+    {
+      "category": "fruits",
+      "file": "assets/recognition-v1/fruits.webp",
+      "cover": "assets/recognition-v1/covers/fruits.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "26fc44c52eb23cee677f857fae4877639a73abaec5031e214da76c64231d255c"
+    },
+    {
+      "category": "home",
+      "file": "assets/recognition-v1/home.webp",
+      "cover": "assets/recognition-v1/covers/home.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "bd9f543216081590bf80d13d9db4296478035882743fa0a344ca3aeb255e4859"
+    },
+    {
+      "category": "hygiene",
+      "file": "assets/recognition-v1/hygiene.webp",
+      "cover": "assets/recognition-v1/covers/hygiene.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "0f0e98b1909df53bea942dba94563ad0a161352dffe291bfa1c6b3ee6c88a4ab"
+    },
+    {
+      "category": "little_life",
+      "file": "assets/recognition-v1/little_life.webp",
+      "cover": "assets/recognition-v1/covers/little_life.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "d4e1b81da5909d28c45d5c941f19785111dea84add86948dfc2a84b1f30fcb8b"
+    },
+    {
+      "category": "numbers",
+      "file": "assets/recognition-v1/numbers.webp",
+      "cover": "assets/recognition-v1/covers/numbers.webp",
+      "size": [
+        1680,
+        1260
+      ],
+      "sha256": "25ebb749d4180252760475d79b201caee0fd6f36a1aa9090b5f305636a5698f6"
+    },
+    {
+      "category": "outdoors",
+      "file": "assets/recognition-v1/outdoors.webp",
+      "cover": "assets/recognition-v1/covers/outdoors.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "1f8fac28274a303299b54cd8a977aaab8fa5332274f606f5f00519a0f0365d86"
+    },
+    {
+      "category": "safety",
+      "file": "assets/recognition-v1/safety.webp",
+      "cover": "assets/recognition-v1/covers/safety.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "d51719a05e4e9072ea042d855b209a0ee0d7413e3f4ba173e2adf77e7b9c9eaf"
+    },
+    {
+      "category": "school_tools",
+      "file": "assets/recognition-v1/school_tools.webp",
+      "cover": "assets/recognition-v1/covers/school_tools.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "4fe4147a94da4b70039f951c1ce4cb71618f900ac1babe7680f248d6bf0427ec"
+    },
+    {
+      "category": "self_body",
+      "file": "assets/recognition-v1/self_body.webp",
+      "cover": "assets/recognition-v1/covers/self_body.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "33bbef12f5da77b92feccf6a26a1f59541dd81e1dd22d1a617e52281dc884979"
+    },
+    {
+      "category": "sky_weather",
+      "file": "assets/recognition-v1/sky_weather.webp",
+      "cover": "assets/recognition-v1/covers/sky_weather.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "5adb13bb8cc1cb773d6826dd1e951d95195ec5cc28124a4bd1143d362de05a2e"
+    },
+    {
+      "category": "toys",
+      "file": "assets/recognition-v1/toys.webp",
+      "cover": "assets/recognition-v1/covers/toys.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "d1162780ae57a8056984eee65726ad30faef4ea8548cba03c06e9cb9fbb4052d"
+    },
+    {
+      "category": "vegetables",
+      "file": "assets/recognition-v1/vegetables.webp",
+      "cover": "assets/recognition-v1/covers/vegetables.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "0a6f45b859e4d7cb6a6f1cc7fe06c74b80dc3f7f77309e4c8af308ebb2b6043e"
+    },
+    {
+      "category": "vehicles",
+      "file": "assets/recognition-v1/vehicles.webp",
+      "cover": "assets/recognition-v1/covers/vehicles.webp",
+      "size": [
+        1448,
+        1086
+      ],
+      "sha256": "87f82213bba87f9f9f856bc6acf5b4d9156a18a3b566f25d10a2c4cfed3daebd"
+    }
+  ]
+}

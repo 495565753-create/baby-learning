@@ -1,0 +1,1983 @@
+{
+  "created_at": "2026-10-02T09:45:31+08:00",
+  "source_version": "recognition-v1-20261002b",
+  "generator": "Microsoft Edge neural TTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "-8%",
+  "pitch": "+0Hz",
+  "expressive_style": null,
+  "note": "默认晓晓神经声线，语速减慢 8%；未启用教师或其他情感样式。",
+  "category_count": 20,
+  "item_count": 240,
+  "question_count": 240,
+  "praise_count": 8,
+  "feedback_count": 2,
+  "text_count": 490,
+  "peak_guard": {
+    "threshold_dbfs": -0.5,
+    "target_dbfs": -2.5,
+    "adjusted_file_count": 2
+  },
+  "files": {
+    "这是头发。长在头顶，可以保护头皮，也会有不同的颜色和长短。": {
+      "file": "voice-recognition-v1/86ba8e2e02b5b5758e46.mp3",
+      "spoken": "这是头发。长在头顶，可以保护头皮，也会有不同的颜色和长短。"
+    },
+    "请找出，头发。": {
+      "file": "voice-recognition-v1/c609c1fa75d2b3e2d75d.mp3",
+      "spoken": "请找出，头发。"
+    },
+    "这是眼睛。用来看人、看路和看图画，光线太亮时要注意保护。": {
+      "file": "voice-recognition-v1/d437811a8449c006f7c3.mp3",
+      "spoken": "这是眼睛。用来看人、看路和看图画，光线太亮时要注意保护。"
+    },
+    "请找出，眼睛。": {
+      "file": "voice-recognition-v1/e04c2769742a73115b80.mp3",
+      "spoken": "请找出，眼睛。"
+    },
+    "这是耳朵。长在头部两边，能帮助我们听见说话、音乐和各种声音。": {
+      "file": "voice-recognition-v1/2f97c66be79aeaba7b12.mp3",
+      "spoken": "这是耳朵。长在头部两边，能帮助我们听见说话、音乐和各种声音。"
+    },
+    "请找出，耳朵。": {
+      "file": "voice-recognition-v1/b4631740386e921f5dde.mp3",
+      "spoken": "请找出，耳朵。"
+    },
+    "这是鼻子。长在脸的中间，可以呼吸，也能闻到饭菜和花朵的气味。": {
+      "file": "voice-recognition-v1/358d762e520e9f5685e6.mp3",
+      "spoken": "这是鼻子。长在脸的中间，可以呼吸，也能闻到饭菜和花朵的气味。"
+    },
+    "请找出，鼻子。": {
+      "file": "voice-recognition-v1/95084508beb36ec71e2b.mp3",
+      "spoken": "请找出，鼻子。"
+    },
+    "这是嘴巴。可以说话、唱歌和吃东西，吃完东西要记得擦干净。": {
+      "file": "voice-recognition-v1/6da51d6d2999ac9ef988.mp3",
+      "spoken": "这是嘴巴。可以说话、唱歌和吃东西，吃完东西要记得擦干净。"
+    },
+    "请找出，嘴巴。": {
+      "file": "voice-recognition-v1/2fc215c9b27bf24c0fed.mp3",
+      "spoken": "请找出，嘴巴。"
+    },
+    "这是牙齿。可以把食物嚼碎，每天早晚认真刷牙能让它们更健康。": {
+      "file": "voice-recognition-v1/1654045c7377630069d0.mp3",
+      "spoken": "这是牙齿。可以把食物嚼碎，每天早晚认真刷牙能让它们更健康。"
+    },
+    "请找出，牙齿。": {
+      "file": "voice-recognition-v1/b8da0342750bb1099d57.mp3",
+      "spoken": "请找出，牙齿。"
+    },
+    "这是手。可以拿东西、画画和拥抱，回家和吃饭前要认真洗手。": {
+      "file": "voice-recognition-v1/87104ee145580e53a62d.mp3",
+      "spoken": "这是手。可以拿东西、画画和拥抱，回家和吃饭前要认真洗手。"
+    },
+    "请找出，手。": {
+      "file": "voice-recognition-v1/f3a75e81c1aeae47aa94.mp3",
+      "spoken": "请找出，手。"
+    },
+    "这是手指。长在手掌前面，可以指方向、捏小物品和完成精细动作。": {
+      "file": "voice-recognition-v1/50c905a07664cafb0a01.mp3",
+      "spoken": "这是手指。长在手掌前面，可以指方向、捏小物品和完成精细动作。"
+    },
+    "请找出，手指。": {
+      "file": "voice-recognition-v1/e8b663f5310988b6c0bd.mp3",
+      "spoken": "请找出，手指。"
+    },
+    "这是手臂。连接肩膀和手，抬起、放下或抱东西时都会用到它。": {
+      "file": "voice-recognition-v1/3bb397467b9ce41e8713.mp3",
+      "spoken": "这是手臂。连接肩膀和手，抬起、放下或抱东西时都会用到它。"
+    },
+    "请找出，手臂。": {
+      "file": "voice-recognition-v1/85a29b5031d1e9ea8073.mp3",
+      "spoken": "请找出，手臂。"
+    },
+    "这是脚。帮助我们站立、走路和奔跑，穿合脚的鞋能保护它。": {
+      "file": "voice-recognition-v1/946f91557d1b9b57c8a5.mp3",
+      "spoken": "这是脚。帮助我们站立、走路和奔跑，穿合脚的鞋能保护它。"
+    },
+    "请找出，脚。": {
+      "file": "voice-recognition-v1/0154b526e0e9afd5f130.mp3",
+      "spoken": "请找出，脚。"
+    },
+    "这是膝盖。在腿的中间，蹲下、起身和走路时，它会弯曲和伸直。": {
+      "file": "voice-recognition-v1/a14d07d9158badfe5666.mp3",
+      "spoken": "这是膝盖。在腿的中间，蹲下、起身和走路时，它会弯曲和伸直。"
+    },
+    "请找出，膝盖。": {
+      "file": "voice-recognition-v1/dac7c66ab65e56bad334.mp3",
+      "spoken": "请找出，膝盖。"
+    },
+    "这是肚子。在身体前面，里面有帮助消化食物的重要器官。": {
+      "file": "voice-recognition-v1/f18d06fbdbba23f0d998.mp3",
+      "spoken": "这是肚子。在身体前面，里面有帮助消化食物的重要器官。"
+    },
+    "请找出，肚子。": {
+      "file": "voice-recognition-v1/b5dc27c4c05e9dad58ac.mp3",
+      "spoken": "请找出，肚子。"
+    },
+    "这是宝宝。是家里年龄很小的孩子，需要家人的照顾，也在每天学习长大。": {
+      "file": "voice-recognition-v1/9031a0fe4fd100485c07.mp3",
+      "spoken": "这是宝宝。是家里年龄很小的孩子，需要家人的照顾，也在每天学习长大。"
+    },
+    "请找出，宝宝。": {
+      "file": "voice-recognition-v1/b93979ae6697de0f9a36.mp3",
+      "spoken": "请找出，宝宝。"
+    },
+    "这是妈妈。是孩子的女性家长之一，每个家庭的称呼和样子都可能不同。": {
+      "file": "voice-recognition-v1/ef85f0a00ae8e362efba.mp3",
+      "spoken": "这是妈妈。是孩子的女性家长之一，每个家庭的称呼和样子都可能不同。"
+    },
+    "请找出，妈妈。": {
+      "file": "voice-recognition-v1/b24ba73299dbd8b500cc.mp3",
+      "spoken": "请找出，妈妈。"
+    },
+    "这是爸爸。是孩子的男性家长之一，每个家庭的称呼和样子都可能不同。": {
+      "file": "voice-recognition-v1/d7f55c3580dc27736ad5.mp3",
+      "spoken": "这是爸爸。是孩子的男性家长之一，每个家庭的称呼和样子都可能不同。"
+    },
+    "请找出，爸爸。": {
+      "file": "voice-recognition-v1/706c97578827f9e696bc.mp3",
+      "spoken": "请找出，爸爸。"
+    },
+    "这是爷爷。通常是爸爸的爸爸，认人时要听家人介绍，不能只看外表猜。": {
+      "file": "voice-recognition-v1/88e4313a16d37ee0957e.mp3",
+      "spoken": "这是爷爷。通常是爸爸的爸爸，认人时要听家人介绍，不能只看外表猜。"
+    },
+    "请找出，爷爷。": {
+      "file": "voice-recognition-v1/e24c72fc7c2b06c615e5.mp3",
+      "spoken": "请找出，爷爷。"
+    },
+    "这是奶奶。通常是爸爸的妈妈，认人时要听家人介绍，不能只看外表猜。": {
+      "file": "voice-recognition-v1/1e6f63950da9d5eb5399.mp3",
+      "spoken": "这是奶奶。通常是爸爸的妈妈，认人时要听家人介绍，不能只看外表猜。"
+    },
+    "请找出，奶奶。": {
+      "file": "voice-recognition-v1/69d0907cb4bd11179228.mp3",
+      "spoken": "请找出，奶奶。"
+    },
+    "这是外公。通常是妈妈的爸爸，有些家庭也会叫姥爷或用亲切的小名。": {
+      "file": "voice-recognition-v1/35678342dfe7242f1aa1.mp3",
+      "spoken": "这是外公。通常是妈妈的爸爸，有些家庭也会叫姥爷或用亲切的小名。"
+    },
+    "请找出，外公。": {
+      "file": "voice-recognition-v1/e6d206ee23345b72c936.mp3",
+      "spoken": "请找出，外公。"
+    },
+    "这是外婆。通常是妈妈的妈妈，有些家庭也会叫姥姥或用亲切的小名。": {
+      "file": "voice-recognition-v1/dfb8d57d283aea259a15.mp3",
+      "spoken": "这是外婆。通常是妈妈的妈妈，有些家庭也会叫姥姥或用亲切的小名。"
+    },
+    "请找出，外婆。": {
+      "file": "voice-recognition-v1/36332b36e1fe4756b249.mp3",
+      "spoken": "请找出，外婆。"
+    },
+    "这是哥哥。是比自己年长的男孩亲属，具体关系可以请家人介绍。": {
+      "file": "voice-recognition-v1/f61404414cc36170761c.mp3",
+      "spoken": "这是哥哥。是比自己年长的男孩亲属，具体关系可以请家人介绍。"
+    },
+    "请找出，哥哥。": {
+      "file": "voice-recognition-v1/d044711c4a3bcf26da20.mp3",
+      "spoken": "请找出，哥哥。"
+    },
+    "这是姐姐。是比自己年长的女孩亲属，具体关系可以请家人介绍。": {
+      "file": "voice-recognition-v1/b2719276b8d0891c3615.mp3",
+      "spoken": "这是姐姐。是比自己年长的女孩亲属，具体关系可以请家人介绍。"
+    },
+    "请找出，姐姐。": {
+      "file": "voice-recognition-v1/fc1756be259ecc735747.mp3",
+      "spoken": "请找出，姐姐。"
+    },
+    "这是弟弟。是比自己年幼的男孩亲属，要友好相处并互相帮助。": {
+      "file": "voice-recognition-v1/2fa8ab3cdc23aa1b2269.mp3",
+      "spoken": "这是弟弟。是比自己年幼的男孩亲属，要友好相处并互相帮助。"
+    },
+    "请找出，弟弟。": {
+      "file": "voice-recognition-v1/814d372fc11ba2d69df3.mp3",
+      "spoken": "请找出，弟弟。"
+    },
+    "这是妹妹。是比自己年幼的女孩亲属，要友好相处并互相帮助。": {
+      "file": "voice-recognition-v1/a242332f3adeebd96aca.mp3",
+      "spoken": "这是妹妹。是比自己年幼的女孩亲属，要友好相处并互相帮助。"
+    },
+    "请找出，妹妹。": {
+      "file": "voice-recognition-v1/b6f7e8bdf68c8eb3830d.mp3",
+      "spoken": "请找出，妹妹。"
+    },
+    "这是老师。会陪小朋友学习和成长，在学校遇到困难时可以请老师帮助。": {
+      "file": "voice-recognition-v1/98eb74e45e5ce5c5d0b0.mp3",
+      "spoken": "这是老师。会陪小朋友学习和成长，在学校遇到困难时可以请老师帮助。"
+    },
+    "请找出，老师。": {
+      "file": "voice-recognition-v1/0bf269da6cfe38eb62e1.mp3",
+      "spoken": "请找出，老师。"
+    },
+    "这是T恤。是一种轻便的上衣，天气温暖时常常穿在身上。": {
+      "file": "voice-recognition-v1/7a7042b978f74965b6dc.mp3",
+      "spoken": "这是T恤。是一种轻便的上衣，天气温暖时常常穿在身上。"
+    },
+    "请找出，T恤。": {
+      "file": "voice-recognition-v1/7f828b95dcf8cf9f51e2.mp3",
+      "spoken": "请找出，T恤。"
+    },
+    "这是裤子。穿在腰部和双腿外面，有长裤、短裤等不同样子。": {
+      "file": "voice-recognition-v1/dc4e8491cc9326d97035.mp3",
+      "spoken": "这是裤子。穿在腰部和双腿外面，有长裤、短裤等不同样子。"
+    },
+    "请找出，裤子。": {
+      "file": "voice-recognition-v1/39b5a61472d2582bcc98.mp3",
+      "spoken": "请找出，裤子。"
+    },
+    "这是裙子。从腰部向下展开，长度、颜色和花纹可以各不相同。": {
+      "file": "voice-recognition-v1/22b368d1b22e43db64ba.mp3",
+      "spoken": "这是裙子。从腰部向下展开，长度、颜色和花纹可以各不相同。"
+    },
+    "请找出，裙子。": {
+      "file": "voice-recognition-v1/cb895887f3abb4ed7945.mp3",
+      "spoken": "请找出，裙子。"
+    },
+    "这是外套。穿在其他衣服外面，天气凉或有风时可以帮助保暖。": {
+      "file": "voice-recognition-v1/0f2fbbb21dca6046e481.mp3",
+      "spoken": "这是外套。穿在其他衣服外面，天气凉或有风时可以帮助保暖。"
+    },
+    "请找出，外套。": {
+      "file": "voice-recognition-v1/32fc919deca24bd188ed.mp3",
+      "spoken": "请找出，外套。"
+    },
+    "这是毛衣。常用柔软的毛线织成，天气变冷时穿起来比较暖和。": {
+      "file": "voice-recognition-v1/415ea0bc94894fb25b7b.mp3",
+      "spoken": "这是毛衣。常用柔软的毛线织成，天气变冷时穿起来比较暖和。"
+    },
+    "请找出，毛衣。": {
+      "file": "voice-recognition-v1/5def1e4404295ed583fd.mp3",
+      "spoken": "请找出，毛衣。"
+    },
+    "这是袜子。穿在脚上，可以吸汗，也能减少鞋子对皮肤的摩擦。": {
+      "file": "voice-recognition-v1/fb8d3f94a461cb72a3dd.mp3",
+      "spoken": "这是袜子。穿在脚上，可以吸汗，也能减少鞋子对皮肤的摩擦。"
+    },
+    "请找出，袜子。": {
+      "file": "voice-recognition-v1/cc6dc13c070737b79a3d.mp3",
+      "spoken": "请找出，袜子。"
+    },
+    "这是鞋子。穿在脚上保护脚底，出门前要分清左右并系好鞋带。": {
+      "file": "voice-recognition-v1/473e7e81fb3e89b890f7.mp3",
+      "spoken": "这是鞋子。穿在脚上保护脚底，出门前要分清左右并系好鞋带。"
+    },
+    "请找出，鞋子。": {
+      "file": "voice-recognition-v1/180a155a373a509871ae.mp3",
+      "spoken": "请找出，鞋子。"
+    },
+    "这是帽子。戴在头上，遮阳帽能挡太阳，保暖帽能抵挡寒冷。": {
+      "file": "voice-recognition-v1/05c00e6d3cfae993caf4.mp3",
+      "spoken": "这是帽子。戴在头上，遮阳帽能挡太阳，保暖帽能抵挡寒冷。"
+    },
+    "请找出，帽子。": {
+      "file": "voice-recognition-v1/2419c00e41e79d17ee4b.mp3",
+      "spoken": "请找出，帽子。"
+    },
+    "这是围巾。围在脖子周围，寒冷天气里能帮助挡风和保暖。": {
+      "file": "voice-recognition-v1/202690b209ba070b3b0f.mp3",
+      "spoken": "这是围巾。围在脖子周围，寒冷天气里能帮助挡风和保暖。"
+    },
+    "请找出，围巾。": {
+      "file": "voice-recognition-v1/02dd0bfff058cd441f31.mp3",
+      "spoken": "请找出，围巾。"
+    },
+    "这是手套。套在双手上，保暖手套防冷，劳动手套还能保护手。": {
+      "file": "voice-recognition-v1/60c4b37abdfd7da68529.mp3",
+      "spoken": "这是手套。套在双手上，保暖手套防冷，劳动手套还能保护手。"
+    },
+    "请找出，手套。": {
+      "file": "voice-recognition-v1/ed836775b6d7ba9e9d53.mp3",
+      "spoken": "请找出，手套。"
+    },
+    "这是雨衣。下雨时穿在衣服外面，可以挡住雨水，保持身体干爽。": {
+      "file": "voice-recognition-v1/412942020feacd49b1c1.mp3",
+      "spoken": "这是雨衣。下雨时穿在衣服外面，可以挡住雨水，保持身体干爽。"
+    },
+    "请找出，雨衣。": {
+      "file": "voice-recognition-v1/e0a071d9c6bc17c3d7fa.mp3",
+      "spoken": "请找出，雨衣。"
+    },
+    "这是睡衣。睡觉前换上的宽松衣服，穿着舒适，也要保持干净。": {
+      "file": "voice-recognition-v1/ec6ac71f5b1681a2ad2f.mp3",
+      "spoken": "这是睡衣。睡觉前换上的宽松衣服，穿着舒适，也要保持干净。"
+    },
+    "请找出，睡衣。": {
+      "file": "voice-recognition-v1/c07f641a6963102f27a5.mp3",
+      "spoken": "请找出，睡衣。"
+    },
+    "这是床。是躺下睡觉和休息的家具，上床前要把鞋子脱下来。": {
+      "file": "voice-recognition-v1/a390a78188485aa11fd5.mp3",
+      "spoken": "这是床。是躺下睡觉和休息的家具，上床前要把鞋子脱下来。"
+    },
+    "请找出，床。": {
+      "file": "voice-recognition-v1/bc9ae50db6b67062da38.mp3",
+      "spoken": "请找出，床。"
+    },
+    "这是枕头。睡觉时垫在头和脖子下面，合适的高度会更舒服。": {
+      "file": "voice-recognition-v1/254901ad7c9fb0f129f0.mp3",
+      "spoken": "这是枕头。睡觉时垫在头和脖子下面，合适的高度会更舒服。"
+    },
+    "请找出，枕头。": {
+      "file": "voice-recognition-v1/1ee135e6dcf685237884.mp3",
+      "spoken": "请找出，枕头。"
+    },
+    "这是被子。睡觉时盖在身体上帮助保暖，要经常晾晒并保持清洁。": {
+      "file": "voice-recognition-v1/83b5d508801b32aa4147.mp3",
+      "spoken": "这是被子。睡觉时盖在身体上帮助保暖，要经常晾晒并保持清洁。"
+    },
+    "请找出，被子。": {
+      "file": "voice-recognition-v1/1040f8acaf38bbf626ec.mp3",
+      "spoken": "请找出，被子。"
+    },
+    "这是沙发。是带软垫的座椅，可以坐着聊天、阅读和休息。": {
+      "file": "voice-recognition-v1/be3d216522a891df9f04.mp3",
+      "spoken": "这是沙发。是带软垫的座椅，可以坐着聊天、阅读和休息。"
+    },
+    "请找出，沙发。": {
+      "file": "voice-recognition-v1/39c93350208eac3500c1.mp3",
+      "spoken": "请找出，沙发。"
+    },
+    "这是桌子。有平整的桌面，可以用来吃饭、写字或摆放物品。": {
+      "file": "voice-recognition-v1/b0ef30b994e41455279e.mp3",
+      "spoken": "这是桌子。有平整的桌面，可以用来吃饭、写字或摆放物品。"
+    },
+    "请找出，桌子。": {
+      "file": "voice-recognition-v1/243306dfd6172d1d6ecd.mp3",
+      "spoken": "请找出，桌子。"
+    },
+    "这是椅子。是让人坐下的家具，坐好时四条腿通常稳稳落地。": {
+      "file": "voice-recognition-v1/d22c75239bced6ad0575.mp3",
+      "spoken": "这是椅子。是让人坐下的家具，坐好时四条腿通常稳稳落地。"
+    },
+    "请找出，椅子。": {
+      "file": "voice-recognition-v1/17732a7f68fcb17d7414.mp3",
+      "spoken": "请找出，椅子。"
+    },
+    "这是衣柜。用来整齐收纳衣服，柜门开关时要小心夹到手。": {
+      "file": "voice-recognition-v1/bf02f0c9bfc2c188ae44.mp3",
+      "spoken": "这是衣柜。用来整齐收纳衣服，柜门开关时要小心夹到手。"
+    },
+    "请找出，衣柜。": {
+      "file": "voice-recognition-v1/96bddbc26e114077b0a0.mp3",
+      "spoken": "请找出，衣柜。"
+    },
+    "这是台灯。放在桌面上照明，读书画画时能让眼前更明亮。": {
+      "file": "voice-recognition-v1/3a10623e56f9333f5772.mp3",
+      "spoken": "这是台灯。放在桌面上照明，读书画画时能让眼前更明亮。"
+    },
+    "请找出，台灯。": {
+      "file": "voice-recognition-v1/4f47a88d0836adbf4c3a.mp3",
+      "spoken": "请找出，台灯。"
+    },
+    "这是时钟。用指针或数字告诉我们时间，能帮助安排一天的事情。": {
+      "file": "voice-recognition-v1/55fee9f1e7ddf31d543e.mp3",
+      "spoken": "这是时钟。用指针或数字告诉我们时间，能帮助安排一天的事情。"
+    },
+    "请找出，时钟。": {
+      "file": "voice-recognition-v1/30e211529ae35b300927.mp3",
+      "spoken": "请找出，时钟。"
+    },
+    "这是镜子。光滑的表面能照出自己的样子，玻璃镜要轻拿轻放。": {
+      "file": "voice-recognition-v1/26a067d2a1c1f141cec0.mp3",
+      "spoken": "这是镜子。光滑的表面能照出自己的样子，玻璃镜要轻拿轻放。"
+    },
+    "请找出，镜子。": {
+      "file": "voice-recognition-v1/3c81e518510d778d7837.mp3",
+      "spoken": "请找出，镜子。"
+    },
+    "这是门。装在房间或建筑入口处，开关时先看看旁边有没有人。": {
+      "file": "voice-recognition-v1/da1a5bd2e166f83dcf1d.mp3",
+      "spoken": "这是门。装在房间或建筑入口处，开关时先看看旁边有没有人。"
+    },
+    "请找出，门。": {
+      "file": "voice-recognition-v1/280d9290e68aef93edb7.mp3",
+      "spoken": "请找出，门。"
+    },
+    "这是窗户。让阳光和空气进入房间，高处的窗边不能攀爬玩耍。": {
+      "file": "voice-recognition-v1/3c0879b58a538cab5987.mp3",
+      "spoken": "这是窗户。让阳光和空气进入房间，高处的窗边不能攀爬玩耍。"
+    },
+    "请找出，窗户。": {
+      "file": "voice-recognition-v1/32a0c18e68f719a1e335.mp3",
+      "spoken": "请找出，窗户。"
+    },
+    "这是玩具。是用来游戏和探索的物品，玩完后要分类放回原处。": {
+      "file": "voice-recognition-v1/6711b37af6263294b2fb.mp3",
+      "spoken": "这是玩具。是用来游戏和探索的物品，玩完后要分类放回原处。"
+    },
+    "请找出，玩具。": {
+      "file": "voice-recognition-v1/f859ea6d1982996c3996.mp3",
+      "spoken": "请找出，玩具。"
+    },
+    "这是积木。能一块块搭成房子、桥和各种造型，小零件不要放进嘴里。": {
+      "file": "voice-recognition-v1/1c62c873f127e1f35c02.mp3",
+      "spoken": "这是积木。能一块块搭成房子、桥和各种造型，小零件不要放进嘴里。"
+    },
+    "请找出，积木。": {
+      "file": "voice-recognition-v1/11ed7b26fde830b64d97.mp3",
+      "spoken": "请找出，积木。"
+    },
+    "这是拼图。由许多小块组成，观察形状和图案就能把完整画面拼出来。": {
+      "file": "voice-recognition-v1/70b802c1f5d3dc8c76b8.mp3",
+      "spoken": "这是拼图。由许多小块组成，观察形状和图案就能把完整画面拼出来。"
+    },
+    "请找出，拼图。": {
+      "file": "voice-recognition-v1/5ec7df961f5725ef0bc0.mp3",
+      "spoken": "请找出，拼图。"
+    },
+    "这是皮球。是有弹性的圆形玩具，可以拍、滚、踢或和朋友传接。": {
+      "file": "voice-recognition-v1/f0d51cc3b3378826c162.mp3",
+      "spoken": "这是皮球。是有弹性的圆形玩具，可以拍、滚、踢或和朋友传接。"
+    },
+    "请找出，皮球。": {
+      "file": "voice-recognition-v1/7a21528552d8b50ed692.mp3",
+      "spoken": "请找出，皮球。"
+    },
+    "这是玩偶。是做成人物或动物样子的玩具，可以陪伴角色扮演。": {
+      "file": "voice-recognition-v1/1d6291a66d59810881b7.mp3",
+      "spoken": "这是玩偶。是做成人物或动物样子的玩具，可以陪伴角色扮演。"
+    },
+    "请找出，玩偶。": {
+      "file": "voice-recognition-v1/537601b7b1f5c7ffd373.mp3",
+      "spoken": "请找出，玩偶。"
+    },
+    "这是陀螺。转起来会绕着中心旋转，要在空旷平整的地方玩。": {
+      "file": "voice-recognition-v1/826851b38b21939c3c56.mp3",
+      "spoken": "这是陀螺。转起来会绕着中心旋转，要在空旷平整的地方玩。"
+    },
+    "请找出，陀螺。": {
+      "file": "voice-recognition-v1/f17360f9399017ece561.mp3",
+      "spoken": "请找出，陀螺。"
+    },
+    "这是沙包。是装有柔软填充物的小布包，可以投掷、接住或踢着玩。": {
+      "file": "voice-recognition-v1/5eb03114a47bf322ea6a.mp3",
+      "spoken": "这是沙包。是装有柔软填充物的小布包，可以投掷、接住或踢着玩。"
+    },
+    "请找出，沙包。": {
+      "file": "voice-recognition-v1/17c7b1583dfe2d15c2d6.mp3",
+      "spoken": "请找出，沙包。"
+    },
+    "这是跳绳。甩动绳子并跳过去能锻炼身体，玩时要和别人保持距离。": {
+      "file": "voice-recognition-v1/8f3784ab288a67482a3a.mp3",
+      "spoken": "这是跳绳。甩动绳子并跳过去能锻炼身体，玩时要和别人保持距离。"
+    },
+    "请找出，跳绳。": {
+      "file": "voice-recognition-v1/bda1fa806e4de03b2bbe.mp3",
+      "spoken": "请找出，跳绳。"
+    },
+    "这是魔方。每一面有不同颜色，转动小方块可以练习观察和思考。": {
+      "file": "voice-recognition-v1/0a100bccf69b8b46f2b7.mp3",
+      "spoken": "这是魔方。每一面有不同颜色，转动小方块可以练习观察和思考。"
+    },
+    "请找出，魔方。": {
+      "file": "voice-recognition-v1/d5c3fe2c75d9eb63109b.mp3",
+      "spoken": "请找出，魔方。"
+    },
+    "这是小鼓。用手或鼓槌敲击会发出节奏，轻轻敲也能听得很清楚。": {
+      "file": "voice-recognition-v1/337d500f2ed6fe07dfe9.mp3",
+      "spoken": "这是小鼓。用手或鼓槌敲击会发出节奏，轻轻敲也能听得很清楚。"
+    },
+    "请找出，小鼓。": {
+      "file": "voice-recognition-v1/cce35285464e78fc73de.mp3",
+      "spoken": "请找出，小鼓。"
+    },
+    "这是画板。是画画和写画的平整板面，可以反复创作自己的作品。": {
+      "file": "voice-recognition-v1/6d0938b05be7d7af3712.mp3",
+      "spoken": "这是画板。是画画和写画的平整板面，可以反复创作自己的作品。"
+    },
+    "请找出，画板。": {
+      "file": "voice-recognition-v1/309afbcafb1083e6bf05.mp3",
+      "spoken": "请找出，画板。"
+    },
+    "这是泡泡棒。蘸上泡泡水再轻轻吹会出现泡泡，泡泡水不能喝。": {
+      "file": "voice-recognition-v1/3c8080995e003e6eab25.mp3",
+      "spoken": "这是泡泡棒。蘸上泡泡水再轻轻吹会出现泡泡，泡泡水不能喝。"
+    },
+    "请找出，泡泡棒。": {
+      "file": "voice-recognition-v1/82b77bcbc0b445a5ca0a.mp3",
+      "spoken": "请找出，泡泡棒。"
+    },
+    "这是牙刷。刷毛能清洁牙齿，每个人要使用自己的牙刷并定期更换。": {
+      "file": "voice-recognition-v1/a374e1c2ca130bf80ed9.mp3",
+      "spoken": "这是牙刷。刷毛能清洁牙齿，每个人要使用自己的牙刷并定期更换。"
+    },
+    "请找出，牙刷。": {
+      "file": "voice-recognition-v1/5a158eebc7c5dfd8269b.mp3",
+      "spoken": "请找出，牙刷。"
+    },
+    "这是牙膏。挤一点在牙刷上帮助清洁牙齿，用完要吐掉，不能吞咽。": {
+      "file": "voice-recognition-v1/8517a5e3d5b1e22a455b.mp3",
+      "spoken": "这是牙膏。挤一点在牙刷上帮助清洁牙齿，用完要吐掉，不能吞咽。"
+    },
+    "请找出，牙膏。": {
+      "file": "voice-recognition-v1/f42d0142bd52922be841.mp3",
+      "spoken": "请找出，牙膏。"
+    },
+    "这是毛巾。可以擦干脸和身体，自己的毛巾要常清洗、常晾晒。": {
+      "file": "voice-recognition-v1/61d19a3b73534daf0ab7.mp3",
+      "spoken": "这是毛巾。可以擦干脸和身体，自己的毛巾要常清洗、常晾晒。"
+    },
+    "请找出，毛巾。": {
+      "file": "voice-recognition-v1/e53dd1eedbf2f54a2fc0.mp3",
+      "spoken": "请找出，毛巾。"
+    },
+    "这是香皂。加水揉搓会产生泡沫，能帮助洗去手上的污渍。": {
+      "file": "voice-recognition-v1/4826d117e8889d04b9a7.mp3",
+      "spoken": "这是香皂。加水揉搓会产生泡沫，能帮助洗去手上的污渍。"
+    },
+    "请找出，香皂。": {
+      "file": "voice-recognition-v1/de260439a2f97a840418.mp3",
+      "spoken": "请找出，香皂。"
+    },
+    "这是洗手液。按出少量后揉搓双手，再用流动清水冲洗干净。": {
+      "file": "voice-recognition-v1/b3b075a67bc25c2f674e.mp3",
+      "spoken": "这是洗手液。按出少量后揉搓双手，再用流动清水冲洗干净。"
+    },
+    "请找出，洗手液。": {
+      "file": "voice-recognition-v1/395189cfba61e75f7a29.mp3",
+      "spoken": "请找出，洗手液。"
+    },
+    "这是梳子。用梳齿把头发梳理整齐，最好不要和别人混着使用。": {
+      "file": "voice-recognition-v1/4511fa0087c42ebc11a0.mp3",
+      "spoken": "这是梳子。用梳齿把头发梳理整齐，最好不要和别人混着使用。"
+    },
+    "请找出，梳子。": {
+      "file": "voice-recognition-v1/83c9c2644a7b3b2ff6c2.mp3",
+      "spoken": "请找出，梳子。"
+    },
+    "这是水杯。用来装水和喝水，每个人使用自己的杯子会更卫生。": {
+      "file": "voice-recognition-v1/bfb607bdd0c0237b1249.mp3",
+      "spoken": "这是水杯。用来装水和喝水，每个人使用自己的杯子会更卫生。"
+    },
+    "请找出，水杯。": {
+      "file": "voice-recognition-v1/9358f756c2f2e7195a00.mp3",
+      "spoken": "请找出，水杯。"
+    },
+    "这是口罩。戴在口鼻外面，按需要阻挡飞沫或灰尘，用完正确处理。": {
+      "file": "voice-recognition-v1/6b6614dc861ca2c50ae1.mp3",
+      "spoken": "这是口罩。戴在口鼻外面，按需要阻挡飞沫或灰尘，用完正确处理。"
+    },
+    "请找出，口罩。": {
+      "file": "voice-recognition-v1/6c6a8ee16ae3bda7f536.mp3",
+      "spoken": "请找出，口罩。"
+    },
+    "这是体温计。可以测量身体温度，要由大人帮助并按说明正确使用。": {
+      "file": "voice-recognition-v1/41e0a8ed07fb74b12e8e.mp3",
+      "spoken": "这是体温计。可以测量身体温度，要由大人帮助并按说明正确使用。"
+    },
+    "请找出，体温计。": {
+      "file": "voice-recognition-v1/603e2637defa40ba9043.mp3",
+      "spoken": "请找出，体温计。"
+    },
+    "这是创可贴。小伤口清洁后可以临时保护，严重受伤要马上告诉大人。": {
+      "file": "voice-recognition-v1/4f5f7ebb0079619d8ed8.mp3",
+      "spoken": "这是创可贴。小伤口清洁后可以临时保护，严重受伤要马上告诉大人。"
+    },
+    "请找出，创可贴。": {
+      "file": "voice-recognition-v1/32e92ff5b368d0ed9b51.mp3",
+      "spoken": "请找出，创可贴。"
+    },
+    "这是垃圾桶。用来集中放垃圾，丢完垃圾后要把双手清洗干净。": {
+      "file": "voice-recognition-v1/e8b70742e4fdb2cfd78b.mp3",
+      "spoken": "这是垃圾桶。用来集中放垃圾，丢完垃圾后要把双手清洗干净。"
+    },
+    "请找出，垃圾桶。": {
+      "file": "voice-recognition-v1/a119b5e67a75f97c3317.mp3",
+      "spoken": "请找出，垃圾桶。"
+    },
+    "这是纸巾。可以擦鼻涕、嘴巴或小片污渍，用过后要丢进垃圾桶。": {
+      "file": "voice-recognition-v1/97670d551b9710761c7e.mp3",
+      "spoken": "这是纸巾。可以擦鼻涕、嘴巴或小片污渍，用过后要丢进垃圾桶。"
+    },
+    "请找出，纸巾。": {
+      "file": "voice-recognition-v1/5407a9eb96687e6b7c2c.mp3",
+      "spoken": "请找出，纸巾。"
+    },
+    "这是红色。像成熟的草莓和常见的停止标志，明亮又容易被看到。": {
+      "file": "voice-recognition-v1/dbc441201603b1e2083d.mp3",
+      "spoken": "这是红色。像成熟的草莓和常见的停止标志，明亮又容易被看到。"
+    },
+    "请找出，红色。": {
+      "file": "voice-recognition-v1/10077563f91bdcd77b7b.mp3",
+      "spoken": "请找出，红色。"
+    },
+    "这是橙色。像橙子外皮和傍晚的霞光，是温暖又活泼的颜色。": {
+      "file": "voice-recognition-v1/1cfbae820c25d19cae8f.mp3",
+      "spoken": "这是橙色。像橙子外皮和傍晚的霞光，是温暖又活泼的颜色。"
+    },
+    "请找出，橙色。": {
+      "file": "voice-recognition-v1/36329d6e130f7a9fbcbc.mp3",
+      "spoken": "请找出，橙色。"
+    },
+    "这是黄色。像香蕉外皮和阳光的感觉，是醒目又明亮的颜色。": {
+      "file": "voice-recognition-v1/d45d125ebf41fb3cf4aa.mp3",
+      "spoken": "这是黄色。像香蕉外皮和阳光的感觉，是醒目又明亮的颜色。"
+    },
+    "请找出，黄色。": {
+      "file": "voice-recognition-v1/7fb0689a6c2b6c8fa1eb.mp3",
+      "spoken": "请找出，黄色。"
+    },
+    "这是绿色。常见于树叶和青草，让人想到生长中的大自然。": {
+      "file": "voice-recognition-v1/27c971da5e264c46ae75.mp3",
+      "spoken": "这是绿色。常见于树叶和青草，让人想到生长中的大自然。"
+    },
+    "请找出，绿色。": {
+      "file": "voice-recognition-v1/780f23eb0354e8b21eb7.mp3",
+      "spoken": "请找出，绿色。"
+    },
+    "这是蓝色。常让人想到晴朗的天空和清澈的水，感觉安静清爽。": {
+      "file": "voice-recognition-v1/0d1b53b94b762c27760b.mp3",
+      "spoken": "这是蓝色。常让人想到晴朗的天空和清澈的水，感觉安静清爽。"
+    },
+    "请找出，蓝色。": {
+      "file": "voice-recognition-v1/e8acf248fe533813f514.mp3",
+      "spoken": "请找出，蓝色。"
+    },
+    "这是紫色。常见于葡萄、茄子和一些花朵，介于红色与蓝色之间。": {
+      "file": "voice-recognition-v1/f7e03418ead93fe2e564.mp3",
+      "spoken": "这是紫色。常见于葡萄、茄子和一些花朵，介于红色与蓝色之间。"
+    },
+    "请找出，紫色。": {
+      "file": "voice-recognition-v1/aa03b672eff56b519cc4.mp3",
+      "spoken": "请找出，紫色。"
+    },
+    "这是粉色。是浅浅的红色，常见于桃花、樱花和许多小物品。": {
+      "file": "voice-recognition-v1/c1af617814da5ed51796.mp3",
+      "spoken": "这是粉色。是浅浅的红色，常见于桃花、樱花和许多小物品。"
+    },
+    "请找出，粉色。": {
+      "file": "voice-recognition-v1/e6a29d29f593510d9a15.mp3",
+      "spoken": "请找出，粉色。"
+    },
+    "这是棕色。常见于树干、泥土和木头，是接近大地的颜色。": {
+      "file": "voice-recognition-v1/630f1bc5b43b2407579d.mp3",
+      "spoken": "这是棕色。常见于树干、泥土和木头，是接近大地的颜色。"
+    },
+    "请找出，棕色。": {
+      "file": "voice-recognition-v1/91e845ac618b0852959f.mp3",
+      "spoken": "请找出，棕色。"
+    },
+    "这是黑色。是很深的颜色，夜晚的天空和墨水常让人想到它。": {
+      "file": "voice-recognition-v1/5f1544eefcdcb3db12ed.mp3",
+      "spoken": "这是黑色。是很深的颜色，夜晚的天空和墨水常让人想到它。"
+    },
+    "请找出，黑色。": {
+      "file": "voice-recognition-v1/bddc4814c6e48f870b50.mp3",
+      "spoken": "请找出，黑色。"
+    },
+    "这是白色。像白云、牛奶和新雪，是明亮又干净的颜色。": {
+      "file": "voice-recognition-v1/af03efe283b6a3fc6963.mp3",
+      "spoken": "这是白色。像白云、牛奶和新雪，是明亮又干净的颜色。"
+    },
+    "请找出，白色。": {
+      "file": "voice-recognition-v1/4adf0f3e9f57ef7689d9.mp3",
+      "spoken": "请找出，白色。"
+    },
+    "这是灰色。介于黑色和白色之间，阴天的云和石头常有这种颜色。": {
+      "file": "voice-recognition-v1/37f76bbc4fb067741ec9.mp3",
+      "spoken": "这是灰色。介于黑色和白色之间，阴天的云和石头常有这种颜色。"
+    },
+    "请找出，灰色。": {
+      "file": "voice-recognition-v1/b046bf96ee41a30c216c.mp3",
+      "spoken": "请找出，灰色。"
+    },
+    "这是金色。像阳光照亮的金属或成熟麦穗，会显得明亮闪耀。": {
+      "file": "voice-recognition-v1/60a6a0b1ae5a53d6fc41.mp3",
+      "spoken": "这是金色。像阳光照亮的金属或成熟麦穗，会显得明亮闪耀。"
+    },
+    "请找出，金色。": {
+      "file": "voice-recognition-v1/232f36987b83e302a48d.mp3",
+      "spoken": "请找出，金色。"
+    },
+    "这是苹果。是圆圆的水果，常见红色、绿色或黄色，洗净后再吃。": {
+      "file": "voice-recognition-v1/86e8ec9dce0275cc8087.mp3",
+      "spoken": "这是苹果。是圆圆的水果，常见红色、绿色或黄色，洗净后再吃。"
+    },
+    "请找出，苹果。": {
+      "file": "voice-recognition-v1/60829fb660b34201acd5.mp3",
+      "spoken": "请找出，苹果。"
+    },
+    "这是香蕉。有弯弯的外形和黄色果皮，剥掉外皮就能看到果肉。": {
+      "file": "voice-recognition-v1/d73c6cdeffcaff2df845.mp3",
+      "spoken": "这是香蕉。有弯弯的外形和黄色果皮，剥掉外皮就能看到果肉。"
+    },
+    "请找出，香蕉。": {
+      "file": "voice-recognition-v1/ffd44cc232366725d805.mp3",
+      "spoken": "请找出，香蕉。"
+    },
+    "这是橙子。有橙色外皮和一瓣瓣果肉，剥开时常能闻到清香。": {
+      "file": "voice-recognition-v1/48402f323ca7a543560e.mp3",
+      "spoken": "这是橙子。有橙色外皮和一瓣瓣果肉，剥开时常能闻到清香。"
+    },
+    "请找出，橙子。": {
+      "file": "voice-recognition-v1/656535b972dabb13f37e.mp3",
+      "spoken": "请找出，橙子。"
+    },
+    "这是梨。果肉水分很多，常见上窄下圆的外形，洗净切开再吃。": {
+      "file": "voice-recognition-v1/c5093b0211a3e5e950b7.mp3",
+      "spoken": "这是梨。果肉水分很多，常见上窄下圆的外形，洗净切开再吃。"
+    },
+    "请找出，梨。": {
+      "file": "voice-recognition-v1/da76a6700d044a0e0543.mp3",
+      "spoken": "请找出，梨。"
+    },
+    "这是草莓。红色果实表面有许多小籽，顶部通常戴着绿色小叶子。": {
+      "file": "voice-recognition-v1/9610b4ff8746a050b2e6.mp3",
+      "spoken": "这是草莓。红色果实表面有许多小籽，顶部通常戴着绿色小叶子。"
+    },
+    "请找出，草莓。": {
+      "file": "voice-recognition-v1/32d54d571b60a1497e7b.mp3",
+      "spoken": "请找出，草莓。"
+    },
+    "这是葡萄。一颗颗圆果实常成串生长，有紫色、绿色等不同品种。": {
+      "file": "voice-recognition-v1/4e311cf278610ba27b39.mp3",
+      "spoken": "这是葡萄。一颗颗圆果实常成串生长，有紫色、绿色等不同品种。"
+    },
+    "请找出，葡萄。": {
+      "file": "voice-recognition-v1/f3bd3e1ced46e0d6a66d.mp3",
+      "spoken": "请找出，葡萄。"
+    },
+    "这是西瓜。外皮多是绿色，里面常有红色果肉，切开后和家人分享。": {
+      "file": "voice-recognition-v1/7ae913d5f7e6f111248b.mp3",
+      "spoken": "这是西瓜。外皮多是绿色，里面常有红色果肉，切开后和家人分享。"
+    },
+    "请找出，西瓜。": {
+      "file": "voice-recognition-v1/ee99ddfeffca7846a335.mp3",
+      "spoken": "请找出，西瓜。"
+    },
+    "这是桃子。表皮常有细小绒毛，果肉中间藏着一颗硬硬的桃核。": {
+      "file": "voice-recognition-v1/6e5d5672ea8f24b7a667.mp3",
+      "spoken": "这是桃子。表皮常有细小绒毛，果肉中间藏着一颗硬硬的桃核。"
+    },
+    "请找出，桃子。": {
+      "file": "voice-recognition-v1/0f1b39f4090b9450eed6.mp3",
+      "spoken": "请找出，桃子。"
+    },
+    "这是菠萝。外皮粗糙并带许多小格，顶部有一簇长长的叶子。": {
+      "file": "voice-recognition-v1/83f787267a54ba2c8a2d.mp3",
+      "spoken": "这是菠萝。外皮粗糙并带许多小格，顶部有一簇长长的叶子。"
+    },
+    "请找出，菠萝。": {
+      "file": "voice-recognition-v1/0691ff2cc2d931642f7e.mp3",
+      "spoken": "请找出，菠萝。"
+    },
+    "这是猕猴桃。棕色外皮有细毛，切开后常见绿色果肉和黑色小籽。": {
+      "file": "voice-recognition-v1/ecd085a11a7d3a4746bf.mp3",
+      "spoken": "这是猕猴桃。棕色外皮有细毛，切开后常见绿色果肉和黑色小籽。"
+    },
+    "请找出，猕猴桃。": {
+      "file": "voice-recognition-v1/091199ff48097da81969.mp3",
+      "spoken": "请找出，猕猴桃。"
+    },
+    "这是樱桃。是小小的圆果实，常有细长果梗，果核不能吞下去。": {
+      "file": "voice-recognition-v1/047bfb3cacedbe3d57f1.mp3",
+      "spoken": "这是樱桃。是小小的圆果实，常有细长果梗，果核不能吞下去。"
+    },
+    "请找出，樱桃。": {
+      "file": "voice-recognition-v1/d931c35ee2ddfed93bb5.mp3",
+      "spoken": "请找出，樱桃。"
+    },
+    "这是芒果。果皮多为黄绿或红黄，果肉香甜，中间有扁扁的大核。": {
+      "file": "voice-recognition-v1/e67d1f012bdca6a593ce.mp3",
+      "spoken": "这是芒果。果皮多为黄绿或红黄，果肉香甜，中间有扁扁的大核。"
+    },
+    "请找出，芒果。": {
+      "file": "voice-recognition-v1/480d100408a0aac3db4c.mp3",
+      "spoken": "请找出，芒果。"
+    },
+    "这是西红柿。成熟时常是红色，果肉多汁，可以做菜也能做汤。": {
+      "file": "voice-recognition-v1/c7c437197e8109680ad9.mp3",
+      "spoken": "这是西红柿。成熟时常是红色，果肉多汁，可以做菜也能做汤。"
+    },
+    "请找出，西红柿。": {
+      "file": "voice-recognition-v1/ffc07edca093dd6a5f1f.mp3",
+      "spoken": "请找出，西红柿。"
+    },
+    "这是黄瓜。细长的绿色蔬菜，口感清脆，清洗干净后再食用。": {
+      "file": "voice-recognition-v1/30eed5e490c50723450f.mp3",
+      "spoken": "这是黄瓜。细长的绿色蔬菜，口感清脆，清洗干净后再食用。"
+    },
+    "请找出，黄瓜。": {
+      "file": "voice-recognition-v1/6df4eef405deb440714a.mp3",
+      "spoken": "请找出，黄瓜。"
+    },
+    "这是胡萝卜。常见橙色的长根，埋在土里生长，可以切片或煮熟吃。": {
+      "file": "voice-recognition-v1/5a4df230bb6f0691dd65.mp3",
+      "spoken": "这是胡萝卜。常见橙色的长根，埋在土里生长，可以切片或煮熟吃。"
+    },
+    "请找出，胡萝卜。": {
+      "file": "voice-recognition-v1/83b034ec1100dad05a5a.mp3",
+      "spoken": "请找出，胡萝卜。"
+    },
+    "这是土豆。是长在土里的块茎，常用来炖、炒或烤，发芽后不能吃。": {
+      "file": "voice-recognition-v1/27d1fa3e1f1d9bd8beb7.mp3",
+      "spoken": "这是土豆。是长在土里的块茎，常用来炖、炒或烤，发芽后不能吃。"
+    },
+    "请找出，土豆。": {
+      "file": "voice-recognition-v1/09137829a5b9debde414.mp3",
+      "spoken": "请找出，土豆。"
+    },
+    "这是白菜。一层层菜叶包在一起，叶片多为绿色，菜帮颜色较浅。": {
+      "file": "voice-recognition-v1/ccbc1b45c8fcde24054c.mp3",
+      "spoken": "这是白菜。一层层菜叶包在一起，叶片多为绿色，菜帮颜色较浅。"
+    },
+    "请找出，白菜。": {
+      "file": "voice-recognition-v1/48d2fc125a5e25d1f4c3.mp3",
+      "spoken": "请找出，白菜。"
+    },
+    "这是西兰花。绿色花球由许多小花蕾组成，洗净煮熟后可以食用。": {
+      "file": "voice-recognition-v1/4e83f6b699c27c3dbf31.mp3",
+      "spoken": "这是西兰花。绿色花球由许多小花蕾组成，洗净煮熟后可以食用。"
+    },
+    "请找出，西兰花。": {
+      "file": "voice-recognition-v1/d5943a98811b41d0944f.mp3",
+      "spoken": "请找出，西兰花。"
+    },
+    "这是南瓜。外形有圆有长，果肉常是橙黄色，能煮粥或做菜。": {
+      "file": "voice-recognition-v1/08376f0a57ba3084480e.mp3",
+      "spoken": "这是南瓜。外形有圆有长，果肉常是橙黄色，能煮粥或做菜。"
+    },
+    "请找出，南瓜。": {
+      "file": "voice-recognition-v1/699ea803f75c154c5f54.mp3",
+      "spoken": "请找出，南瓜。"
+    },
+    "这是玉米。一排排籽粒长在棒芯上，外面包着绿色的叶片。": {
+      "file": "voice-recognition-v1/9bd0f045577628b855d9.mp3",
+      "spoken": "这是玉米。一排排籽粒长在棒芯上，外面包着绿色的叶片。"
+    },
+    "请找出，玉米。": {
+      "file": "voice-recognition-v1/c662d1bc6aa02feeb054.mp3",
+      "spoken": "请找出，玉米。"
+    },
+    "这是茄子。常见紫色外皮和长圆外形，煮熟后果肉会变得柔软。": {
+      "file": "voice-recognition-v1/252837839aedec4cf307.mp3",
+      "spoken": "这是茄子。常见紫色外皮和长圆外形，煮熟后果肉会变得柔软。"
+    },
+    "请找出，茄子。": {
+      "file": "voice-recognition-v1/2952c7ad110f80472d48.mp3",
+      "spoken": "请找出，茄子。"
+    },
+    "这是甜椒。有红、黄、绿等颜色，里面是空的并带有许多种子。": {
+      "file": "voice-recognition-v1/817d8608fbdd821e8999.mp3",
+      "spoken": "这是甜椒。有红、黄、绿等颜色，里面是空的并带有许多种子。"
+    },
+    "请找出，甜椒。": {
+      "file": "voice-recognition-v1/9f334d9420a584563581.mp3",
+      "spoken": "请找出，甜椒。"
+    },
+    "这是豌豆。圆圆的绿色小豆藏在豆荚里，煮熟后才能安心食用。": {
+      "file": "voice-recognition-v1/f8eef387a10a3019dece.mp3",
+      "spoken": "这是豌豆。圆圆的绿色小豆藏在豆荚里，煮熟后才能安心食用。"
+    },
+    "请找出，豌豆。": {
+      "file": "voice-recognition-v1/998c37c43d538dc88170.mp3",
+      "spoken": "请找出，豌豆。"
+    },
+    "这是蘑菇。有伞一样的菌盖和菌柄，只能吃大人确认安全的种类。": {
+      "file": "voice-recognition-v1/e05775c347a3079153d2.mp3",
+      "spoken": "这是蘑菇。有伞一样的菌盖和菌柄，只能吃大人确认安全的种类。"
+    },
+    "请找出，蘑菇。": {
+      "file": "voice-recognition-v1/8c1b5fbc8464744e9da5.mp3",
+      "spoken": "请找出，蘑菇。"
+    },
+    "这是米饭。由大米加水煮熟，是许多家庭餐桌上常见的主食。": {
+      "file": "voice-recognition-v1/66685dcb89c085146aaf.mp3",
+      "spoken": "这是米饭。由大米加水煮熟，是许多家庭餐桌上常见的主食。"
+    },
+    "请找出，米饭。": {
+      "file": "voice-recognition-v1/4b40cb456c941b7a7ca7.mp3",
+      "spoken": "请找出，米饭。"
+    },
+    "这是面条。细长的面食，可以煮在汤里，吃的时候注意不要烫到。": {
+      "file": "voice-recognition-v1/11dc82cba81f700df42d.mp3",
+      "spoken": "这是面条。细长的面食，可以煮在汤里，吃的时候注意不要烫到。"
+    },
+    "请找出，面条。": {
+      "file": "voice-recognition-v1/9b3bb75c6c6d592b2a21.mp3",
+      "spoken": "请找出，面条。"
+    },
+    "这是馒头。用面粉发酵后蒸熟，外形蓬松，是常见的主食。": {
+      "file": "voice-recognition-v1/811177da6dd0eda4eb5c.mp3",
+      "spoken": "这是馒头。用面粉发酵后蒸熟，外形蓬松，是常见的主食。"
+    },
+    "请找出，馒头。": {
+      "file": "voice-recognition-v1/3549ecdc2e82ed10177b.mp3",
+      "spoken": "请找出，馒头。"
+    },
+    "这是饺子。面皮包着馅料，捏好后煮熟、蒸熟或煎熟再吃。": {
+      "file": "voice-recognition-v1/c2bef39f9b7728da03f6.mp3",
+      "spoken": "这是饺子。面皮包着馅料，捏好后煮熟、蒸熟或煎熟再吃。"
+    },
+    "请找出，饺子。": {
+      "file": "voice-recognition-v1/87722cd78126053e4204.mp3",
+      "spoken": "请找出，饺子。"
+    },
+    "这是面包。用面粉等原料烘烤制成，有柔软或酥脆的不同口感。": {
+      "file": "voice-recognition-v1/d5dc783aab64336074de.mp3",
+      "spoken": "这是面包。用面粉等原料烘烤制成，有柔软或酥脆的不同口感。"
+    },
+    "请找出，面包。": {
+      "file": "voice-recognition-v1/5bc9d06e1f6ac9dbe9af.mp3",
+      "spoken": "请找出，面包。"
+    },
+    "这是鸡蛋。外面有蛋壳，里面有蛋白和蛋黄，需要煮熟后再吃。": {
+      "file": "voice-recognition-v1/b90d245f83a7894f86f1.mp3",
+      "spoken": "这是鸡蛋。外面有蛋壳，里面有蛋白和蛋黄，需要煮熟后再吃。"
+    },
+    "请找出，鸡蛋。": {
+      "file": "voice-recognition-v1/e748a7320b5e655ddb7b.mp3",
+      "spoken": "请找出，鸡蛋。"
+    },
+    "这是牛奶。是常见乳制品，能提供营养，要按自己的身体情况饮用。": {
+      "file": "voice-recognition-v1/c6a7857fa7971a54a21f.mp3",
+      "spoken": "这是牛奶。是常见乳制品，能提供营养，要按自己的身体情况饮用。"
+    },
+    "请找出，牛奶。": {
+      "file": "voice-recognition-v1/c009f29cac6141b7259c.mp3",
+      "spoken": "请找出，牛奶。"
+    },
+    "这是酸奶。由牛奶发酵制成，味道带酸，打开后要尽快喝完。": {
+      "file": "voice-recognition-v1/97de80c7fb6964cd4d09.mp3",
+      "spoken": "这是酸奶。由牛奶发酵制成，味道带酸，打开后要尽快喝完。"
+    },
+    "请找出，酸奶。": {
+      "file": "voice-recognition-v1/8af0b118db14b0f96bc5.mp3",
+      "spoken": "请找出，酸奶。"
+    },
+    "这是豆腐。通常由大豆制成，颜色较白、质地柔软，可以做很多菜。": {
+      "file": "voice-recognition-v1/ec8c1eadd025de3b5eee.mp3",
+      "spoken": "这是豆腐。通常由大豆制成，颜色较白、质地柔软，可以做很多菜。"
+    },
+    "请找出，豆腐。": {
+      "file": "voice-recognition-v1/1a63384ca858314fc520.mp3",
+      "spoken": "请找出，豆腐。"
+    },
+    "这是鱼肉。来自鱼，能做成多种菜肴，吃的时候要小心细小鱼刺。": {
+      "file": "voice-recognition-v1/53a61e38d63ab88cb357.mp3",
+      "spoken": "这是鱼肉。来自鱼，能做成多种菜肴，吃的时候要小心细小鱼刺。"
+    },
+    "请找出，鱼肉。": {
+      "file": "voice-recognition-v1/a30d75a3db1383f4f47d.mp3",
+      "spoken": "请找出，鱼肉。"
+    },
+    "这是鸡肉。是常见肉类食物，要彻底煮熟，并和蔬菜搭配着吃。": {
+      "file": "voice-recognition-v1/95f6ba29d1e7f72a18c7.mp3",
+      "spoken": "这是鸡肉。是常见肉类食物，要彻底煮熟，并和蔬菜搭配着吃。"
+    },
+    "请找出，鸡肉。": {
+      "file": "voice-recognition-v1/de5e91480f94628facba.mp3",
+      "spoken": "请找出，鸡肉。"
+    },
+    "这是蛋糕。是甜点，常在庆祝时分享，吃一点就好并记得刷牙。": {
+      "file": "voice-recognition-v1/f22e1461d89dc9d10787.mp3",
+      "spoken": "这是蛋糕。是甜点，常在庆祝时分享，吃一点就好并记得刷牙。"
+    },
+    "请找出，蛋糕。": {
+      "file": "voice-recognition-v1/7110bd461ea3f454a5ce.mp3",
+      "spoken": "请找出，蛋糕。"
+    },
+    "这是汽车。在道路上行驶，通常有四个车轮，乘坐时要系好安全带。": {
+      "file": "voice-recognition-v1/49e8a3cb45c64414edf7.mp3",
+      "spoken": "这是汽车。在道路上行驶，通常有四个车轮，乘坐时要系好安全带。"
+    },
+    "请找出，汽车。": {
+      "file": "voice-recognition-v1/edda667decfeb82a89b2.mp3",
+      "spoken": "请找出，汽车。"
+    },
+    "这是公交车。沿固定线路接送许多乘客，上下车要排队并站稳扶好。": {
+      "file": "voice-recognition-v1/f8c253b7abe6763e6c96.mp3",
+      "spoken": "这是公交车。沿固定线路接送许多乘客，上下车要排队并站稳扶好。"
+    },
+    "请找出，公交车。": {
+      "file": "voice-recognition-v1/ebe15d433856c84d7e14.mp3",
+      "spoken": "请找出，公交车。"
+    },
+    "这是校车。专门接送学生，车身醒目，乘坐时要听从老师和司机安排。": {
+      "file": "voice-recognition-v1/c78029888916809219d5.mp3",
+      "spoken": "这是校车。专门接送学生，车身醒目，乘坐时要听从老师和司机安排。"
+    },
+    "请找出，校车。": {
+      "file": "voice-recognition-v1/c8a14d8d48d3e6942253.mp3",
+      "spoken": "请找出，校车。"
+    },
+    "这是出租车。可以载乘客前往指定地点，要和可信任的大人一起乘坐。": {
+      "file": "voice-recognition-v1/36ecbd1d9b8f12aea9fc.mp3",
+      "spoken": "这是出租车。可以载乘客前往指定地点，要和可信任的大人一起乘坐。"
+    },
+    "请找出，出租车。": {
+      "file": "voice-recognition-v1/9c09ec9785f1b6681269.mp3",
+      "spoken": "请找出，出租车。"
+    },
+    "这是救护车。运送需要紧急救助的人，鸣笛时其他车辆会安全让行。": {
+      "file": "voice-recognition-v1/0952774936669d437780.mp3",
+      "spoken": "这是救护车。运送需要紧急救助的人，鸣笛时其他车辆会安全让行。"
+    },
+    "请找出，救护车。": {
+      "file": "voice-recognition-v1/b8d0140897ad75bfc5a9.mp3",
+      "spoken": "请找出，救护车。"
+    },
+    "这是消防车。装有救火和救援设备，消防员会驾驶它赶往危险现场。": {
+      "file": "voice-recognition-v1/2d1666900fec1ca4b2d7.mp3",
+      "spoken": "这是消防车。装有救火和救援设备，消防员会驾驶它赶往危险现场。"
+    },
+    "请找出，消防车。": {
+      "file": "voice-recognition-v1/ac2ed354c3eac1dea10c.mp3",
+      "spoken": "请找出，消防车。"
+    },
+    "这是火车。由一节节车厢连接，在铁轨上运行，能去很远的地方。": {
+      "file": "voice-recognition-v1/1ba8ecb25ff9a21a30e9.mp3",
+      "spoken": "这是火车。由一节节车厢连接，在铁轨上运行，能去很远的地方。"
+    },
+    "请找出，火车。": {
+      "file": "voice-recognition-v1/a5dde43754f67c6f29a9.mp3",
+      "spoken": "请找出，火车。"
+    },
+    "这是地铁。多在城市地下或高架轨道运行，乘车要看好站名和方向。": {
+      "file": "voice-recognition-v1/7329b87bc716c69d90c3.mp3",
+      "spoken": "这是地铁。多在城市地下或高架轨道运行，乘车要看好站名和方向。"
+    },
+    "请找出，地铁。": {
+      "file": "voice-recognition-v1/0aba33b935c6b4bf2a55.mp3",
+      "spoken": "请找出，地铁。"
+    },
+    "这是自行车。靠脚踩踏板前进，骑行要戴头盔并由大人陪同。": {
+      "file": "voice-recognition-v1/e89f2c56a0f309d06002.mp3",
+      "spoken": "这是自行车。靠脚踩踏板前进，骑行要戴头盔并由大人陪同。"
+    },
+    "请找出，自行车。": {
+      "file": "voice-recognition-v1/1ca9cfa46b80881f3ddc.mp3",
+      "spoken": "请找出，自行车。"
+    },
+    "这是摩托车。有两个车轮并使用发动机，乘坐必须正确佩戴头盔。": {
+      "file": "voice-recognition-v1/7448119bc23c69162fdd.mp3",
+      "spoken": "这是摩托车。有两个车轮并使用发动机，乘坐必须正确佩戴头盔。"
+    },
+    "请找出，摩托车。": {
+      "file": "voice-recognition-v1/c8ac9f28e64464d2842a.mp3",
+      "spoken": "请找出，摩托车。"
+    },
+    "这是轮船。在江河、湖泊或海上航行，上船后要听安全指引。": {
+      "file": "voice-recognition-v1/b67f1050477d370de6a3.mp3",
+      "spoken": "这是轮船。在江河、湖泊或海上航行，上船后要听安全指引。"
+    },
+    "请找出，轮船。": {
+      "file": "voice-recognition-v1/ee71121979a1ecb239ef.mp3",
+      "spoken": "请找出，轮船。"
+    },
+    "这是飞机。有机翼，能在天空飞行，可以快速到达遥远的地方。": {
+      "file": "voice-recognition-v1/004f4817e623b72318da.mp3",
+      "spoken": "这是飞机。有机翼，能在天空飞行，可以快速到达遥远的地方。"
+    },
+    "请找出，飞机。": {
+      "file": "voice-recognition-v1/3a128e397abc8cab41ae.mp3",
+      "spoken": "请找出，飞机。"
+    },
+    "这是小狗。有灵敏的鼻子和四条腿，接近陌生小狗前要先问主人。": {
+      "file": "voice-recognition-v1/365b72ab6a2ee996e436.mp3",
+      "spoken": "这是小狗。有灵敏的鼻子和四条腿，接近陌生小狗前要先问主人。"
+    },
+    "请找出，小狗。": {
+      "file": "voice-recognition-v1/0cd9f60cd7c5ffa7de3d.mp3",
+      "spoken": "请找出，小狗。"
+    },
+    "这是小猫。有柔软脚垫和胡须，喜欢清洁身体，也需要温柔对待。": {
+      "file": "voice-recognition-v1/a45d844e031f25c3f1ff.mp3",
+      "spoken": "这是小猫。有柔软脚垫和胡须，喜欢清洁身体，也需要温柔对待。"
+    },
+    "请找出，小猫。": {
+      "file": "voice-recognition-v1/b4c47dbcf2aea9becb3a.mp3",
+      "spoken": "请找出，小猫。"
+    },
+    "这是兔子。有长耳朵和有力后腿，喜欢吃草和合适的蔬菜。": {
+      "file": "voice-recognition-v1/df9f646a9397205ccba1.mp3",
+      "spoken": "这是兔子。有长耳朵和有力后腿，喜欢吃草和合适的蔬菜。"
+    },
+    "请找出，兔子。": {
+      "file": "voice-recognition-v1/2dbc82ad441e205bf1bb.mp3",
+      "spoken": "请找出，兔子。"
+    },
+    "这是熊猫。黑白相间，主要吃竹子，是受到保护的野生动物。": {
+      "file": "voice-recognition-v1/07d2b47397ec92ff2575.mp3",
+      "spoken": "这是熊猫。黑白相间，主要吃竹子，是受到保护的野生动物。"
+    },
+    "请找出，熊猫。": {
+      "file": "voice-recognition-v1/eb089cf0b096d2d95b5c.mp3",
+      "spoken": "请找出，熊猫。"
+    },
+    "这是大象。身体很大，有长鼻子、宽耳朵和粗壮的四条腿。": {
+      "file": "voice-recognition-v1/21ff6e553290fee13807.mp3",
+      "spoken": "这是大象。身体很大，有长鼻子、宽耳朵和粗壮的四条腿。"
+    },
+    "请找出，大象。": {
+      "file": "voice-recognition-v1/2c27075e1f5866f30d77.mp3",
+      "spoken": "请找出，大象。"
+    },
+    "这是长颈鹿。脖子和腿都很长，身上有特别的斑纹，能吃高处树叶。": {
+      "file": "voice-recognition-v1/332b1a3c187e32c754e1.mp3",
+      "spoken": "这是长颈鹿。脖子和腿都很长，身上有特别的斑纹，能吃高处树叶。"
+    },
+    "请找出，长颈鹿。": {
+      "file": "voice-recognition-v1/8eda2ef0922b3863f81e.mp3",
+      "spoken": "请找出，长颈鹿。"
+    },
+    "这是斑马。身上有黑白条纹，每一只斑马的纹路都有些不同。": {
+      "file": "voice-recognition-v1/ddcbd2473fc80204c75b.mp3",
+      "spoken": "这是斑马。身上有黑白条纹，每一只斑马的纹路都有些不同。"
+    },
+    "请找出，斑马。": {
+      "file": "voice-recognition-v1/61bc46e4ec33f462d8b6.mp3",
+      "spoken": "请找出，斑马。"
+    },
+    "这是狮子。是生活在草原等地方的野生动物，雄狮常有浓密鬃毛。": {
+      "file": "voice-recognition-v1/604175a0b9d15d304b6d.mp3",
+      "spoken": "这是狮子。是生活在草原等地方的野生动物，雄狮常有浓密鬃毛。"
+    },
+    "请找出，狮子。": {
+      "file": "voice-recognition-v1/cb50df6e2b3d00bca9ad.mp3",
+      "spoken": "请找出，狮子。"
+    },
+    "这是老虎。身上有深色条纹，是强壮的野生动物，需要远距离观察。": {
+      "file": "voice-recognition-v1/6ef5a07db61d57112df5.mp3",
+      "spoken": "这是老虎。身上有深色条纹，是强壮的野生动物，需要远距离观察。"
+    },
+    "请找出，老虎。": {
+      "file": "voice-recognition-v1/bd49368181db2dce6f69.mp3",
+      "spoken": "请找出，老虎。"
+    },
+    "这是猴子。手脚灵活，善于攀爬，不要随意给野生猴子喂食。": {
+      "file": "voice-recognition-v1/7b668ff29f0bdb3d1e8e.mp3",
+      "spoken": "这是猴子。手脚灵活，善于攀爬，不要随意给野生猴子喂食。"
+    },
+    "请找出，猴子。": {
+      "file": "voice-recognition-v1/b0cf50b94d9ba0def088.mp3",
+      "spoken": "请找出，猴子。"
+    },
+    "这是松鼠。有蓬松的大尾巴，善于爬树，常收集坚果和种子。": {
+      "file": "voice-recognition-v1/d6161184f1b82c6570f9.mp3",
+      "spoken": "这是松鼠。有蓬松的大尾巴，善于爬树，常收集坚果和种子。"
+    },
+    "请找出，松鼠。": {
+      "file": "voice-recognition-v1/c240f150d1f4c42f8a00.mp3",
+      "spoken": "请找出，松鼠。"
+    },
+    "这是刺猬。背上长着许多硬刺，遇到危险时会把身体蜷成一团。": {
+      "file": "voice-recognition-v1/9d844e3b0cf04134de31.mp3",
+      "spoken": "这是刺猬。背上长着许多硬刺，遇到危险时会把身体蜷成一团。"
+    },
+    "请找出，刺猬。": {
+      "file": "voice-recognition-v1/f0558a71c5b80fe39279.mp3",
+      "spoken": "请找出，刺猬。"
+    },
+    "这是数字一。表示一个，可以伸出一根手指，或找出一个苹果来对应。": {
+      "file": "voice-recognition-v1/4fde7d48396a4dedf9cb.mp3",
+      "spoken": "这是数字一。表示一个，可以伸出一根手指，或找出一个苹果来对应。"
+    },
+    "请找出，一。": {
+      "file": "voice-recognition-v1/3e6eda1973d96dc20568.mp3",
+      "spoken": "请找出，一。"
+    },
+    "这是数字二。表示两个，可以伸出两根手指，看看一双鞋正好有两只。": {
+      "file": "voice-recognition-v1/bacf15bc4df15e423903.mp3",
+      "spoken": "这是数字二。表示两个，可以伸出两根手指，看看一双鞋正好有两只。"
+    },
+    "请找出，二。": {
+      "file": "voice-recognition-v1/13382083b784f7aead09.mp3",
+      "spoken": "请找出，二。"
+    },
+    "这是数字三。表示三个，可以摆出三块积木，再按顺序一个个点数。": {
+      "file": "voice-recognition-v1/9bcea294f22b537ed407.mp3",
+      "spoken": "这是数字三。表示三个，可以摆出三块积木，再按顺序一个个点数。"
+    },
+    "请找出，三。": {
+      "file": "voice-recognition-v1/15273123d22de6121856.mp3",
+      "spoken": "请找出，三。"
+    },
+    "这是数字四。表示四个，一张小桌子常见四条腿，可以数一数确认。": {
+      "file": "voice-recognition-v1/7ab3206f5e296bf2632b.mp3",
+      "spoken": "这是数字四。表示四个，一张小桌子常见四条腿，可以数一数确认。"
+    },
+    "请找出，四。": {
+      "file": "voice-recognition-v1/bddffffcba4636154b82.mp3",
+      "spoken": "请找出，四。"
+    },
+    "这是数字五。表示五个，一只手通常有五根手指，张开手就能看见。": {
+      "file": "voice-recognition-v1/fdc7dec9fc836d1fd23f.mp3",
+      "spoken": "这是数字五。表示五个，一只手通常有五根手指，张开手就能看见。"
+    },
+    "请找出，五。": {
+      "file": "voice-recognition-v1/3da4dbe0712bc63b1883.mp3",
+      "spoken": "请找出，五。"
+    },
+    "这是数字六。表示六个，可以把六颗小石子排成一队，再从头数一遍。": {
+      "file": "voice-recognition-v1/e9bb43ba0bb03be3cd4b.mp3",
+      "spoken": "这是数字六。表示六个，可以把六颗小石子排成一队，再从头数一遍。"
+    },
+    "请找出，六。": {
+      "file": "voice-recognition-v1/1557789fc7f76edd5d10.mp3",
+      "spoken": "请找出，六。"
+    },
+    "这是数字七。表示七个，一星期有七天，可以用七个圆点来表示。": {
+      "file": "voice-recognition-v1/5bbd338536e768f3a045.mp3",
+      "spoken": "这是数字七。表示七个，一星期有七天，可以用七个圆点来表示。"
+    },
+    "请找出，七。": {
+      "file": "voice-recognition-v1/c5b12f9dcb2a02c7b0d4.mp3",
+      "spoken": "请找出，七。"
+    },
+    "这是数字八。表示八个，可以分成四个和四个，再合起来数到八。": {
+      "file": "voice-recognition-v1/cd24db488db8795cd70f.mp3",
+      "spoken": "这是数字八。表示八个，可以分成四个和四个，再合起来数到八。"
+    },
+    "请找出，八。": {
+      "file": "voice-recognition-v1/63f0c5d943eb1f53631d.mp3",
+      "spoken": "请找出，八。"
+    },
+    "这是数字九。表示九个，比八多一个，也比十少一个，可以摆九颗星。": {
+      "file": "voice-recognition-v1/142b3ac7be2b0107498d.mp3",
+      "spoken": "这是数字九。表示九个，比八多一个，也比十少一个，可以摆九颗星。"
+    },
+    "请找出，九。": {
+      "file": "voice-recognition-v1/f0bb998455ce86587e39.mp3",
+      "spoken": "请找出，九。"
+    },
+    "这是数字十。表示十个，两只手的手指合起来通常正好可以数到十。": {
+      "file": "voice-recognition-v1/22a631f0faeb5bcb1cf6.mp3",
+      "spoken": "这是数字十。表示十个，两只手的手指合起来通常正好可以数到十。"
+    },
+    "请找出，十。": {
+      "file": "voice-recognition-v1/0651d196afc31c755e51.mp3",
+      "spoken": "请找出，十。"
+    },
+    "这是数字十一。表示十个再多一个，可以先摆满十个，再添上一个。": {
+      "file": "voice-recognition-v1/f4b5a9c073a196ec1ba0.mp3",
+      "spoken": "这是数字十一。表示十个再多一个，可以先摆满十个，再添上一个。"
+    },
+    "请找出，十一。": {
+      "file": "voice-recognition-v1/db4dea45e9b4f24f4f3f.mp3",
+      "spoken": "请找出，十一。"
+    },
+    "这是数字十二。表示十个再多两个，时钟的钟面上常能看到十二个数字。": {
+      "file": "voice-recognition-v1/d63a4d9b510ab7b93cbb.mp3",
+      "spoken": "这是数字十二。表示十个再多两个，时钟的钟面上常能看到十二个数字。"
+    },
+    "请找出，十二。": {
+      "file": "voice-recognition-v1/7ce67c6f819e7364a092.mp3",
+      "spoken": "请找出，十二。"
+    },
+    "这是草地。长着许多小草，适合观察植物，活动前要留意湿滑和小虫。": {
+      "file": "voice-recognition-v1/cad37584487ed089d9b7.mp3",
+      "spoken": "这是草地。长着许多小草，适合观察植物，活动前要留意湿滑和小虫。"
+    },
+    "请找出，草地。": {
+      "file": "voice-recognition-v1/f058ffff834312f5f129.mp3",
+      "spoken": "请找出，草地。"
+    },
+    "这是操场。是跑步、做操和运动的场地，玩耍时要和别人保持距离。": {
+      "file": "voice-recognition-v1/fc010e9ed6e1599fc5d4.mp3",
+      "spoken": "这是操场。是跑步、做操和运动的场地，玩耍时要和别人保持距离。"
+    },
+    "请找出，操场。": {
+      "file": "voice-recognition-v1/56bfb9a8ca3c0b1ae852.mp3",
+      "spoken": "请找出，操场。"
+    },
+    "这是公园。有步道、花草和活动空间，要和家人同行并爱护环境。": {
+      "file": "voice-recognition-v1/4fa4b26b78d302703e4f.mp3",
+      "spoken": "这是公园。有步道、花草和活动空间，要和家人同行并爱护环境。"
+    },
+    "请找出，公园。": {
+      "file": "voice-recognition-v1/447befd2db057747ce3c.mp3",
+      "spoken": "请找出，公园。"
+    },
+    "这是游乐场。有滑梯、秋千等设施，要按年龄选择并遵守使用规则。": {
+      "file": "voice-recognition-v1/b31d0b53d81d1ce034fe.mp3",
+      "spoken": "这是游乐场。有滑梯、秋千等设施，要按年龄选择并遵守使用规则。"
+    },
+    "请找出，游乐场。": {
+      "file": "voice-recognition-v1/4e0f4bc31e0c8595ebf8.mp3",
+      "spoken": "请找出，游乐场。"
+    },
+    "这是沙滩。靠近海边或湖边，有许多沙粒，下水必须有大人陪同。": {
+      "file": "voice-recognition-v1/86f37fc063dbd44b50f2.mp3",
+      "spoken": "这是沙滩。靠近海边或湖边，有许多沙粒，下水必须有大人陪同。"
+    },
+    "请找出，沙滩。": {
+      "file": "voice-recognition-v1/71d3a65a035208223532.mp3",
+      "spoken": "请找出，沙滩。"
+    },
+    "这是山坡。是倾斜的山地，走路要慢一点并穿合适的鞋子。": {
+      "file": "voice-recognition-v1/e140838b4c5700cdade7.mp3",
+      "spoken": "这是山坡。是倾斜的山地，走路要慢一点并穿合适的鞋子。"
+    },
+    "请找出，山坡。": {
+      "file": "voice-recognition-v1/a0fca17407c18315e284.mp3",
+      "spoken": "请找出，山坡。"
+    },
+    "这是小路。是供人行走的窄路，遇到车辆或岔路要跟紧大人。": {
+      "file": "voice-recognition-v1/d621a01531631a7e1407.mp3",
+      "spoken": "这是小路。是供人行走的窄路，遇到车辆或岔路要跟紧大人。"
+    },
+    "请找出，小路。": {
+      "file": "voice-recognition-v1/a7e50a700f359a5d2e4b.mp3",
+      "spoken": "请找出，小路。"
+    },
+    "这是桥。跨过河流、道路或低处，过桥时要沿安全通道行走。": {
+      "file": "voice-recognition-v1/d7aa5acaf909feece6a5.mp3",
+      "spoken": "这是桥。跨过河流、道路或低处，过桥时要沿安全通道行走。"
+    },
+    "请找出，桥。": {
+      "file": "voice-recognition-v1/83dff835adba2d472779.mp3",
+      "spoken": "请找出，桥。"
+    },
+    "这是池塘。是较小的水面，可能有鱼和水草，只能在安全距离观察。": {
+      "file": "voice-recognition-v1/cb97093a1b07e0b545d2.mp3",
+      "spoken": "这是池塘。是较小的水面，可能有鱼和水草，只能在安全距离观察。"
+    },
+    "请找出，池塘。": {
+      "file": "voice-recognition-v1/fb02c5afcaf36d93f5e5.mp3",
+      "spoken": "请找出，池塘。"
+    },
+    "这是河流。水会沿河道流动，岸边可能湿滑，不能独自靠近或下水。": {
+      "file": "voice-recognition-v1/007e2e02c7716f4d1c87.mp3",
+      "spoken": "这是河流。水会沿河道流动，岸边可能湿滑，不能独自靠近或下水。"
+    },
+    "请找出，河流。": {
+      "file": "voice-recognition-v1/f6dd27899161e61d5ba6.mp3",
+      "spoken": "请找出，河流。"
+    },
+    "这是森林。有很多树木和生物，进入时要跟随大人并走规定路线。": {
+      "file": "voice-recognition-v1/5746a4dad57aefbd8f7a.mp3",
+      "spoken": "这是森林。有很多树木和生物，进入时要跟随大人并走规定路线。"
+    },
+    "请找出，森林。": {
+      "file": "voice-recognition-v1/8edc4ab31e7875de54a5.mp3",
+      "spoken": "请找出，森林。"
+    },
+    "这是花园。种着花草和灌木，可以观察颜色和香味，但不要随意采摘。": {
+      "file": "voice-recognition-v1/5ccd61d411e2fbdf1fd1.mp3",
+      "spoken": "这是花园。种着花草和灌木，可以观察颜色和香味，但不要随意采摘。"
+    },
+    "请找出，花园。": {
+      "file": "voice-recognition-v1/35a2d07c9d510c0fb3ad.mp3",
+      "spoken": "请找出，花园。"
+    },
+    "这是书包。用来装书本和学习用品，分层整理后更容易找到东西。": {
+      "file": "voice-recognition-v1/c245dd92def5c8810d5e.mp3",
+      "spoken": "这是书包。用来装书本和学习用品，分层整理后更容易找到东西。"
+    },
+    "请找出，书包。": {
+      "file": "voice-recognition-v1/107b4bee224a93eb125e.mp3",
+      "spoken": "请找出，书包。"
+    },
+    "这是书本。一页页纸装订在一起，可以阅读文字、数字和图画。": {
+      "file": "voice-recognition-v1/a3b33edcbf8ab7079126.mp3",
+      "spoken": "这是书本。一页页纸装订在一起，可以阅读文字、数字和图画。"
+    },
+    "请找出，书本。": {
+      "file": "voice-recognition-v1/fe6ec3eaf5235f5b80c5.mp3",
+      "spoken": "请找出，书本。"
+    },
+    "这是铅笔。可以写字和画线，笔尖较尖，使用时不要对着别人。": {
+      "file": "voice-recognition-v1/524707732c1f082f6ae8.mp3",
+      "spoken": "这是铅笔。可以写字和画线，笔尖较尖，使用时不要对着别人。"
+    },
+    "请找出，铅笔。": {
+      "file": "voice-recognition-v1/3e8e1ca4b931f23ade5a.mp3",
+      "spoken": "请找出，铅笔。"
+    },
+    "这是橡皮。可以擦去铅笔留下的痕迹，用完放回文具盒里。": {
+      "file": "voice-recognition-v1/feb5c64f97c3564d39c7.mp3",
+      "spoken": "这是橡皮。可以擦去铅笔留下的痕迹，用完放回文具盒里。"
+    },
+    "请找出，橡皮。": {
+      "file": "voice-recognition-v1/58b419ffbd1530143bd6.mp3",
+      "spoken": "请找出，橡皮。"
+    },
+    "这是尺子。边缘笔直并带刻度，可以画直线或测量较短的长度。": {
+      "file": "voice-recognition-v1/fa242b485d141a0525be.mp3",
+      "spoken": "这是尺子。边缘笔直并带刻度，可以画直线或测量较短的长度。"
+    },
+    "请找出，尺子。": {
+      "file": "voice-recognition-v1/1a0aeef88f121d4f3dd5.mp3",
+      "spoken": "请找出，尺子。"
+    },
+    "这是彩笔。有许多颜色，可以画画和做标记，用完要盖好笔帽。": {
+      "file": "voice-recognition-v1/e211b552845be226e718.mp3",
+      "spoken": "这是彩笔。有许多颜色，可以画画和做标记，用完要盖好笔帽。"
+    },
+    "请找出，彩笔。": {
+      "file": "voice-recognition-v1/a78c66718cea0a265896.mp3",
+      "spoken": "请找出，彩笔。"
+    },
+    "这是剪刀。可以剪纸，儿童剪刀也要在大人指导下正确握持。": {
+      "file": "voice-recognition-v1/34b237a5405e0c204f04.mp3",
+      "spoken": "这是剪刀。可以剪纸，儿童剪刀也要在大人指导下正确握持。"
+    },
+    "请找出，剪刀。": {
+      "file": "voice-recognition-v1/32a4778034a22549792b.mp3",
+      "spoken": "请找出，剪刀。"
+    },
+    "这是胶棒。旋出一点胶就能粘纸，用完要盖紧，不能涂在皮肤上。": {
+      "file": "voice-recognition-v1/5371dd075d28f5e52aec.mp3",
+      "spoken": "这是胶棒。旋出一点胶就能粘纸，用完要盖紧，不能涂在皮肤上。"
+    },
+    "请找出，胶棒。": {
+      "file": "voice-recognition-v1/478b5ab2d7a1397254b9.mp3",
+      "spoken": "请找出，胶棒。"
+    },
+    "这是文具盒。集中收纳铅笔、橡皮和尺子，能让桌面更整齐。": {
+      "file": "voice-recognition-v1/770a6384a6bc8de9be2c.mp3",
+      "spoken": "这是文具盒。集中收纳铅笔、橡皮和尺子，能让桌面更整齐。"
+    },
+    "请找出，文具盒。": {
+      "file": "voice-recognition-v1/fe795b4fcc35287acf48.mp3",
+      "spoken": "请找出，文具盒。"
+    },
+    "这是笔记本。由空白或带格子的纸页组成，可以记录和练习书写。": {
+      "file": "voice-recognition-v1/8a3c8b16dd8c50766f32.mp3",
+      "spoken": "这是笔记本。由空白或带格子的纸页组成，可以记录和练习书写。"
+    },
+    "请找出，笔记本。": {
+      "file": "voice-recognition-v1/e13859c94e012d4ea412.mp3",
+      "spoken": "请找出，笔记本。"
+    },
+    "这是黑板。老师会在上面写字、画图和演示，大家一起抬头看。": {
+      "file": "voice-recognition-v1/9bff7d02f17bed21a025.mp3",
+      "spoken": "这是黑板。老师会在上面写字、画图和演示，大家一起抬头看。"
+    },
+    "请找出，黑板。": {
+      "file": "voice-recognition-v1/28c7346c5faa2aea9868.mp3",
+      "spoken": "请找出，黑板。"
+    },
+    "这是地球仪。是缩小的地球模型，可以转动着观察大陆和海洋。": {
+      "file": "voice-recognition-v1/0189e0902672ce857d6d.mp3",
+      "spoken": "这是地球仪。是缩小的地球模型，可以转动着观察大陆和海洋。"
+    },
+    "请找出，地球仪。": {
+      "file": "voice-recognition-v1/4d96f653fe5692375d33.mp3",
+      "spoken": "请找出，地球仪。"
+    },
+    "这是电脑。可以学习、画画和处理信息，使用一会儿要让眼睛休息。": {
+      "file": "voice-recognition-v1/8df10c5810843ab0a4e5.mp3",
+      "spoken": "这是电脑。可以学习、画画和处理信息，使用一会儿要让眼睛休息。"
+    },
+    "请找出，电脑。": {
+      "file": "voice-recognition-v1/3112d09caef1ac03ff7f.mp3",
+      "spoken": "请找出，电脑。"
+    },
+    "这是手机。可以打电话、拍照和使用应用，小朋友使用要先问大人。": {
+      "file": "voice-recognition-v1/aa529871115e8f27490d.mp3",
+      "spoken": "这是手机。可以打电话、拍照和使用应用，小朋友使用要先问大人。"
+    },
+    "请找出，手机。": {
+      "file": "voice-recognition-v1/d05a5ae38edc20063f54.mp3",
+      "spoken": "请找出，手机。"
+    },
+    "这是手机壳。套在手机外面，能减少磕碰和划痕，但不能代替小心拿放。": {
+      "file": "voice-recognition-v1/4a4c071cb4025fa5be87.mp3",
+      "spoken": "这是手机壳。套在手机外面，能减少磕碰和划痕，但不能代替小心拿放。"
+    },
+    "请找出，手机壳。": {
+      "file": "voice-recognition-v1/1010c32844cead76f83e.mp3",
+      "spoken": "请找出，手机壳。"
+    },
+    "这是平板电脑。有较大的触摸屏，可以用手指操作，使用时间要有安排。": {
+      "file": "voice-recognition-v1/98d9a1764c9b0f3d5932.mp3",
+      "spoken": "这是平板电脑。有较大的触摸屏，可以用手指操作，使用时间要有安排。"
+    },
+    "请找出，平板电脑。": {
+      "file": "voice-recognition-v1/da6d1f59a5774e0dc44a.mp3",
+      "spoken": "请找出，平板电脑。"
+    },
+    "这是键盘。上面有字母、数字和功能键，按键可以向电脑输入内容。": {
+      "file": "voice-recognition-v1/4ceb55e95337db8bcdc7.mp3",
+      "spoken": "这是键盘。上面有字母、数字和功能键，按键可以向电脑输入内容。"
+    },
+    "请找出，键盘。": {
+      "file": "voice-recognition-v1/0bdb0462bd1b20f9515c.mp3",
+      "spoken": "请找出，键盘。"
+    },
+    "这是鼠标。连接电脑后能移动屏幕指针，点击按键可以选择和打开。": {
+      "file": "voice-recognition-v1/5e2f35034484f3a086ec.mp3",
+      "spoken": "这是鼠标。连接电脑后能移动屏幕指针，点击按键可以选择和打开。"
+    },
+    "请找出，鼠标。": {
+      "file": "voice-recognition-v1/cee07b85f71d86c18ef2.mp3",
+      "spoken": "请找出，鼠标。"
+    },
+    "这是显示器。把电脑里的文字和画面显示出来，观看时要保持合适距离。": {
+      "file": "voice-recognition-v1/a340631aa66406b71e54.mp3",
+      "spoken": "这是显示器。把电脑里的文字和画面显示出来，观看时要保持合适距离。"
+    },
+    "请找出，显示器。": {
+      "file": "voice-recognition-v1/6ed9556b8603de1f95b7.mp3",
+      "spoken": "请找出，显示器。"
+    },
+    "这是耳机。戴在耳朵上听声音，音量不能太大，也不要长时间佩戴。": {
+      "file": "voice-recognition-v1/3fff45544b02deb29bfb.mp3",
+      "spoken": "这是耳机。戴在耳朵上听声音，音量不能太大，也不要长时间佩戴。"
+    },
+    "请找出，耳机。": {
+      "file": "voice-recognition-v1/9ff04405c41e4e42a0e8.mp3",
+      "spoken": "请找出，耳机。"
+    },
+    "这是相机。能把看到的画面拍成照片或视频，拍别人前要先征得同意。": {
+      "file": "voice-recognition-v1/d32e5faee0d8e10e7144.mp3",
+      "spoken": "这是相机。能把看到的画面拍成照片或视频，拍别人前要先征得同意。"
+    },
+    "请找出，相机。": {
+      "file": "voice-recognition-v1/167395821d0f8e8c41af.mp3",
+      "spoken": "请找出，相机。"
+    },
+    "这是充电器。给电子设备补充电量，要由大人连接插座并保持干燥。": {
+      "file": "voice-recognition-v1/ba08f613fe7acddb2967.mp3",
+      "spoken": "这是充电器。给电子设备补充电量，要由大人连接插座并保持干燥。"
+    },
+    "请找出，充电器。": {
+      "file": "voice-recognition-v1/604a431038b4041eceac.mp3",
+      "spoken": "请找出，充电器。"
+    },
+    "这是遥控器。按不同按键可以控制电视或设备，用完放在固定位置。": {
+      "file": "voice-recognition-v1/fb882776ecdd15d235b2.mp3",
+      "spoken": "这是遥控器。按不同按键可以控制电视或设备，用完放在固定位置。"
+    },
+    "请找出，遥控器。": {
+      "file": "voice-recognition-v1/ee992b31c444a799cd54.mp3",
+      "spoken": "请找出，遥控器。"
+    },
+    "这是打印机。能把电脑里的文字和图片印在纸上，工作时不要伸手进去。": {
+      "file": "voice-recognition-v1/c08435fd84160ab85eab.mp3",
+      "spoken": "这是打印机。能把电脑里的文字和图片印在纸上，工作时不要伸手进去。"
+    },
+    "请找出，打印机。": {
+      "file": "voice-recognition-v1/8a9006d8721a88f1841e.mp3",
+      "spoken": "请找出，打印机。"
+    },
+    "这是超市。摆放食品和日用品供人选购，拿取商品后要整齐放好。": {
+      "file": "voice-recognition-v1/d968ad1eefc0f8c03af5.mp3",
+      "spoken": "这是超市。摆放食品和日用品供人选购，拿取商品后要整齐放好。"
+    },
+    "请找出，超市。": {
+      "file": "voice-recognition-v1/c48d76eb2d69f72e9944.mp3",
+      "spoken": "请找出，超市。"
+    },
+    "这是医院。医生和护士在这里检查、治疗和照顾生病或受伤的人。": {
+      "file": "voice-recognition-v1/ac3f7960272286ec38ef.mp3",
+      "spoken": "这是医院。医生和护士在这里检查、治疗和照顾生病或受伤的人。"
+    },
+    "请找出，医院。": {
+      "file": "voice-recognition-v1/fd1da7bcb2192ae045f1.mp3",
+      "spoken": "请找出，医院。"
+    },
+    "这是学校。老师和同学一起学习、活动和成长，要遵守共同规则。": {
+      "file": "voice-recognition-v1/c989b737320039d6fa5d.mp3",
+      "spoken": "这是学校。老师和同学一起学习、活动和成长，要遵守共同规则。"
+    },
+    "请找出，学校。": {
+      "file": "voice-recognition-v1/c1c7143f6cd8b59527ea.mp3",
+      "spoken": "请找出，学校。"
+    },
+    "这是图书馆。收藏许多书供大家阅读，走路和说话要轻一些。": {
+      "file": "voice-recognition-v1/25b0d4b2c55a352246c4.mp3",
+      "spoken": "这是图书馆。收藏许多书供大家阅读，走路和说话要轻一些。"
+    },
+    "请找出，图书馆。": {
+      "file": "voice-recognition-v1/b2ac6b39c0faf288f329.mp3",
+      "spoken": "请找出，图书馆。"
+    },
+    "这是邮局。可以寄送信件和包裹，也能办理一些邮政服务。": {
+      "file": "voice-recognition-v1/b28e627ffe39c1ca164e.mp3",
+      "spoken": "这是邮局。可以寄送信件和包裹，也能办理一些邮政服务。"
+    },
+    "请找出，邮局。": {
+      "file": "voice-recognition-v1/eb0439e90d4b37aad948.mp3",
+      "spoken": "请找出，邮局。"
+    },
+    "这是银行。办理存取钱等业务，和家人前往时要保管好个人信息。": {
+      "file": "voice-recognition-v1/8112349c34676d9c3e73.mp3",
+      "spoken": "这是银行。办理存取钱等业务，和家人前往时要保管好个人信息。"
+    },
+    "请找出，银行。": {
+      "file": "voice-recognition-v1/4340aec1170bab1aecb3.mp3",
+      "spoken": "请找出，银行。"
+    },
+    "这是消防站。消防员和消防车工作的地方，负责灭火和紧急救援。": {
+      "file": "voice-recognition-v1/cc0e3ead77758c3fe23d.mp3",
+      "spoken": "这是消防站。消防员和消防车工作的地方，负责灭火和紧急救援。"
+    },
+    "请找出，消防站。": {
+      "file": "voice-recognition-v1/64747dbfd930f3231dbc.mp3",
+      "spoken": "请找出，消防站。"
+    },
+    "这是警察局。警察工作的地方，迷路或遇到危险时可以向警察求助。": {
+      "file": "voice-recognition-v1/0b9f232c5bc17dc5818b.mp3",
+      "spoken": "这是警察局。警察工作的地方，迷路或遇到危险时可以向警察求助。"
+    },
+    "请找出，警察局。": {
+      "file": "voice-recognition-v1/99e8e4882f97a7f249ac.mp3",
+      "spoken": "请找出，警察局。"
+    },
+    "这是菜市场。摊位上有蔬菜、肉类等食材，行走时要跟紧家人。": {
+      "file": "voice-recognition-v1/4bdd425adef9b656ca4b.mp3",
+      "spoken": "这是菜市场。摊位上有蔬菜、肉类等食材，行走时要跟紧家人。"
+    },
+    "请找出，菜市场。": {
+      "file": "voice-recognition-v1/2db41d46edfe93f52694.mp3",
+      "spoken": "请找出，菜市场。"
+    },
+    "这是餐厅。人们点餐和吃饭的地方，热菜上桌时不要急着触碰。": {
+      "file": "voice-recognition-v1/7200ede5ce02fa4abf31.mp3",
+      "spoken": "这是餐厅。人们点餐和吃饭的地方，热菜上桌时不要急着触碰。"
+    },
+    "请找出，餐厅。": {
+      "file": "voice-recognition-v1/7fcd257a0631eb915c03.mp3",
+      "spoken": "请找出，餐厅。"
+    },
+    "这是理发店。理发师在这里修剪和整理头发，剪发时要坐稳。": {
+      "file": "voice-recognition-v1/666441a2ff3d457da58c.mp3",
+      "spoken": "这是理发店。理发师在这里修剪和整理头发，剪发时要坐稳。"
+    },
+    "请找出，理发店。": {
+      "file": "voice-recognition-v1/22381f03bbd93af1d475.mp3",
+      "spoken": "请找出，理发店。"
+    },
+    "这是公交站。公交车按线路停靠的地方，要在安全区域排队等候。": {
+      "file": "voice-recognition-v1/50db64cb28bfcc80bf77.mp3",
+      "spoken": "这是公交站。公交车按线路停靠的地方，要在安全区域排队等候。"
+    },
+    "请找出，公交站。": {
+      "file": "voice-recognition-v1/5697ddcb7a17457b3600.mp3",
+      "spoken": "请找出，公交站。"
+    },
+    "这是蝴蝶。有两对带花纹的翅膀，会从毛毛虫经过变化后长成。": {
+      "file": "voice-recognition-v1/e1f081fe2102321e2414.mp3",
+      "spoken": "这是蝴蝶。有两对带花纹的翅膀，会从毛毛虫经过变化后长成。"
+    },
+    "请找出，蝴蝶。": {
+      "file": "voice-recognition-v1/ed6e82d7c01485c64b17.mp3",
+      "spoken": "请找出，蝴蝶。"
+    },
+    "这是蜜蜂。会采集花蜜并帮助花朵传粉，观察时不要追赶或拍打。": {
+      "file": "voice-recognition-v1/145ec91d2f0711222268.mp3",
+      "spoken": "这是蜜蜂。会采集花蜜并帮助花朵传粉，观察时不要追赶或拍打。"
+    },
+    "请找出，蜜蜂。": {
+      "file": "voice-recognition-v1/16a8c2da514e9bc83a21.mp3",
+      "spoken": "请找出，蜜蜂。"
+    },
+    "这是瓢虫。是小型甲虫，圆圆的翅膀上常有醒目的黑色斑点。": {
+      "file": "voice-recognition-v1/1f4fb21dc3ff70a1eaf8.mp3",
+      "spoken": "这是瓢虫。是小型甲虫，圆圆的翅膀上常有醒目的黑色斑点。"
+    },
+    "请找出，瓢虫。": {
+      "file": "voice-recognition-v1/7b1841c0c3428418f696.mp3",
+      "spoken": "请找出，瓢虫。"
+    },
+    "这是蜻蜓。有透明翅膀和细长身体，常在水边快速飞行。": {
+      "file": "voice-recognition-v1/e904d325813234062a2d.mp3",
+      "spoken": "这是蜻蜓。有透明翅膀和细长身体，常在水边快速飞行。"
+    },
+    "请找出，蜻蜓。": {
+      "file": "voice-recognition-v1/a2aca496df30d3213e38.mp3",
+      "spoken": "请找出，蜻蜓。"
+    },
+    "这是蚂蚁。身体很小，常和伙伴合作搬运食物并住在蚁巢里。": {
+      "file": "voice-recognition-v1/ba62e3000539eedb0439.mp3",
+      "spoken": "这是蚂蚁。身体很小，常和伙伴合作搬运食物并住在蚁巢里。"
+    },
+    "请找出，蚂蚁。": {
+      "file": "voice-recognition-v1/b71d205329d2de4655c1.mp3",
+      "spoken": "请找出，蚂蚁。"
+    },
+    "这是蜘蛛。有八条腿，有些会织网捕食小虫，陌生蜘蛛不要触碰。": {
+      "file": "voice-recognition-v1/dca2d3361eaa7ac78a53.mp3",
+      "spoken": "这是蜘蛛。有八条腿，有些会织网捕食小虫，陌生蜘蛛不要触碰。"
+    },
+    "请找出，蜘蛛。": {
+      "file": "voice-recognition-v1/06623e34a7656385718b.mp3",
+      "spoken": "请找出，蜘蛛。"
+    },
+    "这是蜗牛。背着螺旋形外壳，靠腹足缓慢爬行，喜欢潮湿环境。": {
+      "file": "voice-recognition-v1/5dd998bfe99a49c9cf17.mp3",
+      "spoken": "这是蜗牛。背着螺旋形外壳，靠腹足缓慢爬行，喜欢潮湿环境。"
+    },
+    "请找出，蜗牛。": {
+      "file": "voice-recognition-v1/3b170f10a419f3d52f04.mp3",
+      "spoken": "请找出，蜗牛。"
+    },
+    "这是毛毛虫。是蝴蝶或飞蛾的幼虫，身体分节，有些体毛会刺激皮肤。": {
+      "file": "voice-recognition-v1/41a2eaf8c4944641c22e.mp3",
+      "spoken": "这是毛毛虫。是蝴蝶或飞蛾的幼虫，身体分节，有些体毛会刺激皮肤。"
+    },
+    "请找出，毛毛虫。": {
+      "file": "voice-recognition-v1/9a8026b466c5f435bde3.mp3",
+      "spoken": "请找出，毛毛虫。"
+    },
+    "这是青蛙。有强壮后腿，善于跳跃和游泳，幼小时叫蝌蚪。": {
+      "file": "voice-recognition-v1/fe030de5458ec1b2827d.mp3",
+      "spoken": "这是青蛙。有强壮后腿，善于跳跃和游泳，幼小时叫蝌蚪。"
+    },
+    "请找出，青蛙。": {
+      "file": "voice-recognition-v1/319240efe443de06857c.mp3",
+      "spoken": "请找出，青蛙。"
+    },
+    "这是小鸟。有羽毛、翅膀和喙，许多种类会飞，也会用叫声交流。": {
+      "file": "voice-recognition-v1/8375cd1edebee3fbeae8.mp3",
+      "spoken": "这是小鸟。有羽毛、翅膀和喙，许多种类会飞，也会用叫声交流。"
+    },
+    "请找出，小鸟。": {
+      "file": "voice-recognition-v1/c624b185fce05b3edd5c.mp3",
+      "spoken": "请找出，小鸟。"
+    },
+    "这是鸭子。有扁扁的嘴和带蹼的脚，善于在水面游动。": {
+      "file": "voice-recognition-v1/19cf30fa4c1c766726b0.mp3",
+      "spoken": "这是鸭子。有扁扁的嘴和带蹼的脚，善于在水面游动。"
+    },
+    "请找出，鸭子。": {
+      "file": "voice-recognition-v1/babdfba13a98b2cc9308.mp3",
+      "spoken": "请找出，鸭子。"
+    },
+    "这是金鱼。生活在水中，用鳃呼吸，饲养时要适量喂食并保持水洁净。": {
+      "file": "voice-recognition-v1/40372b9d620e218985f9.mp3",
+      "spoken": "这是金鱼。生活在水中，用鳃呼吸，饲养时要适量喂食并保持水洁净。"
+    },
+    "请找出，金鱼。": {
+      "file": "voice-recognition-v1/cd855dbc15ccdf3cf9c1.mp3",
+      "spoken": "请找出，金鱼。"
+    },
+    "这是太阳。会带来光和热，不能长时间直视，晴天外出注意防晒。": {
+      "file": "voice-recognition-v1/dd6061820e8b7dfd8a3e.mp3",
+      "spoken": "这是太阳。会带来光和热，不能长时间直视，晴天外出注意防晒。"
+    },
+    "请找出，太阳。": {
+      "file": "voice-recognition-v1/b6c06cc0a696f7dc989c.mp3",
+      "spoken": "请找出，太阳。"
+    },
+    "这是月亮。是地球的天然卫星，夜晚常能看到不同形状的月相。": {
+      "file": "voice-recognition-v1/054ee03d0538df2f6cfc.mp3",
+      "spoken": "这是月亮。是地球的天然卫星，夜晚常能看到不同形状的月相。"
+    },
+    "请找出，月亮。": {
+      "file": "voice-recognition-v1/6e12efc47f87c8b6da40.mp3",
+      "spoken": "请找出，月亮。"
+    },
+    "这是星星。是遥远天空中的天体，晴朗夜晚看起来像许多亮点。": {
+      "file": "voice-recognition-v1/9d5d5634094055d46e22.mp3",
+      "spoken": "这是星星。是遥远天空中的天体，晴朗夜晚看起来像许多亮点。"
+    },
+    "请找出，星星。": {
+      "file": "voice-recognition-v1/e0171c0032d6c51349e0.mp3",
+      "spoken": "请找出，星星。"
+    },
+    "这是白云。由许多微小水滴或冰晶组成，会随风改变形状和位置。": {
+      "file": "voice-recognition-v1/21aabd182a7c31fa7e98.mp3",
+      "spoken": "这是白云。由许多微小水滴或冰晶组成，会随风改变形状和位置。"
+    },
+    "请找出，白云。": {
+      "file": "voice-recognition-v1/a5b40f815fd225ec0329.mp3",
+      "spoken": "请找出，白云。"
+    },
+    "这是雨滴。云里的水落到地面形成雨，雨天出门可以穿雨衣或打伞。": {
+      "file": "voice-recognition-v1/c8b08464ad8ebc20ff57.mp3",
+      "spoken": "这是雨滴。云里的水落到地面形成雨，雨天出门可以穿雨衣或打伞。"
+    },
+    "请找出，雨滴。": {
+      "file": "voice-recognition-v1/94eaa66b373a536a0674.mp3",
+      "spoken": "请找出，雨滴。"
+    },
+    "这是雪花。寒冷时由冰晶组成，从天空落下，地面结冰时要慢走。": {
+      "file": "voice-recognition-v1/c6d8d462e6e8af527905.mp3",
+      "spoken": "这是雪花。寒冷时由冰晶组成，从天空落下，地面结冰时要慢走。"
+    },
+    "请找出，雪花。": {
+      "file": "voice-recognition-v1/979873e856db9264fa1a.mp3",
+      "spoken": "请找出，雪花。"
+    },
+    "这是彩虹。阳光照过空气中的小水滴时，天空可能出现多种颜色的弧。": {
+      "file": "voice-recognition-v1/a956cced8199f92f0f7e.mp3",
+      "spoken": "这是彩虹。阳光照过空气中的小水滴时，天空可能出现多种颜色的弧。"
+    },
+    "请找出，彩虹。": {
+      "file": "voice-recognition-v1/6d8fb780d10d23cd71e5.mp3",
+      "spoken": "请找出，彩虹。"
+    },
+    "这是闪电。是云层间或云地间的强烈放电，雷雨时要待在安全室内。": {
+      "file": "voice-recognition-v1/ac06527f78741d8c3326.mp3",
+      "spoken": "这是闪电。是云层间或云地间的强烈放电，雷雨时要待在安全室内。"
+    },
+    "请找出，闪电。": {
+      "file": "voice-recognition-v1/8a8ce982d234a1537889.mp3",
+      "spoken": "请找出，闪电。"
+    },
+    "这是大风。空气快速流动会吹动树枝和物品，外出要远离易倒物体。": {
+      "file": "voice-recognition-v1/e32dd94975444f5752b7.mp3",
+      "spoken": "这是大风。空气快速流动会吹动树枝和物品，外出要远离易倒物体。"
+    },
+    "请找出，大风。": {
+      "file": "voice-recognition-v1/62b931c1256ba3687ac6.mp3",
+      "spoken": "请找出，大风。"
+    },
+    "这是雾。许多小水滴悬在近地空气中，会让远处东西变得看不清。": {
+      "file": "voice-recognition-v1/374cf81b9f3d0edb6d77.mp3",
+      "spoken": "这是雾。许多小水滴悬在近地空气中，会让远处东西变得看不清。"
+    },
+    "请找出，雾。": {
+      "file": "voice-recognition-v1/2a3a128e14ab93025fef.mp3",
+      "spoken": "请找出，雾。"
+    },
+    "这是冰雹。是雷雨云中形成的冰粒，降落时应立刻进入坚固室内躲避。": {
+      "file": "voice-recognition-v1/4f829565f53914541926.mp3",
+      "spoken": "这是冰雹。是雷雨云中形成的冰粒，降落时应立刻进入坚固室内躲避。"
+    },
+    "请找出，冰雹。": {
+      "file": "voice-recognition-v1/72a517776b66b9c7d9f9.mp3",
+      "spoken": "请找出，冰雹。"
+    },
+    "这是霜。寒冷清晨水汽可能在地面或植物上凝成细小白色冰晶。": {
+      "file": "voice-recognition-v1/6a292b3fd9174cede8e4.mp3",
+      "spoken": "这是霜。寒冷清晨水汽可能在地面或植物上凝成细小白色冰晶。"
+    },
+    "请找出，霜。": {
+      "file": "voice-recognition-v1/53ca879004aa9e5e61fc.mp3",
+      "spoken": "请找出，霜。"
+    },
+    "这是红绿灯。用红、黄、绿灯指挥交通，过路前要看灯并听从大人指引。": {
+      "file": "voice-recognition-v1/f52d53527029c095e1c5.mp3",
+      "spoken": "这是红绿灯。用红、黄、绿灯指挥交通，过路前要看灯并听从大人指引。"
+    },
+    "请找出，红绿灯。": {
+      "file": "voice-recognition-v1/75aef03fba38ae0b75ce.mp3",
+      "spoken": "请找出，红绿灯。"
+    },
+    "这是斑马线。是道路上的白色条纹过街通道，过马路时仍要左右观察。": {
+      "file": "voice-recognition-v1/2b22d9e754480e07f868.mp3",
+      "spoken": "这是斑马线。是道路上的白色条纹过街通道，过马路时仍要左右观察。"
+    },
+    "请找出，斑马线。": {
+      "file": "voice-recognition-v1/a0334010f6b8f14ed3b0.mp3",
+      "spoken": "请找出，斑马线。"
+    },
+    "这是安全带。乘车时固定身体，上车坐好后要请大人检查是否扣牢。": {
+      "file": "voice-recognition-v1/c46e07e13d772bca0de0.mp3",
+      "spoken": "这是安全带。乘车时固定身体，上车坐好后要请大人检查是否扣牢。"
+    },
+    "请找出，安全带。": {
+      "file": "voice-recognition-v1/eb28ab2a72194bf55eed.mp3",
+      "spoken": "请找出，安全带。"
+    },
+    "这是头盔。保护头部，骑自行车或乘摩托车时要选择合适尺寸并戴好。": {
+      "file": "voice-recognition-v1/b62e8dd58bd3f9578423.mp3",
+      "spoken": "这是头盔。保护头部，骑自行车或乘摩托车时要选择合适尺寸并戴好。"
+    },
+    "请找出，头盔。": {
+      "file": "voice-recognition-v1/3d8153db942d73b8913c.mp3",
+      "spoken": "请找出，头盔。"
+    },
+    "这是救生圈。能在水中提供浮力，是救生用品，不能代替大人看护。": {
+      "file": "voice-recognition-v1/76de3cb73722f74529bf.mp3",
+      "spoken": "这是救生圈。能在水中提供浮力，是救生用品，不能代替大人看护。"
+    },
+    "请找出，救生圈。": {
+      "file": "voice-recognition-v1/c20086a93c52467707fd.mp3",
+      "spoken": "请找出，救生圈。"
+    },
+    "这是灭火器。用于扑救特定的小火情，小朋友看见火要先远离并喊大人。": {
+      "file": "voice-recognition-v1/a2a325bd3e0cd4cba276.mp3",
+      "spoken": "这是灭火器。用于扑救特定的小火情，小朋友看见火要先远离并喊大人。"
+    },
+    "请找出，灭火器。": {
+      "file": "voice-recognition-v1/df5e5440ca5630dad1e2.mp3",
+      "spoken": "请找出，灭火器。"
+    },
+    "这是烟雾报警器。发现烟雾时会发出响声，听到警报要跟随大人迅速撤离。": {
+      "file": "voice-recognition-v1/35ae548fdb38ba7af344.mp3",
+      "spoken": "这是烟雾报警器。发现烟雾时会发出响声，听到警报要跟随大人迅速撤离。"
+    },
+    "请找出，烟雾报警器。": {
+      "file": "voice-recognition-v1/131b0183bf6dd3d111b8.mp3",
+      "spoken": "请找出，烟雾报警器。"
+    },
+    "这是插座。给电器连接电源，孔洞不能用手或物品触碰，要远离水。": {
+      "file": "voice-recognition-v1/2e61d10def485575e368.mp3",
+      "spoken": "这是插座。给电器连接电源，孔洞不能用手或物品触碰，要远离水。"
+    },
+    "请找出，插座。": {
+      "file": "voice-recognition-v1/5371571bcb251d435659.mp3",
+      "spoken": "请找出，插座。"
+    },
+    "这是热水壶。用来烧水，壶身和蒸汽可能很烫，小朋友不要独自操作。": {
+      "file": "voice-recognition-v1/e0420366463ee57e8b95.mp3",
+      "spoken": "这是热水壶。用来烧水，壶身和蒸汽可能很烫，小朋友不要独自操作。"
+    },
+    "请找出，热水壶。": {
+      "file": "voice-recognition-v1/05278b2a6320c14b70ba.mp3",
+      "spoken": "请找出，热水壶。"
+    },
+    "这是药品。用于预防或治疗疾病，只能由可信任的大人按说明拿取服用。": {
+      "file": "voice-recognition-v1/0cf78577ed2f78a0447a.mp3",
+      "spoken": "这是药品。用于预防或治疗疾病，只能由可信任的大人按说明拿取服用。"
+    },
+    "请找出，药品。": {
+      "file": "voice-recognition-v1/9c8cc11a8a1a52b9ec6e.mp3",
+      "spoken": "请找出，药品。"
+    },
+    "这是香烟。会产生伤害身体的烟雾，小朋友不要触碰，也要远离吸烟处。": {
+      "file": "voice-recognition-v1/ec37f3cb8eb29d0e51ce.mp3",
+      "spoken": "这是香烟。会产生伤害身体的烟雾，小朋友不要触碰，也要远离吸烟处。"
+    },
+    "请找出，香烟。": {
+      "file": "voice-recognition-v1/2ea18c6f54f536e18afc.mp3",
+      "spoken": "请找出，香烟。"
+    },
+    "这是酒。是成年人也要谨慎对待的饮品，小朋友不能品尝，要交给大人。": {
+      "file": "voice-recognition-v1/23666cffb7b7f319adc6.mp3",
+      "spoken": "这是酒。是成年人也要谨慎对待的饮品，小朋友不能品尝，要交给大人。"
+    },
+    "请找出，酒。": {
+      "file": "voice-recognition-v1/625e2e0775489846ced7.mp3",
+      "spoken": "请找出，酒。"
+    },
+    "你的小眼睛看得真仔细，今天又认识了好多新朋友！": {
+      "file": "voice-recognition-v1/529e208fc369d9f5f524.mp3",
+      "spoken": "你的小眼睛看得真仔细，今天又认识了好多新朋友！"
+    },
+    "你会认真看、认真听，还会自己想，老师为你鼓掌！": {
+      "file": "voice-recognition-v1/d200b50c9f1b0a951f5a.mp3",
+      "spoken": "你会认真看、认真听，还会自己想，老师为你鼓掌！"
+    },
+    "六张新卡片都认识啦，你今天的探索任务完成了！": {
+      "file": "voice-recognition-v1/99cfb37405e8becedf91.mp3",
+      "spoken": "六张新卡片都认识啦，你今天的探索任务完成了！"
+    },
+    "太棒啦，小小探索家又发现了生活里的新知识！": {
+      "file": "voice-recognition-v1/98ecc8b0a33e484313bc.mp3",
+      "spoken": "太棒啦，小小探索家又发现了生活里的新知识！"
+    },
+    "今天学会一点点，明天再学一点点，你正在开心长大！": {
+      "file": "voice-recognition-v1/3a81fd268d56d1d39da7.mp3",
+      "spoken": "今天学会一点点，明天再学一点点，你正在开心长大！"
+    },
+    "三道小挑战都完成啦，你观察得又快又准确！": {
+      "file": "voice-recognition-v1/760ddd3e2e0cdc3dbf29.mp3",
+      "spoken": "三道小挑战都完成啦，你观察得又快又准确！"
+    },
+    "老师送你一个大大的拥抱，你今天学习得很专心！": {
+      "file": "voice-recognition-v1/da7148ec6f5b8a2c0b19.mp3",
+      "spoken": "老师送你一个大大的拥抱，你今天学习得很专心！"
+    },
+    "恭喜你完成今天的认一认，送你一颗闪亮的小星星！": {
+      "file": "voice-recognition-v1/889e6590bb06ec827b21.mp3",
+      "spoken": "恭喜你完成今天的认一认，送你一颗闪亮的小星星！"
+    },
+    "差一点，再看一看。": {
+      "file": "voice-recognition-v1/3537772a7d329f0a7c15.mp3",
+      "spoken": "差一点，再看一看。"
+    },
+    "找对啦！": {
+      "file": "voice-recognition-v1/1b742f6c50d82e699b13.mp3",
+      "spoken": "找对啦！"
+    }
+  }
+}

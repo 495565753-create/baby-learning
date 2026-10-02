@@ -1,0 +1,994 @@
+{
+  "tool": "built-in image_gen",
+  "mode": "original story atlas generation with targeted corrections",
+  "passed_books": 94,
+  "books": {
+    "extra_princess_snowwhite": {
+      "qa": {
+        "status": "pass",
+        "notes": "Six aligned continuous environment scenes: palace path, cottage with exactly seven hats, work trail, apples, cozy waiting interior and garden with exactly seven cups. No people, harmed/sleeping character or coffin depiction. Environment illustrations used as a gentle alternative after the character scene was rejected by the generation service."
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-environment-alternative.json"
+    },
+    "dino_01": {
+      "qa": {
+        "status": "pass",
+        "inspected_at": "2026-10-02T10:09:00+08:00",
+        "notes": "pass: exact 2x3 grid; six nursery beats legible; Qiqi/mother/teacher/rabbit consistent; no text or watermark"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-extra-dino.json"
+    },
+    "dino_02": {
+      "qa": {
+        "status": "pass",
+        "inspected_at": "2026-10-02T10:09:00+08:00",
+        "notes": "pass: exact 2x3 grid; sharing arc and red ball read in order; Qiqi/rabbit/teacher consistent; no text or watermark"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-extra-dino.json"
+    },
+    "dino_03": {
+      "qa": {
+        "status": "pass",
+        "inspected_at": "2026-10-02T10:09:00+08:00",
+        "notes": "pass: exact 2x3 grid; fear, sound discovery, night-light and dream progression clear; no text or watermark"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-extra-dino.json"
+    },
+    "dino_04": {
+      "qa": {
+        "status": "pass",
+        "inspected_at": "2026-10-02T10:09:00+08:00",
+        "notes": "pass: exact 2x3 grid; broken vase, concealment, apology, reassurance and cleanup all present; no text or watermark"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-extra-dino.json"
+    },
+    "dino_05": {
+      "qa": {
+        "status": "pass",
+        "inspected_at": "2026-10-02T10:09:00+08:00",
+        "notes": "pass: exact 2x3 grid; bike, mild fall, tears, parental encouragement, assisted ride and independent ride clear; no text or watermark"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-extra-dino.json"
+    },
+    "dino_06": {
+      "qa": {
+        "status": "pass",
+        "inspected_at": "2026-10-02T10:09:00+08:00",
+        "notes": "pass: exact 2x3 grid; new hedgehog, hesitation, loneliness, cookie offer and friendship progression clear; no text or watermark"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-extra-dino.json"
+    },
+    "extra_zoo_raincrossing": {
+      "qa": {
+        "status": "pass",
+        "inspected_at": "2026-10-02T10:18:00+08:00",
+        "notes": "exact 2x3 grid; rain, broken signal, shelter/barrier, colored flags, zebra crossing, repaired green light and safe ending read in order; Judy/Nick consistent; no text/watermark"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-extra-dino.json"
+    },
+    "extra_life_dentist": {
+      "qa": {
+        "status": "pass",
+        "inspected_at": "2026-10-02T10:28:00+08:00",
+        "notes": "exact 2x3 grid; arrival, tool introduction, mirror exam, treatment, finished tooth/brush instruction and home brushing read in order; child/mother/dentist consistent; clinical scene gentle; no text/watermark"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-extra-dino.json"
+    },
+    "extra_poem_jingyesi": {
+      "qa": {
+        "status": "pass",
+        "inspected_at": "2026-10-02T11:10:00+08:00",
+        "notes": "targeted retry passes: exact 2x3 with one continuous scene per cell; moonlight/frost, raise head, lower head and quiet remembrance clear; no bubble/split/text/watermark"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-extra-dino.json"
+    },
+    "extra_poem_chunxiao": {
+      "qa": {
+        "status": "pass",
+        "inspected_at": "2026-10-02T11:10:00+08:00",
+        "notes": "targeted retry passes: exact 2x3 with one continuous scene per cell; sleep, birds, rain, waking, fallen petals and spring reflection clear; no bubble/split/text/watermark"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-extra-dino.json"
+    },
+    "extra_poem_yonge": {
+      "qa": {
+        "status": "pass",
+        "inspected_at": "2026-10-02T10:45:00+08:00",
+        "notes": "exact 2x3 grid; introduction, calling geese, white feathers/green water, curved-neck song, red feet making ripples, joyful recitation all distinct; Eastern watercolor/3D depth; no printed poem or watermark"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-extra-dino.json"
+    },
+    "extra_ci_rumengling": {
+      "qa": {
+        "status": "pass",
+        "inspected_at": "2026-10-02T10:45:00+08:00",
+        "notes": "exact 2x3 grid; sunset memory, joyful boat ride, entering lotus, startled egrets, lotus detail and lively return sequence clear; character/boat continuity good; no printed poem or watermark"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-extra-dino.json"
+    },
+    "extra_zoo_bluehat": {
+      "qa": {
+        "status": "pass",
+        "inspected_at": "2026-10-02T11:10:00+08:00",
+        "notes": "exact 2x3; lost-hat clue sequence, blue thread, little elephant return, thanks and name tag ending clear; Judy/Nick/family characters consistent; no text/watermark"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-extra-dino.json"
+    },
+    "extra_elsa_snowlight": {
+      "qa": {
+        "status": "pass",
+        "variant": "environment-alternative-after-character-output-moderation",
+        "inspected_at": "2026-10-02T11:32:00+08:00",
+        "notes": "targeted count edit verified visually: exact 2x3; panels1 and5 each contain exactly six separately countable snowflake lanterns; panels2/3/4/6 preserve melting, parasol, shade, repair and care sequence; no text/watermark"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-extra-dino.json"
+    },
+    "extra_elsa_snowfox": {
+      "qa": {
+        "status": "pass",
+        "variant": "environment-alternative-after-character-output-moderation",
+        "inspected_at": "2026-10-02T11:25:00+08:00",
+        "notes": "exact 2x3; lost fox, unsafe ice route, fur/paw clue, crystal markers, mother reunion and notebook/bootprints ending all clear; fox identity consistent; no text/watermark"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-extra-dino.json"
+    },
+    "extra_princess_cinderella": {
+      "qa": {
+        "status": "pass",
+        "variant": "environment-alternative-after-character-output-moderation",
+        "inspected_at": "2026-10-02T11:25:00+08:00",
+        "notes": "exact 2x3 environmental narrative; cottage/invitation, pumpkin carriage/gown/slippers, ballroom/clock, single slipper on steps, recognition still life and garden ending clear; no people/text/watermark"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-extra-dino.json"
+    },
+    "peppa_01": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; six distinct school-arrival-to-home scenes; characters and clothing consistent; no text",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_03": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; six distinct family music scenes; characters consistent; no labels or captions",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_04": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; six distinct outdoor drawing-contest scenes; drawings are scene props, no written text",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_05": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; six distinct ball-play-to-cleanup scenes; character continuity and props clear; no text",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_06": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; lunch sequence from bell and serving through eating fruit and cleanup; stable family cast; no text",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_07": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; six distinct pretend-doctor actions with safe friendly tools; character continuity; no written text",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_08": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; block-house build, tumble, rebuild and finish read clearly; consistent props and characters",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_09": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; arrival, queue, climbing, sliding, encouraging George and group finish all clear; no text",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_10": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; book opening, reading, imagined dinosaur story, family reactions and closing hug are distinct; no text",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_11": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; paper selection, safe cutting, helping, collage, decoration and reveal sequence is clear; no text",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_12": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; outdoor discovery and concrete apple/banana counting scenes; visual quantities only, no written numerals",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_13": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; pretend doctor roleplay across family members with clear safe props; strict geometry and no text",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_14": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; class music lesson progresses through rhythm, instruments, singing, parade and home; no text",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_15": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; six distinct animal-imitation performances with consistent class cast; no text",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_16": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; toy conflict, adult guidance, sharing, chase and family resolution are clear; no text",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_17": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; rainy boredom, cardboard-house creation, roleplay, family play and sunny ending; no written text",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_18": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; sports-day opening, race, long jump, relay, tug-of-war and medals are distinct and readable",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_19": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; sandwich plan, ingredients, safe preparation, layering, cutting and eating sequence is clear; no text",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_20": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; backstage preparation and distinct stage acts lead to ensemble and farewell; no text",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_idiom_01": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; gardening, rabbit-at-stump event, waiting, lesson, neglected field and return to work clearly convey the idiom",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_idiom_02": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; planting, impatience, pulling seedlings, surprise, wilt and lesson map exactly to all six pages",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_idiom_03": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; classroom drawings, missing eyes, finishing touch, praise, explanation and display are clear; no text",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_idiom_04": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; broken fence, deliberate trampoline delay, wolf event, discovery, repair and lesson match all six beats; age-appropriate, no injury detail",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_idiom_05": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; boat ride, toy drop, chalk mark, explanation, failed search and net recovery clearly convey the idiom",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_idiom_06": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x3; dinosaur hall, guide, space simulator, fossil dig, baby animal and departure match all six pages",
+        "geometry": "2x3; source 1254x1254"
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_new_01": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x2 landscape; planting, watering, harvest and family meal are distinct, coherent and text-free",
+        "geometry": "2x2; source 1536x1024"
+      },
+      "columns": 2,
+      "rows": 2,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_new_02": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x2 landscape; scooter play, waiting circle, Suzy turn and friendly sharing finish are clear",
+        "geometry": "2x2; source 1536x1024"
+      },
+      "columns": 2,
+      "rows": 2,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "peppa_new_03": {
+      "qa": {
+        "status": "pass",
+        "notes": "pass: strict 2x2 landscape; rainbow discovery, color walk, river reflection and drawing-book finish match all four pages",
+        "geometry": "2x2; source 1536x1024"
+      },
+      "columns": 2,
+      "rows": 2,
+      "atlas": null,
+      "prompt_file": "prompts-peppa.json"
+    },
+    "paw_01": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-01",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_02": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-01",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_03": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-02",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_04": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-02",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_05": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-03",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_06": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-03",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_07": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-04",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_08": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-04",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_09": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-05",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_10": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-05",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_11": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-06",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_12": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-06",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_13": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-07",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_14": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-07",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_15": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-08",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_16": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-08",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_17": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-09",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_18": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-09",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_19": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-10",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_20": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x3 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 3,
+      "atlas": "rest-atlas-10",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_new_01": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x2 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-11",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_new_02": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x2 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-11",
+      "prompt_file": "prompts-rest.json"
+    },
+    "paw_new_03": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x2 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-12",
+      "prompt_file": "prompts-rest.json"
+    },
+    "zoo_new_01": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x2 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-12",
+      "prompt_file": "prompts-rest.json"
+    },
+    "zoo_new_02": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid, eight uninterrupted cells, no numeral or writing; gray rabbit officer and red fox in green shirt remain recognizable and consistent."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-13",
+      "prompt_file": "prompts-rest.json"
+    },
+    "zoo_new_03": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid, eight uninterrupted cells, no numeral or writing; gray rabbit officer and red fox in green shirt remain recognizable and consistent."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-13",
+      "prompt_file": "prompts-rest.json"
+    },
+    "zoo_new_04": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x2 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-14",
+      "prompt_file": "prompts-rest.json"
+    },
+    "princess_new_01": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x2 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-14",
+      "prompt_file": "prompts-rest.json"
+    },
+    "princess_new_02": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x2 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-15",
+      "prompt_file": "prompts-rest.json"
+    },
+    "princess_new_03": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4x2 grid, expected scene order, coherent characters, no readable text or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-15",
+      "prompt_file": "prompts-rest.json"
+    },
+    "princess_new_04": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid; four coherent underwater music scenes and four coherent princess-and-small-dragon scenes; consistent characters, no text or internal subpanels."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-16",
+      "prompt_file": "prompts-rest.json"
+    },
+    "princess_new_05": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid; four coherent underwater music scenes and four coherent princess-and-small-dragon scenes; consistent characters, no text or internal subpanels."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-16",
+      "prompt_file": "prompts-rest.json"
+    },
+    "idiom_a01": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid with eight uninterrupted one-scene cells; idiom/poem scenes follow row-major order, with no internal subpanels, writing, numeral or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-17",
+      "prompt_file": "prompts-rest.json"
+    },
+    "idiom_a04": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid with eight uninterrupted one-scene cells; idiom/poem scenes follow row-major order, with no internal subpanels, writing, numeral or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-17",
+      "prompt_file": "prompts-rest.json"
+    },
+    "idiom_a06": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid with eight uninterrupted one-scene cells; idiom/poem scenes follow row-major order, with no internal subpanels, writing, numeral or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-17",
+      "prompt_file": "prompts-rest.json"
+    },
+    "idiom_a09": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid with eight uninterrupted one-scene cells; idiom/poem scenes follow row-major order, with no internal subpanels, writing, numeral or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-17",
+      "prompt_file": "prompts-rest.json"
+    },
+    "poem_b01": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid with eight uninterrupted one-scene cells; idiom/poem scenes follow row-major order, with no internal subpanels, writing, numeral or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-17",
+      "prompt_file": "prompts-rest.json"
+    },
+    "poem_b02": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid with eight uninterrupted one-scene cells; idiom/poem scenes follow row-major order, with no internal subpanels, writing, numeral or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-17",
+      "prompt_file": "prompts-rest.json"
+    },
+    "poem_b03": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid with eight uninterrupted one-scene cells; idiom/poem scenes follow row-major order, with no internal subpanels, writing, numeral or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-17",
+      "prompt_file": "prompts-rest.json"
+    },
+    "poem_b05": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid with eight uninterrupted one-scene cells; idiom/poem scenes follow row-major order, with no internal subpanels, writing, numeral or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-17",
+      "prompt_file": "prompts-rest.json"
+    },
+    "poem_b09": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid with eight uninterrupted poem scenes in row-major order; each required landmark/action is distinct, with no writing, internal subpanels or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-18",
+      "prompt_file": "prompts-rest.json"
+    },
+    "poem_33": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid with eight uninterrupted poem scenes in row-major order; each required landmark/action is distinct, with no writing, internal subpanels or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-18",
+      "prompt_file": "prompts-rest.json"
+    },
+    "poem_new_01": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid with eight uninterrupted poem scenes in row-major order; each required landmark/action is distinct, with no writing, internal subpanels or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-18",
+      "prompt_file": "prompts-rest.json"
+    },
+    "poem_new_02": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid with eight uninterrupted poem scenes in row-major order; each required landmark/action is distinct, with no writing, internal subpanels or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-18",
+      "prompt_file": "prompts-rest.json"
+    },
+    "poem_new_03": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid with eight uninterrupted poem scenes in row-major order; each required landmark/action is distinct, with no writing, internal subpanels or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-18",
+      "prompt_file": "prompts-rest.json"
+    },
+    "poem_new_04": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid with eight uninterrupted poem scenes in row-major order; each required landmark/action is distinct, with no writing, internal subpanels or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-18",
+      "prompt_file": "prompts-rest.json"
+    },
+    "poem_new_05": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid with eight uninterrupted poem scenes in row-major order; each required landmark/action is distinct, with no writing, internal subpanels or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-18",
+      "prompt_file": "prompts-rest.json"
+    },
+    "poem_new_06": {
+      "qa": {
+        "status": "pass",
+        "notes": "view_image checked: strict 4×2 grid with eight uninterrupted poem scenes in row-major order; each required landmark/action is distinct, with no writing, internal subpanels or watermark."
+      },
+      "columns": 4,
+      "rows": 2,
+      "atlas": "rest-atlas-18",
+      "prompt_file": "prompts-rest.json"
+    },
+    "extra_life_backpack": {
+      "qa": {
+        "status": "pass",
+        "notes": "Six equal continuous scenes. Page 3 hangs damp blue handkerchief while holding dry yellow cloth; no internal split. Boy, mother, teacher and backpack consistent; no text."
+      },
+      "columns": 2,
+      "rows": 3,
+      "atlas": null,
+      "prompt_file": "prompts-root-retries.json"
+    }
+  }
+}
