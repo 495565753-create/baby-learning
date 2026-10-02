@@ -1,4 +1,4 @@
-const $=s=>document.querySelector(s);const appEl=$('#app');const player=$('#player');
+const $=s=>document.querySelector(s);const appEl=$('#app');const player=$('#player');let voiceRun=0;
 function savedGameMenu(){try{const menu=JSON.parse(sessionStorage.getItem('kid-game-menu-v1')||'null');return menu&&typeof menu==='object'?menu:{}}catch{return{}}}
 const gameMenu=savedGameMenu();
 const state={gameMenu,gameCategory:gameMenu.category,page:new URLSearchParams(location.search).get('section')==='games'?'games':'home',stack:[],book:null,pageNo:0,muted:false,readerPaused:false,stars:+localStorage.getItem('kid-stars-v2')||0,favs:JSON.parse(localStorage.getItem('kid-favs-v2')||'[]')};
@@ -90,19 +90,22 @@ const fireflyPoints=[[14,78],[26,57],[18,34],[39,20],[55,40],[72,22],[85,45],[68
 function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function voiceKey(text,lang){return `${String(lang).toLowerCase().startsWith('en')?'en':'zh'}|${text}`}
 function playSpoken(text,lang='zh-CN',onend=null){
+  const run=++voiceRun;
   if(state.muted){onend?.();return}
   const src=window.VOICE_MAP?.[voiceKey(text,lang)];
+  const fallback=()=>{if(run===voiceRun)fallbackSpeech(text,lang,onend,run)};
   if(src){
-    player.onended=onend;player.onerror=()=>fallbackSpeech(text,lang,onend);player.src=src;player.play().catch(()=>fallbackSpeech(text,lang,onend));return;
+    player.onended=()=>{if(run===voiceRun)onend?.()};player.onerror=fallback;player.src=src;player.play().catch(error=>{if(error?.name!=='AbortError')fallback()});return;
   }
-  fallbackSpeech(text,lang,onend);
+  fallback();
 }
-function fallbackSpeech(text,lang,onend){
+function fallbackSpeech(text,lang,onend,run=voiceRun){
+  if(run!==voiceRun)return;
   player.onended=null;player.onerror=null;player.pause();player.removeAttribute('src');
-  if(!window.speechSynthesis){onend?.();return}const u=new SpeechSynthesisUtterance(text);u.lang=lang;u.rate=.82;u.pitch=1.08;u.onend=onend;speechSynthesis.speak(u)
+  if(!window.speechSynthesis){onend?.();return}const u=new SpeechSynthesisUtterance(text);u.lang=lang;u.rate=.82;u.pitch=1.08;u.onend=()=>{if(run===voiceRun)onend?.()};speechSynthesis.speak(u)
 }
 function speak(text,lang='zh-CN'){stopAudio();playSpoken(text,lang)}
-function stopAudio(){player.pause();player.onended=null;player.onerror=null;player.removeAttribute('src');if(window.speechSynthesis)speechSynthesis.cancel()}
+function stopAudio(){voiceRun++;player.pause();player.onended=null;player.onerror=null;player.removeAttribute('src');if(window.speechSynthesis)speechSynthesis.cancel()}
 function go(page,data=null,push=true){if(state.page==='games'&&page!=='games')rememberGameMenu();stopInteractiveGame();stopAudio();if(state.page==='reader'&&page!=='reader'){state.readerAuto=false;state.readerPaused=false}if(push&&state.page!==page)state.stack.push({page:state.page,book:state.book,pageNo:state.pageNo});state.page=page;if(data?.book!==undefined)state.book=data.book;if(data?.pageNo!==undefined)state.pageNo=data.pageNo;render();if(['coloring','draw','piano'].includes(page))creativeGameHelp()}
 function back(){if(state.page==='games')rememberGameMenu();stopInteractiveGame();stopAudio();const last=state.stack.pop();if(!last)return go('home',null,false);state.page=last.page;state.book=last.book;state.pageNo=last.pageNo;render()}
 function reward(){state.stars++;localStorage.setItem('kid-stars-v2',state.stars);$('#stars').textContent=state.stars}
@@ -119,7 +122,7 @@ function openBook(id,n=0){const b=(window.BOOKS||[]).find(x=>x.id===id);if(!b)re
 function pageVisual(b,n,mode='stopped'){const p=b.pages[n]||{},playing=mode==='playing',paused=mode==='paused',control=`<button class="story-touch" onclick="toggleAutoRead()" aria-label="${playing?'暂停故事':paused?'继续播放故事':'播放故事'}">${playing?'⏸ 点画面暂停':paused?'▶ 点画面继续':'▶ 点画面播放'}</button>`,cls=playing?'story-playing':paused?'story-paused':'';if(p.emoji)return `<div class="story-picture story-card-art story-scene theme-${esc(b.theme||'garden')} ${cls}"><span class="scene-cloud one">☁️</span><span class="scene-cloud two">☁️</span><span class="scene-orb"></span><span class="scene-emoji">${esc(p.emoji)}</span><i>✦</i>${control}</div>`;if(customArt.has(b.id)){const col=n%2,row=Math.floor(n/2);return `<div class="story-picture sprite-page ${cls}"><img src="${artSrc(b)}" style="left:-${col*100}%;top:-${row*100}%" onerror="artFallback(this)" alt="${esc(b.title)}第${n+1}页">${control}</div>`}let src=p.img||`${b.img_prefix.replace(/\/?$/,'/')}page${n+1}.webp`;return `<div class="story-picture ${cls}"><img src="${esc(src)}" onerror="artFallback(this)" alt="${esc(b.title)}第${n+1}页">${control}</div>`}
 function renderReader(){const b=state.book,p=b.pages[state.pageNo],n=state.pageNo,total=b.pages.length,autoClass=state.readerAuto?(state.readerPaused?'paused':'playing'):'';return `<div class="reader"><div class="reader-top"><button class="round-btn" onclick="state.readerAuto=false;state.readerPaused=false;go('stories')">←</button><h1>${esc(b.title)}</h1><button class="round-btn" onclick="toggleFav('${b.id}')">${state.favs.includes(b.id)?'❤️':'🤍'}</button></div><div class="progress-dots">${b.pages.map((_,i)=>`<i class="dot ${i===n?'on':''}"></i>`).join('')}</div><article class="reader-stage">${pageVisual(b,n,state.readerAuto?(state.readerPaused?'paused':'playing'):'stopped')}<div class="story-text">${esc(p.text).replace(/\n/g,'<br>')}</div></article><div class="reader-controls"><button class="control" onclick="turn(-1)" ${n===0?'disabled':''}>← 上一页</button><button class="control primary" onclick="readPage()">🔊 读这一页</button><button class="control" onclick="turn(1)">${n===total-1?'读完啦':'下一页 →'}</button></div><button class="auto-read-btn ${autoClass}" onclick="toggleAutoRead()">${state.readerPaused?`▶ 继续播放 · 第 ${n+1}/${total} 页`:state.readerAuto?`⏸ 暂停一下 · 第 ${n+1}/${total} 页`:'▶ 从这一页开始连续听故事'}</button></div>`}
 function readPage(){state.readerAuto=false;state.readerPaused=false;stopAudio();render();playSpoken(state.book.pages[state.pageNo].text)}
-function toggleAutoRead(){if(state.readerAuto&&!state.readerPaused){state.readerPaused=true;player.pause();if(window.speechSynthesis?.speaking)speechSynthesis.pause();render();return}if(state.readerAuto&&state.readerPaused){state.readerPaused=false;render();if(player.src){player.play().catch(()=>{state.readerAuto=false;render()})}else if(window.speechSynthesis?.paused)speechSynthesis.resume();else readAutoPage();return}if(state.muted){state.muted=false;$('#soundBtn').textContent='🔊'}state.readerAuto=true;state.readerPaused=false;stopAudio();render();readAutoPage()}
+function toggleAutoRead(){if(state.readerAuto&&!state.readerPaused){state.readerPaused=true;player.pause();if(window.speechSynthesis?.speaking)speechSynthesis.pause();render();return}if(state.readerAuto&&state.readerPaused){state.readerPaused=false;render();if(player.src){const run=voiceRun;player.play().catch(error=>{if(run!==voiceRun||error?.name==='AbortError')return;state.readerAuto=false;render()})}else if(window.speechSynthesis?.paused)speechSynthesis.resume();else readAutoPage();return}if(state.muted){state.muted=false;$('#soundBtn').textContent='🔊'}state.readerAuto=true;state.readerPaused=false;stopAudio();render();readAutoPage()}
 function readAutoPage(){if(!state.readerAuto||state.readerPaused||state.page!=='reader'||!state.book)return;playSpoken(state.book.pages[state.pageNo].text,'zh-CN',()=>{if(!state.readerAuto||state.readerPaused||state.page!=='reader')return;if(state.pageNo>=state.book.pages.length-1){state.readerAuto=false;state.readerPaused=false;reward();render();speak('故事读完啦');return}state.pageNo++;localStorage.setItem('kid-recent-v2',JSON.stringify({id:state.book.id,title:state.book.title,page:state.pageNo}));render();setTimeout(readAutoPage,250)})}
 function turn(d){state.readerAuto=false;state.readerPaused=false;if(state.pageNo+d>=state.book.pages.length){reward();go('stories');return}state.pageNo=Math.max(0,state.pageNo+d);localStorage.setItem('kid-recent-v2',JSON.stringify({id:state.book.id,title:state.book.title,page:state.pageNo}));stopAudio();render()}
 function toggleFav(id){state.favs=state.favs.includes(id)?state.favs.filter(x=>x!==id):[...state.favs,id];localStorage.setItem('kid-favs-v2',JSON.stringify(state.favs));render()}
@@ -225,7 +228,7 @@ const courseUnitIcons={
 };
 function unitIcon(unit){return courseUnitIcons[unit]||'⭐'}
 function courseSpeech(c,step){if(step===0)return `果粒橙小朋友，我们今天来学${c.title}。${c.intro}`;if(step===1)return `看一看，跟着老师一起想。${c.demo}`;return `轮到你啦。${c.question}选项一，${c.choices[0]}。选项二，${c.choices[1]}。选项三，${c.choices[2]}。`}
-function playClassroomText(text,onend=null){if(state.muted){onend?.();return}const src=window.VOICE_MAP?.[voiceKey(text,'zh-CN')];if(!src){console.warn('课堂固定配音缺失',text);onend?.();return}player.onended=onend;player.onerror=()=>{console.warn('课堂配音加载失败',src);player.removeAttribute('src');onend?.()};player.src=src;player.play().catch(()=>{player.removeAttribute('src');onend?.()})}
+function playClassroomText(text,onend=null){const run=++voiceRun;if(state.muted){onend?.();return}const src=window.VOICE_MAP?.[voiceKey(text,'zh-CN')];if(!src){console.warn('课堂固定配音缺失',text);onend?.();return}const finish=()=>{if(run===voiceRun)onend?.()},failed=()=>{if(run!==voiceRun)return;console.warn('课堂配音加载失败',src);player.removeAttribute('src');finish()};player.onended=finish;player.onerror=failed;player.src=src;player.play().catch(error=>{if(error?.name!=='AbortError')failed()})}
 function renderSchool(){
   const all=window.GRADE_ONE_COURSES||[],subject=state.subject||'语文',items=all.filter(x=>x.subject===subject),units=[...new Set(items.map(x=>x.unit))],done=completedCourses(),doneCount=items.filter(x=>done.includes(courseKey(x))).length,percent=Math.round(doneCount/items.length*100),activeUnit=units.includes(state.courseUnit)?state.courseUnit:units[0],unitItems=items.filter(x=>x.unit===activeUnit),next=items.find(x=>!done.includes(courseKey(x)))||items[0],theme=subject==='语文'?'chinese':'math';
   state.courseUnit=activeUnit;
