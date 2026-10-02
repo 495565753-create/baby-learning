@@ -93,9 +93,11 @@ function playSpoken(text,lang='zh-CN',onend=null){
   const run=++voiceRun;
   if(state.muted){onend?.();return}
   const src=window.VOICE_MAP?.[voiceKey(text,lang)];
-  const fallback=()=>{if(run===voiceRun)fallbackSpeech(text,lang,onend,run)};
+  let fallbackStarted=false,finished=false;
+  const finish=()=>{if(run!==voiceRun||finished)return;finished=true;onend?.()};
+  const fallback=()=>{if(run!==voiceRun||fallbackStarted||finished)return;fallbackStarted=true;fallbackSpeech(text,lang,finish,run)};
   if(src){
-    player.onended=()=>{if(run===voiceRun)onend?.()};player.onerror=fallback;player.src=src;player.play().catch(error=>{if(error?.name!=='AbortError')fallback()});return;
+    player.onended=finish;player.onerror=fallback;player.src=src;player.play().catch(error=>{if(error?.name==='AbortError'&&state.page==='reader'&&state.readerPaused)return;fallback()});return;
   }
   fallback();
 }
@@ -228,7 +230,7 @@ const courseUnitIcons={
 };
 function unitIcon(unit){return courseUnitIcons[unit]||'⭐'}
 function courseSpeech(c,step){if(step===0)return `果粒橙小朋友，我们今天来学${c.title}。${c.intro}`;if(step===1)return `看一看，跟着老师一起想。${c.demo}`;return `轮到你啦。${c.question}选项一，${c.choices[0]}。选项二，${c.choices[1]}。选项三，${c.choices[2]}。`}
-function playClassroomText(text,onend=null){const run=++voiceRun;if(state.muted){onend?.();return}const src=window.VOICE_MAP?.[voiceKey(text,'zh-CN')];if(!src){console.warn('课堂固定配音缺失',text);onend?.();return}const finish=()=>{if(run===voiceRun)onend?.()},failed=()=>{if(run!==voiceRun)return;console.warn('课堂配音加载失败',src);player.removeAttribute('src');finish()};player.onended=finish;player.onerror=failed;player.src=src;player.play().catch(error=>{if(error?.name!=='AbortError')failed()})}
+function playClassroomText(text,onend=null){const run=++voiceRun;if(state.muted){onend?.();return}const src=window.VOICE_MAP?.[voiceKey(text,'zh-CN')];if(!src){console.warn('课堂固定配音缺失',text);onend?.();return}let settled=false;const finish=()=>{if(run!==voiceRun||settled)return;settled=true;onend?.()},failed=()=>{if(run!==voiceRun||settled)return;console.warn('课堂配音加载失败',src);player.removeAttribute('src');finish()};player.onended=finish;player.onerror=failed;player.src=src;player.play().catch(failed)}
 function renderSchool(){
   const all=window.GRADE_ONE_COURSES||[],subject=state.subject||'语文',items=all.filter(x=>x.subject===subject),units=[...new Set(items.map(x=>x.unit))],done=completedCourses(),doneCount=items.filter(x=>done.includes(courseKey(x))).length,percent=Math.round(doneCount/items.length*100),activeUnit=units.includes(state.courseUnit)?state.courseUnit:units[0],unitItems=items.filter(x=>x.unit===activeUnit),next=items.find(x=>!done.includes(courseKey(x)))||items[0],theme=subject==='语文'?'chinese':'math';
   state.courseUnit=activeUnit;
