@@ -14,6 +14,15 @@ for (const file of ['books.js', 'books-extra.js', 'story-art-map.js', 'recogniti
 }
 const readJson = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
 
+test('所有固定配音映射都指向可读取的音频文件，不能留下失效旧链接', () => {
+  for (const [text, file] of Object.entries(context.VOICE_MAP)) {
+    assert.equal(typeof file, 'string', text);
+    const asset = path.join(root, file.split('?')[0]);
+    assert.ok(fs.existsSync(asset), `${text}: ${file}`);
+    assert.ok(fs.statSync(asset).size > 1000, file);
+  }
+});
+
 test('每张认知卡、找图题和鼓励语都有对应的新版录音', () => {
   const data = context.RECOGNITION;
   const manifest = readJson('voice-recognition-v1/manifest.json');

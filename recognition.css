@@ -297,6 +297,32 @@ img.know-category-picture { object-fit: cover; }
   min-height: 42px;
   margin: 0 4px 8px;
 }
+.know-swipe-hint {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-width: 0;
+  color: #62726b;
+  font-size: 12px;
+  font-weight: 900;
+  font-style: normal;
+}
+.know-swipe-hint i { font-style: normal; }
+.know-card-count .know-swipe-hint b { color: inherit; font-size: inherit; }
+.know-swipe-card {
+  --know-swipe-x: 0px;
+  touch-action: pan-y pinch-zoom;
+  user-select: none;
+  transform: translate3d(var(--know-swipe-x), 0, 0);
+  transition: transform .18s ease, box-shadow .18s ease;
+  will-change: transform;
+}
+.know-swipe-card .know-image-button { touch-action: pan-y pinch-zoom; }
+.know-swipe-card.is-swiping {
+  transition: none;
+  box-shadow: 0 15px 32px rgba(62, 79, 66, .2);
+}
 .know-card-count span {
   padding: 6px 10px;
   border-radius: 13px;
@@ -597,6 +623,8 @@ img.know-category-picture { object-fit: cover; }
   .know-lesson-nav > strong { font-size: 13px; }
   .know-daily-dots { gap: 4px; }
   .know-daily-dots i { width: 32px; height: 32px; }
+  .know-swipe-hint { gap: 2px; font-size: 11px; }
+  .know-swipe-hint i { font-size: 10px; }
 }
 
 /* Small children can turn cards without finding a button below the fold. */
@@ -640,6 +668,7 @@ img.know-category-picture { object-fit: cover; }
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .know-swipe-card { transition: none; }
   .know-confetti i,
   .know-quiz-choice.wrong { animation: none !important; }
 }

@@ -23,6 +23,15 @@
     timer: 0,
     praiseText: ''
   };
+  const swipe = {
+    pointerId: null,
+    card: null,
+    startX: 0,
+    startY: 0,
+    axis: '',
+    blockUntil: 0,
+    suppressClickUntil: 0
+  };
   let progress = null;
 
   function data() {
@@ -104,6 +113,7 @@
   }
 
   function rerender() {
+    resetCategorySwipe();
     try {
       if (typeof render === 'function') {
         render();
@@ -408,9 +418,9 @@
     const known = progress.recognized.includes(key);
     return `<section class="know-page know-lesson-page">
       ${lessonNav(`${category.icon} ${category.title}`)}
-      <div class="know-card-count"><span>${known ? '✓ 见过啦' : '新朋友'}</span><b>${ui.itemIndex + 1} / ${category.items.length}</b></div>
-      <article class="know-big-card">
-        <button class="know-image-button" onclick="KNOW.actions.speakCurrent()" aria-label="听${escapeHtml(item.word)}的介绍">${picture(entry, 'know-big-picture')}<span>🔊 点图片听一听</span></button>
+      <div class="know-card-count"><span>${known ? '✓ 见过啦' : '新朋友'}</span><small class="know-swipe-hint" aria-hidden="true"><i>👈</i><b>左右滑</b><i>👉</i></small><b>${ui.itemIndex + 1} / ${category.items.length}</b></div>
+      <article class="know-big-card know-swipe-card" data-know-category-swipe aria-label="${escapeHtml(item.word)}，可以左右滑动切换">
+        <button class="know-image-button" onclick="KNOW.actions.speakCurrent(event)" aria-label="听${escapeHtml(item.word)}的介绍">${picture(entry, 'know-big-picture')}<span>🔊 点图片听一听</span></button>
         <div class="know-word-row"><h1>${escapeHtml(item.word)}</h1><button class="know-heart ${favorite ? 'is-favorite' : ''}" aria-pressed="${favorite}" onclick="KNOW.actions.toggleFavorite()" aria-label="${favorite ? '取消收藏' : '收藏'}${escapeHtml(item.word)}">${favorite ? '❤️' : '🤍'}</button></div>
         <p>${escapeHtml(item.text)}</p>
         <button class="know-listen" onclick="KNOW.actions.speakCurrent()">🔊 听老师说</button>
@@ -645,6 +655,7 @@
   }
 
   function turn(delta) {
+    resetCategorySwipe();
     const category = categoryById(ui.categoryId);
     if (!category) return;
     stopSpeaking();
@@ -661,6 +672,7 @@
     if (!ownsLesson) return false;
     clearTimeout(ui.timer);
     ui.timer = 0;
+    resetCategorySwipe(true);
     stopSpeaking();
     ui.active = false;
     ui.mode = 'hub';
@@ -673,6 +685,7 @@
   function goHome() {
     clearTimeout(ui.timer);
     ui.timer = 0;
+    resetCategorySwipe(true);
     stopSpeaking();
     ui.active = false;
     ui.mode = 'hub';
@@ -695,6 +708,100 @@
     if (entry) openCategory(entry.category.id, entry.index);
   }
 
+  function swipeTurnFor(dx, dy, width) {
+    const x = Number(dx) || 0;
+    const y = Number(dy) || 0;
+    const cardWidth = Math.max(1, Number(width) || 300);
+    const threshold = Math.max(44, Math.min(72, cardWidth * 0.18));
+    if (Math.abs(x) < threshold || Math.abs(x) < Math.abs(y) * 1.2) return 0;
+    return x < 0 ? 1 : -1;
+  }
+
+  function swipeAllowed() {
+    const shared = rootState();
+    return Boolean(ui.active && ui.mode === 'category' && (!shared || (shared.page === 'lesson' && shared.learn === LESSON_KEY)));
+  }
+
+  function resetCategorySwipe(full) {
+    const card = swipe.card;
+    const pointerId = swipe.pointerId;
+    swipe.pointerId = null;
+    swipe.card = null;
+    swipe.axis = '';
+    if (card) {
+      try {
+        if (pointerId !== null && card.hasPointerCapture?.(pointerId)) card.releasePointerCapture(pointerId);
+      } catch (_) {}
+      card.classList?.remove('is-swiping');
+      card.style?.removeProperty('--know-swipe-x');
+    }
+    if (full) {
+      swipe.blockUntil = 0;
+      swipe.suppressClickUntil = 0;
+    }
+  }
+
+  function swipePointerDown(event) {
+    if (!swipeAllowed() || Date.now() < swipe.blockUntil || event.isPrimary === false || (event.button != null && event.button !== 0)) return;
+    if (event.target?.closest?.('.know-heart, .know-listen')) return;
+    resetCategorySwipe();
+    swipe.pointerId = event.pointerId;
+    swipe.card = event.currentTarget;
+    swipe.startX = event.clientX;
+    swipe.startY = event.clientY;
+  }
+
+  function swipePointerMove(event) {
+    if (event.pointerId !== swipe.pointerId || !swipe.card) return;
+    const dx = event.clientX - swipe.startX;
+    const dy = event.clientY - swipe.startY;
+    if (!swipe.axis) {
+      if (Math.abs(dx) < 10 && Math.abs(dy) < 10) return;
+      if (Math.abs(dy) > Math.abs(dx)) {
+        resetCategorySwipe();
+        return;
+      }
+      if (Math.abs(dx) < 12 || Math.abs(dx) < Math.abs(dy) * 1.2) return;
+      swipe.axis = 'x';
+      swipe.card.classList?.add('is-swiping');
+      try { swipe.card.setPointerCapture?.(event.pointerId); } catch (_) {}
+    }
+    if (swipe.axis !== 'x') return;
+    if (event.cancelable) event.preventDefault();
+    const offset = Math.max(-86, Math.min(86, dx));
+    swipe.card.style?.setProperty('--know-swipe-x', `${offset}px`);
+  }
+
+  function swipePointerEnd(event) {
+    if (event.pointerId !== swipe.pointerId || !swipe.card) return;
+    const card = swipe.card;
+    const dx = event.clientX - swipe.startX;
+    const dy = event.clientY - swipe.startY;
+    const wasHorizontal = swipe.axis === 'x' && Math.abs(dx) >= 12;
+    const delta = wasHorizontal ? swipeTurnFor(dx, dy, card.getBoundingClientRect?.().width) : 0;
+    resetCategorySwipe();
+    if (!wasHorizontal) return;
+    if (event.cancelable) event.preventDefault();
+    swipe.blockUntil = Date.now() + 240;
+    swipe.suppressClickUntil = Date.now() + 420;
+    if (delta) turn(delta);
+  }
+
+  function swipePointerCancel(event) {
+    if (event.pointerId === swipe.pointerId) resetCategorySwipe();
+  }
+
+  function bindCategorySwipe(card) {
+    if (!card || card.dataset?.knowSwipeBound === '1') return false;
+    if (card.dataset) card.dataset.knowSwipeBound = '1';
+    card.addEventListener?.('pointerdown', swipePointerDown);
+    card.addEventListener?.('pointermove', swipePointerMove, { passive: false });
+    card.addEventListener?.('pointerup', swipePointerEnd);
+    card.addEventListener?.('pointercancel', swipePointerCancel);
+    card.addEventListener?.('lostpointercapture', swipePointerCancel);
+    return true;
+  }
+
   function afterRender() {
     const shared = rootState();
     const isOpen = Boolean(shared && shared.page === 'lesson' && shared.learn === LESSON_KEY && ui.active);
@@ -704,11 +811,22 @@
     }
     const body = root.document?.body;
     body?.classList?.toggle('recognition-lesson-open', isOpen);
+    if (isOpen && ui.mode === 'category') {
+      const card = root.document?.querySelector?.('[data-know-category-swipe]');
+      if (swipe.card && swipe.card !== card) resetCategorySwipe();
+      bindCategorySwipe(card);
+    } else resetCategorySwipe(true);
     return isOpen;
   }
 
   const actions = {
-    speakCurrent() { speakEntry(currentCategoryEntry()); },
+    speakCurrent(event) {
+      if (event && Date.now() < swipe.suppressClickUntil) {
+        event.preventDefault?.();
+        return;
+      }
+      speakEntry(currentCategoryEntry());
+    },
     speakDaily() { speakEntry(currentDailyEntry()); },
     speakQuestion() {
       init();
@@ -749,8 +867,10 @@
     _test: {
       atlasStyle,
       entryFromKey,
+      swipeTurnFor,
+      bindCategorySwipe,
       getProgress() { init(); return JSON.parse(JSON.stringify(progress)); },
-      reset() { progress = null; Object.assign(ui, { active: false, mode: 'hub', categoryId: '', itemIndex: 0, dailyIndex: 0, reviewing: false, quizLocked: false, wrongKey: '', praiseText: '' }); }
+      reset() { resetCategorySwipe(true); progress = null; Object.assign(ui, { active: false, mode: 'hub', categoryId: '', itemIndex: 0, dailyIndex: 0, reviewing: false, quizLocked: false, wrongKey: '', praiseText: '' }); }
     }
   };
 

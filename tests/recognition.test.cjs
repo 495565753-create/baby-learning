@@ -118,6 +118,133 @@ test('图集定位使用4列3行且图片框为正方形', () => {
   assert.match(css, /@media \(orientation: landscape\)/);
 });
 
+test('自由分类卡支持横滑，每日任务不接入手势', () => {
+  const sandbox = loadRecognition();
+  sandbox.KNOW.renderHub();
+  sandbox.KNOW.openCategory('self_body');
+  assert.match(sandbox.KNOW.renderLesson(), /data-know-category-swipe/);
+  assert.match(sandbox.KNOW.renderLesson(), /左右滑/);
+  sandbox.KNOW.openDaily();
+  assert.doesNotMatch(sandbox.KNOW.renderLesson(), /data-know-category-swipe/);
+
+  const decide = sandbox.KNOW._test.swipeTurnFor;
+  assert.equal(decide(-80, 8, 300), 1, '向左滑下一张');
+  assert.equal(decide(80, 8, 300), -1, '向右滑上一张');
+  assert.equal(decide(-35, 2, 300), 0, '距离太短不翻卡');
+  assert.equal(decide(-90, 85, 300), 0, '斜向且偏竖直时不翻卡');
+});
+
+function categorySwipeHarness() {
+  const listeners = {};
+  const classes = new Set();
+  const styles = new Map();
+  let captureId = null;
+  const card = {
+    dataset: {},
+    classList: {
+      add(name) { classes.add(name); },
+      remove(name) { classes.delete(name); }
+    },
+    style: {
+      setProperty(name, value) { styles.set(name, value); },
+      removeProperty(name) { styles.delete(name); }
+    },
+    addEventListener(type, handler) { listeners[type] = handler; },
+    getBoundingClientRect() { return { width: 300 }; },
+    setPointerCapture(id) { captureId = id; },
+    hasPointerCapture(id) { return captureId === id; },
+    releasePointerCapture(id) {
+      if (captureId !== id) return;
+      captureId = null;
+      listeners.lostpointercapture?.({ pointerId: id });
+    }
+  };
+  const document = {
+    body: { classList: { toggle() {} } },
+    querySelector() { return null; }
+  };
+  let spoken = '';
+  const sandbox = loadRecognition({
+    state: { page: 'learn', learn: '', stack: [] },
+    document,
+    stopAudio() {},
+    playSpoken(text) { spoken = text; }
+  });
+  sandbox.render = () => {
+    sandbox.lastHtml = sandbox.state.page === 'lesson' ? sandbox.KNOW.renderLesson() : sandbox.KNOW.renderHub();
+    sandbox.KNOW.afterRender();
+  };
+  sandbox.go = (page, data, push = true) => {
+    if (push && page !== sandbox.state.page) sandbox.state.stack.push({ page: sandbox.state.page });
+    sandbox.state.page = page;
+    sandbox.render();
+  };
+  sandbox.render();
+  sandbox.KNOW.openCategory('self_body');
+  sandbox.KNOW._test.bindCategorySwipe(card);
+  function fire(type, x, y, targetKind = 'card') {
+    let prevented = false;
+    const target = {
+      closest(selector) {
+        return targetKind === 'heart' && selector.includes('.know-heart') ? {} : null;
+      }
+    };
+    listeners[type]?.({
+      pointerId: 7,
+      pointerType: 'touch',
+      isPrimary: true,
+      button: 0,
+      clientX: x,
+      clientY: y,
+      currentTarget: card,
+      target,
+      cancelable: true,
+      preventDefault() { prevented = true; }
+    });
+    return prevented;
+  }
+  return { sandbox, card, classes, styles, fire, get spoken() { return spoken; }, get captureId() { return captureId; } };
+}
+
+test('横滑只翻一张，竖向、收藏按钮和pointercancel不翻卡', () => {
+  const swipe = categorySwipeHarness();
+  assert.match(swipe.sandbox.KNOW.renderLesson(), /头发/);
+  swipe.fire('pointerdown', 250, 220);
+  assert.equal(swipe.fire('pointermove', 155, 226), true);
+  assert.ok(swipe.classes.has('is-swiping'));
+  assert.equal(swipe.fire('pointerup', 150, 226), true);
+  assert.match(swipe.sandbox.KNOW.renderLesson(), /眼睛/);
+  swipe.fire('pointerup', 80, 226);
+  assert.match(swipe.sandbox.KNOW.renderLesson(), /眼睛/, '同一指针不能重复翻卡');
+  swipe.fire('pointerdown', 250, 220);
+  swipe.fire('pointermove', 140, 220);
+  swipe.fire('pointerup', 135, 220);
+  assert.match(swipe.sandbox.KNOW.renderLesson(), /眼睛/, '翻卡瞬间的重复动作被锁住');
+
+  const vertical = categorySwipeHarness();
+  vertical.fire('pointerdown', 180, 160);
+  assert.equal(vertical.fire('pointermove', 186, 255), false);
+  vertical.fire('pointerup', 186, 270);
+  assert.match(vertical.sandbox.KNOW.renderLesson(), /头发/);
+
+  const heart = categorySwipeHarness();
+  heart.fire('pointerdown', 240, 300, 'heart');
+  heart.fire('pointermove', 120, 302, 'heart');
+  heart.fire('pointerup', 110, 302, 'heart');
+  assert.match(heart.sandbox.KNOW.renderLesson(), /头发/);
+
+  const cancelled = categorySwipeHarness();
+  cancelled.fire('pointerdown', 240, 200);
+  cancelled.fire('pointermove', 210, 202);
+  assert.ok(cancelled.classes.has('is-swiping'));
+  cancelled.fire('pointercancel', 210, 202);
+  assert.equal(cancelled.captureId, null);
+  assert.equal(cancelled.classes.has('is-swiping'), false);
+  assert.equal(cancelled.styles.has('--know-swipe-x'), false);
+  cancelled.fire('pointerup', 100, 202);
+  assert.match(cancelled.sandbox.KNOW.renderLesson(), /头发/);
+});
+
 function dailyHarness() {
   let day = '2026-10-02T10:00:00+08:00';
   const timers = new Map();
