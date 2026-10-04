@@ -9,7 +9,8 @@
     { id: 1, icon: '🌱', title: '第一站', text: '先认识身边的我' },
     { id: 2, icon: '🚲', title: '第二站', text: '再去吃饭和出门' },
     { id: 3, icon: '🏫', title: '第三站', text: '看看学习和社区' },
-    { id: 4, icon: '🌍', title: '第四站', text: '探索自然和安全' }
+    { id: 4, icon: '🌍', title: '第四站', text: '探索自然和安全' },
+    { id: 5, icon: '✨', title: '第五站', text: '和家人认识科技与世界' }
   ];
   const ui = {
     active: false,
@@ -188,8 +189,9 @@
 
   function makeQuestions(entries, date) {
     const questions = [];
-    const safeEntries = entries.filter(entry => entry.category.id !== 'family');
-    const fallbackEntries = allEntries().filter(entry => entry.category.id !== 'family');
+    const canQuiz = entry => entry.category.id !== 'family' && entry.category.quiz !== false && entry.item.quiz !== false;
+    const safeEntries = entries.filter(canQuiz);
+    const fallbackEntries = allEntries().filter(canQuiz);
     const questionTargets = seededOrder(safeEntries.length >= 3 ? safeEntries : fallbackEntries, `${date}|targets`).slice(0, 3);
     questionTargets.forEach((target, questionIndex) => {
       let distractors = safeEntries.filter(x => x.key !== target.key && x.category.id !== target.category.id);
@@ -209,7 +211,7 @@
     const source = fresh.length >= 6 ? fresh : entries;
     const selected = [];
     const used = new Set();
-    [1, 2, 3, 4].forEach(level => {
+    LEVELS.map(level => level.id).forEach(level => {
       const levelEntries = source.filter(x => x.category.level === level);
       const categoryIds = seededOrder(
         [...new Set(levelEntries.map(x => x.category.id))],
@@ -286,6 +288,8 @@
   }
 
   function picture(entry, className) {
+    const direct = className === 'know-category-picture' ? entry.category.cover : entry.item.image;
+    if (direct) return `<img class="know-picture know-modern-picture ${className || ''}" src="${escapeHtml(direct)}" loading="lazy" decoding="async" alt="${escapeHtml(entry.item.word)}">`;
     if (className === 'know-category-picture') return `<img class="know-picture know-category-picture" src="assets/recognition-v1/covers/${entry.category.id}.webp" loading="lazy" decoding="async" alt="${escapeHtml(entry.item.word)}">`;
     return `<span class="know-picture ${className || ''}" style="${atlasStyle(entry.category, entry.index)}" role="img" aria-label="${escapeHtml(entry.item.word)}"></span>`;
   }
@@ -346,6 +350,10 @@
         <span class="know-daily-progress"><strong>${finished ? '✓' : seenCount}</strong><small>${finished ? '完成' : '/ 6'}</small></span>
       </button>
       ${renderFavoriteStrip()}
+      <section class="know-modern-feature" aria-labelledby="knowModernTitle">
+        <div class="know-section-title"><span>✨</span><div><h2 id="knowModernTitle">科技和世界</h2><p>先看科技，再看屏幕，最后认识地球与和平</p></div></div>
+        <div class="know-modern-grid">${data().categories.filter(category => category.modern).map(renderCategory).join('')}</div>
+      </section>
       <div class="know-route-title"><span>🗺️</span><div><h2>自由看一看</h2><p>从第一站开始，会更轻松</p></div></div>
       ${LEVELS.map(level => {
         const categories = data().categories.filter(category => category.level === level.id);
@@ -396,6 +404,48 @@
       openLesson('quiz');
       actions.speakQuestion();
     }
+  }
+
+  function openModern(topic) {
+    init();
+    const categories = data().categories.filter(category => category.modern);
+    const chosen = categories.find(category => category.id === topic);
+    if (chosen) return openCategory(chosen.id);
+    for (const category of categories) {
+      const query = String(topic || '').replace(/\s/g, '').toLowerCase();
+      const index = category.items.findIndex(item => item.id === topic || (query && item.word.replace(/\s/g, '').toLowerCase() === query) || (query === 'ai' && item.word.startsWith('AI ')));
+      if (index >= 0) return openCategory(category.id, index);
+    }
+    if (categories.length) openCategory(categories[0].id);
+  }
+
+  function openFavorites() {
+    init();
+    openLesson('favorites');
+  }
+
+  function renderFavorites() {
+    const entries = progress.favorites.map(entryFromKey).filter(Boolean);
+    return `<section class="know-page know-favorites-page">
+      ${lessonNav('❤️ 我喜欢的')}
+      <div class="know-favorites-intro"><span aria-hidden="true">❤️</span><h1>我喜欢的卡片</h1><p>${entries.length ? '点一张，老师再讲给你听。' : '看卡片时点一下小爱心，就能放到这里。'}</p></div>
+      ${entries.length ? `<div class="know-favorites-grid">${entries.map(entry => `<button class="know-favorite" onclick="KNOW.actions.openFavorite('${entry.key}')" aria-label="再看${escapeHtml(entry.item.word)}">${picture(entry)}<b>${escapeHtml(entry.item.word)}</b></button>`).join('')}</div>` : `<button class="know-listen" onclick="KNOW.backRoot()">🗺️ 去认一认</button>`}
+    </section>`;
+  }
+
+  function summary() {
+    init();
+    const entries = allEntries();
+    const keys = new Set(entries.map(entry => entry.key));
+    return {
+      totalItems: entries.length,
+      totalCategories: data().categories.length,
+      recognizedCount: progress.recognized.filter(key => keys.has(key)).length,
+      favoritesCount: progress.favorites.filter(key => keys.has(key)).length,
+      dailyLearned: progress.daily.seen.length,
+      dailyTarget: progress.daily.ids.length,
+      dailyDone: progress.daily.complete
+    };
   }
 
   function lessonNav(label) {
@@ -499,6 +549,7 @@
 
   function renderLesson() {
     init();
+    if (ui.mode === 'favorites') return renderFavorites();
     if (ui.mode === 'daily') return renderDailyLesson();
     if (ui.mode === 'quiz') return renderQuiz();
     if (ui.mode === 'done') return renderDone();
@@ -860,6 +911,9 @@
     renderDone,
     openCategory,
     openDaily,
+    openModern,
+    openFavorites,
+    summary,
     backRoot,
     afterRender,
     isActive() { return ui.active; },

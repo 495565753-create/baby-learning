@@ -689,3 +689,31 @@ img.know-category-picture { object-fit: cover; }
   .know-confetti i,
   .know-quiz-choice.wrong { animation: none !important; }
 }
+
+/* Original standalone vectors for modern concepts; atlas sprites stay unchanged. */
+.know-modern-picture { background-image: none; object-fit: contain; background: #eef5fb; }
+.know-modern-feature { padding: 3px 0 8px; border-radius: 27px; background: linear-gradient(135deg, #edf1ff, #e9f8f3); }
+.know-modern-feature .know-section-title { margin: 14px 16px 12px; }
+.know-modern-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 9px; padding: 0 12px 10px; }
+.know-modern-grid .know-category { display: flex; flex-direction: column; align-items: stretch; padding: 8px; }
+.know-modern-grid .know-category-picture { width: 100%; border-radius: 17px; }
+.know-modern-grid .know-category-copy { padding: 8px 2px 2px; }
+.know-modern-grid .know-category-copy b { font-size: 15px; line-height: 1.35; white-space: normal; }
+.know-modern-grid .know-category-arrow { display: none; }
+.know-level-5 { background: #edf2ff; }
+.know-favorites-intro { text-align: center; padding: 12px 6px 20px; }
+.know-favorites-intro > span { font-size: 55px; }
+.know-favorites-intro h1 { margin: 7px 0; font-size: clamp(25px,7vw,32px); }
+.know-favorites-intro p { margin: 0; line-height: 1.65; }
+.know-favorites-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 11px; }
+.know-favorites-grid .know-favorite { width: 100%; min-width: 0; }
+.know-favorites-grid .know-favorite b { white-space: normal; overflow-wrap: anywhere; }
+@media (max-width:350px) {
+  .know-modern-grid { gap:6px; padding-inline:8px; }
+  .know-modern-grid .know-category { padding:6px; }
+  .know-modern-grid .know-category-copy b { font-size:13px; }
+  .know-favorites-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (orientation:landscape) and (max-height:560px) {
+  .know-lesson-page .know-modern-picture { min-height:0; height:100%; object-fit:contain; }
+}

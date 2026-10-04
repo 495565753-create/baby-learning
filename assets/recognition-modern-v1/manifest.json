@@ -1,0 +1,200 @@
+{
+  "version": "recognition-modern-v1-20261004",
+  "category_count": 3,
+  "item_count": 24,
+  "generator": "Original project-authored SVG vectors",
+  "files": [
+    {
+      "category": "modern_tech",
+      "item": "modern_tech-01",
+      "word": "AI 人工智能",
+      "file": "assets/recognition-modern-v1/ai.svg",
+      "sha256": "90c280a014ca84a3e3c16fff1ec7366f8c36cec25d39b19664c345652fc348ae",
+      "bytes": 1476
+    },
+    {
+      "category": "modern_tech",
+      "item": "modern_tech-02",
+      "word": "AI 绘画",
+      "file": "assets/recognition-modern-v1/ai_art.svg",
+      "sha256": "81c9c8ffb67c41727b68e6074e1a70804a91150858f95fa92362088be7597a45",
+      "bytes": 1255
+    },
+    {
+      "category": "modern_tech",
+      "item": "modern_tech-03",
+      "word": "语音助手",
+      "file": "assets/recognition-modern-v1/voice_helper.svg",
+      "sha256": "fb2aa6cb4764d6beae3f150eee68a01f71626a6581b6838dc78770a3af35e07d",
+      "bytes": 944
+    },
+    {
+      "category": "modern_tech",
+      "item": "modern_tech-04",
+      "word": "人形机器人",
+      "file": "assets/recognition-modern-v1/humanoid.svg",
+      "sha256": "6221dad25125d7ec38948c2fbd2e11febc907106ac89aa51af71287cfd844e66",
+      "bytes": 1474
+    },
+    {
+      "category": "modern_tech",
+      "item": "modern_tech-05",
+      "word": "无人机",
+      "file": "assets/recognition-modern-v1/drone.svg",
+      "sha256": "fcabff54e838eac879a3cbccce6ffff128177f65d0fa2605e99f71d2638befdf",
+      "bytes": 1428
+    },
+    {
+      "category": "modern_tech",
+      "item": "modern_tech-06",
+      "word": "电动汽车",
+      "file": "assets/recognition-modern-v1/electric_car.svg",
+      "sha256": "0dce276a395dc95e62094944367f5c6f371271d834e4fcadac2989fcd4839be1",
+      "bytes": 1066
+    },
+    {
+      "category": "modern_tech",
+      "item": "modern_tech-07",
+      "word": "3D 打印",
+      "file": "assets/recognition-modern-v1/three_d_print.svg",
+      "sha256": "efa103a0eb9cdf398f54d6b643e8fd4ef23d69d05214a143e060d1c73f680ce6",
+      "bytes": 1281
+    },
+    {
+      "category": "modern_tech",
+      "item": "modern_tech-08",
+      "word": "太阳能板",
+      "file": "assets/recognition-modern-v1/solar.svg",
+      "sha256": "77ffa5967a4aadbfbfc1f3f60c75f25a5267a8b02038d5977c4383051239e28b",
+      "bytes": 2495
+    },
+    {
+      "category": "digital_world",
+      "item": "digital_world-01",
+      "word": "抖音",
+      "file": "assets/recognition-modern-v1/douyin.svg",
+      "sha256": "a9622618eba6474fe0efef47fe262e1f07051742ddbbdaeffc33a27210ff0a22",
+      "bytes": 1089
+    },
+    {
+      "category": "digital_world",
+      "item": "digital_world-02",
+      "word": "B 站",
+      "file": "assets/recognition-modern-v1/bilibili.svg",
+      "sha256": "6e1c5c746390b6623ac7cfc15242185ba71ddabe1f002f13b08c323392e1ee30",
+      "bytes": 1086
+    },
+    {
+      "category": "digital_world",
+      "item": "digital_world-03",
+      "word": "YouTube",
+      "file": "assets/recognition-modern-v1/youtube.svg",
+      "sha256": "36830472c2993802a4cfcb545c383fd3e345949e1227c25e17c1030ca3bbf0de",
+      "bytes": 1091
+    },
+    {
+      "category": "digital_world",
+      "item": "digital_world-04",
+      "word": "短视频",
+      "file": "assets/recognition-modern-v1/short_video.svg",
+      "sha256": "ff45185da6f621f52c1318b723a28f7b8deec046e0c8a17e05770b4dfdc16f64",
+      "bytes": 1114
+    },
+    {
+      "category": "digital_world",
+      "item": "digital_world-05",
+      "word": "直播",
+      "file": "assets/recognition-modern-v1/live.svg",
+      "sha256": "42398af60f92c4c1fdde49d8967f9701566c100fa8bc7850c49e40ea07029495",
+      "bytes": 1909
+    },
+    {
+      "category": "digital_world",
+      "item": "digital_world-06",
+      "word": "互联网",
+      "file": "assets/recognition-modern-v1/internet.svg",
+      "sha256": "9fa81ab05160d1b1f26e2a1dec875affa5361e9323ae93a1b82d6812380a55de",
+      "bytes": 2018
+    },
+    {
+      "category": "digital_world",
+      "item": "digital_world-07",
+      "word": "二维码",
+      "file": "assets/recognition-modern-v1/qr_code.svg",
+      "sha256": "fec2efc64bb7c58a5d1e8a048c05b5d6f8484819b9f101d5d4b1d13bde6b7ae8",
+      "bytes": 2077
+    },
+    {
+      "category": "digital_world",
+      "item": "digital_world-08",
+      "word": "个人信息",
+      "file": "assets/recognition-modern-v1/private_info.svg",
+      "sha256": "6bc88e5412b1c0fdc2bd539289a9ca7da6d09a5400dc11df01cd2cb6083bb4d8",
+      "bytes": 1197
+    },
+    {
+      "category": "world_peace",
+      "item": "world_peace-01",
+      "word": "地球",
+      "file": "assets/recognition-modern-v1/earth.svg",
+      "sha256": "700954d3dce6cec6084711e132f60beec6872a1f7da79a19d7ab4fd350eea02d",
+      "bytes": 1329
+    },
+    {
+      "category": "world_peace",
+      "item": "world_peace-02",
+      "word": "国家",
+      "file": "assets/recognition-modern-v1/country.svg",
+      "sha256": "8a3db6502b1dbbde5284ecb687399f53579235a4443c51ea29ce0055b9aeba49",
+      "bytes": 2642
+    },
+    {
+      "category": "world_peace",
+      "item": "world_peace-03",
+      "word": "中国",
+      "file": "assets/recognition-modern-v1/china.svg",
+      "sha256": "f4376620fa5ed103126a55d2c3e59b92ace8de68e1a9547799f09078471dc05e",
+      "bytes": 1920
+    },
+    {
+      "category": "world_peace",
+      "item": "world_peace-04",
+      "word": "美国",
+      "file": "assets/recognition-modern-v1/usa.svg",
+      "sha256": "c20e40f535cee283259a5473fd59022c7fbae0c425f96810ecd65b3951c63f3c",
+      "bytes": 10029
+    },
+    {
+      "category": "world_peace",
+      "item": "world_peace-05",
+      "word": "地图",
+      "file": "assets/recognition-modern-v1/map.svg",
+      "sha256": "2cd08281f835745a9b663d8f8e34fb46ffa6bbb34a439c2db6b42bcfea8519a5",
+      "bytes": 1211
+    },
+    {
+      "category": "world_peace",
+      "item": "world_peace-06",
+      "word": "不同的语言",
+      "file": "assets/recognition-modern-v1/languages.svg",
+      "sha256": "091e6e2a51ce6c722552b456b42ccc184cd973b3d203ac3e8a902393eb173f2c",
+      "bytes": 2229
+    },
+    {
+      "category": "world_peace",
+      "item": "world_peace-07",
+      "word": "战争",
+      "file": "assets/recognition-modern-v1/war.svg",
+      "sha256": "d42744bd7b3d5e603b6f8909ce70d2c7a2e4b9b38f03e7ac265c6308c9f72232",
+      "bytes": 1355
+    },
+    {
+      "category": "world_peace",
+      "item": "world_peace-08",
+      "word": "和平",
+      "file": "assets/recognition-modern-v1/peace.svg",
+      "sha256": "67e346271541d65e974c64a18ad9903b67f11e9971a662020dcaab18b899601c",
+      "bytes": 1568
+    }
+  ]
+}

@@ -1,10 +1,8 @@
-/* 果粒橙小朋友 · 认一认 240 项固定数据。
- * 每个分类的 items 顺序与 assets/recognition-v1/{category.id}.webp 的 4×3 图格严格一致。
- */
+/* 果粒橙小朋友 · 264张认知卡。旧20类图格顺序保留；现代概念使用独立原创SVG。 */
 (function (root) {
   'use strict';
   root.RECOGNITION = {
-  "version": "recognition-v1-20261002b",
+  "version": "recognition-v2-20261004",
   "categories": [
     {
       "id": "self_body",
@@ -1363,6 +1361,231 @@
           "id": "safety-12",
           "word": "酒",
           "text": "这是酒。是成年人也要谨慎对待的饮品，小朋友不能品尝，要交给大人。"
+        }
+      ]
+    },
+    {
+      "id": "modern_tech",
+      "title": "科技小发现",
+      "icon": "🤖",
+      "level": 5,
+      "quiz": false,
+      "modern": true,
+      "cover": "assets/recognition-modern-v1/ai.svg",
+      "items": [
+        {
+          "id": "modern_tech-01",
+          "word": "AI 人工智能",
+          "text": "这是 AI，叫人工智能。它是人们做出来的电脑程序，能帮忙回答问题、认图片。它不是真人，也会答错，重要的事要问老师和家长。",
+          "image": "assets/recognition-modern-v1/ai.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "modern_tech-02",
+          "word": "AI 绘画",
+          "text": "这是 AI 绘画。人告诉电脑想画什么，电脑就能生成一张新图。它不是拿着画笔的小朋友，画出的东西也不一定都是真的。",
+          "image": "assets/recognition-modern-v1/ai_art.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "modern_tech-03",
+          "word": "语音助手",
+          "text": "这是语音助手。我们说一句话，程序听懂后可以放音乐、报天气。有些助手用了人工智能，它不是住在机器里的真人。",
+          "image": "assets/recognition-modern-v1/voice_helper.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "modern_tech-04",
+          "word": "人形机器人",
+          "text": "这是人形机器人。它有像人的胳膊和腿，有的能走路、搬东西。它由人设计和控制，不是有生命的小朋友，也不会什么都做。",
+          "image": "assets/recognition-modern-v1/humanoid.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "modern_tech-05",
+          "word": "无人机",
+          "text": "这是无人机。它没有坐在里面的飞行员，可以由人操作或按程序飞。有人用它拍照片、送物品，小朋友要由大人带着认识它。",
+          "image": "assets/recognition-modern-v1/drone.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "modern_tech-06",
+          "word": "电动汽车",
+          "text": "这是电动汽车。它用电池里的电带动轮子，需要在合适的地方充电。车子仍要遵守交通规则，充电设备请让大人操作。",
+          "image": "assets/recognition-modern-v1/electric_car.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "modern_tech-07",
+          "word": "3D 打印",
+          "text": "这是三维打印，也叫三 D 打印。机器照着设计，一层一层叠出立体物品，像慢慢搭积木。机器工作时不要伸手进去。",
+          "image": "assets/recognition-modern-v1/three_d_print.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "modern_tech-08",
+          "word": "太阳能板",
+          "text": "这是太阳能板。它能把阳光变成电，给一些设备供电。电不是凭空变出来的，晴天和阴天产生的电也可能不一样。",
+          "image": "assets/recognition-modern-v1/solar.svg",
+          "quiz": false,
+          "concept": true
+        }
+      ]
+    },
+    {
+      "id": "digital_world",
+      "title": "屏幕里的世界",
+      "icon": "📱",
+      "level": 5,
+      "quiz": false,
+      "modern": true,
+      "cover": "assets/recognition-modern-v1/douyin.svg",
+      "items": [
+        {
+          "id": "digital_world-01",
+          "word": "抖音",
+          "text": "这是抖音，一个可以看和分享视频的应用。里面有短视频，也有其他内容。和爸爸妈妈一起挑适合的看，看一会儿就让眼睛休息。",
+          "image": "assets/recognition-modern-v1/douyin.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "digital_world-02",
+          "word": "B 站",
+          "text": "这是 B 站，全名叫哔哩哔哩。人们在这里看和分享动画、音乐、知识等视频。内容不都适合小朋友，请爸爸妈妈陪你挑。",
+          "image": "assets/recognition-modern-v1/bilibili.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "digital_world-03",
+          "word": "YouTube",
+          "text": "这是 YouTube，一个看和分享视频的网站，有许多地方的人上传视频。要请爸爸妈妈挑适合儿童的内容，有些地方可能打不开。",
+          "image": "assets/recognition-modern-v1/youtube.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "digital_world-04",
+          "word": "短视频",
+          "text": "这是短视频，意思是时间比较短的视频。有人拍动物，有人讲知识，也有人做广告。视频里说的不一定都对，要和大人一起想一想。",
+          "image": "assets/recognition-modern-v1/short_video.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "digital_world-05",
+          "word": "直播",
+          "text": "这是直播。有人正在拍摄，别人可以在屏幕上看见正在发生的事情，像远远地参加活动。看直播要由爸爸妈妈陪伴。",
+          "image": "assets/recognition-modern-v1/live.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "digital_world-06",
+          "word": "互联网",
+          "text": "这是互联网。它把许多电脑和手机连接起来，让远处的人可以发消息、看资料。网上不是什么都真实，不认识的人要请大人帮忙。",
+          "image": "assets/recognition-modern-v1/internet.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "digital_world-07",
+          "word": "二维码",
+          "text": "这是二维码，像一个小方格图案。设备扫一扫，可以找到里面记录的信息，有的会打开网页。不能随便扫陌生的码，先请大人看看。",
+          "image": "assets/recognition-modern-v1/qr_code.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "digital_world-08",
+          "word": "个人信息",
+          "text": "这是个人信息。你的姓名、照片、住址和家人的电话，都和你有关。别随便发给网上的人，遇到这种要求，先告诉爸爸妈妈。",
+          "image": "assets/recognition-modern-v1/private_info.svg",
+          "quiz": false,
+          "concept": true
+        }
+      ]
+    },
+    {
+      "id": "world_peace",
+      "title": "地球与和平",
+      "icon": "🌍",
+      "level": 5,
+      "quiz": false,
+      "modern": true,
+      "cover": "assets/recognition-modern-v1/earth.svg",
+      "items": [
+        {
+          "id": "world_peace-01",
+          "word": "地球",
+          "text": "这是地球，是我们大家生活的星球。上面有陆地、海洋和空气，也有许多国家。我们一起爱护水、植物和动物。",
+          "image": "assets/recognition-modern-v1/earth.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "world_peace-02",
+          "word": "国家",
+          "text": "这是国家这个概念。世界上有许多国家，每个国家有自己的名字、人们和规则。国家里有城市和乡村，也住着许多小朋友。",
+          "image": "assets/recognition-modern-v1/country.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "world_peace-03",
+          "word": "中国",
+          "text": "这是中国，完整的名字是中华人民共和国，是亚洲的一个国家。这里有许多城市、乡村和不同民族的小朋友，大家共同生活。",
+          "image": "assets/recognition-modern-v1/china.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "world_peace-04",
+          "word": "美国",
+          "text": "这是美国，是北美洲的一个国家。那里也有城市、乡村和不同背景的小朋友。国家和语言可能不同，大家都需要被尊重。",
+          "image": "assets/recognition-modern-v1/usa.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "world_peace-05",
+          "word": "地图",
+          "text": "这是地图。人们把地方画得小小的，帮助我们找位置和方向。地图上的符号代表真实的地方，它不是那个地方本身。",
+          "image": "assets/recognition-modern-v1/map.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "world_peace-06",
+          "word": "不同的语言",
+          "text": "这是不同的语言。人们可以用中文、英语和许多其他语言交流。我们可以慢慢学，不同的语言都能表达问候和友好。",
+          "image": "assets/recognition-modern-v1/languages.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "world_peace-07",
+          "word": "战争",
+          "text": "这是战争的意思：一些国家或群体用武器互相攻击，会伤害人，也会破坏家园。它不是游戏。我们希望和平，如果担心，可以告诉爸爸妈妈。",
+          "image": "assets/recognition-modern-v1/war.svg",
+          "quiz": false,
+          "concept": true
+        },
+        {
+          "id": "world_peace-08",
+          "word": "和平",
+          "text": "这是和平的意思：人们不用战争解决问题，能安心生活、学习和玩耍。遇到小争执，我们可以先停下来，好好说话，请大人帮助。",
+          "image": "assets/recognition-modern-v1/peace.svg",
+          "quiz": false,
+          "concept": true
         }
       ]
     }

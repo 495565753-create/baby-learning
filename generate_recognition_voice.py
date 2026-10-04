@@ -36,13 +36,16 @@ def load_data() -> dict:
     if not match:
         raise ValueError("recognition-data.js 格式不正确")
     data = json.loads(match.group(1))
-    categories = data.get("categories", [])
+    # This generator owns the original atlas library only. The independent
+    # modern generator owns modern-card voices and its separate map.
+    categories = [category for category in data.get("categories", [])
+                  if not category.get("modern", False)]
     praise = data.get("praise", [])
     if len(categories) != 20 or any(len(category.get("items", [])) != 12 for category in categories):
-        raise ValueError("认知数据需要恰好 20 类，每类 12 项")
+        raise ValueError("旧图集认知数据需要恰好 20 类，每类 12 项；现代概念请用独立生成器")
     if len(praise) != 8:
         raise ValueError("认知奖励台词需要恰好 8 条")
-    return data
+    return {**data, "categories": categories}
 
 
 def source_texts(data: dict) -> list[str]:

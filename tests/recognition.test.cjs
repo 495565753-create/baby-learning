@@ -27,24 +27,24 @@ function loadRecognition(custom = {}) {
   return sandbox;
 }
 
-test('认一认数据固定为20类、每类12项，240项名称和id不重复', () => {
+test('认一认保留20类图集，并扩展为23类264项名称和id不重复', () => {
   const { RECOGNITION } = loadRecognition();
-  assert.equal(RECOGNITION.version, 'recognition-v1-20261002b');
-  assert.equal(RECOGNITION.categories.length, 20);
+  assert.equal(RECOGNITION.version, 'recognition-v2-20261004');
+  assert.equal(RECOGNITION.categories.length, 23);
   const ids = [];
   const words = [];
   RECOGNITION.categories.forEach(category => {
-    assert.equal(category.items.length, 12, category.id);
-    assert.ok([1, 2, 3, 4].includes(category.level), category.id);
+    assert.equal(category.items.length, category.modern ? 8 : 12, category.id);
+    assert.ok([1, 2, 3, 4, 5].includes(category.level), category.id);
     category.items.forEach(item => {
       ids.push(item.id);
       words.push(item.word);
-      assert.ok(item.text.length >= 20 && item.text.length <= 45, `${item.word}: ${item.text.length}`);
+      assert.ok(item.text.length >= 20 && item.text.length <= (category.modern ? 110 : 45), `${item.word}: ${item.text.length}`);
     });
   });
-  assert.equal(ids.length, 240);
-  assert.equal(new Set(ids).size, 240);
-  assert.equal(new Set(words).size, 240);
+  assert.equal(ids.length, 264);
+  assert.equal(new Set(ids).size, 264);
+  assert.equal(new Set(words).size, 264);
 });
 
 test('固定图集顺序和必需对象完整', () => {
@@ -72,7 +72,7 @@ test('固定图集顺序和必需对象完整', () => {
     hygiene: ['牙刷','牙膏','毛巾','香皂','洗手液','梳子','水杯','口罩','体温计','创可贴','垃圾桶','纸巾']
   };
   const actual = JSON.parse(JSON.stringify(
-    Object.fromEntries(RECOGNITION.categories.map(category => [category.id, category.items.map(item => item.word)]))
+    Object.fromEntries(RECOGNITION.categories.filter(category => !category.modern).map(category => [category.id, category.items.map(item => item.word)]))
   ));
   assert.deepEqual(actual, expected);
 });
