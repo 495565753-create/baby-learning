@@ -1,7 +1,7 @@
 /* Direct, picture-led home shortcuts and a curated external video shelf. */
 (function (root) {
   'use strict';
-  const INTRO = '首页有故事、认一认、小游戏、老师课堂、画画音乐，还有小影院。点一张喜欢的卡片吧。';
+  const INTRO = '首页有学写字、故事、认一认、小游戏、老师课堂、画画音乐，还有小影院。点一张喜欢的卡片吧。';
   const CHALLENGE = '小挑战来啦。先选喜欢的游戏，再试试更难的关卡。慢慢想，随时都能重新玩。';
   const VIDEO_INTRO = '小影院里有精选科普视频。请爸爸妈妈陪你一起看，点卡片后会打开视频所在的网站。';
   let videoCategory = 'all';
@@ -34,6 +34,7 @@
     const recent = readRecent();
     return `<section class="home-dashboard">
       <div class="hero home-hero"><div><small class="home-greeting">你好，果粒橙小朋友</small><h1>今天想做什么？</h1><p>看图标，轻轻点一下</p></div><button class="home-guide" onclick="HOME.introduce()" aria-label="听首页介绍"><span aria-hidden="true">🍊</span><b>听介绍</b><i aria-hidden="true">🔊</i></button></div>
+      <button class="home-writing-banner" data-home-function="writing" onclick="go('writing')"><span aria-hidden="true">✍️</span><span><b>学写字 · 1 到 10</b><small>看小手示范，跟着描，再认识一个字</small></span><i aria-hidden="true">›</i></button>
       <h2 class="section-title home-title">我的小乐园</h2>
       <div class="big-grid home-grid home-function-grid">${cards.map(([icon, title, description, action, name]) => `<button class="big-card home-function-card" data-home-function="${name}" onclick="${action}"><span class="icon" aria-hidden="true">${icon}</span><b>${title}</b><small>${description}</small><span class="home-card-arrow" aria-hidden="true">›</span></button>`).join('')}</div>
       <section class="home-shortcuts" aria-labelledby="home-shortcut-title"><h2 class="section-title home-title" id="home-shortcut-title">直接开始</h2><div class="home-shortcut-grid">

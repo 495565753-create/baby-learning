@@ -1,0 +1,108 @@
+/* Finger writing: clear paper, a visible start point, and generous phone controls. */
+.writing-studio{--ws-ink:#294960;--ws-blue:#4a93bd;--ws-paper:#fffdf8;color:var(--ws-ink);max-width:760px;margin:auto;padding:0 0 20px;min-width:0}
+.writing-studio *{box-sizing:border-box;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.writing-studio button{min-height:48px;min-width:44px;font:inherit;color:inherit;cursor:pointer;border:1px solid rgba(255,255,255,.9);border-radius:17px;background:rgba(255,255,255,.76);box-shadow:0 4px 13px #45628412;touch-action:manipulation;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.writing-studio button:focus-visible{outline:3px solid #4a93bd;outline-offset:3px}
+.writing-studio button:disabled{opacity:.4;cursor:default}
+.writing-studio .ws-primary{background:linear-gradient(135deg,#3d86b2,#6aa6bd);color:#fff;border-color:#81bad0}
+.ws-hero{display:flex;align-items:center;gap:12px;margin:3px 0 12px;padding:2px 5px}
+.ws-hero>span{font-size:38px;line-height:1.15}
+.ws-hero h2{margin:0 0 3px;font-size:27px;line-height:1.2}
+.ws-hero small{font-size:12px;line-height:1.5;color:#577489}
+.ws-top-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-bottom:10px}
+.ws-top-actions button{font-size:14px;font-weight:700;padding:8px 4px}
+.ws-number-menu{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;padding:12px;margin:10px 0;border:1px solid #fff;border-radius:24px;background:rgba(255,255,255,.58)}
+.ws-number-menu[hidden]{display:none}
+.ws-number-menu button{min-height:73px;padding:9px 4px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:27px;font-weight:750;background:#f7fbff}
+.ws-number-menu small,.ws-number-menu button>span{font-size:10px;font-weight:600;color:#4f806c}
+.ws-number-menu button[aria-pressed=true],.ws-number-menu button[aria-current]{border-color:#6ca5c7;background:#e4f2fc;box-shadow:inset 0 0 0 2px #95c4df}
+.ws-lesson-heading{display:flex;align-items:center;gap:14px;padding:10px 15px;border-radius:23px;border:1px solid #fff;background:linear-gradient(130deg,#ffffffda,#e6f1faaf);min-height:76px}
+.ws-target-number{flex:0 0 69px;text-align:center;font-size:53px;line-height:1.05;font-weight:800;color:#3a7ca3;font-variant-numeric:lining-nums}
+.ws-lesson-heading h3{font-size:20px;margin:0 0 5px}
+.ws-step-badge{display:block;font-size:12px;line-height:1.5;color:#557187;margin-bottom:3px}
+.ws-lesson-heading p,.ws-lesson-heading small{font-size:13px;line-height:1.55;margin:0;color:#557187}
+.ws-status{font-size:14px;font-weight:650;line-height:1.5;min-height:24px;margin:9px 3px 7px;color:#3c6d87}
+.ws-board-frame{width:min(100%,400px);aspect-ratio:1;margin:8px auto;border-radius:28px;overflow:hidden;background:var(--ws-paper);border:2px solid #fff;box-shadow:0 8px 28px #476f8917,inset 0 0 0 1px #e5ded2}
+.ws-board{display:block;width:100%;height:100%;overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.ws-board *{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;pointer-events:none}
+.ws-board line{stroke:#e5ddd1;stroke-width:1.3;stroke-dasharray:5 7}
+.ws-writing-paper{fill:var(--ws-paper)}
+.ws-midlines{stroke:#e7ded0;stroke-width:1.2;stroke-dasharray:5 7}
+.ws-stroke-guide{fill:none;stroke:#d8e2e8;stroke-width:24;stroke-linecap:round;stroke-linejoin:round}
+.ws-stroke-current{stroke:#b8d4e4}
+.ws-stroke-done{fill:none;stroke:#79b7a0;stroke-width:23;stroke-linecap:round;stroke-linejoin:round}
+.ws-live-trace{fill:none;stroke:#438ebc;stroke-width:16;stroke-linecap:round;stroke-linejoin:round}
+.ws-demo-trace{fill:none;stroke:#e4b56b;stroke-width:16;stroke-linecap:round;stroke-linejoin:round}
+.ws-start-dot{fill:#f4a27e;stroke:#fff;stroke-width:4;filter:drop-shadow(0 2px 3px #cf836550)}
+.ws-start-number{fill:#fff;font-size:16px;font-weight:750;pointer-events:none}
+.ws-demo-hand{pointer-events:none;filter:drop-shadow(0 3px 3px #765b3a30)}
+.ws-demo-halo{fill:#ffe7ac;opacity:.75}
+.ws-demo-hand text{font-size:37px}
+.ws-board-caption{display:none}
+.ws-board-tools{display:grid;grid-template-columns:1fr 1.1fr .8fr;gap:7px;width:min(100%,400px);margin:9px auto}
+.ws-board-tools button{min-height:50px;font-size:15px;font-weight:750;padding:9px}
+.ws-bottom-nav{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:11px 0 6px}
+.ws-bottom-nav button{min-height:52px;padding:9px;font-size:15px;font-weight:700}
+.ws-progress-note{font-size:12px;line-height:1.6;color:#587387;text-align:center;margin:10px 2px}
+.ws-complete{padding:16px;border:1px solid #fff;border-radius:27px;background:rgba(255,255,255,.65);margin:12px 0}
+.ws-complete h3{margin:0 0 9px;font-size:23px;line-height:1.4}
+.ws-complete-number{display:grid;grid-template-columns:52px minmax(0,1fr);gap:9px;align-items:center;text-align:center;padding:10px;border-radius:22px;background:#e8f5f2;margin-bottom:10px}
+.ws-complete-number strong{font-size:35px;display:block;line-height:1.2}
+.ws-complete-number p{font-size:14px;line-height:1.6;margin:7px 0 0}
+.ws-counting-icons{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:7px;max-width:275px;margin:7px auto;font-size:26px;line-height:1.35}
+.ws-counting-icons span{flex:0 0 32px}
+.ws-character-card{padding:16px;border:1px solid #fff;border-radius:23px;background:#fffdf8;margin:13px 0}
+.ws-character-kicker{display:block;font-size:13px;line-height:1.6;color:#557d94;margin-bottom:10px}
+.ws-character-main{display:grid;grid-template-columns:105px minmax(0,1fr);gap:12px;align-items:center}
+.ws-character-main>div:first-child{text-align:center}
+.ws-hanzi{display:block;font-size:84px;font-weight:700;line-height:1.2;text-align:center;color:#386581}
+.ws-character-card p{font-size:16px;line-height:1.6;margin:7px 0;color:#395b71}
+.ws-character-card .ws-pinyin{display:block;font-size:20px;line-height:1.4;color:#598399}
+.ws-character-card svg{width:100%;max-width:230px;height:auto;display:block;margin:10px auto}
+.ws-character-picture{min-height:90px;display:grid;place-items:center;font-size:54px}
+.ws-character-card button{display:block;width:100%;font-size:15px;font-weight:750;padding:10px}
+.ws-success-icon{font-size:28px;line-height:1.3;margin-bottom:3px;text-align:center}
+.ws-complete h3{text-align:center}
+.ws-complete-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ws-complete-actions button{font-size:15px;font-weight:750;padding:11px 6px;min-height:53px}
+.home-writing-banner{width:100%;display:flex;align-items:center;gap:12px;padding:14px 17px;margin:14px 0 3px;border:1px solid #fff;border-radius:25px;background:linear-gradient(130deg,#e5f3ffea,#f8f4e9e0);box-shadow:0 6px 20px #45628412;text-align:left;min-height:84px;touch-action:manipulation}
+.home-writing-banner>span:first-child{display:grid;place-items:center;width:57px;height:57px;border-radius:18px;background:#ffffffb3;font-size:35px;flex:0 0 auto}
+.home-writing-banner>span:nth-child(2){flex:1;min-width:0}
+.home-writing-banner b{display:block;font-size:23px;line-height:1.3;color:#315b77}
+.home-writing-banner small{display:block;font-size:13px;line-height:1.6;margin-top:4px;color:#577286}
+.home-writing-banner i{font-style:normal;font-size:29px;color:#5c89a3}
+body.playing-writing-studio{--topbar-height:56px;--nav-top:calc(56px + var(--safe-top));padding-bottom:env(safe-area-inset-bottom,0px);-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.playing-writing-studio .topbar{height:var(--nav-top);padding-top:calc(4px + var(--safe-top));padding-bottom:4px}
+.playing-writing-studio .topbar .stars{display:none}
+.playing-writing-studio .logo b{font-size:16px}
+.playing-writing-studio main{max-width:792px;padding:8px 12px 15px}
+@media(max-width:520px){
+  .ws-hero{margin:2px 0 8px;gap:9px}.ws-hero>span{font-size:31px}.ws-hero h2{font-size:24px}.ws-hero small{font-size:11px}
+  .ws-top-actions{margin-bottom:8px;gap:5px}.ws-top-actions button{min-height:46px;font-size:12px;padding:6px 3px}
+  .ws-lesson-heading{padding:8px 12px;min-height:66px;gap:10px}.ws-target-number{font-size:46px;flex-basis:57px}.ws-lesson-heading h3{font-size:18px}.ws-lesson-heading p,.ws-lesson-heading small{font-size:12px}
+  .ws-status{font-size:13px;min-height:22px;margin:7px 2px 5px}.ws-board-frame{margin:6px auto;border-radius:25px}
+  .ws-board-tools{gap:7px;margin:7px auto}.ws-board-tools button{min-height:47px;font-size:14px;padding:8px 4px}
+  .ws-bottom-nav{gap:7px;margin:8px 0 4px}.ws-bottom-nav button{min-height:48px;font-size:13px}
+  .ws-complete{padding:12px}.ws-complete h3{font-size:20px}.ws-character-card{padding:12px}.ws-character-main{grid-template-columns:90px minmax(0,1fr);gap:8px}.ws-hanzi{font-size:72px}.ws-character-card p{font-size:14px}.ws-character-card .ws-pinyin{font-size:18px}
+  .ws-number-menu{gap:6px;padding:9px}.ws-number-menu button{min-height:64px;font-size:24px}
+  .home-writing-banner{min-height:79px;padding:12px 13px;margin:11px 0 2px;gap:10px}.home-writing-banner b{font-size:21px}.home-writing-banner small{font-size:11px}.home-writing-banner>span:first-child{width:50px;height:50px;font-size:31px}
+}
+@media(orientation:landscape) and (max-height:600px){
+  .playing-writing-studio main{max-width:1060px;padding:6px calc(10px + env(safe-area-inset-right,0px)) 12px calc(10px + env(safe-area-inset-left,0px))}
+  .writing-studio{position:relative;max-width:1040px;display:grid;grid-template-columns:minmax(210px,1fr) minmax(220px,1.2fr);column-gap:16px;align-items:start}
+  .ws-hero{grid-column:1;margin:3px 0 8px}.ws-top-actions{grid-column:1}.ws-number-menu{grid-column:1/-1}.ws-lesson-heading{grid-column:1}.ws-status{grid-column:1;font-size:12px}
+  .ws-board-frame{grid-column:2;grid-row:1/span 5;width:min(100%,calc(100svh - 88px));min-width:180px;align-self:start;justify-self:center;margin:0 auto}
+  .ws-board-tools{grid-column:1;width:100%;margin:5px 0}.ws-bottom-nav{grid-column:1;margin:6px 0}.ws-progress-note{grid-column:1/-1;margin-top:7px}
+  .ws-complete{grid-column:1/-1}.ws-hero h2{font-size:23px}.ws-hero>span{font-size:31px}.ws-top-actions button{min-height:44px;font-size:12px}.ws-lesson-heading{padding:8px 12px;min-height:65px}.ws-target-number{font-size:43px}.ws-lesson-heading h3{font-size:18px}.ws-board-tools button,.ws-bottom-nav button{min-height:44px;font-size:12px}
+  .ws-number-menu:not([hidden]){position:absolute;left:0;right:0;top:104px;z-index:4;background:#f1f8fff5;box-shadow:0 9px 24px #36536c35;margin:0;grid-template-columns:repeat(10,minmax(0,1fr))}
+  .ws-number-menu button{min-height:66px;font-size:23px}.ws-number-menu button>span{font-size:9px}
+  .ws-hero small{font-size:10px}.ws-hero{margin-bottom:5px}.ws-top-actions{margin-bottom:5px}.ws-lesson-heading p{font-size:12px;line-height:1.45}.ws-status{font-size:11px;line-height:1.4;margin:5px 2px}
+}
+@media(orientation:portrait) and (max-height:740px){
+  .ws-hero{margin:0 0 5px}.ws-hero h2{font-size:21px}.ws-hero>span{font-size:28px}.ws-hero small{font-size:10px}.ws-top-actions button{min-height:44px}
+  .ws-lesson-heading{min-height:59px;padding:6px 10px}.ws-lesson-heading p{display:none}.ws-lesson-heading h3{margin-bottom:2px}.ws-step-badge{margin:0;font-size:11px}
+  .ws-status{min-height:18px;font-size:12px;line-height:1.4;margin:5px 2px}.ws-board-frame{width:min(100%,calc(100svh - 307px));margin:4px auto}
+  .ws-board-tools{margin:5px auto}.ws-board-tools button{min-height:44px}.ws-bottom-nav{margin:5px 0 0}.ws-bottom-nav button{min-height:44px}
+}
+@media(prefers-reduced-motion:reduce){.writing-studio *{animation:none!important;transition:none!important}}
+@media(forced-colors:active){.writing-studio button{border:1px solid ButtonText}.ws-stroke-guide{stroke:GrayText}.ws-stroke-done,.ws-live-trace{stroke:Highlight}.ws-start-dot{fill:Highlight;stroke:Canvas}}

@@ -1,0 +1,1142 @@
+{
+  "created_at": "2026-10-04T19:38:50+08:00",
+  "generator": "Microsoft Edge neural TTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "-8%",
+  "pitch": "+0Hz",
+  "lesson_count": 10,
+  "text_count": 66,
+  "objective_qa_passed": true,
+  "source_files": {
+    "kids-writing-data.js": "4d98f052e74efd477e6a8a6a060b6820b71adb263fb8978b1ee0780a6b141caf",
+    "kids-writing.js": "82c6a15e30974531f6e557458f2f160f5c75afaa3244d477e6b0f3aa40ab078c"
+  },
+  "files": {
+    "我们一起学写数字吧。先看小手怎么写，再从发亮的小点开始，顺着小路慢慢描。写好了，还能认识一个汉字。": {
+      "spoken": "我们一起学写数字吧。先看小手怎么写，再从发亮的小点开始，顺着小路慢慢描。写好了，还能认识一个汉字。",
+      "text_sha256": "8f59ecdaadea3fd678c948af599ce8eac312cf39ad70790191f04e80a379bc51",
+      "file": "voice-writing-v1/8f59ecdaadea3fd678c9.mp3",
+      "sha256": "4c1f4c5433c713fd3c6dc31ec1508eae4f5b532afe4ec918a5885d310ac8764e",
+      "qa": {
+        "duration_seconds": 12.144,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.901,
+        "rms_dbfs": -19.987,
+        "trailing_silence_seconds": 0.594,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "从发亮的小点开始，顺着小路慢慢写。": {
+      "spoken": "从发亮的小点开始，顺着小路慢慢写。",
+      "text_sha256": "0297efa10f083b110d6963ca9a8d63edcb3f48e431f33e5219cf63609ac7e39c",
+      "file": "voice-writing-v1/0297efa10f083b110d69.mp3",
+      "sha256": "b5906271251d6c36f55dad2b78c490b1d8cc3909f12606a90071c9cfddd5799b",
+      "qa": {
+        "duration_seconds": 4.344,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.864,
+        "rms_dbfs": -20.202,
+        "trailing_silence_seconds": 0.597,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "小手离开小路啦，回到刚才的小点，继续慢慢写。": {
+      "spoken": "小手离开小路啦，回到刚才的小点，继续慢慢写。",
+      "text_sha256": "9770043550b7f2ad8a765cb6999d2b4c78c57c25be5347a7fd0374dcd800aced",
+      "file": "voice-writing-v1/9770043550b7f2ad8a76.mp3",
+      "sha256": "e8ad29c87890d916e6dad7774af318758756a2cf7d2ada8a52090dfc46c1fbde",
+      "qa": {
+        "duration_seconds": 5.328,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.959,
+        "rms_dbfs": -19.842,
+        "trailing_silence_seconds": 0.599,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "方向有一点不同，跟着小路向前写。": {
+      "spoken": "方向有一点不同，跟着小路向前写。",
+      "text_sha256": "92032f71a5f2614cad2ec9b5f7da838ba1d326d9b45f78254dad72837527b811",
+      "file": "voice-writing-v1/92032f71a5f2614cad2e.mp3",
+      "sha256": "6c5000c057a90bf024b580a9c69a16e82ca65ae21a813214fa550f1f0c58485a",
+      "qa": {
+        "duration_seconds": 3.912,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.09,
+        "rms_dbfs": -19.828,
+        "trailing_silence_seconds": 0.605,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "这一笔还没有写完。没关系，从小点再试一次。": {
+      "spoken": "这一笔还没有写完。没关系，从小点再试一次。",
+      "text_sha256": "10823b9f0eb17fe8206dcced7ebe319a39760137d5f996b628ace38dd8ff807d",
+      "file": "voice-writing-v1/10823b9f0eb17fe8206d.mp3",
+      "sha256": "08380418b8d61e8bab1ac23a598a7425a0aefb14ded3952edaf8232483c90a01",
+      "qa": {
+        "duration_seconds": 5.424,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.472,
+        "rms_dbfs": -20.476,
+        "trailing_silence_seconds": 0.596,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "这一笔先停下来啦。从小点再写一次就好。": {
+      "spoken": "这一笔先停下来啦。从小点再写一次就好。",
+      "text_sha256": "db64abe6874772dbb8026675f7e50cba0cdabcbcbcb89d01c7ea521ce577c41a",
+      "file": "voice-writing-v1/db64abe6874772dbb802.mp3",
+      "sha256": "dae335c21d501af2b602b5de467b18721d7a4d4b0eacce472c8a0cba832b9b2a",
+      "qa": {
+        "duration_seconds": 5.088,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.232,
+        "rms_dbfs": -20.653,
+        "trailing_silence_seconds": 0.63,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "这一笔写到终点啦，松开小手就好。": {
+      "spoken": "这一笔写到终点啦，松开小手就好。",
+      "text_sha256": "d8bb348d1a09f672b886b269a671e23067c53e66843b36fcd8c029943ae8eb5d",
+      "file": "voice-writing-v1/d8bb348d1a09f672b886.mp3",
+      "sha256": "1b6b7e3f34e9719a95c979418c231a4f87d0f0d04804ce63784d09193f049aef",
+      "qa": {
+        "duration_seconds": 3.912,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.212,
+        "rms_dbfs": -21.16,
+        "trailing_silence_seconds": 0.614,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "这一笔写好啦。再从新的小点开始，写下一笔。": {
+      "spoken": "这一笔写好啦。再从新的小点开始，写下一笔。",
+      "text_sha256": "a092a0675628e400ac2c8d2e0c34b50f9bcd89254b44a65abe4e61a9436189e3",
+      "file": "voice-writing-v1/a092a0675628e400ac2c.mp3",
+      "sha256": "602bd7af499ac6642f9f04804c47bff181eb2e97e24d8405a2db3b8270bc9c9d",
+      "qa": {
+        "duration_seconds": 5.352,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.973,
+        "rms_dbfs": -21.085,
+        "trailing_silence_seconds": 0.593,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们再写一次。先看示范，也可以直接从小点开始。": {
+      "spoken": "我们再写一次。先看示范，也可以直接从小点开始。",
+      "text_sha256": "ec87f52e672e396cb43bc33845067ece781a67aac2105b93c28ca3b12fabb76d",
+      "file": "voice-writing-v1/ec87f52e672e396cb43b.mp3",
+      "sha256": "b7fbf1744a11c6706aad467f868cc3eeaf6d2cb070b9d16e1826703d0f2a2e73",
+      "qa": {
+        "duration_seconds": 6.24,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.673,
+        "rms_dbfs": -20.131,
+        "trailing_silence_seconds": 0.635,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "小手正在示范，看看它从哪里开始，往哪里写。": {
+      "spoken": "小手正在示范，看看它从哪里开始，往哪里写。",
+      "text_sha256": "f25495f22086151b312415a420cd61957f6cab43beba047a639b3ed6aa51cd9c",
+      "file": "voice-writing-v1/f25495f22086151b3124.mp3",
+      "sha256": "5e8b52a730b69c15009a6c13936a04e15231454dee924344484fb0b79788052f",
+      "qa": {
+        "duration_seconds": 5.208,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.046,
+        "rms_dbfs": -21.16,
+        "trailing_silence_seconds": 0.598,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "先选一个数字，跟着小手练习吧。": {
+      "spoken": "先选一个数字，跟着小手练习吧。",
+      "text_sha256": "0a74b406e5f45775c110fa244b5c6da546ffe2ccdd41052a82273d37b6191f79",
+      "file": "voice-writing-v1/0a74b406e5f45775c110.mp3",
+      "sha256": "026c599ef4a8b480d8ceae28780120e46bf3039e7fb4d0105bc9a13bdc04c490",
+      "qa": {
+        "duration_seconds": 3.696,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.819,
+        "rms_dbfs": -20.688,
+        "trailing_silence_seconds": 0.602,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "写好啦，你把数字认真写出来了！": {
+      "spoken": "写好啦，你把数字认真写出来了！",
+      "text_sha256": "6cb4a17b595c7f9ba5f1801625be9ab6ecc27fb7b7900d44461f28a6dce0f1f6",
+      "file": "voice-writing-v1/6cb4a17b595c7f9ba5f1.mp3",
+      "sha256": "f15433d027a18d08bcde99943b2cb05a0b5dc8c1d9b4c6ee03cbb87df5015869",
+      "qa": {
+        "duration_seconds": 3.48,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.819,
+        "rms_dbfs": -20.796,
+        "trailing_silence_seconds": 0.594,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们来写数字一。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。": {
+      "spoken": "我们来写数字一。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。",
+      "text_sha256": "e708dfa216cf12de5884d349958e61ec49784d9d3098dab090aabe30bde2a6b3",
+      "file": "voice-writing-v1/e708dfa216cf12de5884.mp3",
+      "sha256": "771bcf3d494f1efb46e2029a94677a4216b552addbbfe3eeee0784f5035b7d39",
+      "qa": {
+        "duration_seconds": 7.824,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.769,
+        "rms_dbfs": -20.005,
+        "trailing_silence_seconds": 0.579,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们再认识汉字，一。一表示一个。这里有一个苹果，我们一起数，一。": {
+      "spoken": "我们再认识汉字，一。一表示一个。这里有一个苹果，我们一起数，一。",
+      "text_sha256": "f5f27cf88e04a2febcc410273d7791baa3be19d092a691867505a0b18a7cb2b6",
+      "file": "voice-writing-v1/f5f27cf88e04a2febcc4.mp3",
+      "sha256": "1db6557d85625f813fe408816ed852082eb3e089945d485daab5b05889bed0d0",
+      "qa": {
+        "duration_seconds": 8.184,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.61,
+        "rms_dbfs": -19.845,
+        "trailing_silence_seconds": 0.596,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "数字一，写好啦！你认真地完成了！": {
+      "spoken": "数字一，写好啦！你认真地完成了！",
+      "text_sha256": "47904b658aef6e29ef0d79a1c211bfd58207fe2eb290f806edbbb0d09cc2adae",
+      "file": "voice-writing-v1/47904b658aef6e29ef0d.mp3",
+      "sha256": "4219bbab51059c26395c8c4cdfb2063c32409b81b0e3d4e04a03a62ba05fb53b",
+      "qa": {
+        "duration_seconds": 4.368,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.173,
+        "rms_dbfs": -20.957,
+        "trailing_silence_seconds": 0.599,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "数字一，写好啦！你认真地完成了！我们再认识汉字，一。一表示一个。这里有一个苹果，我们一起数，一。": {
+      "spoken": "数字一，写好啦！你认真地完成了！我们再认识汉字，一。一表示一个。这里有一个苹果，我们一起数，一。",
+      "text_sha256": "21b408e76827108a01418c62e690d1800bfce7089b66cf5bb50ef98612ec18d7",
+      "file": "voice-writing-v1/21b408e76827108a0141.mp3",
+      "sha256": "11388037305acd482804f65615aa5ef8b47b28bff0b512fa1269804064cf0b58",
+      "qa": {
+        "duration_seconds": 12.432,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.374,
+        "rms_dbfs": -20.153,
+        "trailing_silence_seconds": 0.593,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "从上面的小点开始，直直地往下写。": {
+      "spoken": "从上面的小点开始，直直地往下写。",
+      "text_sha256": "a31e55bfa91fa4812f790073d52fe6873ab79a0a2ee24e1b70b5b801a7182eb7",
+      "file": "voice-writing-v1/a31e55bfa91fa4812f79.mp3",
+      "sha256": "815c5c663ce2e5ab0f34faaf46d6791d8201bcf258a798f331b9a48b5e739f59",
+      "qa": {
+        "duration_seconds": 4.056,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.269,
+        "rms_dbfs": -21.003,
+        "trailing_silence_seconds": 0.605,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们来写数字二。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。": {
+      "spoken": "我们来写数字二。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。",
+      "text_sha256": "11d4fa7ec8842f8c4e0d60920b84f27fe42f950cbcbc702f4bbe7cac01819c4d",
+      "file": "voice-writing-v1/11d4fa7ec8842f8c4e0d.mp3",
+      "sha256": "7ce6d9349185c850fbfe40de28b595d342f4eae5cb1df957a4fb699932c4df8f",
+      "qa": {
+        "duration_seconds": 7.824,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.486,
+        "rms_dbfs": -19.936,
+        "trailing_silence_seconds": 0.597,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们再认识汉字，二。二表示两个。这里有两只小鸭，我们一起数，一，二。": {
+      "spoken": "我们再认识汉字，二。二表示两个。这里有两只小鸭，我们一起数，一，二。",
+      "text_sha256": "9be330341ac5486504cf214974fbe0a70a37c81b04130859f1ea10f21af43036",
+      "file": "voice-writing-v1/9be330341ac5486504cf.mp3",
+      "sha256": "51ee823f25837e4b871b017a3d1f4a01b87de7b528b85faadca8a1ff85cd82ad",
+      "qa": {
+        "duration_seconds": 9.192,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.496,
+        "rms_dbfs": -20.129,
+        "trailing_silence_seconds": 0.593,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "数字二，写好啦！你认真地完成了！": {
+      "spoken": "数字二，写好啦！你认真地完成了！",
+      "text_sha256": "9ea534045193e8c5f40c0fd93234922b978fd17c4280428bc7797ca74f009f77",
+      "file": "voice-writing-v1/9ea534045193e8c5f40c.mp3",
+      "sha256": "da9700f64c3e64b7875ff5fd1bfc421e2cd6fc5a09a61706e1b21ebbaf61449b",
+      "qa": {
+        "duration_seconds": 4.32,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.413,
+        "rms_dbfs": -20.424,
+        "trailing_silence_seconds": 0.594,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "数字二，写好啦！你认真地完成了！我们再认识汉字，二。二表示两个。这里有两只小鸭，我们一起数，一，二。": {
+      "spoken": "数字二，写好啦！你认真地完成了！我们再认识汉字，二。二表示两个。这里有两只小鸭，我们一起数，一，二。",
+      "text_sha256": "bdb2055f98a2a7ad6b4b833130644aa66394c7e5b7a4c850cc2147f2fecba4b0",
+      "file": "voice-writing-v1/bdb2055f98a2a7ad6b4b.mp3",
+      "sha256": "fef3975d98546d968daf92f1fd35b329a18f62276a4e63fc4badbdf767986281",
+      "qa": {
+        "duration_seconds": 13.392,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.139,
+        "rms_dbfs": -20.181,
+        "trailing_silence_seconds": 0.581,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "从左上小点开始，向右弯个弧，斜着走到左下，再向右写平。": {
+      "spoken": "从左上小点开始，向右弯个弧，斜着走到左下，再向右写平。",
+      "text_sha256": "9a4ae35a062f41842c08e89cda96975fe8a8b3eb0734d624b43002a5efb7d792",
+      "file": "voice-writing-v1/9a4ae35a062f41842c08.mp3",
+      "sha256": "d0e7d521a2c2187fd4a3e18fb3cc720416e75b7b40abf3b6a6e306699921fa86",
+      "qa": {
+        "duration_seconds": 6.696,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.864,
+        "rms_dbfs": -20.509,
+        "trailing_silence_seconds": 0.582,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们来写数字三。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。": {
+      "spoken": "我们来写数字三。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。",
+      "text_sha256": "86d6436676a7ec30288aa7af8f5136a2b788adbfbec9c2e1d9218dc11ac2debe",
+      "file": "voice-writing-v1/86d6436676a7ec30288a.mp3",
+      "sha256": "f4328cd9ae4f79506ce6177663bb85f3d17f3075ec3c45f9a9d42858684c09cd",
+      "qa": {
+        "duration_seconds": 7.896,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.353,
+        "rms_dbfs": -19.964,
+        "trailing_silence_seconds": 0.599,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们再认识汉字，三。三表示三个。这里有三朵小花，我们一起数，一，二，三。": {
+      "spoken": "我们再认识汉字，三。三表示三个。这里有三朵小花，我们一起数，一，二，三。",
+      "text_sha256": "465950724fe639064a190a51f043e21775f1eb3c4d3caf1d5af219b4b3bfa495",
+      "file": "voice-writing-v1/465950724fe639064a19.mp3",
+      "sha256": "c868aec1310b192f1bd7cc8239d3481355bedccc436f9876bc39814b48e7dbb0",
+      "qa": {
+        "duration_seconds": 9.672,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.903,
+        "rms_dbfs": -20.486,
+        "trailing_silence_seconds": 0.586,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "数字三，写好啦！你认真地完成了！": {
+      "spoken": "数字三，写好啦！你认真地完成了！",
+      "text_sha256": "171215572caa3eec17f8bd68e15b9062f478a89c2dd603d0f4f4111a349d3e69",
+      "file": "voice-writing-v1/171215572caa3eec17f8.mp3",
+      "sha256": "ff3cb825d488d00c96c9cb9725b5100949f71971c34dc69d6b7d02d12d1f9d8c",
+      "qa": {
+        "duration_seconds": 4.344,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.773,
+        "rms_dbfs": -20.912,
+        "trailing_silence_seconds": 0.591,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "数字三，写好啦！你认真地完成了！我们再认识汉字，三。三表示三个。这里有三朵小花，我们一起数，一，二，三。": {
+      "spoken": "数字三，写好啦！你认真地完成了！我们再认识汉字，三。三表示三个。这里有三朵小花，我们一起数，一，二，三。",
+      "text_sha256": "39468b4b460156c2c2ce1831b22d53fff64b866b60f1484fa702e36e508a17d5",
+      "file": "voice-writing-v1/39468b4b460156c2c2ce.mp3",
+      "sha256": "2df5216ee92cf41251fdadc068905ea61ab709e51aaad333daf52ffa2d9b27db",
+      "qa": {
+        "duration_seconds": 13.92,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.937,
+        "rms_dbfs": -20.58,
+        "trailing_silence_seconds": 0.595,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "从左上小点开始，先向右画上面的弯，再接着画下面的弯。": {
+      "spoken": "从左上小点开始，先向右画上面的弯，再接着画下面的弯。",
+      "text_sha256": "023a00e39ea7969fe6c6669f1ba223d79202d69252cca7966c48bc753b60b779",
+      "file": "voice-writing-v1/023a00e39ea7969fe6c6.mp3",
+      "sha256": "3ca6ee6d166b5317fbf21449eb7606c75df02156fc5cbb94fb47615341292ab3",
+      "qa": {
+        "duration_seconds": 6.144,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.307,
+        "rms_dbfs": -20.843,
+        "trailing_silence_seconds": 0.602,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们来写数字四。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。": {
+      "spoken": "我们来写数字四。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。",
+      "text_sha256": "3c65c0011327726c594b52ea4d504484ce1db99d4554357965f9f24f694127fe",
+      "file": "voice-writing-v1/3c65c0011327726c594b.mp3",
+      "sha256": "162a1a64dd4178ba1b30ca8b78a353b8ecb48f8b052db2bf8793e81dbeef09c3",
+      "qa": {
+        "duration_seconds": 7.872,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.972,
+        "rms_dbfs": -19.98,
+        "trailing_silence_seconds": 0.591,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们再认识汉字，口。口就是嘴巴。我们用嘴巴说话、吃东西。张开小嘴，笑一笑。": {
+      "spoken": "我们再认识汉字，口。口就是嘴巴。我们用嘴巴说话、吃东西。张开小嘴，笑一笑。",
+      "text_sha256": "d52fd53145dfed1ccb4014e530b7d884a7eafa6506666b42734ff10be216ce84",
+      "file": "voice-writing-v1/d52fd53145dfed1ccb40.mp3",
+      "sha256": "e472773c789126f094a36199c3ce9305d88957920e593d719ba14d8f30bd52a8",
+      "qa": {
+        "duration_seconds": 9.984,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -0.754,
+        "rms_dbfs": -19.915,
+        "trailing_silence_seconds": 0.594,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "数字四，写好啦！你认真地完成了！": {
+      "spoken": "数字四，写好啦！你认真地完成了！",
+      "text_sha256": "47e1f6e8492fcb7fa34b875d48ec657e32687e744bc6bc46fb7ab7e017fbbb74",
+      "file": "voice-writing-v1/47e1f6e8492fcb7fa34b.mp3",
+      "sha256": "8156edafde1929df06d7a17957df7092f881796ece692e95c8617059833436b6",
+      "qa": {
+        "duration_seconds": 4.392,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.853,
+        "rms_dbfs": -21.023,
+        "trailing_silence_seconds": 0.612,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "数字四，写好啦！你认真地完成了！我们再认识汉字，口。口就是嘴巴。我们用嘴巴说话、吃东西。张开小嘴，笑一笑。": {
+      "spoken": "数字四，写好啦！你认真地完成了！我们再认识汉字，口。口就是嘴巴。我们用嘴巴说话、吃东西。张开小嘴，笑一笑。",
+      "text_sha256": "a79830f3bd54d8a1bbf5f3bb500dc739dd4330eb931dc63217adfb6a7e5a99d6",
+      "file": "voice-writing-v1/a79830f3bd54d8a1bbf5.mp3",
+      "sha256": "47969a2088e53d53c3fa1a7174e06724c3612a008b1e173af727a2144bc0d5c4",
+      "qa": {
+        "duration_seconds": 14.256,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -0.479,
+        "rms_dbfs": -20.184,
+        "trailing_silence_seconds": 0.6,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "先从上面的小点斜着往左下走，再向右写平。": {
+      "spoken": "先从上面的小点斜着往左下走，再向右写平。",
+      "text_sha256": "4d447174448601d409c5b9fcddfeb3002eae4f6edd8831664ab2fb2a669d2577",
+      "file": "voice-writing-v1/4d447174448601d409c5.mp3",
+      "sha256": "90614549c95da24db59c87ee7a3e354b13fafb7dd2355863136b3ca6354620fd",
+      "qa": {
+        "duration_seconds": 5.136,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.226,
+        "rms_dbfs": -20.394,
+        "trailing_silence_seconds": 0.597,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "抬起手指，从第二个小点开始，往下写一条直线。": {
+      "spoken": "抬起手指，从第二个小点开始，往下写一条直线。",
+      "text_sha256": "6578d3bad04c6c9eca7a9f02ec4e8b107f7831f139e3a212c779ef3cf23d86e6",
+      "file": "voice-writing-v1/6578d3bad04c6c9eca7a.mp3",
+      "sha256": "d34ca8186a7313fe877dc8ef13eb392327791117f44fdcab400effb59d803f2d",
+      "qa": {
+        "duration_seconds": 5.184,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.941,
+        "rms_dbfs": -20.956,
+        "trailing_silence_seconds": 0.605,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们来写数字五。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。": {
+      "spoken": "我们来写数字五。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。",
+      "text_sha256": "65b386829cc8d19c53d0ef5bc7757a673d2ec9e14237ad043053bf29c8d4ceed",
+      "file": "voice-writing-v1/65b386829cc8d19c53d0.mp3",
+      "sha256": "51f7aaa4f9ac4f1b14b93b5e864a8a645adcf782d8f88e46af53c31f6646fd3c",
+      "qa": {
+        "duration_seconds": 7.872,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.98,
+        "rms_dbfs": -19.823,
+        "trailing_silence_seconds": 0.592,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们再认识汉字，手。手可以拿东西，也可以画画。看看自己的小手，伸开五根手指。": {
+      "spoken": "我们再认识汉字，手。手可以拿东西，也可以画画。看看自己的小手，伸开五根手指。",
+      "text_sha256": "574eec2def4402412e1cefc12d82c180f3d3d2a60691f00f0ab3662e2d541dfe",
+      "file": "voice-writing-v1/574eec2def4402412e1c.mp3",
+      "sha256": "7ec45ab97545f5dc28d5c05f100ec8a58feecc85abd34ed7ad1a954013523a19",
+      "qa": {
+        "duration_seconds": 9.432,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.436,
+        "rms_dbfs": -20.462,
+        "trailing_silence_seconds": 0.62,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "数字五，写好啦！你认真地完成了！": {
+      "spoken": "数字五，写好啦！你认真地完成了！",
+      "text_sha256": "35bf10242270310274f5ae3b5c55829802a44959b77c2f630a9832ca591ca3ba",
+      "file": "voice-writing-v1/35bf10242270310274f5.mp3",
+      "sha256": "e63b2efb5f437c61d1536814cb1a3693250527044932785bd4141d49190c87d0",
+      "qa": {
+        "duration_seconds": 4.32,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.365,
+        "rms_dbfs": -20.651,
+        "trailing_silence_seconds": 0.594,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "数字五，写好啦！你认真地完成了！我们再认识汉字，手。手可以拿东西，也可以画画。看看自己的小手，伸开五根手指。": {
+      "spoken": "数字五，写好啦！你认真地完成了！我们再认识汉字，手。手可以拿东西，也可以画画。看看自己的小手，伸开五根手指。",
+      "text_sha256": "94e036ab8f53f628c2d832373fcdadc9b52bae53b190c16a3b5063bd4ba264b1",
+      "file": "voice-writing-v1/94e036ab8f53f628c2d8.mp3",
+      "sha256": "767e788009df49db7cde1d5c0c3f1752bf80d0de18c995d318355ab4023512ee",
+      "qa": {
+        "duration_seconds": 13.632,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.243,
+        "rms_dbfs": -20.481,
+        "trailing_silence_seconds": 0.604,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "从左上小点往下走，再向右绕出下面的大弯。": {
+      "spoken": "从左上小点往下走，再向右绕出下面的大弯。",
+      "text_sha256": "4564fd9aae8670f7771217385930bc98972d783ac29dc8e26682cd1bfc27610f",
+      "file": "voice-writing-v1/4564fd9aae8670f77712.mp3",
+      "sha256": "ed04c2d7f9ea1a1c118f485cb3403e0e545519c8e1aac7f224c52c19c70e7e0f",
+      "qa": {
+        "duration_seconds": 4.92,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.039,
+        "rms_dbfs": -20.169,
+        "trailing_silence_seconds": 0.602,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "抬起手指，回到上面的小点，向右写一条短横线。": {
+      "spoken": "抬起手指，回到上面的小点，向右写一条短横线。",
+      "text_sha256": "2525c0fc177699839a0d97b8376e8ca35beb58521f862a0982381344473002e0",
+      "file": "voice-writing-v1/2525c0fc177699839a0d.mp3",
+      "sha256": "5b2118870b5d1eb3696e0075c5d35528e3e52e35e09f0c2493fc0a77e517349e",
+      "qa": {
+        "duration_seconds": 5.328,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.739,
+        "rms_dbfs": -20.774,
+        "trailing_silence_seconds": 0.604,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们来写数字六。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。": {
+      "spoken": "我们来写数字六。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。",
+      "text_sha256": "7dc69e2be9aeb5cf463fdcfc5248d898476658b8b96884117ca69de00c905f5f",
+      "file": "voice-writing-v1/7dc69e2be9aeb5cf463f.mp3",
+      "sha256": "8236046bb8f98509d1c3aab80e6614e0f15bc26c26272603c8e5411ed6d04255",
+      "qa": {
+        "duration_seconds": 7.872,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.344,
+        "rms_dbfs": -19.753,
+        "trailing_silence_seconds": 0.591,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们再认识汉字，日。日可以表示太阳，也可以表示一天。日出的意思是太阳升起来。": {
+      "spoken": "我们再认识汉字，日。日可以表示太阳，也可以表示一天。日出的意思是太阳升起来。",
+      "text_sha256": "266130c5d3242cbb5631ce26bf158bcb365065856fdf1efa0a19a5d27c3387b6",
+      "file": "voice-writing-v1/266130c5d3242cbb5631.mp3",
+      "sha256": "aaf5dd06216726f6d44cbfef599dfb90ac9051bee653b5b0a66fbb91bfd25d7b",
+      "qa": {
+        "duration_seconds": 9.36,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.498,
+        "rms_dbfs": -20.373,
+        "trailing_silence_seconds": 0.602,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "数字六，写好啦！你认真地完成了！": {
+      "spoken": "数字六，写好啦！你认真地完成了！",
+      "text_sha256": "94f7424fdf85465d29c1d43d2a196eb3e065e3656f85398daa6ebb29ce013057",
+      "file": "voice-writing-v1/94f7424fdf85465d29c1.mp3",
+      "sha256": "cfcfdb61b27052da58b84b2eba2860970110d0db385eb13bb6463ab3da21238b",
+      "qa": {
+        "duration_seconds": 4.392,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.505,
+        "rms_dbfs": -20.466,
+        "trailing_silence_seconds": 0.612,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "数字六，写好啦！你认真地完成了！我们再认识汉字，日。日可以表示太阳，也可以表示一天。日出的意思是太阳升起来。": {
+      "spoken": "数字六，写好啦！你认真地完成了！我们再认识汉字，日。日可以表示太阳，也可以表示一天。日出的意思是太阳升起来。",
+      "text_sha256": "0e90dfe6a2d8d7a58dc4f22470faac7776738c5f2e4b5329e424d20c82f641b3",
+      "file": "voice-writing-v1/0e90dfe6a2d8d7a58dc4.mp3",
+      "sha256": "3b21ee26b3f6f0c5d9888fcc3d30c052c64630ae3726b583d96ba48bd1329f0b",
+      "qa": {
+        "duration_seconds": 13.608,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.434,
+        "rms_dbfs": -20.354,
+        "trailing_silence_seconds": 0.586,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "从右上小点开始，向左下慢慢弯，再绕出下面的小圈。": {
+      "spoken": "从右上小点开始，向左下慢慢弯，再绕出下面的小圈。",
+      "text_sha256": "d1fdf3f5417fe8548d4abd1b4b3c52698d128770ebf3a717d9053af985f6fd0b",
+      "file": "voice-writing-v1/d1fdf3f5417fe8548d4a.mp3",
+      "sha256": "1408324013a4c7108e47567341b5c02e517c519f7ecc1cabeacb919068b228df",
+      "qa": {
+        "duration_seconds": 5.856,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.673,
+        "rms_dbfs": -19.744,
+        "trailing_silence_seconds": 0.594,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们来写数字七。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。": {
+      "spoken": "我们来写数字七。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。",
+      "text_sha256": "305e5cca241aed273aa377d7ab63d997e4d5c02d1e2b1cf54c3fbb1b6576224b",
+      "file": "voice-writing-v1/305e5cca241aed273aa3.mp3",
+      "sha256": "4e38a8556f3ec2834b088cff722fe2db5e481d048f1b0cf039afa50d4d90a179",
+      "qa": {
+        "duration_seconds": 7.848,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.793,
+        "rms_dbfs": -20.093,
+        "trailing_silence_seconds": 0.594,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们再认识汉字，月。月可以表示月亮，也可以表示月份。晚上找一找天上的月亮。": {
+      "spoken": "我们再认识汉字，月。月可以表示月亮，也可以表示月份。晚上找一找天上的月亮。",
+      "text_sha256": "3ad2bfd3cdd69a2ea8c0087ce31e4e440378e1fadcab51dcfefd86b662728111",
+      "file": "voice-writing-v1/3ad2bfd3cdd69a2ea8c0.mp3",
+      "sha256": "7910d150634536bc0864583cca484a5d76a05c739bd146ea4f5a706493c29e11",
+      "qa": {
+        "duration_seconds": 9.144,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.438,
+        "rms_dbfs": -19.809,
+        "trailing_silence_seconds": 0.6,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "数字七，写好啦！你认真地完成了！": {
+      "spoken": "数字七，写好啦！你认真地完成了！",
+      "text_sha256": "47747fb653649c44ebff260505834bbc89bf1c5ba5dbf0a099617c8b48cf2462",
+      "file": "voice-writing-v1/47747fb653649c44ebff.mp3",
+      "sha256": "bb3c1f329e88789f8e8c8b55ab84f3c46cb9aaa47cb12b17a5efff1078059830",
+      "qa": {
+        "duration_seconds": 4.416,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.089,
+        "rms_dbfs": -20.848,
+        "trailing_silence_seconds": 0.607,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "数字七，写好啦！你认真地完成了！我们再认识汉字，月。月可以表示月亮，也可以表示月份。晚上找一找天上的月亮。": {
+      "spoken": "数字七，写好啦！你认真地完成了！我们再认识汉字，月。月可以表示月亮，也可以表示月份。晚上找一找天上的月亮。",
+      "text_sha256": "420a673b250f969da932e731eeb92fd642e95bcf46782dda5ebbc6938c8e2952",
+      "file": "voice-writing-v1/420a673b250f969da932.mp3",
+      "sha256": "1534ea602caea7d6db4afb662b5ec0a63f4ceaa17cd2aeb8169bdf08105975cf",
+      "qa": {
+        "duration_seconds": 13.44,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.246,
+        "rms_dbfs": -20.069,
+        "trailing_silence_seconds": 0.599,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "从左上小点开始，先向右写平，再斜着往左下走。": {
+      "spoken": "从左上小点开始，先向右写平，再斜着往左下走。",
+      "text_sha256": "90e1ea17a2b73ad1b88f2824fbd2b90925b01383d3fd04a050bccadee4365397",
+      "file": "voice-writing-v1/90e1ea17a2b73ad1b88f.mp3",
+      "sha256": "78afd77c58c833a20f74f5458cd249bf121527d066c746765a4141c30daf6078",
+      "qa": {
+        "duration_seconds": 5.688,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.819,
+        "rms_dbfs": -20.877,
+        "trailing_silence_seconds": 0.632,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们来写数字八。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。": {
+      "spoken": "我们来写数字八。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。",
+      "text_sha256": "2760f00aa7e4af822f982a186b3dbfd5b6c5a31aa12cbef2e582e2cb0552e4eb",
+      "file": "voice-writing-v1/2760f00aa7e4af822f98.mp3",
+      "sha256": "f8899b7982adefe5834c370880848cf2aca12f923f2f6eff5021d888fc83fe50",
+      "qa": {
+        "duration_seconds": 7.8,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.32,
+        "rms_dbfs": -19.967,
+        "trailing_silence_seconds": 0.585,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们再认识汉字，人。你是一个小朋友，老师和家人也都是人。大家可以互相帮助。": {
+      "spoken": "我们再认识汉字，人。你是一个小朋友，老师和家人也都是人。大家可以互相帮助。",
+      "text_sha256": "052e1341d19750dc2c3a4272b5e0db6c195a0ee544ef6af70fa3fb84d882229d",
+      "file": "voice-writing-v1/052e1341d19750dc2c3a.mp3",
+      "sha256": "51c81fd1335b1409c27f5b168530aa49d39ba5346d435c5000582ec68c0301e1",
+      "qa": {
+        "duration_seconds": 9.432,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.723,
+        "rms_dbfs": -20.1,
+        "trailing_silence_seconds": 0.629,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "数字八，写好啦！你认真地完成了！": {
+      "spoken": "数字八，写好啦！你认真地完成了！",
+      "text_sha256": "e61e26c3fbb60f1dc392f994c6d5f48fd55e0426186943bb85bb88ac9db90a4d",
+      "file": "voice-writing-v1/e61e26c3fbb60f1dc392.mp3",
+      "sha256": "30dcc4f780fd48d6bcb691488f50bf8b120383f1e375e2d3e51e45b3d453bcdd",
+      "qa": {
+        "duration_seconds": 4.32,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.814,
+        "rms_dbfs": -20.691,
+        "trailing_silence_seconds": 0.594,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "数字八，写好啦！你认真地完成了！我们再认识汉字，人。你是一个小朋友，老师和家人也都是人。大家可以互相帮助。": {
+      "spoken": "数字八，写好啦！你认真地完成了！我们再认识汉字，人。你是一个小朋友，老师和家人也都是人。大家可以互相帮助。",
+      "text_sha256": "b0a1f95cccc4e2b1475985597bb2f55db13c071d375c40ab6d92766573efb741",
+      "file": "voice-writing-v1/b0a1f95cccc4e2b14759.mp3",
+      "sha256": "2f55949dc38cf669d2c0f3f21a1895d5496b24af33197faa2d256b6f93672a64",
+      "qa": {
+        "duration_seconds": 13.632,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.53,
+        "rms_dbfs": -20.215,
+        "trailing_silence_seconds": 0.617,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "从右上小点开始，先向左绕，交叉向右下，再绕回来，向右上绕回起点。": {
+      "spoken": "从右上小点开始，先向左绕，交叉向右下，再绕回来，向右上绕回起点。",
+      "text_sha256": "a394e5eb9382de8803ed5d1e4ff06b5124d0ae09031887f7adb6671355c499e9",
+      "file": "voice-writing-v1/a394e5eb9382de8803ed.mp3",
+      "sha256": "a0cfad185fb8608f5d90a55828177b09dc8cd058117358439f475aaf06b07c59",
+      "qa": {
+        "duration_seconds": 7.992,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.67,
+        "rms_dbfs": -20.647,
+        "trailing_silence_seconds": 0.614,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们来写数字九。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。": {
+      "spoken": "我们来写数字九。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。",
+      "text_sha256": "4649447677852c57ab6008f65346aa23b8e2e2f585716de796413fe676ed1bd9",
+      "file": "voice-writing-v1/4649447677852c57ab60.mp3",
+      "sha256": "712c07d344732918f9c3e8ffadeedf9d6c743db987231e69fe8cd24e589075b8",
+      "qa": {
+        "duration_seconds": 7.848,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.506,
+        "rms_dbfs": -19.948,
+        "trailing_silence_seconds": 0.581,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们再认识汉字，大。大象的身体很大。看看大象和小兔，它们的大小不一样。": {
+      "spoken": "我们再认识汉字，大。大象的身体很大。看看大象和小兔，它们的大小不一样。",
+      "text_sha256": "0d16d49533f88eabf2b3639e3fde7fe729dcbed18357be08e8a8a3e56dbd0c9a",
+      "file": "voice-writing-v1/0d16d49533f88eabf2b3.mp3",
+      "sha256": "8d7e79320e9ac4aa65636c6fe0fa90b0714d5a27f01435603479e8449955f5e1",
+      "qa": {
+        "duration_seconds": 8.712,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.272,
+        "rms_dbfs": -20.771,
+        "trailing_silence_seconds": 0.628,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "数字九，写好啦！你认真地完成了！": {
+      "spoken": "数字九，写好啦！你认真地完成了！",
+      "text_sha256": "bc2cd6f927c3fe83426e582ffb003840152b0697c16f1b03cc8e745d6acc8c65",
+      "file": "voice-writing-v1/bc2cd6f927c3fe83426e.mp3",
+      "sha256": "a9518e577fbf15563036742a4e42915b8df4a9f3bd92cfc440ce39cc66abc4f1",
+      "qa": {
+        "duration_seconds": 4.296,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.548,
+        "rms_dbfs": -20.8,
+        "trailing_silence_seconds": 0.595,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "数字九，写好啦！你认真地完成了！我们再认识汉字，大。大象的身体很大。看看大象和小兔，它们的大小不一样。": {
+      "spoken": "数字九，写好啦！你认真地完成了！我们再认识汉字，大。大象的身体很大。看看大象和小兔，它们的大小不一样。",
+      "text_sha256": "b58f0d771485f58bd6be0121ebbeabd077a948b94687a006847bf54c6aa3a046",
+      "file": "voice-writing-v1/b58f0d771485f58bd6be.mp3",
+      "sha256": "705960f74fafdc100ae26ebed1d024ba470d463d1c4ebaed22814d867d366609",
+      "qa": {
+        "duration_seconds": 12.888,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.539,
+        "rms_dbfs": -20.735,
+        "trailing_silence_seconds": 0.618,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "从右边的小点开始，向左绕出上面的小圈，回到右边，再往下写。": {
+      "spoken": "从右边的小点开始，向左绕出上面的小圈，回到右边，再往下写。",
+      "text_sha256": "75ee749f738db1abf0a2e5fa93591a365f8296e2f889e4df123ba0a8c20a72b7",
+      "file": "voice-writing-v1/75ee749f738db1abf0a2.mp3",
+      "sha256": "77c3f0f1b8b3a6d8b75ad27ac38ce9dbff647a3f6d8d96850ba6e8606aef5878",
+      "qa": {
+        "duration_seconds": 6.912,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.672,
+        "rms_dbfs": -20.688,
+        "trailing_silence_seconds": 0.586,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们来写数字十。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。": {
+      "spoken": "我们来写数字十。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。",
+      "text_sha256": "ebe255ac324259f0a24c0c57f9fef4e8d5936432fbb5b3d1cf7d6dadac1f1da8",
+      "file": "voice-writing-v1/ebe255ac324259f0a24c.mp3",
+      "sha256": "226f5e254a883a8046c2ecce91cc02e6d65353f44e7e805b6e019ca59d2de9fb",
+      "qa": {
+        "duration_seconds": 7.92,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.041,
+        "rms_dbfs": -19.975,
+        "trailing_silence_seconds": 0.583,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "我们再认识汉字，十。十表示十个。伸开两只小手，一共十根手指。数字十由一和零组成。": {
+      "spoken": "我们再认识汉字，十。十表示十个。伸开两只小手，一共十根手指。数字十由一和零组成。",
+      "text_sha256": "a42d631c4da41ad8d0fcaba88aa332d51296afb9251b20f5e8e9bcae522e0037",
+      "file": "voice-writing-v1/a42d631c4da41ad8d0fc.mp3",
+      "sha256": "7e38c812ea88ffe57c4b1b350eb0d3c6a5991559e4ddbb66fba3abc7807857c8",
+      "qa": {
+        "duration_seconds": 11.112,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.601,
+        "rms_dbfs": -20.041,
+        "trailing_silence_seconds": 0.608,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "数字十，写好啦！你认真地完成了！": {
+      "spoken": "数字十，写好啦！你认真地完成了！",
+      "text_sha256": "b4c1776fa82ad4bea7e3f7e17328bbce3b95c67ebb54a2968c566aa6b82a1e7c",
+      "file": "voice-writing-v1/b4c1776fa82ad4bea7e3.mp3",
+      "sha256": "40f330865461b26ccf0a0cc481404ba02bc708d0ca59a38f48d584771e280a97",
+      "qa": {
+        "duration_seconds": 4.344,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.451,
+        "rms_dbfs": -20.828,
+        "trailing_silence_seconds": 0.603,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "数字十，写好啦！你认真地完成了！我们再认识汉字，十。十表示十个。伸开两只小手，一共十根手指。数字十由一和零组成。": {
+      "spoken": "数字十，写好啦！你认真地完成了！我们再认识汉字，十。十表示十个。伸开两只小手，一共十根手指。数字十由一和零组成。",
+      "text_sha256": "3e800ef207b8f6837b319ac75b6ececbd48538a05b9bbcbdc5bddc266a02ebaa",
+      "file": "voice-writing-v1/3e800ef207b8f6837b31.mp3",
+      "sha256": "faba0bf9efb68a2ef9d4bc660d32d1a0a2fbf23cc8123c3dca8275baff4aecde",
+      "qa": {
+        "duration_seconds": 15.336,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.718,
+        "rms_dbfs": -20.222,
+        "trailing_silence_seconds": 0.599,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "先在左边写一个一，从上面的小点直直往下走。": {
+      "spoken": "先在左边写一个一，从上面的小点直直往下走。",
+      "text_sha256": "ea6735df0c2c4f328f7e5d191c87ef0caea5971e4bd7344ce4b8e79a892a608d",
+      "file": "voice-writing-v1/ea6735df0c2c4f328f7e.mp3",
+      "sha256": "eb0f92fcfbaf7503bd76a689b4a11094c9bf13176bb4666e6554dd1a77461624",
+      "qa": {
+        "duration_seconds": 5.28,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.114,
+        "rms_dbfs": -20.408,
+        "trailing_silence_seconds": 0.649,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "抬起手指，到右边的小点。先向左绕，再往下绕，绕一个闭合的零。": {
+      "spoken": "抬起手指，到右边的小点。先向左绕，再往下绕，绕一个闭合的零。",
+      "text_sha256": "e901655ebf7e623b0c4bb743a627f1c780c930b839046d3e2976225253cd00e9",
+      "file": "voice-writing-v1/e901655ebf7e623b0c4b.mp3",
+      "sha256": "6ef4dc0e97d23dfb7b16d41c85cfd0cb6740d49f88d6a6649d9782736e2b6c49",
+      "qa": {
+        "duration_seconds": 7.632,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.649,
+        "rms_dbfs": -20.253,
+        "trailing_silence_seconds": 0.593,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "首页有学写字、故事、认一认、小游戏、老师课堂、画画音乐，还有小影院。点一张喜欢的卡片吧。": {
+      "spoken": "首页有学写字、故事、认一认、小游戏、老师课堂、画画音乐，还有小影院。点一张喜欢的卡片吧。",
+      "text_sha256": "69fce1ecbc9c6c1087bd67a87d4784158a46f33ab455e6ebbe2c27279e868d34",
+      "file": "voice-writing-v1/69fce1ecbc9c6c1087bd.mp3",
+      "sha256": "fbc6009bf68b8899e4b788933e92da990323a0ba6c581915289b3cd85648cc23",
+      "qa": {
+        "duration_seconds": 11.064,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.303,
+        "rms_dbfs": -20.19,
+        "trailing_silence_seconds": 0.607,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    }
+  },
+  "asr_content_check_passed": true,
+  "asr_reviewed_clips": 66,
+  "asr_method": "Offline MLX Whisper large-v3-turbo, Chinese, deterministic decoding; no expected-text prompt",
+  "qa_limitation": "Decoding and reviewed automated transcription do not establish subjective naturalness or human listening."
+}
