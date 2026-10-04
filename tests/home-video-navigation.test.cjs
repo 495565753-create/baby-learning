@@ -67,12 +67,26 @@ test('video topics do not mix handcraft entries into the everyday-life filter', 
 });
 test('video entries open only public HTTPS pages without exposing the parent tab', () => {
   const { api, context } = load();
+  const validCount = context.KIDS_VIDEOS.length;
   assert.equal(api._test.safeVideoUrl('javascript:alert(1)'), '');
   assert.equal(api._test.safeVideoUrl('https://private:password@example.com/'), '');
   assert.equal(api._test.safeVideoUrl('http://example.com/'), '');
   context.KIDS_VIDEOS.push({ url: 'javascript:alert(1)', title: 'invalid', category: 'life' });
   const html = api.renderVideos();
-  assert.equal((html.match(/class="video-card"/g) || []).length, 11);
-  assert.equal((html.match(/target="_blank" rel="noopener noreferrer"/g) || []).length, 11);
+  assert.equal((html.match(/class="video-card"/g) || []).length, validCount);
+  assert.equal((html.match(/target="_blank" rel="noopener noreferrer"/g) || []).length, validCount);
   assert.doesNotMatch(html, /javascript:|<iframe|<video/);
+});
+test('cartoon filters keep Peppa and PAW Patrol official links in separate categories', () => {
+  const { api, context } = load();
+  api.selectVideoCategory('peppa');
+  assert.equal((context.html.match(/class="video-card"/g) || []).length, 3);
+  assert.match(context.html, /佩奇去操场/);
+  assert.doesNotMatch(context.html, /孵出日快乐|汪汪队：|3D 打印/);
+  api.selectVideoCategory('paw');
+  assert.equal((context.html.match(/class="video-card"/g) || []).length, 2);
+  assert.match(context.html, /小鸡生日快乐/);
+  assert.doesNotMatch(context.html, /佩奇去操场|3D 打印/);
+  const cartoons = context.KIDS_VIDEOS.filter(video => ['peppa', 'paw'].includes(video.category));
+  assert.ok(cartoons.every(video => video.hosting === 'external' && new URL(video.url).hostname === 'tv.cctv.com'));
 });

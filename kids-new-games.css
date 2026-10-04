@@ -287,6 +287,10 @@
 /* 小兔找家 */
 .ng-bunny { position:relative; }
 .ng-bunny-score { display:inline-flex; align-items:center; gap:4px; min-height:42px; margin:0 auto 8px; padding:6px 15px; border-radius:18px; background:#fff0bc; color:#745b18; font-size:18px; font-weight:850; }
+.ng-bunny-mission{display:flex;align-items:center;gap:10px;width:min(100%,430px);margin:0 auto 10px;padding:10px;border:2px solid #d6e9dd;border-radius:21px;background:#f4fcf7;text-align:left}
+.ng-bunny-mission>span{flex:0 0 42px;font-size:36px;text-align:center}.ng-bunny-mission>div{flex:1;min-width:0}.ng-bunny-mission b{display:block;font-size:17px;line-height:1.35}.ng-bunny-mission small{display:block;font-size:12px;line-height:1.45;margin-top:3px;color:#597363}.ng-bunny-mission button{flex:0 0 50px;min-width:50px;min-height:54px;border-radius:16px;background:#ffedb4;font-size:24px;color:#71581e}.ng-bunny-mission button small{font-size:11px;font-weight:850;color:inherit;margin:0}.ng-bunny-mission button:disabled{opacity:.5}
+.ng-bunny .ng-bunny-score{gap:12px;width:min(100%,430px);justify-content:center;padding:7px 10px;background:#fff8df}
+.ng-bunny-collection{display:flex;gap:6px}.ng-bunny-collection i{display:grid;place-items:center;width:30px;height:32px;font-size:23px;font-style:normal;opacity:.25;border:1px dashed #c4ad6b;border-radius:9px;background:#fff}.ng-bunny-collection i.collected{opacity:1;background:#e2f5ce;border:2px solid #94be70}
 
 .ng-bunny-board {
   position:relative;
@@ -304,6 +308,7 @@
 .ng-bunny-board::after { position:absolute; left:0; right:0; bottom:0; height:25%; content:''; background:linear-gradient(transparent,rgba(83,167,75,.17)); pointer-events:none; }
 .ng-bunny-path { position:absolute; inset:0; width:100%; height:100%; overflow:visible; }
 .ng-bunny-path path { fill:none; stroke:#f2d399; stroke-width:9; stroke-linecap:round; stroke-dasharray:3 2; vector-effect:non-scaling-stroke; }
+.ng-bunny-guide{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:0}.ng-bunny-guide.show{opacity:1}.ng-bunny-guide line{stroke:#508b5c;stroke-width:2;stroke-linecap:round;stroke-dasharray:2 3}
 
 .ng-carrot,
 .ng-bunny-home,
@@ -320,14 +325,25 @@
   font-size:34px;
 }
 
+/* The shared button press effect must keep the board coordinate centered. */
+.ng-carrot:active,
+.ng-bunny-home:active,
+.ng-bunny-player:active { transform:translate(-50%,-50%) scale(.97); }
+
 .ng-carrot { background:#fff9dc; box-shadow:0 4px 12px rgba(83,74,43,.14); }
+.ng-carrot.target-now{box-shadow:0 0 0 5px #ffd65899,0 4px 12px #534a2b24;border:2px solid #dfb23e}
 .ng-carrot.picked { opacity:0; pointer-events:none; transform:translate(-50%,-50%) scale(.2); }
 .ng-bunny-home { z-index:2; width:62px; height:62px; background:rgba(255,255,255,.74); font-size:38px; }
 .ng-bunny-home.ready { box-shadow:0 0 0 6px rgba(255,205,67,.38); animation:ngHomePulse 1.1s ease-in-out infinite; }
+.ng-bunny-home i{position:absolute;right:-3px;top:-3px;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#4d945b;color:white;font-size:15px;font-weight:900;font-style:normal}
 .ng-bunny-player { z-index:5; width:64px; height:64px; background:#fff; box-shadow:0 6px 15px rgba(66,62,52,.22); cursor:grab; }
 .ng-bunny-player i { position:absolute; right:-9px; bottom:-10px; font-size:24px; font-style:normal; }
 .ng-bunny-player.selected { box-shadow:0 0 0 5px rgba(255,201,55,.46),0 8px 16px rgba(66,62,52,.2); }
 .ng-bunny-player.dragging { cursor:grabbing; transform:translate(-50%,-50%) scale(1.08); }
+.ng-bunny-player.dragging:active { transform:translate(-50%,-50%) scale(1.08); }
+.ng-bunny-tools{display:flex;align-items:center;justify-content:space-between;gap:9px;width:min(100%,430px);margin:13px auto 0}.ng-bunny-tools button{flex:0 0 auto;min-width:128px;min-height:52px;border-radius:17px;background:#e7f1eb;color:#446252;font-size:15px;font-weight:850;padding:10px}.ng-bunny-tools>span{font-size:12px;line-height:1.45;color:#627669;text-align:right}
+.ng-bunny-stage-done{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:9px;background:#e0f4d9;border:2px solid #aed29c;border-radius:24px;margin:5px auto 13px;padding:14px;width:min(100%,430px);color:#3c6f35}.ng-bunny-stage-done>span{font-size:30px}.ng-bunny-stage-done b{font-size:21px}.ng-bunny-stage-done button{flex:0 0 100%;min-height:56px;border-radius:18px;background:#4b8d52;color:#fff;font-size:19px;font-weight:850}.ng-bunny-stage-done small{font-size:12px;line-height:1.5}
+@media(max-width:360px){.ng-bunny-mission{gap:7px;padding:8px}.ng-bunny-mission>span{flex-basis:34px;font-size:30px}.ng-bunny-mission b{font-size:15px}.ng-bunny-mission small{font-size:11px}.ng-bunny-mission button{flex-basis:48px;min-width:48px}.ng-bunny-tools button{min-width:116px;font-size:14px}.ng-bunny-tools>span{font-size:11px}.ng-bunny-stage-done b{font-size:19px}}
 
 /* 彩虹擦擦乐 */
 .ng-scratch-progress { width:min(100%,480px); height:13px; margin:0 auto 9px; overflow:hidden; border-radius:99px; background:#e5e8e7; }

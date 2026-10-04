@@ -9,16 +9,7 @@
   <meta name="apple-mobile-web-app-title" content="果粒橙小朋友乐园">
   <link rel="manifest" href="manifest.webmanifest?v=3">
   <link rel="apple-touch-icon" href="img/icon-180.png">
-  <link rel="stylesheet" href="kid.css?v=32">
-  <link rel="stylesheet" href="recognition.css?v=6">
-  <link rel="stylesheet" href="kids-new-games.css?v=1">
-  <link rel="stylesheet" href="glass-ui.css?v=1">
-  <link rel="stylesheet" href="kids-home.css?v=1">
-  <link rel="stylesheet" href="kids-challenge-games.css?v=1">
-  <link rel="stylesheet" href="kids-art-studio.css?v=1">
-  <link rel="stylesheet" href="kids-music-studio.css?v=3">
-  <link rel="stylesheet" href="kids-writing.css?v=1">
-  <link rel="stylesheet" href="tablet-ui.css?v=1">
+  <link rel="stylesheet" href="app-assets/app-80fe65521c2757c4.css">
   <title>果粒橙小朋友成长乐园</title>
 </head>
 <body>
@@ -27,7 +18,7 @@
     <button id="homeBtn" class="logo" aria-label="回到首页"><span aria-hidden="true">🍊</span><b>果粒橙乐园</b></button>
     <div class="top-actions"><button id="soundBtn" class="round-btn" aria-label="声音">🔊</button><span class="stars">⭐ <b id="stars">0</b></span></div>
   </header>
-  <main id="app"></main>
+  <main id="app"><section class="startup-welcome" style="padding:48px 24px;text-align:center" aria-live="polite"><div style="font-size:56px" aria-hidden="true">🍊</div><h1 id="startupMessage">正在打开小乐园…</h1><button id="startupRetry" class="wide-btn" hidden onclick="location.reload()">再试一次</button></section></main>
   <nav id="bottomNav" class="bottom-nav">
     <button data-go="home" class="active"><span>🏠</span>首页</button>
     <button data-go="school"><span>🎓</span>课堂</button>
@@ -36,28 +27,6 @@
     <button data-go="games"><span>🎮</span>玩游戏</button>
   </nav>
   <audio id="player" playsinline></audio>
-  <script src="books.js?v=8"></script>
-  <script src="books-extra.js?v=2"></script>
-  <script src="books-new-adventures.js?v=2"></script>
-  <script src="story-art-map.js?v=3"></script>
-  <script src="books-tablet-stories.js?v=1"></script>
-  <script src="courses.js?v=8"></script>
-  <script src="voice-map.js?v=24"></script>
-  <script src="modern-voice-map.js?v=1"></script>
-  <script src="challenge-voice-map.js?v=1"></script>
-  <script src="recognition-data.js?v=2"></script>
-  <script src="recognition.js?v=5"></script>
-  <script src="kids-new-games.js?v=1"></script>
-  <script src="kids-challenge-games.js?v=1"></script>
-  <script src="kids-videos-data.js?v=1"></script>
-  <script src="kids-home.js?v=3"></script>
-  <script src="creative-voice-map.js?v=1"></script>
-  <script src="kids-art-studio.js?v=1"></script>
-  <script src="kids-music-studio.js?v=2"></script>
-  <script src="kids-writing-data.js?v=1"></script>
-  <script src="kids-writing.js?v=1"></script>
-  <script src="writing-voice-map.js?v=1"></script>
-  <script src="tablet-story-voice-map.js?v=1"></script>
-  <script src="kid.js?v=43"></script>
+  <script defer src="app-assets/app-cbc7ceb0a04d1ffd.js" onerror="document.getElementById('startupMessage').textContent='小乐园还没有打开，请再试一次';document.getElementById('startupRetry').hidden=false"></script>
 </body>
 </html>

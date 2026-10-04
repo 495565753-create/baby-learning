@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-10-04T22:30:36.973601+08:00",
+  "source": "kids-home.js",
+  "source_sha256": "7414f5240fb6050c1645f20b68187d32a185268e30d5f59a445c9ae4818bc825",
+  "generator": "Microsoft Edge neural TTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "-8%",
+  "pitch": "+0Hz",
+  "text_count": 1,
+  "objective_qa_passed": true,
+  "note": "Full audio decode and independent transcription; no claim of human listening.",
+  "files": {
+    "小影院里有佩奇、汪汪队，还有科普小短片。请爸爸妈妈陪你一起看。点卡片去央视网，看完回到小乐园。": {
+      "file": "voice-home-video-v1/1aee0713bbe222df7b99.mp3",
+      "spoken": "小影院里有佩奇、汪汪队，还有科普小短片。请爸爸妈妈陪你一起看。点卡片去央视网，看完回到小乐园。",
+      "sha256": "6ae74f1a1b9b52be6433188161b0d4d6bc27dbb922e42047ea40a1ffe63de4f0",
+      "qa": {
+        "duration_seconds": 12.024,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.159,
+        "rms_dbfs": -19.618,
+        "trailing_silence_seconds": 0.6,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      }
+    }
+  },
+  "content_review_passed": true,
+  "review_note": "Complete-file transcription agrees except the same-pronunciation proper noun 奇/琪. Automated content QA; no human listening claim."
+}

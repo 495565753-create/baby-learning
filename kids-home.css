@@ -58,3 +58,7 @@
 @media(max-width:360px){.home-dashboard .home-hero h1{font-size:23px}.home-greeting{font-size:11px}.home-function-grid small{font-size:10px}.home-shortcut-grid>button{gap:6px;padding:9px}.home-shortcut-grid b{font-size:14px}.home-shortcut-grid small{font-size:10px}.home-shortcut-grid i{display:none}.video-welcome h1{font-size:21px}.video-card{grid-template-columns:78px minmax(0,1fr)}}
 @media(prefers-reduced-transparency:reduce),(prefers-contrast:more){.home-guide,.home-shortcut-grid>button,.video-card,.video-welcome,.video-parent-note,.video-filters button{background:#f8fbff;border-color:#c7d6e7}.home-function-grid .home-function-card:nth-child(n+5){background:#f5f2fd}.video-question{background:#e4f3e9}}
 @media(forced-colors:active){.home-guide,.home-shortcut-grid>button,.video-card,.video-welcome,.video-parent-note,.video-filters button,.video-poster{background:Canvas;color:CanvasText;box-shadow:none;border:1px solid CanvasText}.video-filters button.active{border:2px solid Highlight}.video-card strong{color:LinkText}}
+
+/* Familiar cartoon categories are easy to spot without loading external posters. */
+.video-card[data-video-topic="peppa"] .video-poster{background:linear-gradient(135deg,#ffdae9,#fff2d8)}
+.video-card[data-video-topic="paw"] .video-poster{background:linear-gradient(135deg,#cdeaff,#dff4d4)}

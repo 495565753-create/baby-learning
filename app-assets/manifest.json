@@ -1,0 +1,189 @@
+{
+  "format": 1,
+  "js": {
+    "file": "app-assets/app-cbc7ceb0a04d1ffd.js",
+    "sha256": "cbc7ceb0a04d1ffdf6352f3a23162ede86b1f56407f493819939773141f69fcf",
+    "bytes": 833880,
+    "gzip_bytes": 279598,
+    "inputs": [
+      {
+        "file": "books.js",
+        "bytes": 82734,
+        "sha256": "dfa1708ad6b3010b99280735ab87f25c241730bd51921629a4b2e995d85b07bd"
+      },
+      {
+        "file": "books-extra.js",
+        "bytes": 14067,
+        "sha256": "8e5b5edd3192d9f4a5fe3df76a9e520206923ad18f26abaa15a215bbd706d494"
+      },
+      {
+        "file": "books-new-adventures.js",
+        "bytes": 67707,
+        "sha256": "4b37d6dda825e418c051115bb723fb8775fcbd01425854cafcca01b152c605b0"
+      },
+      {
+        "file": "story-art-map.js",
+        "bytes": 22434,
+        "sha256": "44d7872d4e95a9cf09dd80603cff0764e656163df1337e8081d1f129d58d13be"
+      },
+      {
+        "file": "books-tablet-stories.js",
+        "bytes": 8925,
+        "sha256": "99fd6b731449e0e40cca26ebf619230e721a646d0c4d8b5faa2d93789842309b"
+      },
+      {
+        "file": "courses.js",
+        "bytes": 19088,
+        "sha256": "b8c1623a84c47d6a6430fc04bc2b1bfdb6f13f4320f2bf9c1f2c65553d52a48d"
+      },
+      {
+        "file": "voice-map.js",
+        "bytes": 251277,
+        "sha256": "db98b4ca7a1975fa831bfd86bafdae74d01ac1c93b8dadb0cc315b19f8df830b"
+      },
+      {
+        "file": "modern-voice-map.js",
+        "bytes": 8197,
+        "sha256": "dafbdb0b878ac95a4404d173f43e6555a26c1dead149d5975e7a520c6b2c73dc"
+      },
+      {
+        "file": "challenge-voice-map.js",
+        "bytes": 3636,
+        "sha256": "518ad41c9fc87ef0f5e1d178a78f67809eebb66c63388c762923fb9ae8b30da0"
+      },
+      {
+        "file": "video-voice-map.js",
+        "bytes": 350,
+        "sha256": "0a7fc8c88c522d57e3d3c19b2af29d2b0e62cee76b7c04319f5b4f5c072f3ba0"
+      },
+      {
+        "file": "recognition-data.js",
+        "bytes": 58807,
+        "sha256": "3a658558a8bf330febdb966b39742042d1afc0c92dbecc829b9342f445f427b0"
+      },
+      {
+        "file": "recognition.js",
+        "bytes": 36657,
+        "sha256": "6cbd469037643309679a2667da0c6fe52975eded418cbca18562d1c417cb3eda"
+      },
+      {
+        "file": "kids-new-games.js",
+        "bytes": 44956,
+        "sha256": "ad12a1022707ab9dbca8ad1df04677fea06fb5e8bb7551a3cc92dc63dfaa9977"
+      },
+      {
+        "file": "kids-challenge-games.js",
+        "bytes": 33691,
+        "sha256": "8b941661263f4aec37ed562f508378deb352cb611fa73b15e176d83b94325308"
+      },
+      {
+        "file": "kids-videos-data.js",
+        "bytes": 11593,
+        "sha256": "bdd80597da5c8f14a9a1d9b53f577ebfd23bf23b087fa0a1b591c584b58e28a9"
+      },
+      {
+        "file": "kids-home.js",
+        "bytes": 8940,
+        "sha256": "7414f5240fb6050c1645f20b68187d32a185268e30d5f59a445c9ae4818bc825"
+      },
+      {
+        "file": "creative-voice-map.js",
+        "bytes": 1607,
+        "sha256": "7169aeed6d334a1542b8ef88675f00e280224dc0fcd46ef450859f142b43bf2f"
+      },
+      {
+        "file": "kids-art-studio.js",
+        "bytes": 29965,
+        "sha256": "08db3e01cb066557cda10a0e644c8900e127e3786a04f5593cb3c84f16fb5d85"
+      },
+      {
+        "file": "kids-music-studio.js",
+        "bytes": 44961,
+        "sha256": "43699cd4b82801552813e9501fd65205f287bd0bc61f27f37916b10b2eebd9bd"
+      },
+      {
+        "file": "kids-writing-data.js",
+        "bytes": 12377,
+        "sha256": "4d98f052e74efd477e6a8a6a060b6820b71adb263fb8978b1ee0780a6b141caf"
+      },
+      {
+        "file": "kids-writing.js",
+        "bytes": 25955,
+        "sha256": "82c6a15e30974531f6e557458f2f160f5c75afaa3244d477e6b0f3aa40ab078c"
+      },
+      {
+        "file": "writing-voice-map.js",
+        "bytes": 16729,
+        "sha256": "097f2e2fcbd6fba185920b29147f642e10df7e2f26a6d188bdd9e9016965f960"
+      },
+      {
+        "file": "tablet-story-voice-map.js",
+        "bytes": 6484,
+        "sha256": "0760af8ba322f12a7309c8200ffbfed46e6d48083929fd9a129aa5f4effe363f"
+      },
+      {
+        "file": "kid.js",
+        "bytes": 98089,
+        "sha256": "eb9154ca13b28a38a91d6e2facaecbd4292594d822a0d66c2ae2627466acc3d9"
+      }
+    ]
+  },
+  "css": {
+    "file": "app-assets/app-80fe65521c2757c4.css",
+    "sha256": "80fe65521c2757c4719e2f34f51584a41b159856d1d07caf06a59e8e718cb896",
+    "bytes": 187727,
+    "gzip_bytes": 38301,
+    "inputs": [
+      {
+        "file": "kid.css",
+        "bytes": 65565,
+        "sha256": "8502dc072a7be17b85cf4887a8948e44b3645781643d06132ed0222f3f945551"
+      },
+      {
+        "file": "recognition.css",
+        "bytes": 22997,
+        "sha256": "7bce1602df8bb4b3985c6be577c51806a8bc5aa86aea066ad84d5e857bdd83dc"
+      },
+      {
+        "file": "kids-new-games.css",
+        "bytes": 18239,
+        "sha256": "cbf87ee2291315ccea8d822f51dd425e5eaa9ccb09c1a64e3a301e42342a0ec4"
+      },
+      {
+        "file": "glass-ui.css",
+        "bytes": 11602,
+        "sha256": "b3d226f1a94390308257e09bdacfca136ca5b0cf8bf67b8dc2ee912b44c3a559"
+      },
+      {
+        "file": "kids-home.css",
+        "bytes": 7856,
+        "sha256": "919faff32bb74673e6e4b97e541bc0ad32de87a28d6e08d9a8b3f9fb0ffb254a"
+      },
+      {
+        "file": "kids-challenge-games.css",
+        "bytes": 7644,
+        "sha256": "6ac02e3e8f77ac0d7022eaeaba88e7152696eb4ffd9cd8e091fa28949159a8e2"
+      },
+      {
+        "file": "kids-art-studio.css",
+        "bytes": 9123,
+        "sha256": "bf82d2802cba35102ee7921496ad8cac8e5617cff7a7a5833c48225ed0f5c62c"
+      },
+      {
+        "file": "kids-music-studio.css",
+        "bytes": 22403,
+        "sha256": "aeb2f99f103012b51d19e712f5e404171238a8074400bda73a64049916fa508b"
+      },
+      {
+        "file": "kids-writing.css",
+        "bytes": 11832,
+        "sha256": "fbfa16b90c447d9d6f750723509648da7a58d60023edf611c2a1220870270664"
+      },
+      {
+        "file": "tablet-ui.css",
+        "bytes": 27167,
+        "sha256": "856713bbc623489742a4fb02dd7da228d337a1866b5442ef1dd01a2dd2d87da0"
+      }
+    ]
+  }
+}

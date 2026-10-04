@@ -40,10 +40,11 @@
     { name: '香香便当', foods: [['rice2', '🍚'], ['fish', '🐟'], ['carrot', '🥕']] }
   ];
   const BUNNY_PATHS = [
-    { d: 'M10 82 C28 74 22 48 42 52 S64 78 70 49 S83 24 92 16', start: [10, 82], carrots: [[29, 58], [57, 68], [76, 38]], home: [92, 16] },
-    { d: 'M9 18 C28 15 30 42 47 43 S66 22 71 52 S78 78 92 83', start: [9, 18], carrots: [[29, 31], [57, 34], [76, 65]], home: [92, 83] },
-    { d: 'M10 78 C20 58 36 76 43 53 S53 20 68 33 S78 62 92 24', start: [10, 78], carrots: [[27, 66], [48, 38], [74, 45]], home: [92, 24] }
+    { d: 'M13 82 C28 74 22 48 42 52 S64 78 70 49 S81 24 87 16', start: [13, 82], carrots: [[29, 58], [57, 68], [76, 38]], home: [87, 16] },
+    { d: 'M13 18 C28 15 30 42 47 43 S66 22 71 52 S78 78 87 83', start: [13, 18], carrots: [[29, 31], [57, 34], [76, 65]], home: [87, 83] },
+    { d: 'M13 78 C20 58 36 76 43 53 S53 20 68 33 S78 62 87 24', start: [13, 78], carrots: [[27, 66], [48, 38], [74, 45]], home: [87, 24] }
   ];
+  const BUNNY_STAGES = ['跟着亮点', '自己找一找', '探索小路'];
   const SCRATCH_ROUNDS = [
     { name: '彩虹', icon: '🌈', colors: ['#ef6f7a', '#f4b34f', '#f4de68', '#71c991', '#65aee8'] },
     { name: '大星星', icon: '⭐', colors: ['#6cc5e8', '#8ed7bb', '#ffe073'] },
@@ -86,6 +87,9 @@
   let cleanups = [];
   let timers = [];
   let run = 0;
+  // A touch action may repaint the map before WebKit sends its compatibility
+  // click. Keep this guard across mounts, while allowing keyboard clicks.
+  let bunnyCompatibilityClickUntil = 0;
 
   function escapeHtml(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
@@ -124,7 +128,7 @@
     if (id === 'ngBentoChef') return { ...common, total: BENTOS.length, placed: [] };
     if (id === 'ngBunnyTrail') {
       const path = BUNNY_PATHS[0];
-      return { ...common, total: BUNNY_PATHS.length, x: path.start[0], y: path.start[1], carrots: [] };
+      return { ...common, total: BUNNY_PATHS.length, x: path.start[0], y: path.start[1], carrots: [], hintsEnabled: false, roundComplete: false };
     }
     if (id === 'ngRainbowReveal') return { ...common, total: SCRATCH_ROUNDS.length, covered: new Set() };
     if (id === 'ngAnimalFeeding') return { ...common, total: FEED_ROUNDS.length, fed: [] };
@@ -196,15 +200,20 @@
 
   function renderBunny(state) {
     const path = BUNNY_PATHS[Math.min(state.round, BUNNY_PATHS.length - 1)];
+    const goal = bunnyGoal(state);
+    const guided = state.round === 0 || state.hintsEnabled;
     return `<section class="lesson ng-game ng-bunny" data-ng-game="${state.id}">
-      ${gameHeader(state, '收好三根胡萝卜，再回家')}
-      <div class="ng-bunny-score">🥕 <b data-ng-carrot-count>${state.carrots.length}</b> / 3</div>
-      <div class="ng-bunny-board" data-ng-bunny-board>
+      ${gameHeader(state, `第 ${state.round + 1} 关 · ${BUNNY_STAGES[state.round]}`)}
+      <div class="ng-bunny-mission"><span data-ng-bunny-goal-icon aria-hidden="true">${goal.icon}</span><div><b data-ng-bunny-goal-label>${goal.label}</b><small data-ng-bunny-goal-detail>${goal.detail}</small></div><button data-ng-bunny-hint ${state.locked || state.done ? 'disabled' : ''} aria-label="小兔找家，给我一个提示">💡<small>提示</small></button></div>
+      <div class="ng-bunny-score"><span>🥕 <b data-ng-carrot-count>${state.carrots.length}</b> / 3</span><div class="ng-bunny-collection" aria-label="胡萝卜收集进度">${path.carrots.map((_, index) => `<i data-ng-bunny-progress="${index}" class="${state.carrots.includes(index) ? 'collected' : ''}" aria-label="第${index + 1}根胡萝卜${state.carrots.includes(index) ? '已收好' : '还没收好'}">🥕</i>`).join('')}</div></div>
+      ${state.roundComplete ? `<div class="ng-bunny-stage-done" role="status"><span aria-hidden="true">🏡 🌟</span><b>小兔到家啦！</b><button data-ng-bunny-next>下一关 →</button><small>准备好了再继续，也可以重玩这一关</small></div>` : ''}
+      <div class="ng-bunny-board ${guided ? 'guided' : ''}" data-ng-bunny-board aria-label="小兔找家画板，可以自由拖动，没有倒计时">
         <svg class="ng-bunny-path" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="${path.d}"></path></svg>
-        ${path.carrots.map((point, index) => `<button class="ng-carrot ${state.carrots.includes(index) ? 'picked' : ''}" data-ng-carrot="${index}" style="left:${point[0]}%;top:${point[1]}%" aria-label="胡萝卜${index + 1}">🥕</button>`).join('')}
-        <button class="ng-bunny-home ${state.carrots.length === 3 ? 'ready' : ''}" data-ng-home style="left:${path.home[0]}%;top:${path.home[1]}%" aria-label="小兔的家">🏡</button>
+        <svg class="ng-bunny-guide ${guided && !state.locked ? 'show' : ''}" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" data-ng-bunny-guide><line data-ng-bunny-guide-line x1="${state.x}" y1="${state.y}" x2="${goal.point[0]}" y2="${goal.point[1]}"></line></svg>
+        ${path.carrots.map((point, index) => `<button class="ng-carrot ${state.carrots.includes(index) ? 'picked' : ''} ${guided && goal.index === index ? 'target-now' : ''}" data-ng-carrot="${index}" style="left:${point[0]}%;top:${point[1]}%" ${state.carrots.includes(index) ? 'disabled' : ''} aria-label="胡萝卜${index + 1}${state.carrots.includes(index) ? '，已收好' : ''}">🥕</button>`).join('')}
+        <button class="ng-bunny-home ${state.carrots.length === 3 ? 'ready' : ''}" data-ng-home style="left:${path.home[0]}%;top:${path.home[1]}%" aria-label="小兔的家">🏡${state.carrots.length === 3 ? '<i aria-hidden="true">✓</i>' : ''}</button>
         <button class="ng-bunny-player ${state.selected ? 'selected' : ''}" data-ng-bunny style="left:${state.x}%;top:${state.y}%" aria-label="小兔，按住拖动">🐇<i aria-hidden="true">☝️</i></button>
-      </div>${message(state, state.selected ? '现在点胡萝卜，或者拖着小兔走' : '按住小兔滑，也可以先点小兔')}</section>`;
+      </div><div class="ng-bunny-tools"><button data-ng-bunny-restart>↻ 重玩本关</button><span>自由滑动 · 可以慢慢来</span></div>${message(state, state.selected ? '现在点胡萝卜，或者拖着小兔走' : '按住小兔滑，也可以先点小兔')}</section>`;
   }
 
   function renderScratch(state) {
@@ -430,6 +439,15 @@
     return BUNNY_PATHS[Math.min(session?.round || 0, BUNNY_PATHS.length - 1)];
   }
 
+  function bunnyGoal(state = session) {
+    if (!state || state.id !== 'ngBunnyTrail') return null;
+    const path = BUNNY_PATHS[Math.min(state.round, BUNNY_PATHS.length - 1)];
+    const index = path.carrots.findIndex((_, at) => !state.carrots.includes(at));
+    if (state.roundComplete || state.done) return { icon: '🏡', label: '小兔到家啦！', detail: '胡萝卜也都收好啦', point: path.home, index: -1 };
+    if (index < 0) return { icon: '🏡', label: '现在回家吧', detail: '跟着亮亮的小房子走', point: path.home, index: -1 };
+    return { icon: '🥕', label: `去找第 ${index + 1} 根胡萝卜`, detail: `还要收 ${3 - state.carrots.length} 根，再回家`, point: path.carrots[index], index };
+  }
+
   function updateBunnyDom(rootNode) {
     if (!session || session.id !== 'ngBunnyTrail') return;
     const bunny = rootNode?.querySelector?.('[data-ng-bunny]');
@@ -438,10 +456,34 @@
       bunny.style.top = `${session.y}%`;
       bunny.classList?.toggle('selected', Boolean(session.selected));
     }
-    rootNode?.querySelectorAll?.('[data-ng-carrot]').forEach(element => element.classList?.toggle('picked', session.carrots.includes(Number(element.dataset.ngCarrot))));
+    const goal = bunnyGoal();
+    const guided = session.round === 0 || session.hintsEnabled;
+    rootNode?.querySelectorAll?.('[data-ng-carrot]').forEach(element => {
+      const index = Number(element.dataset.ngCarrot);
+      const collected = session.carrots.includes(index);
+      element.classList?.toggle('picked', collected);
+      element.disabled = collected;
+      element.setAttribute?.('aria-label', `胡萝卜${index + 1}${collected ? '，已收好' : ''}`);
+      element.classList?.toggle('target-now', guided && goal.index === index);
+    });
     const count = rootNode?.querySelector?.('[data-ng-carrot-count]');
     if (count) count.textContent = String(session.carrots.length);
-    rootNode?.querySelector?.('[data-ng-home]')?.classList?.toggle('ready', session.carrots.length === 3);
+    rootNode?.querySelectorAll?.('[data-ng-bunny-progress]').forEach(element => {
+      const index = Number(element.dataset.ngBunnyProgress);
+      const collected = session.carrots.includes(index);
+      element.classList?.toggle('collected', collected);
+      element.setAttribute?.('aria-label', `第${index + 1}根胡萝卜${collected ? '已收好' : '还没收好'}`);
+    });
+    const home = rootNode?.querySelector?.('[data-ng-home]');
+    home?.classList?.toggle('ready', session.carrots.length === 3);
+    if (home) home.innerHTML = `🏡${session.carrots.length === 3 ? '<i aria-hidden="true">✓</i>' : ''}`;
+    for (const [selector, text] of [['[data-ng-bunny-goal-icon]', goal.icon], ['[data-ng-bunny-goal-label]', goal.label], ['[data-ng-bunny-goal-detail]', goal.detail]]) {
+      const node = rootNode?.querySelector?.(selector);
+      if (node) node.textContent = text;
+    }
+    rootNode?.querySelector?.('[data-ng-bunny-guide]')?.classList?.toggle('show', guided && !session.locked);
+    const guide = rootNode?.querySelector?.('[data-ng-bunny-guide-line]');
+    for (const [attribute, value] of [['x1', session.x], ['y1', session.y], ['x2', goal.point[0]], ['y2', goal.point[1]]]) guide?.setAttribute?.(attribute, String(value));
   }
 
   function finishBunnyRound() {
@@ -450,20 +492,55 @@
     state.message = '小兔到家啦！';
     say(state.message);
     if (state.round === state.total - 1) finishAfter(completionTexts[state.id], 520);
-    else nextRound(current => {
-      const next = BUNNY_PATHS[current.round];
-      current.x = next.start[0];
-      current.y = next.start[1];
-      current.carrots = [];
-    });
+    else {
+      state.roundComplete = true;
+      state.locked = true;
+      repaint();
+    }
+  }
+
+  function nextBunnyRound() {
+    const state = session;
+    if (!state || state.id !== 'ngBunnyTrail' || !state.roundComplete || state.done || state.round >= state.total - 1) return false;
+    state.round += 1;
+    const next = BUNNY_PATHS[state.round];
+    Object.assign(state, { x: next.start[0], y: next.start[1], carrots: [], selected: '', message: '', bad: false, locked: false, roundComplete: false, hintsEnabled: false });
+    repaint();
+    return true;
+  }
+
+  function restartBunnyRound() {
+    if (!session || session.id !== 'ngBunnyTrail') return false;
+    const round = session.round;
+    run += 1;
+    timers.splice(0).forEach(id => root.clearTimeout(id));
+    session = freshState('ngBunnyTrail');
+    session.round = round;
+    const path = BUNNY_PATHS[round];
+    session.x = path.start[0];
+    session.y = path.start[1];
+    root.document?.querySelector?.('#ngGameCelebration')?.remove?.();
+    repaint();
+    return true;
+  }
+
+  function hintBunny(rootNode = gameNode()) {
+    if (!session || session.id !== 'ngBunnyTrail' || session.locked || session.done) return false;
+    session.hintsEnabled = true;
+    updateBunnyDom(rootNode);
+    updateMessage(session.carrots.length === 3 ? '小房子亮起来啦，带小兔回家' : '看看亮起来的胡萝卜，带小兔去找它', false);
+    say(session.carrots.length === 3 ? '先点小兔，再点小房子。' : '先点小兔，再点胡萝卜。');
+    return true;
   }
 
   function bunnyMoveTo(x, y, rootNode) {
     const state = session;
     if (!state || state.id !== 'ngBunnyTrail' || state.done || state.locked) return false;
     const path = currentBunnyPath();
-    state.x = Math.max(3, Math.min(97, Number(x) || 0));
-    state.y = Math.max(3, Math.min(97, Number(y) || 0));
+    if (!Number.isFinite(Number(x)) || !Number.isFinite(Number(y))) return false;
+    state.x = Math.max(12, Math.min(88, Number(x)));
+    state.y = Math.max(12, Math.min(88, Number(y)));
+    const previousCount = state.carrots.length;
     path.carrots.forEach((point, index) => {
       if (state.carrots.includes(index) || Math.hypot(state.x - point[0], state.y - point[1]) > 11) return;
       state.carrots.push(index);
@@ -471,7 +548,7 @@
       say(state.message);
     });
     updateBunnyDom(rootNode);
-    updateMessage(state.carrots.length === 3 ? '胡萝卜收好啦，去小房子' : `已经找到 ${state.carrots.length} 根胡萝卜`, false);
+    updateMessage(state.carrots.length > previousCount ? '找到胡萝卜啦！' : state.carrots.length === 3 ? '胡萝卜收好啦，去小房子' : '接着找胡萝卜，可以慢慢滑', false);
     if (state.carrots.length === 3 && Math.hypot(state.x - path.home[0], state.y - path.home[1]) <= 13) finishBunnyRound();
     return true;
   }
@@ -488,7 +565,7 @@
     const moveLine = event => {
       const activePointer = pointer;
       if (!activePointer) return;
-      const next = point(event);
+      const next = point(event).map((value, index) => value + activePointer.offset[index]);
       const last = activePointer.last || next;
       const distance = Math.hypot(next[0] - last[0], next[1] - last[1]);
       const steps = Math.max(1, Math.ceil(distance / 3));
@@ -503,42 +580,78 @@
       if (event.isPrimary === false || session?.locked || session?.done) return;
       event.preventDefault();
       session.selected = 'bunny';
-      pointer = { id: event.pointerId, last: point(event), moved: false };
+      const pressed = point(event);
+      pointer = { id: event.pointerId, last: [session.x, session.y], offset: [session.x - pressed[0], session.y - pressed[1]], moved: false };
       bunny.classList?.add('dragging', 'selected');
       try { board.setPointerCapture?.(event.pointerId); } catch (_) {}
     });
     on(board, 'pointermove', event => {
       if (!pointer || pointer.id !== event.pointerId) return;
+      if (event.pointerType === 'mouse' && event.buttons === 0) { end(event, false); return; }
       event.preventDefault();
       pointer.moved = true;
       moveLine(event);
     }, { passive: false });
     const end = (event, cancelled) => {
       if (!pointer || pointer.id !== event.pointerId) return;
-      try { if (board.hasPointerCapture?.(event.pointerId)) board.releasePointerCapture(event.pointerId); } catch (_) {}
       pointer = null;
       bunny.classList?.remove('dragging');
+      try { if (board.hasPointerCapture?.(event.pointerId)) board.releasePointerCapture(event.pointerId); } catch (_) {}
       if (cancelled) updateMessage('小兔停好啦，可以接着走', false);
     };
     on(board, 'pointerup', event => end(event, false));
     on(board, 'pointercancel', event => end(event, true));
+    on(board, 'lostpointercapture', event => end(event, true));
     on(bunny, 'click', () => {
       if (!session || session.locked || session.done) return;
       session.selected = 'bunny';
       bunny.classList?.add('selected');
       updateMessage('选好小兔啦，再点胡萝卜', false);
     });
-    rootNode.querySelectorAll?.('[data-ng-carrot]').forEach(element => on(element, 'click', () => {
-      if (session?.selected !== 'bunny') { gentle('先点小兔，再点胡萝卜。'); return; }
-      const pointValue = currentBunnyPath().carrots[Number(element.dataset.ngCarrot)];
-      if (pointValue) bunnyMoveTo(pointValue[0], pointValue[1], rootNode);
+    const bindTap = (element, action) => {
+      if (!element) return;
+      let pressed = null;
+      on(element, 'pointerdown', event => {
+        if (event.isPrimary === false || (event.button != null && event.button !== 0)) return;
+        pressed = { id: event.pointerId, x: event.clientX, y: event.clientY };
+      });
+      on(element, 'pointerup', event => {
+        if (!pressed || pressed.id !== event.pointerId) return;
+        const started = pressed;
+        pressed = null;
+        bunnyCompatibilityClickUntil = Date.now() + 450;
+        // Only a gesture begun on this target is a tap. A rabbit drag releases
+        // on the board, so passing over a carrot never invokes this action.
+        if (Math.hypot(event.clientX - started.x, event.clientY - started.y) > 24) return;
+        action();
+      });
+      const cancel = event => { if (pressed?.id === event.pointerId) { pressed = null; bunnyCompatibilityClickUntil = Date.now() + 450; } };
+      on(element, 'pointercancel', cancel);
+      on(element, 'lostpointercapture', cancel);
+      on(element, 'click', event => {
+        if (event.detail !== 0 && Date.now() < bunnyCompatibilityClickUntil) { event.preventDefault(); return; }
+        action();
+      });
+      cleanups.push(() => { pressed = null; });
+    };
+    rootNode.querySelectorAll?.('[data-ng-carrot]').forEach(element => bindTap(element, () => {
+      if (!session || session.locked || session.done) return false;
+      if (session.selected !== 'bunny') { gentle('先点小兔，再点胡萝卜。'); return false; }
+      const index = Number(element.dataset.ngCarrot);
+      if (session.carrots.includes(index)) return false;
+      const pointValue = currentBunnyPath().carrots[index];
+      return Boolean(pointValue && bunnyMoveTo(pointValue[0], pointValue[1], rootNode));
     }));
-    on(rootNode.querySelector?.('[data-ng-home]'), 'click', () => {
-      if (session?.selected !== 'bunny') { gentle('先点小兔，再点小房子。'); return; }
-      if (session.carrots.length < 3) { gentle('先把三根胡萝卜找齐。'); return; }
+    bindTap(rootNode.querySelector?.('[data-ng-home]'), () => {
+      if (!session || session.locked || session.done) return false;
+      if (session.selected !== 'bunny') { gentle('先点小兔，再点小房子。'); return false; }
+      if (session.carrots.length < 3) { gentle('先把三根胡萝卜找齐。'); return false; }
       const home = currentBunnyPath().home;
-      bunnyMoveTo(home[0], home[1], rootNode);
+      return bunnyMoveTo(home[0], home[1], rootNode);
     });
+    on(rootNode.querySelector?.('[data-ng-bunny-hint]'), 'click', () => hintBunny(rootNode));
+    bindTap(rootNode.querySelector?.('[data-ng-bunny-next]'), nextBunnyRound);
+    bindTap(rootNode.querySelector?.('[data-ng-bunny-restart]'), restartBunnyRound);
     cleanups.push(() => {
       if (pointer) {
         try { if (board.hasPointerCapture?.(pointer.id)) board.releasePointerCapture(pointer.id); } catch (_) {}
@@ -736,6 +849,10 @@
       getState: snapshot,
       drop(source, target) { return applyMatch(source, target); },
       bunnyMove(x, y) { return bunnyMoveTo(x, y, null); },
+      bunnyNext: nextBunnyRound,
+      bunnyRestart: restartBunnyRound,
+      bunnyHint: hintBunny,
+      bunnyGoal() { return bunnyGoal(); },
       scratch(x, y) { return scratchAt(x, y, null, null); },
       data: { WATER_ORDER, PUZZLES, BENTOS, BUNNY_PATHS, SCRATCH_ROUNDS, FEED_ROUNDS }
     }
