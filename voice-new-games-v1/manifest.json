@@ -1,0 +1,423 @@
+{
+  "created_at": "2026-10-04T09:08:36+08:00",
+  "generator": "Microsoft Edge neural TTS",
+  "source": "kids-new-games.js",
+  "source_sha256": "6e0fb2b553eef06d398ae1eba9cb5f88b01ddc185d9bb69be0453635b3435cc0",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "-8%",
+  "pitch": "+0Hz",
+  "expressive_style": null,
+  "note": "默认晓晓女性神经声线，语速减慢 8%，音高保持原值；未启用教师情感样式。",
+  "text_count": 24,
+  "objective_qa_passed": true,
+  "files": {
+    "按住小水壶，拖到闪闪的小花旁边。也可以先点水壶，再点小花。": {
+      "spoken": "按住小水壶，拖到闪闪的小花旁边。也可以先点水壶，再点小花。",
+      "text_sha256": "9f268c92ccd55c8f3c5b9c858a27ecbf097f000a59a78f0fbc2029b014f75108",
+      "file": "voice-new-games-v1/9f268c92ccd55c8f3c5b.mp3",
+      "sha256": "e2564e8ff28c06f146600c14d9b13134167f6df5fea5cd3c196e0a96c13da5bb",
+      "qa": {
+        "duration_seconds": 7.464,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.657,
+        "rms_dbfs": -20.302,
+        "trailing_silence_seconds": 0.581,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "把三块小动物拼片，拖到一样形状的轮廓里。也可以先点拼片，再点轮廓。": {
+      "spoken": "把三块小动物拼片，拖到一样形状的轮廓里。也可以先点拼片，再点轮廓。",
+      "text_sha256": "77563a3ab0120c78779a3c15cf5735326b806d63958f58d8c9ea6d752e6feb3b",
+      "file": "voice-new-games-v1/77563a3ab0120c78779a.mp3",
+      "sha256": "a6c0f83f741764a9524c6ceb2c12c4f3ffcab0f298cbae83202f571c33cae107",
+      "qa": {
+        "duration_seconds": 7.92,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.129,
+        "rms_dbfs": -19.896,
+        "trailing_silence_seconds": 0.596,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "看看上面的小菜单，把食物拖进一样图案的便当格。也可以先点食物，再点格子。": {
+      "spoken": "看看上面的小菜单，把食物拖进一样图案的便当格。也可以先点食物，再点格子。",
+      "text_sha256": "51ac8394f054245ece808439e4dce1416e68f57d71f08b65fc459cc615d73e03",
+      "file": "voice-new-games-v1/51ac8394f054245ece80.mp3",
+      "sha256": "90ba0800b5c39384f9b47d54670119613f429fe947e6b6dfc998c37e2086c28a",
+      "qa": {
+        "duration_seconds": 8.808,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.502,
+        "rms_dbfs": -20.175,
+        "trailing_silence_seconds": 0.596,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "按住小兔沿着小路滑，收好三根胡萝卜，再去小房子。也可以先点小兔，再点胡萝卜。": {
+      "spoken": "按住小兔沿着小路滑，收好三根胡萝卜，再去小房子。也可以先点小兔，再点胡萝卜。",
+      "text_sha256": "93a9c8bb060d0b5e9ceaf160d7262ed37afac4f77edf0310bd8e74f755d2514a",
+      "file": "voice-new-games-v1/93a9c8bb060d0b5e9cea.mp3",
+      "sha256": "3e685fe23d5117fcbddeaefa69d6acdc7c0c34912f59704a641c11e3d435d2b0",
+      "qa": {
+        "duration_seconds": 9.312,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.379,
+        "rms_dbfs": -20.1,
+        "trailing_silence_seconds": 0.598,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "用手指在灰色云雾上来回擦一擦，藏起来的图案就会慢慢出现。": {
+      "spoken": "用手指在灰色云雾上来回擦一擦，藏起来的图案就会慢慢出现。",
+      "text_sha256": "22239f5d5fd646849da8c7c6f3da205906e3fdb04607302990a08803694301f7",
+      "file": "voice-new-games-v1/22239f5d5fd646849da8.mp3",
+      "sha256": "877f115b543fa32e614f4ea7867b96b8a1deb713261e543b30751259b365497e",
+      "qa": {
+        "duration_seconds": 6.672,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.495,
+        "rms_dbfs": -20.106,
+        "trailing_silence_seconds": 0.632,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "看看小动物喜欢吃什么，把合适的食物拖到它面前。也可以先点食物，再点小动物。": {
+      "spoken": "看看小动物喜欢吃什么，把合适的食物拖到它面前。也可以先点食物，再点小动物。",
+      "text_sha256": "a3ed81dafe9c0475a0ed59329e24719a24eedbb783ae0584855bc4801c0dd977",
+      "file": "voice-new-games-v1/a3ed81dafe9c0475a0ed.mp3",
+      "sha256": "52868bae05dbd23894848c351d5d4c2915ae4439957c2dd6f53789f7a5c3b996",
+      "qa": {
+        "duration_seconds": 8.904,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.305,
+        "rms_dbfs": -20.473,
+        "trailing_silence_seconds": 0.601,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "没关系，再找一找。": {
+      "spoken": "没关系，再找一找。",
+      "text_sha256": "12e67111aaa8dcc8aebdccea842f53f8cd53601b57d8d322e6630eb8eb43ae56",
+      "file": "voice-new-games-v1/12e67111aaa8dcc8aebd.mp3",
+      "sha256": "9d72337560af0e07ae504c97f26e314e15133ed1d1622da2ae1be96868d5ccc2",
+      "qa": {
+        "duration_seconds": 2.64,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.522,
+        "rms_dbfs": -20.791,
+        "trailing_silence_seconds": 0.591,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "先选一个，再点它要去的地方。": {
+      "spoken": "先选一个，再点它要去的地方。",
+      "text_sha256": "13485a7898127a60f7c8dcd1d19553c633f97e17f7dfe1ca1c25f9a68e22d2c5",
+      "file": "voice-new-games-v1/13485a7898127a60f7c8.mp3",
+      "sha256": "2fe96ddbb24d9d7b3169381a31e22e4d34095d5dc52cfc8f5215ef12a0ec84f2",
+      "qa": {
+        "duration_seconds": 3.48,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.445,
+        "rms_dbfs": -20.975,
+        "trailing_silence_seconds": 0.601,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "小花喝到水啦！": {
+      "spoken": "小花喝到水啦！",
+      "text_sha256": "4ed47460a95aa38626e8a3d484d5c8fcbd0848cb40c22a4b8b296eea0da9d4e9",
+      "file": "voice-new-games-v1/4ed47460a95aa38626e8.mp3",
+      "sha256": "8f72cb076a3b85bea87d01fc1e540286a23c4a1005c98aa7c1af412621f77e8d",
+      "qa": {
+        "duration_seconds": 2.184,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.279,
+        "rms_dbfs": -20.344,
+        "trailing_silence_seconds": 0.617,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "这块拼对啦！": {
+      "spoken": "这块拼对啦！",
+      "text_sha256": "e1ce070d7df380376a15b00ccfab6412a0fc2902e48d4023d5f08430263188f0",
+      "file": "voice-new-games-v1/e1ce070d7df380376a15.mp3",
+      "sha256": "8913b1c5e2d25d515ada1f1c28a80e3a843511bb982a70b2068dbe114dc5a2d7",
+      "qa": {
+        "duration_seconds": 1.872,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -6.251,
+        "rms_dbfs": -20.851,
+        "trailing_silence_seconds": 0.606,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "食物装对格子啦！": {
+      "spoken": "食物装对格子啦！",
+      "text_sha256": "a5757c501d70ab7175185c7d24d09d7606bd3fd51e3cf91f6ac07730dd5e512f",
+      "file": "voice-new-games-v1/a5757c501d70ab717518.mp3",
+      "sha256": "7cef3d5f5854b7258d0da65559b33d6a5bf9047c5b6e636331fd4b09f44c7fe2",
+      "qa": {
+        "duration_seconds": 2.28,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.905,
+        "rms_dbfs": -20.667,
+        "trailing_silence_seconds": 0.596,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "找到胡萝卜啦！": {
+      "spoken": "找到胡萝卜啦！",
+      "text_sha256": "750380f637fb80d441f7abd942ced6cee08bc82bbce619ae0fb2939822bfe4c2",
+      "file": "voice-new-games-v1/750380f637fb80d441f7.mp3",
+      "sha256": "dd6767fcdeee658e666792b8a4e4f6600b62c5140b94477147d780dd9717228f",
+      "qa": {
+        "duration_seconds": 1.92,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.384,
+        "rms_dbfs": -20.126,
+        "trailing_silence_seconds": 0.596,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "小兔到家啦！": {
+      "spoken": "小兔到家啦！",
+      "text_sha256": "39407d906bbc38b84c5a8a5f21c627cdd4ec83fc9b911ef5be93fd4d52a7b1f5",
+      "file": "voice-new-games-v1/39407d906bbc38b84c5a.mp3",
+      "sha256": "e57d069c92e1513e230f7855b19a03beb3e53753f07accbca5d6b65ab6381dac",
+      "qa": {
+        "duration_seconds": 1.92,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -6.029,
+        "rms_dbfs": -21.416,
+        "trailing_silence_seconds": 0.612,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "先点小兔，再点胡萝卜。": {
+      "spoken": "先点小兔，再点胡萝卜。",
+      "text_sha256": "f4142d9fec42f97fdc1ef2455e70a250e0d1e16af78337f23a7e0df385f8ee5f",
+      "file": "voice-new-games-v1/f4142d9fec42f97fdc1e.mp3",
+      "sha256": "e16afba0a8cb37601049b85d69cf3d410773a497736ba534a629f7be66de41b1",
+      "qa": {
+        "duration_seconds": 3.096,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.132,
+        "rms_dbfs": -20.387,
+        "trailing_silence_seconds": 0.605,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "先点小兔，再点小房子。": {
+      "spoken": "先点小兔，再点小房子。",
+      "text_sha256": "ca4f7f0fdb6d917b13e7fba3f6b1f31a5713c4cf45730d2c8fa110b9b0923433",
+      "file": "voice-new-games-v1/ca4f7f0fdb6d917b13e7.mp3",
+      "sha256": "d5beb8d3f4169bae422ca2416544515a8f3ba5a62a3f966d2dbd3cf9ed60c654",
+      "qa": {
+        "duration_seconds": 3.072,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.132,
+        "rms_dbfs": -20.648,
+        "trailing_silence_seconds": 0.592,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "先把三根胡萝卜找齐。": {
+      "spoken": "先把三根胡萝卜找齐。",
+      "text_sha256": "f37f427aadf046bd282dba09d35e8033e686cd3a4c6b1eaee596190d9c4499a8",
+      "file": "voice-new-games-v1/f37f427aadf046bd282d.mp3",
+      "sha256": "1a0513d9b5581f381b8237dbb00408896d5573045e59592a18a24d7af35fce9f",
+      "qa": {
+        "duration_seconds": 2.784,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.743,
+        "rms_dbfs": -20.329,
+        "trailing_silence_seconds": 0.588,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "图案出现啦！": {
+      "spoken": "图案出现啦！",
+      "text_sha256": "94cabe424f143abe7028909506718113eceb7db158f01da937b188ab55eb2d57",
+      "file": "voice-new-games-v1/94cabe424f143abe7028.mp3",
+      "sha256": "a4a58edce60b351764388e9c9e638d376cc57111d2f5509617c1b922ef3f4af2",
+      "qa": {
+        "duration_seconds": 1.872,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.938,
+        "rms_dbfs": -20.614,
+        "trailing_silence_seconds": 0.629,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "小动物吃到喜欢的食物啦！": {
+      "spoken": "小动物吃到喜欢的食物啦！",
+      "text_sha256": "d878d37fedfa10b022ee8cb3735f7e33c97ffcb0ea764c427c8794688cbfb9eb",
+      "file": "voice-new-games-v1/d878d37fedfa10b022ee.mp3",
+      "sha256": "037eef84a32cafce626ada5108d1bd37ca493e0ecdb0c34d4f600d310f85f0ea",
+      "qa": {
+        "duration_seconds": 2.952,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.797,
+        "rms_dbfs": -20.352,
+        "trailing_silence_seconds": 0.615,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "四朵小花都喝到水啦，花园开满了花！": {
+      "spoken": "四朵小花都喝到水啦，花园开满了花！",
+      "text_sha256": "4f7f3e1666ac15ad4da71e591e61b35b47836c47fea56dacce3432658f384686",
+      "file": "voice-new-games-v1/4f7f3e1666ac15ad4da7.mp3",
+      "sha256": "83e705a8e2a709ede5ce4702cddd1faff3b6e9fdb0916d2ff580ecac6a011aa0",
+      "qa": {
+        "duration_seconds": 4.416,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.208,
+        "rms_dbfs": -20.445,
+        "trailing_silence_seconds": 0.592,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "三只小动物都拼好啦，你的小手真灵巧！": {
+      "spoken": "三只小动物都拼好啦，你的小手真灵巧！",
+      "text_sha256": "81c7ff59e579e973b269fea15b80ce367c6a3f23eeec4b8c67a05621d9ad2d5e",
+      "file": "voice-new-games-v1/81c7ff59e579e973b269.mp3",
+      "sha256": "ba08ec456546ad997fac612b256a435584a9df30eb7f0a822ce32a824cfc2a26",
+      "qa": {
+        "duration_seconds": 4.296,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.078,
+        "rms_dbfs": -20.995,
+        "trailing_silence_seconds": 0.617,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "三份便当都装好啦，你是细心的小厨师！": {
+      "spoken": "三份便当都装好啦，你是细心的小厨师！",
+      "text_sha256": "9607693de4249e19e96608eddd5a6375ed53f2ad9e19abe0f42bcec0e69bf55f",
+      "file": "voice-new-games-v1/9607693de4249e19e966.mp3",
+      "sha256": "bbfe2fc3376fdfec77cf734e5590de148db6db07ddaa1c953b9fee31ac64b6d7",
+      "qa": {
+        "duration_seconds": 4.248,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.941,
+        "rms_dbfs": -21.44,
+        "trailing_silence_seconds": 0.597,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "小兔收好胡萝卜，平安回到家啦！": {
+      "spoken": "小兔收好胡萝卜，平安回到家啦！",
+      "text_sha256": "4d6e1edb9cf70dc08d62041efa8845f0f9a1db91d02fa63122a72293f1d2b0a0",
+      "file": "voice-new-games-v1/4d6e1edb9cf70dc08d62.mp3",
+      "sha256": "74b4591b2300273823b072dbbc7fb029e99f7e1ed6fb3c0aec51f0298f1e6cd4",
+      "qa": {
+        "duration_seconds": 3.72,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.379,
+        "rms_dbfs": -20.32,
+        "trailing_silence_seconds": 0.592,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "三个藏起来的图案都擦出来啦！": {
+      "spoken": "三个藏起来的图案都擦出来啦！",
+      "text_sha256": "a4c42012ad8d53b924e62eba7786d1fb8b849dfb80f46c67656285df49338134",
+      "file": "voice-new-games-v1/a4c42012ad8d53b924e6.mp3",
+      "sha256": "a071efe72fcd97baea1568ddf07e34466981d621348e18bdb4c321b8ead1beb5",
+      "qa": {
+        "duration_seconds": 3.408,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -6.79,
+        "rms_dbfs": -20.946,
+        "trailing_silence_seconds": 0.619,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "每只小动物都吃到了喜欢的食物！": {
+      "spoken": "每只小动物都吃到了喜欢的食物！",
+      "text_sha256": "56411e9abd51cbedb616422a5b7907b02bc96faedaba7b36ee9e3db50cb6b35f",
+      "file": "voice-new-games-v1/56411e9abd51cbedb616.mp3",
+      "sha256": "1faad9cc719d92a7794e1b993bfac7f3b2965462186cfcafa518eb391f7e462f",
+      "qa": {
+        "duration_seconds": 3.6,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.968,
+        "rms_dbfs": -19.706,
+        "trailing_silence_seconds": 0.585,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    }
+  }
+}

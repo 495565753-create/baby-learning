@@ -168,3 +168,11 @@ button:focus-visible, a:focus-visible { outline:3px solid #365c9a; outline-offse
   .home-school { gap:9px; }
   .home-school small { font-size:12px; }
 }
+
+/* Longer illustrated adventures keep the full scene visible. */
+.book { position:relative; }
+.book-badge { position:absolute; top:9px; right:9px; padding:5px 9px; border-radius:12px; background:#ffe095; color:#594513; font-size:11px; font-weight:900; box-shadow:0 2px 6px rgba(90,65,20,.1); pointer-events:none; }
+.reillustrated-story { background:#fff4e4; }
+.reillustrated-story img { object-fit:contain; padding:9px; }
+
+.adventure-story {aspect-ratio:1}

@@ -31,13 +31,13 @@ def records(folder):
             out[key]=value
     return out
 
-def segments(scores,count):
+def segments(scores,count,search_ratio=.16):
     """Remove narrow atlas divider lines; generated panel heights may vary."""
     size=len(scores);step=size/count;dividers=[(0,0)]
     for index in range(1,count):
         expected=index*step
-        start=max(1,round(expected-step*.16))
-        stop=min(size-1,round(expected+step*.16))
+        start=max(1,round(expected-step*search_ratio))
+        stop=min(size-1,round(expected+step*search_ratio))
         indices=np.flatnonzero(scores[start:stop]>=.88)+start
         groups=np.split(indices,np.where(np.diff(indices)>1)[0]+1) if len(indices) else []
         groups=[g for g in groups if 0<len(g)<=12]
@@ -86,7 +86,7 @@ def main():
             pages.append(relative)
             details.append({'book':book['id'],'page':n+1,'file':relative,'size':list(page.size),'crop_box':list(box),'sha256':hashlib.sha256(destination.read_bytes()).hexdigest()})
         ready[book['id']]=pages
-    mapping='(function(){const all=window.BOOKS||[];for(const book of window.BOOKS_EXTRA||[]){if(!all.some(existing=>existing.id===book.id))all.push(book);}window.BOOKS=all;const pictures='+json.dumps(ready,separators=(',',':'))+';for(const book of all){const pages=pictures[book.id];if(!pages||pages.length!==book.pages.length)continue;book.reillustrated=true;book.cover=pages[0];book.pages.forEach((page,index)=>{page.img=pages[index];});}})();\n'
+    mapping='(function(){const all=window.BOOKS||[];for(const book of [...(window.BOOKS_EXTRA||[]),...(window.BOOKS_ADVENTURES||[])]){if(!all.some(existing=>existing.id===book.id))all.push(book);}window.BOOKS=all;const pictures='+json.dumps(ready,separators=(',',':'))+';for(const book of all){const pages=pictures[book.id];if(!pages||pages.length!==book.pages.length)continue;book.reillustrated=true;book.cover=pages[0];book.pages.forEach((page,index)=>{page.img=pages[index];});}})();\n'
     (ROOT/'story-art-map.js').write_text(mapping)
     (FOLDER/'manifest.json').write_text(json.dumps({'book_count':len(ready),'page_count':len(details),'original_books':82,'new_books':12,'tool':'built-in image_gen','files':details},ensure_ascii=False,indent=2)+'\n')
     missing=[b['id'] for b in allbooks if b['id'] not in ready]

@@ -1,0 +1,3067 @@
+{
+  "book_count": 30,
+  "page_count": 180,
+  "generator": "built-in image_gen",
+  "files": [
+    {
+      "book": "adventure_peppa_01",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_peppa_01/page1.webp",
+      "size": [
+        510,
+        509
+      ],
+      "crop_box": [
+        0,
+        0,
+        510,
+        509
+      ],
+      "sha256": "2b2916879e949e3c294dc4243a897b91a03f237a2658f3a29c233e1952c1968f",
+      "source_sha256": "15ab613150f892fc71d9a0b6de11d414ff17564f9ceb761c36d784c36a1bdcd1"
+    },
+    {
+      "book": "adventure_peppa_01",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_peppa_01/page2.webp",
+      "size": [
+        511,
+        509
+      ],
+      "crop_box": [
+        513,
+        0,
+        1024,
+        509
+      ],
+      "sha256": "66e9dd622921c5627e181fc2c6a0fc69849b8bec17bd5602e0006b836dc7fb2f",
+      "source_sha256": "15ab613150f892fc71d9a0b6de11d414ff17564f9ceb761c36d784c36a1bdcd1"
+    },
+    {
+      "book": "adventure_peppa_01",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_peppa_01/page3.webp",
+      "size": [
+        510,
+        509
+      ],
+      "crop_box": [
+        0,
+        512,
+        510,
+        1021
+      ],
+      "sha256": "6665344f705f1e5c7d82796d92dd37726eef82423d15acf07e05e1fcc14e9255",
+      "source_sha256": "15ab613150f892fc71d9a0b6de11d414ff17564f9ceb761c36d784c36a1bdcd1"
+    },
+    {
+      "book": "adventure_peppa_01",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_peppa_01/page4.webp",
+      "size": [
+        511,
+        509
+      ],
+      "crop_box": [
+        513,
+        512,
+        1024,
+        1021
+      ],
+      "sha256": "1df2ee35277699a4d32ae48efe832d5dd04adb1be94ff077a8a3f8632193fc56",
+      "source_sha256": "15ab613150f892fc71d9a0b6de11d414ff17564f9ceb761c36d784c36a1bdcd1"
+    },
+    {
+      "book": "adventure_peppa_01",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_peppa_01/page5.webp",
+      "size": [
+        510,
+        512
+      ],
+      "crop_box": [
+        0,
+        1024,
+        510,
+        1536
+      ],
+      "sha256": "a7e4440ac5a848d06ab7c177e576c31678c10888cd0d149511de18c5fdb97f0b",
+      "source_sha256": "15ab613150f892fc71d9a0b6de11d414ff17564f9ceb761c36d784c36a1bdcd1"
+    },
+    {
+      "book": "adventure_peppa_01",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_peppa_01/page6.webp",
+      "size": [
+        511,
+        512
+      ],
+      "crop_box": [
+        513,
+        1024,
+        1024,
+        1536
+      ],
+      "sha256": "cfdb0cc0030fab08b9ad3ddaa9148ce654765a953d8dbd2c7856b1d71d77da43",
+      "source_sha256": "15ab613150f892fc71d9a0b6de11d414ff17564f9ceb761c36d784c36a1bdcd1"
+    },
+    {
+      "book": "adventure_peppa_02",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_peppa_02/page1.webp",
+      "size": [
+        509,
+        501
+      ],
+      "crop_box": [
+        0,
+        0,
+        509,
+        501
+      ],
+      "sha256": "926f7d46b5bda63b6dd8f432940e4b2d96ec8ac2a0f3d7320b096bd90d19c3c5",
+      "source_sha256": "dbb5a645fbb199504290b88f5cb4c14914f1f576f1b79492e8d299f1b4d5931c"
+    },
+    {
+      "book": "adventure_peppa_02",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_peppa_02/page2.webp",
+      "size": [
+        508,
+        501
+      ],
+      "crop_box": [
+        516,
+        0,
+        1024,
+        501
+      ],
+      "sha256": "03bc427b656a8d017ec267a8be3ef4bda6fea958c6e0962ef4f26970a85e64c7",
+      "source_sha256": "dbb5a645fbb199504290b88f5cb4c14914f1f576f1b79492e8d299f1b4d5931c"
+    },
+    {
+      "book": "adventure_peppa_02",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_peppa_02/page3.webp",
+      "size": [
+        509,
+        478
+      ],
+      "crop_box": [
+        0,
+        509,
+        509,
+        987
+      ],
+      "sha256": "d4b34ca73f51915558c31430db2d092fed86b4b5cc3eea4fbaf52b9c91adf3aa",
+      "source_sha256": "dbb5a645fbb199504290b88f5cb4c14914f1f576f1b79492e8d299f1b4d5931c"
+    },
+    {
+      "book": "adventure_peppa_02",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_peppa_02/page4.webp",
+      "size": [
+        508,
+        478
+      ],
+      "crop_box": [
+        516,
+        509,
+        1024,
+        987
+      ],
+      "sha256": "098a8ca6ebc457f40bf06f0e77502b61f808fb97d998ac571169b87bf8593cc8",
+      "source_sha256": "dbb5a645fbb199504290b88f5cb4c14914f1f576f1b79492e8d299f1b4d5931c"
+    },
+    {
+      "book": "adventure_peppa_02",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_peppa_02/page5.webp",
+      "size": [
+        509,
+        542
+      ],
+      "crop_box": [
+        0,
+        994,
+        509,
+        1536
+      ],
+      "sha256": "02726dfe1a73dacc98b5559776b27c58a3f43838c06fd1c6b7c67445ea616ef1",
+      "source_sha256": "dbb5a645fbb199504290b88f5cb4c14914f1f576f1b79492e8d299f1b4d5931c"
+    },
+    {
+      "book": "adventure_peppa_02",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_peppa_02/page6.webp",
+      "size": [
+        508,
+        542
+      ],
+      "crop_box": [
+        516,
+        994,
+        1024,
+        1536
+      ],
+      "sha256": "fdffc4e9c7468179dd6c9e57f8fd39b1bd80e6cb44d5d5be5482801c909edeb0",
+      "source_sha256": "dbb5a645fbb199504290b88f5cb4c14914f1f576f1b79492e8d299f1b4d5931c"
+    },
+    {
+      "book": "adventure_peppa_03",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_peppa_03/page1.webp",
+      "size": [
+        510,
+        476
+      ],
+      "crop_box": [
+        0,
+        0,
+        510,
+        476
+      ],
+      "sha256": "84e4c233d2ff84a20e8b7c0bfd5e8b87adb7c66df2e85a729bdaf0d5f35925ec",
+      "source_sha256": "379b96a5820f3011155f55dd5c5a00ec97217d95b60491939221763c8c492c00"
+    },
+    {
+      "book": "adventure_peppa_03",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_peppa_03/page2.webp",
+      "size": [
+        510,
+        476
+      ],
+      "crop_box": [
+        514,
+        0,
+        1024,
+        476
+      ],
+      "sha256": "b11b20a032aded3ab19381c2ee68d9148eb491ecf271c37a2bde9ceb7dd80fd2",
+      "source_sha256": "379b96a5820f3011155f55dd5c5a00ec97217d95b60491939221763c8c492c00"
+    },
+    {
+      "book": "adventure_peppa_03",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_peppa_03/page3.webp",
+      "size": [
+        510,
+        468
+      ],
+      "crop_box": [
+        0,
+        478,
+        510,
+        946
+      ],
+      "sha256": "f71a33d25c22eeba7901dd5a529a32230235768335b4a4e0503c4c2704b8f482",
+      "source_sha256": "379b96a5820f3011155f55dd5c5a00ec97217d95b60491939221763c8c492c00"
+    },
+    {
+      "book": "adventure_peppa_03",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_peppa_03/page4.webp",
+      "size": [
+        510,
+        468
+      ],
+      "crop_box": [
+        514,
+        478,
+        1024,
+        946
+      ],
+      "sha256": "25500ed2ea251d55b06872a2939857a2d7585f1ffde2aae11b540c3ca986cde6",
+      "source_sha256": "379b96a5820f3011155f55dd5c5a00ec97217d95b60491939221763c8c492c00"
+    },
+    {
+      "book": "adventure_peppa_03",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_peppa_03/page5.webp",
+      "size": [
+        510,
+        585
+      ],
+      "crop_box": [
+        0,
+        951,
+        510,
+        1536
+      ],
+      "sha256": "87159ff102bcac28b9faaf2561bf35374c85775a72448b84b5a43911f2acddb1",
+      "source_sha256": "379b96a5820f3011155f55dd5c5a00ec97217d95b60491939221763c8c492c00"
+    },
+    {
+      "book": "adventure_peppa_03",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_peppa_03/page6.webp",
+      "size": [
+        510,
+        585
+      ],
+      "crop_box": [
+        514,
+        951,
+        1024,
+        1536
+      ],
+      "sha256": "5f6524fb9ebdb5b6511f23334a09115b7e7a1b5edf568a933240fd68ec929c71",
+      "source_sha256": "379b96a5820f3011155f55dd5c5a00ec97217d95b60491939221763c8c492c00"
+    },
+    {
+      "book": "adventure_peppa_04",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_peppa_04/page1.webp",
+      "size": [
+        509,
+        496
+      ],
+      "crop_box": [
+        0,
+        0,
+        509,
+        496
+      ],
+      "sha256": "d76ed6eb95f12e00018cdff4acc1df881b2f4ff411c0030c42eed39950169169",
+      "source_sha256": "8e0f2e226798f50e3113c18aef7bfda0e14cd1a709bcc00d9a9f34ac3aebdb4d"
+    },
+    {
+      "book": "adventure_peppa_04",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_peppa_04/page2.webp",
+      "size": [
+        508,
+        496
+      ],
+      "crop_box": [
+        516,
+        0,
+        1024,
+        496
+      ],
+      "sha256": "bf6ac469cbd3f88373b5233ebd6d32eb49fba287c346ecced0f9a69890b3da9e",
+      "source_sha256": "8e0f2e226798f50e3113c18aef7bfda0e14cd1a709bcc00d9a9f34ac3aebdb4d"
+    },
+    {
+      "book": "adventure_peppa_04",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_peppa_04/page3.webp",
+      "size": [
+        509,
+        498
+      ],
+      "crop_box": [
+        0,
+        503,
+        509,
+        1001
+      ],
+      "sha256": "29808e87d061fddd4e5d32f035ce176450920facc9a73a5025e9c9d21fd63c0c",
+      "source_sha256": "8e0f2e226798f50e3113c18aef7bfda0e14cd1a709bcc00d9a9f34ac3aebdb4d"
+    },
+    {
+      "book": "adventure_peppa_04",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_peppa_04/page4.webp",
+      "size": [
+        508,
+        498
+      ],
+      "crop_box": [
+        516,
+        503,
+        1024,
+        1001
+      ],
+      "sha256": "6dcc8d08624f3d7c06809ec89ef972cb82dd749cb9fc2485eb5e9f523342b7f2",
+      "source_sha256": "8e0f2e226798f50e3113c18aef7bfda0e14cd1a709bcc00d9a9f34ac3aebdb4d"
+    },
+    {
+      "book": "adventure_peppa_04",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_peppa_04/page5.webp",
+      "size": [
+        509,
+        529
+      ],
+      "crop_box": [
+        0,
+        1007,
+        509,
+        1536
+      ],
+      "sha256": "dbd7a125620f0cf4c9d68a197272cb67ef6b84358b3d17fc1ed88a716cad58ee",
+      "source_sha256": "8e0f2e226798f50e3113c18aef7bfda0e14cd1a709bcc00d9a9f34ac3aebdb4d"
+    },
+    {
+      "book": "adventure_peppa_04",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_peppa_04/page6.webp",
+      "size": [
+        508,
+        529
+      ],
+      "crop_box": [
+        516,
+        1007,
+        1024,
+        1536
+      ],
+      "sha256": "b71993cf6d657944ad3795ca8b5723ac0adfadf9cb0513e8a8d07577d5a87a9e",
+      "source_sha256": "8e0f2e226798f50e3113c18aef7bfda0e14cd1a709bcc00d9a9f34ac3aebdb4d"
+    },
+    {
+      "book": "adventure_peppa_05",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_peppa_05/page1.webp",
+      "size": [
+        510,
+        505
+      ],
+      "crop_box": [
+        0,
+        0,
+        510,
+        505
+      ],
+      "sha256": "10b17be429995e43d3e6190793b494bbc759ab7c87407b6822265745ba130a1d",
+      "source_sha256": "ce76d110498ea4d334193028e08a7324f6c0386ae319909167e11d57d082cb6b"
+    },
+    {
+      "book": "adventure_peppa_05",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_peppa_05/page2.webp",
+      "size": [
+        510,
+        505
+      ],
+      "crop_box": [
+        514,
+        0,
+        1024,
+        505
+      ],
+      "sha256": "4cf704e16bbba9f1cf6ad0341c69984da8ade04d97cac29fec4040f948a7f12f",
+      "source_sha256": "ce76d110498ea4d334193028e08a7324f6c0386ae319909167e11d57d082cb6b"
+    },
+    {
+      "book": "adventure_peppa_05",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_peppa_05/page3.webp",
+      "size": [
+        510,
+        507
+      ],
+      "crop_box": [
+        0,
+        509,
+        510,
+        1016
+      ],
+      "sha256": "0d14da2c42267d8101beef4489d1d5fcdd589449e2cd8bd4d7eb545ee708c2a9",
+      "source_sha256": "ce76d110498ea4d334193028e08a7324f6c0386ae319909167e11d57d082cb6b"
+    },
+    {
+      "book": "adventure_peppa_05",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_peppa_05/page4.webp",
+      "size": [
+        510,
+        507
+      ],
+      "crop_box": [
+        514,
+        509,
+        1024,
+        1016
+      ],
+      "sha256": "6950948791f14f1e9a7dd5c666da9b091977926a6f0a552d7b82865e4633163b",
+      "source_sha256": "ce76d110498ea4d334193028e08a7324f6c0386ae319909167e11d57d082cb6b"
+    },
+    {
+      "book": "adventure_peppa_05",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_peppa_05/page5.webp",
+      "size": [
+        510,
+        516
+      ],
+      "crop_box": [
+        0,
+        1020,
+        510,
+        1536
+      ],
+      "sha256": "e7e278120c3dcc1d8de184168d89e2d7d074e99ab9c533910010a2553d7bf38d",
+      "source_sha256": "ce76d110498ea4d334193028e08a7324f6c0386ae319909167e11d57d082cb6b"
+    },
+    {
+      "book": "adventure_peppa_05",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_peppa_05/page6.webp",
+      "size": [
+        510,
+        516
+      ],
+      "crop_box": [
+        514,
+        1020,
+        1024,
+        1536
+      ],
+      "sha256": "594fbb68625f3aa02cfff0ccfa67bd8f54aac91fe8144efac8f4d617fd8d7bc1",
+      "source_sha256": "ce76d110498ea4d334193028e08a7324f6c0386ae319909167e11d57d082cb6b"
+    },
+    {
+      "book": "adventure_peppa_06",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_peppa_06/page1.webp",
+      "size": [
+        509,
+        474
+      ],
+      "crop_box": [
+        0,
+        0,
+        509,
+        474
+      ],
+      "sha256": "79004b1ad07e9ea93f12dfe2e8b984c0376076a1d60ed47f74e445322c324c1b",
+      "source_sha256": "8c5023d9bb0e4c3929f11ab0382620198734fd57ed872a2cbb7a97477d02f552"
+    },
+    {
+      "book": "adventure_peppa_06",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_peppa_06/page2.webp",
+      "size": [
+        509,
+        474
+      ],
+      "crop_box": [
+        515,
+        0,
+        1024,
+        474
+      ],
+      "sha256": "b9b660c635502efbc1d3926d719552cf801a9aae95e6443db3fc5f18e25e0c6d",
+      "source_sha256": "8c5023d9bb0e4c3929f11ab0382620198734fd57ed872a2cbb7a97477d02f552"
+    },
+    {
+      "book": "adventure_peppa_06",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_peppa_06/page3.webp",
+      "size": [
+        509,
+        477
+      ],
+      "crop_box": [
+        0,
+        479,
+        509,
+        956
+      ],
+      "sha256": "ce4fb689d6a742a3c6fd51112280503b9e12063d3ead9a75cfa857c2cb1dfcf7",
+      "source_sha256": "8c5023d9bb0e4c3929f11ab0382620198734fd57ed872a2cbb7a97477d02f552"
+    },
+    {
+      "book": "adventure_peppa_06",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_peppa_06/page4.webp",
+      "size": [
+        509,
+        477
+      ],
+      "crop_box": [
+        515,
+        479,
+        1024,
+        956
+      ],
+      "sha256": "c883a9d2081fba79f47adcd101a4156219fa94899b982ea2031c1e3f5c811d80",
+      "source_sha256": "8c5023d9bb0e4c3929f11ab0382620198734fd57ed872a2cbb7a97477d02f552"
+    },
+    {
+      "book": "adventure_peppa_06",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_peppa_06/page5.webp",
+      "size": [
+        509,
+        575
+      ],
+      "crop_box": [
+        0,
+        961,
+        509,
+        1536
+      ],
+      "sha256": "934c8bcf681c4d48cbbbd56665c577e45770d9fbb8124a819f8bb651ab7ad550",
+      "source_sha256": "8c5023d9bb0e4c3929f11ab0382620198734fd57ed872a2cbb7a97477d02f552"
+    },
+    {
+      "book": "adventure_peppa_06",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_peppa_06/page6.webp",
+      "size": [
+        509,
+        575
+      ],
+      "crop_box": [
+        515,
+        961,
+        1024,
+        1536
+      ],
+      "sha256": "fadcdeabf23f7db6a48a391c4e5e31115239c4384b5ee44d2766b54a4ba6e3c7",
+      "source_sha256": "8c5023d9bb0e4c3929f11ab0382620198734fd57ed872a2cbb7a97477d02f552"
+    },
+    {
+      "book": "adventure_peppa_07",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_peppa_07/page1.webp",
+      "size": [
+        510,
+        507
+      ],
+      "crop_box": [
+        0,
+        0,
+        510,
+        507
+      ],
+      "sha256": "ea82d37bf7f72bfd42d805d93722fbb9c0cafe5ccbe114ff1bad7279e8148721",
+      "source_sha256": "f7240777a417693d700d401fa4b28b8312aa9eac9c616a671082400f75db6038"
+    },
+    {
+      "book": "adventure_peppa_07",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_peppa_07/page2.webp",
+      "size": [
+        509,
+        507
+      ],
+      "crop_box": [
+        515,
+        0,
+        1024,
+        507
+      ],
+      "sha256": "0e7d526c47527f4b9e59a3fc45789ed7c01db12ba037306e1a6874a3affd4eed",
+      "source_sha256": "f7240777a417693d700d401fa4b28b8312aa9eac9c616a671082400f75db6038"
+    },
+    {
+      "book": "adventure_peppa_07",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_peppa_07/page3.webp",
+      "size": [
+        510,
+        504
+      ],
+      "crop_box": [
+        0,
+        512,
+        510,
+        1016
+      ],
+      "sha256": "9d0e5a92ccecbd44cc3c9525695fa784608a36fd273587d268bf1d63cd4d254e",
+      "source_sha256": "f7240777a417693d700d401fa4b28b8312aa9eac9c616a671082400f75db6038"
+    },
+    {
+      "book": "adventure_peppa_07",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_peppa_07/page4.webp",
+      "size": [
+        509,
+        504
+      ],
+      "crop_box": [
+        515,
+        512,
+        1024,
+        1016
+      ],
+      "sha256": "4b9db087bae4912f97ebc94cca232b84859a63bb427fcb660245d430de697799",
+      "source_sha256": "f7240777a417693d700d401fa4b28b8312aa9eac9c616a671082400f75db6038"
+    },
+    {
+      "book": "adventure_peppa_07",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_peppa_07/page5.webp",
+      "size": [
+        510,
+        513
+      ],
+      "crop_box": [
+        0,
+        1023,
+        510,
+        1536
+      ],
+      "sha256": "d9791ba4acc7eca02922032849163a1a380e85234a85eac35fa4fcabe3ccdf2a",
+      "source_sha256": "f7240777a417693d700d401fa4b28b8312aa9eac9c616a671082400f75db6038"
+    },
+    {
+      "book": "adventure_peppa_07",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_peppa_07/page6.webp",
+      "size": [
+        509,
+        513
+      ],
+      "crop_box": [
+        515,
+        1023,
+        1024,
+        1536
+      ],
+      "sha256": "c2eabbb912125c508dbd32123718cb7719cb688c0419384c47deacecfe483412",
+      "source_sha256": "f7240777a417693d700d401fa4b28b8312aa9eac9c616a671082400f75db6038"
+    },
+    {
+      "book": "adventure_peppa_08",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_peppa_08/page1.webp",
+      "size": [
+        509,
+        508
+      ],
+      "crop_box": [
+        0,
+        0,
+        509,
+        508
+      ],
+      "sha256": "838681189be12b92652f59f519b7607573a0e882bb5093e4963c75dfb2fbd013",
+      "source_sha256": "8265d05198b82df8cde61f7ec1431b26d1d633a6b2c7d984f819b308d3a29733"
+    },
+    {
+      "book": "adventure_peppa_08",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_peppa_08/page2.webp",
+      "size": [
+        509,
+        508
+      ],
+      "crop_box": [
+        515,
+        0,
+        1024,
+        508
+      ],
+      "sha256": "40f11bd0b6414b94611ece6ac817ea3b8986a53628b63b64eb1933927ce8b2a1",
+      "source_sha256": "8265d05198b82df8cde61f7ec1431b26d1d633a6b2c7d984f819b308d3a29733"
+    },
+    {
+      "book": "adventure_peppa_08",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_peppa_08/page3.webp",
+      "size": [
+        509,
+        507
+      ],
+      "crop_box": [
+        0,
+        514,
+        509,
+        1021
+      ],
+      "sha256": "ab656d33092adb4fbd0c321aefc9b8b84ad7cdbc672bb616f8b9302daea43f66",
+      "source_sha256": "8265d05198b82df8cde61f7ec1431b26d1d633a6b2c7d984f819b308d3a29733"
+    },
+    {
+      "book": "adventure_peppa_08",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_peppa_08/page4.webp",
+      "size": [
+        509,
+        507
+      ],
+      "crop_box": [
+        515,
+        514,
+        1024,
+        1021
+      ],
+      "sha256": "a2ded616d7114f35228040d204f5e7386c927e2d37a2131489b74d7a952e9cee",
+      "source_sha256": "8265d05198b82df8cde61f7ec1431b26d1d633a6b2c7d984f819b308d3a29733"
+    },
+    {
+      "book": "adventure_peppa_08",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_peppa_08/page5.webp",
+      "size": [
+        509,
+        509
+      ],
+      "crop_box": [
+        0,
+        1027,
+        509,
+        1536
+      ],
+      "sha256": "bbbd2860b2bc391e0787accfc1a4f74fb91f9d9ef3edc8ae1df61d1408428708",
+      "source_sha256": "8265d05198b82df8cde61f7ec1431b26d1d633a6b2c7d984f819b308d3a29733"
+    },
+    {
+      "book": "adventure_peppa_08",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_peppa_08/page6.webp",
+      "size": [
+        509,
+        509
+      ],
+      "crop_box": [
+        515,
+        1027,
+        1024,
+        1536
+      ],
+      "sha256": "4d2eeab63f5c918c60d347130d1b21ff27291a2ca0cb03fa1b3518fc7390486b",
+      "source_sha256": "8265d05198b82df8cde61f7ec1431b26d1d633a6b2c7d984f819b308d3a29733"
+    },
+    {
+      "book": "adventure_peppa_09",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_peppa_09/page1.webp",
+      "size": [
+        506,
+        495
+      ],
+      "crop_box": [
+        0,
+        0,
+        506,
+        495
+      ],
+      "sha256": "e59d6919457757ec9a8aeb10873eb0ae296542150b07a18449ac363d733920bf",
+      "source_sha256": "d14ed50b57b94b7ffdb0dc4b4c114d6ce6f33e6114eac4f53ea1c726510c7814"
+    },
+    {
+      "book": "adventure_peppa_09",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_peppa_09/page2.webp",
+      "size": [
+        506,
+        495
+      ],
+      "crop_box": [
+        518,
+        0,
+        1024,
+        495
+      ],
+      "sha256": "7eb5f0e4198c8149f0e8fa9e5c79ef0b73bfeff0b2a0455b62d516685fbc5883",
+      "source_sha256": "d14ed50b57b94b7ffdb0dc4b4c114d6ce6f33e6114eac4f53ea1c726510c7814"
+    },
+    {
+      "book": "adventure_peppa_09",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_peppa_09/page3.webp",
+      "size": [
+        506,
+        465
+      ],
+      "crop_box": [
+        0,
+        506,
+        506,
+        971
+      ],
+      "sha256": "de024d50ae5e59eac246cb23398a42c98fb05bb699e3a3644ef2d8591e0dbfa8",
+      "source_sha256": "d14ed50b57b94b7ffdb0dc4b4c114d6ce6f33e6114eac4f53ea1c726510c7814"
+    },
+    {
+      "book": "adventure_peppa_09",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_peppa_09/page4.webp",
+      "size": [
+        506,
+        465
+      ],
+      "crop_box": [
+        518,
+        506,
+        1024,
+        971
+      ],
+      "sha256": "4050acee4baee1f7f9cf63ba708f2eca7b9dfc31d1d39717855f0166f8bb6bdf",
+      "source_sha256": "d14ed50b57b94b7ffdb0dc4b4c114d6ce6f33e6114eac4f53ea1c726510c7814"
+    },
+    {
+      "book": "adventure_peppa_09",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_peppa_09/page5.webp",
+      "size": [
+        506,
+        554
+      ],
+      "crop_box": [
+        0,
+        982,
+        506,
+        1536
+      ],
+      "sha256": "84f81393f890a367325f6d9c7f28fe026cab216e19c80831439f30b2061d1aa8",
+      "source_sha256": "d14ed50b57b94b7ffdb0dc4b4c114d6ce6f33e6114eac4f53ea1c726510c7814"
+    },
+    {
+      "book": "adventure_peppa_09",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_peppa_09/page6.webp",
+      "size": [
+        506,
+        554
+      ],
+      "crop_box": [
+        518,
+        982,
+        1024,
+        1536
+      ],
+      "sha256": "a0f74bec5ef34a1a41ba55a9a9ca85ff01868015cc71e3e07db2d6c17a941b0c",
+      "source_sha256": "d14ed50b57b94b7ffdb0dc4b4c114d6ce6f33e6114eac4f53ea1c726510c7814"
+    },
+    {
+      "book": "adventure_peppa_10",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_peppa_10/page1.webp",
+      "size": [
+        510,
+        484
+      ],
+      "crop_box": [
+        0,
+        0,
+        510,
+        484
+      ],
+      "sha256": "85df58fb554e107dc3db5451623c9baa78d08273384ae5b3dd5b526a4a632681",
+      "source_sha256": "16e61271f5e981e06f9217cbcd4c5862e84d981bdb009ff5503aee47b8ec5fa5"
+    },
+    {
+      "book": "adventure_peppa_10",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_peppa_10/page2.webp",
+      "size": [
+        510,
+        484
+      ],
+      "crop_box": [
+        514,
+        0,
+        1024,
+        484
+      ],
+      "sha256": "c0b59d26ea88d5f3b2cec62d8c1215798d1162bfbf2c748697a6a04211817f44",
+      "source_sha256": "16e61271f5e981e06f9217cbcd4c5862e84d981bdb009ff5503aee47b8ec5fa5"
+    },
+    {
+      "book": "adventure_peppa_10",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_peppa_10/page3.webp",
+      "size": [
+        510,
+        485
+      ],
+      "crop_box": [
+        0,
+        489,
+        510,
+        974
+      ],
+      "sha256": "b472fff4ca184ff911e960d235cc1e251a3f20ea86c3886be9acb8af4c34d483",
+      "source_sha256": "16e61271f5e981e06f9217cbcd4c5862e84d981bdb009ff5503aee47b8ec5fa5"
+    },
+    {
+      "book": "adventure_peppa_10",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_peppa_10/page4.webp",
+      "size": [
+        510,
+        485
+      ],
+      "crop_box": [
+        514,
+        489,
+        1024,
+        974
+      ],
+      "sha256": "e92c6ca7af502256091ff34a99a7d827b9ac740a9178acad9ff2d81a14d0dc52",
+      "source_sha256": "16e61271f5e981e06f9217cbcd4c5862e84d981bdb009ff5503aee47b8ec5fa5"
+    },
+    {
+      "book": "adventure_peppa_10",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_peppa_10/page5.webp",
+      "size": [
+        510,
+        558
+      ],
+      "crop_box": [
+        0,
+        978,
+        510,
+        1536
+      ],
+      "sha256": "24e804a7fb4be971845110d17f399321222d24564e626f6def9410093375c129",
+      "source_sha256": "16e61271f5e981e06f9217cbcd4c5862e84d981bdb009ff5503aee47b8ec5fa5"
+    },
+    {
+      "book": "adventure_peppa_10",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_peppa_10/page6.webp",
+      "size": [
+        510,
+        558
+      ],
+      "crop_box": [
+        514,
+        978,
+        1024,
+        1536
+      ],
+      "sha256": "9b8d844f1f9defbe46caea47648468c080aa36d656970c3a3b0a092ee8f1f608",
+      "source_sha256": "16e61271f5e981e06f9217cbcd4c5862e84d981bdb009ff5503aee47b8ec5fa5"
+    },
+    {
+      "book": "adventure_paw_01",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_paw_01/page1.webp",
+      "size": [
+        509,
+        506
+      ],
+      "crop_box": [
+        0,
+        0,
+        509,
+        506
+      ],
+      "sha256": "b54bfa06e91d6ecb7ac3a11e69392f1d7448da74ea9e6ec69cd76e4b0ee5ca76",
+      "source_sha256": "a9fea37f07c0cc26577fa4157b8eecba6d8b3133d1c6331946fd279441c7c0e6"
+    },
+    {
+      "book": "adventure_paw_01",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_paw_01/page2.webp",
+      "size": [
+        510,
+        506
+      ],
+      "crop_box": [
+        514,
+        0,
+        1024,
+        506
+      ],
+      "sha256": "a8e4440dc216fed0cf808a1a07a4f5b24efa20a841c1d7cbb7eeb67243704951",
+      "source_sha256": "a9fea37f07c0cc26577fa4157b8eecba6d8b3133d1c6331946fd279441c7c0e6"
+    },
+    {
+      "book": "adventure_paw_01",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_paw_01/page3.webp",
+      "size": [
+        509,
+        495
+      ],
+      "crop_box": [
+        0,
+        512,
+        509,
+        1007
+      ],
+      "sha256": "d25c1c783f42156164b4e0aa45001f83422ca96e235c84efa90f3e870c8df659",
+      "source_sha256": "a9fea37f07c0cc26577fa4157b8eecba6d8b3133d1c6331946fd279441c7c0e6"
+    },
+    {
+      "book": "adventure_paw_01",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_paw_01/page4.webp",
+      "size": [
+        510,
+        495
+      ],
+      "crop_box": [
+        514,
+        512,
+        1024,
+        1007
+      ],
+      "sha256": "71eccc085e003096debf3433509f83d377ca4aba3b329055980509c1958ed5d9",
+      "source_sha256": "a9fea37f07c0cc26577fa4157b8eecba6d8b3133d1c6331946fd279441c7c0e6"
+    },
+    {
+      "book": "adventure_paw_01",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_paw_01/page5.webp",
+      "size": [
+        509,
+        523
+      ],
+      "crop_box": [
+        0,
+        1013,
+        509,
+        1536
+      ],
+      "sha256": "1e07e3e45078b9beb6375f09d89763b1a0ffff486f89f74d4e2920b147ea2e26",
+      "source_sha256": "a9fea37f07c0cc26577fa4157b8eecba6d8b3133d1c6331946fd279441c7c0e6"
+    },
+    {
+      "book": "adventure_paw_01",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_paw_01/page6.webp",
+      "size": [
+        510,
+        523
+      ],
+      "crop_box": [
+        514,
+        1013,
+        1024,
+        1536
+      ],
+      "sha256": "c7445db76d7463caf8dc06ca847fed53c587f7ace8af985a3e842e6473e08b13",
+      "source_sha256": "a9fea37f07c0cc26577fa4157b8eecba6d8b3133d1c6331946fd279441c7c0e6"
+    },
+    {
+      "book": "adventure_paw_02",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_paw_02/page1.webp",
+      "size": [
+        510,
+        507
+      ],
+      "crop_box": [
+        0,
+        0,
+        510,
+        507
+      ],
+      "sha256": "88888c3e1e3833589eddd5f31a869cac1c453e7e7def54861692aea22c48cea2",
+      "source_sha256": "238e1837cee9635b55d10d7e68075d574954788d9e644abed1aadd5e144bea52"
+    },
+    {
+      "book": "adventure_paw_02",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_paw_02/page2.webp",
+      "size": [
+        511,
+        507
+      ],
+      "crop_box": [
+        513,
+        0,
+        1024,
+        507
+      ],
+      "sha256": "2e5dc154ad2857299682c3510e8d2d537b0e8689e9ce84f5cc22605e2b63c047",
+      "source_sha256": "238e1837cee9635b55d10d7e68075d574954788d9e644abed1aadd5e144bea52"
+    },
+    {
+      "book": "adventure_paw_02",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_paw_02/page3.webp",
+      "size": [
+        510,
+        510
+      ],
+      "crop_box": [
+        0,
+        512,
+        510,
+        1022
+      ],
+      "sha256": "580b8d51ba16f6190b0a55014b6ad05841a5329fe154c0bbc7fbd4797035da2e",
+      "source_sha256": "238e1837cee9635b55d10d7e68075d574954788d9e644abed1aadd5e144bea52"
+    },
+    {
+      "book": "adventure_paw_02",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_paw_02/page4.webp",
+      "size": [
+        511,
+        510
+      ],
+      "crop_box": [
+        513,
+        512,
+        1024,
+        1022
+      ],
+      "sha256": "1927e42d8413fc99ee626fd1124dc2e6b94fc6113cbfaac80a83cdb95d8c2616",
+      "source_sha256": "238e1837cee9635b55d10d7e68075d574954788d9e644abed1aadd5e144bea52"
+    },
+    {
+      "book": "adventure_paw_02",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_paw_02/page5.webp",
+      "size": [
+        510,
+        510
+      ],
+      "crop_box": [
+        0,
+        1026,
+        510,
+        1536
+      ],
+      "sha256": "c1c0e8b877034478e8bd08385396198e60024fd3b03be9c88c56fda5ea172309",
+      "source_sha256": "238e1837cee9635b55d10d7e68075d574954788d9e644abed1aadd5e144bea52"
+    },
+    {
+      "book": "adventure_paw_02",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_paw_02/page6.webp",
+      "size": [
+        511,
+        510
+      ],
+      "crop_box": [
+        513,
+        1026,
+        1024,
+        1536
+      ],
+      "sha256": "fa8eb6161ea105f99c4721c9d34ab23232c26ab46babe638d3c3f53eb3bb5f41",
+      "source_sha256": "238e1837cee9635b55d10d7e68075d574954788d9e644abed1aadd5e144bea52"
+    },
+    {
+      "book": "adventure_paw_03",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_paw_03/page1.webp",
+      "size": [
+        509,
+        507
+      ],
+      "crop_box": [
+        0,
+        0,
+        509,
+        507
+      ],
+      "sha256": "bdf98a9ecf5393a4531fc7f45737e5af25036cb235c880242af2721fdb65e509",
+      "source_sha256": "9c029b456375dcf059387d6f574e016d402811faac58be309cb95869946ade2f"
+    },
+    {
+      "book": "adventure_paw_03",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_paw_03/page2.webp",
+      "size": [
+        511,
+        507
+      ],
+      "crop_box": [
+        513,
+        0,
+        1024,
+        507
+      ],
+      "sha256": "810c7857a00c8671fdc03bae57363f041133e4f8e3bfc8b94164e13b0c01d006",
+      "source_sha256": "9c029b456375dcf059387d6f574e016d402811faac58be309cb95869946ade2f"
+    },
+    {
+      "book": "adventure_paw_03",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_paw_03/page3.webp",
+      "size": [
+        509,
+        467
+      ],
+      "crop_box": [
+        0,
+        513,
+        509,
+        980
+      ],
+      "sha256": "d7fce42ca3aa1bf62bd9701de4d1ae29698024b428904553db27ef9209a9a590",
+      "source_sha256": "9c029b456375dcf059387d6f574e016d402811faac58be309cb95869946ade2f"
+    },
+    {
+      "book": "adventure_paw_03",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_paw_03/page4.webp",
+      "size": [
+        511,
+        467
+      ],
+      "crop_box": [
+        513,
+        513,
+        1024,
+        980
+      ],
+      "sha256": "e4d5240faeba0ff2f59100eea85b2a49f6144a5e4dc32facca5d4025628e7fb0",
+      "source_sha256": "9c029b456375dcf059387d6f574e016d402811faac58be309cb95869946ade2f"
+    },
+    {
+      "book": "adventure_paw_03",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_paw_03/page5.webp",
+      "size": [
+        509,
+        552
+      ],
+      "crop_box": [
+        0,
+        984,
+        509,
+        1536
+      ],
+      "sha256": "6ebf863a5e83eafbd6b412568dd839a41414de4302a2eb10859bb19c6087db36",
+      "source_sha256": "9c029b456375dcf059387d6f574e016d402811faac58be309cb95869946ade2f"
+    },
+    {
+      "book": "adventure_paw_03",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_paw_03/page6.webp",
+      "size": [
+        511,
+        552
+      ],
+      "crop_box": [
+        513,
+        984,
+        1024,
+        1536
+      ],
+      "sha256": "7de24ceeb971339bab862b52722390b365b8b5c03e998ddbebde6219e30a2c07",
+      "source_sha256": "9c029b456375dcf059387d6f574e016d402811faac58be309cb95869946ade2f"
+    },
+    {
+      "book": "adventure_paw_04",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_paw_04/page1.webp",
+      "size": [
+        508,
+        507
+      ],
+      "crop_box": [
+        0,
+        0,
+        508,
+        507
+      ],
+      "sha256": "4111569c70c1930ea0e2410dff28572bdbfad1c3ec70235551fb4ee729efa7c9",
+      "source_sha256": "a3439573c433d2a5c092169caf0a291e70338cd1f496d0edcb55c5fc3fc4946e"
+    },
+    {
+      "book": "adventure_paw_04",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_paw_04/page2.webp",
+      "size": [
+        508,
+        507
+      ],
+      "crop_box": [
+        516,
+        0,
+        1024,
+        507
+      ],
+      "sha256": "6e5cb8b2470cea283584627efb1b6ee2f98307e158d3840b4a5a3d625951c132",
+      "source_sha256": "a3439573c433d2a5c092169caf0a291e70338cd1f496d0edcb55c5fc3fc4946e"
+    },
+    {
+      "book": "adventure_paw_04",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_paw_04/page3.webp",
+      "size": [
+        508,
+        491
+      ],
+      "crop_box": [
+        0,
+        514,
+        508,
+        1005
+      ],
+      "sha256": "40df80b6a786499c55b05f595fe3b7ebef0d05354204bfc3ee6889cee15ab26e",
+      "source_sha256": "a3439573c433d2a5c092169caf0a291e70338cd1f496d0edcb55c5fc3fc4946e"
+    },
+    {
+      "book": "adventure_paw_04",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_paw_04/page4.webp",
+      "size": [
+        508,
+        491
+      ],
+      "crop_box": [
+        516,
+        514,
+        1024,
+        1005
+      ],
+      "sha256": "1bc6df8bb134b98c5b0e22c9413013858ef90c7d0827d36c300bb133aadf6afd",
+      "source_sha256": "a3439573c433d2a5c092169caf0a291e70338cd1f496d0edcb55c5fc3fc4946e"
+    },
+    {
+      "book": "adventure_paw_04",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_paw_04/page5.webp",
+      "size": [
+        508,
+        524
+      ],
+      "crop_box": [
+        0,
+        1012,
+        508,
+        1536
+      ],
+      "sha256": "958605cd3f5dc9ad8b6a80a72fcec87235c42b161e5ea1ad60b0c517cdd2209d",
+      "source_sha256": "a3439573c433d2a5c092169caf0a291e70338cd1f496d0edcb55c5fc3fc4946e"
+    },
+    {
+      "book": "adventure_paw_04",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_paw_04/page6.webp",
+      "size": [
+        508,
+        524
+      ],
+      "crop_box": [
+        516,
+        1012,
+        1024,
+        1536
+      ],
+      "sha256": "b47cef298912691720781e396d336f9063e10fc028274da63d4d8bc69fc0d0a3",
+      "source_sha256": "a3439573c433d2a5c092169caf0a291e70338cd1f496d0edcb55c5fc3fc4946e"
+    },
+    {
+      "book": "adventure_paw_05",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_paw_05/page1.webp",
+      "size": [
+        506,
+        461
+      ],
+      "crop_box": [
+        0,
+        0,
+        506,
+        461
+      ],
+      "sha256": "3c7e94bc62582da90bead6bf21da3837dac32502984d2cfbabd20a936bf240dd",
+      "source_sha256": "062638d456661e5379fe6bae4b88315a20b90cbfc6ad5d6f7d7af604c7d45c90"
+    },
+    {
+      "book": "adventure_paw_05",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_paw_05/page2.webp",
+      "size": [
+        506,
+        461
+      ],
+      "crop_box": [
+        518,
+        0,
+        1024,
+        461
+      ],
+      "sha256": "a95f33ebb5532c0939315840dc705943e037c253d71dc55ab373a860953a219e",
+      "source_sha256": "062638d456661e5379fe6bae4b88315a20b90cbfc6ad5d6f7d7af604c7d45c90"
+    },
+    {
+      "book": "adventure_paw_05",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_paw_05/page3.webp",
+      "size": [
+        506,
+        462
+      ],
+      "crop_box": [
+        0,
+        471,
+        506,
+        933
+      ],
+      "sha256": "6e2c1f366bacd834c83964fda525559114a1e0c59b3861f72b9d99f05ee2573d",
+      "source_sha256": "062638d456661e5379fe6bae4b88315a20b90cbfc6ad5d6f7d7af604c7d45c90"
+    },
+    {
+      "book": "adventure_paw_05",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_paw_05/page4.webp",
+      "size": [
+        506,
+        462
+      ],
+      "crop_box": [
+        518,
+        471,
+        1024,
+        933
+      ],
+      "sha256": "a026cd89186275c210df882f307c555f7058cb99b01d5eb2edec3d938b493ad9",
+      "source_sha256": "062638d456661e5379fe6bae4b88315a20b90cbfc6ad5d6f7d7af604c7d45c90"
+    },
+    {
+      "book": "adventure_paw_05",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_paw_05/page5.webp",
+      "size": [
+        506,
+        593
+      ],
+      "crop_box": [
+        0,
+        943,
+        506,
+        1536
+      ],
+      "sha256": "9a1bc839b998f98cfca54a0468f1226bc2e1147afa15a58b1547410156405125",
+      "source_sha256": "062638d456661e5379fe6bae4b88315a20b90cbfc6ad5d6f7d7af604c7d45c90"
+    },
+    {
+      "book": "adventure_paw_05",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_paw_05/page6.webp",
+      "size": [
+        506,
+        593
+      ],
+      "crop_box": [
+        518,
+        943,
+        1024,
+        1536
+      ],
+      "sha256": "50cec9f342b37992355e43cb39d61c9d7d65442aea193983799765e32f8e9ef1",
+      "source_sha256": "062638d456661e5379fe6bae4b88315a20b90cbfc6ad5d6f7d7af604c7d45c90"
+    },
+    {
+      "book": "adventure_paw_06",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_paw_06/page1.webp",
+      "size": [
+        508,
+        500
+      ],
+      "crop_box": [
+        0,
+        0,
+        508,
+        500
+      ],
+      "sha256": "af7780f4d5a20febf8ba28f896a3fd29902dbe0caad9ab309a4d2f4f685d05a7",
+      "source_sha256": "51a2f012e1e7334f56bce06d29c05de795def982cc1ab0c8132fc7df3d5e5b15"
+    },
+    {
+      "book": "adventure_paw_06",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_paw_06/page2.webp",
+      "size": [
+        509,
+        500
+      ],
+      "crop_box": [
+        515,
+        0,
+        1024,
+        500
+      ],
+      "sha256": "8833ef9ea1a617cfea9d5c3d41dd1455139fd66ee5d9e78e0606a5a2f883850c",
+      "source_sha256": "51a2f012e1e7334f56bce06d29c05de795def982cc1ab0c8132fc7df3d5e5b15"
+    },
+    {
+      "book": "adventure_paw_06",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_paw_06/page3.webp",
+      "size": [
+        508,
+        504
+      ],
+      "crop_box": [
+        0,
+        508,
+        508,
+        1012
+      ],
+      "sha256": "b440ec50c0824b12d31d356172457456263e46ca3b01f959226144c321da3a4c",
+      "source_sha256": "51a2f012e1e7334f56bce06d29c05de795def982cc1ab0c8132fc7df3d5e5b15"
+    },
+    {
+      "book": "adventure_paw_06",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_paw_06/page4.webp",
+      "size": [
+        509,
+        504
+      ],
+      "crop_box": [
+        515,
+        508,
+        1024,
+        1012
+      ],
+      "sha256": "111d64fc1d1949984873f18470ef903f52b93ad779af35521f61fa24f14f8233",
+      "source_sha256": "51a2f012e1e7334f56bce06d29c05de795def982cc1ab0c8132fc7df3d5e5b15"
+    },
+    {
+      "book": "adventure_paw_06",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_paw_06/page5.webp",
+      "size": [
+        508,
+        519
+      ],
+      "crop_box": [
+        0,
+        1017,
+        508,
+        1536
+      ],
+      "sha256": "c4d971671e0f9b0e1196edec625c84f8c445c0e1d0b9df94777fc70cb7a4c0da",
+      "source_sha256": "51a2f012e1e7334f56bce06d29c05de795def982cc1ab0c8132fc7df3d5e5b15"
+    },
+    {
+      "book": "adventure_paw_06",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_paw_06/page6.webp",
+      "size": [
+        509,
+        519
+      ],
+      "crop_box": [
+        515,
+        1017,
+        1024,
+        1536
+      ],
+      "sha256": "a270a07e294c6ff9f97c2a242d2622dbeef2240b47942790c5e930311b3231a3",
+      "source_sha256": "51a2f012e1e7334f56bce06d29c05de795def982cc1ab0c8132fc7df3d5e5b15"
+    },
+    {
+      "book": "adventure_paw_07",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_paw_07/page1.webp",
+      "size": [
+        508,
+        453
+      ],
+      "crop_box": [
+        0,
+        0,
+        508,
+        453
+      ],
+      "sha256": "35cc1b4799e6f01c92859e60893377052953bb6f3558e8d14cbb8ee55ff5508c",
+      "source_sha256": "705ac3dd9803ccb14fed51c89a714fb1728be1f58015873168574357af94e6d2"
+    },
+    {
+      "book": "adventure_paw_07",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_paw_07/page2.webp",
+      "size": [
+        508,
+        453
+      ],
+      "crop_box": [
+        516,
+        0,
+        1024,
+        453
+      ],
+      "sha256": "966c5eaf2339fa98fc4a0f54e0fc6c54e93fa324308d476ded4a2960d45e541a",
+      "source_sha256": "705ac3dd9803ccb14fed51c89a714fb1728be1f58015873168574357af94e6d2"
+    },
+    {
+      "book": "adventure_paw_07",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_paw_07/page3.webp",
+      "size": [
+        508,
+        490
+      ],
+      "crop_box": [
+        0,
+        462,
+        508,
+        952
+      ],
+      "sha256": "fbdda395dcb3606b3911283193c512b6ec368fb366c0bac2821258e0ef26699e",
+      "source_sha256": "705ac3dd9803ccb14fed51c89a714fb1728be1f58015873168574357af94e6d2"
+    },
+    {
+      "book": "adventure_paw_07",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_paw_07/page4.webp",
+      "size": [
+        508,
+        490
+      ],
+      "crop_box": [
+        516,
+        462,
+        1024,
+        952
+      ],
+      "sha256": "168999a0845978c6bf8dcf4a823bd0bf810ac4f44ce541b97b4d50241384b398",
+      "source_sha256": "705ac3dd9803ccb14fed51c89a714fb1728be1f58015873168574357af94e6d2"
+    },
+    {
+      "book": "adventure_paw_07",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_paw_07/page5.webp",
+      "size": [
+        508,
+        576
+      ],
+      "crop_box": [
+        0,
+        960,
+        508,
+        1536
+      ],
+      "sha256": "493cc901f1038a1ebf4055454fcade7dbda0c2ba6bfd3168571acb32d36942a7",
+      "source_sha256": "705ac3dd9803ccb14fed51c89a714fb1728be1f58015873168574357af94e6d2"
+    },
+    {
+      "book": "adventure_paw_07",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_paw_07/page6.webp",
+      "size": [
+        508,
+        576
+      ],
+      "crop_box": [
+        516,
+        960,
+        1024,
+        1536
+      ],
+      "sha256": "4ba7e4e5890a924adee5b189b62ed6809f333def4ca3bb11988e1e493a4dcc34",
+      "source_sha256": "705ac3dd9803ccb14fed51c89a714fb1728be1f58015873168574357af94e6d2"
+    },
+    {
+      "book": "adventure_paw_08",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_paw_08/page1.webp",
+      "size": [
+        508,
+        506
+      ],
+      "crop_box": [
+        0,
+        0,
+        508,
+        506
+      ],
+      "sha256": "968fde48b8145022c6f625a32794b74e17e932bfed0ca81b8c398d0911630200",
+      "source_sha256": "23a5d7c9b072dbb47471b6fdb6565a91ff7e6977b993d5f2b78102387f810ddd"
+    },
+    {
+      "book": "adventure_paw_08",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_paw_08/page2.webp",
+      "size": [
+        508,
+        506
+      ],
+      "crop_box": [
+        516,
+        0,
+        1024,
+        506
+      ],
+      "sha256": "27dea8022cb67d97adc24accb1b7b885d1acaccd0a54601efaa0dbc3c31608ce",
+      "source_sha256": "23a5d7c9b072dbb47471b6fdb6565a91ff7e6977b993d5f2b78102387f810ddd"
+    },
+    {
+      "book": "adventure_paw_08",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_paw_08/page3.webp",
+      "size": [
+        508,
+        505
+      ],
+      "crop_box": [
+        0,
+        514,
+        508,
+        1019
+      ],
+      "sha256": "a6035f3eb74fd06a4588e4c5bdd4fbb5027f7118fa368e502ffbb10b437d3a60",
+      "source_sha256": "23a5d7c9b072dbb47471b6fdb6565a91ff7e6977b993d5f2b78102387f810ddd"
+    },
+    {
+      "book": "adventure_paw_08",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_paw_08/page4.webp",
+      "size": [
+        508,
+        505
+      ],
+      "crop_box": [
+        516,
+        514,
+        1024,
+        1019
+      ],
+      "sha256": "80a438c10804acd48cacd764916fe4981e7b0d0e26a518eaff9d7b8abbe60f54",
+      "source_sha256": "23a5d7c9b072dbb47471b6fdb6565a91ff7e6977b993d5f2b78102387f810ddd"
+    },
+    {
+      "book": "adventure_paw_08",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_paw_08/page5.webp",
+      "size": [
+        508,
+        510
+      ],
+      "crop_box": [
+        0,
+        1026,
+        508,
+        1536
+      ],
+      "sha256": "80ca6553a1ea7431345724d091e2b5f202e70dc98fade97fcdaaa2e87693c18d",
+      "source_sha256": "23a5d7c9b072dbb47471b6fdb6565a91ff7e6977b993d5f2b78102387f810ddd"
+    },
+    {
+      "book": "adventure_paw_08",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_paw_08/page6.webp",
+      "size": [
+        508,
+        510
+      ],
+      "crop_box": [
+        516,
+        1026,
+        1024,
+        1536
+      ],
+      "sha256": "64f2d2a6468fc517f7b6ea7ceb16b33f35a8caa9ef80f75455ea2019481b4740",
+      "source_sha256": "23a5d7c9b072dbb47471b6fdb6565a91ff7e6977b993d5f2b78102387f810ddd"
+    },
+    {
+      "book": "adventure_paw_09",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_paw_09/page1.webp",
+      "size": [
+        507,
+        481
+      ],
+      "crop_box": [
+        0,
+        0,
+        507,
+        481
+      ],
+      "sha256": "85d9973fbeb8f169cc42c133613a5165643b3ea8564609e546254b6c50f52986",
+      "source_sha256": "5da6be02c4898ee684869218a195a92e2a5e82c038c1c30db407f86e25178d4c"
+    },
+    {
+      "book": "adventure_paw_09",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_paw_09/page2.webp",
+      "size": [
+        506,
+        481
+      ],
+      "crop_box": [
+        518,
+        0,
+        1024,
+        481
+      ],
+      "sha256": "9cd9a5daff6b7e9a56bc08c6f7d5e7ba0ab0a8ffab5dbef8ec9ee0ae6051b304",
+      "source_sha256": "5da6be02c4898ee684869218a195a92e2a5e82c038c1c30db407f86e25178d4c"
+    },
+    {
+      "book": "adventure_paw_09",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_paw_09/page3.webp",
+      "size": [
+        507,
+        468
+      ],
+      "crop_box": [
+        0,
+        491,
+        507,
+        959
+      ],
+      "sha256": "9561e581ad755d38cd39cbcdedbe215c5db33d9869286cc7ece695f0b9aef3a9",
+      "source_sha256": "5da6be02c4898ee684869218a195a92e2a5e82c038c1c30db407f86e25178d4c"
+    },
+    {
+      "book": "adventure_paw_09",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_paw_09/page4.webp",
+      "size": [
+        506,
+        468
+      ],
+      "crop_box": [
+        518,
+        491,
+        1024,
+        959
+      ],
+      "sha256": "8b68b87e1ec5d8466b8eef01181f1b4d850ce5c1dcfddba029fd3b3ddbf6649f",
+      "source_sha256": "5da6be02c4898ee684869218a195a92e2a5e82c038c1c30db407f86e25178d4c"
+    },
+    {
+      "book": "adventure_paw_09",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_paw_09/page5.webp",
+      "size": [
+        507,
+        568
+      ],
+      "crop_box": [
+        0,
+        968,
+        507,
+        1536
+      ],
+      "sha256": "1f4dc4ca83e26fbb7b7e12ef96d63c23e50c41c1903918c54e5627ebd9eb2a6c",
+      "source_sha256": "5da6be02c4898ee684869218a195a92e2a5e82c038c1c30db407f86e25178d4c"
+    },
+    {
+      "book": "adventure_paw_09",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_paw_09/page6.webp",
+      "size": [
+        506,
+        568
+      ],
+      "crop_box": [
+        518,
+        968,
+        1024,
+        1536
+      ],
+      "sha256": "09aabb61840d887175182343ebc8bb656369f9a3da53562560008a398d09546b",
+      "source_sha256": "5da6be02c4898ee684869218a195a92e2a5e82c038c1c30db407f86e25178d4c"
+    },
+    {
+      "book": "adventure_paw_10",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_paw_10/page1.webp",
+      "size": [
+        506,
+        483
+      ],
+      "crop_box": [
+        0,
+        0,
+        506,
+        483
+      ],
+      "sha256": "c8f596e7137fb44f0bbd5b7f520a32f4c9480c4bc19d79d7a1f2839c8313cc10",
+      "source_sha256": "1e1bf12614e15a041b54f69ce1acb2440af3a639f3027e6ceefd5294d5971a11"
+    },
+    {
+      "book": "adventure_paw_10",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_paw_10/page2.webp",
+      "size": [
+        507,
+        483
+      ],
+      "crop_box": [
+        517,
+        0,
+        1024,
+        483
+      ],
+      "sha256": "e7c1617e4d71be4298d7c3d0859f0fb2c24c5e69bfdb7da93b827308f65bb30b",
+      "source_sha256": "1e1bf12614e15a041b54f69ce1acb2440af3a639f3027e6ceefd5294d5971a11"
+    },
+    {
+      "book": "adventure_paw_10",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_paw_10/page3.webp",
+      "size": [
+        506,
+        493
+      ],
+      "crop_box": [
+        0,
+        491,
+        506,
+        984
+      ],
+      "sha256": "4fbb693a94e19fd1af06fca8cdc2a234a6c4688eef53331cdef4efde75e20549",
+      "source_sha256": "1e1bf12614e15a041b54f69ce1acb2440af3a639f3027e6ceefd5294d5971a11"
+    },
+    {
+      "book": "adventure_paw_10",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_paw_10/page4.webp",
+      "size": [
+        507,
+        493
+      ],
+      "crop_box": [
+        517,
+        491,
+        1024,
+        984
+      ],
+      "sha256": "f3630bba064ebc5c9bf08418bbe8af3df69ef834b66a7b2828a413e52d9db88c",
+      "source_sha256": "1e1bf12614e15a041b54f69ce1acb2440af3a639f3027e6ceefd5294d5971a11"
+    },
+    {
+      "book": "adventure_paw_10",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_paw_10/page5.webp",
+      "size": [
+        506,
+        544
+      ],
+      "crop_box": [
+        0,
+        992,
+        506,
+        1536
+      ],
+      "sha256": "29c9999df48c1a5742c3e2d73a4a98e9b370f28514e357762ae837b3f8f8aa7a",
+      "source_sha256": "1e1bf12614e15a041b54f69ce1acb2440af3a639f3027e6ceefd5294d5971a11"
+    },
+    {
+      "book": "adventure_paw_10",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_paw_10/page6.webp",
+      "size": [
+        507,
+        544
+      ],
+      "crop_box": [
+        517,
+        992,
+        1024,
+        1536
+      ],
+      "sha256": "8359dca275cfc7a8ec9eb56cd62077fbf637c9f4eb4ac6fc425be6e0a59c331f",
+      "source_sha256": "1e1bf12614e15a041b54f69ce1acb2440af3a639f3027e6ceefd5294d5971a11"
+    },
+    {
+      "book": "adventure_zootopia_01",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_zootopia_01/page1.webp",
+      "size": [
+        509,
+        505
+      ],
+      "crop_box": [
+        0,
+        0,
+        509,
+        505
+      ],
+      "sha256": "79150d189d14576c7f8415f09037f458d1e2a3dd2ffa86da0589e41688a4d113",
+      "source_sha256": "bf9cb76d89257614f0b558b5152acc16ed1457919de3daaf9eed4bfb036263b2"
+    },
+    {
+      "book": "adventure_zootopia_01",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_zootopia_01/page2.webp",
+      "size": [
+        508,
+        505
+      ],
+      "crop_box": [
+        516,
+        0,
+        1024,
+        505
+      ],
+      "sha256": "2943f711aea8d09c8cdbf3d1f79ab266bc41059f0ea03e6ae9e1378ea6269ef0",
+      "source_sha256": "bf9cb76d89257614f0b558b5152acc16ed1457919de3daaf9eed4bfb036263b2"
+    },
+    {
+      "book": "adventure_zootopia_01",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_zootopia_01/page3.webp",
+      "size": [
+        509,
+        502
+      ],
+      "crop_box": [
+        0,
+        512,
+        509,
+        1014
+      ],
+      "sha256": "38cee19c7766226d3e1bbe66cfd53c04b5de9fb0d991921a49762491b226d5ed",
+      "source_sha256": "bf9cb76d89257614f0b558b5152acc16ed1457919de3daaf9eed4bfb036263b2"
+    },
+    {
+      "book": "adventure_zootopia_01",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_zootopia_01/page4.webp",
+      "size": [
+        508,
+        502
+      ],
+      "crop_box": [
+        516,
+        512,
+        1024,
+        1014
+      ],
+      "sha256": "24c201c261a2bd8ee7bdfbb6859133bda54d9aaa416e1f37fc266883ad284fa1",
+      "source_sha256": "bf9cb76d89257614f0b558b5152acc16ed1457919de3daaf9eed4bfb036263b2"
+    },
+    {
+      "book": "adventure_zootopia_01",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_zootopia_01/page5.webp",
+      "size": [
+        509,
+        514
+      ],
+      "crop_box": [
+        0,
+        1022,
+        509,
+        1536
+      ],
+      "sha256": "2e2f5df1b86a871f1600d111b254bdf04da05347b62458fefa72998deb86a47a",
+      "source_sha256": "bf9cb76d89257614f0b558b5152acc16ed1457919de3daaf9eed4bfb036263b2"
+    },
+    {
+      "book": "adventure_zootopia_01",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_zootopia_01/page6.webp",
+      "size": [
+        508,
+        514
+      ],
+      "crop_box": [
+        516,
+        1022,
+        1024,
+        1536
+      ],
+      "sha256": "74b6d02c3d4223d146f26bd0b0f22a07aca65fb30a1da965096098bd6d097d4b",
+      "source_sha256": "bf9cb76d89257614f0b558b5152acc16ed1457919de3daaf9eed4bfb036263b2"
+    },
+    {
+      "book": "adventure_zootopia_02",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_zootopia_02/page1.webp",
+      "size": [
+        512,
+        512
+      ],
+      "crop_box": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sha256": "c480cffc22dcd35663e9364dace1bf1db358e5ba5749dcc1a0f5f59b72f239a0",
+      "source_sha256": "893ba09fd4560daea1da571534764edd81c9e5ccbaf0f09f909731d0d77673b7"
+    },
+    {
+      "book": "adventure_zootopia_02",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_zootopia_02/page2.webp",
+      "size": [
+        512,
+        512
+      ],
+      "crop_box": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "sha256": "34fe0c90dcf0d0d52ba4f29502f28f80267e5424ac7ebb1ca73ff917418386be",
+      "source_sha256": "893ba09fd4560daea1da571534764edd81c9e5ccbaf0f09f909731d0d77673b7"
+    },
+    {
+      "book": "adventure_zootopia_02",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_zootopia_02/page3.webp",
+      "size": [
+        512,
+        512
+      ],
+      "crop_box": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "sha256": "6e7083565c7f413ce96bf2c7dc728e19e6c0895fa9a9741f5bdc2d2187bf4055",
+      "source_sha256": "893ba09fd4560daea1da571534764edd81c9e5ccbaf0f09f909731d0d77673b7"
+    },
+    {
+      "book": "adventure_zootopia_02",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_zootopia_02/page4.webp",
+      "size": [
+        512,
+        512
+      ],
+      "crop_box": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "sha256": "59104a7785d80c4c10a5dadbf599382f0d05e209000257696dfb59c9f870b745",
+      "source_sha256": "893ba09fd4560daea1da571534764edd81c9e5ccbaf0f09f909731d0d77673b7"
+    },
+    {
+      "book": "adventure_zootopia_02",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_zootopia_02/page5.webp",
+      "size": [
+        512,
+        512
+      ],
+      "crop_box": [
+        0,
+        1024,
+        512,
+        1536
+      ],
+      "sha256": "ed22f08c9cc96c57eb3173454898c41b1e02ec989be1042014d311e1b1f6e45a",
+      "source_sha256": "893ba09fd4560daea1da571534764edd81c9e5ccbaf0f09f909731d0d77673b7"
+    },
+    {
+      "book": "adventure_zootopia_02",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_zootopia_02/page6.webp",
+      "size": [
+        512,
+        512
+      ],
+      "crop_box": [
+        512,
+        1024,
+        1024,
+        1536
+      ],
+      "sha256": "97c826efc9323908c634b4b9c835ab95daa12732001025b371ef37d451ba8b7d",
+      "source_sha256": "893ba09fd4560daea1da571534764edd81c9e5ccbaf0f09f909731d0d77673b7"
+    },
+    {
+      "book": "adventure_zootopia_03",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_zootopia_03/page1.webp",
+      "size": [
+        506,
+        470
+      ],
+      "crop_box": [
+        0,
+        0,
+        506,
+        470
+      ],
+      "sha256": "fe716eabc7dcb0de5d8fe7bd7d320aa0a3570f839d5be5ead4fba771a4b542ed",
+      "source_sha256": "6eb064fad1e1b1aec334684761bcbdfb09a017e6b88e34c4b0e0f0d541950a1d"
+    },
+    {
+      "book": "adventure_zootopia_03",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_zootopia_03/page2.webp",
+      "size": [
+        506,
+        470
+      ],
+      "crop_box": [
+        518,
+        0,
+        1024,
+        470
+      ],
+      "sha256": "9ce3b955590a43f4eaa2962394dd6b4948de011a4a3e24465ef76f9bdeaf4ac3",
+      "source_sha256": "6eb064fad1e1b1aec334684761bcbdfb09a017e6b88e34c4b0e0f0d541950a1d"
+    },
+    {
+      "book": "adventure_zootopia_03",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_zootopia_03/page3.webp",
+      "size": [
+        506,
+        507
+      ],
+      "crop_box": [
+        0,
+        479,
+        506,
+        986
+      ],
+      "sha256": "c7c196dc7b2407b6606a6ca3d7969e4e6381cf51f1046ef0b210d2b0a384cfa0",
+      "source_sha256": "6eb064fad1e1b1aec334684761bcbdfb09a017e6b88e34c4b0e0f0d541950a1d"
+    },
+    {
+      "book": "adventure_zootopia_03",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_zootopia_03/page4.webp",
+      "size": [
+        506,
+        507
+      ],
+      "crop_box": [
+        518,
+        479,
+        1024,
+        986
+      ],
+      "sha256": "f46f54aff7799f9fcc08567558992a8eb53c59d9cec4f0603dc3c8faaef0f27c",
+      "source_sha256": "6eb064fad1e1b1aec334684761bcbdfb09a017e6b88e34c4b0e0f0d541950a1d"
+    },
+    {
+      "book": "adventure_zootopia_03",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_zootopia_03/page5.webp",
+      "size": [
+        506,
+        542
+      ],
+      "crop_box": [
+        0,
+        994,
+        506,
+        1536
+      ],
+      "sha256": "43060ac364fc07c372099ced6df5e91ef7837ab9f32bde5439bc9331ea874330",
+      "source_sha256": "6eb064fad1e1b1aec334684761bcbdfb09a017e6b88e34c4b0e0f0d541950a1d"
+    },
+    {
+      "book": "adventure_zootopia_03",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_zootopia_03/page6.webp",
+      "size": [
+        506,
+        542
+      ],
+      "crop_box": [
+        518,
+        994,
+        1024,
+        1536
+      ],
+      "sha256": "a905b6ccb3dd62114bf46b167dc53804ab3a441e528fab286ab75a461c61122f",
+      "source_sha256": "6eb064fad1e1b1aec334684761bcbdfb09a017e6b88e34c4b0e0f0d541950a1d"
+    },
+    {
+      "book": "adventure_zootopia_04",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_zootopia_04/page1.webp",
+      "size": [
+        506,
+        493
+      ],
+      "crop_box": [
+        0,
+        0,
+        506,
+        493
+      ],
+      "sha256": "4d8cca34d52fa3b494a0bf4994e2283939d06c1c10b65e48875e590af0cdb655",
+      "source_sha256": "88477318c36e494279d0880e42bb55fc0f7db0042a5adfdaa532bc9bd0bd9d3e"
+    },
+    {
+      "book": "adventure_zootopia_04",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_zootopia_04/page2.webp",
+      "size": [
+        507,
+        493
+      ],
+      "crop_box": [
+        517,
+        0,
+        1024,
+        493
+      ],
+      "sha256": "1352a1629fd2e9a14343629b125134b249554d1d44379b4524d134a1190ae881",
+      "source_sha256": "88477318c36e494279d0880e42bb55fc0f7db0042a5adfdaa532bc9bd0bd9d3e"
+    },
+    {
+      "book": "adventure_zootopia_04",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_zootopia_04/page3.webp",
+      "size": [
+        506,
+        494
+      ],
+      "crop_box": [
+        0,
+        502,
+        506,
+        996
+      ],
+      "sha256": "e6fef0faf69c9d8edf7acdacea97373130ce0ed6b70fe84ae2c07fd033f13a73",
+      "source_sha256": "88477318c36e494279d0880e42bb55fc0f7db0042a5adfdaa532bc9bd0bd9d3e"
+    },
+    {
+      "book": "adventure_zootopia_04",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_zootopia_04/page4.webp",
+      "size": [
+        507,
+        494
+      ],
+      "crop_box": [
+        517,
+        502,
+        1024,
+        996
+      ],
+      "sha256": "ed24bcac967fd322e946cb53a28bcaa097ce567d43e186a4602552c189245e90",
+      "source_sha256": "88477318c36e494279d0880e42bb55fc0f7db0042a5adfdaa532bc9bd0bd9d3e"
+    },
+    {
+      "book": "adventure_zootopia_04",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_zootopia_04/page5.webp",
+      "size": [
+        506,
+        531
+      ],
+      "crop_box": [
+        0,
+        1005,
+        506,
+        1536
+      ],
+      "sha256": "60e63ec79fd9468168d18e7e8e260a339009af80690e0f1a4390f0970376b027",
+      "source_sha256": "88477318c36e494279d0880e42bb55fc0f7db0042a5adfdaa532bc9bd0bd9d3e"
+    },
+    {
+      "book": "adventure_zootopia_04",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_zootopia_04/page6.webp",
+      "size": [
+        507,
+        531
+      ],
+      "crop_box": [
+        517,
+        1005,
+        1024,
+        1536
+      ],
+      "sha256": "43d84f498fe0c3be2c55ff8f08151ceaae640a67f48f9218ffc57ea3f5f812f4",
+      "source_sha256": "88477318c36e494279d0880e42bb55fc0f7db0042a5adfdaa532bc9bd0bd9d3e"
+    },
+    {
+      "book": "adventure_zootopia_05",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_zootopia_05/page1.webp",
+      "size": [
+        508,
+        438
+      ],
+      "crop_box": [
+        0,
+        0,
+        508,
+        438
+      ],
+      "sha256": "2a044712d2b0d5540698657c36e1561745184c6f94830eef8eedbfac061fec03",
+      "source_sha256": "53828abedf439de15e84d8883dff91ec97e8a6674ee1eb3dbbd2004bcb4d8cbb"
+    },
+    {
+      "book": "adventure_zootopia_05",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_zootopia_05/page2.webp",
+      "size": [
+        508,
+        438
+      ],
+      "crop_box": [
+        516,
+        0,
+        1024,
+        438
+      ],
+      "sha256": "21d7a6760f428cf186a186ec787cc9b8537d03c9ad74ed9c5bf6a92c00386e94",
+      "source_sha256": "53828abedf439de15e84d8883dff91ec97e8a6674ee1eb3dbbd2004bcb4d8cbb"
+    },
+    {
+      "book": "adventure_zootopia_05",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_zootopia_05/page3.webp",
+      "size": [
+        508,
+        477
+      ],
+      "crop_box": [
+        0,
+        446,
+        508,
+        923
+      ],
+      "sha256": "22ef2893402136ea8c899713b6e762b586c4497ab95d88abb8bba4e1f282a46f",
+      "source_sha256": "53828abedf439de15e84d8883dff91ec97e8a6674ee1eb3dbbd2004bcb4d8cbb"
+    },
+    {
+      "book": "adventure_zootopia_05",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_zootopia_05/page4.webp",
+      "size": [
+        508,
+        477
+      ],
+      "crop_box": [
+        516,
+        446,
+        1024,
+        923
+      ],
+      "sha256": "807cc81e237d524a49798d1818a398dda5e040c46a5cccca9c4c82376a98fac6",
+      "source_sha256": "53828abedf439de15e84d8883dff91ec97e8a6674ee1eb3dbbd2004bcb4d8cbb"
+    },
+    {
+      "book": "adventure_zootopia_05",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_zootopia_05/page5.webp",
+      "size": [
+        508,
+        605
+      ],
+      "crop_box": [
+        0,
+        931,
+        508,
+        1536
+      ],
+      "sha256": "b8c86a6733ff0945098e5f7523b93c5631310bc5e721c6da7c2053587f0fe70c",
+      "source_sha256": "53828abedf439de15e84d8883dff91ec97e8a6674ee1eb3dbbd2004bcb4d8cbb"
+    },
+    {
+      "book": "adventure_zootopia_05",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_zootopia_05/page6.webp",
+      "size": [
+        508,
+        605
+      ],
+      "crop_box": [
+        516,
+        931,
+        1024,
+        1536
+      ],
+      "sha256": "08438989ddb3e071c2a0004fa7f1546cdf501e251a120cff6c2141a8646a4e17",
+      "source_sha256": "53828abedf439de15e84d8883dff91ec97e8a6674ee1eb3dbbd2004bcb4d8cbb"
+    },
+    {
+      "book": "adventure_zootopia_06",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_zootopia_06/page1.webp",
+      "size": [
+        507,
+        505
+      ],
+      "crop_box": [
+        0,
+        0,
+        507,
+        505
+      ],
+      "sha256": "bb112fb70575a472fd81fe4bba3c7dbff4628485fbaa8fe9c79fdf22bb77280f",
+      "source_sha256": "f4979cba630ce05cdd1010c650d69b1eb6a7c6a8bc6c1eaf0e7e05e955bacf16"
+    },
+    {
+      "book": "adventure_zootopia_06",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_zootopia_06/page2.webp",
+      "size": [
+        506,
+        505
+      ],
+      "crop_box": [
+        518,
+        0,
+        1024,
+        505
+      ],
+      "sha256": "69d3bc9d5bbab4784a52d8d7c14ab06fe973ab96dc785c04cd18ff0656eb95a7",
+      "source_sha256": "f4979cba630ce05cdd1010c650d69b1eb6a7c6a8bc6c1eaf0e7e05e955bacf16"
+    },
+    {
+      "book": "adventure_zootopia_06",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_zootopia_06/page3.webp",
+      "size": [
+        507,
+        500
+      ],
+      "crop_box": [
+        0,
+        514,
+        507,
+        1014
+      ],
+      "sha256": "09961dbced81fd26281ab07d9f4d26c90742027b9e0ad1234f28320fc4dfaecb",
+      "source_sha256": "f4979cba630ce05cdd1010c650d69b1eb6a7c6a8bc6c1eaf0e7e05e955bacf16"
+    },
+    {
+      "book": "adventure_zootopia_06",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_zootopia_06/page4.webp",
+      "size": [
+        506,
+        500
+      ],
+      "crop_box": [
+        518,
+        514,
+        1024,
+        1014
+      ],
+      "sha256": "6ce3c7e4ced6b79e39a6ac53e415b7e0ba2062ee650d63c6346dabdbc1155634",
+      "source_sha256": "f4979cba630ce05cdd1010c650d69b1eb6a7c6a8bc6c1eaf0e7e05e955bacf16"
+    },
+    {
+      "book": "adventure_zootopia_06",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_zootopia_06/page5.webp",
+      "size": [
+        507,
+        512
+      ],
+      "crop_box": [
+        0,
+        1024,
+        507,
+        1536
+      ],
+      "sha256": "9b6f028de4605a141805353c965d09852596a363030befc4b209a84dce60f0af",
+      "source_sha256": "f4979cba630ce05cdd1010c650d69b1eb6a7c6a8bc6c1eaf0e7e05e955bacf16"
+    },
+    {
+      "book": "adventure_zootopia_06",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_zootopia_06/page6.webp",
+      "size": [
+        506,
+        512
+      ],
+      "crop_box": [
+        518,
+        1024,
+        1024,
+        1536
+      ],
+      "sha256": "52c52ac4fb76b0a9dbf2bc865f1d98cf32f4ba3f4c84e942aa5d6a80be57d675",
+      "source_sha256": "f4979cba630ce05cdd1010c650d69b1eb6a7c6a8bc6c1eaf0e7e05e955bacf16"
+    },
+    {
+      "book": "adventure_zootopia_07",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_zootopia_07/page1.webp",
+      "size": [
+        507,
+        467
+      ],
+      "crop_box": [
+        0,
+        0,
+        507,
+        467
+      ],
+      "sha256": "c4a6277c3727f443e148278af591f83fae38e573fe73af746768b41722d6feec",
+      "source_sha256": "6a903e70fb6b5648c3ef7d6375b3bd77822c85c4b6b278a8eace8298a5eb14f8"
+    },
+    {
+      "book": "adventure_zootopia_07",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_zootopia_07/page2.webp",
+      "size": [
+        508,
+        467
+      ],
+      "crop_box": [
+        516,
+        0,
+        1024,
+        467
+      ],
+      "sha256": "7be6a5f6362e1735dc0038600ce775c31b15040221a168d6754f2a57f72eaf70",
+      "source_sha256": "6a903e70fb6b5648c3ef7d6375b3bd77822c85c4b6b278a8eace8298a5eb14f8"
+    },
+    {
+      "book": "adventure_zootopia_07",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_zootopia_07/page3.webp",
+      "size": [
+        507,
+        472
+      ],
+      "crop_box": [
+        0,
+        476,
+        507,
+        948
+      ],
+      "sha256": "62222df72cf56ad90083c9364a76f06e56e550d4eaeb01fb764839f0264922f9",
+      "source_sha256": "6a903e70fb6b5648c3ef7d6375b3bd77822c85c4b6b278a8eace8298a5eb14f8"
+    },
+    {
+      "book": "adventure_zootopia_07",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_zootopia_07/page4.webp",
+      "size": [
+        508,
+        472
+      ],
+      "crop_box": [
+        516,
+        476,
+        1024,
+        948
+      ],
+      "sha256": "8efd3d975b585dd9e3ac70ce1713887577da5259b7a8476ff3b35a015bb915f0",
+      "source_sha256": "6a903e70fb6b5648c3ef7d6375b3bd77822c85c4b6b278a8eace8298a5eb14f8"
+    },
+    {
+      "book": "adventure_zootopia_07",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_zootopia_07/page5.webp",
+      "size": [
+        507,
+        579
+      ],
+      "crop_box": [
+        0,
+        957,
+        507,
+        1536
+      ],
+      "sha256": "3e6aebd15a6070630d52e06cf068ba55a6c5b7236f428f48ee6c83e3a54f9b17",
+      "source_sha256": "6a903e70fb6b5648c3ef7d6375b3bd77822c85c4b6b278a8eace8298a5eb14f8"
+    },
+    {
+      "book": "adventure_zootopia_07",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_zootopia_07/page6.webp",
+      "size": [
+        508,
+        579
+      ],
+      "crop_box": [
+        516,
+        957,
+        1024,
+        1536
+      ],
+      "sha256": "a5ec4b66c67a41f36f634340420bf1638a8099a2d68665e8d8b24bbd66237322",
+      "source_sha256": "6a903e70fb6b5648c3ef7d6375b3bd77822c85c4b6b278a8eace8298a5eb14f8"
+    },
+    {
+      "book": "adventure_zootopia_08",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_zootopia_08/page1.webp",
+      "size": [
+        510,
+        508
+      ],
+      "crop_box": [
+        0,
+        0,
+        510,
+        508
+      ],
+      "sha256": "70a333fe5edfa4271185a255d9cccf6eed1396de2bc0a5ac4a246f6954d44dd0",
+      "source_sha256": "ad6c787445b008ca51391598860cd018e901c7a8fc39c05eb40b62931aede753"
+    },
+    {
+      "book": "adventure_zootopia_08",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_zootopia_08/page2.webp",
+      "size": [
+        509,
+        508
+      ],
+      "crop_box": [
+        515,
+        0,
+        1024,
+        508
+      ],
+      "sha256": "a493c7ebdf7de2451019d11cfbea5f702288802742ddf1defe78fb4e890ced25",
+      "source_sha256": "ad6c787445b008ca51391598860cd018e901c7a8fc39c05eb40b62931aede753"
+    },
+    {
+      "book": "adventure_zootopia_08",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_zootopia_08/page3.webp",
+      "size": [
+        510,
+        507
+      ],
+      "crop_box": [
+        0,
+        513,
+        510,
+        1020
+      ],
+      "sha256": "a5759c5fae3186f35064899a0e02870f88fd55576bab84c7a36a3a723d9ab943",
+      "source_sha256": "ad6c787445b008ca51391598860cd018e901c7a8fc39c05eb40b62931aede753"
+    },
+    {
+      "book": "adventure_zootopia_08",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_zootopia_08/page4.webp",
+      "size": [
+        509,
+        507
+      ],
+      "crop_box": [
+        515,
+        513,
+        1024,
+        1020
+      ],
+      "sha256": "7a983e6ecf53476fd4761508be56c08ee0c093918c447c222b1b6fa5d5afbe40",
+      "source_sha256": "ad6c787445b008ca51391598860cd018e901c7a8fc39c05eb40b62931aede753"
+    },
+    {
+      "book": "adventure_zootopia_08",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_zootopia_08/page5.webp",
+      "size": [
+        510,
+        511
+      ],
+      "crop_box": [
+        0,
+        1025,
+        510,
+        1536
+      ],
+      "sha256": "0b26531e16e9e3674bab404f66ce3457da2492f401d11b83f1d4079e964b4387",
+      "source_sha256": "ad6c787445b008ca51391598860cd018e901c7a8fc39c05eb40b62931aede753"
+    },
+    {
+      "book": "adventure_zootopia_08",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_zootopia_08/page6.webp",
+      "size": [
+        509,
+        511
+      ],
+      "crop_box": [
+        515,
+        1025,
+        1024,
+        1536
+      ],
+      "sha256": "62b88aa5a04d3af5c94c2bfe3fa482bd65ef2c6357e3d2a8b2825270942de3ad",
+      "source_sha256": "ad6c787445b008ca51391598860cd018e901c7a8fc39c05eb40b62931aede753"
+    },
+    {
+      "book": "adventure_zootopia_09",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_zootopia_09/page1.webp",
+      "size": [
+        508,
+        501
+      ],
+      "crop_box": [
+        0,
+        0,
+        508,
+        501
+      ],
+      "sha256": "49ee5ae55cfa1f033adb5559ed50b894f46462e4a433a961c43f7841d3fef096",
+      "source_sha256": "00b7c2c29bcfed6ad6811066d85b1eb60d4825c1f723d80bd04d42892a762b88"
+    },
+    {
+      "book": "adventure_zootopia_09",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_zootopia_09/page2.webp",
+      "size": [
+        508,
+        501
+      ],
+      "crop_box": [
+        516,
+        0,
+        1024,
+        501
+      ],
+      "sha256": "53bad20806c86d685825fb717d5c2da19a66cb3322762ce174e2907693c5b360",
+      "source_sha256": "00b7c2c29bcfed6ad6811066d85b1eb60d4825c1f723d80bd04d42892a762b88"
+    },
+    {
+      "book": "adventure_zootopia_09",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_zootopia_09/page3.webp",
+      "size": [
+        508,
+        463
+      ],
+      "crop_box": [
+        0,
+        510,
+        508,
+        973
+      ],
+      "sha256": "65ce0803e610b182290438c23fab0740bac112c19ced8fe1475c49b606a3535d",
+      "source_sha256": "00b7c2c29bcfed6ad6811066d85b1eb60d4825c1f723d80bd04d42892a762b88"
+    },
+    {
+      "book": "adventure_zootopia_09",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_zootopia_09/page4.webp",
+      "size": [
+        508,
+        463
+      ],
+      "crop_box": [
+        516,
+        510,
+        1024,
+        973
+      ],
+      "sha256": "0a1b9475d78ce2bc876fe806f6c4547fe89429cd917e2145fcc004502b361799",
+      "source_sha256": "00b7c2c29bcfed6ad6811066d85b1eb60d4825c1f723d80bd04d42892a762b88"
+    },
+    {
+      "book": "adventure_zootopia_09",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_zootopia_09/page5.webp",
+      "size": [
+        508,
+        554
+      ],
+      "crop_box": [
+        0,
+        982,
+        508,
+        1536
+      ],
+      "sha256": "40d06b37ed19e5f5ffff186127895aa345f205f52538396fce0255bc4ea25de2",
+      "source_sha256": "00b7c2c29bcfed6ad6811066d85b1eb60d4825c1f723d80bd04d42892a762b88"
+    },
+    {
+      "book": "adventure_zootopia_09",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_zootopia_09/page6.webp",
+      "size": [
+        508,
+        554
+      ],
+      "crop_box": [
+        516,
+        982,
+        1024,
+        1536
+      ],
+      "sha256": "c216d5189882ec5cdf73c2662a1db909441e0d9578e557312732e13b99d65155",
+      "source_sha256": "00b7c2c29bcfed6ad6811066d85b1eb60d4825c1f723d80bd04d42892a762b88"
+    },
+    {
+      "book": "adventure_zootopia_10",
+      "page": 1,
+      "file": "art/adventures-v1/adventure_zootopia_10/page1.webp",
+      "size": [
+        508,
+        503
+      ],
+      "crop_box": [
+        0,
+        0,
+        508,
+        503
+      ],
+      "sha256": "3929539baeb9548b6960f083f1c2d226493508e0dd241ee17e285800712ed317",
+      "source_sha256": "4116899934628650d1bf5e78be37e49cda7228bd08abf1d33e325b4ac3ed3546"
+    },
+    {
+      "book": "adventure_zootopia_10",
+      "page": 2,
+      "file": "art/adventures-v1/adventure_zootopia_10/page2.webp",
+      "size": [
+        509,
+        503
+      ],
+      "crop_box": [
+        515,
+        0,
+        1024,
+        503
+      ],
+      "sha256": "4f3edc96d39f8aaa28e0317006d5f6e165c2658429d2697650db9b044c516a93",
+      "source_sha256": "4116899934628650d1bf5e78be37e49cda7228bd08abf1d33e325b4ac3ed3546"
+    },
+    {
+      "book": "adventure_zootopia_10",
+      "page": 3,
+      "file": "art/adventures-v1/adventure_zootopia_10/page3.webp",
+      "size": [
+        508,
+        496
+      ],
+      "crop_box": [
+        0,
+        511,
+        508,
+        1007
+      ],
+      "sha256": "b49febec6b75a6b0f6559cb68409e7215982c5f0ef0a5311e643b0613328b227",
+      "source_sha256": "4116899934628650d1bf5e78be37e49cda7228bd08abf1d33e325b4ac3ed3546"
+    },
+    {
+      "book": "adventure_zootopia_10",
+      "page": 4,
+      "file": "art/adventures-v1/adventure_zootopia_10/page4.webp",
+      "size": [
+        509,
+        496
+      ],
+      "crop_box": [
+        515,
+        511,
+        1024,
+        1007
+      ],
+      "sha256": "f290908cc7fa26e48747fcdf705578c61b8ffb8d7c2dacc77e4a696e6fe1c933",
+      "source_sha256": "4116899934628650d1bf5e78be37e49cda7228bd08abf1d33e325b4ac3ed3546"
+    },
+    {
+      "book": "adventure_zootopia_10",
+      "page": 5,
+      "file": "art/adventures-v1/adventure_zootopia_10/page5.webp",
+      "size": [
+        508,
+        522
+      ],
+      "crop_box": [
+        0,
+        1014,
+        508,
+        1536
+      ],
+      "sha256": "abe2e8e6388c64eba16f05d3bd068ab3aeacb7b229ea5dd28ea2058ad7bd8bef",
+      "source_sha256": "4116899934628650d1bf5e78be37e49cda7228bd08abf1d33e325b4ac3ed3546"
+    },
+    {
+      "book": "adventure_zootopia_10",
+      "page": 6,
+      "file": "art/adventures-v1/adventure_zootopia_10/page6.webp",
+      "size": [
+        509,
+        522
+      ],
+      "crop_box": [
+        515,
+        1014,
+        1024,
+        1536
+      ],
+      "sha256": "bf729b2de56b41e3b2dc6f7965463677038384438de07c20217e660db364b5b2",
+      "source_sha256": "4116899934628650d1bf5e78be37e49cda7228bd08abf1d33e325b4ac3ed3546"
+    }
+  ]
+}

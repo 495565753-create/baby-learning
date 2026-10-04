@@ -1,0 +1,3436 @@
+{
+  "created_at": "2026-10-04T09:10:09+08:00",
+  "generator": "Microsoft Edge neural TTS",
+  "source": "books-new-adventures.js",
+  "source_sha256": "5c9ebbf8edebdcca4e69b74de12f264f01f1fbd6b6123875f804a61282e6a7e9",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "-8%",
+  "pitch": "+0Hz",
+  "expressive_style": null,
+  "note": "默认晓晓女性神经声线，语速减慢 8%，音高保持原值；未启用教师情感样式。",
+  "text_count": 180,
+  "objective_qa_passed": true,
+  "files": {
+    "周六早晨，佩奇和苏西带着风筝去山坡。刚跑起来，一阵急风把苏西的风筝挂在低树枝上，尾巴还被划开一道小口。“它不能飞了。”苏西难过地说。树叶还在头顶沙沙响。": {
+      "spoken": "周六早晨，佩奇和苏西带着风筝去山坡。刚跑起来，一阵急风把苏西的风筝挂在低树枝上，尾巴还被划开一道小口。“它不能飞了。”苏西难过地说。树叶还在头顶沙沙响。",
+      "book_id": "adventure_peppa_01",
+      "page": 1,
+      "text_sha256": "6f57764a20d46141383ad1fcb0227de9c99f11c67f9a6a14751ef71b75509206",
+      "file": "voice-adventures-v1/6f57764a20d46141383a.mp3",
+      "sha256": "e36e4bdd255439f78a53e995f94de0e82c60dbfb9172512980280a5d047d4841",
+      "qa": {
+        "duration_seconds": 19.128,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.494,
+        "rms_dbfs": -20.522,
+        "trailing_silence_seconds": 0.635,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "猪爸爸搬来小梯子取下风筝。佩奇马上说：“我们用好多胶带把它粘住！”可胶带贴得又厚又重，风筝刚离开地面就歪歪扭扭地落下来，大家都愣住了。乔治也歪着头仔细看。": {
+      "spoken": "猪爸爸搬来小梯子取下风筝。佩奇马上说：“我们用好多胶带把它粘住！”可胶带贴得又厚又重，风筝刚离开地面就歪歪扭扭地落下来，大家都愣住了。乔治也歪着头仔细看。",
+      "book_id": "adventure_peppa_01",
+      "page": 2,
+      "text_sha256": "c7b0a7ea7f23c5e27dba20b5d000a06bf817827195d174204b8f384eff9e86a2",
+      "file": "voice-adventures-v1/c7b0a7ea7f23c5e27dba.mp3",
+      "sha256": "8854fd673cea1712e7bbfb7424207876bb83bdcd2878b0072322a493f2a419af",
+      "qa": {
+        "duration_seconds": 18.048,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.782,
+        "rms_dbfs": -20.029,
+        "trailing_silence_seconds": 0.619,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "苏西摸摸破口，发现原来的纸很轻。猪爸爸建议先拆掉厚胶带，再用一小片薄纸补洞。佩奇拿尺子量好大小，乔治扶住风筝，苏西认真刷上薄薄的胶水。三个人配合得刚刚好。": {
+      "spoken": "苏西摸摸破口，发现原来的纸很轻。猪爸爸建议先拆掉厚胶带，再用一小片薄纸补洞。佩奇拿尺子量好大小，乔治扶住风筝，苏西认真刷上薄薄的胶水。三个人配合得刚刚好。",
+      "book_id": "adventure_peppa_01",
+      "page": 3,
+      "text_sha256": "fa3605a537e356129216bb7d7322f2f896315a4ce0a17e8fa4c9a942b4bf7563",
+      "file": "voice-adventures-v1/fa3605a537e356129216.mp3",
+      "sha256": "6f0a302dabe968a0d077a57735c0f3cdd06a276177f41b50561d3722417dd7ed",
+      "qa": {
+        "duration_seconds": 19.056,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.716,
+        "rms_dbfs": -20.393,
+        "trailing_silence_seconds": 0.619,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "补好的风筝看起来平整了，可尾巴一边长、一边短，飞起来总往左转。佩奇没有急着再跑，她蹲下比较两边，把多出的彩带剪短，又在右边补上一只小蝴蝶结。这次两边终于一样了。": {
+      "spoken": "补好的风筝看起来平整了，可尾巴一边长、一边短，飞起来总往左转。佩奇没有急着再跑，她蹲下比较两边，把多出的彩带剪短，又在右边补上一只小蝴蝶结。这次两边终于一样了。",
+      "book_id": "adventure_peppa_01",
+      "page": 4,
+      "text_sha256": "90fd55d281081bf566516a15b8f84e468049e81663b378d0411826f86ec0de10",
+      "file": "voice-adventures-v1/90fd55d281081bf56651.mp3",
+      "sha256": "ac8669d475d6e26e5ac2906511f115ed1d7babd7f4ab37bf9cc179686c2e6234",
+      "qa": {
+        "duration_seconds": 18.576,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.619,
+        "rms_dbfs": -20.074,
+        "trailing_silence_seconds": 0.62,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "大家来到空旷处，等风变得柔和才慢慢放线。风筝先晃了两下，随后稳稳升过树梢。苏西笑着把线轴递给佩奇：“修理站的第一件作品成功了！”彩带在蓝天里轻轻摆动。": {
+      "spoken": "大家来到空旷处，等风变得柔和才慢慢放线。风筝先晃了两下，随后稳稳升过树梢。苏西笑着把线轴递给佩奇：“修理站的第一件作品成功了！”彩带在蓝天里轻轻摆动。",
+      "book_id": "adventure_peppa_01",
+      "page": 5,
+      "text_sha256": "bf06745b732614bfd292dded7a55ec0d5824c4ae68b5d3414f36756638cf5d2b",
+      "file": "voice-adventures-v1/bf06745b732614bfd292.mp3",
+      "sha256": "dad21ee0f43eeed3c9f8f31c664414bd2daafdda1e3999e9c0239153050a2951",
+      "qa": {
+        "duration_seconds": 17.976,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.83,
+        "rms_dbfs": -19.565,
+        "trailing_silence_seconds": 0.606,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "回家前，孩子们用鞋盒做了一个小工具箱，放进薄纸、棉线、安全剪刀和胶水。下一次玩具坏了，他们会先看看哪里不合适，再选择轻巧又合适的办法。苏西负责把东西摆整齐。": {
+      "spoken": "回家前，孩子们用鞋盒做了一个小工具箱，放进薄纸、棉线、安全剪刀和胶水。下一次玩具坏了，他们会先看看哪里不合适，再选择轻巧又合适的办法。苏西负责把东西摆整齐。",
+      "book_id": "adventure_peppa_01",
+      "page": 6,
+      "text_sha256": "536f216be3aaf6ce55a96ebe7888091164d5dde8433fa9ad990846325945f676",
+      "file": "voice-adventures-v1/536f216be3aaf6ce55a9.mp3",
+      "sha256": "c73a5b08afb3fe4e822ecf042b3b63fe27072f2e86d505ef3d7c0141f48788bb",
+      "qa": {
+        "duration_seconds": 19.104,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.179,
+        "rms_dbfs": -20.296,
+        "trailing_silence_seconds": 0.605,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "佩奇一家到海边度假。她和乔治捡到许多形状不同的空贝壳，想开一家“贝壳邮局”，把海风的问候送给朋友。猪妈妈提醒他们，只捡沙滩上的空壳。浪花在他们脚边轻轻打转。": {
+      "spoken": "佩奇一家到海边度假。她和乔治捡到许多形状不同的空贝壳，想开一家“贝壳邮局”，把海风的问候送给朋友。猪妈妈提醒他们，只捡沙滩上的空壳。浪花在他们脚边轻轻打转。",
+      "book_id": "adventure_peppa_02",
+      "page": 1,
+      "text_sha256": "5e1749ae33071b2e7abf1585f5722954b18a3c86d67b0bb16cc9464c4d8f510a",
+      "file": "voice-adventures-v1/5e1749ae33071b2e7abf.mp3",
+      "sha256": "97449262ad4185fedadd07a29e223caf3483f0a7c01738df8720fd6b50f391be",
+      "qa": {
+        "duration_seconds": 18.264,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.555,
+        "rms_dbfs": -20.185,
+        "trailing_silence_seconds": 0.598,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "佩奇把贝壳按大小排好，乔治却把一只小螺壳塞进信封。壳里忽然伸出两根细细的触角，原来小寄居蟹还住在里面！乔治连忙轻轻放下信封。佩奇和乔治都吃了一惊。": {
+      "spoken": "佩奇把贝壳按大小排好，乔治却把一只小螺壳塞进信封。壳里忽然伸出两根细细的触角，原来小寄居蟹还住在里面！乔治连忙轻轻放下信封。佩奇和乔治都吃了一惊。",
+      "book_id": "adventure_peppa_02",
+      "page": 2,
+      "text_sha256": "25cf43ad3e603204ff74cc093624243416fb58588ddb02a656c86ecb7091d999",
+      "file": "voice-adventures-v1/25cf43ad3e603204ff74.mp3",
+      "sha256": "c83dcabcaff421a854727b4118d52fcb08421a1be8bf56ac3180633255d068db",
+      "qa": {
+        "duration_seconds": 18.264,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.154,
+        "rms_dbfs": -20.315,
+        "trailing_silence_seconds": 0.589,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "“邮局不能把别人的家寄走。”佩奇说。他们把寄居蟹送回潮湿的礁石边，又逐个检查贝壳。猪爸爸找来手电筒，从壳口照进去，确认里面空空的才收进篮子。小家伙很快找到一块新石头。": {
+      "spoken": "“邮局不能把别人的家寄走。”佩奇说。他们把寄居蟹送回潮湿的礁石边，又逐个检查贝壳。猪爸爸找来手电筒，从壳口照进去，确认里面空空的才收进篮子。小家伙很快找到一块新石头。",
+      "book_id": "adventure_peppa_02",
+      "page": 3,
+      "text_sha256": "363bbf22da4156abf2821d20ab08afd45c3ff1b0e82f806a798606018807d348",
+      "file": "voice-adventures-v1/363bbf22da4156abf282.mp3",
+      "sha256": "5ed2f72635247ae4726fb3f2c9d1acc81803920659e3b5cec120b13c3ea20221",
+      "qa": {
+        "duration_seconds": 19.968,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.527,
+        "rms_dbfs": -20.32,
+        "trailing_silence_seconds": 0.607,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "孩子们在卡片上画太阳、浪花和笑脸，再用棉线把小贝壳系在卡片角上。海风太大，第一张卡片刚摆好就滚走了，乔治追了几步也没追上。卡片差一点掉进浅浅的海水。": {
+      "spoken": "孩子们在卡片上画太阳、浪花和笑脸，再用棉线把小贝壳系在卡片角上。海风太大，第一张卡片刚摆好就滚走了，乔治追了几步也没追上。卡片差一点掉进浅浅的海水。",
+      "book_id": "adventure_peppa_02",
+      "page": 4,
+      "text_sha256": "4e876fc388b464e7aac8007605633129f34060085a7c800275a8a7392fb98349",
+      "file": "voice-adventures-v1/4e876fc388b464e7aac8.mp3",
+      "sha256": "6d4794c171ea667821f812e25e514a0b186d84b6c1d5375eba4145862523e581",
+      "qa": {
+        "duration_seconds": 17.976,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.709,
+        "rms_dbfs": -20.211,
+        "trailing_silence_seconds": 0.618,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "猪妈妈拿来几颗圆石压住卡片，佩奇还把邮局搬到背风的遮阳伞下。大家终于写好四封海边信，一封给苏西，一封给爷爷奶奶，还有两封送给邻居。猪爸爸在信封上画了小邮票。": {
+      "spoken": "猪妈妈拿来几颗圆石压住卡片，佩奇还把邮局搬到背风的遮阳伞下。大家终于写好四封海边信，一封给苏西，一封给爷爷奶奶，还有两封送给邻居。猪爸爸在信封上画了小邮票。",
+      "book_id": "adventure_peppa_02",
+      "page": 5,
+      "text_sha256": "ae787616c1473def2a36a1245c713b809e4dae82f014c42c3ac0ad54bde48533",
+      "file": "voice-adventures-v1/ae787616c1473def2a36.mp3",
+      "sha256": "d5e9955b9564d712d9d807a5474874c57f34584c84de95a3bf3c1414f3db9162",
+      "qa": {
+        "duration_seconds": 18.408,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.367,
+        "rms_dbfs": -20.313,
+        "trailing_silence_seconds": 0.618,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "傍晚，寄居蟹从礁石旁慢慢爬过，好像也来告别。佩奇说：“最漂亮的纪念，是带走空贝壳，也把小动物的家好好留在海边。”海浪轻轻拍手赞成。大家向海边的小邻居挥挥手。": {
+      "spoken": "傍晚，寄居蟹从礁石旁慢慢爬过，好像也来告别。佩奇说：“最漂亮的纪念，是带走空贝壳，也把小动物的家好好留在海边。”海浪轻轻拍手赞成。大家向海边的小邻居挥挥手。",
+      "book_id": "adventure_peppa_02",
+      "page": 6,
+      "text_sha256": "628b68c7d455426b02666479fe02c8ffc6eac2fdc994274b3c0627b202ea5c5e",
+      "file": "voice-adventures-v1/628b68c7d455426b0266.mp3",
+      "sha256": "0dc81068e84948012fb91136cb317b3d3e7b7610bcd176399070f2f7994eaac8",
+      "qa": {
+        "duration_seconds": 18.936,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.223,
+        "rms_dbfs": -20.124,
+        "trailing_silence_seconds": 0.633,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "晚饭后突然停电，屋里黑了下来。乔治抱紧玩具恐龙，小声说：“黑黑的。”猪爸爸点亮一盏安全露营灯，佩奇发现墙上出现了一只大大的恐龙影子。窗外的月光也悄悄照进来。": {
+      "spoken": "晚饭后突然停电，屋里黑了下来。乔治抱紧玩具恐龙，小声说：“黑黑的。”猪爸爸点亮一盏安全露营灯，佩奇发现墙上出现了一只大大的恐龙影子。窗外的月光也悄悄照进来。",
+      "book_id": "adventure_peppa_03",
+      "page": 1,
+      "text_sha256": "7eed592dcb8fb62631ea170ff05bfe5035fda773e52c156411df4c43a86486f8",
+      "file": "voice-adventures-v1/7eed592dcb8fb62631ea.mp3",
+      "sha256": "d864b11b50bdc8f7b19cd9a5da8ab5f5cb800e2b89a5075967e925c09886fdb2",
+      "qa": {
+        "duration_seconds": 18.384,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -1.273,
+        "rms_dbfs": -19.897,
+        "trailing_silence_seconds": 0.612,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "佩奇把玩具举到灯前，影子一下变得比柜子还高。乔治先吓了一跳，后来认出尖尖的尾巴，开心地喊：“恐龙！”他把玩具往后移，影子又突然变小了。墙上的大影子跟着摇摇头。": {
+      "spoken": "佩奇把玩具举到灯前，影子一下变得比柜子还高。乔治先吓了一跳，后来认出尖尖的尾巴，开心地喊：“恐龙！”他把玩具往后移，影子又突然变小了。墙上的大影子跟着摇摇头。",
+      "book_id": "adventure_peppa_03",
+      "page": 2,
+      "text_sha256": "28955943fe8e1d1701fc163cd592ad011e71e1b2f93b7e74f118fc0181c0547a",
+      "file": "voice-adventures-v1/28955943fe8e1d1701fc.mp3",
+      "sha256": "bc60a5f8aed3154aadff03c7eda0d060838082f70c069fea953f842387e9936a",
+      "qa": {
+        "duration_seconds": 18.144,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.788,
+        "rms_dbfs": -20.249,
+        "trailing_silence_seconds": 0.599,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "两个孩子轮流试验：靠近灯，影子变大；靠近墙，影子变清楚。佩奇用手做小鸟，乔治用纸筒做长鼻子。猪妈妈猜了好几次，故意把大象猜成了茶壶。屋里很快响起一阵笑声。": {
+      "spoken": "两个孩子轮流试验：靠近灯，影子变大；靠近墙，影子变清楚。佩奇用手做小鸟，乔治用纸筒做长鼻子。猪妈妈猜了好几次，故意把大象猜成了茶壶。屋里很快响起一阵笑声。",
+      "book_id": "adventure_peppa_03",
+      "page": 3,
+      "text_sha256": "2839a1b8ca6fbbc2a644de4a41896c7db6fe8d3d44bb321810bb010055253d83",
+      "file": "voice-adventures-v1/2839a1b8ca6fbbc2a644.mp3",
+      "sha256": "ec4e9fe60dc0ae36afb0dd5ec50304ad58a68f84cdcaf92f2c141332df003de7",
+      "qa": {
+        "duration_seconds": 19.44,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.697,
+        "rms_dbfs": -20.232,
+        "trailing_silence_seconds": 0.575,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "正玩得热闹，露营灯的光慢慢变暗。佩奇着急地说：“影子剧还没演完呢！”猪爸爸没有打开蜡烛，而是拿出备用电池，请孩子们先把灯关掉再更换。孩子们站在一旁认真等待。": {
+      "spoken": "正玩得热闹，露营灯的光慢慢变暗。佩奇着急地说：“影子剧还没演完呢！”猪爸爸没有打开蜡烛，而是拿出备用电池，请孩子们先把灯关掉再更换。孩子们站在一旁认真等待。",
+      "book_id": "adventure_peppa_03",
+      "page": 4,
+      "text_sha256": "37d410132758792c547a8afde4e73f0b2f591e439142e4b85c092dcd3b9ddacc",
+      "file": "voice-adventures-v1/37d410132758792c547a.mp3",
+      "sha256": "c831b6cd5ede67a5cf70d9c88f8a35ae01dffa13991f2ea7279c6452b5479ff6",
+      "qa": {
+        "duration_seconds": 18.0,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.096,
+        "rms_dbfs": -19.673,
+        "trailing_silence_seconds": 0.591,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "灯重新亮起，佩奇和乔治用纸盒搭起小舞台。他们演了一只迷路恐龙跟着月亮回家的故事，猪妈妈负责旁白，猪爸爸的手影变成摇摇摆摆的大树。乔治还为小恐龙配了脚步声。": {
+      "spoken": "灯重新亮起，佩奇和乔治用纸盒搭起小舞台。他们演了一只迷路恐龙跟着月亮回家的故事，猪妈妈负责旁白，猪爸爸的手影变成摇摇摆摆的大树。乔治还为小恐龙配了脚步声。",
+      "book_id": "adventure_peppa_03",
+      "page": 5,
+      "text_sha256": "471e3bc6169148298134f1af4008c064a3cb72dd40056fd5195a1de2236ad949",
+      "file": "voice-adventures-v1/471e3bc6169148298134.mp3",
+      "sha256": "4a4b60e67830ddc9c7e3d02a3d2e1c0bc6cb066596dbd24f315c403a0e529547",
+      "qa": {
+        "duration_seconds": 18.408,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.608,
+        "rms_dbfs": -19.887,
+        "trailing_silence_seconds": 0.617,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "电来了，天花板的灯一下亮起来，可孩子们舍不得收场。乔治发现黑暗不只会让人害怕，也能藏着有趣的光影。全家约好周五再办一次安全的影子剧场。佩奇已经想好了新的角色。": {
+      "spoken": "电来了，天花板的灯一下亮起来，可孩子们舍不得收场。乔治发现黑暗不只会让人害怕，也能藏着有趣的光影。全家约好周五再办一次安全的影子剧场。佩奇已经想好了新的角色。",
+      "book_id": "adventure_peppa_03",
+      "page": 6,
+      "text_sha256": "d81220ca9802809e390e929da57011c39bc242bb34bd6efed3850657e57ec92f",
+      "file": "voice-adventures-v1/d81220ca9802809e390e.mp3",
+      "sha256": "08b020777f6d2d81eac0aaf52d532ca6b100470a421b46f06ef7b892758a4b3f",
+      "qa": {
+        "duration_seconds": 18.456,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.178,
+        "rms_dbfs": -20.002,
+        "trailing_silence_seconds": 0.6,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "星期天早晨，佩奇拧开水龙头准备洗脸，只听见“咕噜”一声，一滴水也没有。猪爸爸查看通知，原来街道正在修水管，中午以前全家要暂时停水。佩奇端着空杯子眨眨眼睛。": {
+      "spoken": "星期天早晨，佩奇拧开水龙头准备洗脸，只听见“咕噜”一声，一滴水也没有。猪爸爸查看通知，原来街道正在修水管，中午以前全家要暂时停水。佩奇端着空杯子眨眨眼睛。",
+      "book_id": "adventure_peppa_04",
+      "page": 1,
+      "text_sha256": "639dc696db5443e6327220d69b7a5f2bff2fe19e385abf3bda774aaa3c9569d6",
+      "file": "voice-adventures-v1/639dc696db5443e63272.mp3",
+      "sha256": "07da2a2521a4163a9d9f64743f3fda764168d429980ccd6f2512717bc5b3b3f3",
+      "qa": {
+        "duration_seconds": 18.912,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.47,
+        "rms_dbfs": -20.013,
+        "trailing_silence_seconds": 0.612,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "乔治想把储水壶里的水全倒进玩具水枪。佩奇也想用一大盆水洗自己的红靴子。猪妈妈指着桌上的一壶水说：“我们先想想，哪些事情最需要水。”乔治只好先把水枪放回去。": {
+      "spoken": "乔治想把储水壶里的水全倒进玩具水枪。佩奇也想用一大盆水洗自己的红靴子。猪妈妈指着桌上的一壶水说：“我们先想想，哪些事情最需要水。”乔治只好先把水枪放回去。",
+      "book_id": "adventure_peppa_04",
+      "page": 2,
+      "text_sha256": "cab82e44e30b9e854c390c4fca8232283b0c3ff3362fdccf96906ac150728c12",
+      "file": "voice-adventures-v1/cab82e44e30b9e854c39.mp3",
+      "sha256": "7388b34c4bd5a45edad8f3a7fddc75f04e02a2695ec7d0edfd02c156c409bc65",
+      "qa": {
+        "duration_seconds": 18.36,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.127,
+        "rms_dbfs": -20.065,
+        "trailing_silence_seconds": 0.602,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "全家画了一张用水顺序图：第一是喝水，第二是做早餐和洗手，最后才是清洁。乔治听见“洗手”，却发现按原来的冲法，一小盆水很快就见底了。这张图连乔治都能看明白。": {
+      "spoken": "全家画了一张用水顺序图：第一是喝水，第二是做早餐和洗手，最后才是清洁。乔治听见“洗手”，却发现按原来的冲法，一小盆水很快就见底了。这张图连乔治都能看明白。",
+      "book_id": "adventure_peppa_04",
+      "page": 3,
+      "text_sha256": "c7d276dfb14ef3f22dfe03d3bf2a16e5320e70a4e0a799f12f171f3f9dc37239",
+      "file": "voice-adventures-v1/c7d276dfb14ef3f22dfe.mp3",
+      "sha256": "fc9904842f1ef2c7577ee1f344f1c5967bffe3d4d338eba741e0b520cc6270b9",
+      "qa": {
+        "duration_seconds": 18.552,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.486,
+        "rms_dbfs": -20.122,
+        "trailing_silence_seconds": 0.599,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "猪爸爸找来带小孔的瓶盖，做成缓缓出水的洗手瓶。佩奇先把手打湿，关掉水，再搓泡泡，最后用少量水冲净。剩下的水还能浇窗台上有点低头的小花。小花喝到水后又抬起了头。": {
+      "spoken": "猪爸爸找来带小孔的瓶盖，做成缓缓出水的洗手瓶。佩奇先把手打湿，关掉水，再搓泡泡，最后用少量水冲净。剩下的水还能浇窗台上有点低头的小花。小花喝到水后又抬起了头。",
+      "book_id": "adventure_peppa_04",
+      "page": 4,
+      "text_sha256": "83ddd9e3ea63db28ad49c6c5b6e57d4aec029f6c7f36540e7c7d0f6af300211a",
+      "file": "voice-adventures-v1/83ddd9e3ea63db28ad49.mp3",
+      "sha256": "8230f7bda42ff2fd4d428b04bcc22d2cbf23a053f08ecc3456075b0fb25ccd45",
+      "qa": {
+        "duration_seconds": 19.92,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.712,
+        "rms_dbfs": -20.303,
+        "trailing_silence_seconds": 0.622,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "到了十一点，红靴子上还有泥点。佩奇用湿布只擦脏的地方，发现根本不需要装满一大盆。就在她擦完最后一只靴子时，水管发出声音，清水终于流了出来。两只靴子很快变得干干净净。": {
+      "spoken": "到了十一点，红靴子上还有泥点。佩奇用湿布只擦脏的地方，发现根本不需要装满一大盆。就在她擦完最后一只靴子时，水管发出声音，清水终于流了出来。两只靴子很快变得干干净净。",
+      "book_id": "adventure_peppa_04",
+      "page": 5,
+      "text_sha256": "72fdfb5fb877348e9377079087cab0ea5b3beb58d913f365e7dc33e2df42dd76",
+      "file": "voice-adventures-v1/72fdfb5fb877348e9377.mp3",
+      "sha256": "123106870787d47950f9ae6c21d3b158ddfb4461d9bb58e5363fb08640171ce2",
+      "qa": {
+        "duration_seconds": 19.368,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.91,
+        "rms_dbfs": -19.969,
+        "trailing_silence_seconds": 0.617,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "猪妈妈把用水顺序图贴在水龙头旁。停水结束后，乔治仍记得洗手时把水开小一点。佩奇说：“水回来了也不能浪费，因为每一滴都有重要的事情要做。”乔治认真地点了点头。": {
+      "spoken": "猪妈妈把用水顺序图贴在水龙头旁。停水结束后，乔治仍记得洗手时把水开小一点。佩奇说：“水回来了也不能浪费，因为每一滴都有重要的事情要做。”乔治认真地点了点头。",
+      "book_id": "adventure_peppa_04",
+      "page": 6,
+      "text_sha256": "1a6bdc5d577cdbed94b6328e02c56e271076c3984ed569178969a841ebc64983",
+      "file": "voice-adventures-v1/1a6bdc5d577cdbed94b6.mp3",
+      "sha256": "26a393ea20e67da2a2999044c4229711ed336121a36cef1db0239ed312338a78",
+      "qa": {
+        "duration_seconds": 18.72,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.936,
+        "rms_dbfs": -19.945,
+        "trailing_silence_seconds": 0.583,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "猪爷爷邀请佩奇、乔治和苏西去花园看萤火虫。天还没黑，孩子们就拿着亮亮的手电筒四处照。猪爷爷说：“先坐一会儿，让眼睛慢慢习惯夜色。”晚风带来青草和花朵的香味。": {
+      "spoken": "猪爷爷邀请佩奇、乔治和苏西去花园看萤火虫。天还没黑，孩子们就拿着亮亮的手电筒四处照。猪爷爷说：“先坐一会儿，让眼睛慢慢习惯夜色。”晚风带来青草和花朵的香味。",
+      "book_id": "adventure_peppa_05",
+      "page": 1,
+      "text_sha256": "4a053cb2de1aa1646a4fe810283e6875308488d7658b0ceac5d7cd2b61f8cd6b",
+      "file": "voice-adventures-v1/4a053cb2de1aa1646a4f.mp3",
+      "sha256": "0fd50ad62e7d71bb776f67e226533611a1e35f8da134743662846a286db10aaf",
+      "qa": {
+        "duration_seconds": 19.056,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.721,
+        "rms_dbfs": -19.62,
+        "trailing_silence_seconds": 0.641,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "第一只萤火虫从草边飞起，乔治兴奋地追过去，差点踩进湿泥。佩奇想用透明罐把它装起来仔细看，萤火虫却绕着罐口飞走，躲进了高高的草丛。苏西赶紧拉住他的衣角。": {
+      "spoken": "第一只萤火虫从草边飞起，乔治兴奋地追过去，差点踩进湿泥。佩奇想用透明罐把它装起来仔细看，萤火虫却绕着罐口飞走，躲进了高高的草丛。苏西赶紧拉住他的衣角。",
+      "book_id": "adventure_peppa_05",
+      "page": 2,
+      "text_sha256": "114aeea595cdbc8936f5be72bbab1586309de49334196e700029a36513a557c6",
+      "file": "voice-adventures-v1/114aeea595cdbc8936f5.mp3",
+      "sha256": "94941731f6f2e6c1e5a83cf3baca102fe23bb183cafdaac1bb5dc96e87d85eb1",
+      "qa": {
+        "duration_seconds": 18.336,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.935,
+        "rms_dbfs": -19.977,
+        "trailing_silence_seconds": 0.604,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "猪爷爷在小路边铺好野餐垫，请大家关掉强光，只留一盏蒙着红纸的微光灯。“我们安静一点，它们也许会自己靠近。”孩子们压低声音，连脚步都轻了。大家听见蟋蟀在旁边唱歌。": {
+      "spoken": "猪爷爷在小路边铺好野餐垫，请大家关掉强光，只留一盏蒙着红纸的微光灯。“我们安静一点，它们也许会自己靠近。”孩子们压低声音，连脚步都轻了。大家听见蟋蟀在旁边唱歌。",
+      "book_id": "adventure_peppa_05",
+      "page": 3,
+      "text_sha256": "dd42cdbf2d9635b3bfa2c2332e4c60ef88914688730c3487366ae86a4346e9ff",
+      "file": "voice-adventures-v1/dd42cdbf2d9635b3bfa2.mp3",
+      "sha256": "47b5d0a42df981c5634b38031408a382fddf4bcb7aab5c75600e14464d2fbe82",
+      "qa": {
+        "duration_seconds": 18.72,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.612,
+        "rms_dbfs": -19.453,
+        "trailing_silence_seconds": 0.611,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "不久，草丛里亮起一点、两点、好多点绿光，像星星落到地面。苏西发现萤火虫的光一闪一闪，并不是一直亮着。佩奇把闪烁的节奏画成短线和圆点。大家轮流说出自己的发现。": {
+      "spoken": "不久，草丛里亮起一点、两点、好多点绿光，像星星落到地面。苏西发现萤火虫的光一闪一闪，并不是一直亮着。佩奇把闪烁的节奏画成短线和圆点。大家轮流说出自己的发现。",
+      "book_id": "adventure_peppa_05",
+      "page": 4,
+      "text_sha256": "a0bca522af2dee2884bba54c4a0b04f0193d130be48f1e2952f066c5d8ea4fae",
+      "file": "voice-adventures-v1/a0bca522af2dee2884bb.mp3",
+      "sha256": "972ab2772ad597ed83bcbf1c7993d951aa113d20cb8ccc1c06b4a3e37b4c4cd7",
+      "qa": {
+        "duration_seconds": 19.224,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.161,
+        "rms_dbfs": -19.808,
+        "trailing_silence_seconds": 0.588,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "一只萤火虫停在乔治袖口上。乔治屏住呼吸，没有伸手抓它。大家正想凑近看，远处传来青蛙叫声，萤火虫轻轻张开翅膀，飞回伙伴中间。那一点绿光像胸针一样漂亮。": {
+      "spoken": "一只萤火虫停在乔治袖口上。乔治屏住呼吸，没有伸手抓它。大家正想凑近看，远处传来青蛙叫声，萤火虫轻轻张开翅膀，飞回伙伴中间。那一点绿光像胸针一样漂亮。",
+      "book_id": "adventure_peppa_05",
+      "page": 5,
+      "text_sha256": "365dcb31c9c6f665052c71faed2ea423fc4288776fbce2eef6222f6754ff501f",
+      "file": "voice-adventures-v1/365dcb31c9c6f665052c.mp3",
+      "sha256": "69caaa4e2163cf15ffefabad9f8c2761c44deed8168bc52b7533669e12032702",
+      "qa": {
+        "duration_seconds": 18.576,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.919,
+        "rms_dbfs": -20.043,
+        "trailing_silence_seconds": 0.611,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "回屋时，佩奇的观察纸上没有一只被带走的萤火虫，却记满了颜色、数量和闪光节奏。她说：“安静地看，也能认识朋友。”花园仍留给小亮点们自由飞舞。乔治一路都轻轻哼着歌。": {
+      "spoken": "回屋时，佩奇的观察纸上没有一只被带走的萤火虫，却记满了颜色、数量和闪光节奏。她说：“安静地看，也能认识朋友。”花园仍留给小亮点们自由飞舞。乔治一路都轻轻哼着歌。",
+      "book_id": "adventure_peppa_05",
+      "page": 6,
+      "text_sha256": "46f5105a1be7916ebb582fd2b085e54001440da621f0d0a8ea46ae11704e18ba",
+      "file": "voice-adventures-v1/46f5105a1be7916ebb58.mp3",
+      "sha256": "822bfb107683c4edfec3fa45bfa33f7c0979ca0be35465e41d744ae27ccdb366",
+      "qa": {
+        "duration_seconds": 19.44,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.219,
+        "rms_dbfs": -19.905,
+        "trailing_silence_seconds": 0.589,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "猪爷爷家的老挂钟总是慢一拍。大家约好三点出发野餐，可钟面还指着两点五十分，厨房的小钟已经响了三下。“是不是它累了？”乔治认真地问。大家赶紧看向窗外的太阳。": {
+      "spoken": "猪爷爷家的老挂钟总是慢一拍。大家约好三点出发野餐，可钟面还指着两点五十分，厨房的小钟已经响了三下。“是不是它累了？”乔治认真地问。大家赶紧看向窗外的太阳。",
+      "book_id": "adventure_peppa_06",
+      "page": 1,
+      "text_sha256": "fce5d7ae99e3acd0a88fa2b0059c2af48658c2ee1f7cfa23897a64b0d20f8f3a",
+      "file": "voice-adventures-v1/fce5d7ae99e3acd0a88f.mp3",
+      "sha256": "d0e94203ba5838ee6ae6409f1e4f49baa38077dc184f1c46e0f8c2174477a4da",
+      "qa": {
+        "duration_seconds": 18.696,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.826,
+        "rms_dbfs": -20.104,
+        "trailing_silence_seconds": 0.595,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "乔治伸手想把长针用力推快，猪爷爷赶紧拦住他：“先别硬扳，钟表里面有许多小零件。”佩奇拿来软垫，大家把挂钟平稳放在桌上再检查。小零件可不能受伤。动作一定要轻。": {
+      "spoken": "乔治伸手想把长针用力推快，猪爷爷赶紧拦住他：“先别硬扳，钟表里面有许多小零件。”佩奇拿来软垫，大家把挂钟平稳放在桌上再检查。小零件可不能受伤。动作一定要轻。",
+      "book_id": "adventure_peppa_06",
+      "page": 2,
+      "text_sha256": "922ad6f02f842671b1ac78dd9a56aa00859c2f6f21f38979e50e9d185d426b49",
+      "file": "voice-adventures-v1/922ad6f02f842671b1ac.mp3",
+      "sha256": "7a8567d62b2069015ee799161e92c23503bd41a042612467789867ea207401a8",
+      "qa": {
+        "duration_seconds": 18.696,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.005,
+        "rms_dbfs": -19.783,
+        "trailing_silence_seconds": 0.603,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "猪爷爷打开后盖，钟摆旁卡着一小条旧彩纸。原来上次装饰房间时，彩纸悄悄滑了进去。佩奇用小镊子夹住一角，慢慢把它完整取出来。钟摆马上轻轻摇了起来。桌面也被整理得干干净净。": {
+      "spoken": "猪爷爷打开后盖，钟摆旁卡着一小条旧彩纸。原来上次装饰房间时，彩纸悄悄滑了进去。佩奇用小镊子夹住一角，慢慢把它完整取出来。钟摆马上轻轻摇了起来。桌面也被整理得干干净净。",
+      "book_id": "adventure_peppa_06",
+      "page": 3,
+      "text_sha256": "68aef59f0e37116704cfe5f027e15b09207c5c5fa982ad30ec399f260646f385",
+      "file": "voice-adventures-v1/68aef59f0e37116704cf.mp3",
+      "sha256": "52df18777de63ccfb7e2a0b05f269b727ef6e9faec47dd7641e7a9fd081895f7",
+      "qa": {
+        "duration_seconds": 20.136,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.106,
+        "rms_dbfs": -20.124,
+        "trailing_silence_seconds": 0.604,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "挂钟重新走动，却比厨房小钟快了一点。佩奇每隔一分钟画一道线，发现它越走越急。猪爷爷只转动小小的调节钮，提醒大家一次不能转得太多。佩奇负责记下每次变化。": {
+      "spoken": "挂钟重新走动，却比厨房小钟快了一点。佩奇每隔一分钟画一道线，发现它越走越急。猪爷爷只转动小小的调节钮，提醒大家一次不能转得太多。佩奇负责记下每次变化。",
+      "book_id": "adventure_peppa_06",
+      "page": 4,
+      "text_sha256": "6bdc0e037dbb28cd33ba30cacc6c0497184d82c15bb1381b98d94e146794a31d",
+      "file": "voice-adventures-v1/6bdc0e037dbb28cd33ba.mp3",
+      "sha256": "a123596615895e2b858ba40f50a451baab7fefdb30f40a7733e0f3226461b5fa",
+      "qa": {
+        "duration_seconds": 18.456,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.216,
+        "rms_dbfs": -20.021,
+        "trailing_silence_seconds": 0.626,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "他们安静听了五分钟：“滴答、滴答。”这一次，两只钟的分针一起走到十二。挂钟清脆地敲了四下，乔治也跟着数了四声，兴奋地拍起手来。声音一点也不着急。": {
+      "spoken": "他们安静听了五分钟：“滴答、滴答。”这一次，两只钟的分针一起走到十二。挂钟清脆地敲了四下，乔治也跟着数了四声，兴奋地拍起手来。声音一点也不着急。",
+      "book_id": "adventure_peppa_06",
+      "page": 5,
+      "text_sha256": "8c7eaa3ad53a38c50f0334dea8a87fadc6ec7bc2bc0f50831a9eb305777be0d7",
+      "file": "voice-adventures-v1/8c7eaa3ad53a38c50f03.mp3",
+      "sha256": "66474e21fbc56522420c1ba7dcf3d28f38b582602224209e424d6750c2b9ae0b",
+      "qa": {
+        "duration_seconds": 17.088,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.78,
+        "rms_dbfs": -20.721,
+        "trailing_silence_seconds": 0.605,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "野餐虽然晚了一会儿，三明治仍然香喷喷。猪爷爷把那条彩纸贴进修理记录本。佩奇说：“修东西不能着急，先找原因，再一点点试，时间会告诉我们答案。”": {
+      "spoken": "野餐虽然晚了一会儿，三明治仍然香喷喷。猪爷爷把那条彩纸贴进修理记录本。佩奇说：“修东西不能着急，先找原因，再一点点试，时间会告诉我们答案。”",
+      "book_id": "adventure_peppa_06",
+      "page": 6,
+      "text_sha256": "9eb8418fbc5ad2765d5e3424eb03ae7e142300f812e279385ad5c15147281bad",
+      "file": "voice-adventures-v1/9eb8418fbc5ad2765d5e.mp3",
+      "sha256": "bf7ccf0e1e69cc1087d5ca0d95aead872302c49f6600bd3e5a5cb2143b5247f7",
+      "qa": {
+        "duration_seconds": 16.008,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.209,
+        "rms_dbfs": -19.743,
+        "trailing_silence_seconds": 0.604,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "雨后的早晨，猪爷爷发现三只小鸭子没有来池塘吃早餐。泥地上留下许多小脚印，一会儿向东，一会儿向西。佩奇决定画张地图，找找它们去了哪里。雨珠还挂在菜叶上。": {
+      "spoken": "雨后的早晨，猪爷爷发现三只小鸭子没有来池塘吃早餐。泥地上留下许多小脚印，一会儿向东，一会儿向西。佩奇决定画张地图，找找它们去了哪里。雨珠还挂在菜叶上。",
+      "book_id": "adventure_peppa_07",
+      "page": 1,
+      "text_sha256": "0a8c1f1c1717e77064ab0f7f31fe037efce87fc27d5611fc9229cad2099d63ba",
+      "file": "voice-adventures-v1/0a8c1f1c1717e77064ab.mp3",
+      "sha256": "26e6ea85880f9ce5bd769c442644b11b607606b9e015c8d227be44e9cb18cf44",
+      "qa": {
+        "duration_seconds": 17.736,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.563,
+        "rms_dbfs": -20.17,
+        "trailing_silence_seconds": 0.635,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "佩奇沿着最大的脚印走，乔治负责在地图上画箭头。脚印绕过菜地，又停在工具棚前。乔治拉开门，里面只有一双沾着泥的花园靴，没有小鸭子。地图上的线越画越长。": {
+      "spoken": "佩奇沿着最大的脚印走，乔治负责在地图上画箭头。脚印绕过菜地，又停在工具棚前。乔治拉开门，里面只有一双沾着泥的花园靴，没有小鸭子。地图上的线越画越长。",
+      "book_id": "adventure_peppa_07",
+      "page": 2,
+      "text_sha256": "47749f7a5d151b9eb0424de161a0c226bdaea0e2f3988e2e9511f93152613603",
+      "file": "voice-adventures-v1/47749f7a5d151b9eb042.mp3",
+      "sha256": "3e0fc05d79722a45564435456d34189fc42becda6ba49081f6fa408de7fcec92",
+      "qa": {
+        "duration_seconds": 18.312,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.24,
+        "rms_dbfs": -20.032,
+        "trailing_silence_seconds": 0.596,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "苏西赶来帮忙，发现靴底的花纹很大，真正的鸭脚印更细，还连着小小的蹼。他们擦掉画错的箭头，重新从池塘边辨认三排挨得很近的脚印。这次线索看清楚了。": {
+      "spoken": "苏西赶来帮忙，发现靴底的花纹很大，真正的鸭脚印更细，还连着小小的蹼。他们擦掉画错的箭头，重新从池塘边辨认三排挨得很近的脚印。这次线索看清楚了。",
+      "book_id": "adventure_peppa_07",
+      "page": 3,
+      "text_sha256": "300a541c4e06016e263a7333f0cdcecbd7e2aa53315452a1dab19f82f0298a91",
+      "file": "voice-adventures-v1/300a541c4e06016e263a.mp3",
+      "sha256": "c64ccec38d90c3bb7f704e7074935f9a06b8cc49951d346bf93fc9ac4693e211",
+      "qa": {
+        "duration_seconds": 16.776,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.318,
+        "rms_dbfs": -20.499,
+        "trailing_silence_seconds": 0.584,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "新脚印走到一片水洼边就消失了。佩奇正发愁，乔治听见树篱后传来轻轻的“嘎嘎”声。叶子上还粘着一根黄色小绒毛，像一面迷你旗子。这条新线索让大家又有了方向。": {
+      "spoken": "新脚印走到一片水洼边就消失了。佩奇正发愁，乔治听见树篱后传来轻轻的“嘎嘎”声。叶子上还粘着一根黄色小绒毛，像一面迷你旗子。这条新线索让大家又有了方向。",
+      "book_id": "adventure_peppa_07",
+      "page": 4,
+      "text_sha256": "3c33cc68d9e77b74486c936687e5c74bb5eb087635d8fc81495ffed2562bf03a",
+      "file": "voice-adventures-v1/3c33cc68d9e77b74486c.mp3",
+      "sha256": "9dd2656b8740612320ce50c9ece2b6ce2f071ca4072a12615230f5468e5ffd09",
+      "qa": {
+        "duration_seconds": 17.856,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.528,
+        "rms_dbfs": -19.672,
+        "trailing_silence_seconds": 0.616,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "孩子们绕过树篱，看见三只小鸭子正在覆盆子丛下躲风，鸭妈妈也守在旁边。它们并没有迷路，只是找到一个舒服的新角落，大家悄悄退后几步。鸭妈妈轻轻叫了一声。": {
+      "spoken": "孩子们绕过树篱，看见三只小鸭子正在覆盆子丛下躲风，鸭妈妈也守在旁边。它们并没有迷路，只是找到一个舒服的新角落，大家悄悄退后几步。鸭妈妈轻轻叫了一声。",
+      "book_id": "adventure_peppa_07",
+      "page": 5,
+      "text_sha256": "821a260d9f2f98ec389aee68eba79ac4fe08fd6624e31fa1b14a8ed1335bc4a2",
+      "file": "voice-adventures-v1/821a260d9f2f98ec389a.mp3",
+      "sha256": "7a71903b07dd8bf1b3b575092e5d7136982d1d303acc86943bdc98abc83296d1",
+      "qa": {
+        "duration_seconds": 17.496,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.654,
+        "rms_dbfs": -20.384,
+        "trailing_silence_seconds": 0.588,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "猪爷爷把早餐放在附近的浅盘里。佩奇在地图上画了一颗小黄星，却没有带别人来打扰。她明白，地图不只是帮人找到地方，也能提醒大家哪里要轻轻走。这里是小鸭子的安静角落。真好。": {
+      "spoken": "猪爷爷把早餐放在附近的浅盘里。佩奇在地图上画了一颗小黄星，却没有带别人来打扰。她明白，地图不只是帮人找到地方，也能提醒大家哪里要轻轻走。这里是小鸭子的安静角落。真好。",
+      "book_id": "adventure_peppa_07",
+      "page": 6,
+      "text_sha256": "7e041e29e79f5f1336ea77f3f8067da11a92027412a1f4d2a3a8e78d96d4dc53",
+      "file": "voice-adventures-v1/7e041e29e79f5f1336ea.mp3",
+      "sha256": "5c12dda8ca2f671c86c740c44891e427c9757bf2a3c746545c1c335654a87fea",
+      "qa": {
+        "duration_seconds": 20.376,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.696,
+        "rms_dbfs": -20.227,
+        "trailing_silence_seconds": 0.596,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "秋风把红叶和黄叶铺满小路。佩奇、乔治和苏西来到猪爷爷的小水渠，决定各做一艘叶子船，看谁能顺着细细的水流经过蓝色小桥。水面映着金色的阳光，亮闪闪的。大家都很期待。": {
+      "spoken": "秋风把红叶和黄叶铺满小路。佩奇、乔治和苏西来到猪爷爷的小水渠，决定各做一艘叶子船，看谁能顺着细细的水流经过蓝色小桥。水面映着金色的阳光，亮闪闪的。大家都很期待。",
+      "book_id": "adventure_peppa_08",
+      "page": 1,
+      "text_sha256": "e624ed682c0aecb4651c616118f59cc8825ec2ac2329a476ee6164595e4be138",
+      "file": "voice-adventures-v1/e624ed682c0aecb4651c.mp3",
+      "sha256": "50e814c0664afe02038b3921512284d8c21e5ed60fb0d1e58b3936099fd3594b",
+      "qa": {
+        "duration_seconds": 20.256,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.098,
+        "rms_dbfs": -20.016,
+        "trailing_silence_seconds": 0.591,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "佩奇挑了最大的红叶，还放上三颗橡果当乘客。船刚入水，叶面就慢慢下沉。“它明明最大呀！”佩奇不服气，又把橡果往中间挤了挤。水很快漫过了叶边，橡果也晃起来。": {
+      "spoken": "佩奇挑了最大的红叶，还放上三颗橡果当乘客。船刚入水，叶面就慢慢下沉。“它明明最大呀！”佩奇不服气，又把橡果往中间挤了挤。水很快漫过了叶边，橡果也晃起来。",
+      "book_id": "adventure_peppa_08",
+      "page": 2,
+      "text_sha256": "1db942f390c9c2e4156bd3f255dae7e8049e1261d0edb84ec29080b934958cd8",
+      "file": "voice-adventures-v1/1db942f390c9c2e4156b.mp3",
+      "sha256": "038dab837727b3ba055fc3b67bf432493471ee3cbd61550f96ef517f6288c653",
+      "qa": {
+        "duration_seconds": 18.6,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.123,
+        "rms_dbfs": -19.999,
+        "trailing_silence_seconds": 0.609,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "乔治的小黄叶很轻，飞快超过红叶，却在一个水涡里不停打转。猪爷爷说：“快和稳不一样，我们可以看看水往哪里走，再改变船的形状。”小船怎么也转不出来。佩奇仔细看着。": {
+      "spoken": "乔治的小黄叶很轻，飞快超过红叶，却在一个水涡里不停打转。猪爷爷说：“快和稳不一样，我们可以看看水往哪里走，再改变船的形状。”小船怎么也转不出来。佩奇仔细看着。",
+      "book_id": "adventure_peppa_08",
+      "page": 3,
+      "text_sha256": "9b4822282073a360727c49acf6b1f1a16c525a6c77c2427c54ebd4a5acd1ccf3",
+      "file": "voice-adventures-v1/9b4822282073a360727c.mp3",
+      "sha256": "49a02519b54161def8b5eba2bbd5ed7e9110014c9e9f94cbc8010b577bdb26ae",
+      "qa": {
+        "duration_seconds": 18.672,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.143,
+        "rms_dbfs": -20.211,
+        "trailing_silence_seconds": 0.605,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "佩奇拿掉两颗橡果，把叶边轻轻折起；乔治用短树枝做船舵；苏西给自己的船换上笔直的小叶柄。三个人先在浅水盆里试一次，再送回水渠。他们还给小船取了新名字。": {
+      "spoken": "佩奇拿掉两颗橡果，把叶边轻轻折起；乔治用短树枝做船舵；苏西给自己的船换上笔直的小叶柄。三个人先在浅水盆里试一次，再送回水渠。他们还给小船取了新名字。",
+      "book_id": "adventure_peppa_08",
+      "page": 4,
+      "text_sha256": "df204162677d2b9db51a3addee5e85e2ed1dbbf3e69e84f55291cd49d85a456f",
+      "file": "voice-adventures-v1/df204162677d2b9db51a.mp3",
+      "sha256": "43aa34fe39a8dd992480ad1c33dd961be341485447f78feb7182bcf1f900b880",
+      "qa": {
+        "duration_seconds": 17.88,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.025,
+        "rms_dbfs": -19.951,
+        "trailing_silence_seconds": 0.602,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "三艘小船这回都绕过水涡，可前面横着一根细树枝。孩子们没有踩进水里，而是请猪爷爷用长夹子移开树枝，水流重新唱着歌向前跑。大家站在岸上耐心等着。": {
+      "spoken": "三艘小船这回都绕过水涡，可前面横着一根细树枝。孩子们没有踩进水里，而是请猪爷爷用长夹子移开树枝，水流重新唱着歌向前跑。大家站在岸上耐心等着。",
+      "book_id": "adventure_peppa_08",
+      "page": 5,
+      "text_sha256": "9c0abefb06a71ed7d13e67ea6fb20c5298a5432b2e5b52d51afa66dcd64bf8c2",
+      "file": "voice-adventures-v1/9c0abefb06a71ed7d13e.mp3",
+      "sha256": "4a3e13af3f5812fa6c5654ccaf480cd3beaab1158780b713f2f4bd1c95c83892",
+      "qa": {
+        "duration_seconds": 17.04,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.139,
+        "rms_dbfs": -19.856,
+        "trailing_silence_seconds": 0.597,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "小黄船最先穿过桥，红叶船载着一颗橡果稳稳到达，苏西的船走得最直。大家为每艘船找到一个优点，还把湿叶留在岸边回到泥土里。谁也没有只顾着争第一。真有趣。": {
+      "spoken": "小黄船最先穿过桥，红叶船载着一颗橡果稳稳到达，苏西的船走得最直。大家为每艘船找到一个优点，还把湿叶留在岸边回到泥土里。谁也没有只顾着争第一。真有趣。",
+      "book_id": "adventure_peppa_08",
+      "page": 6,
+      "text_sha256": "28361c8ac46006e547d0ef1a06a88b1c6538fcd97a4f57736a92a0faeb8802c5",
+      "file": "voice-adventures-v1/28361c8ac46006e547d0.mp3",
+      "sha256": "6d69e1b276816e7393d5176b3f22adb902709656cb36c3959011b0912ec579e2",
+      "qa": {
+        "duration_seconds": 18.048,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.834,
+        "rms_dbfs": -19.616,
+        "trailing_silence_seconds": 0.61,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "午后的草地上，佩奇用硬纸板做了一个方方的相框。她对苏西说：“欢迎来到云朵照相馆！只要把相框举起来，天空里的云就会变成一幅画。”远处的风车慢慢转着。": {
+      "spoken": "午后的草地上，佩奇用硬纸板做了一个方方的相框。她对苏西说：“欢迎来到云朵照相馆！只要把相框举起来，天空里的云就会变成一幅画。”远处的风车慢慢转着。",
+      "book_id": "adventure_peppa_09",
+      "page": 1,
+      "text_sha256": "669ea6749851a2ccf7c81f6724d0e7ab686e56464174cc125c2e1bb79aa7d60a",
+      "file": "voice-adventures-v1/669ea6749851a2ccf7c8.mp3",
+      "sha256": "dc0756dfd351a46c33bc71a77cc199eca13fa28fdfafe34ade8203af8b0dadf9",
+      "qa": {
+        "duration_seconds": 16.968,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.201,
+        "rms_dbfs": -20.011,
+        "trailing_silence_seconds": 0.606,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "第一朵云像长耳朵兔子，第二朵像装满奶油的蛋糕。乔治举起小相框，说自己看见了恐龙。佩奇换了三个角度，还是只看见一只弯弯的大香蕉。每个人看见的都不一样。": {
+      "spoken": "第一朵云像长耳朵兔子，第二朵像装满奶油的蛋糕。乔治举起小相框，说自己看见了恐龙。佩奇换了三个角度，还是只看见一只弯弯的大香蕉。每个人看见的都不一样。",
+      "book_id": "adventure_peppa_09",
+      "page": 2,
+      "text_sha256": "07cde55d4e9ab6e5a60b57d9c96139e0364f420fcc38aafdf8b08e18d0ed058c",
+      "file": "voice-adventures-v1/07cde55d4e9ab6e5a60b.mp3",
+      "sha256": "b11d49c043ff5545122c4929b61d3be0571828fef30bc5c9a663f4b0d28ea68b",
+      "qa": {
+        "duration_seconds": 17.256,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.672,
+        "rms_dbfs": -19.788,
+        "trailing_silence_seconds": 0.622,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "一阵风吹来，恐龙云很快散开。乔治失望地放下相框：“它不等我。”佩奇本想说根本没有恐龙，却看见弟弟还指着天空，便请他描述恐龙的尾巴和牙齿。乔治点点头，开始认真回想。": {
+      "spoken": "一阵风吹来，恐龙云很快散开。乔治失望地放下相框：“它不等我。”佩奇本想说根本没有恐龙，却看见弟弟还指着天空，便请他描述恐龙的尾巴和牙齿。乔治点点头，开始认真回想。",
+      "book_id": "adventure_peppa_09",
+      "page": 3,
+      "text_sha256": "1700d914a8e6a8690e28d2bbcd1ffecf2e9b3befd4779dc59471a3fa85037766",
+      "file": "voice-adventures-v1/1700d914a8e6a8690e28.mp3",
+      "sha256": "661b740fa8e3dfa100b60988460613348e2b6acf691351f01571eb6c7a889856",
+      "qa": {
+        "duration_seconds": 19.344,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.748,
+        "rms_dbfs": -20.095,
+        "trailing_silence_seconds": 0.618,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "苏西拿出画纸，乔治说一句，佩奇就画一笔。他们把散开的几朵小云也画进去，变成恐龙喷出的白色泡泡。原来相框没留住云，故事却慢慢留住了。三个人越画越有主意。": {
+      "spoken": "苏西拿出画纸，乔治说一句，佩奇就画一笔。他们把散开的几朵小云也画进去，变成恐龙喷出的白色泡泡。原来相框没留住云，故事却慢慢留住了。三个人越画越有主意。",
+      "book_id": "adventure_peppa_09",
+      "page": 4,
+      "text_sha256": "d35fad9f04260995927984a08db68c638bea2bcb0b0baff8cf1f65fb5adcb0f4",
+      "file": "voice-adventures-v1/d35fad9f042609959279.mp3",
+      "sha256": "ff9c7c79c34fc7bb0ac8a9a378ed0d4f55793c4e8b267e992fe9112e09e1af54",
+      "qa": {
+        "duration_seconds": 17.808,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.682,
+        "rms_dbfs": -20.193,
+        "trailing_silence_seconds": 0.603,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "后来，大家轮流说自己看见的形状。佩奇眼里的小船，在苏西眼里是一顶帽子；乔治的雪山，又像猪爸爸的大肚子，草地上笑声一阵接一阵。谁的答案都很有趣。": {
+      "spoken": "后来，大家轮流说自己看见的形状。佩奇眼里的小船，在苏西眼里是一顶帽子；乔治的雪山，又像猪爸爸的大肚子，草地上笑声一阵接一阵。谁的答案都很有趣。",
+      "book_id": "adventure_peppa_09",
+      "page": 5,
+      "text_sha256": "5fd732326b203b7105a74b3efb855d1840c878bc731b815c93ab2cac5d033cf2",
+      "file": "voice-adventures-v1/5fd732326b203b7105a7.mp3",
+      "sha256": "d09a2ed750ae81dff734e8b6c0e6f810f182a69466def1e1b8ab043b80279114",
+      "qa": {
+        "duration_seconds": 17.4,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.642,
+        "rms_dbfs": -19.787,
+        "trailing_silence_seconds": 0.593,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "太阳落低时，云边变成金色。佩奇把几幅画夹在绳子上，办了一场真正的云朵展览。她发现同一片天空可以有许多答案，只要愿意认真说给朋友听。乔治负责请大家进场参观。": {
+      "spoken": "太阳落低时，云边变成金色。佩奇把几幅画夹在绳子上，办了一场真正的云朵展览。她发现同一片天空可以有许多答案，只要愿意认真说给朋友听。乔治负责请大家进场参观。",
+      "book_id": "adventure_peppa_09",
+      "page": 6,
+      "text_sha256": "3e03b490ac21a7d5fd45c863808ff00e67cac16de9b8100f323f072a62d9196c",
+      "file": "voice-adventures-v1/3e03b490ac21a7d5fd45.mp3",
+      "sha256": "ff45bffef2c0c803aa85fac3511e6c2e40372a7d266ce0f1bcbc620dba0e40c7",
+      "qa": {
+        "duration_seconds": 19.008,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.546,
+        "rms_dbfs": -19.743,
+        "trailing_silence_seconds": 0.613,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "猪奶奶生日那天，佩奇和乔治把亲手做的花朵卡片藏在花园里，又画了一张藏宝图。图上有圆桌、苹果树和一把红伞，最后的位置画着一颗大爱心。猪奶奶笑着戴好生日帽。": {
+      "spoken": "猪奶奶生日那天，佩奇和乔治把亲手做的花朵卡片藏在花园里，又画了一张藏宝图。图上有圆桌、苹果树和一把红伞，最后的位置画着一颗大爱心。猪奶奶笑着戴好生日帽。",
+      "book_id": "adventure_peppa_10",
+      "page": 1,
+      "text_sha256": "3421a295b07203fc2ede675e518a2f3f9472c5546835f30a592dccf5b39fffdd",
+      "file": "voice-adventures-v1/3421a295b07203fc2ede.mp3",
+      "sha256": "0b848ac4c9f872e8bbd3390a669342b16ed7e6f8c7158bb911490607e46debd3",
+      "qa": {
+        "duration_seconds": 18.744,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.366,
+        "rms_dbfs": -20.145,
+        "trailing_silence_seconds": 0.617,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "猪奶奶从圆桌出发，却把图上的弯线当成小河，走到了菜园边。佩奇急着想直接告诉答案，猪爷爷笑着说：“好地图要让找宝物的人自己看懂。”第一回寻宝暂时停了下来。": {
+      "spoken": "猪奶奶从圆桌出发，却把图上的弯线当成小河，走到了菜园边。佩奇急着想直接告诉答案，猪爷爷笑着说：“好地图要让找宝物的人自己看懂。”第一回寻宝暂时停了下来。",
+      "book_id": "adventure_peppa_10",
+      "page": 2,
+      "text_sha256": "fac1c9716db3fa94899b774232201f0d1b55011329ec9f7def17178647837389",
+      "file": "voice-adventures-v1/fac1c9716db3fa94899b.mp3",
+      "sha256": "bc5735f64ad91c6378aa6eb9bf4881530a5692be4ac127a359955d0b23e1903c",
+      "qa": {
+        "duration_seconds": 17.976,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.488,
+        "rms_dbfs": -20.18,
+        "trailing_silence_seconds": 0.601,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "佩奇重新观察，发现花园小路才是弯线，而地图上没有画菜园篱笆。她补上绿色栅栏，又在每个转弯处画脚印。乔治还坚持加上一只恐龙当指路的标记。这样每一步都更清楚了。": {
+      "spoken": "佩奇重新观察，发现花园小路才是弯线，而地图上没有画菜园篱笆。她补上绿色栅栏，又在每个转弯处画脚印。乔治还坚持加上一只恐龙当指路的标记。这样每一步都更清楚了。",
+      "book_id": "adventure_peppa_10",
+      "page": 3,
+      "text_sha256": "9f023c7ca52b02bc96bf5ce02d4923aaac669eb94bcbe08e6c53d834d1006384",
+      "file": "voice-adventures-v1/9f023c7ca52b02bc96bf.mp3",
+      "sha256": "d66025871943311cb2a685f2bada2b11b3126d8644e319887d5d4d1142b28a96",
+      "qa": {
+        "duration_seconds": 18.888,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.4,
+        "rms_dbfs": -19.897,
+        "trailing_silence_seconds": 0.615,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "第二次出发，猪奶奶顺利找到苹果树，可红伞正在被猪爸爸拿着移动。“地标会走路！”苏西喊道。大家把红伞换成不会移动的蓝色长椅，谜题终于公平了。猪爸爸赶紧把长椅画进地图。": {
+      "spoken": "第二次出发，猪奶奶顺利找到苹果树，可红伞正在被猪爸爸拿着移动。“地标会走路！”苏西喊道。大家把红伞换成不会移动的蓝色长椅，谜题终于公平了。猪爸爸赶紧把长椅画进地图。",
+      "book_id": "adventure_peppa_10",
+      "page": 4,
+      "text_sha256": "7bf639f3450e8fda83faf390d7c52a6e31b3820b19e79f199c08da5ac6555993",
+      "file": "voice-adventures-v1/7bf639f3450e8fda83fa.mp3",
+      "sha256": "2368c7b2ca8041d38610f4d1b2fd5eaf4188faee914f0815abe1a37ab972136e",
+      "qa": {
+        "duration_seconds": 19.848,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.202,
+        "rms_dbfs": -19.748,
+        "trailing_silence_seconds": 0.595,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "猪奶奶沿着脚印走到长椅，再数过五块方砖，在薰衣草盆后找到了卡片。她打开一看，里面是佩奇和乔治画的全家合影，还有一句歪歪扭扭的生日快乐。猪奶奶开心地抱住两个孩子。": {
+      "spoken": "猪奶奶沿着脚印走到长椅，再数过五块方砖，在薰衣草盆后找到了卡片。她打开一看，里面是佩奇和乔治画的全家合影，还有一句歪歪扭扭的生日快乐。猪奶奶开心地抱住两个孩子。",
+      "book_id": "adventure_peppa_10",
+      "page": 5,
+      "text_sha256": "7ee2d6a35661ede73a4cf42ae0f5b1d5753197b7d8620ad3b5b01d8ef8db0c22",
+      "file": "voice-adventures-v1/7ee2d6a35661ede73a4c.mp3",
+      "sha256": "a4c07433043c2fd1345c8f3cd6034ff2b7e86b9b2631bc125ba9c13f84ea4dd4",
+      "qa": {
+        "duration_seconds": 18.6,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.125,
+        "rms_dbfs": -20.163,
+        "trailing_silence_seconds": 0.597,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "蛋糕端上来时，猪奶奶把藏宝图放在卡片旁珍藏。佩奇说，下次画地图要选不会走的地标，还要请别人先试走一次。乔治指着恐龙说：“这个必须留下！”猪奶奶笑着答应了。": {
+      "spoken": "蛋糕端上来时，猪奶奶把藏宝图放在卡片旁珍藏。佩奇说，下次画地图要选不会走的地标，还要请别人先试走一次。乔治指着恐龙说：“这个必须留下！”猪奶奶笑着答应了。",
+      "book_id": "adventure_peppa_10",
+      "page": 6,
+      "text_sha256": "88f955e603fa5d863aa9885970065eec8a7ab2eb7b79eeaae0f6f97447ef54d3",
+      "file": "voice-adventures-v1/88f955e603fa5d863aa9.mp3",
+      "sha256": "19918b03c3284e6d41a9b4bb3cb569e413644c5dafe08c8de797f61d3fcae24b",
+      "qa": {
+        "duration_seconds": 18.264,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.057,
+        "rms_dbfs": -20.454,
+        "trailing_silence_seconds": 0.625,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "冒险湾要举行草地野餐会，莱德把水果和餐巾装进带轮子的野餐篮。大家正摆桌布，一阵风吹过，篮子顺着缓坡自己滑走了，彩色餐巾一路飘出来。篮子上的小旗也飞快摇晃。": {
+      "spoken": "冒险湾要举行草地野餐会，莱德把水果和餐巾装进带轮子的野餐篮。大家正摆桌布，一阵风吹过，篮子顺着缓坡自己滑走了，彩色餐巾一路飘出来。篮子上的小旗也飞快摇晃。",
+      "book_id": "adventure_paw_01",
+      "page": 1,
+      "text_sha256": "4ad03b0c5d70498236ade100f2cc78ed2e310db384c3a5a05ed1628ad95aeb31",
+      "file": "voice-adventures-v1/4ad03b0c5d70498236ad.mp3",
+      "sha256": "81f8180784a5bf15c663b54e577dcdf26e87f6d18bdd183b4a6afe65ce3adada",
+      "qa": {
+        "duration_seconds": 18.816,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.537,
+        "rms_dbfs": -20.078,
+        "trailing_silence_seconds": 0.645,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "阿奇沿草地寻找细细的轮印，毛毛捡起一块蓝餐巾当路标，小砾开着工程车慢慢跟在后面。莱德提醒大家不要追得太急，先看看篮子会往哪里转。每个伙伴都盯着自己的线索。": {
+      "spoken": "阿奇沿草地寻找细细的轮印，毛毛捡起一块蓝餐巾当路标，小砾开着工程车慢慢跟在后面。莱德提醒大家不要追得太急，先看看篮子会往哪里转。每个伙伴都盯着自己的线索。",
+      "book_id": "adventure_paw_01",
+      "page": 2,
+      "text_sha256": "3e896d3e55cb15a80d789c7eb239d35d1d607caa21d534e1d30f723b7eadeccb",
+      "file": "voice-adventures-v1/3e896d3e55cb15a80d78.mp3",
+      "sha256": "4ac38b07a3bba94cccee1677cd1cebace5a6c41870a13e6e2a169204d6b33e68",
+      "qa": {
+        "duration_seconds": 18.312,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -1.955,
+        "rms_dbfs": -19.531,
+        "trailing_silence_seconds": 0.625,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "轮印到了石子路突然看不见了。毛毛正想向左找，小砾却发现右边矮叶上沾着一点草莓酱，旁边还有半个苹果印。新的线索通向一排圆圆的干草垛。三位伙伴马上改变方向。": {
+      "spoken": "轮印到了石子路突然看不见了。毛毛正想向左找，小砾却发现右边矮叶上沾着一点草莓酱，旁边还有半个苹果印。新的线索通向一排圆圆的干草垛。三位伙伴马上改变方向。",
+      "book_id": "adventure_paw_01",
+      "page": 3,
+      "text_sha256": "f8e77d6163333a89ea4c20ca87ff10db3d49bef3ce4cace722f9a1cf45b8ebd5",
+      "file": "voice-adventures-v1/f8e77d6163333a89ea4c.mp3",
+      "sha256": "92ba091a9a051f9c5c5a9ef226808b26d12f66bd57f1369584e4cf00a24c171a",
+      "qa": {
+        "duration_seconds": 19.152,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.227,
+        "rms_dbfs": -19.758,
+        "trailing_silence_seconds": 0.637,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "野餐篮被干草垛稳稳挡住，盖子开了一条缝，几个苹果滚在旁边。两只小松鼠好奇地闻着果香。阿奇轻声拦住小路，毛毛把散落的水果逐个捡回篮里。没有一只小动物受到惊吓。": {
+      "spoken": "野餐篮被干草垛稳稳挡住，盖子开了一条缝，几个苹果滚在旁边。两只小松鼠好奇地闻着果香。阿奇轻声拦住小路，毛毛把散落的水果逐个捡回篮里。没有一只小动物受到惊吓。",
+      "book_id": "adventure_paw_01",
+      "page": 4,
+      "text_sha256": "fc13c7a08a9f5b8b648bc417c684452342666fdecae0f32622550f2c46f1a6af",
+      "file": "voice-adventures-v1/fc13c7a08a9f5b8b648b.mp3",
+      "sha256": "036fabc1fa71dc1dada5c2d71a8897fd5e8608e66ac4c83efdd068f8c93bc828",
+      "qa": {
+        "duration_seconds": 19.2,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.931,
+        "rms_dbfs": -19.647,
+        "trailing_silence_seconds": 0.596,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "小砾发现车轮旁的刹车卡扣松了，就用合适的工具重新固定，还加上一块能停住轮子的木楔。大家先在平地轻推三次，确认篮子不会再自己溜走。这次每个轮子都停得稳稳的。": {
+      "spoken": "小砾发现车轮旁的刹车卡扣松了，就用合适的工具重新固定，还加上一块能停住轮子的木楔。大家先在平地轻推三次，确认篮子不会再自己溜走。这次每个轮子都停得稳稳的。",
+      "book_id": "adventure_paw_01",
+      "page": 5,
+      "text_sha256": "eebfaab1a1d265e5eeb7a241fed865f6e41bcf221e966bc57ea138df93e03168",
+      "file": "voice-adventures-v1/eebfaab1a1d265e5eeb7.mp3",
+      "sha256": "b7fc88158ab6c8199c1ce3282d0db3219c583e2dfe980deea005d9eac5bb7a2b",
+      "qa": {
+        "duration_seconds": 18.072,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.216,
+        "rms_dbfs": -19.337,
+        "trailing_silence_seconds": 0.593,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "野餐会终于开始，蓝餐巾被洗净后铺在水果盘下面。莱德说，追赶跑掉的东西时，先找痕迹、看方向，再修好真正的问题。狗狗们开心地分享脆脆的苹果。远处的风也变得温柔了。": {
+      "spoken": "野餐会终于开始，蓝餐巾被洗净后铺在水果盘下面。莱德说，追赶跑掉的东西时，先找痕迹、看方向，再修好真正的问题。狗狗们开心地分享脆脆的苹果。远处的风也变得温柔了。",
+      "book_id": "adventure_paw_01",
+      "page": 6,
+      "text_sha256": "f3d83331f2d312ab1873b863cfde1eecdca3f6b94028c4140c80358ef8635a9e",
+      "file": "voice-adventures-v1/f3d83331f2d312ab1873.mp3",
+      "sha256": "93e3a13fc9247b17963f43cf4c154bef46ffa5b7b3fdd6ba6d863e6e7bc68889",
+      "qa": {
+        "duration_seconds": 19.656,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.565,
+        "rms_dbfs": -20.33,
+        "trailing_silence_seconds": 0.601,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "森林小图书馆准备开放新的阅读角，三箱绘本要在午后送到。阿奇推着书车，灰灰检查绳带，天天从空中看路线，大家答应一路轻轻走、保护每一本书。阅读角的彩色软垫已经铺好。": {
+      "spoken": "森林小图书馆准备开放新的阅读角，三箱绘本要在午后送到。阿奇推着书车，灰灰检查绳带，天天从空中看路线，大家答应一路轻轻走、保护每一本书。阅读角的彩色软垫已经铺好。",
+      "book_id": "adventure_paw_02",
+      "page": 1,
+      "text_sha256": "1fa2058869c9fb7eeaa6d1ab5bbbd3810fe6a44cddb5ee8cd5fb4bd4139d69df",
+      "file": "voice-adventures-v1/1fa2058869c9fb7eeaa6.mp3",
+      "sha256": "9f43f8ffb862be542e53a5a13239d8a92b033e500d8cbc8a581552c33014fe69",
+      "qa": {
+        "duration_seconds": 19.848,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.334,
+        "rms_dbfs": -20.201,
+        "trailing_silence_seconds": 0.599,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "经过石桥时，书车发出“吱呀、吱呀”的声音。阿奇马上停下，发现左轮的固定销松了。要是继续推，轮子可能会歪，书箱也会摇得更厉害。三箱书都安安稳稳留在原处。": {
+      "spoken": "经过石桥时，书车发出“吱呀、吱呀”的声音。阿奇马上停下，发现左轮的固定销松了。要是继续推，轮子可能会歪，书箱也会摇得更厉害。三箱书都安安稳稳留在原处。",
+      "book_id": "adventure_paw_02",
+      "page": 2,
+      "text_sha256": "b2d1ceaa0c81127f1d690af7787283823c6fd7940434de85e897bab23c8c273a",
+      "file": "voice-adventures-v1/b2d1ceaa0c81127f1d69.mp3",
+      "sha256": "1c04f71f758f3d89c391ed36b8ae46a0ee5ad94fbe3f4904acf3eeaa626cc1eb",
+      "qa": {
+        "duration_seconds": 17.808,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.191,
+        "rms_dbfs": -20.425,
+        "trailing_silence_seconds": 0.595,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "灰灰的工具盒里有好几种旧零件，可大小都不完全合适。他没有勉强塞进去，而是量好小孔。天天飞回总部，带来同样尺寸的新固定销和一小瓶润滑油。这样修好以后才会真正牢靠。": {
+      "spoken": "灰灰的工具盒里有好几种旧零件，可大小都不完全合适。他没有勉强塞进去，而是量好小孔。天天飞回总部，带来同样尺寸的新固定销和一小瓶润滑油。这样修好以后才会真正牢靠。",
+      "book_id": "adventure_paw_02",
+      "page": 3,
+      "text_sha256": "fe5a01d6c5e4af071256ce88aa5e03199c51f09971a62a9c379e55e04f845497",
+      "file": "voice-adventures-v1/fe5a01d6c5e4af071256.mp3",
+      "sha256": "99a4c683aa97100d2749b114037692f3c3fb1dd6510f968a8417c9c478946bc9",
+      "qa": {
+        "duration_seconds": 19.2,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.246,
+        "rms_dbfs": -20.073,
+        "trailing_silence_seconds": 0.603,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "等待时飘来几滴雨。阿奇把警用防雨布撑在书车上，灰灰把书箱垫高，避免碰到地面的水。天天回来后，三位伙伴关好轮锁，才开始更换零件。一页书也没有被雨水打湿。": {
+      "spoken": "等待时飘来几滴雨。阿奇把警用防雨布撑在书车上，灰灰把书箱垫高，避免碰到地面的水。天天回来后，三位伙伴关好轮锁，才开始更换零件。一页书也没有被雨水打湿。",
+      "book_id": "adventure_paw_02",
+      "page": 4,
+      "text_sha256": "49ce173071ed4c32ccf1fb85ee4e97082154540a2bad164ccb30e372ba70084e",
+      "file": "voice-adventures-v1/49ce173071ed4c32ccf1.mp3",
+      "sha256": "ed4e9fbf7f1b2dabad502a101768a468ca343326fa977b3cc463bb014116a5aa",
+      "qa": {
+        "duration_seconds": 18.624,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.187,
+        "rms_dbfs": -19.603,
+        "trailing_silence_seconds": 0.601,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "新固定销装好，车轮不响了。到达图书馆后，他们又按封面贴纸把绘本分进动物、自然和想象三个书架。阿奇发现一本放错，孩子们很快帮它找到位置。书架一下变得清清楚楚。": {
+      "spoken": "新固定销装好，车轮不响了。到达图书馆后，他们又按封面贴纸把绘本分进动物、自然和想象三个书架。阿奇发现一本放错，孩子们很快帮它找到位置。书架一下变得清清楚楚。",
+      "book_id": "adventure_paw_02",
+      "page": 5,
+      "text_sha256": "4732c88e260ffa216537a98c85783ba29edf0f2d814c3b028aff12f186a420b9",
+      "file": "voice-adventures-v1/4732c88e260ffa216537.mp3",
+      "sha256": "68ab66164b52fbfd48ac09c7b1f7da791a4d1cc9e638fcd5e731955ea2233eab",
+      "qa": {
+        "duration_seconds": 18.984,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.865,
+        "rms_dbfs": -19.966,
+        "trailing_silence_seconds": 0.604,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "阅读角准时开放，小动物们抱着喜欢的书坐上软垫。图书管理员轻声说谢谢，狗狗们也压低声音挥手。灰灰把旧零件带回回收箱，等待下一次合适的用途。图书馆里只剩翻书的沙沙声。": {
+      "spoken": "阅读角准时开放，小动物们抱着喜欢的书坐上软垫。图书管理员轻声说谢谢，狗狗们也压低声音挥手。灰灰把旧零件带回回收箱，等待下一次合适的用途。图书馆里只剩翻书的沙沙声。",
+      "book_id": "adventure_paw_02",
+      "page": 6,
+      "text_sha256": "77ec1995cbb529f5aac5090e93db2351b577d49e4d5f74bf1dbd2d0ff0586591",
+      "file": "voice-adventures-v1/77ec1995cbb529f5aac5.mp3",
+      "sha256": "cd189e346b5aaa4c3dd12d4ce2f3a85ad95ef1e67c0646372e26079dd6ccfa32",
+      "qa": {
+        "duration_seconds": 19.776,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.256,
+        "rms_dbfs": -19.752,
+        "trailing_silence_seconds": 0.595,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "苹果园要为周末集市准备果篮，红苹果和绿苹果从滑道一起滚下来。标签机忽然不亮了，篮子上的“今天吃”和“等一等”贴纸全都混在桌上。果农在一旁急得摸摸帽子。": {
+      "spoken": "苹果园要为周末集市准备果篮，红苹果和绿苹果从滑道一起滚下来。标签机忽然不亮了，篮子上的“今天吃”和“等一等”贴纸全都混在桌上。果农在一旁急得摸摸帽子。",
+      "book_id": "adventure_paw_03",
+      "page": 1,
+      "text_sha256": "5dfff5bfefe2ed80118d7217f5a3a31c0b50336556f3bafaae6a9d0a5e3765db",
+      "file": "voice-adventures-v1/5dfff5bfefe2ed80118d.mp3",
+      "sha256": "7d51ec88a3e51cd662376c0dfde9dfe1c97b6cebfd12a81fa65acd349370e8c4",
+      "qa": {
+        "duration_seconds": 17.376,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.445,
+        "rms_dbfs": -19.373,
+        "trailing_silence_seconds": 0.609,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "小砾提议把红苹果放进今天吃的篮子，灰灰却切开一个红苹果，发现果肉还硬硬的。天天也找到一只香甜的绿苹果。原来只看颜色，不能判断苹果是否成熟。大家这才停下来重新想办法。": {
+      "spoken": "小砾提议把红苹果放进今天吃的篮子，灰灰却切开一个红苹果，发现果肉还硬硬的。天天也找到一只香甜的绿苹果。原来只看颜色，不能判断苹果是否成熟。大家这才停下来重新想办法。",
+      "book_id": "adventure_paw_03",
+      "page": 2,
+      "text_sha256": "32a28218aa96525b984a9a5afa9426c0cfd1792ecda5e6a5bcd9cb0978e38d72",
+      "file": "voice-adventures-v1/32a28218aa96525b984a.mp3",
+      "sha256": "8615295d9d60f10cec2d547a45ae3a3c70341ad031de3248b27780d301d58344",
+      "qa": {
+        "duration_seconds": 20.328,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.635,
+        "rms_dbfs": -19.74,
+        "trailing_silence_seconds": 0.593,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "莱德请大家找更多线索。小砾轻轻按果皮，灰灰闻一闻果香，天天查看果梗是不是新鲜。他们把方法画成三张图卡，放在桌边，一项一项检查。贴纸图案让方法一眼就能看懂。": {
+      "spoken": "莱德请大家找更多线索。小砾轻轻按果皮，灰灰闻一闻果香，天天查看果梗是不是新鲜。他们把方法画成三张图卡，放在桌边，一项一项检查。贴纸图案让方法一眼就能看懂。",
+      "book_id": "adventure_paw_03",
+      "page": 3,
+      "text_sha256": "889999f5c4fd631e6e5f2e46ffcdd85c9ff95176eb7b301fe02abd4d2a005b02",
+      "file": "voice-adventures-v1/889999f5c4fd631e6e5f.mp3",
+      "sha256": "3efed5f4e6ecda2bf2ccde6282603673cb39a765c57db575625d3f8f39774cd9",
+      "qa": {
+        "duration_seconds": 18.816,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.162,
+        "rms_dbfs": -19.879,
+        "trailing_silence_seconds": 0.622,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "有个苹果一边香、一边还很硬，三只狗狗意见不同。莱德建议先放进“再观察”小篮，而不是勉强决定。第二天再检查，既不会浪费，也不会把它分错。莱德在篮子上画了一个问号。": {
+      "spoken": "有个苹果一边香、一边还很硬，三只狗狗意见不同。莱德建议先放进“再观察”小篮，而不是勉强决定。第二天再检查，既不会浪费，也不会把它分错。莱德在篮子上画了一个问号。",
+      "book_id": "adventure_paw_03",
+      "page": 4,
+      "text_sha256": "3726d88718dafa743de11ba9978719c23d2c3565af6d739334bc0b45c4a59f75",
+      "file": "voice-adventures-v1/3726d88718dafa743de1.mp3",
+      "sha256": "3053c10b90929459ae6a1fe1063a3971e6a75c11568ed50f279d1ace5b83c44f",
+      "qa": {
+        "duration_seconds": 18.384,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.176,
+        "rms_dbfs": -19.857,
+        "trailing_silence_seconds": 0.587,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "灰灰修好标签机，小砾负责托住果篮，天天把三种贴纸按图卡顺序贴好。果农抽查了几个苹果，每一个都放得合适，还夸他们想得比机器更周到。三位伙伴开心地碰了碰爪子。": {
+      "spoken": "灰灰修好标签机，小砾负责托住果篮，天天把三种贴纸按图卡顺序贴好。果农抽查了几个苹果，每一个都放得合适，还夸他们想得比机器更周到。三位伙伴开心地碰了碰爪子。",
+      "book_id": "adventure_paw_03",
+      "page": 5,
+      "text_sha256": "988266657423acc7728c1c7aec2367cc29091dd3fdac0b88f002b6137fd9bbb7",
+      "file": "voice-adventures-v1/988266657423acc7728c.mp3",
+      "sha256": "334087ef5d56f713e32525e2b1936ab8824bfe4e734b42248a785ef3d1ac718a",
+      "qa": {
+        "duration_seconds": 18.648,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.23,
+        "rms_dbfs": -20.272,
+        "trailing_silence_seconds": 0.601,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "集市上，成熟苹果被做成香香的果派，需要等待的苹果留在阴凉架上。狗狗们明白，红和绿只是外表，认真摸一摸、闻一闻，才能找到真正的答案。他们还把三张图卡留给果农。": {
+      "spoken": "集市上，成熟苹果被做成香香的果派，需要等待的苹果留在阴凉架上。狗狗们明白，红和绿只是外表，认真摸一摸、闻一闻，才能找到真正的答案。他们还把三张图卡留给果农。",
+      "book_id": "adventure_paw_03",
+      "page": 6,
+      "text_sha256": "8ea14910ed4c711728aa3f0f6be1cc2fc4046f5cd8a49c228d838465ab5c5787",
+      "file": "voice-adventures-v1/8ea14910ed4c711728aa.mp3",
+      "sha256": "987d825aa7d6853689ca26a248a983a01be04f7f215f166436f5b2fc3a9d93b6",
+      "qa": {
+        "duration_seconds": 18.552,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.717,
+        "rms_dbfs": -19.694,
+        "trailing_silence_seconds": 0.576,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "池塘边的小木桥每天都有鸭妈妈和小鸭子经过。早晨，毛毛听见第一块木板发出空空的响声，立刻放好提示牌，请鸭子们先走旁边平坦的小路。桥头的晨露还亮晶晶的。": {
+      "spoken": "池塘边的小木桥每天都有鸭妈妈和小鸭子经过。早晨，毛毛听见第一块木板发出空空的响声，立刻放好提示牌，请鸭子们先走旁边平坦的小路。桥头的晨露还亮晶晶的。",
+      "book_id": "adventure_paw_04",
+      "page": 1,
+      "text_sha256": "cad5ddc61df1d421e918d620a21de9f319551569780d1bd85602ca0e9c6f9c43",
+      "file": "voice-adventures-v1/cad5ddc61df1d421e918.mp3",
+      "sha256": "f7a61dea2a19e81fda4361d6aad76f5ded2b47f4ecbca8bae04e80b9f899aa88",
+      "qa": {
+        "duration_seconds": 17.64,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.993,
+        "rms_dbfs": -19.478,
+        "trailing_silence_seconds": 0.589,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "小砾用小木槌轻轻敲每块板，只有桥头那块声音特别松。灰灰查看下面的支架，发现木板没有断，只是两颗旧螺丝被雨水泡松，板角翘了起来。小鸭子们在岸边安静等待。": {
+      "spoken": "小砾用小木槌轻轻敲每块板，只有桥头那块声音特别松。灰灰查看下面的支架，发现木板没有断，只是两颗旧螺丝被雨水泡松，板角翘了起来。小鸭子们在岸边安静等待。",
+      "book_id": "adventure_paw_04",
+      "page": 2,
+      "text_sha256": "337f9e981f53b392b4fb41393474c086bde6c77d506b45089528690ed7e3f448",
+      "file": "voice-adventures-v1/337f9e981f53b392b4fb.mp3",
+      "sha256": "3fec7197580880a19622c96c7243568026112d19f2d0e7221a9e991c4c1ec44e",
+      "qa": {
+        "duration_seconds": 18.168,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.022,
+        "rms_dbfs": -20.055,
+        "trailing_silence_seconds": 0.621,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "小砾想直接拧紧旧螺丝，灰灰却发现螺丝孔已经变大，再拧也抓不牢。他们换上尺寸合适的新木板和防水螺丝，毛毛在旁边把工具按顺序递过去。每一步都做得又稳又慢。": {
+      "spoken": "小砾想直接拧紧旧螺丝，灰灰却发现螺丝孔已经变大，再拧也抓不牢。他们换上尺寸合适的新木板和防水螺丝，毛毛在旁边把工具按顺序递过去。每一步都做得又稳又慢。",
+      "book_id": "adventure_paw_04",
+      "page": 3,
+      "text_sha256": "2a32b035d67ea8ffd4672645b919eb76a095509648f6ad10f2a708ef394a7e6c",
+      "file": "voice-adventures-v1/2a32b035d67ea8ffd467.mp3",
+      "sha256": "ad677f52a010e60427f2a7ad267819a5eac7660c208befa6a25f4dd4fc15e3a2",
+      "qa": {
+        "duration_seconds": 18.432,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.675,
+        "rms_dbfs": -19.472,
+        "trailing_silence_seconds": 0.595,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "木板装好后，三位伙伴没有马上开放桥。小砾先放上一袋细沙，再增加第二袋，灰灰从桥下观察支架，毛毛确认桥面没有摇晃，也没有尖角露出来。两袋沙子一直稳稳留在原位。": {
+      "spoken": "木板装好后，三位伙伴没有马上开放桥。小砾先放上一袋细沙，再增加第二袋，灰灰从桥下观察支架，毛毛确认桥面没有摇晃，也没有尖角露出来。两袋沙子一直稳稳留在原位。",
+      "book_id": "adventure_paw_04",
+      "page": 4,
+      "text_sha256": "48e5538e818d04db9ecc1e20ace102e1391aa707e18fc53c5d1dcc7c896fb21e",
+      "file": "voice-adventures-v1/48e5538e818d04db9ecc.mp3",
+      "sha256": "8fb5efd3daa8be195ccd9304182a898653184c8b9d8dcf743fa5e61a6f242c88",
+      "qa": {
+        "duration_seconds": 18.84,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.75,
+        "rms_dbfs": -19.693,
+        "trailing_silence_seconds": 0.622,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "最后的测试员是一只装着水的黄色小推车。小砾慢慢推过，杯里的水几乎没有洒。鸭妈妈在岸边“嘎嘎”叫，小鸭子们排成一队，好像也在认真验收。这场小测试顺利通过。": {
+      "spoken": "最后的测试员是一只装着水的黄色小推车。小砾慢慢推过，杯里的水几乎没有洒。鸭妈妈在岸边“嘎嘎”叫，小鸭子们排成一队，好像也在认真验收。这场小测试顺利通过。",
+      "book_id": "adventure_paw_04",
+      "page": 5,
+      "text_sha256": "f670439065d7d4e959e5bd7468f0b14ad70d8877642cd72412b06a04c80ec436",
+      "file": "voice-adventures-v1/f670439065d7d4e959e5.mp3",
+      "sha256": "06161eab710aa996d72c42caeb91674797e55b2b6dae0c5113518b933c07fe8b",
+      "qa": {
+        "duration_seconds": 18.144,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.334,
+        "rms_dbfs": -19.747,
+        "trailing_silence_seconds": 0.603,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "提示牌移开，小鸭子踩着第一块新木板安全过桥。毛毛在桥边贴上定期检查的小日历。大家知道，修好看得见的地方以后，还要认真测试才算完成。鸭妈妈带头轻轻叫了一声。": {
+      "spoken": "提示牌移开，小鸭子踩着第一块新木板安全过桥。毛毛在桥边贴上定期检查的小日历。大家知道，修好看得见的地方以后，还要认真测试才算完成。鸭妈妈带头轻轻叫了一声。",
+      "book_id": "adventure_paw_04",
+      "page": 6,
+      "text_sha256": "329c27330c9cdf1f37b64e812ad9d6295bc17a4ff8e0484d09183d04237d5f8d",
+      "file": "voice-adventures-v1/329c27330c9cdf1f37b6.mp3",
+      "sha256": "ccdda0c4720afe91d2bbeb2ba081a6a5967a4a11beb01b3aabeff644600d2ee8",
+      "qa": {
+        "duration_seconds": 18.48,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.238,
+        "rms_dbfs": -20.107,
+        "trailing_silence_seconds": 0.593,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "冒险湾小游园开门前，旋转木马试着转了一圈，却越来越慢，音乐也变得断断续续。阿奇请大家先在围栏外等待，灰灰关闭电源，毛毛开始数木马。小木马都像在耐心等待。": {
+      "spoken": "冒险湾小游园开门前，旋转木马试着转了一圈，却越来越慢，音乐也变得断断续续。阿奇请大家先在围栏外等待，灰灰关闭电源，毛毛开始数木马。小木马都像在耐心等待。",
+      "book_id": "adventure_paw_05",
+      "page": 1,
+      "text_sha256": "7ab77e72ce24d7cee391f9194d61b631780018c494e681f1f0d51286a1abaece",
+      "file": "voice-adventures-v1/7ab77e72ce24d7cee391.mp3",
+      "sha256": "9d7786ccac303181d9282f8e0b0d3d81851e02cb921cfe0e6469f365b396daa5",
+      "qa": {
+        "duration_seconds": 18.504,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.357,
+        "rms_dbfs": -19.261,
+        "trailing_silence_seconds": 0.59,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "十二匹木马都在，可第七匹旁边垂着一条长彩带。彩带绕进底座缝里，另一头还系着一只小熊的蓝围巾。原来昨天的风把围巾吹到了这里。灰灰马上明白了原因。": {
+      "spoken": "十二匹木马都在，可第七匹旁边垂着一条长彩带。彩带绕进底座缝里，另一头还系着一只小熊的蓝围巾。原来昨天的风把围巾吹到了这里。灰灰马上明白了原因。",
+      "book_id": "adventure_paw_05",
+      "page": 2,
+      "text_sha256": "43d825f8a315b2abd2b3137c0cf0f334c488151c1658ad6a054a12b10506d98f",
+      "file": "voice-adventures-v1/43d825f8a315b2abd2b3.mp3",
+      "sha256": "ed6b0b3697d9b85dad06cb6a3ddfd875146ac50682aedcd146dbfb9773bb48ab",
+      "qa": {
+        "duration_seconds": 16.92,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.704,
+        "rms_dbfs": -19.922,
+        "trailing_silence_seconds": 0.595,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "小熊着急地说：“那是奶奶织给我的。”毛毛安慰他，灰灰却没有立刻用力拉，因为彩带和围巾越缠越紧。阿奇拍下缠绕方向，让大家记住原来的样子。小熊点点头，站到安全线后。": {
+      "spoken": "小熊着急地说：“那是奶奶织给我的。”毛毛安慰他，灰灰却没有立刻用力拉，因为彩带和围巾越缠越紧。阿奇拍下缠绕方向，让大家记住原来的样子。小熊点点头，站到安全线后。",
+      "book_id": "adventure_paw_05",
+      "page": 3,
+      "text_sha256": "3ceee70eb3d02ee4a48d7029c53db3ea737f5b2dfab1b2c50ce4a67eedd8d512",
+      "file": "voice-adventures-v1/3ceee70eb3d02ee4a48d.mp3",
+      "sha256": "5e3e63548a865e6ef7e51d0c03072d14ab6b278fc5e7aa8f2535c3e2867b0f1d",
+      "qa": {
+        "duration_seconds": 18.84,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.731,
+        "rms_dbfs": -19.927,
+        "trailing_silence_seconds": 0.612,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "灰灰拆开安全护盖，一圈一圈反向松开彩带。毛毛接住蓝围巾，发现只有边角起毛，没有撕破。阿奇把游园备用彩带剪到安全长度，重新系在高处。小熊终于松了一口气。": {
+      "spoken": "灰灰拆开安全护盖，一圈一圈反向松开彩带。毛毛接住蓝围巾，发现只有边角起毛，没有撕破。阿奇把游园备用彩带剪到安全长度，重新系在高处。小熊终于松了一口气。",
+      "book_id": "adventure_paw_05",
+      "page": 4,
+      "text_sha256": "3ac52777256832465e4c6feb19afec199e4b44ea2c41e61d146ebbd57a5cba36",
+      "file": "voice-adventures-v1/3ac52777256832465e4c.mp3",
+      "sha256": "083f2e013b3b2ffd9a0add59854f8cf5c465cda62bd962d4a024584f06694ff9",
+      "qa": {
+        "duration_seconds": 18.672,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.577,
+        "rms_dbfs": -20.168,
+        "trailing_silence_seconds": 0.603,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "护盖装回后，灰灰先空转设备，阿奇检查围栏，毛毛跟着音乐数了两圈。旋转木马速度稳定，十二匹木马都平平稳稳，蓝围巾也回到了小熊肩上。清楚的音乐声也完整响起来。": {
+      "spoken": "护盖装回后，灰灰先空转设备，阿奇检查围栏，毛毛跟着音乐数了两圈。旋转木马速度稳定，十二匹木马都平平稳稳，蓝围巾也回到了小熊肩上。清楚的音乐声也完整响起来。",
+      "book_id": "adventure_paw_05",
+      "page": 5,
+      "text_sha256": "9d0d610e4f38fdbf69df80223666b321903334a8d907b9e594b79daf3d0df059",
+      "file": "voice-adventures-v1/9d0d610e4f38fdbf69df.mp3",
+      "sha256": "8e8f8cfdda555640d47f7b58fabc69dd9e39ed703dbe4939ae8c72e8ba572598",
+      "qa": {
+        "duration_seconds": 18.552,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.803,
+        "rms_dbfs": -19.664,
+        "trailing_silence_seconds": 0.61,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "游园终于开放，小熊坐上第七号木马向狗狗们挥手。阿奇说，机器变慢时不能催它更快，先停下来找出被卡住的地方，才能让快乐安全地转起来。大家的笑声跟着音乐转了一圈。": {
+      "spoken": "游园终于开放，小熊坐上第七号木马向狗狗们挥手。阿奇说，机器变慢时不能催它更快，先停下来找出被卡住的地方，才能让快乐安全地转起来。大家的笑声跟着音乐转了一圈。",
+      "book_id": "adventure_paw_05",
+      "page": 6,
+      "text_sha256": "5ee871233f406c16615fbb347a289372bfb9955af15096dde6ca3e96c1069d5f",
+      "file": "voice-adventures-v1/5ee871233f406c16615f.mp3",
+      "sha256": "a3a2e5fab202be6b1928e8b197637164c42c02d6de5256fa8741798d19c3eeca",
+      "qa": {
+        "duration_seconds": 18.672,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.861,
+        "rms_dbfs": -19.809,
+        "trailing_silence_seconds": 0.592,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "清晨，面包房要烤一百个小面包。毛毛推着面粉车进门时，车轮压到一颗圆栗子，最上面的纸袋滑下来，白白的面粉“噗”地扬成一朵大云。面包师也被吓得停下搅拌。": {
+      "spoken": "清晨，面包房要烤一百个小面包。毛毛推着面粉车进门时，车轮压到一颗圆栗子，最上面的纸袋滑下来，白白的面粉“噗”地扬成一朵大云。面包师也被吓得停下搅拌。",
+      "book_id": "adventure_paw_06",
+      "page": 1,
+      "text_sha256": "1755516232798158f1b67b1cd2c97940f6cffa00df42dbbabe9dc82086ec5d60",
+      "file": "voice-adventures-v1/1755516232798158f1b6.mp3",
+      "sha256": "ab7ce7b1490a0cafd7b1a882456a664b8959c309c861642e5ab38162ddeadf8c",
+      "qa": {
+        "duration_seconds": 17.4,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.593,
+        "rms_dbfs": -19.629,
+        "trailing_silence_seconds": 0.61,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "毛毛满脸都是白点，忍不住打了个喷嚏。阿奇先请大家退到门外呼吸新鲜空气，灰灰关掉风扇，免得面粉继续飞。他们等白雾落下才戴好口罩进去。这样大家就不会吸进粉尘。": {
+      "spoken": "毛毛满脸都是白点，忍不住打了个喷嚏。阿奇先请大家退到门外呼吸新鲜空气，灰灰关掉风扇，免得面粉继续飞。他们等白雾落下才戴好口罩进去。这样大家就不会吸进粉尘。",
+      "book_id": "adventure_paw_06",
+      "page": 2,
+      "text_sha256": "30ee0186185c756331ff3c442ee79eda6f108d2c1aa67ea1102e69abd4ea2265",
+      "file": "voice-adventures-v1/30ee0186185c756331ff.mp3",
+      "sha256": "4cd12c67dcfd81951ca40f89a41eb944d5a4ead3467f050920c815626dc78f7e",
+      "qa": {
+        "duration_seconds": 19.152,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.432,
+        "rms_dbfs": -20.048,
+        "trailing_silence_seconds": 0.581,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "毛毛想用水把地面冲干净，灰灰赶紧说，面粉遇水会变成黏糊糊的面团。于是阿奇围起小区域，灰灰用吸尘器慢慢收集，毛毛拿软刷清理桌角。白色地面一点点露了出来。": {
+      "spoken": "毛毛想用水把地面冲干净，灰灰赶紧说，面粉遇水会变成黏糊糊的面团。于是阿奇围起小区域，灰灰用吸尘器慢慢收集，毛毛拿软刷清理桌角。白色地面一点点露了出来。",
+      "book_id": "adventure_paw_06",
+      "page": 3,
+      "text_sha256": "76933cde5dc8f150e403d39b436689ff012af798e836202fbe2ae7c720b4307d",
+      "file": "voice-adventures-v1/76933cde5dc8f150e403.mp3",
+      "sha256": "8a9c0830f7adff5080ad1338066c62aa43c484d352b65519a0e3ca9ceb457524",
+      "qa": {
+        "duration_seconds": 18.984,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.99,
+        "rms_dbfs": -19.374,
+        "trailing_silence_seconds": 0.608,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "破袋里还剩不少干净面粉，但落在地上的不能再做食物。面包师把干净部分倒进有盖容器，灰灰在外面贴上日期，毛毛则把地面那份装袋送去堆肥。两份面粉从此分得清清楚楚。": {
+      "spoken": "破袋里还剩不少干净面粉，但落在地上的不能再做食物。面包师把干净部分倒进有盖容器，灰灰在外面贴上日期，毛毛则把地面那份装袋送去堆肥。两份面粉从此分得清清楚楚。",
+      "book_id": "adventure_paw_06",
+      "page": 4,
+      "text_sha256": "3a28880156cf308ed39c86a0b32be33f1a1410cc9e7e89aeb710c9abf5268f93",
+      "file": "voice-adventures-v1/3a28880156cf308ed39c.mp3",
+      "sha256": "9efee1e89d8bbaa53d9f296ceb4e17cccb3d9ea9715f746bb1f4a0b0df3fa136",
+      "qa": {
+        "duration_seconds": 19.512,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.927,
+        "rms_dbfs": -19.418,
+        "trailing_silence_seconds": 0.633,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "车轮旁的栗子原来从门口装饰篮滚出来。阿奇把篮子移到架上，灰灰给面粉车加了防滑边，毛毛这次只放两袋，还请伙伴一起扶稳再慢慢前进。这一路再也没有东西滚落。": {
+      "spoken": "车轮旁的栗子原来从门口装饰篮滚出来。阿奇把篮子移到架上，灰灰给面粉车加了防滑边，毛毛这次只放两袋，还请伙伴一起扶稳再慢慢前进。这一路再也没有东西滚落。",
+      "book_id": "adventure_paw_06",
+      "page": 5,
+      "text_sha256": "0847636ded397cb0a46e306996e35556e97b1675cbbdb55dc9e4853eea08f1aa",
+      "file": "voice-adventures-v1/0847636ded397cb0a46e.mp3",
+      "sha256": "c90b485b67a3d479c7e89df33765e07f9c89ea38d5b349a967a56bf2c51ff41e",
+      "qa": {
+        "duration_seconds": 17.712,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.228,
+        "rms_dbfs": -19.244,
+        "trailing_silence_seconds": 0.6,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "第一炉小面包晚了十分钟，却烤得金黄金黄。面包师把三只面包做成云朵形送给狗狗们。毛毛笑着说，下次遇到面粉云，要先停风、等落下，再干干净净处理。白白的小插曲有了香香的结尾。": {
+      "spoken": "第一炉小面包晚了十分钟，却烤得金黄金黄。面包师把三只面包做成云朵形送给狗狗们。毛毛笑着说，下次遇到面粉云，要先停风、等落下，再干干净净处理。白白的小插曲有了香香的结尾。",
+      "book_id": "adventure_paw_06",
+      "page": 6,
+      "text_sha256": "8b5153016f8c270898deaeb866d371df98a1d2c73886ae62edb4610a0f032a59",
+      "file": "voice-adventures-v1/8b5153016f8c270898de.mp3",
+      "sha256": "2f96e742e599081100e7e258c3e90acc814dbec776f226a284716ce9ae7ad243",
+      "qa": {
+        "duration_seconds": 20.592,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.83,
+        "rms_dbfs": -19.819,
+        "trailing_silence_seconds": 0.617,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "山谷农场要给小羊举行散步日，可领队小羊脖子上的银铃不见了。没有熟悉的铃声，小羊们站在围栏边不愿出发。阿奇、天天和毛毛来帮忙寻找。农场主也找遍了羊圈和草棚。": {
+      "spoken": "山谷农场要给小羊举行散步日，可领队小羊脖子上的银铃不见了。没有熟悉的铃声，小羊们站在围栏边不愿出发。阿奇、天天和毛毛来帮忙寻找。农场主也找遍了羊圈和草棚。",
+      "book_id": "adventure_paw_07",
+      "page": 1,
+      "text_sha256": "9b1659f3254be903d8a1d6f891c16ac7e709a28ac5e9ad33a1f0af01d2f50593",
+      "file": "voice-adventures-v1/9b1659f3254be903d8a1.mp3",
+      "sha256": "f803f938f64733a2d99cd5f9319319879128be5004a9a1893fe910e259dba39e",
+      "qa": {
+        "duration_seconds": 19.008,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.255,
+        "rms_dbfs": -19.129,
+        "trailing_silence_seconds": 0.592,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "阿奇在草地闻到小羊走过的气味，沿路找到一段蓝丝带。远处忽然传来“叮铃”，毛毛跑向左边岩石，声音却像从右边又响了一次，把他弄糊涂了。山风把铃声送得忽远忽近。": {
+      "spoken": "阿奇在草地闻到小羊走过的气味，沿路找到一段蓝丝带。远处忽然传来“叮铃”，毛毛跑向左边岩石，声音却像从右边又响了一次，把他弄糊涂了。山风把铃声送得忽远忽近。",
+      "book_id": "adventure_paw_07",
+      "page": 2,
+      "text_sha256": "45ae910b7eae544f0502181a6a8c6e1593639a38fc635fb319d657511d11cba9",
+      "file": "voice-adventures-v1/45ae910b7eae544f0502.mp3",
+      "sha256": "dcddf4d8c14f8e280c4b37cc4a81fa48b79130a6c14acd5708bc551be8ab924a",
+      "qa": {
+        "duration_seconds": 17.688,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.298,
+        "rms_dbfs": -19.799,
+        "trailing_silence_seconds": 0.609,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "莱德解释，山谷会把声音弹回来，听见的可能是回声。天天飞到不太高的位置观察，发现一丛灌木在风里轻轻摇，枝叶间偶尔闪过一点银色。那正是他们一直寻找的银色小铃铛，正在发出叮叮当当的声音。": {
+      "spoken": "莱德解释，山谷会把声音弹回来，听见的可能是回声。天天飞到不太高的位置观察，发现一丛灌木在风里轻轻摇，枝叶间偶尔闪过一点银色。那正是他们一直寻找的银色小铃铛，正在发出叮叮当当的声音。",
+      "book_id": "adventure_paw_07",
+      "page": 3,
+      "text_sha256": "1c6a17c1f643ff8b2052a1f88b2b942d2a4e9459b2951de27a53a7d093c847ce",
+      "file": "voice-adventures-v1/1c6a17c1f643ff8b2052.mp3",
+      "sha256": "9eb478c03912704fc65a66e47a6995a73de5d822b536c5caef3888b6e2370186",
+      "qa": {
+        "duration_seconds": 20.688,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.091,
+        "rms_dbfs": -19.892,
+        "trailing_silence_seconds": 0.594,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "铃铛果然挂在灌木上，可下面是柔软的泥地。天天不能直接降落，阿奇也不靠近踩坏新芽。毛毛铺好两块宽木板，三位伙伴沿着同一条安全路线进去。木板在泥地上搭出一条干净小路。": {
+      "spoken": "铃铛果然挂在灌木上，可下面是柔软的泥地。天天不能直接降落，阿奇也不靠近踩坏新芽。毛毛铺好两块宽木板，三位伙伴沿着同一条安全路线进去。木板在泥地上搭出一条干净小路。",
+      "book_id": "adventure_paw_07",
+      "page": 4,
+      "text_sha256": "bdf5ab734f94c92a84643f1c2c86cc783eecc140d7bbf5d139e88ba44cb9702c",
+      "file": "voice-adventures-v1/bdf5ab734f94c92a8464.mp3",
+      "sha256": "94047683aa445de527ad547f23cbcc901fbe148186be0d1548779b3d120b3988",
+      "qa": {
+        "duration_seconds": 19.152,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.516,
+        "rms_dbfs": -19.487,
+        "trailing_silence_seconds": 0.593,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "阿奇解下铃铛，蓝丝带已经松了。毛毛换上结实又柔软的新带子，还留出能放进两根手指的空隙。领队小羊走了几步，清亮的铃声重新响起来。小羊舒服地甩了甩耳朵。": {
+      "spoken": "阿奇解下铃铛，蓝丝带已经松了。毛毛换上结实又柔软的新带子，还留出能放进两根手指的空隙。领队小羊走了几步，清亮的铃声重新响起来。小羊舒服地甩了甩耳朵。",
+      "book_id": "adventure_paw_07",
+      "page": 5,
+      "text_sha256": "abbfb16f628f3be187cc9e0b0c74d287aa52d9a1f0bfcd5fef79c840c2fc8f44",
+      "file": "voice-adventures-v1/abbfb16f628f3be187cc.mp3",
+      "sha256": "fb0da27160464be61635de94795b0b01596bd626a41dfa2b70529081f71594a7",
+      "qa": {
+        "duration_seconds": 17.664,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.093,
+        "rms_dbfs": -19.548,
+        "trailing_silence_seconds": 0.632,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "散步队排好出发，山谷里又传来一声稍远的“叮铃”。毛毛这回笑了：“我知道，那是回声在跟我们打招呼。”他们还把旧丝带带走，没有留在草地上。三位伙伴一路听着清脆的节拍。": {
+      "spoken": "散步队排好出发，山谷里又传来一声稍远的“叮铃”。毛毛这回笑了：“我知道，那是回声在跟我们打招呼。”他们还把旧丝带带走，没有留在草地上。三位伙伴一路听着清脆的节拍。",
+      "book_id": "adventure_paw_07",
+      "page": 6,
+      "text_sha256": "1e8a4cf1756ca6a81acf91c2099a134b2d2f113bb01dfe05620f63abf508ca55",
+      "file": "voice-adventures-v1/1e8a4cf1756ca6a81acf.mp3",
+      "sha256": "edc07ced544ca10c3ae62daae41c2dae31e0f0452a21e6b1ef3d9222377b2fb3",
+      "qa": {
+        "duration_seconds": 18.312,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.285,
+        "rms_dbfs": -20.002,
+        "trailing_silence_seconds": 0.6,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "社区花园新铺了一根长水管，要把雨水桶里的水送到六块菜地。小砾打开开关，第一块地水太多，最后两块却干干的，嫩嫩的生菜叶子都低下了头。孩子们担心地围在菜地旁。": {
+      "spoken": "社区花园新铺了一根长水管，要把雨水桶里的水送到六块菜地。小砾打开开关，第一块地水太多，最后两块却干干的，嫩嫩的生菜叶子都低下了头。孩子们担心地围在菜地旁。",
+      "book_id": "adventure_paw_08",
+      "page": 1,
+      "text_sha256": "b0bf04e9bc3ac0dd04b0e89ffa20fd01528ae0728e95f74ead1afe95d8358b09",
+      "file": "voice-adventures-v1/b0bf04e9bc3ac0dd04b0.mp3",
+      "sha256": "73aae1d115368218eb0f9d4ed35baed548607c635ab220d9bfaef21597706ecd",
+      "qa": {
+        "duration_seconds": 18.288,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.46,
+        "rms_dbfs": -20.278,
+        "trailing_silence_seconds": 0.607,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "灰灰沿水管检查，发现中间没有破洞。毛毛数了数弯道：水管绕过花盆、长椅和工具箱，一共弯了九次，还有一段被小推车压得扁扁的。水好像在弯路里迷路了。": {
+      "spoken": "灰灰沿水管检查，发现中间没有破洞。毛毛数了数弯道：水管绕过花盆、长椅和工具箱，一共弯了九次，还有一段被小推车压得扁扁的。水好像在弯路里迷路了。",
+      "book_id": "adventure_paw_08",
+      "page": 2,
+      "text_sha256": "f1a9b1f24ffede13d2d7603717413dd30b62e1d34c73a3ebf9b0137a5e10869c",
+      "file": "voice-adventures-v1/f1a9b1f24ffede13d2d7.mp3",
+      "sha256": "e3c0a10566388b29d59b13542b1379d19cd52296f4470f94afbeb597d5d76e69",
+      "qa": {
+        "duration_seconds": 17.064,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -0.3,
+        "rms_dbfs": -19.38,
+        "trailing_silence_seconds": 0.607,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "小砾想把开关开到最大，灰灰说这样只会让前面更湿。他们先关水，把工具箱搬上架，再把推车移开。毛毛用彩色夹子标出每个不必要的弯。水管立刻舒展开来。": {
+      "spoken": "小砾想把开关开到最大，灰灰说这样只会让前面更湿。他们先关水，把工具箱搬上架，再把推车移开。毛毛用彩色夹子标出每个不必要的弯。水管立刻舒展开来。",
+      "book_id": "adventure_paw_08",
+      "page": 3,
+      "text_sha256": "364a83b07a075793bdabb260e5d6569b5bb0fda9c105d17db78454f37f7296a4",
+      "file": "voice-adventures-v1/364a83b07a075793bdab.mp3",
+      "sha256": "b4afd448ba3b220f38430c89e009de27761ffc57dfdf911f31294501a7fecaac",
+      "qa": {
+        "duration_seconds": 17.28,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -0.426,
+        "rms_dbfs": -19.4,
+        "trailing_silence_seconds": 0.607,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "水管重新拉直后，最后一块地终于有水了，可六块地流量仍不一样。灰灰装上六个能调节的小滴头，小砾在每块菜地放一个透明量杯，计时一分钟。这样每块地都能自己调水量。": {
+      "spoken": "水管重新拉直后，最后一块地终于有水了，可六块地流量仍不一样。灰灰装上六个能调节的小滴头，小砾在每块菜地放一个透明量杯，计时一分钟。这样每块地都能自己调水量。",
+      "book_id": "adventure_paw_08",
+      "page": 4,
+      "text_sha256": "90d4be0ea554af966646ef0995596503c15d5bd3d4fb90009bc76e25a7d76990",
+      "file": "voice-adventures-v1/90d4be0ea554af966646.mp3",
+      "sha256": "364818abc4fb99b6cd61813b7476300b468200d3ce19b2aef51f8988f9ad7e5a",
+      "qa": {
+        "duration_seconds": 18.12,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -1.02,
+        "rms_dbfs": -19.286,
+        "trailing_silence_seconds": 0.604,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "毛毛发现胡萝卜地的量杯最高，就把滴头调小一点；生菜地最低，便调大一点。试了三次以后，六个量杯里的水线终于差不多高，雨水也没有溢出。大家在纸上记下每一次水线。": {
+      "spoken": "毛毛发现胡萝卜地的量杯最高，就把滴头调小一点；生菜地最低，便调大一点。试了三次以后，六个量杯里的水线终于差不多高，雨水也没有溢出。大家在纸上记下每一次水线。",
+      "book_id": "adventure_paw_08",
+      "page": 5,
+      "text_sha256": "765d0f93eaee7c185ef5282b7455dd8696fbb5c8e8dd6cc4191be1240bae2e67",
+      "file": "voice-adventures-v1/765d0f93eaee7c185ef5.mp3",
+      "sha256": "ca2c8a1350704f5cb155e45c9fbd2c6f5a93202ac76e19e34779960c4e15a14c",
+      "qa": {
+        "duration_seconds": 18.312,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.407,
+        "rms_dbfs": -20.146,
+        "trailing_silence_seconds": 0.604,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "傍晚，嫩嫩的生菜叶子重新挺了起来。孩子们为水管画了简单路线图，提醒大家不要压在上面。小砾说，水走得顺不顺，不只看力气大，还要看道路直不直。六块菜地都喝到了合适的水。真好。": {
+      "spoken": "傍晚，嫩嫩的生菜叶子重新挺了起来。孩子们为水管画了简单路线图，提醒大家不要压在上面。小砾说，水走得顺不顺，不只看力气大，还要看道路直不直。六块菜地都喝到了合适的水。真好。",
+      "book_id": "adventure_paw_08",
+      "page": 6,
+      "text_sha256": "aa80bb2f0780ce45a0aae08db42e5d5760a541828eb457d8376e9fd3ab0f79a8",
+      "file": "voice-adventures-v1/aa80bb2f0780ce45a0aa.mp3",
+      "sha256": "e2e4ccc951d1ff023c662adc3b78f31cd5c30d96abbda3795d798af241b8a5ec",
+      "qa": {
+        "duration_seconds": 21.48,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.811,
+        "rms_dbfs": -20.296,
+        "trailing_silence_seconds": 0.617,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "冒险湾要举行小小游行，毛毛负责背红色大鼓。排练时，每敲一下，鼓里除了“咚”，还会传出“沙啦沙啦”的怪声，好像有谁藏在里面摇盒子。旁边的小号也跟着停了下来。": {
+      "spoken": "冒险湾要举行小小游行，毛毛负责背红色大鼓。排练时，每敲一下，鼓里除了“咚”，还会传出“沙啦沙啦”的怪声，好像有谁藏在里面摇盒子。旁边的小号也跟着停了下来。",
+      "book_id": "adventure_paw_09",
+      "page": 1,
+      "text_sha256": "72da4acd7aea5a59bc419305d69253507cf2de63f5ed245a389a21729f05a2cb",
+      "file": "voice-adventures-v1/72da4acd7aea5a59bc41.mp3",
+      "sha256": "ae27f51aecd2d31b0972ca077704c636066a7d41ae0cefea436b0d153f9d76aa",
+      "qa": {
+        "duration_seconds": 17.736,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.485,
+        "rms_dbfs": -20.435,
+        "trailing_silence_seconds": 0.61,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "阿奇请大家暂停音乐，先听声音来自哪里。天天轻轻转动小鼓，沙沙的声音跟着移动。毛毛回想，早上装饰时有一颗金色圆珠从彩带上掉了下来。这颗小珠子成了最重要的线索。": {
+      "spoken": "阿奇请大家暂停音乐，先听声音来自哪里。天天轻轻转动小鼓，沙沙的声音跟着移动。毛毛回想，早上装饰时有一颗金色圆珠从彩带上掉了下来。这颗小珠子成了最重要的线索。",
+      "book_id": "adventure_paw_09",
+      "page": 2,
+      "text_sha256": "81947ffe00aea1966759ac519fb18400fc14750a439c10e11e822fc206de5c02",
+      "file": "voice-adventures-v1/81947ffe00aea1966759.mp3",
+      "sha256": "9808d0d3f264140ec6f5254fdac7b1b2bfea81d3c7dc72292c918a87aa58d980",
+      "qa": {
+        "duration_seconds": 19.272,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.644,
+        "rms_dbfs": -20.105,
+        "trailing_silence_seconds": 0.636,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "圆珠可能从鼓边的小孔滚了进去。毛毛想不停摇鼓把它倒出来，阿奇却发现孔口太小，圆珠反而卡得更深。天天用灯从另一侧照，找到它停的位置。他们决定换一个更稳妥的办法。": {
+      "spoken": "圆珠可能从鼓边的小孔滚了进去。毛毛想不停摇鼓把它倒出来，阿奇却发现孔口太小，圆珠反而卡得更深。天天用灯从另一侧照，找到它停的位置。他们决定换一个更稳妥的办法。",
+      "book_id": "adventure_paw_09",
+      "page": 3,
+      "text_sha256": "80fc48668074a4e196f8091dc5e18eee9f55332322e3fde77ade5cedf670a928",
+      "file": "voice-adventures-v1/80fc48668074a4e196f8.mp3",
+      "sha256": "a19896c3bfcfa21d21d768e160d42de54f4101997a834788f55a9dbfe5f4301d",
+      "qa": {
+        "duration_seconds": 18.936,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.77,
+        "rms_dbfs": -19.628,
+        "trailing_silence_seconds": 0.601,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "灰灰带来合适的工具，先在桌上铺软布，再拆开一小段鼓边。天天稳住鼓身，阿奇用带软头的夹子取出圆珠，没有碰伤紧绷的鼓面。圆珠很快被稳稳夹了出来。": {
+      "spoken": "灰灰带来合适的工具，先在桌上铺软布，再拆开一小段鼓边。天天稳住鼓身，阿奇用带软头的夹子取出圆珠，没有碰伤紧绷的鼓面。圆珠很快被稳稳夹了出来。",
+      "book_id": "adventure_paw_09",
+      "page": 4,
+      "text_sha256": "bf66617ddab70ec61b2e8c87d4a30b90623697e3d541212a132ee142af67953a",
+      "file": "voice-adventures-v1/bf66617ddab70ec61b2e.mp3",
+      "sha256": "c74140ca617c464ee94fac0aeb34e07d574ea6c967e17fa6e511a629fb790512",
+      "qa": {
+        "duration_seconds": 16.392,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.11,
+        "rms_dbfs": -19.778,
+        "trailing_silence_seconds": 0.605,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "装回鼓边后，毛毛先轻敲四下，声音只有整齐的“咚咚咚咚”。金色圆珠被缝回彩带，线头还打了双结。三只狗狗又从慢节奏开始重新排练。毛毛听得耳朵都竖了起来。": {
+      "spoken": "装回鼓边后，毛毛先轻敲四下，声音只有整齐的“咚咚咚咚”。金色圆珠被缝回彩带，线头还打了双结。三只狗狗又从慢节奏开始重新排练。毛毛听得耳朵都竖了起来。",
+      "book_id": "adventure_paw_09",
+      "page": 5,
+      "text_sha256": "127afaf36b353c061473678510c5f787474b423f268dd5229f8401b38bf79b83",
+      "file": "voice-adventures-v1/127afaf36b353c061473.mp3",
+      "sha256": "55b1aaa571f827e862fdbdd34b921596fb7bdd8b3e24a8b1bf59ab4bcc7984a7",
+      "qa": {
+        "duration_seconds": 18.216,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.973,
+        "rms_dbfs": -19.694,
+        "trailing_silence_seconds": 0.613,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "游行时，大鼓声音又圆又有力，孩子们踩着节拍前进。毛毛把怪声音编进开场故事，告诉大家：安静听清一点小变化，也能找到藏得很深的线索。金色彩带也在阳光下轻轻摆动。": {
+      "spoken": "游行时，大鼓声音又圆又有力，孩子们踩着节拍前进。毛毛把怪声音编进开场故事，告诉大家：安静听清一点小变化，也能找到藏得很深的线索。金色彩带也在阳光下轻轻摆动。",
+      "book_id": "adventure_paw_09",
+      "page": 6,
+      "text_sha256": "8a4ac14a5a3b0bb10249d5965c21f0172901912855ed2e48ffa600242c982f8f",
+      "file": "voice-adventures-v1/8a4ac14a5a3b0bb10249.mp3",
+      "sha256": "8fd8bc3103738c7306aaa552455ca6399ed6d485cfe69807c203ff61bea3bfd8",
+      "qa": {
+        "duration_seconds": 18.984,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.156,
+        "rms_dbfs": -19.945,
+        "trailing_silence_seconds": 0.642,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "今晚会有一场星星雨，冒险湾的孩子们早早来到山顶观察台。天天调整望远镜，却发现里面只有一片模糊的亮光，连最大最亮的月亮也看不清。大家都踮起脚等待第一道流星。": {
+      "spoken": "今晚会有一场星星雨，冒险湾的孩子们早早来到山顶观察台。天天调整望远镜，却发现里面只有一片模糊的亮光，连最大最亮的月亮也看不清。大家都踮起脚等待第一道流星。",
+      "book_id": "adventure_paw_10",
+      "page": 1,
+      "text_sha256": "bb8b326814dd4a2b78a3b7242f8fd61856dfb2367d71affb067bc35c7f16a348",
+      "file": "voice-adventures-v1/bb8b326814dd4a2b78a3.mp3",
+      "sha256": "69e400cffd93fbadf78469957f69a2cd77ad7acbf594cbd96a673f544c1b3487",
+      "qa": {
+        "duration_seconds": 18.072,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.978,
+        "rms_dbfs": -19.869,
+        "trailing_silence_seconds": 0.599,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "阿奇检查镜筒，没有发现碰撞的痕迹。灰灰想用衣角擦镜片，莱德请他先停下：“镜片很娇气，灰尘会留下小划痕，我们要找到模糊的真正原因。”大家围着镜筒认真观察。": {
+      "spoken": "阿奇检查镜筒，没有发现碰撞的痕迹。灰灰想用衣角擦镜片，莱德请他先停下：“镜片很娇气，灰尘会留下小划痕，我们要找到模糊的真正原因。”大家围着镜筒认真观察。",
+      "book_id": "adventure_paw_10",
+      "page": 2,
+      "text_sha256": "de5451c500c855cddcc0b1a0d5109afff85cf0aee491b804e1c14de4154c7d4c",
+      "file": "voice-adventures-v1/de5451c500c855cddcc0.mp3",
+      "sha256": "dabeacf9a41bacca83e2e37ae747fb126d8b7d552cc4402cd66b8cb502555dcb",
+      "qa": {
+        "duration_seconds": 17.712,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.434,
+        "rms_dbfs": -19.856,
+        "trailing_silence_seconds": 0.597,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "天天注意到镜片边缘有一圈细小水珠。原来望远镜从温暖室内搬到凉凉的山顶，空气里的水汽遇冷变成了雾。灰灰把设备移到通风棚里慢慢适应。雾蒙蒙的谜题终于解开了。": {
+      "spoken": "天天注意到镜片边缘有一圈细小水珠。原来望远镜从温暖室内搬到凉凉的山顶，空气里的水汽遇冷变成了雾。灰灰把设备移到通风棚里慢慢适应。雾蒙蒙的谜题终于解开了。",
+      "book_id": "adventure_paw_10",
+      "page": 3,
+      "text_sha256": "8c2a1ac6bf69d917b0304975a0b1fe4ba2560378c05a39796a974e4eb8d0e5ec",
+      "file": "voice-adventures-v1/8c2a1ac6bf69d917b030.mp3",
+      "sha256": "4d52f9a9add8161b63d9059ec81bbe3773478a89927be581c50eeadc3953aac3",
+      "qa": {
+        "duration_seconds": 18.768,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.179,
+        "rms_dbfs": -19.235,
+        "trailing_silence_seconds": 0.613,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "等待时，阿奇关掉附近太亮的灯，天天教孩子们用手指框住天空找北斗星。有人担心错过星星雨，莱德说，正确照顾设备比匆忙看一眼更重要。孩子们便耐心等着镜片变清楚。": {
+      "spoken": "等待时，阿奇关掉附近太亮的灯，天天教孩子们用手指框住天空找北斗星。有人担心错过星星雨，莱德说，正确照顾设备比匆忙看一眼更重要。孩子们便耐心等着镜片变清楚。",
+      "book_id": "adventure_paw_10",
+      "page": 4,
+      "text_sha256": "ace1bf5091b45e134dbb1031a010b71e867ae9bcc7d36e781f57edae5f31e93e",
+      "file": "voice-adventures-v1/ace1bf5091b45e134dbb.mp3",
+      "sha256": "306a78c1bd6125364e5a61c0e2fa84fde3f4b5c78bc890ba6e70382643cde975",
+      "qa": {
+        "duration_seconds": 19.128,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.396,
+        "rms_dbfs": -19.919,
+        "trailing_silence_seconds": 0.611,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "水雾散去后，灰灰用专用气吹清掉一粒灰尘，再盖好没使用的镜头。天天重新对准天空，第一道亮线正好划过黑夜，孩子们发出轻轻的惊叹。月亮的边缘也重新清晰起来。": {
+      "spoken": "水雾散去后，灰灰用专用气吹清掉一粒灰尘，再盖好没使用的镜头。天天重新对准天空，第一道亮线正好划过黑夜，孩子们发出轻轻的惊叹。月亮的边缘也重新清晰起来。",
+      "book_id": "adventure_paw_10",
+      "page": 5,
+      "text_sha256": "cfaddb5b94dfa98ca8e2f4cca9113b1603910d5deb4584848034feb9a65496bf",
+      "file": "voice-adventures-v1/cfaddb5b94dfa98ca8e2.mp3",
+      "sha256": "ec88acc2e015266c947490c4a53767c6088fce4f620b04287018bdc3ea53cf4b",
+      "qa": {
+        "duration_seconds": 18.288,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.065,
+        "rms_dbfs": -19.83,
+        "trailing_silence_seconds": 0.593,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "大家轮流看星星，每人只停一小会儿，让后面的朋友也能看到。阿奇在记录牌上写下温度和时间。模糊的小插曲，反而让这次观察多了一项新发现。每个人都画下自己看见的亮线。": {
+      "spoken": "大家轮流看星星，每人只停一小会儿，让后面的朋友也能看到。阿奇在记录牌上写下温度和时间。模糊的小插曲，反而让这次观察多了一项新发现。每个人都画下自己看见的亮线。",
+      "book_id": "adventure_paw_10",
+      "page": 6,
+      "text_sha256": "a4394c470b93f6d136405e84415905c4a3f733c8b46b60aa3fc5e259fd60e103",
+      "file": "voice-adventures-v1/a4394c470b93f6d13640.mp3",
+      "sha256": "f6cbc679e6a4a4f77c35c463d5838916db75ece676b74562ed25d2fe0afa41e1",
+      "qa": {
+        "duration_seconds": 18.096,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.306,
+        "rms_dbfs": -19.821,
+        "trailing_silence_seconds": 0.597,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "动物城广场的早晨广播忽然没声音了。等着做晨间操的小动物只看见喇叭灯一闪一闪。朱迪赶到广播室，尼克拿起话筒说“早安”，房间里听得清清楚楚。大家都抬头等着。": {
+      "spoken": "动物城广场的早晨广播忽然没声音了。等着做晨间操的小动物只看见喇叭灯一闪一闪。朱迪赶到广播室，尼克拿起话筒说“早安”，房间里听得清清楚楚。大家都抬头等着。",
+      "book_id": "adventure_zootopia_01",
+      "page": 1,
+      "text_sha256": "783e95e8c90a99b9030e6818f588a63dcb6596c41a27d5f76ccab5206efd4971",
+      "file": "voice-adventures-v1/783e95e8c90a99b9030e.mp3",
+      "sha256": "4ee4128ad6be7621a279854c799f24fe8a4d5f04599a2a127c9e70aa1aea5c40",
+      "qa": {
+        "duration_seconds": 17.952,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.814,
+        "rms_dbfs": -19.639,
+        "trailing_silence_seconds": 0.605,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "他们先去最近的长颈鹿区，那里只能听见轻轻的沙沙声；小老鼠区却正在播放昨天的晚安曲。朱迪在地图上分别画星星和月亮，发现不是所有喇叭一起坏掉。线索一下多了起来。": {
+      "spoken": "他们先去最近的长颈鹿区，那里只能听见轻轻的沙沙声；小老鼠区却正在播放昨天的晚安曲。朱迪在地图上分别画星星和月亮，发现不是所有喇叭一起坏掉。线索一下多了起来。",
+      "book_id": "adventure_zootopia_01",
+      "page": 2,
+      "text_sha256": "7e4261f176f8b450ee32f34c3deade5d0d4d3051a044422a45438d12adf35947",
+      "file": "voice-adventures-v1/7e4261f176f8b450ee32.mp3",
+      "sha256": "8bcd65a76f51af5b8bc4e5fc663982baa8d548abb8b1d90890e32f2d5e70c9fc",
+      "qa": {
+        "duration_seconds": 18.384,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.61,
+        "rms_dbfs": -20.229,
+        "trailing_silence_seconds": 0.616,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "尼克顺着两条不同颜色的音频线走到控制柜。清洁工昨晚擦桌子时拔下插头，又把蓝线和黄线按颜色深浅接反了。插头都能插进去，所以屏幕没有显示错误。两条线像在玩换座位。": {
+      "spoken": "尼克顺着两条不同颜色的音频线走到控制柜。清洁工昨晚擦桌子时拔下插头，又把蓝线和黄线按颜色深浅接反了。插头都能插进去，所以屏幕没有显示错误。两条线像在玩换座位。",
+      "book_id": "adventure_zootopia_01",
+      "page": 3,
+      "text_sha256": "93f0ac39dd0657c5e88a8cfbc2343fc625ce00d99ad394943378ea4651e8bba5",
+      "file": "voice-adventures-v1/93f0ac39dd0657c5e88a.mp3",
+      "sha256": "bb68bce67745e46797eba800b96ccbe1d9bff60cc6ba7aea4f0fd1155c8ae328",
+      "qa": {
+        "duration_seconds": 19.92,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.423,
+        "rms_dbfs": -19.706,
+        "trailing_silence_seconds": 0.61,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "朱迪没有马上把声音开到最大，而是请各区工作人员戴着耳机等候。尼克交换两根线，先播放一声轻柔的钟响。长颈鹿区和小老鼠区都举起绿色小旗。测试声音终于正确。": {
+      "spoken": "朱迪没有马上把声音开到最大，而是请各区工作人员戴着耳机等候。尼克交换两根线，先播放一声轻柔的钟响。长颈鹿区和小老鼠区都举起绿色小旗。测试声音终于正确。",
+      "book_id": "adventure_zootopia_01",
+      "page": 4,
+      "text_sha256": "382969a37d137bf8455ebfd2d99d79d7f0d4886de354d45b4272be5fe232678c",
+      "file": "voice-adventures-v1/382969a37d137bf8455e.mp3",
+      "sha256": "334a77b33b37586f0faf16f2db4be2002c899354b9ee51550bca90bd6c6601e8",
+      "qa": {
+        "duration_seconds": 18.744,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.552,
+        "rms_dbfs": -19.406,
+        "trailing_silence_seconds": 0.618,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "接着，他们逐区测试音量。大象区需要稍响一点，小老鼠区则调得更轻。朱迪把插头和插孔贴上相同的动物图案，以后除了看颜色，还能对照图案和编号。每个地区都听得舒服。": {
+      "spoken": "接着，他们逐区测试音量。大象区需要稍响一点，小老鼠区则调得更轻。朱迪把插头和插孔贴上相同的动物图案，以后除了看颜色，还能对照图案和编号。每个地区都听得舒服。",
+      "book_id": "adventure_zootopia_01",
+      "page": 5,
+      "text_sha256": "9fc8f3b298d84e8ae6c7584892ab4a2ad42083a67f5e99b61f46796fff2e68e2",
+      "file": "voice-adventures-v1/9fc8f3b298d84e8ae6c7.mp3",
+      "sha256": "39f37f8ce823255aac89b21a51440b99328a2c0e28c747c00dd7d20eeffa7491",
+      "qa": {
+        "duration_seconds": 19.104,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.635,
+        "rms_dbfs": -20.061,
+        "trailing_silence_seconds": 0.61,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "晨间操虽然晚了几分钟，大家还是跟着音乐伸伸手、踢踢腿。尼克最后播报：“今天的第一条新闻，是两根爱交换位置的电线。”广场上响起一片笑声。朱迪也跟着笑了。": {
+      "spoken": "晨间操虽然晚了几分钟，大家还是跟着音乐伸伸手、踢踢腿。尼克最后播报：“今天的第一条新闻，是两根爱交换位置的电线。”广场上响起一片笑声。朱迪也跟着笑了。",
+      "book_id": "adventure_zootopia_01",
+      "page": 6,
+      "text_sha256": "111f6415549fec4c543843801caa6dc82f4fbc8b4bfb7a91110a7e1db46fc7c7",
+      "file": "voice-adventures-v1/111f6415549fec4c5438.mp3",
+      "sha256": "247e278826a9e578adca79dd6dd8b32686a5cec6bcd551fc2ca109cf7e97a253",
+      "qa": {
+        "duration_seconds": 17.688,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.472,
+        "rms_dbfs": -19.77,
+        "trailing_silence_seconds": 0.613,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "动物城的银杏街最近会“呜——呜——”唱歌。每当巴士慢慢驶过，路边井盖附近就响起低低的长音。居民有点担心，朱迪和尼克带着安全围栏来检查。奇怪的歌声又响了一遍。": {
+      "spoken": "动物城的银杏街最近会“呜——呜——”唱歌。每当巴士慢慢驶过，路边井盖附近就响起低低的长音。居民有点担心，朱迪和尼克带着安全围栏来检查。奇怪的歌声又响了一遍。",
+      "book_id": "adventure_zootopia_02",
+      "page": 1,
+      "text_sha256": "dd94152ff6257e64a6d991b9173b608122f38dd635358cfa86b5c9482ed4aef3",
+      "file": "voice-adventures-v1/dd94152ff6257e64a6d9.mp3",
+      "sha256": "241c5954214d9bc2f805b1b91cc6d391140607fe2246d838f1601e662ad28aa4",
+      "qa": {
+        "duration_seconds": 18.768,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.415,
+        "rms_dbfs": -19.522,
+        "trailing_silence_seconds": 0.62,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "朱迪请维修员确认井盖锁得很牢，地下管道也没有故障。尼克站在围栏外仔细听，发现没有车辆时，风吹得大一点也会出现同样的声音，只是更轻。这个发现让范围变小了。": {
+      "spoken": "朱迪请维修员确认井盖锁得很牢，地下管道也没有故障。尼克站在围栏外仔细听，发现没有车辆时，风吹得大一点也会出现同样的声音，只是更轻。这个发现让范围变小了。",
+      "book_id": "adventure_zootopia_02",
+      "page": 2,
+      "text_sha256": "d6bd5892cff50f7581d2cd83f87441ea82e2cb56bfc586fcac514cd5dcba793e",
+      "file": "voice-adventures-v1/d6bd5892cff50f7581d2.mp3",
+      "sha256": "e61490bf00b70f6309a2412ce119cc503673c909828fc0a2224360effb902933",
+      "qa": {
+        "duration_seconds": 18.288,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.309,
+        "rms_dbfs": -20.004,
+        "trailing_silence_seconds": 0.605,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "他们沿声音寻找，看见井盖旁的小排水格上横着一片又长又薄的梧桐叶。风从窄缝穿过，叶子边缘不停颤动，就像有人对着一片绿色的小口琴吹气。谜底就在大家眼前。": {
+      "spoken": "他们沿声音寻找，看见井盖旁的小排水格上横着一片又长又薄的梧桐叶。风从窄缝穿过，叶子边缘不停颤动，就像有人对着一片绿色的小口琴吹气。谜底就在大家眼前。",
+      "book_id": "adventure_zootopia_02",
+      "page": 3,
+      "text_sha256": "37fb408b41a8cd9925a02976b4af0810b314b4132e5be07358a81eb184884520",
+      "file": "voice-adventures-v1/37fb408b41a8cd9925a0.mp3",
+      "sha256": "b0bb0e992ec77f029b5a292425934e10743b70e353eedd261ea12ddf1875197b",
+      "qa": {
+        "duration_seconds": 17.592,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.309,
+        "rms_dbfs": -19.8,
+        "trailing_silence_seconds": 0.585,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "维修员用长夹子取走叶子，“歌声”立刻停了。可尼克把叶子举在安全距离外，轻轻迎着风，它又唱起来。朱迪录下声音，居民们这才放心地围过来看。叶片在风里微微颤动。": {
+      "spoken": "维修员用长夹子取走叶子，“歌声”立刻停了。可尼克把叶子举在安全距离外，轻轻迎着风，它又唱起来。朱迪录下声音，居民们这才放心地围过来看。叶片在风里微微颤动。",
+      "book_id": "adventure_zootopia_02",
+      "page": 4,
+      "text_sha256": "fa37e4c1d219c2061734b6c4ca6ec8e8ce93a133d29c3179db81de67384ebb83",
+      "file": "voice-adventures-v1/fa37e4c1d219c2061734.mp3",
+      "sha256": "6a3f8a56adc0b7e4658ea0a4dfaa4647c119b023222c0048040505066f0a4c47",
+      "qa": {
+        "duration_seconds": 18.384,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.927,
+        "rms_dbfs": -19.59,
+        "trailing_silence_seconds": 0.628,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "一位河狸老师带来纸片、梳子和空瓶，请孩子们试试不同的风声。朱迪负责提醒大家不靠近道路和井盖，尼克则把长叶子夹进透明观察盒。每种材料的声音都不一样。": {
+      "spoken": "一位河狸老师带来纸片、梳子和空瓶，请孩子们试试不同的风声。朱迪负责提醒大家不靠近道路和井盖，尼克则把长叶子夹进透明观察盒。每种材料的声音都不一样。",
+      "book_id": "adventure_zootopia_02",
+      "page": 5,
+      "text_sha256": "20357dbc06d1594c4a327e2290fd1c248c685f5fa813272eded6ee93bb59f13c",
+      "file": "voice-adventures-v1/20357dbc06d1594c4a32.mp3",
+      "sha256": "902bad2ca750e516619289431a18a4d1084011a445ab5f24afd858ce700b6984",
+      "qa": {
+        "duration_seconds": 17.76,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.419,
+        "rms_dbfs": -19.662,
+        "trailing_silence_seconds": 0.599,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "银杏街不再突然呜呜响，却多了一面“风的声音”小展板。尼克说，他们没有抓到藏在地下的歌手，只找到一片会借风唱歌的叶子，答案比猜想更有趣。朱迪也把录音放给大家听。": {
+      "spoken": "银杏街不再突然呜呜响，却多了一面“风的声音”小展板。尼克说，他们没有抓到藏在地下的歌手，只找到一片会借风唱歌的叶子，答案比猜想更有趣。朱迪也把录音放给大家听。",
+      "book_id": "adventure_zootopia_02",
+      "page": 6,
+      "text_sha256": "048f75a866c1013fcef8d0cfd5111714e1e114505e7777011ed01510ca1bd809",
+      "file": "voice-adventures-v1/048f75a866c1013fcef8.mp3",
+      "sha256": "217988edc76f6b374376cc6eb144c767754722c3fdfa27403d9481681e5297ea",
+      "qa": {
+        "duration_seconds": 18.288,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.807,
+        "rms_dbfs": -19.757,
+        "trailing_silence_seconds": 0.603,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "迷你城秋日节要展出一只特别大的南瓜，南瓜比运货小车还宽。朱迪和尼克按原计划推到隧道口，却发现入口两边只剩一点点空隙，怎么也过不去。南瓜顶还系着金色蝴蝶结。": {
+      "spoken": "迷你城秋日节要展出一只特别大的南瓜，南瓜比运货小车还宽。朱迪和尼克按原计划推到隧道口，却发现入口两边只剩一点点空隙，怎么也过不去。南瓜顶还系着金色蝴蝶结。",
+      "book_id": "adventure_zootopia_03",
+      "page": 1,
+      "text_sha256": "9d95f82158deb5653409e7ccc2e1cb99ead5276423667786561d14d0789fbc7b",
+      "file": "voice-adventures-v1/9d95f82158deb5653409.mp3",
+      "sha256": "bcaf3d4c78055efb623b92d14f40770c711ed5c85e1212fcfd63a5ca0b5c91c8",
+      "qa": {
+        "duration_seconds": 18.768,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.957,
+        "rms_dbfs": -19.58,
+        "trailing_silence_seconds": 0.597,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "尼克开玩笑说可以把南瓜做成一百碗汤，种瓜的河马奶奶却希望大家先完整看一看。朱迪量了南瓜最宽处，又量隧道，确认不是换个角度就能解决。河马奶奶认真地点点头。": {
+      "spoken": "尼克开玩笑说可以把南瓜做成一百碗汤，种瓜的河马奶奶却希望大家先完整看一看。朱迪量了南瓜最宽处，又量隧道，确认不是换个角度就能解决。河马奶奶认真地点点头。",
+      "book_id": "adventure_zootopia_03",
+      "page": 2,
+      "text_sha256": "4f76b62601b8d66807393578f339d36db5cd23c64de1743fc9b4e40fbec2c8cc",
+      "file": "voice-adventures-v1/4f76b62601b8d6680739.mp3",
+      "sha256": "b962b2a5d41b328014f36cb8b34b7661fbedd616bd882e8db89528851de0d14e",
+      "qa": {
+        "duration_seconds": 17.832,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.378,
+        "rms_dbfs": -19.869,
+        "trailing_silence_seconds": 0.617,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "他们在城市地图上找到一条地面绕行路，可中间的小桥有重量限制。朱迪请工作人员称南瓜和车的重量，数字刚好多出一点，谁也没有抱着侥幸继续走。测量让大家及时停了下来。": {
+      "spoken": "他们在城市地图上找到一条地面绕行路，可中间的小桥有重量限制。朱迪请工作人员称南瓜和车的重量，数字刚好多出一点，谁也没有抱着侥幸继续走。测量让大家及时停了下来。",
+      "book_id": "adventure_zootopia_03",
+      "page": 3,
+      "text_sha256": "48b00009c0b68dad67d6443c99b7622e146b357ead2048636f612072bc87b097",
+      "file": "voice-adventures-v1/48b00009c0b68dad67d6.mp3",
+      "sha256": "2293274524405d65a0186728e6c6f8e2178b5aa0dc73dd2a931e00a03291bbcd",
+      "qa": {
+        "duration_seconds": 18.576,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.518,
+        "rms_dbfs": -19.816,
+        "trailing_silence_seconds": 0.599,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "尼克发现桥边有一条宽阔的花车路线，节日当天才会封闭使用。路线不经过小桥，却要穿过大动物区。朱迪联系交通员，安排在清晨车辆最少时慢慢运送。新路线终于确定了。": {
+      "spoken": "尼克发现桥边有一条宽阔的花车路线，节日当天才会封闭使用。路线不经过小桥，却要穿过大动物区。朱迪联系交通员，安排在清晨车辆最少时慢慢运送。新路线终于确定了。",
+      "book_id": "adventure_zootopia_03",
+      "page": 4,
+      "text_sha256": "1f0f99177481526ddba190506a84e1a705f6eb31afbe104f757a07ee476085d1",
+      "file": "voice-adventures-v1/1f0f99177481526ddba1.mp3",
+      "sha256": "1ce7104901e774f4c56a0d8eaf9e485427923fbc435acee241c3b4a33aac0ce6",
+      "qa": {
+        "duration_seconds": 19.272,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.686,
+        "rms_dbfs": -19.816,
+        "trailing_silence_seconds": 0.614,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "两头大象推花车，朱迪在前面确认路口，尼克在后面看南瓜有没有滚动。转弯时，一块垫木松了，他们立刻停下加固，最后完整的大南瓜稳稳到达广场。两位伙伴一路没有放松。": {
+      "spoken": "两头大象推花车，朱迪在前面确认路口，尼克在后面看南瓜有没有滚动。转弯时，一块垫木松了，他们立刻停下加固，最后完整的大南瓜稳稳到达广场。两位伙伴一路没有放松。",
+      "book_id": "adventure_zootopia_03",
+      "page": 5,
+      "text_sha256": "2306361683fde0fa9ff22ba087b2f94289d9f236748edab6fb8b452bdf27a661",
+      "file": "voice-adventures-v1/2306361683fde0fa9ff2.mp3",
+      "sha256": "861b68e03ec438b86ec13c9d7785ec5fc5b3f94f9cc15616b37504b1e7beb4b7",
+      "qa": {
+        "duration_seconds": 18.816,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.565,
+        "rms_dbfs": -19.686,
+        "trailing_silence_seconds": 0.594,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "节日结束后，河马奶奶把南瓜做成很多份汤和面包，与全城分享。朱迪把三次测量写进记录本。尼克笑着说，大南瓜没有变小，是他们把路线想大了。广场上飘满温暖的香味。": {
+      "spoken": "节日结束后，河马奶奶把南瓜做成很多份汤和面包，与全城分享。朱迪把三次测量写进记录本。尼克笑着说，大南瓜没有变小，是他们把路线想大了。广场上飘满温暖的香味。",
+      "book_id": "adventure_zootopia_03",
+      "page": 6,
+      "text_sha256": "5b289573285efef814dc3b5434baf535591086d926fbd5cab445685492b8f018",
+      "file": "voice-adventures-v1/5b289573285efef814dc.mp3",
+      "sha256": "f950392989c308a17ed15e1703b026fd64d952882d161d7cb870e5df3befe4e9",
+      "qa": {
+        "duration_seconds": 18.984,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.954,
+        "rms_dbfs": -19.716,
+        "trailing_silence_seconds": 0.648,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "朱迪和尼克沿河巡逻时，看见一个蓝色防水盒在芦苇边轻轻打转。盒盖扣得很紧，外面贴着一本书和一艘小船的图案，却没有清楚的姓名。尼克把船慢慢停在旁边。": {
+      "spoken": "朱迪和尼克沿河巡逻时，看见一个蓝色防水盒在芦苇边轻轻打转。盒盖扣得很紧，外面贴着一本书和一艘小船的图案，却没有清楚的姓名。尼克把船慢慢停在旁边。",
+      "book_id": "adventure_zootopia_04",
+      "page": 1,
+      "text_sha256": "950acbf0ba1725e6bcd4e01856ba18c8a67368c7c60dd83496c38316909f8052",
+      "file": "voice-adventures-v1/950acbf0ba1725e6bcd4.mp3",
+      "sha256": "74fe58ee6c999021dd7362e777d658e83f5ed1d58dee0217f634b56f9a5d608d",
+      "qa": {
+        "duration_seconds": 17.304,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.762,
+        "rms_dbfs": -19.446,
+        "trailing_silence_seconds": 0.606,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "河狸管理员把盒子安全捞上岸。打开后，里面的六本绘本都干干净净，还有一张借阅表，可最上面的名字被一滴水晕开，只剩下末尾弯弯的一笔。两位伙伴决定继续找线索。": {
+      "spoken": "河狸管理员把盒子安全捞上岸。打开后，里面的六本绘本都干干净净，还有一张借阅表，可最上面的名字被一滴水晕开，只剩下末尾弯弯的一笔。两位伙伴决定继续找线索。",
+      "book_id": "adventure_zootopia_04",
+      "page": 2,
+      "text_sha256": "b6713a49a2815790629a1b293414f4244e5fb4c8e9c0a35d7ce873858decaa2a",
+      "file": "voice-adventures-v1/b6713a49a2815790629a.mp3",
+      "sha256": "224712551f2a2ad407f474a9777df4586ee65f77437a8d788eeba655d004107a",
+      "qa": {
+        "duration_seconds": 18.12,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.266,
+        "rms_dbfs": -19.212,
+        "trailing_silence_seconds": 0.601,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "朱迪以为盒子来自河岸图书馆，尼克却发现书脊上盖着不同图章，像是许多家庭一起交换的书。盒底还有几粒细沙和一片紫色花瓣，可能来自上游。紫花瓣给了他们新方向。": {
+      "spoken": "朱迪以为盒子来自河岸图书馆，尼克却发现书脊上盖着不同图章，像是许多家庭一起交换的书。盒底还有几粒细沙和一片紫色花瓣，可能来自上游。紫花瓣给了他们新方向。",
+      "book_id": "adventure_zootopia_04",
+      "page": 3,
+      "text_sha256": "ddc75b74212037a984ceb2d8ef2c7fcb415d35d2fb06cf9e62a0dc7530da2175",
+      "file": "voice-adventures-v1/ddc75b74212037a984ce.mp3",
+      "sha256": "58a0f1c180b3ae6111309f26c622209a264aece56308638588247c56335fe86b",
+      "qa": {
+        "duration_seconds": 18.288,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -0.721,
+        "rms_dbfs": -19.805,
+        "trailing_silence_seconds": 0.62,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "他们沿河询问，在紫花公园找到一块空着的“漂流阅读站”。管理员说，昨晚风大，固定盒子的带子断了。借阅表上的弯笔画，正是水獭豆豆名字的最后一钩。盒子终于找到了原来的家。": {
+      "spoken": "他们沿河询问，在紫花公园找到一块空着的“漂流阅读站”。管理员说，昨晚风大，固定盒子的带子断了。借阅表上的弯笔画，正是水獭豆豆名字的最后一钩。盒子终于找到了原来的家。",
+      "book_id": "adventure_zootopia_04",
+      "page": 4,
+      "text_sha256": "4c8dc51742e99e42e30578cdb0a9cc99d7093ad927daf0a5e84fa1e3edf693eb",
+      "file": "voice-adventures-v1/4c8dc51742e99e42e305.mp3",
+      "sha256": "5bf2e044d60cc5714503efdd84bc03cfb07d076ba549020618d2ebc8ab19c21a",
+      "qa": {
+        "duration_seconds": 18.816,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.303,
+        "rms_dbfs": -20.071,
+        "trailing_silence_seconds": 0.602,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "尼克换上两条交叉扣带，朱迪请大家先放一袋沙子测试。盒子被轻轻晃动也没有滑走，六本书再按编号回到里面。豆豆还补画了清楚的水獭头像。测试结果稳稳通过。": {
+      "spoken": "尼克换上两条交叉扣带，朱迪请大家先放一袋沙子测试。盒子被轻轻晃动也没有滑走，六本书再按编号回到里面。豆豆还补画了清楚的水獭头像。测试结果稳稳通过。",
+      "book_id": "adventure_zootopia_04",
+      "page": 5,
+      "text_sha256": "5dd1e63419dfc442975d996de61617aa80d638559f94dd6d6512cef9fd6be0eb",
+      "file": "voice-adventures-v1/5dd1e63419dfc442975d.mp3",
+      "sha256": "4a3cfe1e286383a830316b8b9314197cc7d1d37c25bc1e9ac5590e25f6a71cb7",
+      "qa": {
+        "duration_seconds": 18.144,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.93,
+        "rms_dbfs": -19.556,
+        "trailing_silence_seconds": 0.617,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "傍晚，孩子们坐在河边读书，归还时把盒盖扣紧。朱迪说，图章、细沙和花瓣都不会说话，却一起指回了家。河水从旁边流过，这次书盒稳稳留下。孩子们也记得检查扣带。": {
+      "spoken": "傍晚，孩子们坐在河边读书，归还时把盒盖扣紧。朱迪说，图章、细沙和花瓣都不会说话，却一起指回了家。河水从旁边流过，这次书盒稳稳留下。孩子们也记得检查扣带。",
+      "book_id": "adventure_zootopia_04",
+      "page": 6,
+      "text_sha256": "c8176688f90f888dd55bb8810b727c7946033c5342742577c32142baeced1203",
+      "file": "voice-adventures-v1/c8176688f90f888dd55b.mp3",
+      "sha256": "6c652d88c2ecd907e12c1e281330dd84eee87e1fe92e02dfd50da9d83c0a00a9",
+      "qa": {
+        "duration_seconds": 19.488,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -0.834,
+        "rms_dbfs": -20.041,
+        "trailing_silence_seconds": 0.62,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "动物城萤光步道每晚都会亮起一排绿色脚印，帮助夜行的小动物看清转弯。今天太阳落下后，第三段脚印却灰灰的，后面的路标仍然正常发光。大家只好暂时停下脚步。": {
+      "spoken": "动物城萤光步道每晚都会亮起一排绿色脚印，帮助夜行的小动物看清转弯。今天太阳落下后，第三段脚印却灰灰的，后面的路标仍然正常发光。大家只好暂时停下脚步。",
+      "book_id": "adventure_zootopia_05",
+      "page": 1,
+      "text_sha256": "7d734f7684ed812cfeb3474afa56b2f8ca124d92a06591e8701fa6b858c168c6",
+      "file": "voice-adventures-v1/7d734f7684ed812cfeb3.mp3",
+      "sha256": "57633eb532d569011899080de18c9db34765d009ac282ac962546cc4d476c6a4",
+      "qa": {
+        "duration_seconds": 17.76,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.706,
+        "rms_dbfs": -19.711,
+        "trailing_silence_seconds": 0.602,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "朱迪先摆好临时小灯，尼克查看路标表面，没有裂缝。管理员说这些标志白天吸收光，晚上再慢慢发亮。尼克抬头发现，只有这一段上方挂着庆典遮阳布。这块布整天挡住了阳光。": {
+      "spoken": "朱迪先摆好临时小灯，尼克查看路标表面，没有裂缝。管理员说这些标志白天吸收光，晚上再慢慢发亮。尼克抬头发现，只有这一段上方挂着庆典遮阳布。这块布整天挡住了阳光。",
+      "book_id": "adventure_zootopia_05",
+      "page": 2,
+      "text_sha256": "98c0dd36c187437374dc8f1dc0e603597b3f59421ba66eb06f739ce64ec9d2d9",
+      "file": "voice-adventures-v1/98c0dd36c187437374dc.mp3",
+      "sha256": "56e6882cd9dedb45e2bddebce0577a34f4bc07f17db3fb0af60663f416e86956",
+      "qa": {
+        "duration_seconds": 19.248,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.3,
+        "rms_dbfs": -19.767,
+        "trailing_silence_seconds": 0.602,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "大家以为撤掉布就会马上亮，可脚印仍旧灰暗。朱迪用手电照了一小会儿，关灯后，那只脚印只亮了几秒。原来它需要更久的光照，不能像开关一样立刻恢复。": {
+      "spoken": "大家以为撤掉布就会马上亮，可脚印仍旧灰暗。朱迪用手电照了一小会儿，关灯后，那只脚印只亮了几秒。原来它需要更久的光照，不能像开关一样立刻恢复。",
+      "book_id": "adventure_zootopia_05",
+      "page": 3,
+      "text_sha256": "d5d2c6ae4e46bd1f246a36d4281e9617e8b39f575329507e1017c01a63db9df5",
+      "file": "voice-adventures-v1/d5d2c6ae4e46bd1f246a.mp3",
+      "sha256": "4e1a9422fa5cd51efb32c7e3961632d7c94c0452dd6af0339b00002be7cc0934",
+      "qa": {
+        "duration_seconds": 16.176,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.232,
+        "rms_dbfs": -19.525,
+        "trailing_silence_seconds": 0.589,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "尼克把庆典布往旁边移动，朱迪请管理员白天让路标晒够时间。今晚，他们先铺上可回收的反光箭头，再调低临时灯，不让强光照进旁边夜行动物的窗户。新的安排照顾到了每位邻居。": {
+      "spoken": "尼克把庆典布往旁边移动，朱迪请管理员白天让路标晒够时间。今晚，他们先铺上可回收的反光箭头，再调低临时灯，不让强光照进旁边夜行动物的窗户。新的安排照顾到了每位邻居。",
+      "book_id": "adventure_zootopia_05",
+      "page": 4,
+      "text_sha256": "b93ba50491daba8800ee008bce7a71e6d8d7a50a87f2d858ef050ce183fddb24",
+      "file": "voice-adventures-v1/b93ba50491daba8800ee.mp3",
+      "sha256": "7ee450281bbeb22985fbbc73013e616b40f5e07aecf9999e2107d5790b0d4b16",
+      "qa": {
+        "duration_seconds": 19.752,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.799,
+        "rms_dbfs": -19.638,
+        "trailing_silence_seconds": 0.611,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "第二天傍晚，第三段脚印终于和其他路标一起亮起。朱迪从起点走到终点，尼克站在每个转弯处检查，确认矮小动物也能看见完整的绿色路线。每一个脚印都亮得很均匀。": {
+      "spoken": "第二天傍晚，第三段脚印终于和其他路标一起亮起。朱迪从起点走到终点，尼克站在每个转弯处检查，确认矮小动物也能看见完整的绿色路线。每一个脚印都亮得很均匀。",
+      "book_id": "adventure_zootopia_05",
+      "page": 5,
+      "text_sha256": "fdcae75afd09108cd2bc4ffcb02cad3c4c0f45890a93a2fc3dc83411d1f61ebd",
+      "file": "voice-adventures-v1/fdcae75afd09108cd2bc.mp3",
+      "sha256": "45c0e554b8f31b22d0b96d6dd7ffe27bf5d1a6d5f9957b532d12b56534b90797",
+      "qa": {
+        "duration_seconds": 18.048,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.615,
+        "rms_dbfs": -19.262,
+        "trailing_silence_seconds": 0.601,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "管理员在遮阳布上加了“不要盖住路标”的图案。尼克说，脚印没有偷懒，只是白天没吃饱阳光。大家沿着柔和的绿光散步，夜色仍旧安静又舒服。朱迪也轻轻点了点头。": {
+      "spoken": "管理员在遮阳布上加了“不要盖住路标”的图案。尼克说，脚印没有偷懒，只是白天没吃饱阳光。大家沿着柔和的绿光散步，夜色仍旧安静又舒服。朱迪也轻轻点了点头。",
+      "book_id": "adventure_zootopia_05",
+      "page": 6,
+      "text_sha256": "9dd7a696600d7fb257c8b23ce6f68cce0913d8570f83425531bcce08f9d24fac",
+      "file": "voice-adventures-v1/9dd7a696600d7fb257c8.mp3",
+      "sha256": "1745b492c8c7a81fe0015b05f2bab750b8efda91e7d3bf702fc9495ca3820c5c",
+      "qa": {
+        "duration_seconds": 17.496,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.811,
+        "rms_dbfs": -19.22,
+        "trailing_silence_seconds": 0.617,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "清晨，兔奶奶的早餐店收到一个贴着“芝麻面包”的大篮子。她打开盖子，里面竟然空空的，只剩三粒芝麻。今天第一批客人已经在门口排起了小队。兔奶奶着急地看看烤箱。": {
+      "spoken": "清晨，兔奶奶的早餐店收到一个贴着“芝麻面包”的大篮子。她打开盖子，里面竟然空空的，只剩三粒芝麻。今天第一批客人已经在门口排起了小队。兔奶奶着急地看看烤箱。",
+      "book_id": "adventure_zootopia_06",
+      "page": 1,
+      "text_sha256": "e0902f1e694bffe6970603158651609cfae483452210ecf0060051d57ef8b25c",
+      "file": "voice-adventures-v1/e0902f1e694bffe69706.mp3",
+      "sha256": "ae84dd7d8b3b5adcf93389126012abce77ea01e9573c52026391cba8d4ad1334",
+      "qa": {
+        "duration_seconds": 18.096,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.706,
+        "rms_dbfs": -19.918,
+        "trailing_silence_seconds": 0.611,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "朱迪查看送货单，号码和店名都正确。尼克在篮底发现一道圆圆的面粉印，好像曾经放过面包。他们沿送货路线寻找，地上每隔一段就有一两粒芝麻。这条芝麻路一直通向街角。": {
+      "spoken": "朱迪查看送货单，号码和店名都正确。尼克在篮底发现一道圆圆的面粉印，好像曾经放过面包。他们沿送货路线寻找，地上每隔一段就有一两粒芝麻。这条芝麻路一直通向街角。",
+      "book_id": "adventure_zootopia_06",
+      "page": 2,
+      "text_sha256": "13055f007458158519efe65daba1cf57e4ff4f4aa3bf13b2b109884ba8533fbe",
+      "file": "voice-adventures-v1/13055f007458158519ef.mp3",
+      "sha256": "076387de24a54ab4a84bfe247235f3522b56279d2aca6b596a95f7fb8252c573",
+      "qa": {
+        "duration_seconds": 18.912,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.858,
+        "rms_dbfs": -19.027,
+        "trailing_silence_seconds": 0.628,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "线索来到社区活动室，门口摆着两个一模一样的篮子。管理员收到的是餐巾，篮子里却装满香喷喷的面包。原来装车时，两个篮子的外盖被交换了。两个地方都拿错了外盖。": {
+      "spoken": "线索来到社区活动室，门口摆着两个一模一样的篮子。管理员收到的是餐巾，篮子里却装满香喷喷的面包。原来装车时，两个篮子的外盖被交换了。两个地方都拿错了外盖。",
+      "book_id": "adventure_zootopia_06",
+      "page": 3,
+      "text_sha256": "2ba2cd1aae68a90a08baa125acacac050fdd9035978cbcc08a7df98919b2b82c",
+      "file": "voice-adventures-v1/2ba2cd1aae68a90a08ba.mp3",
+      "sha256": "03a62f01465f7f0e38dec7cbcadf6160b542f3e19d3834438305f9670d659a2c",
+      "qa": {
+        "duration_seconds": 18.168,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.552,
+        "rms_dbfs": -19.595,
+        "trailing_silence_seconds": 0.609,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "尼克正要把面包送走，朱迪提醒先核对里面的小标签。面包袋写着早餐店，餐巾捆上写着活动室，内容没有错，只是盖子让送货员看错了目的地。两位伙伴终于确认了原因。": {
+      "spoken": "尼克正要把面包送走，朱迪提醒先核对里面的小标签。面包袋写着早餐店，餐巾捆上写着活动室，内容没有错，只是盖子让送货员看错了目的地。两位伙伴终于确认了原因。",
+      "book_id": "adventure_zootopia_06",
+      "page": 4,
+      "text_sha256": "b3015e1ce6d5b9b0f61d56763ecc82e751a76b7e4a1d205b319335485f9a0974",
+      "file": "voice-adventures-v1/b3015e1ce6d5b9b0f61d.mp3",
+      "sha256": "d98a6b28f4197aface06d8a01fc5c2972f542cfb205a39b0ba21aa71ee3e5750",
+      "qa": {
+        "duration_seconds": 18.024,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.855,
+        "rms_dbfs": -19.441,
+        "trailing_silence_seconds": 0.596,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "他们把面包送回兔奶奶手中，又把餐巾放进正确的篮子。尼克在两个篮身贴上大图案，一个是面包，一个是折好的餐巾，外盖也用短绳固定住。下次一眼就能分清。": {
+      "spoken": "他们把面包送回兔奶奶手中，又把餐巾放进正确的篮子。尼克在两个篮身贴上大图案，一个是面包，一个是折好的餐巾，外盖也用短绳固定住。下次一眼就能分清。",
+      "book_id": "adventure_zootopia_06",
+      "page": 5,
+      "text_sha256": "f9e08c8d6bf8682ada4f80fb3b807d57b647a9457f66cb5eccb0f6bcf7283f9a",
+      "file": "voice-adventures-v1/f9e08c8d6bf8682ada4f.mp3",
+      "sha256": "03a00541efc4d9ac51bf85240a8e1c98dec835d5ff7991bf43ec6959f1e7f92c",
+      "qa": {
+        "duration_seconds": 17.04,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.042,
+        "rms_dbfs": -19.683,
+        "trailing_silence_seconds": 0.613,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "早餐店很快飘出烤芝麻的香味，排队的小客人都拿到了早餐。兔奶奶送给朱迪和尼克一人一个小圆面包。三粒芝麻，帮助他们找回了整篮美味。尼克一口就尝出了芝麻香。": {
+      "spoken": "早餐店很快飘出烤芝麻的香味，排队的小客人都拿到了早餐。兔奶奶送给朱迪和尼克一人一个小圆面包。三粒芝麻，帮助他们找回了整篮美味。尼克一口就尝出了芝麻香。",
+      "book_id": "adventure_zootopia_06",
+      "page": 6,
+      "text_sha256": "357f273e48e191d66bb67721a65fe1b4cc743ef382cc1a2b78b9b9ad696efc8e",
+      "file": "voice-adventures-v1/357f273e48e191d66bb6.mp3",
+      "sha256": "379ffbd66f17d7f56b9ced6eb81b0a4a3c20307512129d978e635b0dba8ba33d",
+      "qa": {
+        "duration_seconds": 17.952,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.872,
+        "rms_dbfs": -19.75,
+        "trailing_silence_seconds": 0.626,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "动物城儿童剧场要演《月亮回家》，可彩排到最后一幕时，圆圆的月亮影偶怎么也找不到。小演员们举着空空的木杆，舞台帷幕后只剩一片黑色。离正式演出只剩一个小时。": {
+      "spoken": "动物城儿童剧场要演《月亮回家》，可彩排到最后一幕时，圆圆的月亮影偶怎么也找不到。小演员们举着空空的木杆，舞台帷幕后只剩一片黑色。离正式演出只剩一个小时。",
+      "book_id": "adventure_zootopia_07",
+      "page": 1,
+      "text_sha256": "8f6969fc83c45ade0edc0e1f72ed91e9bc6d58eb7baba4da829f7dce6d59ecbb",
+      "file": "voice-adventures-v1/8f6969fc83c45ade0edc.mp3",
+      "sha256": "5c678d564f5d6ae8036288160af77dc7e66e6d43aa3e3dd380ab2e3d0487cf76",
+      "qa": {
+        "duration_seconds": 17.712,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.109,
+        "rms_dbfs": -19.575,
+        "trailing_silence_seconds": 0.615,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "朱迪检查道具清单，月亮昨晚还在。尼克注意到工作台上有一圈银色亮粉，亮粉一路延伸到装彩色滤光片的盒子，却没有任何东西掉在地上。这条亮亮的线索很特别。": {
+      "spoken": "朱迪检查道具清单，月亮昨晚还在。尼克注意到工作台上有一圈银色亮粉，亮粉一路延伸到装彩色滤光片的盒子，却没有任何东西掉在地上。这条亮亮的线索很特别。",
+      "book_id": "adventure_zootopia_07",
+      "page": 2,
+      "text_sha256": "8a2dafe60704f35619e3ce2337d7dd033c27d8150391146d79ebbe0b40ff7ede",
+      "file": "voice-adventures-v1/8a2dafe60704f35619e3.mp3",
+      "sha256": "5176ef14c01310f3af270eabc0dc807d56bf2a7bdec5ce3e709bb80354832697",
+      "qa": {
+        "duration_seconds": 17.304,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.339,
+        "rms_dbfs": -19.635,
+        "trailing_silence_seconds": 0.591,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "盒子里叠着红、蓝、黄色薄片，最下面还粘着一片透明圆纸。朱迪把它举到灯前，幕布上出现淡淡的圆影。原来月亮不是丢了，而是和透明滤片贴在一起。尼克终于认出了它。": {
+      "spoken": "盒子里叠着红、蓝、黄色薄片，最下面还粘着一片透明圆纸。朱迪把它举到灯前，幕布上出现淡淡的圆影。原来月亮不是丢了，而是和透明滤片贴在一起。尼克终于认出了它。",
+      "book_id": "adventure_zootopia_07",
+      "page": 3,
+      "text_sha256": "6b53e8a278c6ef33b0de9dca196eef0763b47c46a293fff48f5e69e48d701a93",
+      "file": "voice-adventures-v1/6b53e8a278c6ef33b0de.mp3",
+      "sha256": "8081b55dcd022ccb3b9f74dfdfe1a573f4578e6080e4f330fd7bdb07c0191d8e",
+      "qa": {
+        "duration_seconds": 18.744,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.171,
+        "rms_dbfs": -19.656,
+        "trailing_silence_seconds": 0.609,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "尼克把透明圆片装回木杆，可灯一亮，月亮仍然太淡。小演员有点失望。朱迪在圆片边缘贴一圈深色纸，再让灯光稍微靠近，轮廓终于清清楚楚。淡淡的月亮重新变得醒目。": {
+      "spoken": "尼克把透明圆片装回木杆，可灯一亮，月亮仍然太淡。小演员有点失望。朱迪在圆片边缘贴一圈深色纸，再让灯光稍微靠近，轮廓终于清清楚楚。淡淡的月亮重新变得醒目。",
+      "book_id": "adventure_zootopia_07",
+      "page": 4,
+      "text_sha256": "3e5302bec799219d300fa19e86d67113627ecad7b1c09191d96c296975d8d54c",
+      "file": "voice-adventures-v1/3e5302bec799219d300f.mp3",
+      "sha256": "2de9846ea0cc819d2c6db76b750985bce55f1b93306786feab4628737d9e9412",
+      "qa": {
+        "duration_seconds": 19.296,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.276,
+        "rms_dbfs": -18.892,
+        "trailing_silence_seconds": 0.62,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "最后一幕重新彩排：透明月亮先躲在蓝云后，慢慢露出银色边缘。尼克轻轻转动滤片，月光从蓝色变成暖黄，小演员们顺利说完了告别台词。舞台帷幕后的伙伴都松了口气。": {
+      "spoken": "最后一幕重新彩排：透明月亮先躲在蓝云后，慢慢露出银色边缘。尼克轻轻转动滤片，月光从蓝色变成暖黄，小演员们顺利说完了告别台词。舞台帷幕后的伙伴都松了口气。",
+      "book_id": "adventure_zootopia_07",
+      "page": 5,
+      "text_sha256": "ce5dcda718df0c06818e78f3168529e662c2ea62da39f962b59b85388a842029",
+      "file": "voice-adventures-v1/ce5dcda718df0c06818e.mp3",
+      "sha256": "60ab6b913b890efe21c326dffe1b691c8349c759d455f4e4e8453bf30db5cc97",
+      "qa": {
+        "duration_seconds": 18.864,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.154,
+        "rms_dbfs": -19.237,
+        "trailing_silence_seconds": 0.611,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "正式演出时，观众为会变颜色的月亮鼓掌。朱迪把透明道具放进有月亮图案的独立袋。尼克说，有些东西不是消失了，只是和背景太像，需要换个光看看。小演员们也牢牢记住了。": {
+      "spoken": "正式演出时，观众为会变颜色的月亮鼓掌。朱迪把透明道具放进有月亮图案的独立袋。尼克说，有些东西不是消失了，只是和背景太像，需要换个光看看。小演员们也牢牢记住了。",
+      "book_id": "adventure_zootopia_07",
+      "page": 6,
+      "text_sha256": "fb6efa349251042b9125fb64bf9733c132ee5be59c17d148ae5a28ec0efdb961",
+      "file": "voice-adventures-v1/fb6efa349251042b9125.mp3",
+      "sha256": "a84e325c7ccd1c2bf0b01db01945d2ecd972d52cbb283317ad8fe0bb90b29a8a",
+      "qa": {
+        "duration_seconds": 18.888,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.279,
+        "rms_dbfs": -19.504,
+        "trailing_silence_seconds": 0.626,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "一队第一次来动物城的小候鸟降落在中央车站，准备转去南方湿地。可是站前有三块箭头牌，鸟群一会儿向左、一会儿向右，怎么也找不到集合区。小鸟们急得叽叽喳喳。": {
+      "spoken": "一队第一次来动物城的小候鸟降落在中央车站，准备转去南方湿地。可是站前有三块箭头牌，鸟群一会儿向左、一会儿向右，怎么也找不到集合区。小鸟们急得叽叽喳喳。",
+      "book_id": "adventure_zootopia_08",
+      "page": 1,
+      "text_sha256": "89544c63a10aeb922ebef36b73ff329e5b5cbef5dc36bc4ff99e415d57b598f5",
+      "file": "voice-adventures-v1/89544c63a10aeb922ebe.mp3",
+      "sha256": "e57cfff4bbec64b3e57f8fd5ea6987e166e93190373011158aee4f093df3cea7",
+      "qa": {
+        "duration_seconds": 16.728,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.933,
+        "rms_dbfs": -19.731,
+        "trailing_silence_seconds": 0.625,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "朱迪请鸟群先停在安全的圆形等候线内。尼克查看牌子，蓝箭头指着地铁，绿箭头指着公园，黄色候鸟箭头却被风吹得转向墙壁，难怪谁都看不懂。黄色牌子像在故意捉迷藏。": {
+      "spoken": "朱迪请鸟群先停在安全的圆形等候线内。尼克查看牌子，蓝箭头指着地铁，绿箭头指着公园，黄色候鸟箭头却被风吹得转向墙壁，难怪谁都看不懂。黄色牌子像在故意捉迷藏。",
+      "book_id": "adventure_zootopia_08",
+      "page": 2,
+      "text_sha256": "9c1fa8eea935a2e7136ca2fd64eed465c040cff4079a2c89cb7cab6b19b679be",
+      "file": "voice-adventures-v1/9c1fa8eea935a2e7136c.mp3",
+      "sha256": "accaf915292e316be08a0f9edddc4fff27625b38167466ce0adbe4d916591c96",
+      "qa": {
+        "duration_seconds": 19.176,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.99,
+        "rms_dbfs": -19.536,
+        "trailing_silence_seconds": 0.625,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "他们把黄牌转回南边，可一只小雁说：“我们的领队让我们找太阳图案。”朱迪翻开车站地图，发现新的集合区刚换成芦苇图案，旧通知还没有更新。两个图案说的其实是同一处。": {
+      "spoken": "他们把黄牌转回南边，可一只小雁说：“我们的领队让我们找太阳图案。”朱迪翻开车站地图，发现新的集合区刚换成芦苇图案，旧通知还没有更新。两个图案说的其实是同一处。",
+      "book_id": "adventure_zootopia_08",
+      "page": 3,
+      "text_sha256": "f9b01892971e0edc8b3b764ee6ef1defc11afa299a2122811389663495fc4df6",
+      "file": "voice-adventures-v1/f9b01892971e0edc8b3b.mp3",
+      "sha256": "3c7af8e7883772a0109732ed74f1ee51a195aee7c0580fe1adc70db189c75826",
+      "qa": {
+        "duration_seconds": 18.144,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.91,
+        "rms_dbfs": -19.73,
+        "trailing_silence_seconds": 0.611,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "尼克联系湿地领队确认位置，朱迪在黄牌上同时贴好太阳和芦苇过渡标志。天天空中的云挡住太阳时，小候鸟也能依靠清楚的图案继续认路。这样新旧通知都能看懂。": {
+      "spoken": "尼克联系湿地领队确认位置，朱迪在黄牌上同时贴好太阳和芦苇过渡标志。天天空中的云挡住太阳时，小候鸟也能依靠清楚的图案继续认路。这样新旧通知都能看懂。",
+      "book_id": "adventure_zootopia_08",
+      "page": 4,
+      "text_sha256": "666197d6b575dc7e4dc5aff76e415a7436bd493eaf2041297bd98d128f012ad2",
+      "file": "voice-adventures-v1/666197d6b575dc7e4dc5.mp3",
+      "sha256": "228272bd48c4b02d43a5d9d6feb0ec7433f05abe9cff1662fb957de95fb65c29",
+      "qa": {
+        "duration_seconds": 17.472,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.246,
+        "rms_dbfs": -19.378,
+        "trailing_silence_seconds": 0.611,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "鸟群跟着黄色脚印到达屋顶集合区，工作人员逐只点名，还为飞累的小鸟准备浅水和谷粒。朱迪把会转动的箭头加上锁扣，尼克重新检查三遍。这次谁也没有走错。": {
+      "spoken": "鸟群跟着黄色脚印到达屋顶集合区，工作人员逐只点名，还为飞累的小鸟准备浅水和谷粒。朱迪把会转动的箭头加上锁扣，尼克重新检查三遍。这次谁也没有走错。",
+      "book_id": "adventure_zootopia_08",
+      "page": 5,
+      "text_sha256": "f029314fa62efef7150dfe6dafeab14405afca822ced3b79976777590be3355b",
+      "file": "voice-adventures-v1/f029314fa62efef7150d.mp3",
+      "sha256": "2205c857538c163afdcc48cbe040b84a3005960b89559f0265c0f431dd0a561b",
+      "qa": {
+        "duration_seconds": 17.544,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.501,
+        "rms_dbfs": -19.504,
+        "trailing_silence_seconds": 0.601,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "傍晚，候鸟排成整齐的队伍飞向湿地。最小的雁从空中挥挥翅膀。尼克说，好路标不该考大家猜谜，它要站稳、说清楚，还要让第一次来的人看得懂。朱迪在地面向他们挥手。": {
+      "spoken": "傍晚，候鸟排成整齐的队伍飞向湿地。最小的雁从空中挥挥翅膀。尼克说，好路标不该考大家猜谜，它要站稳、说清楚，还要让第一次来的人看得懂。朱迪在地面向他们挥手。",
+      "book_id": "adventure_zootopia_08",
+      "page": 6,
+      "text_sha256": "dfbd9bdbb2efbd98ea1de2709298d5a4869f491d57fc6bd29c95c237e7da0957",
+      "file": "voice-adventures-v1/dfbd9bdbb2efbd98ea1d.mp3",
+      "sha256": "51972a1dc64126f210665c99790be695959db54c55cc72ce4c51524daf8fe84e",
+      "qa": {
+        "duration_seconds": 18.96,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.739,
+        "rms_dbfs": -19.518,
+        "trailing_silence_seconds": 0.62,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "明明是大晴天，羊阿姨的裁缝店里却滴起“小雨”，一滴一滴落在窗边。朱迪把布料移到干燥处，尼克抬头看见水正从天花板角落慢慢渗下来。缝纫机也只好暂时停下。": {
+      "spoken": "明明是大晴天，羊阿姨的裁缝店里却滴起“小雨”，一滴一滴落在窗边。朱迪把布料移到干燥处，尼克抬头看见水正从天花板角落慢慢渗下来。缝纫机也只好暂时停下。",
+      "book_id": "adventure_zootopia_09",
+      "page": 1,
+      "text_sha256": "e76b8d87b8345a24d45329e241ccf30397d58ad4f8cfe2f7f4f88b8de29ed92e",
+      "file": "voice-adventures-v1/e76b8d87b8345a24d453.mp3",
+      "sha256": "a1667f01e2d25db8578c43cab05c79c0fe173bf63ca8501d63e90e9cff918ad2",
+      "qa": {
+        "duration_seconds": 17.832,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.015,
+        "rms_dbfs": -19.991,
+        "trailing_silence_seconds": 0.602,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "楼上是社区屋顶花园。花盆没有破，排水口也很干净，可自动浇水管还在不停滴水。管理员说定时器每天早晚各开一次，今天却像是已经开了第三次。这个发现让两位伙伴很疑惑。": {
+      "spoken": "楼上是社区屋顶花园。花盆没有破，排水口也很干净，可自动浇水管还在不停滴水。管理员说定时器每天早晚各开一次，今天却像是已经开了第三次。这个发现让两位伙伴很疑惑。",
+      "book_id": "adventure_zootopia_09",
+      "page": 2,
+      "text_sha256": "3c779e3f1734183ec0fdeba7959c98d01da06ccb64b3a0c0b86e59a08dd017a6",
+      "file": "voice-adventures-v1/3c779e3f1734183ec0fd.mp3",
+      "sha256": "40cc698e71502cec0419ef2deb7bbf04b0bb1c5c6b8c47be7d9b96ac2a212a88",
+      "qa": {
+        "duration_seconds": 19.608,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.355,
+        "rms_dbfs": -19.649,
+        "trailing_silence_seconds": 0.615,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "朱迪查看记录，六点和十八点的设置都正常。尼克发现屏幕角落还有一个小闹钟图案，原来上周试用的“节日加水”程序没有关闭，十点又浇了一遍。屏幕上的小秘密被找到了。": {
+      "spoken": "朱迪查看记录，六点和十八点的设置都正常。尼克发现屏幕角落还有一个小闹钟图案，原来上周试用的“节日加水”程序没有关闭，十点又浇了一遍。屏幕上的小秘密被找到了。",
+      "book_id": "adventure_zootopia_09",
+      "page": 3,
+      "text_sha256": "26559a609d96f2bd6adf8203aa16944eb5a8cab157d114ee9948fcb37653eb39",
+      "file": "voice-adventures-v1/26559a609d96f2bd6adf.mp3",
+      "sha256": "25d0d597c86a7108b424cb6013bbfa1d8753fecc8fc97ea6360e654c991e9311",
+      "qa": {
+        "duration_seconds": 18.0,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.94,
+        "rms_dbfs": -19.31,
+        "trailing_silence_seconds": 0.615,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "他们先关掉多余程序，再用量杯接住每排滴头一分钟。靠墙花盆的水最多，托盘已经满了。尼克把多余水舀进水桶，朱迪擦干地面并打开通风窗。每一步都小心不碰伤花根。": {
+      "spoken": "他们先关掉多余程序，再用量杯接住每排滴头一分钟。靠墙花盆的水最多，托盘已经满了。尼克把多余水舀进水桶，朱迪擦干地面并打开通风窗。每一步都小心不碰伤花根。",
+      "book_id": "adventure_zootopia_09",
+      "page": 4,
+      "text_sha256": "94302374354e2cc4e6826cb073a93a06af5695bfd951ea25517b3911852ae658",
+      "file": "voice-adventures-v1/94302374354e2cc4e682.mp3",
+      "sha256": "a3dc5b4c1a6532aa27c945dd9f98401f8fa372a4e2d5d7430423378c48813461",
+      "qa": {
+        "duration_seconds": 18.864,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.306,
+        "rms_dbfs": -19.341,
+        "trailing_silence_seconds": 0.597,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "维修员在花盆下加深接水盘，又装上满水提醒片。朱迪只保留早晚程序，尼克在定时器旁贴上日历卡。大家等了一小时，裁缝店里没有再落下一滴水。大家又检查了墙角和天花板。": {
+      "spoken": "维修员在花盆下加深接水盘，又装上满水提醒片。朱迪只保留早晚程序，尼克在定时器旁贴上日历卡。大家等了一小时，裁缝店里没有再落下一滴水。大家又检查了墙角和天花板。",
+      "book_id": "adventure_zootopia_09",
+      "page": 5,
+      "text_sha256": "aa0cc1e9763ad1d3c84e2f0e3644201fecf2ec0aba6f59700f86d90935ff04c7",
+      "file": "voice-adventures-v1/aa0cc1e9763ad1d3c84e.mp3",
+      "sha256": "677772700a9c132950936abd74f4fefb115d128ca6aae9e10ee8a176d7a31ae0",
+      "qa": {
+        "duration_seconds": 19.56,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.321,
+        "rms_dbfs": -20.036,
+        "trailing_silence_seconds": 0.609,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "羊阿姨把获救的蓝布做成两朵小云送给他们。尼克说，晴天里的小雨不是天气魔法，只是定时器多记了一件事。以后改完设置，还要把临时程序关好。朱迪把两朵小云别在胸前。": {
+      "spoken": "羊阿姨把获救的蓝布做成两朵小云送给他们。尼克说，晴天里的小雨不是天气魔法，只是定时器多记了一件事。以后改完设置，还要把临时程序关好。朱迪把两朵小云别在胸前。",
+      "book_id": "adventure_zootopia_09",
+      "page": 6,
+      "text_sha256": "2f272cae919cf33120a93d22a1802e80c987949858e7ef192306517450a8593c",
+      "file": "voice-adventures-v1/2f272cae919cf33120a9.mp3",
+      "sha256": "286887653af588953aa91be16ea71efacd2338253a97748d85362644945a4646",
+      "qa": {
+        "duration_seconds": 18.504,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.924,
+        "rms_dbfs": -19.957,
+        "trailing_silence_seconds": 0.591,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "动物城东站的乘客一早排成长队，可第一辆公交车停在马路对面。大家低头看站牌，箭头明明指向这边。朱迪让队伍留在人行道内，尼克去查看站牌底座。司机也在对面招招手。": {
+      "spoken": "动物城东站的乘客一早排成长队，可第一辆公交车停在马路对面。大家低头看站牌，箭头明明指向这边。朱迪让队伍留在人行道内，尼克去查看站牌底座。司机也在对面招招手。",
+      "book_id": "adventure_zootopia_10",
+      "page": 1,
+      "text_sha256": "b3d89eb4bb13ece793999f656f8b13c71c2b6f199a6f63f6d52e29fdeecee364",
+      "file": "voice-adventures-v1/b3d89eb4bb13ece79399.mp3",
+      "sha256": "050b1979068d6b09aa07c8b646f64a1f271b9143d18aa17b0dca9b9962a27901",
+      "qa": {
+        "duration_seconds": 19.56,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.687,
+        "rms_dbfs": -19.09,
+        "trailing_silence_seconds": 0.641,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "站牌能为早晚两条路线转向，昨夜大风把锁扣吹松，整块牌子转了半圈。号码没有变，箭头却朝反方向。第一次来这里的乘客自然都站到了错误一侧。风吹过时牌子还轻轻晃动。": {
+      "spoken": "站牌能为早晚两条路线转向，昨夜大风把锁扣吹松，整块牌子转了半圈。号码没有变，箭头却朝反方向。第一次来这里的乘客自然都站到了错误一侧。风吹过时牌子还轻轻晃动。",
+      "book_id": "adventure_zootopia_10",
+      "page": 2,
+      "text_sha256": "4ec1b10487ffde9a8a5468e10d8c9c43236072aa282ba8da65822edb00aa1440",
+      "file": "voice-adventures-v1/4ec1b10487ffde9a8a54.mp3",
+      "sha256": "53beb984946e6b565ae994cd0fff40047e2601a31232b4f3af4284b59675b0eb",
+      "qa": {
+        "duration_seconds": 19.32,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.347,
+        "rms_dbfs": -19.85,
+        "trailing_silence_seconds": 0.634,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "朱迪想把牌子马上转回去，尼克提醒早班还有最后一辆车正在进站。他们先举起临时黄牌，引导乘客走斑马线到对面，再等车辆离开后处理固定锁。每位乘客都安全到达了对面。": {
+      "spoken": "朱迪想把牌子马上转回去，尼克提醒早班还有最后一辆车正在进站。他们先举起临时黄牌，引导乘客走斑马线到对面，再等车辆离开后处理固定锁。每位乘客都安全到达了对面。",
+      "book_id": "adventure_zootopia_10",
+      "page": 3,
+      "text_sha256": "b5dafb7943f55834fc90c9bf74e2a39089661fb0ae85d1ed191b0dbe4bc57c44",
+      "file": "voice-adventures-v1/b5dafb7943f55834fc90.mp3",
+      "sha256": "2cd340972422b5ad9c3757f88d40a930509d5387593028af2ea9c92d68bd8c25",
+      "qa": {
+        "duration_seconds": 18.984,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.657,
+        "rms_dbfs": -19.758,
+        "trailing_silence_seconds": 0.612,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "维修员换上新锁扣，朱迪按照路线图调整角度。尼克站在远处，用长颈鹿、兔子和小老鼠三种高度查看，发现低处乘客会被一盆高植物挡住箭头。这个角度很容易被忽略。": {
+      "spoken": "维修员换上新锁扣，朱迪按照路线图调整角度。尼克站在远处，用长颈鹿、兔子和小老鼠三种高度查看，发现低处乘客会被一盆高植物挡住箭头。这个角度很容易被忽略。",
+      "book_id": "adventure_zootopia_10",
+      "page": 4,
+      "text_sha256": "b0bea569dee2f8176f2cd582b55b0f08d87785ec0e5200a2d9abef9a1f50542f",
+      "file": "voice-adventures-v1/b0bea569dee2f8176f2c.mp3",
+      "sha256": "155359ec3842962647510f06f2691beb33b467bf0b11672d550b15a6940bf2f7",
+      "qa": {
+        "duration_seconds": 18.36,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.883,
+        "rms_dbfs": -19.321,
+        "trailing_silence_seconds": 0.606,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "他们把花盆移到休息区，并在站牌两面加上日出和月亮图案。朱迪请一位不熟悉路线的游客试着选择，游客很快找到正确站台，锁扣也没有再晃动。所有线索终于清楚了。": {
+      "spoken": "他们把花盆移到休息区，并在站牌两面加上日出和月亮图案。朱迪请一位不熟悉路线的游客试着选择，游客很快找到正确站台，锁扣也没有再晃动。所有线索终于清楚了。",
+      "book_id": "adventure_zootopia_10",
+      "page": 5,
+      "text_sha256": "57176f223ea6b4cd35fb2601113d97cbfaf86167b9b45c32483dcb0accf9f961",
+      "file": "voice-adventures-v1/57176f223ea6b4cd35fb.mp3",
+      "sha256": "8e3a6280d061c73754434b29f65b9736d3a205dc969d832f5e90a9eeadd25e17",
+      "qa": {
+        "duration_seconds": 17.592,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -1.587,
+        "rms_dbfs": -19.82,
+        "trailing_silence_seconds": 0.615,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "下一班车准时停靠，队伍顺利上车。尼克说，箭头只转了半圈，却让大家多走了不少路。清楚的方向不只是画对，还要固定好，并从不同高度都看得见。朱迪赞成地点点头。": {
+      "spoken": "下一班车准时停靠，队伍顺利上车。尼克说，箭头只转了半圈，却让大家多走了不少路。清楚的方向不只是画对，还要固定好，并从不同高度都看得见。朱迪赞成地点点头。",
+      "book_id": "adventure_zootopia_10",
+      "page": 6,
+      "text_sha256": "6831e79e24104e5cee5689186941694594fc6813544235b770b08a905ee84f16",
+      "file": "voice-adventures-v1/6831e79e24104e5cee56.mp3",
+      "sha256": "d7e2c045a3dc9608b1d939dc980687d53889eac5f4b76d5df4778d1fc61ab5ae",
+      "qa": {
+        "duration_seconds": 18.336,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.974,
+        "rms_dbfs": -20.056,
+        "trailing_silence_seconds": 0.596,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    }
+  },
+  "book_count": 30
+}

@@ -1,0 +1,437 @@
+/* 果粒橙小朋友 · 六款独立手机小游戏 */
+.ng-game {
+  --ng-ink:#39483f;
+  --ng-green:#4fac79;
+  --ng-yellow:#ffd969;
+  --ng-coral:#f48b7d;
+  --ng-sky:#dff4ff;
+  min-width:0;
+  overflow:hidden;
+  color:var(--ng-ink);
+}
+
+.ng-game button {
+  font-family:inherit;
+  font-weight:inherit;
+  line-height:1.15;
+  -webkit-tap-highlight-color:transparent;
+}
+
+.ng-head {
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:12px;
+  text-align:left;
+}
+
+.ng-head > div:first-child { min-width:0; }
+.ng-head h2 { margin:0 0 4px; font-size:clamp(22px,6vw,29px); line-height:1.18; }
+.ng-head p { margin:0; color:#6b756e; font-size:15px; font-weight:750; line-height:1.45; }
+
+.ng-round-dots {
+  display:flex;
+  flex:0 0 auto;
+  align-items:center;
+  gap:5px;
+  padding:4px;
+  border-radius:18px;
+  background:#f4f0e9;
+}
+
+.ng-round-dots i {
+  display:grid;
+  place-items:center;
+  width:29px;
+  height:29px;
+  border-radius:50%;
+  background:#fff;
+  color:#8a918c;
+  font-size:13px;
+  font-style:normal;
+  font-weight:900;
+}
+
+.ng-round-dots i.now { background:var(--ng-yellow); color:#5e501b; box-shadow:0 3px 8px rgba(176,133,14,.2); }
+.ng-round-dots i.done { background:#ccefdc; color:#26704e; }
+
+.ng-message {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:48px;
+  margin:11px 0 0;
+  padding:8px 13px;
+  border-radius:17px;
+  background:#edf8f2;
+  color:#2f7053;
+  font-size:17px;
+  font-weight:900;
+  line-height:1.35;
+}
+
+.ng-message.bad { background:#fff1d5; color:#795f20; animation:ngNudge .32s ease; }
+
+.ng-drag-source,
+.ng-bunny-player,
+.ng-scratch-cover {
+  touch-action:none;
+  user-select:none;
+  -webkit-user-select:none;
+}
+
+.ng-drag-source {
+  position:relative;
+  min-width:56px;
+  min-height:56px;
+  border:3px solid transparent;
+  box-shadow:0 7px 14px rgba(71,61,46,.14);
+  transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+
+.ng-drag-source.selected {
+  border-color:#ffbd35;
+  box-shadow:0 0 0 4px rgba(255,208,85,.3),0 8px 17px rgba(71,61,46,.15);
+  animation:ngSelect 1s ease-in-out infinite;
+}
+
+.ng-drag-source.dragging { transition:none; filter:drop-shadow(0 12px 9px rgba(62,49,30,.2)); }
+.ng-target { min-width:48px; min-height:48px; }
+
+.ng-source-tray {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  min-height:89px;
+  margin-top:11px;
+  padding:10px;
+  border:3px dashed #dfd6c7;
+  border-radius:22px;
+  background:#fffaf1;
+}
+
+.ng-tray-done { font-size:19px; font-weight:900; color:#388160; }
+
+/* 小花浇水 */
+.ng-garden-board {
+  position:relative;
+  min-height:350px;
+  overflow:hidden;
+  padding:76px 10px 12px;
+  border-radius:27px;
+  background:linear-gradient(#cdeeff 0 45%,#dff4bc 45% 72%,#a7db78 72%);
+  box-shadow:inset 0 -8px 0 rgba(96,154,67,.12);
+}
+
+.ng-garden-board::before,
+.ng-garden-board::after {
+  position:absolute;
+  content:'';
+  border-radius:50%;
+  background:rgba(255,255,255,.58);
+}
+
+.ng-garden-board::before { width:64px; height:25px; left:24%; top:27px; box-shadow:25px 8px 0 rgba(255,255,255,.58); }
+.ng-garden-board::after { width:42px; height:18px; right:15%; top:50px; box-shadow:18px 6px 0 rgba(255,255,255,.58); }
+.ng-cloud { position:absolute; top:8px; right:18px; font-size:42px; opacity:.82; }
+
+.ng-water-can {
+  position:absolute;
+  z-index:3;
+  top:14px;
+  left:16px;
+  display:grid;
+  place-items:center;
+  width:76px;
+  height:70px;
+  border-radius:22px;
+  background:#effffb;
+}
+
+.ng-water-can-art { display:grid; place-items:center; width:58px; height:50px; transform:rotate(-7deg); pointer-events:none; }
+.ng-watering-can-svg { display:block; width:58px; height:47px; overflow:visible; filter:drop-shadow(0 3px 2px rgba(38,112,110,.18)); }
+.ng-can-handle { fill:none; stroke:#2c9694; stroke-width:7; stroke-linecap:round; }
+.ng-can-body { fill:#72d4c7; stroke:#238d8d; stroke-width:2.8; stroke-linejoin:round; }
+.ng-can-top { fill:#a4e8dd; stroke:#238d8d; stroke-width:2.8; stroke-linejoin:round; }
+.ng-can-spout { fill:#8de0d2; stroke:#238d8d; stroke-width:2.8; stroke-linecap:round; stroke-linejoin:round; }
+.ng-can-shine { fill:none; stroke:#eafffb; stroke-width:3; stroke-linecap:round; opacity:.9; }
+.ng-can-water { fill:#4baee8; stroke:#318eca; stroke-width:1; }
+.ng-water-can i { position:absolute; right:-8px; bottom:-10px; font-size:26px; font-style:normal; animation:ngPoint 1.15s ease-in-out infinite; }
+
+.ng-flower-grid {
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px;
+}
+
+.ng-flower {
+  position:relative;
+  display:flex;
+  min-width:0;
+  min-height:116px;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:3px;
+  padding:8px 4px;
+  border:3px solid rgba(255,255,255,.7);
+  border-radius:23px;
+  background:rgba(255,255,255,.68);
+}
+
+.ng-flower span { font-size:49px; line-height:1; }
+.ng-flower b { font-size:14px; }
+.ng-flower i { position:absolute; right:9px; top:7px; font-size:24px; font-style:normal; }
+.ng-flower.active { border-color:#4d9ee9; box-shadow:0 0 0 5px rgba(90,172,238,.23); animation:ngTarget 1.15s ease-in-out infinite; }
+.ng-flower.done { border-color:#72c892; background:#f5ffed; }
+.ng-flower.done span { animation:ngBloom .42s ease both; }
+
+/* 拼好小动物 */
+.ng-puzzle-stage {
+  position:relative;
+  display:grid;
+  place-items:center;
+  min-height:268px;
+  padding:18px 9px;
+  overflow:hidden;
+  border-radius:27px;
+  background:linear-gradient(150deg,#e8f7ff,#fff5d5);
+}
+
+.ng-puzzle-slots {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  align-items:end;
+  gap:8px;
+  width:100%;
+}
+
+.ng-puzzle-slot,
+.ng-puzzle-piece {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  min-width:0;
+  border-radius:24px;
+}
+
+.ng-puzzle-slot {
+  min-height:168px;
+  padding:7px 3px;
+  border:4px dashed color-mix(in srgb,var(--ng-piece) 80%,#6d746f);
+  background:color-mix(in srgb,var(--ng-piece) 20%,white);
+  color:#647169;
+}
+
+.ng-puzzle-slot span { font-size:51px; }
+.ng-puzzle-slot .ng-piece-hint { opacity:.32; filter:grayscale(1); }
+.ng-puzzle-slot b { font-size:13px; }
+.ng-puzzle-slot.done { border-style:solid; background:#fff; }
+.ng-shape-head { border-radius:48% 48% 38% 38%; }
+.ng-shape-body { border-radius:48% 48% 30% 30%; }
+.ng-shape-feet { border-radius:42% 42% 24px 24px; }
+.ng-puzzle-piece { width:76px; height:68px; padding:4px; background:color-mix(in srgb,var(--ng-piece) 32%,white); }
+.ng-puzzle-piece span { font-size:34px; line-height:1; }
+.ng-puzzle-piece b { font-size:11px; }
+.ng-puzzle-finished { position:absolute; z-index:3; inset:0; display:none; place-items:center; background:rgba(255,252,237,.88); font-size:112px; }
+.ng-puzzle-finished.show { display:grid; animation:ngBloom .45s ease both; }
+
+/* 便当小厨师 */
+.ng-recipe {
+  margin-bottom:10px;
+  padding:9px 12px;
+  border-radius:20px;
+  background:#fff2bf;
+}
+
+.ng-recipe small { display:block; margin-bottom:4px; color:#856922; font-weight:850; }
+.ng-recipe div { display:flex; justify-content:center; gap:14px; }
+.ng-recipe span { display:grid; place-items:center; width:47px; height:47px; border-radius:15px; background:#fff; font-size:30px; }
+
+.ng-bento-box {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:7px;
+  min-height:202px;
+  padding:15px;
+  border:9px solid #eaa85d;
+  border-radius:30px;
+  background:#8b572f;
+  box-shadow:inset 0 0 0 3px #ffd69a,0 9px 17px rgba(113,72,34,.18);
+}
+
+.ng-bento-cell {
+  display:flex;
+  min-width:0;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  border:3px dashed #d4cbbb;
+  border-radius:22px;
+  background:#fffdf6;
+}
+
+.ng-bento-cell span { font-size:43px; line-height:1; }
+.ng-bento-cell:not(.done) span { opacity:.28; filter:grayscale(1); }
+.ng-bento-cell b { display:grid; place-items:center; width:25px; height:25px; border-radius:50%; background:#f1e9dc; color:#7d7467; font-size:13px; }
+.ng-bento-cell.done { border-style:solid; border-color:#78c996; background:#f5fff1; }
+.ng-food { display:grid; place-items:center; width:68px; height:68px; border-radius:21px; background:#fff; font-size:41px; }
+
+/* 小兔找家 */
+.ng-bunny { position:relative; }
+.ng-bunny-score { display:inline-flex; align-items:center; gap:4px; min-height:42px; margin:0 auto 8px; padding:6px 15px; border-radius:18px; background:#fff0bc; color:#745b18; font-size:18px; font-weight:850; }
+
+.ng-bunny-board {
+  position:relative;
+  width:min(100%,430px);
+  aspect-ratio:1 / 1;
+  margin:0 auto;
+  overflow:hidden;
+  border:4px solid #fff;
+  border-radius:29px;
+  background:radial-gradient(circle at 15% 16%,#fff 0 2%,transparent 2.3%),linear-gradient(150deg,#cff0ff 0 38%,#dff1bc 38% 100%);
+  box-shadow:0 8px 19px rgba(66,100,72,.15);
+  touch-action:none;
+}
+
+.ng-bunny-board::after { position:absolute; left:0; right:0; bottom:0; height:25%; content:''; background:linear-gradient(transparent,rgba(83,167,75,.17)); pointer-events:none; }
+.ng-bunny-path { position:absolute; inset:0; width:100%; height:100%; overflow:visible; }
+.ng-bunny-path path { fill:none; stroke:#f2d399; stroke-width:9; stroke-linecap:round; stroke-dasharray:3 2; vector-effect:non-scaling-stroke; }
+
+.ng-carrot,
+.ng-bunny-home,
+.ng-bunny-player {
+  position:absolute;
+  z-index:3;
+  display:grid;
+  place-items:center;
+  width:54px;
+  height:54px;
+  padding:0;
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  font-size:34px;
+}
+
+.ng-carrot { background:#fff9dc; box-shadow:0 4px 12px rgba(83,74,43,.14); }
+.ng-carrot.picked { opacity:0; pointer-events:none; transform:translate(-50%,-50%) scale(.2); }
+.ng-bunny-home { z-index:2; width:62px; height:62px; background:rgba(255,255,255,.74); font-size:38px; }
+.ng-bunny-home.ready { box-shadow:0 0 0 6px rgba(255,205,67,.38); animation:ngHomePulse 1.1s ease-in-out infinite; }
+.ng-bunny-player { z-index:5; width:64px; height:64px; background:#fff; box-shadow:0 6px 15px rgba(66,62,52,.22); cursor:grab; }
+.ng-bunny-player i { position:absolute; right:-9px; bottom:-10px; font-size:24px; font-style:normal; }
+.ng-bunny-player.selected { box-shadow:0 0 0 5px rgba(255,201,55,.46),0 8px 16px rgba(66,62,52,.2); }
+.ng-bunny-player.dragging { cursor:grabbing; transform:translate(-50%,-50%) scale(1.08); }
+
+/* 彩虹擦擦乐 */
+.ng-scratch-progress { width:min(100%,480px); height:13px; margin:0 auto 9px; overflow:hidden; border-radius:99px; background:#e5e8e7; }
+.ng-scratch-progress span { display:block; width:0; height:100%; border-radius:inherit; background:linear-gradient(90deg,#ed6f77,#f3be4f,#6dcc94,#67aef0); transition:width .18s ease; }
+
+.ng-scratch-board {
+  position:relative;
+  width:min(100%,480px);
+  aspect-ratio:3 / 2;
+  margin:0 auto;
+  overflow:hidden;
+  border:5px solid #fff;
+  border-radius:27px;
+  background:#dbe6ea;
+  box-shadow:0 9px 20px rgba(60,71,77,.16);
+}
+
+.ng-scratch-board canvas { position:absolute; inset:0; display:block; width:100%; height:100%; }
+.ng-scratch-cover { z-index:2; cursor:crosshair; transition:opacity .42s ease; }
+.ng-scratch-cover.revealed { opacity:0; pointer-events:none; }
+.ng-scratch-hand { position:absolute; z-index:3; right:12%; bottom:12%; font-size:40px; pointer-events:none; animation:ngScratch 1.5s ease-in-out infinite; }
+.ng-scratch-board.started .ng-scratch-hand { opacity:0; }
+
+/* 动物喂饭 */
+.ng-feed-stage {
+  display:grid;
+  place-items:center;
+  min-height:258px;
+  padding:18px;
+  border-radius:28px;
+  background:linear-gradient(#dff3ff 0 60%,#dcedc0 60%);
+}
+
+.ng-animal-target {
+  position:relative;
+  display:flex;
+  width:min(100%,230px);
+  min-height:205px;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  border:4px solid #fff;
+  border-radius:40% 40% 27px 27px;
+  background:rgba(255,255,255,.76);
+  box-shadow:0 9px 18px rgba(60,82,70,.13);
+}
+
+.ng-animal-target span { font-size:95px; line-height:1; }
+.ng-animal-target b { font-size:18px; }
+.ng-animal-target i { position:absolute; right:17px; top:14px; color:#ec7a87; font-size:27px; font-style:normal; animation:ngTarget 1.1s ease-in-out infinite; }
+.ng-animal-target .ng-food-wish { display:grid; place-items:center; width:52px; height:48px; right:8px; top:8px; border:2px solid #e9dcb4; border-radius:18px 18px 18px 4px; background:#fff7db; font-size:32px; box-shadow:0 3px 8px rgba(110,90,35,.1); }
+.ng-animal-target.done { border-color:#75ca98; background:#f4ffed; }
+.ng-animal-target.done span { animation:ngBloom .42s ease both; }
+.ng-food-choices { background:#fff7df; border-color:#efd59b; }
+
+@media (max-width:400px) {
+  .ng-head { flex-direction:column; align-items:stretch; margin-bottom:9px; }
+  .ng-head p { font-size:14px; }
+  .ng-round-dots { align-self:flex-start; }
+  .ng-round-dots i { width:27px; height:27px; }
+  .ng-garden-board { min-height:330px; padding-left:7px; padding-right:7px; }
+  .ng-flower-grid { gap:7px; }
+  .ng-flower { min-height:108px; }
+  .ng-puzzle-stage { min-height:229px; padding:13px 5px; }
+  .ng-puzzle-slots { gap:5px; }
+  .ng-puzzle-slot { min-height:145px; border-width:3px; }
+  .ng-puzzle-slot span { font-size:43px; }
+  .ng-puzzle-slot b { font-size:11px; }
+  .ng-source-tray { gap:7px; padding:8px 6px; }
+  .ng-puzzle-piece { width:67px; height:63px; }
+  .ng-bento-box { min-height:174px; padding:10px; border-width:7px; }
+  .ng-bento-cell span { font-size:36px; }
+  .ng-food { width:62px; height:62px; font-size:37px; }
+  .ng-carrot { width:49px; height:49px; font-size:31px; }
+  .ng-bunny-home { width:57px; height:57px; font-size:35px; }
+  .ng-bunny-player { width:59px; height:59px; }
+  .ng-feed-stage { min-height:226px; padding:12px; }
+  .ng-animal-target { min-height:182px; }
+  .ng-animal-target span { font-size:81px; }
+  .ng-message { min-height:46px; font-size:15px; }
+}
+
+@media (max-width:330px) {
+  .ng-game { margin-left:-2px; margin-right:-2px; }
+  .ng-head h2 { font-size:21px; }
+  .ng-garden-board { min-height:315px; }
+  .ng-flower span { font-size:44px; }
+  .ng-puzzle-slot { min-height:136px; }
+  .ng-puzzle-piece { width:61px; }
+  .ng-recipe span { width:43px; height:43px; font-size:27px; }
+  .ng-bento-box { min-height:164px; padding:8px; }
+}
+
+@keyframes ngPoint { 50% { transform:translate(4px,-5px) rotate(-7deg); } }
+@keyframes ngTarget { 50% { transform:scale(1.035); } }
+@keyframes ngHomePulse { 0%,100% { transform:translate(-50%,-50%) scale(1); } 50% { transform:translate(-50%,-50%) scale(1.035); } }
+@keyframes ngBloom { from { opacity:.25; transform:scale(.55); } to { opacity:1; transform:scale(1); } }
+@keyframes ngSelect { 50% { box-shadow:0 0 0 6px rgba(255,208,85,.2),0 8px 17px rgba(71,61,46,.15); } }
+@keyframes ngNudge { 35% { transform:translateX(-4px); } 70% { transform:translateX(4px); } }
+@keyframes ngScratch { 50% { transform:translate(-44px,-24px) rotate(-8deg); } }
+
+@media (prefers-reduced-motion:reduce) {
+  .ng-game *,
+  .ng-game *::before,
+  .ng-game *::after { animation:none!important; transition:none!important; }
+}
