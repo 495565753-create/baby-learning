@@ -1,0 +1,397 @@
+{
+  "created_at": "2026-10-04T21:34:24+08:00",
+  "generator": "Microsoft Edge neural TTS",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "-8%",
+  "pitch": "+0Hz",
+  "source": "books-tablet-stories.js",
+  "source_sha256": "99fd6b731449e0e40cca26ebf619230e721a646d0c4d8b5faa2d93789842309b",
+  "book_count": 4,
+  "text_count": 20,
+  "objective_qa_passed": true,
+  "files": {
+    "猪妈妈请大家先停一停，听雨点自己唱。小盆是慢慢的“滴、滴”，浅盘是轻轻的“答答”。佩奇跟着小盆拍两下，乔治等她拍完，再回应一下。他们给声音留出了一小段安静的空隙。": {
+      "spoken": "猪妈妈请大家先停一停，听雨点自己唱。小盆是慢慢的“滴、滴”，浅盘是轻轻的“答答”。佩奇跟着小盆拍两下，乔治等她拍完，再回应一下。他们给声音留出了一小段安静的空隙。",
+      "text_sha256": "bd8be78a9d1a5e98c63d83dc971c453a97f8a5aa25a95134ff84401b01ee67fe",
+      "file": "voice-tablet-stories-v1/bd8be78a9d1a5e98c63d.mp3",
+      "book_id": "tablet_story_peppa_rain_band",
+      "page": 3,
+      "sha256": "ce2b42de75d2f87dc01181f4389d57fdb2149ccd8f46ad9dfc950d2db721bfbe",
+      "qa": {
+        "duration_seconds": 18.24,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.381,
+        "rms_dbfs": -20.449,
+        "trailing_silence_seconds": 0.605,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "雨点轻轻落在窗外，佩奇和乔治不能去草地玩了。乔治抱着小恐龙，望着门口叹气。佩奇忽然听见屋檐下滴滴答答的声音：“我们把雨声变成一首歌吧！”猪妈妈笑着打开了通向有顶小门廊的门。": {
+      "spoken": "雨点轻轻落在窗外，佩奇和乔治不能去草地玩了。乔治抱着小恐龙，望着门口叹气。佩奇忽然听见屋檐下滴滴答答的声音：“我们把雨声变成一首歌吧！”猪妈妈笑着打开了通向有顶小门廊的门。",
+      "text_sha256": "08c01cf7289bc6cc79e9f27b017853ee80b98f90b324620dd2249ca974bdfd77",
+      "file": "voice-tablet-stories-v1/08c01cf7289bc6cc79e9.mp3",
+      "book_id": "tablet_story_peppa_rain_band",
+      "page": 1,
+      "sha256": "50b2ddbcaafccb5fb76ca444298d783003c62623ae4a17082d3d1664354af6aa",
+      "qa": {
+        "duration_seconds": 20.232,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.085,
+        "rms_dbfs": -19.481,
+        "trailing_silence_seconds": 0.6,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "门廊里摆着一个小盆和一个浅盘。雨水从屋檐落下来，敲出两种不同的声音。佩奇拿着空纸盒加入，乔治也拍起小手，可是，大家同时发出声音，谁都听不清雨点了。小恐龙像在一团咚咚声里摇头。": {
+      "spoken": "门廊里摆着一个小盆和一个浅盘。雨水从屋檐落下来，敲出两种不同的声音。佩奇拿着空纸盒加入，乔治也拍起小手，可是，大家同时发出声音，谁都听不清雨点了。小恐龙像在一团咚咚声里摇头。",
+      "text_sha256": "d730a326e46fae75b942a963f68590cb7d90c3e8be0f01398c7fcbc89bd6dcbc",
+      "file": "voice-tablet-stories-v1/d730a326e46fae75b942.mp3",
+      "book_id": "tablet_story_peppa_rain_band",
+      "page": 2,
+      "sha256": "67e43ba9710ef483515a5384eaa1f531a4a08e4d17487a9f39ab999b4ad37a74",
+      "qa": {
+        "duration_seconds": 20.904,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -0.684,
+        "rms_dbfs": -19.704,
+        "trailing_silence_seconds": 0.605,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "猪妈妈把这段音乐录了下来。傍晚，雨停了，窗边却又响起上午的小合奏。乔治给小恐龙盖好柔软的小毯子，佩奇轻轻哼着旋律。原来留一点安静，认真听一听，平常的雨天也能收藏温柔的快乐。": {
+      "spoken": "猪妈妈把这段音乐录了下来。傍晚，雨停了，窗边却又响起上午的小合奏。乔治给小恐龙盖好柔软的小毯子，佩奇轻轻哼着旋律。原来留一点安静，认真听一听，平常的雨天也能收藏温柔的快乐。",
+      "text_sha256": "ffcbab86d11aa0e4eed07e7facacce3c484220057101d3d7da679ba692a4bddc",
+      "file": "voice-tablet-stories-v1/ffcbab86d11aa0e4eed0.mp3",
+      "book_id": "tablet_story_peppa_rain_band",
+      "page": 5,
+      "sha256": "36a352d6c2d6734cf18ab0dc7eb7b70424fd439ff06d83e909fd4f3e218737a4",
+      "qa": {
+        "duration_seconds": 20.52,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -1.568,
+        "rms_dbfs": -19.903,
+        "trailing_silence_seconds": 0.605,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "雨忽然小了，刚刚的节拍也变慢了。乔治还拍得很快，佩奇便指指屋檐，和他一起重新听。两个人放慢小手，空纸盒轻敲一下，浅盘的雨声再跟上。小乐队不用赶路，换个速度也很好听。": {
+      "spoken": "雨忽然小了，刚刚的节拍也变慢了。乔治还拍得很快，佩奇便指指屋檐，和他一起重新听。两个人放慢小手，空纸盒轻敲一下，浅盘的雨声再跟上。小乐队不用赶路，换个速度也很好听。",
+      "text_sha256": "1d2adf27396cef22477d74ef83847d6902c4449427a6216a082a89446569ace8",
+      "file": "voice-tablet-stories-v1/1d2adf27396cef22477d.mp3",
+      "book_id": "tablet_story_peppa_rain_band",
+      "page": 4,
+      "sha256": "f150852a830af2e61d9fb12082d08f16422c616d76bfca36342ccbdb6e98fa23",
+      "qa": {
+        "duration_seconds": 19.416,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.177,
+        "rms_dbfs": -20.419,
+        "trailing_silence_seconds": 0.58,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "周日下午，佩奇把几只软枕头摆在地毯上，想给玩偶们建一座小城。乔治让恐龙住蓝房子，小熊住黄房子。可是房子挤在一起，小熊的纸片小车刚出门，就碰到了恐龙家的门口，谁也走不过去。": {
+      "spoken": "周日下午，佩奇把几只软枕头摆在地毯上，想给玩偶们建一座小城。乔治让恐龙住蓝房子，小熊住黄房子。可是房子挤在一起，小熊的纸片小车刚出门，就碰到了恐龙家的门口，谁也走不过去。",
+      "text_sha256": "227fbc71c1938cb66d819c2d5622a469ebfe4fc148a493b63d10a4e1b1e9c223",
+      "file": "voice-tablet-stories-v1/227fbc71c1938cb66d81.mp3",
+      "book_id": "tablet_story_peppa_pillow_town",
+      "page": 1,
+      "sha256": "f28cb04ec42d9a93adbac41e33fe4906f79d93883473ba47e960375c2d34f52d",
+      "qa": {
+        "duration_seconds": 19.968,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.558,
+        "rms_dbfs": -19.9,
+        "trailing_silence_seconds": 0.603,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "佩奇先把所有枕头往外推，路果然宽了一点，可红房子又挡住了沙发边的通道。乔治抱着小熊绕来绕去，还是回到了原来的地方。他们没有急着重建，而是坐下来，看看每座房子朝着哪里。": {
+      "spoken": "佩奇先把所有枕头往外推，路果然宽了一点，可红房子又挡住了沙发边的通道。乔治抱着小熊绕来绕去，还是回到了原来的地方。他们没有急着重建，而是坐下来，看看每座房子朝着哪里。",
+      "text_sha256": "3cd4c72101ac93e34ffd5502d94a238c9442d208f694da782602a8e50aa98c54",
+      "file": "voice-tablet-stories-v1/3cd4c72101ac93e34ffd.mp3",
+      "book_id": "tablet_story_peppa_pillow_town",
+      "page": 2,
+      "sha256": "432cc73fe4e0aff2d9ef46fecfbe7fe0cefaddbeca92dd6825033bc6e038292f",
+      "qa": {
+        "duration_seconds": 18.936,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.884,
+        "rms_dbfs": -20.086,
+        "trailing_silence_seconds": 0.607,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "猪妈妈拿来几张旧画纸。佩奇把纸铺在枕头之间，画出一条连起来的弯弯小路。乔治把每座房子的门转向小路，再用圆形纸片表示小广场。恐龙终于能从家门口，慢慢走到小熊家做客了。": {
+      "spoken": "猪妈妈拿来几张旧画纸。佩奇把纸铺在枕头之间，画出一条连起来的弯弯小路。乔治把每座房子的门转向小路，再用圆形纸片表示小广场。恐龙终于能从家门口，慢慢走到小熊家做客了。",
+      "text_sha256": "0e3536ec52acd5a58f56ac2e7f7e719a05157683e816aa715ca988df05434f41",
+      "file": "voice-tablet-stories-v1/0e3536ec52acd5a58f56.mp3",
+      "book_id": "tablet_story_peppa_pillow_town",
+      "page": 3,
+      "sha256": "8fec2f1e68d6486d8202461fe87cad7905589fbb0150113950e1df4c3eeded4c",
+      "qa": {
+        "duration_seconds": 19.968,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.036,
+        "rms_dbfs": -19.833,
+        "trailing_silence_seconds": 0.611,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "小广场旁还空着一块地方。乔治想放好多玩具，佩奇却发现大家会没有地方转身。他们挑出一棵小树和一张玩偶长椅，把其余玩具收回篮子。留下的空地，让纸片小车也能轻松转一个弯。": {
+      "spoken": "小广场旁还空着一块地方。乔治想放好多玩具，佩奇却发现大家会没有地方转身。他们挑出一棵小树和一张玩偶长椅，把其余玩具收回篮子。留下的空地，让纸片小车也能轻松转一个弯。",
+      "text_sha256": "02843c911466153f4687486c614d2595eaaa389ae8c8d03c9814fa478d1fd495",
+      "file": "voice-tablet-stories-v1/02843c911466153f4687.mp3",
+      "book_id": "tablet_story_peppa_pillow_town",
+      "page": 4,
+      "sha256": "740074d1b08e7c341cfb4eeadd150966d859a4a5bc307337ffe94002e1e26c78",
+      "qa": {
+        "duration_seconds": 19.704,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.387,
+        "rms_dbfs": -20.352,
+        "trailing_silence_seconds": 0.606,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "晚上收拾前，小熊沿着小路去看恐龙，两位邻居在广场上分享一枚想象中的饼干。佩奇把小城画进画册，乔治贴了一颗星星。以后再建新地方，他们会先留出通路，也留出让朋友相遇的小空间。": {
+      "spoken": "晚上收拾前，小熊沿着小路去看恐龙，两位邻居在广场上分享一枚想象中的饼干。佩奇把小城画进画册，乔治贴了一颗星星。以后再建新地方，他们会先留出通路，也留出让朋友相遇的小空间。",
+      "text_sha256": "81fd3e096fbbe554a5103df530c01b8b399d6637cd6fb9607729b999287cd91d",
+      "file": "voice-tablet-stories-v1/81fd3e096fbbe554a510.mp3",
+      "book_id": "tablet_story_peppa_pillow_town",
+      "page": 5,
+      "sha256": "74d83c3923fc72f98309fb43473bc4007c3ccb3453851d4aefe59366a7995a07",
+      "qa": {
+        "duration_seconds": 19.872,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.456,
+        "rms_dbfs": -19.627,
+        "trailing_silence_seconds": 0.595,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "冒险湾准备办一场小小野餐，阿奇和小砾搬来一块特别的垫子。垫子是好多软拼图片拼成的，上面有树、小河和云朵。大家想把它拼成一张完整的风景，可是，他们刚打开篮子，图案就像迷路一样散在草地上。": {
+      "spoken": "冒险湾准备办一场小小野餐，阿奇和小砾搬来一块特别的垫子。垫子是好多软拼图片拼成的，上面有树、小河和云朵。大家想把它拼成一张完整的风景，可是，他们刚打开篮子，图案就像迷路一样散在草地上。",
+      "text_sha256": "c775dddf36d7864c660708ca765c15c093fde5bbd5ad8a5fe5bcd3e3a3fe3576",
+      "file": "voice-tablet-stories-v1/c775dddf36d7864c6607.mp3",
+      "book_id": "tablet_story_paw_picnic_puzzle",
+      "page": 1,
+      "sha256": "952815e6055d4f1aa29a3056a07d1688fa66b27b1ef98f5993cfc207895bdaf9",
+      "qa": {
+        "duration_seconds": 21.648,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.776,
+        "rms_dbfs": -20.092,
+        "trailing_silence_seconds": 0.599,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "小砾先挑了最大的一片，阿奇接上蓝色的小河。他们越拼越长，树却长到了水中，最后两片还对不上。小砾把头歪向一边：“我们是不是只顾着找相同的颜色，忘了看看每片边上的形状？”": {
+      "spoken": "小砾先挑了最大的一片，阿奇接上蓝色的小河。他们越拼越长，树却长到了水中，最后两片还对不上。小砾把头歪向一边：“我们是不是只顾着找相同的颜色，忘了看看每片边上的形状？”",
+      "text_sha256": "d8fe00c95336973b32310dcb8f9071c4a7c54d1f916ed16ca71913d4090755d0",
+      "file": "voice-tablet-stories-v1/d8fe00c95336973b3231.mp3",
+      "book_id": "tablet_story_paw_picnic_puzzle",
+      "page": 2,
+      "sha256": "182836fe4854398558123df4d3b4dadbe0b1596e2d84e123d871c54e5076c0f8",
+      "qa": {
+        "duration_seconds": 18.864,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.942,
+        "rms_dbfs": -20.278,
+        "trailing_silence_seconds": 0.634,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "莱德和他们把有平直边的片片放到外圈，先找好四个角。阿奇沿着河流的弯曲寻找下一片，小砾顺着树干找到树冠。每接上一片，他们都轻轻按平，再退后看一眼。垫子的风景渐渐接起来了。": {
+      "spoken": "莱德和他们把有平直边的片片放到外圈，先找好四个角。阿奇沿着河流的弯曲寻找下一片，小砾顺着树干找到树冠。每接上一片，他们都轻轻按平，再退后看一眼。垫子的风景渐渐接起来了。",
+      "text_sha256": "4b97e35714f5c04554c727288565ff30c18ed945acbba1262d1cce9b7b37fbd0",
+      "file": "voice-tablet-stories-v1/4b97e35714f5c04554c7.mp3",
+      "book_id": "tablet_story_paw_picnic_puzzle",
+      "page": 3,
+      "sha256": "4d1352e2dc325a4ee727f88e3eca2686b86da9c816f691b551c2ed0e76a293ca",
+      "qa": {
+        "duration_seconds": 20.352,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.782,
+        "rms_dbfs": -19.982,
+        "trailing_silence_seconds": 0.601,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "中间还缺一片小云朵。阿奇找遍篮子没有发现，小砾也没有急着拆开垫子。他们把空篮子移到一旁，才看见下面压着一片反过来的软垫。翻过来，云朵正笑着等大家，它的边也刚好合适。": {
+      "spoken": "中间还缺一片小云朵。阿奇找遍篮子没有发现，小砾也没有急着拆开垫子。他们把空篮子移到一旁，才看见下面压着一片反过来的软垫。翻过来，云朵正笑着等大家，它的边也刚好合适。",
+      "text_sha256": "5d1cebdf3f8a06decfb0683ebdbd7592b5dc59f9d8268370e27d8058df4f3e55",
+      "file": "voice-tablet-stories-v1/5d1cebdf3f8a06decfb0.mp3",
+      "book_id": "tablet_story_paw_picnic_puzzle",
+      "page": 4,
+      "sha256": "c555613d9972e92f8d1fa4bbb6b7dc265708a65e7acd91c0ee21c4868258d90c",
+      "qa": {
+        "duration_seconds": 19.416,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.435,
+        "rms_dbfs": -20.155,
+        "trailing_silence_seconds": 0.622,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "朋友们坐上平整的野餐垫，小河从一边弯到另一边，树下留着一片凉快的影子。阿奇把水果篮放稳，小砾开心地分享面包。大家一起找到的小风景，比谁先拼完都让人高兴，野餐慢慢开始了。": {
+      "spoken": "朋友们坐上平整的野餐垫，小河从一边弯到另一边，树下留着一片凉快的影子。阿奇把水果篮放稳，小砾开心地分享面包。大家一起找到的小风景，比谁先拼完都让人高兴，野餐慢慢开始了。",
+      "text_sha256": "52c193ddb273b9abf424cfb262578e9257abe22b264e737d553d355f4916ceba",
+      "file": "voice-tablet-stories-v1/52c193ddb273b9abf424.mp3",
+      "book_id": "tablet_story_paw_picnic_puzzle",
+      "page": 5,
+      "sha256": "0038e50e6cddb5c9dad347ad5946ea07e17b112b0f392d19e40b08202b494bf1",
+      "qa": {
+        "duration_seconds": 19.728,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.542,
+        "rms_dbfs": -19.789,
+        "trailing_silence_seconds": 0.593,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "灰灰整理活动室时，发现一叠干净的旧纸杯。天天想用它们做一座不用浇水的花园，让来看故事的小朋友坐在花旁边。狗狗们剪出彩色纸花，摆进杯子里，可花朵一歪，轻轻的杯子也跟着倒了。": {
+      "spoken": "灰灰整理活动室时，发现一叠干净的旧纸杯。天天想用它们做一座不用浇水的花园，让来看故事的小朋友坐在花旁边。狗狗们剪出彩色纸花，摆进杯子里，可花朵一歪，轻轻的杯子也跟着倒了。",
+      "text_sha256": "63dc3730c8d90dc8d5631ecdfd0301474c055c878066a34c0a5dd5ebaa50ccfa",
+      "file": "voice-tablet-stories-v1/63dc3730c8d90dc8d563.mp3",
+      "book_id": "tablet_story_paw_paper_cup_garden",
+      "page": 1,
+      "sha256": "a22358f71fe7fcb451af52f7e6e4822b0bda8754227df2e634233ca437b42ca5",
+      "qa": {
+        "duration_seconds": 19.632,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.75,
+        "rms_dbfs": -20.131,
+        "trailing_silence_seconds": 0.625,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "天天换了一朵更大的花，想把杯口盖住。没想到大花压在一边，杯子倒得更快。灰灰把花拿下来，两只狗狗蹲在桌边仔细看：杯子很轻，纸花却高高地伸出去，像背着一个偏到旁边的小书包。": {
+      "spoken": "天天换了一朵更大的花，想把杯口盖住。没想到大花压在一边，杯子倒得更快。灰灰把花拿下来，两只狗狗蹲在桌边仔细看：杯子很轻，纸花却高高地伸出去，像背着一个偏到旁边的小书包。",
+      "text_sha256": "33ce24f001589177b1448f2133eeeaebaee376635f81c9f79a9d9d90bcae7284",
+      "file": "voice-tablet-stories-v1/33ce24f001589177b144.mp3",
+      "book_id": "tablet_story_paw_paper_cup_garden",
+      "page": 2,
+      "sha256": "8e6f30d38d4906685bc04fe66773c6963c9ae6b3dda6d6dfd1ad678d45e6a8f3",
+      "qa": {
+        "duration_seconds": 19.824,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.133,
+        "rms_dbfs": -20.066,
+        "trailing_silence_seconds": 0.607,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "莱德帮他们把纸花的长柄剪短了一些，再在杯底放进少量干净的小石子。灰灰让花柄站在中间，天天扶住杯子慢慢松开爪子。小花稳稳站住了。换个合适的长度，比一味换更大的花有用。": {
+      "spoken": "莱德帮他们把纸花的长柄剪短了一些，再在杯底放进少量干净的小石子。灰灰让花柄站在中间，天天扶住杯子慢慢松开爪子。小花稳稳站住了。换个合适的长度，比一味换更大的花有用。",
+      "text_sha256": "a97f5e6ccd844229d12451b8789c14f94d44ee95e4be9b270904185e400acfa9",
+      "file": "voice-tablet-stories-v1/a97f5e6ccd844229d124.mp3",
+      "book_id": "tablet_story_paw_paper_cup_garden",
+      "page": 3,
+      "sha256": "dbd6efa804e5eece96ef578d69f8a0c93f1cdf0e5f1ace719f6a0ec2b3a218f8",
+      "qa": {
+        "duration_seconds": 19.8,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.358,
+        "rms_dbfs": -21.788,
+        "trailing_silence_seconds": 0.643,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "花园里出现了红花、黄花和蓝花。灰灰又发现，若把杯子全挤在一起，就看不见后面的花了。他们把高一点的杯子放后排，小花放前排，中间留出弯弯的小路。每朵花终于都有自己的位置。": {
+      "spoken": "花园里出现了红花、黄花和蓝花。灰灰又发现，若把杯子全挤在一起，就看不见后面的花了。他们把高一点的杯子放后排，小花放前排，中间留出弯弯的小路。每朵花终于都有自己的位置。",
+      "text_sha256": "d595513efb699a77266bd9f4471f9057b4a5e84ef948c8eb4bfb0082d0e8b9a7",
+      "file": "voice-tablet-stories-v1/d595513efb699a77266b.mp3",
+      "book_id": "tablet_story_paw_paper_cup_garden",
+      "page": 4,
+      "sha256": "74ffad363702cdafb70b8443c88be53d7ea0757a367c725f424ef729a4d8aad2",
+      "qa": {
+        "duration_seconds": 19.656,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.029,
+        "rms_dbfs": -19.712,
+        "trailing_silence_seconds": 0.616,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "下午，小朋友们来到活动室，沿着纸杯小路找到了听故事的软垫。天天指着花园，灰灰讲起杯子站稳的小秘密。一件旧东西，加上一点观察和耐心，也能带来新的美丽，花园陪大家安静听故事。": {
+      "spoken": "下午，小朋友们来到活动室，沿着纸杯小路找到了听故事的软垫。天天指着花园，灰灰讲起杯子站稳的小秘密。一件旧东西，加上一点观察和耐心，也能带来新的美丽，花园陪大家安静听故事。",
+      "text_sha256": "cdb70f8d68aac3b6633ee66567012366e7ea4141a13e6766d14250d5f61ce5a9",
+      "file": "voice-tablet-stories-v1/cdb70f8d68aac3b6633e.mp3",
+      "book_id": "tablet_story_paw_paper_cup_garden",
+      "page": 5,
+      "sha256": "f7340ec56c3fa0025f1df61d7940e5b5294ce59f3ad9430c3776be4383360c94",
+      "qa": {
+        "duration_seconds": 19.992,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.204,
+        "rms_dbfs": -19.855,
+        "trailing_silence_seconds": 0.612,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    }
+  },
+  "asr_content_check_passed": true,
+  "asr_reviewed_clips": 20,
+  "qa_limitation": "Reviewed transcription and decoding do not establish subjective naturalness or human listening."
+}

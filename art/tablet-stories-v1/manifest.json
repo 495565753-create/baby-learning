@@ -1,0 +1,394 @@
+{
+  "version": 1,
+  "tool": "built-in image_gen",
+  "book_count": 4,
+  "page_count": 20,
+  "cover_count": 4,
+  "files": [
+    {
+      "book": "tablet_story_peppa_rain_band",
+      "page": 1,
+      "file": "art/tablet-stories-v1/tablet_story_peppa_rain_band/page1.webp",
+      "size": [
+        506,
+        507
+      ],
+      "crop_box": [
+        0,
+        0,
+        506,
+        507
+      ],
+      "sha256": "63bba63c4fc541931c66706e1b7657895762054cc622621f25d00187ccca33c8"
+    },
+    {
+      "book": "tablet_story_peppa_rain_band",
+      "page": 2,
+      "file": "art/tablet-stories-v1/tablet_story_peppa_rain_band/page2.webp",
+      "size": [
+        507,
+        506
+      ],
+      "crop_box": [
+        514,
+        0,
+        1021,
+        506
+      ],
+      "sha256": "1fed3de108c42208428e2105dd2d888dd17b6c650d5c8d717b3e2576a49115a6"
+    },
+    {
+      "book": "tablet_story_peppa_rain_band",
+      "page": 3,
+      "file": "art/tablet-stories-v1/tablet_story_peppa_rain_band/page3.webp",
+      "size": [
+        507,
+        506
+      ],
+      "crop_box": [
+        1029,
+        0,
+        1536,
+        506
+      ],
+      "sha256": "4b76a97f42582002efc4d6c5d4e94e683d5104755e89ed15019166039241ee1a"
+    },
+    {
+      "book": "tablet_story_peppa_rain_band",
+      "page": 4,
+      "file": "art/tablet-stories-v1/tablet_story_peppa_rain_band/page4.webp",
+      "size": [
+        506,
+        510
+      ],
+      "crop_box": [
+        0,
+        514,
+        506,
+        1024
+      ],
+      "sha256": "1c24f8f22a483148052edb82bd60408ba2acaf8ec39860f0eb7244824b51e7df"
+    },
+    {
+      "book": "tablet_story_peppa_rain_band",
+      "page": 5,
+      "file": "art/tablet-stories-v1/tablet_story_peppa_rain_band/page5.webp",
+      "size": [
+        507,
+        510
+      ],
+      "crop_box": [
+        514,
+        514,
+        1021,
+        1024
+      ],
+      "sha256": "10d0f30e0f0207364dd0cff4ac1787701c2b7d78db49f1d4dd09a641ae0e4cb5"
+    },
+    {
+      "book": "tablet_story_peppa_rain_band",
+      "page": "cover",
+      "file": "art/tablet-stories-v1/tablet_story_peppa_rain_band/cover.webp",
+      "size": [
+        507,
+        510
+      ],
+      "crop_box": [
+        1029,
+        514,
+        1536,
+        1024
+      ],
+      "sha256": "0c0d1697af838b5d7dd78e02b9d1a1abf4bdce689e69690d130603a4cbe43a2d"
+    },
+    {
+      "book": "tablet_story_peppa_pillow_town",
+      "page": 1,
+      "file": "art/tablet-stories-v1/tablet_story_peppa_pillow_town/page1.webp",
+      "size": [
+        512,
+        512
+      ],
+      "crop_box": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sha256": "aa73d55cd26a825691de13acd85670fb3dd0042978344478c3a33a7cb33aaa66"
+    },
+    {
+      "book": "tablet_story_peppa_pillow_town",
+      "page": 2,
+      "file": "art/tablet-stories-v1/tablet_story_peppa_pillow_town/page2.webp",
+      "size": [
+        512,
+        512
+      ],
+      "crop_box": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "sha256": "1e609d7de08d6485e60c7c8ccbc1e6ca5c6189950448638c3d4a5ca347ddf4f4"
+    },
+    {
+      "book": "tablet_story_peppa_pillow_town",
+      "page": 3,
+      "file": "art/tablet-stories-v1/tablet_story_peppa_pillow_town/page3.webp",
+      "size": [
+        512,
+        512
+      ],
+      "crop_box": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "sha256": "45f45fa7c15ad7966ef51a80e6df89c9850525f16bda19937a512effc62a0eea"
+    },
+    {
+      "book": "tablet_story_peppa_pillow_town",
+      "page": 4,
+      "file": "art/tablet-stories-v1/tablet_story_peppa_pillow_town/page4.webp",
+      "size": [
+        512,
+        512
+      ],
+      "crop_box": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "sha256": "13e193a1bfbcd87e18597012b94d3f14299da9fcc7444ceac80d1cebd678f7b3"
+    },
+    {
+      "book": "tablet_story_peppa_pillow_town",
+      "page": 5,
+      "file": "art/tablet-stories-v1/tablet_story_peppa_pillow_town/page5.webp",
+      "size": [
+        512,
+        512
+      ],
+      "crop_box": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "sha256": "71fe95941d9dff458675d0670afe8562fd7e347d032cae9bb7de5b4d34a31311"
+    },
+    {
+      "book": "tablet_story_peppa_pillow_town",
+      "page": "cover",
+      "file": "art/tablet-stories-v1/tablet_story_peppa_pillow_town/cover.webp",
+      "size": [
+        512,
+        512
+      ],
+      "crop_box": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "sha256": "7cab33ff4b5192fc7b05088d13e12ef00f74e59dc8fb7a9880faa1f59a5fd59d"
+    },
+    {
+      "book": "tablet_story_paw_picnic_puzzle",
+      "page": 1,
+      "file": "art/tablet-stories-v1/tablet_story_paw_picnic_puzzle/page1.webp",
+      "size": [
+        512,
+        504
+      ],
+      "crop_box": [
+        0,
+        0,
+        512,
+        504
+      ],
+      "sha256": "ec811b5f3f949645c19ca6ff869dae61a5871fc1062f31f1aadb463474b8efa2"
+    },
+    {
+      "book": "tablet_story_paw_picnic_puzzle",
+      "page": 2,
+      "file": "art/tablet-stories-v1/tablet_story_paw_picnic_puzzle/page2.webp",
+      "size": [
+        512,
+        504
+      ],
+      "crop_box": [
+        512,
+        0,
+        1024,
+        504
+      ],
+      "sha256": "74622cb551195b67a5f35bac3dd6922a3ee0a8f6f00f6773ec84a2e7468eee29"
+    },
+    {
+      "book": "tablet_story_paw_picnic_puzzle",
+      "page": 3,
+      "file": "art/tablet-stories-v1/tablet_story_paw_picnic_puzzle/page3.webp",
+      "size": [
+        512,
+        504
+      ],
+      "crop_box": [
+        1024,
+        0,
+        1536,
+        504
+      ],
+      "sha256": "c362c7d35cd7d7196684d3b07c199cd2f31923270c2032a2ff863a2327d71c53"
+    },
+    {
+      "book": "tablet_story_paw_picnic_puzzle",
+      "page": 4,
+      "file": "art/tablet-stories-v1/tablet_story_paw_picnic_puzzle/page4.webp",
+      "size": [
+        512,
+        509
+      ],
+      "crop_box": [
+        0,
+        515,
+        512,
+        1024
+      ],
+      "sha256": "81658b1063c36c9012f3515ace474a3f097d5ab6fd0ba7b4cf93e46e056d5fc6"
+    },
+    {
+      "book": "tablet_story_paw_picnic_puzzle",
+      "page": 5,
+      "file": "art/tablet-stories-v1/tablet_story_paw_picnic_puzzle/page5.webp",
+      "size": [
+        512,
+        509
+      ],
+      "crop_box": [
+        512,
+        515,
+        1024,
+        1024
+      ],
+      "sha256": "d49b2021399867eda1a63273813ec3da9070cd255785c36e864982c7cfd529a0"
+    },
+    {
+      "book": "tablet_story_paw_picnic_puzzle",
+      "page": "cover",
+      "file": "art/tablet-stories-v1/tablet_story_paw_picnic_puzzle/cover.webp",
+      "size": [
+        512,
+        509
+      ],
+      "crop_box": [
+        1024,
+        515,
+        1536,
+        1024
+      ],
+      "sha256": "746239b7bf2ce7fc74ee59229bc8a42ed287e9a674f8c251284e828553b115c7"
+    },
+    {
+      "book": "tablet_story_paw_paper_cup_garden",
+      "page": 1,
+      "file": "art/tablet-stories-v1/tablet_story_paw_paper_cup_garden/page1.webp",
+      "size": [
+        508,
+        509
+      ],
+      "crop_box": [
+        0,
+        0,
+        508,
+        509
+      ],
+      "sha256": "cff932f55b635a86a30cfcc59464e56c4745fd0cfb2d7e4b49b8eb3f5123d63a"
+    },
+    {
+      "book": "tablet_story_paw_paper_cup_garden",
+      "page": 2,
+      "file": "art/tablet-stories-v1/tablet_story_paw_paper_cup_garden/page2.webp",
+      "size": [
+        511,
+        509
+      ],
+      "crop_box": [
+        512,
+        0,
+        1023,
+        509
+      ],
+      "sha256": "3a23b841744bee92633fe49b69daa258b1eb211c0a53648df74688cbae75719a"
+    },
+    {
+      "book": "tablet_story_paw_paper_cup_garden",
+      "page": 3,
+      "file": "art/tablet-stories-v1/tablet_story_paw_paper_cup_garden/page3.webp",
+      "size": [
+        509,
+        508
+      ],
+      "crop_box": [
+        1027,
+        0,
+        1536,
+        508
+      ],
+      "sha256": "fca78576912f66d3e89f27db079ee6d5f7d4ea23a0798b42b277073fce40312f"
+    },
+    {
+      "book": "tablet_story_paw_paper_cup_garden",
+      "page": 4,
+      "file": "art/tablet-stories-v1/tablet_story_paw_paper_cup_garden/page4.webp",
+      "size": [
+        508,
+        511
+      ],
+      "crop_box": [
+        0,
+        513,
+        508,
+        1024
+      ],
+      "sha256": "3aea8e7a8c77b9cb59d3f0078736a4acc6d5c42b49c86d059b9c87c69a252865"
+    },
+    {
+      "book": "tablet_story_paw_paper_cup_garden",
+      "page": 5,
+      "file": "art/tablet-stories-v1/tablet_story_paw_paper_cup_garden/page5.webp",
+      "size": [
+        511,
+        511
+      ],
+      "crop_box": [
+        512,
+        513,
+        1023,
+        1024
+      ],
+      "sha256": "585b5b77fe970270705d83cf83a4ef0e1da91125b198d9802899e2cca854eaf1"
+    },
+    {
+      "book": "tablet_story_paw_paper_cup_garden",
+      "page": "cover",
+      "file": "art/tablet-stories-v1/tablet_story_paw_paper_cup_garden/cover.webp",
+      "size": [
+        509,
+        511
+      ],
+      "crop_box": [
+        1027,
+        513,
+        1536,
+        1024
+      ],
+      "sha256": "95597ac44db10d6833ba3981b241bf1cc523812dbd7a4cb385c4be71b2d94e2a"
+    }
+  ],
+  "qa": "All four original atlases visually checked before deterministic panel export."
+}

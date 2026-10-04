@@ -3,3 +3,10 @@ gen_v3_audio.py
 audio/manifest.json
 __pycache__/
 *.pyc
+
+# Android signing material and intermediate outputs stay outside the site.
+android-app/build/
+android-app/*.apk
+*.jks
+*.keystore
+*.p12

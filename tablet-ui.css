@@ -1,0 +1,568 @@
+/* Tablet-only layout. Phone layouts, canvas coordinates and SVG viewBoxes stay unchanged. */
+@media (min-width:800px) and (min-height:600px) {
+  :root {
+    --tablet-gap:clamp(16px,2vw,28px);
+    --tablet-page-padding:20px;
+  }
+
+  /* Keep the outer frame clear of rounded corners and system navigation. */
+  .topbar {
+    padding-left:calc(var(--tablet-page-padding) + env(safe-area-inset-left,0px));
+    padding-right:calc(var(--tablet-page-padding) + env(safe-area-inset-right,0px));
+  }
+  main,
+  .playing-mini-game main,
+  .playing-music-studio main,
+  .playing-writing-studio main {
+    width:100%;
+    max-width:1320px;
+    padding:20px calc(var(--tablet-page-padding) + env(safe-area-inset-right,0px))
+      24px calc(var(--tablet-page-padding) + env(safe-area-inset-left,0px));
+  }
+  .bottom-nav { width:min(calc(100% - 48px),820px); }
+  .bottom-nav button { min-height:64px; font-size:14px; }
+  .bottom-nav span { font-size:26px; }
+  .round-btn { width:52px; height:52px; }
+  .chip,.unit-chip { min-height:48px; padding:10px 18px; }
+  .page-head h1 { font-size:32px; }
+
+  /* Eight large, picture-led entrances, with writing directly above them. */
+  .home-dashboard {
+    display:grid;
+    grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);
+    column-gap:16px;
+    align-items:stretch;
+  }
+  .home-dashboard>.home-hero { grid-column:1; grid-row:1; }
+  .home-dashboard>.home-writing-banner { grid-column:2; grid-row:1; height:100%; margin:0; }
+  .home-dashboard>.home-title,.home-dashboard>.home-function-grid,
+  .home-dashboard>.home-shortcuts,.home-dashboard>.home-continue { grid-column:1/-1; }
+  .home-dashboard .home-hero { min-height:118px; padding:20px 24px; }
+  .home-dashboard .home-hero h1 { font-size:34px; }
+  .home-guide { min-width:88px; min-height:86px; }
+  .home-guide b { font-size:14px; }
+  .home-writing-banner { min-height:84px; margin-top:16px; }
+  .home-title { margin:20px 3px 12px; font-size:23px; }
+  .home-function-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
+  .home-function-grid .home-function-card { min-height:154px; padding:20px; }
+  .home-function-grid .icon { width:60px; height:60px; font-size:40px; }
+  .home-function-grid b { font-size:23px; }
+  .home-function-grid small { font-size:14px; line-height:1.45; }
+  .home-shortcut-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+  .home-shortcut-grid>button { min-height:88px; padding:15px; }
+  .home-shortcut-grid b { font-size:18px; }
+  .home-shortcut-grid small { font-size:13px; }
+  .home-continue { min-height:88px; }
+
+  /* Covers stay large enough to recognise before a child can read the title. */
+  .book-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; }
+  .book .info { padding:15px; }
+  .book b { font-size:19px; }
+  .filters { gap:10px; padding-bottom:12px; }
+
+  /* The right-hand reading panel reserves its last rows for both play controls.
+     Long text grows the entire card; it is never hidden in an inner scroller. */
+  .reader { position:relative; max-width:none; }
+  .reader-top { margin-bottom:10px; }
+  .reader-top h1 { font-size:26px; }
+  .reader .progress-dots { margin:12px; }
+  .reader .reader-stage {
+    display:grid;
+    grid-template-columns:minmax(0,1.15fr) minmax(0,.95fr);
+    align-items:stretch;
+  }
+  .reader .reader-stage>.story-picture {
+    aspect-ratio:auto;
+    min-height:360px;
+    border-right:1px solid #e2eaf1;
+  }
+  .reader .story-picture:not(.sprite-page)>img {
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+  }
+  .reader .story-text {
+    min-width:0;
+    min-height:clamp(360px,calc(100svh - 200px),640px);
+    padding:26px 24px 182px;
+    font-size:22px;
+    line-height:1.8;
+    background:#fffffff0;
+  }
+  .reader .reader-controls {
+    position:absolute;
+    right:24px;
+    bottom:92px;
+    width:calc(45.2381% - 48px);
+    display:grid;
+    grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr) minmax(0,.9fr);
+    gap:8px;
+    margin:0;
+  }
+  .reader .reader-controls .control {
+    min-width:0;
+    min-height:60px;
+    padding:8px 5px;
+    font-size:16px;
+    line-height:1.35;
+  }
+  .reader .auto-read-btn {
+    position:absolute;
+    right:24px;
+    bottom:22px;
+    width:calc(45.2381% - 48px);
+    min-height:60px;
+    margin:0;
+    padding:10px 14px;
+    font-size:18px;
+    line-height:1.4;
+  }
+  .reader .story-touch { min-height:52px; font-size:16px; }
+
+  /* A classroom board beside the teacher's explanation. */
+  .school-page,.classroom { max-width:none; }
+  .school-page .course-list { grid-template-columns:repeat(3,minmax(0,1fr)); gap:15px; }
+  .school-page .course-card { min-height:118px; padding:17px; }
+  .school-page .course-card b { font-size:19px; line-height:1.4; }
+  .school-page .subject-tab { min-height:100px; }
+  .classroom .classroom-head h1 { font-size:27px; }
+  .classroom .class-steps { margin:12px 0 16px; gap:12px; }
+  .classroom .class-steps div { min-height:56px; }
+  .classroom .class-steps b { font-size:17px; }
+  .classroom .teacher-card {
+    display:grid;
+    grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);
+    align-items:stretch;
+  }
+  .classroom .teacher-scene { grid-column:1/-1; min-height:84px; padding:10px 22px; }
+  .classroom .teacher-says b { font-size:21px; }
+  .classroom .lesson-visual {
+    grid-column:1;
+    grid-row:2/span 2;
+    min-height:260px;
+    padding:26px;
+    border-right:1px solid #e2eaf1;
+    font-size:clamp(38px,4.2vw,58px);
+  }
+  .classroom .lesson-talk { grid-column:2; grid-row:2; padding:26px 24px 14px; align-content:center; }
+  .classroom .lesson-talk p { font-size:22px; line-height:1.75; }
+  .classroom .lesson-visual.is-question { font-size:clamp(24px,3vw,34px); line-height:1.6; }
+  .classroom .listen-teacher {
+    grid-column:2;
+    grid-row:3;
+    align-self:end;
+    min-height:62px;
+    width:calc(100% - 48px);
+    margin:10px 24px 24px;
+    font-size:19px;
+  }
+  .classroom .course-answers { grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+  .classroom .course-answers button { min-height:78px; padding:13px 16px; font-size:19px; }
+  .classroom .class-actions button { min-height:64px; font-size:19px; }
+  .classroom .class-actions .primary { font-size:21px; }
+  .classroom .parent-tip summary { min-height:48px; }
+
+  /* Recognition atlases remain exactly 4 by 3; only their containing cards grow. */
+  .know-page,.know-lesson-page { max-width:none; }
+  .know-welcome { min-height:146px; }
+  .know-level { padding:17px; }
+  .know-category-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+  .know-category { grid-template-columns:86px minmax(0,1fr) 18px; min-height:118px!important; }
+  .know-category-copy b { font-size:19px; }
+  .know-category-copy small { font-size:13px; line-height:1.5; }
+  .know-favorites-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
+  .know-lesson-nav { margin-bottom:14px; }
+  .know-lesson-nav>strong { font-size:20px; }
+  .know-lesson-nav>button { min-height:56px; }
+  .know-big-card {
+    width:100%;
+    max-width:1040px;
+    display:grid;
+    grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
+    grid-template-rows:auto minmax(0,1fr) auto;
+    align-items:center;
+  }
+  .know-big-card>.know-image-button {
+    grid-column:1;
+    grid-row:1/span 3;
+    align-self:center;
+    justify-self:center;
+    width:min(100%,calc(100svh - 360px),560px);
+    height:auto;
+    aspect-ratio:1;
+  }
+  .know-big-card .know-big-picture { width:100%; height:auto; aspect-ratio:1; }
+  .know-big-card>.know-word-row { grid-column:2; grid-row:1; padding:24px 20px 0; }
+  .know-big-card>.know-word-row h1 { font-size:43px; }
+  .know-big-card>p {
+    grid-column:2;
+    grid-row:2;
+    max-width:none;
+    margin:18px 0;
+    padding:0 28px;
+    font-size:21px;
+    line-height:1.8;
+  }
+  .know-big-card>.know-listen {
+    grid-column:2;
+    grid-row:3;
+    width:calc(100% - 48px);
+    min-height:62px!important;
+    margin:12px 24px 24px;
+    font-size:19px;
+  }
+  .know-turns { gap:14px; width:100%; max-width:1040px; }
+  .know-turns button,.know-next { min-height:62px!important; font-size:18px; }
+  .know-quiz-grid { max-width:960px; margin:0 auto; gap:18px; }
+  .know-quiz-choice b { font-size:21px; }
+
+  /* Every directory category is visible, with no centred overflow clipping. */
+  .game-home { max-width:none; }
+  .game-category-rail {
+    display:grid;
+    grid-template-columns:repeat(6,minmax(0,1fr));
+    justify-content:normal;
+    gap:10px;
+    margin:0 0 20px;
+    padding:8px 0 12px;
+    overflow:visible;
+  }
+  .game-category { min-width:0; min-height:80px; padding:10px 8px; gap:3px; }
+  .game-category b { font-size:15px; }
+  .game-category small { font-size:12px; }
+  .game-choice-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; }
+  .game-choice { min-height:195px; padding:18px; }
+  .game-card-icon { width:74px; height:74px; font-size:48px; }
+  .game-card-copy b { font-size:20px; line-height:1.35; }
+  .game-card-copy small { font-size:14px; line-height:1.5; }
+  .game-choice>strong { font-size:14px; }
+  .mini-game-nav { min-height:74px; margin-bottom:18px; padding:9px; }
+  .game-exit { min-height:56px; padding:9px 17px; }
+  .game-exit b { font-size:17px; }
+  .mini-game-name b { font-size:21px; }
+  .mini-game-tools button { width:54px; height:54px; }
+  .mini-game-page>.lesson { padding:22px; }
+  .cg-route-grid,.cg-slide-grid,.cg-logic-grid { width:min(100%,440px); }
+  .cg-controls,.cg-puzzle-goal { width:min(100%,440px); }
+  .cg-lights,.cg-watch { width:min(100%,430px); }
+  .cg-route-cell,.cg-logic-cell { min-height:48px; }
+
+  /* Drawing tools stay on the left, beside a crisp square canvas. */
+  .art-studio {
+    max-width:none;
+    display:grid;
+    grid-template-columns:minmax(290px,.82fr) minmax(0,1.4fr);
+    column-gap:var(--tablet-gap);
+    align-items:start;
+  }
+  .art-studio>.art-heading,
+  .art-studio>.art-task,
+  .art-studio>.art-quick,
+  .art-studio>.art-history,
+  .art-studio>.art-panel-tabs,
+  .art-studio>.art-panel,
+  .art-studio>.art-bottom-actions,
+  .art-studio>.art-save-status { grid-column:1; }
+  .art-studio>.art-canvas-wrap {
+    grid-column:2;
+    grid-row:1/span 8;
+    position:sticky;
+    top:calc(var(--nav-top) + 92px);
+    width:min(100%,calc(100svh - 195px),680px);
+    max-width:none;
+    margin:0 auto;
+    border-radius:30px;
+  }
+  .art-studio button,.art-studio .art-remove,.art-custom,.art-size input { min-height:48px; }
+  .art-heading h2 { font-size:27px; }
+  .art-heading p { font-size:14px; line-height:1.5; }
+  .art-task { align-items:flex-start; }
+  .art-task b { font-size:16px; }
+  .art-task small { font-size:13px; }
+  .art-studio .art-quick { width:100%; max-width:none; margin:0 0 12px; }
+  .art-studio .art-quick button { min-height:68px; }
+  .art-panel-tabs { margin-top:7px; }
+  .art-panel-tabs button { flex-direction:column; gap:3px; padding:7px 3px; min-height:64px; }
+  .art-panel { padding:16px; }
+  .art-palette { grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; }
+  .art-palette button,.art-custom { width:100%; max-width:66px; justify-self:center; }
+  .art-scenes,.art-gallery { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .art-shapes { grid-template-columns:repeat(4,minmax(0,1fr)); }
+  .art-bottom-actions button { min-height:56px; }
+  .art-canvas-hint { font-size:13px; padding:7px 13px; }
+
+  .coloring-game .coloring-choice { min-height:106px; flex-basis:110px; }
+  .coloring-game .palette button { width:52px; height:52px; }
+  .coloring-game #colorPad { width:min(100%,calc(100svh - 245px),650px); }
+  .coloring-game .color-actions { width:min(100%,650px); }
+  .coloring-game .color-actions button { min-height:60px; font-size:18px; }
+
+  /* Reset the small-phone landscape shortcuts at 960x600; keep full tablet chrome. */
+  body.playing-music-studio {
+    --nav-top:calc(var(--topbar-height) + var(--safe-top));
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  .playing-music-studio .topbar {
+    height:var(--nav-top);
+    min-height:var(--nav-top);
+    padding:calc(10px + var(--safe-top)) calc(var(--tablet-page-padding) + env(safe-area-inset-right,0px))
+      8px calc(var(--tablet-page-padding) + env(safe-area-inset-left,0px));
+    border-bottom:1px solid var(--glass-edge);
+    background:#f5f8fc;
+    box-shadow:0 8px 26px #39567c1f,inset 0 1px 0 #fff;
+  }
+  .playing-music-studio .topbar .logo { display:flex; }
+  .playing-music-studio .topbar .stars { display:block; }
+  .playing-music-studio .top-actions { position:static; }
+  .playing-music-studio #soundBtn { width:52px; height:52px; font-size:23px; }
+  .playing-music-studio .creative-game-nav {
+    top:var(--nav-top);
+    min-height:74px;
+    margin:0 0 18px;
+    padding:9px;
+    gap:10px;
+    border-radius:23px;
+  }
+  .playing-music-studio .game-exit { min-height:56px; padding:9px 17px; border-radius:18px; }
+  .playing-music-studio .game-exit span { font-size:25px; }
+  .playing-music-studio .game-exit b { font-size:17px; }
+  .playing-music-studio .mini-game-name span { font-size:29px; }
+  .playing-music-studio .mini-game-name b { display:block; font-size:20px; }
+  .playing-music-studio .mini-game-tools { gap:8px; }
+  .playing-music-studio .mini-game-tools button { width:54px; height:54px; font-size:24px; border-radius:17px; }
+  .playing-music-studio .music-studio { display:block; max-width:none; padding:0 0 24px; overflow:visible; }
+  .playing-music-studio .music-studio button { min-height:48px; }
+  .playing-music-studio .ms-hero { display:flex; margin:6px 0 16px; padding:6px 4px; }
+  .playing-music-studio .ms-tabs { gap:10px; margin:0 0 14px; }
+  .playing-music-studio .ms-tabs button { min-height:62px; padding:12px; gap:8px; border-radius:21px; }
+  .playing-music-studio .ms-tabs span { font-size:27px; }
+  .playing-music-studio .ms-tabs b { font-size:18px; }
+  .playing-music-studio .ms-sound-controls { padding:14px; gap:16px; border-radius:25px; }
+  .playing-music-studio .ms-instruments { gap:9px; }
+  .playing-music-studio .ms-instruments button { min-width:48px; min-height:62px; padding:10px 5px; flex-direction:row; gap:7px; border-radius:17px; }
+  .playing-music-studio .ms-instruments span { font-size:26px; }
+  .playing-music-studio .ms-instruments b { font-size:16px; }
+  .playing-music-studio .ms-volume { position:static; width:200px; flex:0 0 200px; min-width:0; height:auto; gap:5px; }
+  .playing-music-studio .ms-volume>span { position:static; font-size:14px; line-height:1.4; }
+  .playing-music-studio .ms-volume input { height:48px; min-height:48px; }
+  .playing-music-studio .ms-status { min-height:48px; margin:12px 0; padding:12px 15px; font-size:15px; line-height:1.6; border-radius:16px; }
+  .playing-music-studio .ms-piano-wrap { margin:14px 0; padding:18px; border-radius:28px; }
+  .playing-music-studio .ms-piano-head { min-height:48px; margin:0 0 12px; flex-wrap:wrap; gap:12px; }
+  .playing-music-studio .ms-piano-head strong { font-size:18px; }
+  .playing-music-studio .ms-octaves button { min-height:48px; min-width:58px; padding:9px 14px; font-size:15px; border-radius:15px; }
+  .playing-music-studio .ms-piano { grid-template-columns:repeat(8,minmax(0,1fr)); gap:9px; padding:0; background:none; box-shadow:none; border-radius:0; }
+  .playing-music-studio .music-studio .ms-key,
+  .playing-music-studio [data-ms-view=songs] .ms-key {
+    min-height:180px;
+    height:clamp(180px,28svh,270px);
+    min-width:48px;
+    padding:14px 2px;
+    gap:9px;
+    border-radius:18px;
+    border:1px solid #ffffffd9;
+    border-bottom:7px solid var(--key);
+    justify-content:center;
+    background:linear-gradient(160deg,color-mix(in srgb,var(--key),white 67%),color-mix(in srgb,var(--key),white 33%));
+    box-shadow:inset 0 1px 0 #ffffffeb,0 6px 8px #2f465d14;
+  }
+  .playing-music-studio .ms-key>span,.playing-music-studio [data-ms-view=songs] .ms-key>span { font-size:33px; line-height:1.2; }
+  .playing-music-studio .ms-key>b,.playing-music-studio [data-ms-view=songs] .ms-key>b { font-size:22px; line-height:1.3; }
+  .playing-music-studio .ms-key>small,.playing-music-studio [data-ms-view=songs] .ms-key>small { font-size:14px; line-height:1.3; }
+  .playing-music-studio .ms-keyboard-hint { display:block; font-size:14px; }
+  .playing-music-studio .ms-record-card,.playing-music-studio .ms-works,.playing-music-studio .ms-composer { margin:16px 0; padding:20px; }
+  .playing-music-studio .ms-song-player { padding:20px; grid-template-columns:55px minmax(0,1fr); gap:13px; margin-bottom:12px; border-radius:26px; }
+  .playing-music-studio .ms-song-icon { font-size:40px; }
+  .playing-music-studio .ms-song-player strong { font-size:23px; }
+  .playing-music-studio .ms-song-player small { font-size:14px; }
+  .playing-music-studio .ms-song-player .ms-action-row { grid-column:1/-1; grid-row:auto; gap:10px; }
+  .playing-music-studio .ms-song-player .ms-action-row>button { min-height:56px; padding:12px 10px; font-size:17px; border-radius:17px; }
+  .playing-music-studio .ms-song-progress { position:static; width:auto; height:auto; padding:0; overflow:visible; clip-path:none; white-space:normal; font-size:15px; }
+  .playing-music-studio .ms-song-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; margin:18px 0; }
+  .playing-music-studio .ms-song-grid>button { min-height:130px; padding:16px 8px; }
+  .playing-music-studio .ms-steps { grid-template-columns:repeat(8,minmax(0,1fr)); gap:9px; }
+  .playing-music-studio .ms-note-choices { grid-template-columns:repeat(9,minmax(0,1fr)); gap:9px; }
+  .playing-music-studio .ms-note-choices .ms-rest { grid-column:auto; flex-direction:column; }
+  .ms-tempo input { min-height:48px; }
+
+  /* The square SVG scales as a unit, preserving start-dot and finger coordinates. */
+  body.playing-writing-studio {
+    --topbar-height:64px;
+    --nav-top:calc(var(--topbar-height) + var(--safe-top));
+  }
+  .playing-writing-studio .topbar { padding-top:calc(6px + var(--safe-top)); padding-bottom:6px; }
+  .writing-studio {
+    position:relative;
+    max-width:none;
+    display:grid;
+    grid-template-columns:minmax(290px,.9fr) minmax(0,1.4fr);
+    grid-template-areas:"hero board" "actions board" "menu board" "heading board" "status board" "tools board" "navigation board";
+    column-gap:var(--tablet-gap);
+    align-items:start;
+    padding-bottom:20px;
+  }
+  .writing-studio button { min-height:52px; min-width:48px; }
+  .writing-studio>.ws-hero { grid-area:hero; margin:3px 0 14px; }
+  .ws-hero h2 { font-size:28px; }
+  .ws-hero>span { font-size:40px; }
+  .ws-hero small { font-size:14px; line-height:1.5; }
+  .writing-studio>.ws-top-actions { grid-area:actions; gap:9px; margin-bottom:16px; }
+  .ws-top-actions button { min-height:54px; font-size:15px; padding:10px 4px; }
+  .writing-studio>.ws-number-menu,
+  .writing-studio>.ws-number-menu:not([hidden]) {
+    grid-area:menu;
+    position:static;
+    inset:auto;
+    z-index:auto;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:6px;
+    padding:10px;
+    margin:0 0 16px;
+    box-shadow:0 6px 18px #45628412;
+  }
+  .ws-number-menu button { min-height:68px; font-size:27px; }
+  .ws-number-menu button>span { font-size:11px; }
+  .writing-studio>.ws-lesson-heading { grid-area:heading; min-height:100px; padding:16px; gap:12px; }
+  .ws-target-number { font-size:64px; flex-basis:80px; }
+  .ws-lesson-heading h3 { font-size:24px; margin-bottom:7px; }
+  .ws-step-badge { font-size:14px; }
+  .ws-lesson-heading p,.ws-lesson-heading small { font-size:15px; line-height:1.65; }
+  .writing-studio>.ws-status { grid-area:status; font-size:16px; line-height:1.65; margin:15px 3px; }
+  .writing-studio>.ws-board-frame {
+    grid-area:board;
+    width:min(100%,calc(100svh - 122px),680px);
+    min-width:0;
+    margin:0 auto;
+    align-self:start;
+    justify-self:center;
+    border-radius:32px;
+  }
+  .writing-studio>.ws-board-tools { grid-area:tools; width:100%; margin:4px 0 12px; gap:9px; }
+  .ws-board-tools button { min-height:58px; font-size:16px; padding:12px 6px; }
+  .writing-studio>.ws-bottom-nav { grid-area:navigation; width:100%; margin:0; gap:12px; }
+  .ws-bottom-nav button { min-height:58px; font-size:17px; padding:11px 6px; }
+  .writing-studio[data-ws-view=done] {
+    grid-template-areas:"hero actions" "menu menu" "complete complete";
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  }
+  .writing-studio[data-ws-view=done]>.ws-top-actions { align-self:center; margin-bottom:0; }
+  .writing-studio[data-ws-view=done]>.ws-number-menu { grid-template-columns:repeat(10,minmax(0,1fr)); }
+  .writing-studio>.ws-complete {
+    grid-area:complete;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    column-gap:24px;
+    align-items:center;
+    padding:24px;
+    margin:20px 0 0;
+  }
+  .ws-complete>.ws-success-icon,.ws-complete>h3,.ws-complete>.ws-status,.ws-complete>.ws-complete-number,.ws-complete>.ws-complete-actions { grid-column:1; }
+  .ws-complete>.ws-character-card { grid-column:2; grid-row:1/span 5; margin:0; }
+  .ws-complete>.ws-progress-note { grid-column:1/-1; font-size:14px; }
+  .ws-complete h3 { font-size:28px; }
+  .ws-complete-number { padding:16px; grid-template-columns:70px minmax(0,1fr); }
+  .ws-complete-number strong { font-size:48px; }
+  .ws-counting-icons { max-width:330px; font-size:32px; }
+  .ws-character-card p { font-size:19px; line-height:1.75; }
+  .ws-character-main { grid-template-columns:130px minmax(0,1fr); }
+  .ws-character-card button,.ws-complete-actions button { min-height:58px; font-size:18px; }
+
+  .video-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+  .video-poster { height:155px; }
+  .video-card h2 { font-size:22px; }
+  .video-card p { font-size:16px; }
+
+  @supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) {
+    .playing-music-studio .topbar {
+      background:linear-gradient(145deg,#ffffffcc,#f6fbff99);
+      -webkit-backdrop-filter:blur(22px) saturate(145%);
+      backdrop-filter:blur(22px) saturate(145%);
+    }
+  }
+
+  @media (min-width:1120px) {
+    .book-grid,.game-choice-grid { grid-template-columns:repeat(5,minmax(0,1fr)); }
+    .school-page .course-list { grid-template-columns:repeat(4,minmax(0,1fr)); }
+    .know-category-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }
+    .know-favorites-grid { grid-template-columns:repeat(5,minmax(0,1fr)); }
+    .playing-music-studio .ms-song-grid { grid-template-columns:repeat(5,minmax(0,1fr)); }
+    .art-palette { grid-template-columns:repeat(5,minmax(0,1fr)); }
+  }
+
+  @media (max-width:1000px) {
+    .school-page .course-list { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .know-category-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .game-category { grid-template-columns:1fr; justify-items:center; text-align:center; gap:4px; }
+    .game-category>span { grid-row:auto; }
+    .game-category small { display:none; }
+    .playing-music-studio .ms-instruments button { flex-direction:column; gap:3px; }
+    .playing-music-studio .ms-instruments b { font-size:14px; }
+    .playing-music-studio .ms-volume { width:160px; flex-basis:160px; }
+    .ws-top-actions button { font-size:14px; }
+    .ws-board-tools button { font-size:14px; }
+    .ws-hero h2 { font-size:25px; }
+  }
+
+  /* Short tablets still show all eight home entrances without shrinking targets. */
+  @media (max-height:690px) {
+    :root { --topbar-height:64px; }
+    .topbar { padding-top:calc(6px + var(--safe-top)); padding-bottom:6px; }
+    main,.playing-mini-game main,.playing-music-studio main,.playing-writing-studio main { padding-top:14px; }
+    .home-dashboard .home-hero { min-height:92px; padding:13px 20px; }
+    .home-dashboard .home-hero h1 { font-size:29px; }
+    .home-dashboard .home-guide { min-height:68px; min-width:76px; }
+    .home-writing-banner { min-height:92px; margin-top:0; padding:9px 17px; }
+    .home-writing-banner>span:first-child { width:50px; height:50px; }
+    .home-writing-banner b { font-size:22px; }
+    .home-title { margin:13px 3px 9px; font-size:21px; }
+    .home-function-grid { gap:12px; }
+    .home-function-grid .home-function-card { min-height:118px; padding:10px 17px; }
+    .home-function-grid .icon { width:45px; height:45px; font-size:32px; margin-bottom:5px; }
+    .home-function-grid b { font-size:20px; }
+    .home-function-grid small { font-size:12px; }
+    .reader .story-text { font-size:20px; line-height:1.7; padding-top:22px; }
+    .classroom .lesson-visual { min-height:255px; padding:20px; }
+    .classroom .lesson-talk { padding-top:18px; }
+    .classroom .lesson-talk p { font-size:20px; line-height:1.65; }
+    .know-big-card>p { font-size:19px; line-height:1.7; padding:0 22px; }
+    .know-big-card>.know-word-row h1 { font-size:36px; }
+    .playing-music-studio .ms-hero { margin-bottom:10px; }
+    .playing-music-studio .ms-hero>span { font-size:40px; }
+    .playing-music-studio .ms-tabs { margin-bottom:10px; }
+    .playing-music-studio .ms-tabs button { min-height:54px; }
+    .playing-music-studio .ms-sound-controls { padding:10px; }
+  }
+
+  /* In tablet landscape, put the playable keyboard on the first screen. */
+  @media (orientation:landscape) {
+    body.playing-music-studio { --topbar-height:52px; --nav-top:calc(52px + var(--safe-top)); }
+    .playing-music-studio .topbar { padding-top:calc(4px + var(--safe-top)); padding-bottom:4px; }
+    .playing-music-studio main { padding-top:10px; }
+    .playing-music-studio .creative-game-nav { min-height:56px; padding:6px; margin-bottom:10px; }
+    .playing-music-studio .game-exit { min-height:44px; padding:6px 14px; }
+    .playing-music-studio .mini-game-tools button { width:44px; height:44px; }
+    .playing-music-studio .ms-hero { display:none; }
+    .playing-music-studio .ms-tabs { margin-bottom:8px; }
+    .playing-music-studio .ms-tabs button { min-height:48px; padding:8px; }
+    .playing-music-studio .ms-sound-controls { padding:8px; gap:12px; }
+    .playing-music-studio .ms-instruments button { min-height:50px; padding:6px; flex-direction:row; gap:6px; }
+    .playing-music-studio .ms-instruments span { font-size:24px; }
+    .playing-music-studio .ms-volume input { min-height:40px; height:40px; }
+    .playing-music-studio .ms-status { min-height:38px; padding:8px 12px; margin:6px 0; font-size:14px; }
+    .playing-music-studio .ms-piano-wrap { margin:8px 0; padding:12px; }
+    .playing-music-studio .ms-piano-head { min-height:40px; margin-bottom:8px; }
+    .playing-music-studio .ms-octaves button { min-height:40px; padding:6px 12px; }
+    .playing-music-studio .music-studio .ms-key,
+    .playing-music-studio [data-ms-view=songs] .ms-key { min-height:160px; height:clamp(160px,28svh,270px); }
+    .playing-music-studio .ms-keyboard-hint { font-size:12px; margin:6px 0 0; }
+  }
+
+  @media (prefers-reduced-transparency:reduce),(prefers-contrast:more) {
+    .playing-music-studio .topbar { background:#f8fbff; -webkit-backdrop-filter:none; backdrop-filter:none; }
+    .reader .story-text { background:#fff; }
+  }
+  @media (forced-colors:active) {
+    .playing-music-studio .topbar { background:Canvas; border-bottom:1px solid CanvasText; box-shadow:none; -webkit-backdrop-filter:none; backdrop-filter:none; }
+    .reader .story-text { background:Canvas; }
+  }
+}

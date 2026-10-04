@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "created": "2026-10-04",
+  "stories": [
+    {
+      "id": "tablet_story_peppa_rain_band",
+      "title": "佩奇的雨声小乐队",
+      "group": "peppa",
+      "visualGuide": {
+        "style": "有温暖层次的原创儿童绘本质感，柔和自然光，干净明确构图，圆润亲切但不粗糙；固定角色比例及服装，无可读文字、无官方标志。",
+        "characters": [
+          "佩奇：粉色小猪，红色连衣裙，圆润脸与长椭圆鼻子",
+          "乔治：较小粉色小猪，蓝色上衣，绿色恐龙玩偶",
+          "猪妈妈：成年粉色猪，橙色连衣裙"
+        ],
+        "anatomy": "单个角色肢体完整自然且不重复：小猪和拟人动物仅两只手、两条腿；四足狗狗仅四爪。无多手、多腿、多尾巴或身体穿插。"
+      },
+      "pages": [
+        {
+          "page": 1,
+          "scene": "雨天猪家暖色客厅，佩奇穿红裙、乔治穿蓝衣抱绿色恐龙，二人望窗外细雨，猪妈妈穿橙裙在有顶门廊门旁微笑，窗外绿色草地。",
+          "image": "art/tablet-stories-v1/tablet_story_peppa_rain_band/page1.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        },
+        {
+          "page": 2,
+          "scene": "有顶门廊下，屋檐雨滴分别落入小蓝盆和浅黄色盘，佩奇敲空纸盒、乔治拍手，桌上绿色恐龙；显得热闹但不凌乱，孩子都在屋顶下干燥处。",
+          "image": "art/tablet-stories-v1/tablet_story_peppa_rain_band/page2.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        },
+        {
+          "page": 3,
+          "scene": "近景展示轮流合奏：佩奇拍手、乔治安静等待，猪妈妈温柔竖起一根手指示意先听；小蓝盆和浅黄盘收雨滴，留出宽阔的视觉呼吸空间。",
+          "image": "art/tablet-stories-v1/tablet_story_peppa_rain_band/page3.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        },
+        {
+          "page": 4,
+          "scene": "细雨变小，两只小猪并肩朝屋檐倾听，随后缓慢轻敲空纸盒；屋檐少量雨滴、两只容器位置与前页相同，动作从容。",
+          "image": "art/tablet-stories-v1/tablet_story_peppa_rain_band/page4.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        },
+        {
+          "page": 5,
+          "scene": "雨后傍晚暖色客厅，佩奇轻哼、乔治给绿色小恐龙盖薄毯，猪妈妈拿手机播放录音，窗外雨后柔光与水滴；不显示任何文字或手机品牌。",
+          "image": "art/tablet-stories-v1/tablet_story_peppa_rain_band/page5.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        }
+      ],
+      "cover_scene": "佩奇和乔治在干燥有顶的小门廊轮流轻拍小手，旁边蓝盆与浅黄盘接屋檐雨滴，绿色恐龙坐在矮凳上，猪妈妈温柔陪伴；一眼看出安静又快乐的雨声小乐队，室内外暖冷光柔和对比。",
+      "cover_image": "art/tablet-stories-v1/tablet_story_peppa_rain_band/cover.webp"
+    },
+    {
+      "id": "tablet_story_peppa_pillow_town",
+      "title": "佩奇的枕头小城",
+      "group": "peppa",
+      "visualGuide": {
+        "style": "有温暖层次的原创儿童绘本质感，柔和自然光，干净明确构图，圆润亲切但不粗糙；固定角色比例及服装，无可读文字、无官方标志。",
+        "characters": [
+          "佩奇：粉色小猪，红色连衣裙，圆润脸与长椭圆鼻子",
+          "乔治：较小粉色小猪，蓝色上衣，绿色恐龙玩偶",
+          "猪妈妈：成年粉色猪，橙色连衣裙"
+        ],
+        "anatomy": "单个角色肢体完整自然且不重复：小猪和拟人动物仅两只手、两条腿；四足狗狗仅四爪。无多手、多腿、多尾巴或身体穿插。"
+      },
+      "pages": [
+        {
+          "page": 1,
+          "scene": "猪家地毯上低矮软枕头形成小城，佩奇红裙、乔治蓝衣；蓝枕头旁绿色恐龙，黄枕头旁棕色小熊，纸片小车卡在相邻玩偶房子之间。",
+          "image": "art/tablet-stories-v1/tablet_story_peppa_pillow_town/page1.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        },
+        {
+          "page": 2,
+          "scene": "俯视低矮枕头小城，房子被推开后红枕头仍遮住沙发旁通道，佩奇和乔治坐在地毯上一起观察，小熊在乔治怀中。不要攀爬或高叠枕头。",
+          "image": "art/tablet-stories-v1/tablet_story_peppa_pillow_town/page2.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        },
+        {
+          "page": 3,
+          "scene": "猪妈妈递旧画纸，佩奇在纸路上画弯曲连线，乔治把玩偶家门方向朝向道路，中央圆形纸片小广场；画纸上只有图形，不要可读文字。",
+          "image": "art/tablet-stories-v1/tablet_story_peppa_pillow_town/page3.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        },
+        {
+          "page": 4,
+          "scene": "地毯上的小广场，佩奇和乔治选一棵小玩具树和一张玩偶长椅，其他玩具被放回旁边篮子，纸片小车在宽敞空地轻松转弯。",
+          "image": "art/tablet-stories-v1/tablet_story_peppa_pillow_town/page4.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        },
+        {
+          "page": 5,
+          "scene": "暖色夜晚客厅，棕色小熊与绿色恐龙坐在低矮枕头城的小广场，佩奇在画册画城市图形，乔治贴星星贴纸，空间舒适有序。",
+          "image": "art/tablet-stories-v1/tablet_story_peppa_pillow_town/page5.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        }
+      ],
+      "cover_scene": "佩奇和乔治坐在地毯上欣赏整齐的低矮枕头小城，弯曲白纸小路通往圆形广场，恐龙与小熊相邻坐着，玩具树、长椅及紙片小车位置清楚，暖色客厅中有充足空地。",
+      "cover_image": "art/tablet-stories-v1/tablet_story_peppa_pillow_town/cover.webp"
+    },
+    {
+      "id": "tablet_story_paw_picnic_puzzle",
+      "title": "汪汪队的拼图野餐垫",
+      "group": "paw",
+      "visualGuide": {
+        "style": "清晰可爱的原创儿童绘本3D软塑感与细腻柔光融合，角色与物品可辨识，简洁背景，服装纯色无官方徽章/品牌文字。",
+        "characters": [
+          "阿奇：棕色德牧小犬，蓝色背心",
+          "小砾：圆脸棕白斗牛犬，黄色背心",
+          "灰灰：灰棕混种小犬，绿色背心",
+          "天天：浅棕垂耳小犬，粉色背心",
+          "莱德：带领伙伴的照护角色，短棕发，红白上衣"
+        ],
+        "anatomy": "单个角色肢体完整自然且不重复：小猪和拟人动物仅两只手、两条腿；四足狗狗仅四爪。无多手、多腿、多尾巴或身体穿插。"
+      },
+      "pages": [
+        {
+          "page": 1,
+          "scene": "冒险湾公园草地，阿奇棕色德牧穿简洁蓝背心、小砾圆脸斗牛犬穿黄色背心，打开装有树/河/云图案软拼图垫块的篮子；不要官方徽章或标记。",
+          "image": "art/tablet-stories-v1/tablet_story_paw_picnic_puzzle/page1.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        },
+        {
+          "page": 2,
+          "scene": "阿奇与小砾面前拼图软垫形成错误长条，蓝河接到了绿色树冠，下方两块凹凸边不匹配，二犬歪头一起观察，画面友善不沮丧。",
+          "image": "art/tablet-stories-v1/tablet_story_paw_picnic_puzzle/page2.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        },
+        {
+          "page": 3,
+          "scene": "莱德穿红白上衣与二犬一起在草地整理软垫：四个角在外圈、蓝色河流开始连续、树干接树冠；清楚展示边框和慢慢拼合的过程，无文字数字。",
+          "image": "art/tablet-stories-v1/tablet_story_paw_picnic_puzzle/page3.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        },
+        {
+          "page": 4,
+          "scene": "阿奇把空篮子移开，小砾发现一片反面的软垫藏在篮子下，翻面露出浅白云朵，垫子中间剩一个对应形状的空缺。",
+          "image": "art/tablet-stories-v1/tablet_story_paw_picnic_puzzle/page4.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        },
+        {
+          "page": 5,
+          "scene": "完整宽大拼图野餐垫上有完整绿树/蓝河/白云，阿奇与小砾坐在垫边分享面包和水果，莱德温和陪伴，午后公园阳光柔和，篮子稳放。",
+          "image": "art/tablet-stories-v1/tablet_story_paw_picnic_puzzle/page5.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        }
+      ],
+      "cover_scene": "阿奇和小砾在公园草地两侧向中央平整的拼图野餐垫开心示意，垫子形成完整的绿树、蓝河和白云，水果篮及面包稳稳放在旁边，莱德温柔陪伴；视觉焦点是完整的拼图风景。",
+      "cover_image": "art/tablet-stories-v1/tablet_story_paw_picnic_puzzle/cover.webp"
+    },
+    {
+      "id": "tablet_story_paw_paper_cup_garden",
+      "title": "汪汪队的纸杯花园",
+      "group": "paw",
+      "visualGuide": {
+        "style": "清晰可爱的原创儿童绘本3D软塑感与细腻柔光融合，角色与物品可辨识，简洁背景，服装纯色无官方徽章/品牌文字。",
+        "characters": [
+          "阿奇：棕色德牧小犬，蓝色背心",
+          "小砾：圆脸棕白斗牛犬，黄色背心",
+          "灰灰：灰棕混种小犬，绿色背心",
+          "天天：浅棕垂耳小犬，粉色背心",
+          "莱德：带领伙伴的照护角色，短棕发，红白上衣"
+        ],
+        "anatomy": "单个角色肢体完整自然且不重复：小猪和拟人动物仅两只手、两条腿；四足狗狗仅四爪。无多手、多腿、多尾巴或身体穿插。"
+      },
+      "pages": [
+        {
+          "page": 1,
+          "scene": "温暖活动室桌面，灰灰混种小犬穿绿色背心、天天浅棕可卡犬穿粉色背心，把彩色纸花插进干净纸杯，几只轻纸杯向一边倾倒；无官方标记。",
+          "image": "art/tablet-stories-v1/tablet_story_paw_paper_cup_garden/page1.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        },
+        {
+          "page": 2,
+          "scene": "天天扶着更大红纸花，纸杯侧倒，灰灰把花取出，二犬在桌边近距离观察杯子和偏向一侧的花柄，清楚呈现重心失衡的视觉关系。",
+          "image": "art/tablet-stories-v1/tablet_story_paw_paper_cup_garden/page2.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        },
+        {
+          "page": 3,
+          "scene": "莱德穿红白上衣负责安全修剪，灰灰在杯底放少量小石子，天天扶住中间短花柄，纸杯站稳；只使用圆头安全剪刀，由莱德负责修剪，其他伙伴远离刀口，不让狗狗或孩子把小零件放嘴里。",
+          "image": "art/tablet-stories-v1/tablet_story_paw_paper_cup_garden/page3.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        },
+        {
+          "page": 4,
+          "scene": "桌面原创纸杯花园，高杯后排、小花前排，红黄蓝花朵分散有层次，杯间保留弯弯小路；灰灰和天天分别轻轻移动杯子。",
+          "image": "art/tablet-stories-v1/tablet_story_paw_paper_cup_garden/page4.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        },
+        {
+          "page": 5,
+          "scene": "活动室地面软垫旁安全矮桌展示纸杯花园，灰灰与天天迎接两位小朋友听故事，莱德在旁，大家轻松坐着看花与绘本，温暖柔光。",
+          "image": "art/tablet-stories-v1/tablet_story_paw_paper_cup_garden/page5.webp",
+          "composition": "为手机和平板绘本横向画面构图，主角动作清楚，边缘留呼吸空间；同一场景物品颜色位置保持一致，无对话气泡、文字或水印。"
+        }
+      ],
+      "cover_scene": "灰灰和天天在活动室矮桌两侧开心欣赏自己的纸杯花园，后排较高前排较低的纸花色彩温柔，纸杯站立稳固，之间留着小路，莱德穿红白上衣陪伴；所有材料已收拾，轻松亲切。",
+      "cover_image": "art/tablet-stories-v1/tablet_story_paw_paper_cup_garden/cover.webp"
+    }
+  ],
+  "pending_reason": "Two additional drafts retained outside source until scene-matching illustrations can be completed."
+}
