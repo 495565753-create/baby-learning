@@ -40,6 +40,40 @@ function load(options = {}) {
   return { root, api, t, timers, sounds, gains, contexts, spoken, storage, tick, resolve: () => resolveResume?.() };
 }
 
+function touchSurface(env, withBody = true) {
+  const listenerNodes = new Set(), classes = new Set();
+  function surface(extra = {}) {
+    const handlers = new Map();
+    const node = {
+      handlers,
+      addEventListener(type, callback, options) { const entries = handlers.get(type) || []; entries.push({ callback, options }); handlers.set(type, entries); },
+      removeEventListener(type, callback) { handlers.set(type, (handlers.get(type) || []).filter(entry => entry.callback !== callback)); },
+      dispatch(type, event = {}) { for (const entry of handlers.get(type) || []) entry.callback({ currentTarget: node, ...event }); },
+      ...extra
+    };
+    listenerNodes.add(node); return node;
+  }
+  const piano = surface({ captures: new Set(), setPointerCapture(id) { this.captures.add(id); }, releasePointerCapture(id) { this.captures.delete(id); } });
+  const keys = [60, 62, 64, 65, 67, 69, 71, 72].map(note => {
+    const key = surface({ tagName: 'BUTTON', dataset: { msNote: String(note) }, classList: { add() {}, remove() {} }, closest(selector) { return selector === '[data-ms-note]' ? this : null; } });
+    return key;
+  });
+  const status = { textContent: '' }, studio = {
+    matches: selector => selector === '[data-music-studio]',
+    contains: node => keys.includes(node),
+    querySelector(selector) { if (selector === '[data-ms-piano]') return piano; if (selector === '[data-ms-status]') return status; return keys.find(key => selector === `[data-ms-note="${key.dataset.msNote}"]`) || null; },
+    querySelectorAll: selector => selector === '[data-ms-note]' ? keys : []
+  };
+  const documentNode = surface(); env.root.document.addEventListener = documentNode.addEventListener; env.root.document.removeEventListener = documentNode.removeEventListener;
+  const rootNode = surface(); env.root.addEventListener = rootNode.addEventListener; env.root.removeEventListener = rootNode.removeEventListener;
+  let hit = keys[0]; env.root.document.elementFromPoint = () => hit;
+  if (withBody) env.root.document.body = { classList: { add: name => classes.add(name), remove: name => classes.delete(name) } };
+  env.api.mount(studio);
+  return { piano, keys, studio, status, classes, documentNode, rootNode, listenerNodes, hit: key => { hit = key; } };
+}
+
+const flushPress = async () => { await Promise.resolve(); await Promise.resolve(); };
+
 test('small song library contains eight historical melodies and two complete original tunes', () => {
   const { t, api } = load();
   assert.equal(api.songs.length, 10); assert.equal(api.songs.filter(song => song.source).length, 8);
@@ -140,4 +174,64 @@ test('volume clamps and updates the live gain; stop clears recording and all pla
   const env = load(); await env.t.press(60, 'key'); assert.equal(env.gains[0].gain.value, .7); env.t.setVolume(200); assert.equal(env.gains[0].gain.value, 1); env.t.setVolume(-2); assert.equal(env.gains[0].gain.value, 0);
   env.t.startRecording(); env.api.stop(); const stats = env.t.stats(); assert.equal(stats.nodes, 0); assert.equal(stats.timers, 0); assert.equal(stats.pressed, 0); assert.equal(env.t.getState().recording, false);
   assert.doesNotMatch(env.t.getState().status, /正在录音/);
+});
+
+test('native long-press selection, context menus and touch scrolling are suppressed only on the piano', () => {
+  const env = load(), ui = touchSurface(env), input = { tagName: 'INPUT', closest: selector => selector.includes('input') ? input : null };
+  for (const type of ['contextmenu', 'selectstart', 'dragstart', 'touchstart', 'touchmove']) {
+    let prevented = 0;
+    ui.piano.dispatch(type, { target: ui.keys[0], cancelable: true, preventDefault() { prevented++; } }); assert.equal(prevented, 1, type);
+    ui.piano.dispatch(type, { target: input, cancelable: true, preventDefault() { prevented++; } }); assert.equal(prevented, 1, `${type}: editable input`);
+    ui.piano.dispatch(type, { target: ui.keys[0], cancelable: false, preventDefault() { prevented++; } }); assert.equal(prevented, 1, `${type}: non-cancelable`);
+    assert.equal(ui.documentNode.handlers.has(type), false, `${type}: no global suppression`);
+  }
+  assert.equal(ui.piano.handlers.get('touchstart')[0].options.passive, false); assert.equal(ui.piano.handlers.get('touchmove')[0].options.passive, false);
+  env.api.stop(); assert.equal(ui.piano.handlers.get('contextmenu').length, 0); assert.equal(ui.piano.handlers.get('touchstart').length, 0);
+});
+
+test('long-press suppression preserves multi-finger sliding and releases canceled or lost captures', async () => {
+  const env = load(), ui = touchSurface(env), event = id => ({ pointerId: id, target: ui.keys[0], clientX: 1, clientY: 1, preventDefault() {} });
+  ui.hit(ui.keys[0]); ui.piano.dispatch('pointerdown', event(1)); await flushPress();
+  ui.hit(ui.keys[2]); ui.piano.dispatch('pointerdown', event(2)); await flushPress(); assert.equal(env.t.stats().nodes, 2); assert.equal(env.t.stats().pointers, 2);
+  let contextPrevented = false; ui.piano.dispatch('contextmenu', { target: ui.keys[0], preventDefault() { contextPrevented = true; } }); assert.equal(contextPrevented, true); assert.equal(env.t.stats().nodes, 2);
+  ui.hit(ui.keys[4]); ui.piano.dispatch('pointermove', event(1)); await flushPress(); assert.equal(env.t.stats().nodes, 2); assert.equal(env.sounds.length, 3);
+  ui.piano.dispatch('lostpointercapture', event(1)); assert.equal(env.t.stats().nodes, 1); assert.equal(env.t.stats().pointers, 1);
+  ui.piano.dispatch('pointercancel', event(2)); assert.equal(env.t.stats().nodes, 0); assert.equal(env.t.stats().pointers, 0); assert.equal(env.t.stats().pressed, 0);
+});
+
+test('mouse context-menu and middle clicks never sound a note, while touch, pen and left click still work', async () => {
+  const env = load(), ui = touchSurface(env), event = (pointerType, button, pointerId) => ({ pointerType, button, pointerId, target: ui.keys[0], clientX: 1, clientY: 1, preventDefault() {} });
+  for (const button of [1, 2]) ui.piano.dispatch('pointerdown', event('mouse', button, button));
+  await flushPress(); assert.equal(env.sounds.length, 0); assert.equal(env.t.stats().pointers, 0); assert.equal(env.t.stats().pressed, 0);
+  for (const [pointerType, button, pointerId] of [['mouse', 0, 3], ['touch', 0, 4], ['pen', 0, 5]]) {
+    ui.piano.dispatch('pointerdown', event(pointerType, button, pointerId)); await flushPress(); ui.piano.dispatch('pointerup', event(pointerType, button, pointerId));
+  }
+  assert.equal(env.sounds.length, 3); assert.equal(env.t.stats().nodes, 0); assert.equal(env.t.stats().pointers, 0);
+});
+
+test('rotation releases held pointers and stale resumed notes but keeps recording and automatic playback', async () => {
+  const env = load(), ui = touchSurface(env); env.t.startRecording();
+  ui.piano.dispatch('pointerdown', { pointerId: 1, pointerType: 'touch', button: 0, clientX: 1, clientY: 1, preventDefault() {} }); await flushPress(); env.tick(700); const recordingTimers = env.t.stats().timers;
+  ui.rootNode.dispatch('orientationchange'); assert.equal(env.t.getState().recording, true); assert.equal(env.t.stats().nodes, 0); assert.equal(env.t.stats().pointers, 0); assert.equal(ui.piano.captures.size, 0); assert.ok(Math.abs(env.t.getState().events[0].duration - .7) < .00001);
+  assert.equal(env.t.stats().timers, recordingTimers); assert.ok(recordingTimers > 0); env.t.finishRecording(); await env.t.playSong(); const timers = env.t.stats().timers;
+  ui.rootNode.dispatch('orientationchange'); assert.equal(env.t.getState().transport, 'song'); assert.equal(env.t.stats().timers, timers);
+  const slow = load({ suspended: true, deferredResume: true }), slowUi = touchSurface(slow); slow.t.startRecording(); slowUi.piano.dispatch('pointerdown', { pointerId: 8, pointerType: 'touch', button: 0, clientX: 1, clientY: 1, preventDefault() {} });
+  slowUi.rootNode.dispatch('orientationchange'); slow.resolve(); await flushPress(); assert.equal(slow.sounds.length, 0); assert.equal(slow.t.getState().recording, true);
+});
+
+test('keyboard and assistive button activation still play, while text fields and IME keep their normal keys', async () => {
+  const env = load(), ui = touchSurface(env), input = { tagName: 'INPUT' }, editor = { tagName: 'DIV', closest: selector => selector.includes('contenteditable') ? editor : null };
+  let prevented = 0;
+  for (const target of [input, editor]) ui.documentNode.dispatch('keydown', { key: 'a', target, preventDefault() { prevented++; } });
+  ui.documentNode.dispatch('keydown', { key: 'a', target: ui.keys[0], isComposing: true, preventDefault() { prevented++; } }); await flushPress(); assert.equal(env.sounds.length, 0); assert.equal(prevented, 0);
+  ui.documentNode.dispatch('keydown', { key: 'a', target: ui.keys[0], preventDefault() { prevented++; } }); await flushPress(); assert.equal(env.sounds.length, 1); assert.equal(prevented, 1);
+  ui.documentNode.dispatch('keyup', { key: 'a' }); assert.equal(env.t.stats().nodes, 0);
+  ui.keys[2].dispatch('click', { detail: 0 }); await flushPress(); assert.equal(env.sounds.length, 2); assert.equal(env.t.stats().pressed, 0);
+});
+
+test('music-only body class is mounted and removed without altering another page, including no-body environments', () => {
+  const env = load(), ui = touchSurface(env); ui.classes.add('playing-mini-game'); assert.equal(ui.classes.has('playing-music-studio'), true);
+  env.api.stop(); assert.equal(ui.classes.has('playing-music-studio'), false); assert.equal(ui.classes.has('playing-mini-game'), true);
+  const minimal = load(), minimalUi = touchSurface(minimal, false); assert.equal(minimal.t.stats().mounted, true); assert.doesNotThrow(() => minimal.api.stop()); assert.ok(minimalUi.piano);
+  for (const mode of ['play', 'songs', 'compose']) { env.t.setState({ mode }); assert.match(env.api.render(), new RegExp(`data-ms-view="${mode}"`)); }
 });

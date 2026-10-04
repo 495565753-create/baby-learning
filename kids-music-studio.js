@@ -136,7 +136,7 @@
     nodes.forEach(voice => release(voice, true)); nodes.clear(); pointers.clear(); pressed.clear(); state.transport = ''; state.following = false;
     host?.querySelectorAll('.ms-key.is-lit,.ms-key.is-target,.ms-step.is-playing').forEach(el => el.classList.remove('is-lit', 'is-target', 'is-playing'));
   }
-  function stop() { halt(); mounted = false; unbind(); host = null; }
+  function stop() { halt(); mounted = false; unbind(); host = null; root.document?.body?.classList?.remove('playing-music-studio'); }
   function setMuted(value) { muted = !!value; if (muted) { halt(); message('声音关掉啦。点上面的喇叭，可以再打开'); refreshControls(); } else if (mounted) message('声音打开啦，点琴键或播放试试'); }
   function setVolume(value) {
     state.volume = clamp(Number(value) || 0, 0, 100);
@@ -175,7 +175,7 @@
     return `<section class="ms-works"><div class="ms-card-heading"><div><strong>💛 我的音乐作品</strong><small>只保存在这台设备，最多 16 首</small></div><span>${works.length} 首</span></div>${works.length ? `<div class="ms-work-list">${works.map(work => `<article class="ms-work"><span>${work.type === 'grid' ? '🎼' : '🎹'}</span><div><b>${esc(work.name)}</b><small>${work.type === 'grid' ? '八拍小乐队' : `${work.events.length} 个音符`}</small></div><div><button data-ms-load="${esc(work.id)}" aria-label="打开 ${esc(work.name)}">打开</button><button data-ms-delete="${esc(work.id)}" aria-label="删除 ${esc(work.name)}">🗑️</button></div></article>`).join('')}</div>` : '<p class="ms-empty">弹一段、编一段，再点保存<br>这里就会留下你的小歌</p>'}</section>`;
   }
   function render() {
-    return `<section class="music-studio" data-music-studio><header class="ms-hero"><span>🎹</span><div><small>每个音符，都是你的想象</small><h2>我的音乐小屋</h2></div><button data-ms-help aria-label="听玩法">🔊</button></header><nav class="ms-tabs" aria-label="音乐玩法">${[['play', '🎹', '自由弹'], ['songs', '🎵', '小歌库'], ['compose', '🎼', '小作曲家']].map(([id, icon, name]) => `<button data-ms-mode="${id}" aria-pressed="${state.mode === id}"><span>${icon}</span><b>${name}</b></button>`).join('')}</nav>${controlsMarkup()}<p class="ms-status" data-ms-status role="status" aria-live="polite">${esc(state.status)}</p><div class="ms-panel">${state.mode === 'songs' ? songsMarkup() : state.mode === 'compose' ? composerMarkup() : `${pianoMarkup()}${recordMarkup()}`}</div>${worksMarkup()}<p class="ms-parent-note">音乐音量可以调大，也受手机侧边音量键影响。作品保存在这台设备；清理浏览器数据会清除作品。</p></section>`;
+    return `<section class="music-studio" data-music-studio data-ms-view="${state.mode}"><header class="ms-hero"><span>🎹</span><div><small>每个音符，都是你的想象</small><h2>我的音乐小屋</h2></div><button data-ms-help aria-label="听玩法">🔊</button></header><nav class="ms-tabs" aria-label="音乐玩法">${[['play', '🎹', '自由弹'], ['songs', '🎵', '小歌库'], ['compose', '🎼', '小作曲家']].map(([id, icon, name]) => `<button data-ms-mode="${id}" aria-pressed="${state.mode === id}"><span>${icon}</span><b>${name}</b></button>`).join('')}</nav>${controlsMarkup()}<p class="ms-status" data-ms-status role="status" aria-live="polite">${esc(state.status)}</p><div class="ms-panel">${state.mode === 'songs' ? songsMarkup() : state.mode === 'compose' ? composerMarkup() : `${pianoMarkup()}${recordMarkup()}`}</div>${worksMarkup()}<p class="ms-parent-note">音乐音量可以调大，也受手机侧边音量键影响。作品保存在这台设备；清理浏览器数据会清除作品。</p></section>`;
   }
   function paint() {
     if (!mounted || !host) return;
@@ -329,7 +329,15 @@
     const element = root.document.elementFromPoint?.(event.clientX, event.clientY) || event.target;
     const key = element?.closest?.('[data-ms-note]'); return key && host?.contains(key) ? key : null;
   }
+  function editableTarget(target) { return target?.closest?.('input,textarea,select,[contenteditable=""],[contenteditable="true"]') || /INPUT|TEXTAREA|SELECT/.test(target?.tagName || ''); }
+  function preventPianoBrowserAction(event) {
+    // Scope native gesture suppression to the playable keyboard. Naming fields and the rest of the page keep normal editing.
+    const target = event.target?.nodeType === 3 ? event.target.parentElement : event.target;
+    if (editableTarget(target)) return;
+    if (event.cancelable !== false) event.preventDefault();
+  }
   function pointerDown(event) {
+    if (event.pointerType === 'mouse' && event.button !== 0) return;
     const key = keyAt(event); if (!key) return;
     event.preventDefault(); if (state.transport) { halt(); refreshControls(); } const id = `pointer-${event.pointerId}`; pointers.set(event.pointerId, Number(key.dataset.msNote)); event.currentTarget.setPointerCapture?.(event.pointerId); press(Number(key.dataset.msNote), id);
   }
@@ -339,8 +347,15 @@
     if (old === next) return; const id = `pointer-${event.pointerId}`; lift(id); pointers.set(event.pointerId, next); if (next != null) press(next, id);
   }
   function pointerUp(event) { if (!pointers.has(event.pointerId)) return; pointers.delete(event.pointerId); lift(`pointer-${event.pointerId}`); try { event.currentTarget.releasePointerCapture?.(event.pointerId); } catch {} }
+  function releaseHeldKeys() {
+    if (!pressed.size && !pointers.size) return;
+    const captured = Array.from(pointers.keys()), piano = host?.querySelector('[data-ms-piano]'); pointers.clear();
+    pressed.forEach(holder => release(holder.voice)); pressed.clear();
+    captured.forEach(id => { try { piano?.releasePointerCapture?.(id); } catch {} });
+    host?.querySelectorAll('.ms-key.is-lit').forEach(el => el.classList.remove('is-lit'));
+  }
   function keyboardDown(event) {
-    if (event.repeat || event.ctrlKey || event.metaKey || event.altKey || /INPUT|TEXTAREA|SELECT/.test(event.target?.tagName || '') || !['play', 'songs'].includes(state.mode)) return;
+    if (event.repeat || event.ctrlKey || event.metaKey || event.altKey || event.isComposing || editableTarget(event.target) || !['play', 'songs'].includes(state.mode)) return;
     const index = 'asdfghjk'.indexOf(event.key.toLowerCase()); if (index < 0) return; event.preventDefault(); press(60 + 12 * state.octave + SCALE[index], `keyboard-${event.key.toLowerCase()}`);
   }
   function keyboardUp(event) { lift(`keyboard-${event.key.toLowerCase()}`); }
@@ -350,6 +365,9 @@
     listen(host?.querySelector('[data-ms-volume]'), 'input', event => setVolume(event.target.value));
     listen(host?.querySelector('[data-ms-help]'), 'click', () => { halt(); refreshControls(); say(TEXT.help); });
     const piano = host?.querySelector('[data-ms-piano]'); listen(piano, 'pointerdown', pointerDown); listen(piano, 'pointermove', pointerMove); listen(piano, 'pointerup', pointerUp); listen(piano, 'pointercancel', pointerUp); listen(piano, 'lostpointercapture', pointerUp);
+    for (const event of ['contextmenu', 'selectstart', 'dragstart']) listen(piano, event, preventPianoBrowserAction);
+    // iOS can open its text callout after a long touch even when pointerdown was handled. Explicitly cancel only keyboard touches.
+    listen(piano, 'touchstart', preventPianoBrowserAction, { passive: false }); listen(piano, 'touchmove', preventPianoBrowserAction, { passive: false });
     host?.querySelectorAll('[data-ms-note]').forEach(el => listen(el, 'click', event => { if (event.detail === 0) press(Number(el.dataset.msNote), `accessible-${el.dataset.msNote}`, false); }));
     host?.querySelectorAll('[data-ms-octave]').forEach(el => listen(el, 'click', () => { halt(); updateOctave(Number(el.dataset.msOctave)); refreshControls(); }));
     host?.querySelectorAll('[data-ms-stop]').forEach(el => listen(el, 'click', stopPlayback));
@@ -364,11 +382,13 @@
     host?.querySelectorAll('[data-ms-load]').forEach(el => listen(el, 'click', () => loadWork(el.dataset.msLoad))); host?.querySelectorAll('[data-ms-delete]').forEach(el => listen(el, 'click', () => deleteWork(el.dataset.msDelete)));
     listen(root.document, 'keydown', keyboardDown); listen(root.document, 'keyup', keyboardUp);
     listen(root.document, 'visibilitychange', () => { if (root.document.hidden) { halt(); refreshControls(); message('休息一下，回来再点播放'); } });
+    // Rotation changes key positions: release held notes without ending an in-progress recording or automatic music.
+    listen(root, 'orientationchange', releaseHeldKeys); listen(root.screen?.orientation, 'change', releaseHeldKeys);
     listen(root, 'blur', () => { halt(); refreshControls(); }); listen(root, 'pagehide', stop);
   }
   function mount(container) {
     stop(); host = container?.matches?.('[data-music-studio]') ? container : container?.querySelector?.('[data-music-studio]');
-    if (!host) return false; if (root.state && typeof root.state.muted === 'boolean') muted = root.state.muted; mounted = true; bind(); refreshControls();
+    if (!host) return false; if (root.state && typeof root.state.muted === 'boolean') muted = root.state.muted; mounted = true; root.document?.body?.classList?.add('playing-music-studio'); bind(); refreshControls();
     if (muted) message('声音关掉啦。点上面的喇叭，可以再打开'); else if (state.status.startsWith('声音关掉')) message('声音打开啦，点琴键或播放试试'); return true;
   }
   function reset() { const volume = state.volume; halt(); state = baseState(); state.volume = volume; paint(); message('新的音乐准备好啦，想怎么弹都可以'); return true; }
