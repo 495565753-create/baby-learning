@@ -28,8 +28,8 @@
       ['🎮', '小游戏', '小手滑滑，动脑筋', "go('games')", 'games'],
       ['👩‍🏫', '老师课堂', '语文 · 数学', "go('school')", 'classroom'],
       ['▶️', '小影院', '和家长一起看科普', "go('videos')", 'videos'],
-      ['🖍️', '自由画画', '画出自己的想法', "go('draw')", 'drawing'],
-      ['🎹', '音乐小琴', '点琴键，听音乐', "go('piano')", 'music']
+      ['🖍️', '自由画画', '画笔、对称、小画廊', "go('draw')", 'drawing'],
+      ['🎹', '音乐小琴', '听小歌，自己作曲', "go('piano')", 'music']
     ];
     const recent = readRecent();
     return `<section class="home-dashboard">

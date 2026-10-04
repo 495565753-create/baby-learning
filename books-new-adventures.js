@@ -687,7 +687,7 @@ window.BOOKS_ADVENTURES=[
       },
       {
         "text": "等待时，阿奇关掉附近太亮的灯，天天教孩子们用手指框住天空找北斗星。有人担心错过星星雨，莱德说，正确照顾设备比匆忙看一眼更重要。孩子们便耐心等着镜片变清楚。",
-        "img": "art/adventures-v1/adventure_paw_10/page4.webp"
+        "img": "art/adventures-v1/adventure_paw_10/page4-v2.webp"
       },
       {
         "text": "水雾散去后，灰灰用专用气吹清掉一粒灰尘，再盖好没使用的镜头。天天重新对准天空，第一道亮线正好划过黑夜，孩子们发出轻轻的惊叹。月亮的边缘也重新清晰起来。",

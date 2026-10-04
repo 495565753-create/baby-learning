@@ -1,0 +1,163 @@
+{
+  "created_at": "2026-10-04T18:12:44.262992+08:00",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "-8%",
+  "pitch": "+0Hz",
+  "text_count": 9,
+  "objective_qa_passed": true,
+  "files": {
+    "小画室来啦。选一支画笔，在画纸上慢慢画。还可以换底图，画形状，试试对称。画好以后，放进小画廊。": {
+      "spoken": "小画室来啦。选一支画笔，在画纸上慢慢画。还可以换底图，画形状，试试对称。画好以后，放进小画廊。",
+      "text_sha256": "80cb735d9a674a62e13f7f27762534e7c11305c1eaac9cfeaed943e95b68d8f5",
+      "file": "voice-creative-v1/80cb735d9a674a62e13f.mp3",
+      "sha256": "bccbea9964f365ae1cf1d2905ed963ae5fd547a40748ac8d86cb4e3bb66aa512",
+      "qa": {
+        "duration_seconds": 12.504,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.43,
+        "rms_dbfs": -20.424,
+        "trailing_silence_seconds": 0.606,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "每一幅画都不一样，你的小画廊又多了一幅作品。": {
+      "spoken": "每一幅画都不一样，你的小画廊又多了一幅作品。",
+      "text_sha256": "6c5724758ddd47d06ab0a42bdc32228772e0f4877a487b5cfaa4ffc6d0a21557",
+      "file": "voice-creative-v1/6c5724758ddd47d06ab0.mp3",
+      "sha256": "3550f708fce8a45ad37b58f80041d76a1493adc3bb404e791106b49a908659b9",
+      "qa": {
+        "duration_seconds": 4.992,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -5.27,
+        "rms_dbfs": -19.911,
+        "trailing_silence_seconds": 0.597,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": true
+    },
+    "欢迎来到音乐小屋。滑过彩色琴键，就能弹出音乐。小歌库里可以听歌、跟着亮灯弹。小作曲家里，点音符和小鼓，做一首自己的歌吧。": {
+      "spoken": "欢迎来到音乐小屋。滑过彩色琴键，就能弹出音乐。小歌库里可以听歌、跟着亮灯弹。小作曲家里，点音符和小鼓，做一首自己的歌吧。",
+      "text_sha256": "ed252dc71a1c5e14431e20f3bfa749aa454ace8115ef20877b9056b42c3eaed5",
+      "file": "voice-creative-v1/ed252dc71a1c5e14431e.mp3",
+      "sha256": "763200f3ecb85de2a57f11d86889fad10e69c07abc8454c09d10687f78019e1f",
+      "qa": {
+        "duration_seconds": 14.568,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -2.103,
+        "rms_dbfs": -19.734,
+        "trailing_silence_seconds": 0.598,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "用小手点琴键，也可以滑过去弹。换一种乐器，听听声音有什么不同。": {
+      "spoken": "用小手点琴键，也可以滑过去弹。换一种乐器，听听声音有什么不同。",
+      "text_sha256": "c8038f11800c7248f7822e81214bf29419521859241ee6929dd421c0dee55338",
+      "file": "voice-creative-v1/c8038f11800c7248f782.mp3",
+      "sha256": "73bdf3268a18ff4c13ec2ba4a70f96a508949e657191d102e1cc5b5121d7769e",
+      "qa": {
+        "duration_seconds": 7.32,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -1.128,
+        "rms_dbfs": -20.014,
+        "trailing_silence_seconds": 0.568,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "选一首喜欢的小歌。点听一听，可以听完整旋律。点跟着弹，慢慢点发亮的琴键。": {
+      "spoken": "选一首喜欢的小歌。点听一听，可以听完整旋律。点跟着弹，慢慢点发亮的琴键。",
+      "text_sha256": "1c9748b02b2be527be1a0f59b11bda4d7b52c0a5fb1baabe0027045b2a3eb9fd",
+      "file": "voice-creative-v1/1c9748b02b2be527be1a.mp3",
+      "sha256": "8e650552870c8a2c397be0d76c5205c8f960acbf78d2bcf4732c11fe8d59ebcf",
+      "qa": {
+        "duration_seconds": 9.096,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.919,
+        "rms_dbfs": -20.15,
+        "trailing_silence_seconds": 0.619,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "先点一个小格子，再选一个音符。点小鼓，就能加上鼓点。做好以后，点循环听听，你就是小作曲家。": {
+      "spoken": "先点一个小格子，再选一个音符。点小鼓，就能加上鼓点。做好以后，点循环听听，你就是小作曲家。",
+      "text_sha256": "57b5046346b05a35d22fea26e4567102fac58f56876399c2101cd052e56dd430",
+      "file": "voice-creative-v1/57b5046346b05a35d22f.mp3",
+      "sha256": "27645aef6103bfd2bc4be4cf71a9988ac63efdbd631963c9a13d4ba30ac2ef83",
+      "qa": {
+        "duration_seconds": 11.184,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.774,
+        "rms_dbfs": -20.094,
+        "trailing_silence_seconds": 0.594,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "小录音开始啦。弹一段你喜欢的音乐，弹完以后点完成。": {
+      "spoken": "小录音开始啦。弹一段你喜欢的音乐，弹完以后点完成。",
+      "text_sha256": "da5c65b47acad34201b42a7beb54132633487b581a55d736ec40a4700d40eadc",
+      "file": "voice-creative-v1/da5c65b47acad34201b4.mp3",
+      "sha256": "1835b6edc690f88b86c3ee35803befdd4d98deaaa183cf39a14fd6645157321f",
+      "qa": {
+        "duration_seconds": 6.168,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.362,
+        "rms_dbfs": -19.898,
+        "trailing_silence_seconds": 0.585,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "你的音乐作品保存好啦。以后还可以打开，接着创作。": {
+      "spoken": "你的音乐作品保存好啦。以后还可以打开，接着创作。",
+      "text_sha256": "479f8e5bbc030a3c1a1e3aa3c9ccf48554ccd91168b1f5bb41b2c83754acee62",
+      "file": "voice-creative-v1/479f8e5bbc030a3c1a1e.mp3",
+      "sha256": "90efa666a7c055158f879d45a205a721cb07084fc4144ee6eaa46dfe0c4f10a5",
+      "qa": {
+        "duration_seconds": 6.0,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -4.597,
+        "rms_dbfs": -20.095,
+        "trailing_silence_seconds": 0.587,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    },
+    "这首小歌弹完啦。你可以再听一次，或者弹自己的音乐。": {
+      "spoken": "这首小歌弹完啦。你可以再听一次，或者弹自己的音乐。",
+      "text_sha256": "ae535a1155f903ee97a0c198ffd9d6b7e00e47ead0f8a4893237a64f466d1b1d",
+      "file": "voice-creative-v1/ae535a1155f903ee97a0.mp3",
+      "sha256": "50aec4a0a3df6ff0974cf3b66b8dfa9867ff34637d7620fb262300a69e1288e3",
+      "qa": {
+        "duration_seconds": 6.168,
+        "sample_rate": 24000,
+        "channels": 1,
+        "peak_dbfs": -3.986,
+        "rms_dbfs": -19.757,
+        "trailing_silence_seconds": 0.593,
+        "clipped_samples": 0,
+        "fully_decoded": true
+      },
+      "cached": false
+    }
+  }
+}

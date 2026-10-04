@@ -1995,19 +1995,20 @@
     {
       "book": "adventure_paw_10",
       "page": 4,
-      "file": "art/adventures-v1/adventure_paw_10/page4.webp",
+      "file": "art/adventures-v1/adventure_paw_10/page4-v2.webp",
       "size": [
-        507,
-        493
+        768,
+        768
       ],
       "crop_box": [
-        517,
-        491,
-        1024,
-        984
+        0,
+        0,
+        1254,
+        1254
       ],
-      "sha256": "f3630bba064ebc5c9bf08418bbe8af3df69ef834b66a7b2828a413e52d9db88c",
-      "source_sha256": "1e1bf12614e15a041b54f69ce1acb2440af3a639f3027e6ceefd5294d5971a11"
+      "sha256": "4afa3c15e6e7ca6a16c45851a4720ac442444eeb48a3935e5e5b1d4de7a192d1",
+      "source_sha256": "4f221962584ca1760a008b7ec3d3a7f7f36c8a43d3759e41091e8257a68e6ee5",
+      "anatomy_review": "Two front limbs verified: one pointing upward, one resting at chest. Extra third forelimb removed with built-in image_gen."
     },
     {
       "book": "adventure_paw_10",
