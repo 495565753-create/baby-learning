@@ -97,3 +97,16 @@
   .playing-music-studio [data-ms-view=songs] .ms-piano{order:-1}
   .playing-music-studio [data-ms-view=songs] .ms-piano-head{margin:4px 0 0}
 }
+@media(orientation:landscape) and (max-height:320px) and (max-width:1100px){
+  .playing-music-studio [data-ms-view=play] .ms-piano-wrap{display:flex;flex-direction:column}
+  .playing-music-studio [data-ms-view=play] .ms-piano{order:-1}
+  .playing-music-studio [data-ms-view=play] .ms-piano-head{margin:4px 0 0}
+}
+@media(orientation:landscape) and (max-height:280px) and (max-width:1100px){
+  .playing-music-studio .ms-status{position:absolute;width:1px;height:1px;min-height:0;margin:0;padding:0;overflow:hidden;clip-path:inset(50%)}
+  .playing-music-studio .ms-song-player{padding-top:4px;padding-bottom:4px}
+  .playing-music-studio [data-ms-view=songs] .ms-key{min-height:60px;height:60px}
+  .playing-music-studio [data-ms-view=songs] .ms-key>span{font-size:15px}
+  .playing-music-studio [data-ms-view=songs] .ms-key>b{font-size:14px}
+  .playing-music-studio [data-ms-view=songs] .ms-key>small{font-size:8px}
+}
