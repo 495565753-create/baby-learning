@@ -1,0 +1,518 @@
+/*
+ * Shared liquid-glass skin for the three standalone arcade pages.
+ * Glass stays on navigation, controls and outer shells; boards and moving
+ * pieces deliberately keep their original solid paint and geometry.
+ */
+:root {
+  color-scheme: light;
+  --glass-ink: #203d54;
+  --glass-muted: #587387;
+  --glass-edge: rgba(255, 255, 255, .92);
+  --glass-shadow: 0 16px 42px rgba(57, 94, 119, .16),
+    inset 0 1px 0 rgba(255, 255, 255, .94);
+  --glass-shadow-soft: 0 8px 24px rgba(57, 94, 119, .13),
+    inset 0 1px 0 rgba(255, 255, 255, .92);
+}
+
+html {
+  background: #eef9ff;
+}
+
+body.arcade-hub-page,
+body.kids-arcade-page {
+  color: var(--glass-ink);
+  background-color: #eef9ff;
+  background-image:
+    radial-gradient(circle at 8% 6%, rgba(196, 238, 255, .95) 0, rgba(196, 238, 255, 0) 31%),
+    radial-gradient(circle at 94% 19%, rgba(208, 250, 230, .92) 0, rgba(208, 250, 230, 0) 29%),
+    radial-gradient(circle at 45% 94%, rgba(255, 221, 208, .88) 0, rgba(255, 221, 208, 0) 34%),
+    linear-gradient(145deg, #f8fcff 0%, #edf9ff 45%, #fff8f3 100%);
+  background-attachment: fixed;
+  padding-bottom: max(16px, env(safe-area-inset-bottom));
+}
+
+body.arcade-hub-page .ambient { opacity: .42; filter: blur(76px); }
+body.arcade-hub-page .ambient-one { background: #bcecff; }
+body.arcade-hub-page .ambient-two { background: #d9f7e7; }
+
+/* One strong material layer for navigation. */
+body.arcade-hub-page .topbar,
+body.kids-arcade-page .topbar,
+body.arcade-hub-page .shell > .topbar {
+  background: rgba(255, 255, 255, .74) !important;
+  border: 1px solid var(--glass-edge) !important;
+  border-top: 0 !important;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 12px 34px rgba(56, 91, 116, .14),
+    inset 0 -1px 0 rgba(126, 164, 187, .18),
+    inset 0 1px 0 rgba(255, 255, 255, .96);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  backdrop-filter: blur(18px) saturate(140%);
+}
+
+body.arcade-hub-page .brand,
+body.arcade-hub-page .topbar-note {
+  color: var(--glass-ink);
+}
+
+body.arcade-hub-page .brand-dot,
+body.arcade-hub-page .sparkle {
+  color: #298f70;
+}
+
+body.arcade-hub-page .brand-mark {
+  color: #286d57;
+  background: rgba(214, 249, 231, .92);
+  border: 1px solid rgba(255, 255, 255, .9);
+  box-shadow: var(--glass-shadow-soft);
+}
+
+body.arcade-hub-page .topbar-note {
+  opacity: .7;
+}
+
+/* Large child-safe controls retain all existing touch dimensions. */
+body.arcade-hub-page .arcade-home-link,
+body.kids-arcade-page .arcade-home-link,
+body.arcade-hub-page .sound-toggle,
+body.kids-arcade-page .icon-tool,
+body.arcade-hub-page .listen-button,
+body.arcade-hub-page .ghost-button,
+body.levels-page .level-nav button {
+  border-color: rgba(255, 255, 255, .94) !important;
+  background: rgba(255, 255, 255, .78) !important;
+  color: #24556e !important;
+  box-shadow: 0 7px 18px rgba(50, 91, 117, .14),
+    inset 0 1px 0 rgba(255, 255, 255, .98),
+    inset 0 -1px 0 rgba(111, 153, 179, .16) !important;
+}
+
+body.arcade-hub-page .arcade-home-link,
+body.kids-arcade-page .arcade-home-link {
+  background: linear-gradient(145deg, rgba(255, 255, 255, .9), rgba(222, 246, 255, .76)) !important;
+}
+
+body.arcade-hub-page .sound-toggle[aria-pressed="true"],
+body.kids-arcade-page .music-button[aria-pressed="true"] {
+  background: linear-gradient(145deg, rgba(222, 250, 235, .95), rgba(255, 255, 255, .8)) !important;
+}
+
+body.arcade-hub-page .listen-button {
+  background: linear-gradient(145deg, rgba(255, 235, 176, .95), rgba(255, 250, 226, .86)) !important;
+  color: #604715 !important;
+}
+
+body.arcade-hub-page .listen-button.speaking {
+  background: linear-gradient(145deg, rgba(190, 240, 211, .96), rgba(239, 255, 247, .86)) !important;
+  color: #22664e !important;
+}
+
+body.arcade-hub-page .arcade-home-link:active,
+body.arcade-hub-page .sound-toggle:active,
+body.arcade-hub-page .listen-button:active,
+body.arcade-hub-page .ghost-button:active,
+body.arcade-hub-page .overlay-actions > :active,
+body.kids-arcade-page .arcade-home-link:active,
+body.kids-arcade-page .icon-tool:active,
+body.levels-page .level-nav button:active:not(:disabled) {
+  box-shadow: 0 3px 9px rgba(50, 91, 117, .15),
+    inset 0 1px 0 rgba(255, 255, 255, .96) !important;
+}
+
+body.arcade-hub-page button:focus-visible,
+body.arcade-hub-page a:focus-visible,
+body.kids-arcade-page button:focus-visible,
+body.kids-arcade-page a:focus-visible {
+  outline-color: #287bb5;
+}
+
+/* Hub page: airy glass cards around crisp, colorful illustrations. */
+body.arcade-hub-page .hero h1 {
+  color: #23475f;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .82);
+}
+
+body.arcade-hub-page .hero h1 em {
+  color: #278969;
+}
+
+body.arcade-hub-page .eyebrow,
+body.arcade-hub-page .hero p,
+body.arcade-hub-page .hero-stats,
+body.arcade-hub-page .under-game {
+  color: var(--glass-muted);
+}
+
+body.arcade-hub-page .hero-stats {
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+  padding: 10px 18px;
+  border: 1px solid var(--glass-edge);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .56);
+  box-shadow: var(--glass-shadow-soft);
+}
+
+body.arcade-hub-page .hero-stats b {
+  color: #24556e;
+}
+
+body.arcade-hub-page .hero-stats i {
+  background: #7fa8bc;
+}
+
+body.arcade-hub-page .game-card {
+  border-color: var(--glass-edge);
+  background: rgba(255, 255, 255, .72);
+  color: var(--glass-ink);
+  box-shadow: var(--glass-shadow-soft);
+}
+
+body.arcade-hub-page .game-card:hover {
+  box-shadow: 0 20px 44px rgba(49, 87, 112, .2),
+    inset 0 1px 0 rgba(255, 255, 255, .96);
+}
+
+body.arcade-hub-page .game-card.active {
+  border-color: rgba(52, 157, 120, .72);
+  box-shadow: 0 0 0 3px rgba(100, 205, 167, .22), var(--glass-shadow-soft);
+}
+
+body.arcade-hub-page .card-number,
+body.arcade-hub-page .card-bottom small {
+  color: #58758a;
+}
+
+body.arcade-hub-page .card-type {
+  border-color: rgba(255, 255, 255, .76);
+  background: rgba(255, 255, 255, .38);
+  color: #284f65;
+}
+
+body.arcade-hub-page .card-arrow {
+  border-color: rgba(89, 134, 159, .28);
+  background: rgba(222, 248, 236, .72);
+  color: #26785e;
+}
+
+body.arcade-hub-page .kids-banner,
+body.arcade-hub-page .play-section {
+  background: rgba(255, 255, 255, .7);
+  box-shadow: var(--glass-shadow);
+}
+
+body.arcade-hub-page .kids-banner {
+  outline: 1px solid var(--glass-edge);
+  outline-offset: -1px;
+  background-image: linear-gradient(120deg, rgba(255, 236, 207, .7), rgba(217, 248, 235, .72));
+}
+
+body.arcade-hub-page .play-section {
+  border-color: var(--glass-edge);
+}
+
+body.arcade-hub-page .play-kicker {
+  border: 1px solid rgba(255, 255, 255, .86);
+  background: rgba(218, 248, 232, .78);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .9);
+}
+
+body.arcade-hub-page .game-frame {
+  border-color: rgba(255, 255, 255, .94);
+  background: rgba(255, 255, 255, .68);
+  box-shadow: var(--glass-shadow);
+}
+
+body.arcade-hub-page .game-toolbar {
+  background: rgba(235, 249, 246, .92);
+  color: #345d68;
+  border-bottom: 1px solid rgba(118, 163, 173, .2);
+}
+
+body.arcade-hub-page .level-chip {
+  background: #ffdd86;
+}
+
+body.arcade-hub-page .game-controls {
+  background: rgba(238, 249, 244, .94);
+  border-top-color: rgba(127, 173, 158, .22);
+}
+
+body.arcade-hub-page .control-button {
+  border-color: rgba(255, 255, 255, .96);
+  background: rgba(255, 255, 255, .84);
+  color: #285c56;
+  box-shadow: 0 5px 13px rgba(47, 95, 88, .13),
+    inset 0 1px 0 #fff;
+}
+
+body.arcade-hub-page .control-button.primary-control {
+  border-color: rgba(255, 255, 255, .9);
+  background: linear-gradient(145deg, #ffe6a5, #fff3cf);
+  color: #5d4518;
+}
+
+body.arcade-hub-page .overlay {
+  background: rgba(41, 72, 87, .5);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  backdrop-filter: blur(8px) saturate(120%);
+}
+
+body.arcade-hub-page .overlay-card {
+  border-color: rgba(255, 255, 255, .94);
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 0 24px 64px rgba(35, 65, 83, .25),
+    inset 0 1px 0 #fff;
+}
+
+body.arcade-hub-page .primary-button,
+body.arcade-hub-page .secondary-button,
+body.arcade-hub-page .overlay-home {
+  border-color: rgba(255, 255, 255, .92);
+  box-shadow: 0 6px 15px rgba(50, 91, 117, .16), inset 0 1px 0 #fff;
+}
+
+body.arcade-hub-page .primary-button {
+  background: linear-gradient(145deg, #3ea47c, #318867);
+}
+
+body.arcade-hub-page .secondary-button {
+  background: linear-gradient(145deg, #ffe3a2, #fff1ca);
+}
+
+body.arcade-hub-page .overlay-home {
+  background: rgba(245, 253, 255, .94);
+}
+
+body.arcade-hub-page footer {
+  border-top-color: rgba(97, 139, 162, .2);
+  color: #637d8e;
+}
+
+/* Kids and level catalogs: translucent shells with pastel identity. */
+body.kids-arcade-page .hero-count {
+  border: 1px solid rgba(255, 255, 255, .92);
+  background: rgba(255, 223, 132, .86);
+  box-shadow: 0 9px 20px rgba(153, 114, 39, .14), inset 0 1px 0 #fff8dd;
+}
+
+body.kids-arcade-page .section-heading span {
+  color: #589b8d;
+}
+
+body.kids-arcade-page .game-card {
+  border-color: rgba(255, 255, 255, .94) !important;
+  background: rgba(255, 255, 255, .72) !important;
+  box-shadow: var(--glass-shadow-soft) !important;
+}
+
+body.kids-arcade-page .game-card:nth-child(5n+1) {
+  background: rgba(255, 248, 222, .76) !important;
+}
+
+body.kids-arcade-page .game-card:nth-child(5n+2) {
+  background: rgba(224, 249, 235, .76) !important;
+}
+
+body.kids-arcade-page .game-card:nth-child(5n+3) {
+  background: rgba(225, 244, 255, .76) !important;
+}
+
+body.kids-arcade-page .game-card:nth-child(5n+4) {
+  background: rgba(241, 234, 255, .76) !important;
+}
+
+body.kids-arcade-page .game-card:nth-child(5n) {
+  background: rgba(255, 232, 226, .76) !important;
+}
+
+body.kids-arcade-page .game-card.active {
+  border-color: rgba(55, 159, 120, .72) !important;
+  box-shadow: 0 0 0 3px rgba(102, 210, 169, .25), var(--glass-shadow-soft) !important;
+}
+
+body.kids-arcade-page .level-link-count,
+body.levels-page .level-card-progress,
+body.levels-page .level-nav strong {
+  border: 1px solid rgba(255, 255, 255, .9);
+  background: rgba(255, 255, 255, .72);
+  box-shadow: 0 5px 14px rgba(57, 94, 119, .11), inset 0 1px 0 #fff;
+  color: #286b58;
+}
+
+body.kids-arcade-page .play-section {
+  border-radius: 32px;
+  background: rgba(255, 255, 255, .64);
+  box-shadow: var(--glass-shadow);
+  outline: 1px solid var(--glass-edge);
+  outline-offset: -1px;
+}
+
+body.kids-arcade-page .game-shell {
+  border-color: rgba(255, 255, 255, .94);
+  background: rgba(255, 255, 255, .82);
+  box-shadow: var(--glass-shadow);
+}
+
+body.kids-arcade-page .game-info {
+  background: linear-gradient(100deg, rgba(45, 142, 111, .94), rgba(74, 161, 142, .91));
+  border-bottom: 1px solid rgba(255, 255, 255, .64);
+}
+
+body.kids-arcade-page .game-info span:first-child {
+  border: 1px solid rgba(255, 255, 255, .74);
+  background: rgba(236, 255, 245, .9);
+  box-shadow: inset 0 1px 0 #fff;
+}
+
+body.kids-arcade-page .game-controls {
+  background: rgba(239, 250, 245, .92);
+  border-top-color: rgba(105, 157, 139, .2);
+}
+
+body.kids-arcade-page .game-controls button.control-icon,
+body.levels-page .level-controls button,
+body.kids-arcade-page .result-actions button,
+body.levels-page .complete-actions button {
+  border-color: rgba(255, 255, 255, .94);
+  background: rgba(255, 255, 255, .84);
+  box-shadow: 0 6px 14px rgba(50, 96, 83, .14), inset 0 1px 0 #fff;
+}
+
+body.kids-arcade-page .parent-guide {
+  border-color: rgba(255, 255, 255, .9);
+  background: rgba(255, 255, 255, .64);
+  box-shadow: var(--glass-shadow-soft);
+}
+
+body.kids-arcade-page .parent-guide button {
+  background: rgba(225, 244, 237, .82);
+}
+
+body.kids-arcade-page footer {
+  color: #617b89;
+}
+
+/* Keep all actual play surfaces crisp: no glass filters on these nodes. */
+body.arcade-hub-page .canvas-wrap,
+body.arcade-hub-page #game-canvas,
+body.kids-arcade-page .game-board,
+body.kids-arcade-page .arcade-canvas,
+body.levels-page .level-board,
+body.levels-page .level-grid,
+body.levels-page .pipe-grid,
+body.levels-page .slide-grid {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+/* Safe, compact phone edges without touching the board or target sizes. */
+@media (max-width: 620px) {
+  body.arcade-hub-page,
+  body.kids-arcade-page {
+    background-attachment: scroll;
+  }
+
+  body.arcade-hub-page .shell {
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+  }
+
+  body.arcade-hub-page .topbar,
+  body.kids-arcade-page .topbar,
+  body.arcade-hub-page .shell > .topbar {
+    border-radius: 0 0 20px 20px;
+  }
+
+  body.arcade-hub-page .hero-stats {
+    padding-inline: 12px;
+  }
+
+  body.kids-arcade-page main {
+    padding-left: max(10px, env(safe-area-inset-left));
+    padding-right: max(10px, env(safe-area-inset-right));
+    padding-bottom: calc(70px + env(safe-area-inset-bottom));
+  }
+
+  body.kids-arcade-page .play-section { border-radius: 25px; }
+}
+
+@media (max-width: 360px) {
+  body.arcade-hub-page .shell {
+    padding-left: max(8px, env(safe-area-inset-left));
+    padding-right: max(8px, env(safe-area-inset-right));
+  }
+
+  body.kids-arcade-page main {
+    padding-left: max(8px, env(safe-area-inset-left));
+    padding-right: max(8px, env(safe-area-inset-right));
+  }
+
+  body.arcade-hub-page .hero-stats {
+    gap: 8px;
+    padding-inline: 9px;
+  }
+}
+
+/* Safari accessibility setting: trade translucency for a quiet solid surface. */
+@media (prefers-reduced-transparency: reduce) {
+  body.arcade-hub-page .topbar,
+  body.kids-arcade-page .topbar,
+  body.arcade-hub-page .shell > .topbar,
+  body.arcade-hub-page .game-card,
+  body.arcade-hub-page .kids-banner,
+  body.arcade-hub-page .play-section,
+  body.arcade-hub-page .game-frame,
+  body.arcade-hub-page .overlay-card,
+  body.kids-arcade-page .game-card,
+  body.kids-arcade-page .play-section,
+  body.kids-arcade-page .game-shell,
+  body.kids-arcade-page .parent-guide {
+    background-color: #f8fcff !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+
+  body.arcade-hub-page .overlay {
+    background: rgba(42, 66, 80, .86);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.arcade-hub-page,
+  body.kids-arcade-page {
+    background-attachment: scroll;
+  }
+
+  body.arcade-hub-page *,
+  body.kids-arcade-page * {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* Older browsers get the same hierarchy with opaque surfaces. */
+@supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  body.arcade-hub-page .topbar,
+  body.kids-arcade-page .topbar,
+  body.arcade-hub-page .shell > .topbar {
+    background: #f7fcff !important;
+  }
+
+  body.arcade-hub-page .game-card,
+  body.arcade-hub-page .kids-banner,
+  body.arcade-hub-page .play-section,
+  body.arcade-hub-page .game-frame,
+  body.arcade-hub-page .overlay-card,
+  body.kids-arcade-page .game-card,
+  body.kids-arcade-page .play-section,
+  body.kids-arcade-page .game-shell,
+  body.kids-arcade-page .parent-guide {
+    background-color: #f8fcff !important;
+  }
+}

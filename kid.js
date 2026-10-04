@@ -277,6 +277,7 @@ function selectCourseUnit(index){const items=(window.GRADE_ONE_COURSES||[]).filt
 function openCourse(subject,index){state.subject=subject;state.course=(window.GRADE_ONE_COURSES||[])[index];state.courseStep=0;state.courseAnswered=false;state.courseRewarded=false;go('classroom');speakCourse()}
 function leaveClassroom(){stopAudio();if(state.stack.at(-1)?.page==='school')state.stack.pop();state.page='school';render()}
 function visualParts(text){return esc(text).split(/(?:　+|\s{2,}|\n+)/).filter(Boolean).map((x,i)=>`<span style="--piece:${i}">${x}</span>`).join('')}
+function courseVisual(course,step){return step===2?(typeof course.quizVisual==='string'&&course.quizVisual.trim()?course.quizVisual:course.question):course.visual}
 function renderClassroom(){
   const c=state.course;if(!c)return renderSchool();const step=state.courseStep||0,text=step===0?c.intro:step===1?c.demo:c.question,labels=[['👂','听老师'],['👀','看一看'],['🙋','我来答']],theme=c.subject==='语文'?'chinese':'math';
   return `<div class="classroom classroom-${theme}">
@@ -284,7 +285,7 @@ function renderClassroom(){
     <div class="class-steps">${labels.map((x,i)=>`<div class="${i===step?'now':i<step?'done':''}"><span>${i<step?'✓':x[0]}</span><b>${x[1]}</b></div>`).join('')}</div>
     <article class="teacher-card" id="teacherCard">
       <div class="teacher-scene"><div class="mini-teacher"><span>👩🏻‍🏫</span><i></i></div><div class="teacher-says"><small>果粒橙老师</small><b>${step===0?'小耳朵准备好了吗？':step===1?'一起看图想一想':'轮到你来试一试'}</b></div><span class="sound-waves" aria-hidden="true">)))</span></div>
-      <div class="lesson-visual">${visualParts(c.visual)}</div>
+      <div class="lesson-visual ${step===2&&!(typeof c.quizVisual==='string'&&c.quizVisual.trim())?'is-question':''}">${visualParts(courseVisual(c,step))}</div>
       <div class="lesson-talk"><span class="talk-icon">${labels[step][0]}</span><p>${esc(text)}</p></div>
       <button class="listen-teacher" id="listenTeacher" onclick="speakCourse()">🔊 再听老师讲一遍</button>
     </article>

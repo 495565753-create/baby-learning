@@ -1,0 +1,192 @@
+/* A lightweight glass shell. Pictures, lessons and gesture boards stay crisp. */
+:root {
+  --ink:#24364c;
+  --muted:#526477;
+  --cream:#eef4fb;
+  --line:#dce6f1;
+  --glass-surface:rgba(255,255,255,.78);
+  --glass-edge:rgba(255,255,255,.94);
+  --glass-shadow:0 10px 28px rgba(66,92,129,.10),inset 0 1px 0 #fff;
+  --shadow:var(--glass-shadow);
+}
+
+html { background:#eef4fb; }
+body { position:relative; isolation:isolate; background:transparent; padding-bottom:calc(120px + env(safe-area-inset-bottom,0px)); }
+body::before {
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background:
+    radial-gradient(ellipse at 5% 8%,rgba(173,219,255,.64),transparent 52%),
+    radial-gradient(ellipse at 98% 45%,rgba(193,234,215,.65),transparent 50%),
+    radial-gradient(ellipse at 10% 95%,rgba(255,210,210,.58),transparent 47%),
+    linear-gradient(145deg,#f2f7ff,#f4fbf8 55%,#fff7f0);
+}
+
+/* A small number of floating functional layers carry the live blur. */
+:is(.topbar,.bottom-nav,.mini-game-nav,.know-lesson-nav,.class-actions) {
+  background:#f5f8fc;
+  border:1px solid var(--glass-edge);
+  box-shadow:0 8px 26px rgba(57,86,124,.12),inset 0 1px 0 #fff;
+}
+.topbar { border-width:0 0 1px; }
+.bottom-nav {
+  bottom:calc(10px + env(safe-area-inset-bottom,0px));
+  width:min(calc(100% - 24px),740px);
+  padding:6px;
+  border-radius:30px;
+  gap:2px;
+  box-shadow:0 14px 34px rgba(49,74,110,.17),inset 0 1px 1px #fff;
+}
+.bottom-nav button { min-width:0; min-height:60px; padding:6px 1px; border-radius:23px; color:#475b70; }
+.bottom-nav button.active {
+  background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(211,233,248,.9));
+  color:#244d70;
+  box-shadow:inset 0 0 0 1px #fff,0 3px 10px rgba(76,113,150,.16);
+}
+.bottom-nav span { margin-bottom:3px; filter:drop-shadow(0 2px 2px rgba(52,71,96,.12)); }
+
+@supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) {
+  :is(.topbar,.bottom-nav,.mini-game-nav,.know-lesson-nav,.class-actions) {
+    background:linear-gradient(145deg,rgba(255,255,255,.80),rgba(246,251,255,.60));
+    -webkit-backdrop-filter:blur(22px) saturate(145%);
+    backdrop-filter:blur(22px) saturate(145%);
+  }
+}
+
+/* Solid highlights and soft depth provide material without blurring every card. */
+:is(.round-btn,.stars,.chip,.unit-chip,.control,.auto-read-btn,.voice-help,.game-directory-help,.class-back) {
+  border:1px solid var(--glass-edge);
+  background:linear-gradient(145deg,rgba(255,255,255,.97),rgba(238,246,255,.76));
+  box-shadow:0 4px 12px rgba(71,98,130,.11),inset 0 1px 0 #fff;
+}
+#soundBtn { background:linear-gradient(135deg,#ffffffd9,#e2efffc4); }
+.stars { background:linear-gradient(145deg,#fff8d4,#fff1c1ba); color:#6b5419; }
+.chip.active { color:#fff; background:linear-gradient(145deg,#44647e,#2c4963); border-color:#6d879d; }
+
+.home-hero,.game-hero,.school-welcome,.know-welcome {
+  border:1px solid var(--glass-edge);
+  background:linear-gradient(130deg,rgba(255,255,255,.80),rgba(224,245,246,.75));
+  box-shadow:var(--glass-shadow);
+}
+.home-hero { background:linear-gradient(130deg,#ffffffba,#e3f4ffc9 52%,#def4e4b8); }
+.home-hero h1,.game-hero h1 { color:#243c51; }
+.home-greeting,.home-hero p,.game-hero p { color:#476378; }
+.game-hero { background:linear-gradient(130deg,#ffffffba,#daf4e9c9 60%,#e3f0ffb8); }
+.game-hero::after { opacity:.36; }
+.home-grid .big-card {
+  border:1px solid var(--glass-edge);
+  box-shadow:var(--glass-shadow);
+}
+.home-grid .big-card:nth-child(1) { background:linear-gradient(145deg,#fffdfde8,#ffdfe9b5); }
+.home-grid .big-card:nth-child(2) { background:linear-gradient(145deg,#ffffffe8,#d8ebffb5); }
+.home-grid .big-card:nth-child(3) { background:linear-gradient(145deg,#ffffffe8,#d3f0ddb5); }
+.home-grid .big-card:nth-child(4) { background:linear-gradient(145deg,#fffefae8,#ffedbcb5); }
+.home-grid .icon,.home-card-arrow {
+  background:linear-gradient(145deg,#ffffffea,#ffffff6b);
+  box-shadow:inset 0 1px 1px #fff,0 4px 10px rgba(69,90,122,.07);
+  border:1px solid #ffffffb8;
+}
+.home-school { background:linear-gradient(130deg,#786ac7,#5d77b3); border:1px solid #ffffffa6; box-shadow:0 9px 24px #52659929,inset 0 1px 0 #ffffff80; }
+.home-school strong { background:#ffffff24; border:1px solid #ffffff52; }
+.home-continue { border:1px solid var(--glass-edge); background:var(--glass-surface); box-shadow:var(--glass-shadow); }
+
+:is(.book,.reader-stage,.lesson,.activity,.study-progress,.teacher-card,.teacher-bubble,.course-card,.know-big-card,.know-category,.know-favorite,.know-quiz-choice) {
+  border:1px solid var(--glass-edge);
+  background:var(--glass-surface);
+  box-shadow:var(--glass-shadow);
+}
+.book .info { background:linear-gradient(145deg,#ffffffe6,#f5faffb3); }
+.book-cover:not(.sprite-sheet),.story-picture.reillustrated-story { background:#fffaf3; }
+.story-text { background:rgba(255,255,255,.88); color:#283b50; }
+.reader-top h1 { min-width:0; overflow:hidden; text-overflow:ellipsis; }
+.reader-top>.round-btn { flex-shrink:0; }
+.book small,.page-head p { color:#526477; }
+.book-badge { background:linear-gradient(145deg,#fff2b6ed,#ffe6a9e8); border:1px solid #ffffffd9; }
+.story-touch { background:rgba(255,255,255,.96); border:1px solid #ffffffed; box-shadow:0 4px 14px #284e6a26; }
+.control.primary,.listen-teacher,.know-listen { background:linear-gradient(145deg,#fff1b1,#ffda7dd9); border:1px solid #fff3c8; color:#5d4918; box-shadow:0 5px 14px #94752319,inset 0 1px 0 #fff8dc; }
+.auto-read-btn { color:#2a536e; }
+.auto-read-btn.playing { background:linear-gradient(145deg,#edfdf4,#d4eedfe8); color:#286147; border-color:#b2d9c8; }
+.auto-read-btn.paused { background:linear-gradient(145deg,#fff9dc,#ffedbae8); color:#70591d; border-color:#eedda0; }
+
+/* Keep color coding and the teacher's readable surface in both subjects. */
+.school-welcome { background:linear-gradient(135deg,#ffffffda,var(--school-soft)); }
+.teacher-bubble::before { border-right-color:#ffffffc7; }
+.teacher-bubble button { min-height:48px; }
+.school-page .subject-tab { border:2px solid #fff; background:rgba(255,255,255,.76); box-shadow:var(--glass-shadow); }
+.school-page .subject-tab.chinese.active { background:linear-gradient(145deg,#ffffffed,#ffe5dae6); border-color:#e28b83; }
+.school-page .subject-tab.math.active { background:linear-gradient(145deg,#ffffffed,#d9edffe6); border-color:#68a3d7; }
+.school-page .course-card { background:var(--glass-surface); border:1px solid var(--glass-edge); }
+.school-page .course-card small { color:#596a7b; }
+.teacher-scene { background:linear-gradient(120deg,#ffffffc4,var(--class-soft)); border-bottom:1px solid #fff; }
+.lesson-talk { background:rgba(255,255,255,.55); }
+.lesson-visual>span { border:1px solid #fff; box-shadow:0 5px 12px #3f698016,inset 0 1px 0 #fff; }
+.lesson-visual.is-question { font-size:clamp(22px,6vw,32px); line-height:1.45; }
+.lesson-visual.is-question>span { min-width:0; max-width:100%; overflow-wrap:anywhere; }
+.class-steps div { background:rgba(255,255,255,.74); color:#5e6d7c; border:1px solid #fff; }
+.class-steps .now { background:var(--class); color:#fff; border-color:#ffffff80; }
+.class-steps .done { background:#daf1e6; color:#29664a; }
+.parent-tip { background:#fff6d5db; border:1px solid #fff; }
+
+.game-category-rail { background:transparent; }
+.game-category { background:rgba(255,255,255,.72); border:1px solid #fff; box-shadow:0 4px 12px #3751720c; }
+.game-category.active { background:linear-gradient(145deg,#fffffff0,#e1f1f4e3); border:2px solid color-mix(in srgb,var(--cat) 55%,#7aa1b3); }
+.game-choice { border:1px solid #fff; background:linear-gradient(145deg,#ffffffdb,color-mix(in srgb,var(--cat) 9%,#ffffffc7)); box-shadow:var(--glass-shadow); }
+.game-card-icon { background:linear-gradient(145deg,#ffffffed,#ffffff73); border:1px solid #ffffffc9; box-shadow:0 4px 10px #61788e0d,inset 0 1px 0 #fff; }
+.mini-game-tools button { background:linear-gradient(145deg,#ffffffed,#edf4fbd9); border:1px solid #fff; box-shadow:0 4px 10px #526d8c12; }
+.game-exit { background:linear-gradient(145deg,#527c73,#365f5d); box-shadow:inset 0 1px 0 #ffffff40,0 4px 10px #365f5d19; }
+.game-celebration { background:rgba(33,53,75,.32); }
+.game-celebration>div { border:1px solid #fff; background:linear-gradient(145deg,#fffffff5,#eef8ffed); box-shadow:0 22px 55px #263f6633,inset 0 1px 0 #fff; }
+.ng-head p { color:#526477; }
+.ng-round-dots { background:rgba(226,237,246,.76); border:1px solid #fff; }
+.ng-message { background:#eaf7f0db; border:1px solid #fff; color:#2f644f; }
+.ng-message.bad { background:#fff1d5; color:#795f20; }
+
+/* Recognition keeps its stage colors, artwork and correct-answer feedback. */
+.know-page { --know-shadow:var(--glass-shadow); --know-soft-ink:#526477; }
+.know-welcome { background:linear-gradient(130deg,#ffffffc9,#dcf1e3c9,#fff2c7b8); }
+.know-teacher { background:rgba(255,255,255,.57); box-shadow:inset 0 1px 0 #fff; }
+.know-total,.know-daily-icon { border:1px solid #fff; background:#ffffffba; }
+.know-daily { background:linear-gradient(145deg,#fffdf0e8,#ffedb9bd); border:2px solid #e6c970; box-shadow:var(--glass-shadow); }
+.know-level { border:1px solid #fff; background:#e9f7ef9c; }
+.know-level:nth-of-type(2) { background:#edf3ff9c; }
+.know-level:nth-of-type(3) { background:#fff4de9c; }
+.know-level:nth-of-type(4) { background:#f3edff9c; }
+.know-favorites { border:1px solid #fff; background:#fff0f29c; }
+.know-big-card { background:rgba(255,255,255,.92); }
+.know-lesson-nav .know-nav-home,.know-heart,.know-turns button,.know-done-actions button { border:1px solid #fff; background:linear-gradient(145deg,#fffffff2,#eaf3fcdb); box-shadow:0 4px 12px #45628414,inset 0 1px 0 #fff; }
+.know-heart.is-favorite { background:#ffdce2; }
+.know-quiz-choice.right { background:#dff6e8; border-color:#55b77f; }
+.know-quiz-choice.wrong { background:#ffe4dd; border-color:#ec8c78; }
+
+@media(max-width:520px) {
+  .unit-rail { margin-left:-12px; margin-right:-12px; padding-left:12px; padding-right:12px; }
+}
+@media(max-width:360px) {
+  .bottom-nav { width:calc(100% - 16px); border-radius:27px; padding:5px; }
+  .bottom-nav button { min-height:58px; border-radius:21px; font-size:11px; }
+  .bottom-nav span { font-size:22px; }
+  .reader-controls { grid-template-columns:minmax(0,.9fr) minmax(0,1.25fr) minmax(0,.9fr); gap:7px; }
+  .reader-controls .control { min-width:0; padding:6px 3px; font-size:15px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .bottom-nav button,.chip,.game-category { transition:none; }
+}
+@media(prefers-reduced-transparency:reduce), (prefers-contrast:more) {
+  body::before { background:#eef4fb; }
+  :root { --glass-surface:#fff; --glass-edge:#cedce9; }
+  :is(.topbar,.bottom-nav,.mini-game-nav,.know-lesson-nav,.class-actions) { background:#f8fbff; -webkit-backdrop-filter:none; backdrop-filter:none; }
+  :is(.home-hero,.game-hero,.school-welcome,.know-welcome,.game-category,.game-choice,.home-continue) { background:#f8fbff; }
+  .home-grid .big-card:nth-child(1) { background:#fff0f4; }
+  .home-grid .big-card:nth-child(2) { background:#e9f3ff; }
+  .home-grid .big-card:nth-child(3) { background:#e7f5ec; }
+  .home-grid .big-card:nth-child(4) { background:#fff3d3; }
+  .book .info,.story-text,.lesson-talk { background:#fff; }
+}
+@media(forced-colors:active) {
+  body::before { display:none; }
+  :is(.topbar,.bottom-nav,.mini-game-nav,.know-lesson-nav,.class-actions,.book,.big-card,.game-choice,.know-category) { background:Canvas; border:1px solid CanvasText; box-shadow:none; -webkit-backdrop-filter:none; backdrop-filter:none; }
+  .bottom-nav button.active,.chip.active,.game-category.active { border:2px solid Highlight; color:Highlight; }
+}
