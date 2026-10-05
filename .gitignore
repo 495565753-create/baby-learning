@@ -10,3 +10,6 @@ android-app/*.apk
 *.jks
 *.keystore
 *.p12
+
+# Large complete ZIP backups are served only on the local network.
+downloads/*.zip

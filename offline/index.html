@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#eef4fb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="果粒橙离线乐园">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/img/icon-180.png">
+  <link rel="stylesheet" href="installer.css">
+  <title>果粒橙 · iPad 离线乐园</title>
+</head>
+<body><main>
+  <a class="back" href="/">← 回联网乐园</a>
+  <header><div class="orange" aria-hidden="true">🍊</div><div><p class="eyebrow">iPad · 安卓平板 · 电脑</p><h1>把小乐园带在身边</h1><p>先下载一次，以后断网也能学、也能玩。</p></div></header>
+  <section class="card" id="appleSteps"><h2>iPad 请先添加到主屏幕</h2><ol><li>用 <b>Safari</b> 打开本页，点“共享”。</li><li>选“添加到主屏幕”；如果有“作为网页 App 打开”，请打开它，然后点“添加”。</li><li><b>从桌面的“果粒橙离线乐园”图标打开</b>，再点下面的下载按钮。</li></ol><p class="note">请从桌面图标里下载。Safari 页面与桌面 App 的离线内容可能分别保存。</p></section>
+  <section class="card download-card" aria-labelledby="downloadTitle">
+    <h2 id="downloadTitle">下载完整离线内容</h2>
+    <p>包含全部故事插图和配音、认知卡片、语文数学课堂、学写字、画画、音乐和小游戏。</p>
+    <p id="sizeInfo" class="note">正在检查内容大小…</p>
+    <progress id="downloadProgress" max="100" value="0" aria-label="离线下载进度"></progress>
+    <p id="downloadStatus" role="status" aria-live="polite">请保持联网，准备好了再开始。</p>
+    <button id="downloadButton" class="primary" disabled>正在准备…</button>
+    <button id="pauseButton" class="secondary" hidden>暂停下载</button>
+    <a id="playButton" class="primary play" href="play.html" hidden>▶ 进入离线乐园</a>
+    <p id="savedVersion" class="note" hidden></p>
+    <p id="storageInfo" class="note"></p>
+  </section>
+  <section class="card"><h2>下载时请注意</h2><ul><li>建议连 Wi-Fi。下载期间请让本页保持在前台；中断后再打开，点“继续下载”即可。</li><li>出现“全部下载完成，可以离线玩了”后，可关闭 Wi-Fi、开启飞行模式，再进入乐园试一试。</li><li>小影院的央视视频属于外部网站，仍需要联网，没有包含在离线包里。</li><li>本机进度和作品不会上传云端。清除网站数据、删除 App 或设备空间不足，可能导致离线内容或记录丢失；建议导出重要画作和音乐。</li><li>以后联网回到本页点“下载新版”，完整下载后才会切换版本，已有离线版可以继续玩。</li></ul></section>
+  <p class="footnote">这是可离线使用的网页 App，不是 App Store 安装包。压缩包用来备份和在电脑上运行，不能直接作为 iPad App 安装。</p>
+</main><script defer src="installer.js"></script></body>
+</html>

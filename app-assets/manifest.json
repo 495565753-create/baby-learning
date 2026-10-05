@@ -1,10 +1,10 @@
 {
   "format": 1,
   "js": {
-    "file": "app-assets/app-cbc7ceb0a04d1ffd.js",
-    "sha256": "cbc7ceb0a04d1ffdf6352f3a23162ede86b1f56407f493819939773141f69fcf",
-    "bytes": 833880,
-    "gzip_bytes": 279598,
+    "file": "app-assets/app-8786ec6e5fe87ae0.js",
+    "sha256": "8786ec6e5fe87ae00169012de2a4d3de8ee06a1ed8cf9da953a7f08af4f767b4",
+    "bytes": 833974,
+    "gzip_bytes": 279636,
     "inputs": [
       {
         "file": "books.js",
@@ -123,8 +123,8 @@
       },
       {
         "file": "kid.js",
-        "bytes": 98089,
-        "sha256": "eb9154ca13b28a38a91d6e2facaecbd4292594d822a0d66c2ae2627466acc3d9"
+        "bytes": 98166,
+        "sha256": "039db7c16839a864b9a9597d8a4755349a4f9d85d907126dac7769f913abd8d5"
       }
     ]
   },

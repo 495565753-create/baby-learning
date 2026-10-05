@@ -80,6 +80,6 @@ board.addEventListener('pointerup',event=>{
 });
 board.addEventListener('pointercancel',()=>{swipeStart=null});
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)audio.next=0});
-if(location.pathname.includes('/arcade/'))$('#back-link').href='../index.html?section=games';
+if(location.pathname.includes('/arcade/'))$('#back-link').href=location.pathname.startsWith('/offline/')?'/offline/play.html?section=games':'../index.html?section=games';
 updateMusic();const initial=location.hash.slice(1),valid=GAMES.some(g=>g.id===initial);select(valid?initial:GAMES[0].id,false,valid);if(valid)requestAnimationFrame(()=>$('#play').scrollIntoView({behavior:'auto',block:'start'}));
 })();

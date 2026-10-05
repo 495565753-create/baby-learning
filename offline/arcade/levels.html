@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <base href="/arcade/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#eef9ff">
+  <meta name="description" content="5款儿童闯关游戏，每款50关，支持手机触控、语音提示和自动保存。">
+  <title>果粒橙 · 50关闯关城</title>
+  <link rel="stylesheet" href="kids.css?v=7">
+  <link rel="stylesheet" href="levels.css?v=2">
+  <link rel="stylesheet" href="nav.css?v=1">
+  <link rel="stylesheet" href="glass.css?v=1">
+</head>
+<body class="kids-arcade-page levels-page">
+  <header class="topbar">
+    <a id="back-link" class="arcade-home-link" href="/offline/play.html?section=games" aria-label="返回游戏乐园"><span class="arcade-home-link__icon" aria-hidden="true">🏠</span><span>游戏乐园</span></a>
+    <strong class="brand"><img src="assets/fluent/star.svg" alt=""><span class="sr-only">50关闯关城</span></strong>
+    <button id="music-button" class="icon-tool music-button" type="button" aria-label="关闭音乐"><img src="assets/fluent/music.svg" alt=""></button>
+  </header>
+  <main>
+    <section class="hero" aria-label="5款游戏，每款50关"><img src="assets/fluent/rocket.svg" alt=""><span class="hero-count">5</span><span class="hero-times">×</span><span class="hero-count">50</span><img src="assets/fluent/star.svg" alt=""></section>
+    <section class="catalog" aria-label="选择闯关游戏">
+      <div class="section-heading"><h1 class="sr-only">选择闯关游戏</h1><span aria-hidden="true">● ● ●</span></div>
+      <div id="level-game-list" class="game-list level-game-list"></div>
+    </section>
+    <section id="play" class="play-section" aria-label="闯关区">
+      <div class="play-heading">
+        <div class="play-identity"><img id="play-icon" src="assets/fluent/car.svg" alt=""><h2 id="play-title" class="sr-only">车车出逃</h2></div>
+        <div class="play-tools"><button id="speak-button" class="icon-tool" type="button" aria-label="重听玩法"><img src="assets/fluent/sound.svg" alt=""></button><button id="restart-level-button" class="icon-tool arcade-restart" type="button" aria-label="重新玩当前关"><img src="assets/fluent/repeat.svg" alt=""></button><a href="/offline/arcade/levels.html#level-game-list" class="icon-tool" aria-label="换游戏"><img src="assets/fluent/home.svg" alt=""></a></div>
+      </div>
+      <div class="level-nav">
+        <button id="previous-level" type="button" aria-label="上一关">←</button>
+        <strong id="level-number" aria-label="第1关，共50关">1<span>/50</span></strong>
+        <button id="next-level" type="button" aria-label="下一关">→</button>
+      </div>
+      <div class="game-shell">
+        <div class="game-info"><span id="game-metric" aria-label="准备闯关"></span><span id="game-status" role="status" class="sr-only"></span></div>
+        <div id="game-board" class="game-board"></div>
+        <div id="game-controls" class="game-controls"></div>
+      </div>
+    </section>
+    <details class="parent-guide"><summary aria-label="查看家长说明">ⓘ</summary><div id="parent-game-info"></div><p>每款游戏有50关。通关会自动保存到本机浏览器；左右箭头可以回玩已解锁的关卡。点喇叭重听玩法。</p><div id="level-picker" class="level-picker" aria-label="已解锁关卡"></div><button id="reset-current" type="button">清除当前游戏的闯关记录</button></details>
+    <footer>图标：Microsoft Fluent Emoji · 语音：Kokoro 中文模型</footer>
+  </main>
+  <script src="levels-data.js?v=1" defer></script>
+  <script src="levels.js?v=2" defer></script>
+</body>
+</html>

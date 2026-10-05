@@ -1,0 +1,25 @@
+{
+  "id": "/offline/",
+  "name": "果粒橙离线学习乐园",
+  "short_name": "果粒橙离线乐园",
+  "description": "完整下载后，故事、认知、课堂和小游戏可在没有网络时使用。外部视频需联网。",
+  "lang": "zh-CN",
+  "start_url": "./index.html",
+  "scope": "/offline/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#eef4fb",
+  "theme_color": "#eef4fb",
+  "icons": [
+    {
+      "src": "/img/icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
