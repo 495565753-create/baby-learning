@@ -1,6 +1,6 @@
 {
-  "version": "3fb8f5063bd7720c",
-  "totalBytes": 141995441,
+  "version": "8c9ba2971619db2c",
+  "totalBytes": 142052534,
   "files": [
     {
       "url": "/app-assets/app-80fe65521c2757c4.css",
@@ -4373,6 +4373,11 @@
       "sha256": "87f82213bba87f9f9f856bc6acf5b4d9156a18a3b566f25d10a2c4cfed3daebd"
     },
     {
+      "url": "/downloads/ipad-offline-qr.png",
+      "bytes": 54733,
+      "sha256": "5dd45c3bbb7c0a811ae568a649dc1cd82feb8d477d71467696abac265bc4a948"
+    },
+    {
       "url": "/img/coloring/butterfly.png",
       "bytes": 80445,
       "sha256": "115487a019d7d71c7300e96b3fc686e04e5dde1a51130afc93da13c1af9f43bd"
@@ -4454,18 +4459,18 @@
     },
     {
       "url": "/offline/index.html",
-      "bytes": 3191,
-      "sha256": "8ce1f2d4a3ef232ac066be66f43e7faf60b1f9bad567ca19ee1b9d0b520c1144"
+      "bytes": 4019,
+      "sha256": "9ca83bf26117ea7a05affa6807d6f2f1fa30fbae7f8881a187a251db1832ade4"
     },
     {
       "url": "/offline/installer.css",
-      "bytes": 1719,
-      "sha256": "8a47b0daca93615f8c6734803f0d2fe4310a1ca2f2876b7926079e3ff52378ee"
+      "bytes": 2027,
+      "sha256": "6e09c1c23d477caf4b7ce63b883957bbb2fd3b942c3eff9d9d65a4bdb7084754"
     },
     {
       "url": "/offline/installer.js",
-      "bytes": 9686,
-      "sha256": "ca44bb4881e685c98785e81c2c3b4984833a04b8666f2addf7125b7c3d32d146"
+      "bytes": 10910,
+      "sha256": "bc77afbf79c1de07be15f6f727c227eab68bc1494e6b42df9967f0a810636d4d"
     },
     {
       "url": "/offline/manifest.webmanifest",

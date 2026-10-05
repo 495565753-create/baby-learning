@@ -9,6 +9,22 @@
   const status = text => { $('downloadStatus').textContent = text; };
   const digest = async body => Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', body)), byte => byte.toString(16).padStart(2, '0')).join('');
   const key = file => new URL(file.url, location.origin).href;
+  function showEntryHelp(message) {
+    // A weak connection may return the previous installer HTML with this newer script.
+    const help = $('entryHelp'), description = $('entryMessage');
+    if (help) help.hidden = false;
+    if (description) description.textContent = message;
+    $('downloadButton').hidden = true;
+    $('downloadProgress').hidden = true;
+    $('sizeInfo').textContent = '请从正式网页准备离线内容，下载好的旧版会保留。';
+    status(help ? message : message + ' 正式入口：https://leyman.cn/offline/');
+  }
+  function withSetupTimeout(prepare) {
+    return new Promise((resolve, reject) => {
+      const timer = setTimeout(() => reject(new Error('离线准备暂时没有完成。')), 15000);
+      Promise.resolve().then(prepare).then(resolve, reject).finally(() => clearTimeout(timer));
+    });
+  }
   async function command(type, extra) {
     const worker = registration.active;
     if (!worker) throw new Error('离线功能还没准备好，请再试一次。');
@@ -115,14 +131,19 @@
   async function setup() {
     const standalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone;
     if (standalone) $('appleSteps').hidden = true;
+    if (location.protocol === 'file:') {
+      showEntryHelp('这是电脑里的本地文件。请点“打开正式下载入口”，或用 iPad 扫下面的二维码。');
+      return;
+    }
     if (!('serviceWorker' in navigator) || !('caches' in window) || !window.isSecureContext) {
-      status('当前浏览器不能保存离线内容。请用 Safari 打开 leyman.cn 的 HTTPS 扫码入口。');
-      $('sizeInfo').textContent = 'iPad 请添加到主屏幕后，从桌面图标里打开。';
+      showEntryHelp('当前页面不能保存离线内容。请用 Safari 打开正式下载入口，添加到主屏幕后再下载。');
       return;
     }
     try {
-      registration = await navigator.serviceWorker.register('sw.js', { scope: './', updateViaCache: 'none' });
-      registration = await navigator.serviceWorker.ready;
+      registration = await withSetupTimeout(async () => {
+        await navigator.serviceWorker.register('sw.js', { scope: './', updateViaCache: 'none' });
+        return navigator.serviceWorker.ready;
+      });
       const previous = await command('STATUS');
       if (previous.ready) {
         activeVersion = previous.activeVersion || previous.version;
@@ -148,11 +169,17 @@
         if (estimate.quota) $('storageInfo').textContent = `建议至少留 ${mb(manifest.totalBytes * 2)} 可用空间，便于下载和以后更新。`;
       } catch {}
     } catch (error) {
-      if (activeVersion) $('downloadButton').textContent = '联网后可检查新版';
-      status(activeVersion ? '当前没有联网，已下载的离线版仍然可以玩。' : (error?.message || '准备暂时没有完成，请联网后再打开。'));
+      if (activeVersion) {
+        $('downloadButton').textContent = '联网后可检查新版';
+        status('当前没有联网，已下载的离线版仍然可以玩。');
+      } else {
+        showEntryHelp('离线准备暂时没有完成。请检查网络后点“重新准备”，也可以打开正式下载入口。');
+        if ($('setupRetry')) $('setupRetry').hidden = false;
+      }
     }
   }
   $('downloadButton').addEventListener('click', start);
+  $('setupRetry')?.addEventListener('click', () => location.reload());
   $('pauseButton').addEventListener('click', () => { paused = true; $('pauseButton').disabled = true; status('正在暂停，下载好的内容会保留…'); });
   document.addEventListener('visibilitychange', () => { if (!document.hidden && running) keepAwake(); });
   setup();

@@ -152,7 +152,7 @@ function buildOffline(root = __dirname) {
   };
   fs.writeFileSync(path.join(offline, 'manifest.webmanifest'), JSON.stringify(manifest, null, 2) + '\n');
   const files = new Set(runtime.files);
-  for (const file of ['offline/index.html', 'offline/installer.js', 'offline/installer.css', 'offline/manifest.webmanifest', 'offline/play.html', 'offline/arcade/index.html', 'offline/arcade/kids.html', 'offline/arcade/levels.html']) {
+  for (const file of ['offline/index.html', 'offline/installer.js', 'offline/installer.css', 'offline/manifest.webmanifest', 'offline/play.html', 'offline/arcade/index.html', 'offline/arcade/kids.html', 'offline/arcade/levels.html', 'downloads/ipad-offline-qr.png']) {
     assertFile(root, file);
     files.add(file);
   }

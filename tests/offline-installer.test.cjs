@@ -15,7 +15,6 @@ const cacheName = 'guolicheng-offline-' + version;
 const oldCacheName = 'guolicheng-offline-' + oldVersion;
 const readyUrl = origin + '/offline/ready.json';
 const sha = body => createHash('sha256').update(body).digest('hex');
-const absolute = value => typeof value === 'string' ? new URL(value, origin + '/offline/').href : value.url;
 
 function fixture(count = 12) {
   const bodies = new Map();
@@ -53,14 +52,27 @@ async function waitFor(predicate, description) {
 function browser(options = {}) {
   const data = options.data || fixture();
   const nodes = Object.fromEntries(['downloadStatus', 'downloadProgress', 'downloadButton',
-    'pauseButton', 'playButton', 'savedVersion', 'appleSteps', 'sizeInfo', 'storageInfo']
+    'pauseButton', 'playButton', 'savedVersion', 'appleSteps', 'sizeInfo', 'storageInfo',
+    'entryHelp', 'entryMessage', 'officialInstaller', 'setupRetry']
     .map(id => [id, control(id)]));
   nodes.downloadButton.disabled = true;
   nodes.pauseButton.hidden = nodes.playButton.hidden = nodes.savedVersion.hidden = true;
+  nodes.entryHelp.hidden = nodes.setupRetry.hidden = true;
+  nodes.officialInstaller.href = 'https://leyman.cn/offline/';
+  const entryControlIds = ['entryHelp', 'entryMessage', 'officialInstaller', 'setupRetry'];
+  if (options.legacyHTML) for (const id of entryControlIds) delete nodes[id];
   const fetches = [], commands = [], registrations = [], puts = [], deleted = [];
   const stores = new Map(), channels = new Set();
   let activeFetches = 0, maxFetches = 0;
   let wakeRequests = 0, wakeReleases = 0;
+  let reloadRequests = 0;
+  const setupTimers = [];
+  const locationURL = new URL(typeof options.location === 'string'
+    ? options.location : options.location?.href || origin + '/offline/');
+  const currentOrigin = locationURL.origin;
+  const currentReadyUrl = currentOrigin + '/offline/ready.json';
+  const resolveAbsolute = value => typeof value === 'string'
+    ? new URL(value, locationURL.href).href : value.url;
 
   function store(name) {
     if (!stores.has(name)) stores.set(name, new Map());
@@ -71,9 +83,9 @@ function browser(options = {}) {
     async open(name) {
       const entries = store(name);
       return {
-        async match(request) { return entries.get(absolute(request))?.clone(); },
+        async match(request) { return entries.get(resolveAbsolute(request))?.clone(); },
         async put(request, response) {
-          const url = absolute(request);
+          const url = resolveAbsolute(request);
           if (options.beforePut) await options.beforePut({name, url, response});
           puts.push({name, url});
           entries.set(url, response.clone());
@@ -87,7 +99,7 @@ function browser(options = {}) {
 
   if (options.preload) {
     for (const [name, entries] of options.preload) {
-      for (const [url, response] of entries) store(name).set(absolute(url), response.clone());
+      for (const [url, response] of entries) store(name).set(resolveAbsolute(url), response.clone());
     }
   }
 
@@ -98,7 +110,7 @@ function browser(options = {}) {
         channels.add(port);
         const record = {message: JSON.parse(JSON.stringify(message)),
           keys: Array.from(store(cacheName).keys()),
-          ready: store(cacheName).get(readyUrl)?.clone()};
+          ready: store(cacheName).get(currentReadyUrl)?.clone()};
         commands.push(record);
         Promise.resolve().then(async () => {
           if (options.command) return options.command(message, record);
@@ -117,9 +129,11 @@ function browser(options = {}) {
     serviceWorker: {
       async register(script, settings) {
         registrations.push({script, settings: JSON.parse(JSON.stringify(settings))});
+        if (options.registerError) throw options.registerError;
         return registration;
       },
-      ready: Promise.resolve(registration)
+      ready: options.workerReady === false ? new Promise(() => {})
+        : options.workerReady || Promise.resolve(registration)
     },
     storage: {
       async persist() { return true; },
@@ -127,48 +141,62 @@ function browser(options = {}) {
     },
     wakeLock: {async request() { wakeRequests++; return {async release() { wakeReleases++; }}; }}
   };
+  if (options.serviceWorker === false) delete navigator.serviceWorker;
 
   async function fetch(request, settings = {}) {
-    const url = absolute(request);
+    const url = resolveAbsolute(request);
     fetches.push({url, cache: settings.cache});
-    if (url === origin + '/offline/assets.json') {
+    if (url === currentOrigin + '/offline/assets.json') {
       if (options.manifestFailure) throw new TypeError('offline');
       return new Response(JSON.stringify(data.manifest), {headers: {'Content-Type': 'application/json'}});
     }
-    assert.ok(data.bodies.has(url), 'installer must fetch only files in the current manifest: ' + url);
+    const fixtureURL = origin + new URL(url).pathname;
+    assert.ok(data.bodies.has(fixtureURL), 'installer must fetch only files in the current manifest: ' + url);
     activeFetches++;
     maxFetches = Math.max(maxFetches, activeFetches);
     try {
-      if (options.fetchAsset) return await options.fetchAsset(url, data.bodies.get(url), settings);
+      if (options.fetchAsset) return await options.fetchAsset(url, data.bodies.get(fixtureURL), settings);
       await new Promise(resolve => setTimeout(resolve, 8));
-      return new Response(data.bodies.get(url));
+      return new Response(data.bodies.get(fixtureURL));
     } finally { activeFetches--; }
   }
 
   const document = {
     hidden: false,
-    getElementById(id) { assert.ok(nodes[id], 'known installer control: ' + id); return nodes[id]; },
+    getElementById(id) {
+      if (options.legacyHTML && entryControlIds.includes(id)) return null;
+      assert.ok(nodes[id], 'known installer control: ' + id);
+      return nodes[id];
+    },
     addEventListener() {}
   };
+  function installerTimeout(callback, delay, ...args) {
+    if (delay === 15000) setupTimers.push(delay);
+    return setTimeout(callback, delay === 15000 && options.setupTimeoutMs !== undefined
+      ? options.setupTimeoutMs : delay, ...args);
+  }
   const context = {document, navigator, caches, fetch, crypto: webcrypto, URL, Request, Response,
-    Uint8Array, MessageChannel, AbortController, setTimeout, clearTimeout, console,
-    location: {origin, href: origin + '/offline/'},
-    matchMedia() { return {matches: false}; }, isSecureContext: true};
+    Uint8Array, MessageChannel, AbortController, setTimeout: installerTimeout, clearTimeout, console,
+    location: {origin: currentOrigin, href: locationURL.href, protocol: locationURL.protocol,
+      hostname: locationURL.hostname, reload() { reloadRequests++; }},
+    matchMedia() { return {matches: false}; }, isSecureContext: options.secureContext ?? true};
+  if (options.cacheAPI === false) delete context.caches;
   context.window = context;
   vm.runInNewContext(source, context, {filename: 'offline/installer.js'});
 
   return {
-    data, nodes, stores, fetches, commands, registrations, puts, deleted,
+    data, nodes, stores, fetches, commands, registrations, puts, deleted, setupTimers,
     get maxFetches() { return maxFetches; },
     get wakeRequests() { return wakeRequests; },
     get wakeReleases() { return wakeReleases; },
+    get reloadRequests() { return reloadRequests; },
     async initialized() {
       await waitFor(() => options.manifestFailure
         ? /当前没有联网/.test(nodes.downloadStatus.textContent)
         : nodes.downloadButton.disabled === false, 'installer preparation');
     },
     start() { return nodes.downloadButton.click(); },
-    async cached(url, name = cacheName) { return stores.get(name)?.get(absolute(url))?.clone(); },
+    async cached(url, name = cacheName) { return stores.get(name)?.get(resolveAbsolute(url))?.clone(); },
     close() { for (const port of channels) port.close(); }
   };
 }
@@ -176,6 +204,146 @@ function browser(options = {}) {
 function assetRequests(app) {
   return app.fetches.filter(request => request.url !== origin + '/offline/assets.json');
 }
+
+function assertEntryRecovery(app, {retry = false} = {}) {
+  assert.equal(app.nodes.entryHelp.hidden, false, 'the HTTPS recovery entry is visible');
+  assert.ok(app.nodes.entryMessage.textContent.trim(), 'explain how to reach a supported download entry');
+  assert.equal(app.nodes.officialInstaller.href, 'https://leyman.cn/offline/');
+  assert.equal(app.nodes.downloadButton.disabled, true);
+  assert.equal(app.nodes.downloadButton.hidden, true, 'do not show a disabled waiting button forever');
+  assert.equal(app.nodes.downloadProgress.hidden, true, 'unsupported preparation is not an active download');
+  assert.equal(app.nodes.playButton.hidden, true, 'never expose an unprepared offline copy');
+  assert.equal(app.nodes.setupRetry.hidden, !retry);
+  assert.deepEqual(app.fetches, []);
+  assert.deepEqual(app.commands, []);
+  assert.deepEqual(app.puts, []);
+  assert.deepEqual(app.deleted, []);
+  assert.equal(app.stores.size, 0, 'do not open, populate, or delete caches in an unsupported context');
+}
+
+test('the HTML includes a usable official HTTPS recovery link even before JavaScript runs', () => {
+  const html = fs.readFileSync(path.join(root, 'offline/index.html'), 'utf8');
+  assert.match(html, /<section\b[^>]*\bid=["']entryHelp["'][^>]*\bhidden(?:\s|>)/i);
+  assert.match(html, /<a\b(?=[^>]*\bid=["']officialInstaller["'])(?=[^>]*\bhref=["']https:\/\/leyman\.cn\/offline\/["'])[^>]*>[^<]+<\/a>/i);
+  assert.match(html, /<button\b[^>]*\bid=["']setupRetry["'][^>]*\bhidden(?:\s|>)/i);
+});
+
+test('opening a local file never registers or downloads even when the browser treats file URLs as secure', async t => {
+  const app = browser({location: 'file:///Users/guoju/edu-app/offline/index.html', secureContext: true});
+  t.after(() => app.close());
+  await waitFor(() => !app.nodes.entryHelp.hidden, 'local-file entry guidance');
+  assertEntryRecovery(app);
+  assert.deepEqual(app.registrations, []);
+  assert.match(app.nodes.entryMessage.textContent, /本地|文件|Safari|HTTPS/);
+});
+
+test('HTTP LAN and missing browser APIs show recovery guidance without worker or cache side effects', async t => {
+  const cases = [
+    ['HTTP LAN', {location: 'http://192.168.1.36:8888/offline/', secureContext: false}],
+    ['missing Service Worker', {serviceWorker: false}],
+    ['missing Cache API', {cacheAPI: false}]
+  ];
+  for (const [label, options] of cases) {
+    await t.test(label, async subtest => {
+      const app = browser(options);
+      subtest.after(() => app.close());
+      await waitFor(() => !app.nodes.entryHelp.hidden, label + ' entry guidance');
+      assertEntryRecovery(app);
+      assert.deepEqual(app.registrations, []);
+      assert.match(app.nodes.entryMessage.textContent, /Safari|HTTPS|浏览器|保存|离线/);
+    });
+  }
+});
+
+test('worker registration errors become readable retry guidance instead of exposing technical errors', async t => {
+  const app = browser({registerError: new TypeError('TECHNICAL_REGISTER_FAILURE_MARKER')});
+  t.after(() => app.close());
+  await waitFor(() => !app.nodes.entryHelp.hidden, 'registration failure guidance');
+  assertEntryRecovery(app, {retry: true});
+  assert.equal(app.registrations.length, 1);
+  assert.doesNotMatch(app.nodes.downloadStatus.textContent + app.nodes.entryMessage.textContent,
+    /TECHNICAL_REGISTER_FAILURE_MARKER|TypeError/);
+  assert.ok(app.nodes.downloadStatus.textContent.trim());
+  app.nodes.setupRetry.click();
+  assert.equal(app.reloadRequests, 1, 'retry performs a fresh explicit preparation');
+});
+
+test('a worker that never becomes ready has a bounded preparation time and leaves an explicit retry action', async t => {
+  const app = browser({workerReady: false, setupTimeoutMs: 15});
+  t.after(() => app.close());
+  await waitFor(() => !app.nodes.entryHelp.hidden, 'bounded worker-readiness failure');
+  assertEntryRecovery(app, {retry: true});
+  assert.equal(app.registrations.length, 1);
+  assert.ok(app.setupTimers.includes(15000), 'only the production 15-second setup timer is accelerated in this fixture');
+  assert.ok(app.nodes.downloadStatus.textContent.trim());
+  app.nodes.setupRetry.click();
+  assert.equal(app.reloadRequests, 1);
+});
+
+test('secure localhost development and other HTTPS hosts still prepare and download their own scoped content', async t => {
+  for (const entry of ['http://localhost:8888/offline/', 'https://other.example/offline/']) {
+    await t.test(entry, async subtest => {
+      const app = browser({data: fixture(3), location: entry, secureContext: true});
+      subtest.after(() => app.close());
+      await app.initialized();
+      assert.equal(app.nodes.entryHelp.hidden, true);
+      assert.equal(app.nodes.setupRetry.hidden, true);
+      assert.equal(app.nodes.downloadButton.hidden, false);
+      assert.deepEqual(app.registrations, [{script: 'sw.js', settings: {scope: './', updateViaCache: 'none'}}]);
+      assert.deepEqual(app.fetches, [{url: new URL('assets.json', entry).href, cache: 'no-store'}]);
+      await app.start();
+      assert.ok(app.fetches.every(request => new URL(request.url).origin === new URL(entry).origin),
+        'content remains on the current origin rather than silently switching hosts');
+      assert.equal(app.nodes.playButton.hidden, false);
+      assert.equal(app.nodes.downloadProgress.value, 100);
+      assert.match(app.nodes.downloadStatus.textContent, /全部下载完成，可以离线玩了/);
+      for (const file of app.data.manifest.files) {
+        const response = await app.cached(file.url);
+        assert.ok(response);
+        assert.equal(sha(Buffer.from(await response.arrayBuffer())), file.sha256);
+      }
+    });
+  }
+});
+
+test('a newer installer script keeps a cached older HTML page and its downloaded old version usable', async t => {
+  const oldMarker = '/offline/old-content.html';
+  const app = browser({legacyHTML: true, oldActive: true, manifestFailure: true,
+    preload: [[oldCacheName, [[oldMarker, new Response('old copy')]]]]});
+  t.after(() => app.close());
+  await app.initialized();
+  assert.equal(app.nodes.setupRetry, undefined, 'this page really has the previous installer markup');
+  assert.equal(app.nodes.entryHelp, undefined);
+  assert.equal(app.nodes.playButton.hidden, false, 'the usable old copy is still exposed on cached old HTML');
+  assert.equal(app.nodes.savedVersion.hidden, false);
+  assert.equal(app.nodes.downloadProgress.value, 100);
+  assert.match(app.nodes.downloadStatus.textContent, /当前没有联网，已下载的离线版仍然可以玩/);
+  assert.equal(app.nodes.downloadButton.textContent, '联网后可检查新版');
+  assert.deepEqual(app.commands.map(item => item.message.type), ['STATUS']);
+  assert.deepEqual(app.puts, []);
+  assert.deepEqual(app.deleted, []);
+  assert.equal(await (await app.cached(oldMarker, oldCacheName)).text(), 'old copy');
+});
+
+test('a newer installer script handles initial worker failure on cached older HTML without missing-control errors', async t => {
+  const app = browser({legacyHTML: true, registerError: new TypeError('LEGACY_REGISTER_FAILURE_MARKER')});
+  t.after(() => app.close());
+  await waitFor(() => app.nodes.downloadStatus.textContent.trim(), 'legacy installer fallback guidance');
+  assert.equal(app.nodes.setupRetry, undefined);
+  assert.match(app.nodes.downloadStatus.textContent, /离线|准备|网络/);
+  assert.match(app.nodes.downloadStatus.textContent, /https:\/\/leyman\.cn\/offline\//,
+    'the old page still gets a usable official URL when its new recovery controls are absent');
+  assert.doesNotMatch(app.nodes.downloadStatus.textContent, /LEGACY_REGISTER_FAILURE_MARKER|TypeError/);
+  assert.equal(app.nodes.downloadButton.hidden, true);
+  assert.equal(app.nodes.downloadProgress.hidden, true);
+  assert.equal(app.nodes.playButton.hidden, true);
+  assert.equal(app.registrations.length, 1);
+  assert.deepEqual(app.fetches, []);
+  assert.deepEqual(app.commands, []);
+  assert.deepEqual(app.puts, []);
+  assert.deepEqual(app.deleted, []);
+  assert.equal(app.stores.size, 0);
+});
 
 test('opening the installer prepares only its manifest and an isolated worker, without eager library downloads', async t => {
   const app = browser({data: fixture(2800)});

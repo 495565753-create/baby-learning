@@ -77,6 +77,7 @@ test('generated offline manifest is complete, deterministic and excludes self-re
     assert.equal(sha256(contents), record.sha256, record.url);
   }
   assert.ok(result.files.some(record => record.url === '/offline/index.html'));
+  assert.ok(result.files.some(record => record.url === '/downloads/ipad-offline-qr.png'));
   assert.ok(result.files.some(record => record.url === '/offline/arcade/levels.html'));
   assert.ok(!result.files.some(record => ['/offline/sw.js', '/offline/assets.json'].includes(record.url)));
   const manifest = JSON.parse(fs.readFileSync(path.join(root, 'offline/manifest.webmanifest')));
