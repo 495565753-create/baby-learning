@@ -19,7 +19,7 @@ test('offline assets are resolved from current story and effective voice data', 
     assert.ok(result.files.includes(localPath(book.cover)), book.cover);
     for (const page of book.pages) assert.ok(result.files.includes(localPath(page.img)), page.img);
   }
-  for (const directory of ['assets', 'img/coloring', 'arcade']) {
+  for (const directory of ['assets', 'img/coloring', 'arcade', 'princess-assets', 'princess-voices']) {
     for (const file of fs.readdirSync(path.join(root, directory), { recursive: true })) {
       const absolute = path.join(root, directory, file);
       if (!fs.statSync(absolute).isFile() || !/\.(?:webp|svg|png|html|js|css|mp3)$/.test(file)) continue;

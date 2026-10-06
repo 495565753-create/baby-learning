@@ -1,0 +1,42 @@
+/* A small number of clear choices per row on the tablet home and game shelf. */
+.home-dashboard{display:block;max-width:1320px;margin:auto}
+.home-dashboard .home-hero{min-height:124px;padding:23px 26px;border-radius:28px;background:linear-gradient(120deg,#fff8e9,#eaf5ff);box-shadow:0 9px 26px #45628412}
+.home-feature-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:14px;margin:15px 0 7px}
+.home-feature-grid .princess-home-banner,.home-feature-grid .home-writing-banner{height:100%;min-height:104px;margin:0;padding:16px 20px;border:1px solid #fff;border-radius:24px;box-shadow:0 8px 20px #45628413}
+.home-feature-grid .princess-home-banner{background:linear-gradient(125deg,#ffe1ee,#f2e7ff 75%)}
+.home-feature-grid .princess-home-banner>span:first-child{display:grid;place-items:center;flex:0 0 64px;width:64px;height:64px;border-radius:20px;background:#ffffffa9;font-size:37px}
+.home-feature-grid .princess-home-banner b{font-size:23px;color:#7c3f70}
+.home-feature-grid .princess-home-banner small{font-size:14px}
+.home-feature-grid .home-writing-banner{background:linear-gradient(125deg,#e1f1ff,#f5f9ff)}
+.home-dashboard .home-title{margin:21px 2px 12px}
+.home-dashboard .home-function-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.home-dashboard .home-function-card{min-height:138px;border-radius:23px;background:#fff;box-shadow:0 6px 17px #45628412}
+.home-daily-progress{width:100%;min-height:57px;display:flex;align-items:center;gap:9px;margin:18px 0 4px;padding:10px 16px;border:1px solid #e2ebdf;border-radius:18px;background:#f0f8eb;color:#385a3e;text-align:left;font-size:15px;font-weight:750}
+.home-daily-progress span:first-child{font-size:25px}.home-daily-progress b{margin-left:auto;white-space:nowrap}
+.game-home{max-width:1320px;margin:auto}
+.game-home .game-hero{min-height:112px;padding:18px 23px;border-radius:27px;background:linear-gradient(120deg,#e8f4ff,#f8edff)}
+.game-home .game-hero h1{font-size:30px}.game-home .game-hero>span{font-size:55px}
+.game-feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:15px 0 17px}
+.game-feature-grid button{min-width:0;min-height:96px;display:grid;grid-template-columns:62px minmax(0,1fr) auto;grid-template-rows:auto auto;align-content:center;align-items:center;column-gap:10px;padding:13px 17px;text-align:left;border:1px solid #fff;border-radius:23px;background:linear-gradient(120deg,#ffe5ee,#f4e8ff);box-shadow:0 6px 17px #45628412}
+.game-feature-grid button:nth-child(2){background:linear-gradient(120deg,#e4f4ff,#edf9f3)}
+.game-feature-grid button>span{grid-row:1/3;display:grid;place-items:center;width:58px;height:58px;border-radius:18px;background:#ffffffb3;font-size:35px}
+.game-feature-grid b{font-size:21px;color:#414460}.game-feature-grid small{font-size:13px;color:#687181}.game-feature-grid i{grid-column:3;grid-row:1/3;font-style:normal;font-weight:800;color:#8d5682;white-space:nowrap}
+.game-home .game-category-rail{margin-bottom:13px}.game-home .game-category{border-width:2px;box-shadow:0 4px 11px #45628410}
+.game-home .game-choice{background:#fff;border:1px solid #ecf0f4;box-shadow:0 6px 18px #45628413}
+.game-home .game-category-head{margin-top:0}
+.princess-character-bar .princess-top-finish{display:none}
+.princess-characters button{flex-basis:104px}
+@media(min-width:800px) and (min-height:600px){
+  .home-dashboard>.home-hero,.home-dashboard>.home-feature-grid,.home-dashboard>.home-title,.home-dashboard>.home-function-grid,.home-dashboard>.home-daily-progress,.home-dashboard>.home-continue{grid-column:auto;grid-row:auto}
+  .home-dashboard .home-hero{min-height:124px;padding:23px 26px}
+  .home-dashboard .home-function-card{min-height:138px;padding:17px}
+}
+@media(max-width:700px){
+  .home-feature-grid{grid-template-columns:1fr;gap:10px}
+  .home-feature-grid .princess-home-banner,.home-feature-grid .home-writing-banner{min-height:82px}
+  .home-dashboard .home-function-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .game-feature-grid{gap:9px}
+  .game-feature-grid button{grid-template-columns:45px minmax(0,1fr);min-height:83px;padding:10px;column-gap:7px}
+  .game-feature-grid button>span{width:44px;height:44px;font-size:27px}
+  .game-feature-grid b{font-size:16px}.game-feature-grid small{font-size:11px}.game-feature-grid i{display:none}
+}

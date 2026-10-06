@@ -33,18 +33,12 @@
     ];
     const recent = readRecent();
     return `<section class="home-dashboard">
-      <div class="hero home-hero"><div><small class="home-greeting">你好，果粒橙小朋友</small><h1>今天想做什么？</h1><p>看图标，轻轻点一下</p></div><button class="home-guide" onclick="HOME.introduce()" aria-label="听首页介绍"><span aria-hidden="true">🍊</span><b>听介绍</b><i aria-hidden="true">🔊</i></button></div>
-      <button class="home-writing-banner" data-home-function="writing" onclick="go('writing')"><span aria-hidden="true">✍️</span><span><b>学写字 · 1 到 10</b><small>看小手示范，跟着描，再认识一个字</small></span><i aria-hidden="true">›</i></button>
-      <h2 class="section-title home-title">我的小乐园</h2>
+      <div class="hero home-hero"><div><small class="home-greeting">你好，果粒橙小朋友</small><h1>今天玩什么？</h1><p>挑一个喜欢的，点开就开始</p></div><button class="home-guide" onclick="HOME.introduce()" aria-label="听首页介绍"><span aria-hidden="true">🍊</span><b>听介绍</b><i aria-hidden="true">🔊</i></button></div>
+      <div class="home-feature-grid"><button class="princess-home-banner" data-home-function="princess" onclick="openGame('princess')"><span aria-hidden="true">👑</span><span><b>公主换装舞会</b><small>10 位公主，礼服、发型和饰品随心换</small></span><strong>开始换装 ›</strong></button>
+      <button class="home-writing-banner" data-home-function="writing" onclick="go('writing')"><span aria-hidden="true">✍️</span><span><b>学写字 · 1 到 10</b><small>看小手示范，跟着描，再认识一个字</small></span><i aria-hidden="true">›</i></button></div>
+      <h2 class="section-title home-title">更多好玩的</h2>
       <div class="big-grid home-grid home-function-grid">${cards.map(([icon, title, description, action, name]) => `<button class="big-card home-function-card" data-home-function="${name}" onclick="${action}"><span class="icon" aria-hidden="true">${icon}</span><b>${title}</b><small>${description}</small><span class="home-card-arrow" aria-hidden="true">›</span></button>`).join('')}</div>
-      <section class="home-shortcuts" aria-labelledby="home-shortcut-title"><h2 class="section-title home-title" id="home-shortcut-title">直接开始</h2><div class="home-shortcut-grid">
-        <button onclick="HOME.openDaily()"><span aria-hidden="true">🌱</span><span><b>今日认 ${target} 个</b><small>${progress.dailyDone ? '已完成，来复习吧' : `今天已认识 ${learned} 个`}</small></span><i aria-hidden="true">›</i></button>
-        <button onclick="HOME.openChallenge()"><span aria-hidden="true">🧩</span><span><b>挑战升级</b><small>选难度，慢慢想</small></span><i aria-hidden="true">›</i></button>
-        <button onclick="go('coloring')"><span aria-hidden="true">🎨</span><span><b>涂颜色</b><small>给图画穿彩衣</small></span><i aria-hidden="true">›</i></button>
-        <button onclick="HOME.openFavorites()"><span aria-hidden="true">❤️</span><span><b>认知收藏</b><small>${Number(progress.favoritesCount) || 0} 张喜欢的卡片</small></span><i aria-hidden="true">›</i></button>
-        <button onclick="HOME.openSubject('语文')"><span aria-hidden="true">📖</span><span><b>语文课堂</b><small>听一听，说一说</small></span><i aria-hidden="true">›</i></button>
-        <button onclick="HOME.openSubject('数学')"><span aria-hidden="true">🔢</span><span><b>数学课堂</b><small>数一数，想一想</small></span><i aria-hidden="true">›</i></button>
-      </div></section>
+      <button class="home-daily-progress" onclick="HOME.openDaily()"><span aria-hidden="true">🌱</span><span>今天认一认：${learned}/${target} 张卡片</span><b>继续 ›</b></button>
       ${recent ? `<button class="continue home-continue" onclick="HOME.resumeStory()"><span class="resume-icon" aria-hidden="true">📖</span><span><b>接着听故事</b><small>${escape(recent.title)}</small></span><span class="play" aria-hidden="true">▶</span></button>` : ''}
     </section>`;
   }

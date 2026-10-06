@@ -74,9 +74,10 @@ function touchSurface(env, withBody = true) {
 
 const flushPress = async () => { await Promise.resolve(); await Promise.resolve(); };
 
-test('small song library contains eight historical melodies and two complete original tunes', () => {
+test('song library contains fifty complete tunes with eight sourced historical melodies', () => {
   const { t, api } = load();
-  assert.equal(api.songs.length, 10); assert.equal(api.songs.filter(song => song.source).length, 8);
+  assert.equal(api.songs.length, 50); assert.equal(api.songs.filter(song => song.source).length, 8);
+  assert.equal(new Set(api.songs.map(song => song.id)).size, 50);
   for (const song of t.data.SONGS) {
     assert.ok(song.notes.length >= 20, song.id); assert.ok(song.notes.every(note => Number.isFinite(note.beats) && note.beats > 0 && note.beats <= 4));
     const seq = t.timeline(song.notes, song.tempo); assert.equal(seq.events[0].at, 0); assert.ok(seq.duration >= 10);

@@ -95,6 +95,8 @@ function collectRuntimeAssets(root) {
   Object.values(model.VOICE_MAP).forEach(file => add(file, 'narration'));
   for (const file of walkMedia(root, 'assets', new Set(['.webp', '.svg']))) add(file, 'recognition');
   for (const file of walkMedia(root, 'img/coloring', new Set(['.png']))) add(file, 'coloring');
+  for (const file of walkMedia(root, 'princess-assets', new Set(['.png']))) add(file, 'princess');
+  for (const file of walkMedia(root, 'princess-voices', new Set(['.mp3']))) add(file, 'princess');
   for (const file of walkMedia(root, 'arcade', new Set(['.html', '.js', '.css', '.svg', '.mp3']))) add(file, 'arcade');
   for (const file of ['arcade/assets/fluent/LICENSE', 'arcade/voice/NOTICE.md']) add(file, 'licences');
   for (const file of ['img/icon-180.png', 'img/icon-512.png', 'img/dino/dino_01/page1.webp', bundle.js.file, bundle.css.file]) add(file, 'shell');

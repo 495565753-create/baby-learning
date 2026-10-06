@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 project_dir="$(cd "$(dirname "$0")" && pwd)"
+site_dir="$(cd "$project_dir/.." && pwd)"
 tool_root="${GC_TOOL_ROOT:-$HOME/Desktop/deepseek/tools}"
 sdk_dir="${GC_ANDROID_SDK:-$tool_root/android-sdk}"
 jdk_dir="${GC_JDK:-$tool_root/jdk-17.0.20.1+1/Contents/Home}"
@@ -21,14 +22,33 @@ python3 - "$build_dir" <<'PY'
 from pathlib import Path
 import shutil, sys
 build = Path(sys.argv[1])
-for name in ['classes', 'gen', 'dex']:
-    shutil.rmtree(build / name)
+for name in ['classes', 'gen', 'dex', 'site-assets']:
+    shutil.rmtree(build / name, ignore_errors=True)
     (build / name).mkdir()
 PY
 rm -f "$build_dir/classes.jar" "$build_dir/resources.apk" "$build_dir/unsigned.apk" "$build_dir/aligned.apk" "$build_dir/compiled.zip" "$build_dir/dex/classes.dex"
+python3 - "$site_dir" "$project_dir" "$build_dir/site-assets" <<'PY'
+from pathlib import Path
+import hashlib, json, os, shutil, sys
+site, project, destination = map(Path, sys.argv[1:])
+manifest = json.loads((site / 'offline/assets.json').read_text())
+for record in manifest['files']:
+    relative = record['url'].removeprefix('/')
+    if not relative or '..' in Path(relative).parts or not all(part and part.replace('_','').replace('-','').replace('.','').isalnum() for part in Path(relative).parts):
+        raise ValueError(f'Unsafe asset: {relative}')
+    source = site / relative
+    if source.stat().st_size != record['bytes'] or hashlib.sha256(source.read_bytes()).hexdigest() != record['sha256']:
+        raise ValueError(f'Offline asset differs from manifest: {relative}')
+    target = destination / 'site' / relative
+    target.parent.mkdir(parents=True, exist_ok=True)
+    try: os.link(source, target)
+    except OSError: shutil.copy2(source, target)
+shutil.copy2(project / 'src/main/assets/web-export.js', destination / 'web-export.js')
+print(f"Packaged {len(manifest['files'])} verified offline files into the Android app")
+PY
 "$tools_dir/aapt2" compile --dir "$project_dir/src/main/res" -o "$build_dir/compiled.zip"
 "$tools_dir/aapt2" link -I "$platform_jar" --manifest "$project_dir/src/main/AndroidManifest.xml" \
-    --java "$build_dir/gen" -A "$project_dir/src/main/assets" -o "$build_dir/resources.apk" "$build_dir/compiled.zip"
+    --java "$build_dir/gen" -A "$build_dir/site-assets" -o "$build_dir/resources.apk" "$build_dir/compiled.zip"
 python3 - "$project_dir" "$build_dir" <<'PY'
 from pathlib import Path
 import sys
@@ -59,7 +79,7 @@ PY
         -validity 10000 -dname 'CN=Guolicheng Learning, O=Family Learning, C=CN' >/dev/null
 fi
 if [[ ! -f "$password_file" ]]; then printf '签名密码文件缺失，停止；不会换签名覆盖既有应用。\n' >&2; exit 1; fi
-apk="$output_dir/果粒橙学习乐园-安卓平板-v1.0.0.apk"
+apk="$output_dir/果粒橙学习乐园-安卓平板-离线版-v2.0.0.apk"
 "$jdk_dir/bin/java" -jar "$tools_dir/lib/apksigner.jar" sign --ks "$keystore_file" \
     --ks-key-alias guolicheng-release --ks-pass "file:$password_file" \
     --v1-signing-enabled true --v2-signing-enabled true --v3-signing-enabled true --v4-signing-enabled false \

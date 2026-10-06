@@ -208,7 +208,7 @@
     const known = new Set(progress.recognized);
     const entries = allEntries();
     const fresh = entries.filter(x => !known.has(x.key));
-    const source = fresh.length >= 6 ? fresh : entries;
+    const source = fresh;
     const selected = [];
     const used = new Set();
     LEVELS.map(level => level.id).forEach(level => {
@@ -346,7 +346,7 @@
       </div>
       <button class="know-daily" onclick="KNOW.openDaily()">
         <span class="know-daily-icon">${finished ? '🏆' : '🎒'}</span>
-        <span class="know-daily-copy"><small>今天的小任务</small><b>${finished ? '今天完成啦！' : '认识 6 个新朋友'}</b><span>${finished ? '再看看也可以' : '看卡片，再玩 3 题'}</span></span>
+        <span class="know-daily-copy"><small>今天的小任务</small><b>${finished ? '今天完成啦！' : '今天看 6 张卡片'}</b><span>${finished ? '再看看也可以' : '看卡片，再玩 3 题'}</span></span>
         <span class="know-daily-progress"><strong>${finished ? '✓' : seenCount}</strong><small>${finished ? '完成' : '/ 6'}</small></span>
       </button>
       ${renderFavoriteStrip()}

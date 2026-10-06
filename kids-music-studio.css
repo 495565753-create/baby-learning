@@ -110,3 +110,5 @@
   .playing-music-studio [data-ms-view=songs] .ms-key>b{font-size:14px}
   .playing-music-studio [data-ms-view=songs] .ms-key>small{font-size:8px}
 }
+.ms-song-library-head{display:flex;align-items:center;gap:9px;margin:19px 2px 4px;flex-wrap:wrap}.ms-song-library-head strong{font-size:17px;margin-right:auto}.ms-song-library-head span{font-size:13px;color:#637f91;font-weight:750}.ms-song-library-head button{min-height:42px;padding:8px 13px;border-radius:13px;background:#f2f8fc;font-size:13px;font-weight:850}.ms-song-library-head button:disabled{opacity:.4}.ms-song-grid{margin-top:9px}.ms-song-grid>button{min-height:103px}.ms-song-progress{font-weight:800;color:#2c708f}
+@media(max-width:650px){.ms-song-library-head strong{flex:1 0 100%}.ms-song-library-head span{margin-right:auto}.ms-song-library-head button{min-height:45px}}

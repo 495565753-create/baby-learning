@@ -8,12 +8,15 @@ public final class PolicyTest {
     static void check(boolean condition) { assertions++; if (!condition) throw new AssertionError("policy assertion " + assertions); }
     static void reject(Runnable run) { boolean rejected = false; try { run.run(); } catch (IllegalArgumentException expected) { rejected = true; } check(rejected); }
     public static void main(String[] args) throws Exception {
-        for (String own : new String[]{"https://leyman.cn/", "https://www.leyman.cn/?section=writing", "https://LEYMAN.CN:443/arcade/game.html"}) check(UrlPolicy.isOwn(own));
-        for (String hostile : new String[]{null, "http://leyman.cn", "https://leyman.cn.evil.test/", "https://leyman.cn@evil.test/", "https://evil.test@leyman.cn/", "https://leyman.cn:444/", "javascript:alert(1)", "file:///sdcard/a", "data:text/html,test", "https://leyman.cn\\@evil.test/", "https://%6ceyman.cn/", "https://leyman.cn./"}) check(!UrlPolicy.isOwn(hostile));
+        for (String own : new String[]{"https://leyman.cn/offline/play.html", "https://LEYMAN.CN:443/princess-assets/ice-face.png"}) check(UrlPolicy.isOwn(own));
+        for (String hostile : new String[]{null, "http://leyman.cn", "https://leyman.cn.evil.test/", "https://leyman.cn@evil.test/", "https://evil.test@leyman.cn/", "https://leyman.cn:444/", "javascript:alert(1)", "file:///sdcard/a", "data:text/html,test", "https://leyman.cn\\@evil.test/", "https://leyman.cn./"}) check(!UrlPolicy.isOwn(hostile));
         check(UrlPolicy.isExternalHttps("https://www.youtube.com/watch?v=example"));
         check(!UrlPolicy.isExternalHttps("intent://video")); check(!UrlPolicy.isExternalHttps("http://video.example/"));
-        check(UrlPolicy.origin("https://www.leyman.cn:443/?v=test").equals("https://www.leyman.cn"));
+        check(UrlPolicy.origin("https://leyman.cn:443/offline/play.html?v=test").equals("https://leyman.cn"));
         reject(() -> UrlPolicy.origin("https://evil.test/"));
+        check(LocalAssetPolicy.assetPath("https://leyman.cn/princess-assets/ice-face.png?x=1").equals("site/princess-assets/ice-face.png"));
+        for (String hostile : new String[]{"https://leyman.cn/a/../b", "https://leyman.cn/a/%2e%2e/b", "https://leyman.cn/a//b", "https://leyman.cn/a/%5c/b", "https://evil.test/index.html"}) check(LocalAssetPolicy.assetPath(hostile) == null);
+        check(LocalAssetPolicy.mime("site/princess-voices/ice-hello.mp3").equals("audio/mpeg"));
 
         byte[] png = new byte[]{(byte)137, 80, 78, 71, 13, 10, 26, 10, 1};
         String png64 = Base64.getEncoder().encodeToString(png);

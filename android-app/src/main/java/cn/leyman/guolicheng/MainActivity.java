@@ -37,13 +37,16 @@ import android.widget.Toast;
 
 import org.json.JSONObject;
 import java.io.ByteArrayOutputStream;
+import java.io.ByteArrayInputStream;
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
+import java.util.Collections;
 
 public final class MainActivity extends Activity {
-    private static final String HOME = "https://leyman.cn/";
+    private static final String HOME = "https://leyman.cn/offline/play.html";
     private static final int SAVE_WORK = 41;
     private WebView web;
     private LinearLayout panel;
@@ -56,7 +59,7 @@ public final class MainActivity extends Activity {
     private boolean pageError, loaded, pausedWithPage, destroyed;
     private ExportPolicy.Payload pendingExport;
     private File pendingExportFile;
-    private final Runnable loadTimeout = () -> { if (!loaded && !destroyed) error("我们还没连上学习乐园", "检查一下网络，再点重试就好。"); };
+    private final Runnable loadTimeout = () -> { if (!loaded && !destroyed) error("学习乐园还没打开", "请点下面的按钮再试一次。"); };
 
     @Override public void onCreate(Bundle state) {
         super.onCreate(state);
@@ -95,7 +98,7 @@ public final class MainActivity extends Activity {
         settings.setSupportMultipleWindows(true);
         settings.setJavaScriptCanOpenWindowsAutomatically(false);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
-        settings.setUserAgentString(settings.getUserAgentString() + " GuolichengTablet/1.0.0");
+        settings.setUserAgentString(settings.getUserAgentString() + " GuolichengTablet/2.0.0-Offline");
         CookieManager.getInstance().setAcceptThirdPartyCookies(web, false);
         WebView.setWebContentsDebuggingEnabled(false);
         web.setWebViewClient(new SiteClient());
@@ -151,6 +154,21 @@ public final class MainActivity extends Activity {
         catch (ActivityNotFoundException ex) { toast("还没找到浏览器，请大朋友帮忙打开。"); }
     }
     private final class SiteClient extends WebViewClient {
+        @Override public WebResourceResponse shouldInterceptRequest(WebView view, WebResourceRequest request) {
+            String url = request.getUrl().toString();
+            if (!UrlPolicy.isOwn(url)) return null;
+            String path = LocalAssetPolicy.assetPath(url);
+            if (path == null) return missingAsset();
+            try {
+                return new WebResourceResponse(LocalAssetPolicy.mime(path),
+                        LocalAssetPolicy.mime(path).startsWith("text/") || path.endsWith(".json") ? "UTF-8" : null,
+                        getAssets().open(path));
+            } catch (IOException ex) { return missingAsset(); }
+        }
+        private WebResourceResponse missingAsset() {
+            return new WebResourceResponse("text/plain", "UTF-8", 404, "Not Found",
+                    Collections.emptyMap(), new ByteArrayInputStream(new byte[0]));
+        }
         @Override public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
             return request.isForMainFrame() ? navigate(request.getUrl().toString(), request.hasGesture()) : !UrlPolicy.isOwn(request.getUrl().toString());
         }
@@ -169,14 +187,14 @@ public final class MainActivity extends Activity {
             if (!pageError && UrlPolicy.isOwn(url)) { loaded = true; panel.setVisibility(View.GONE); progress.setVisibility(View.GONE); installExportPort(url); }
         }
         @Override public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
-            if (request.isForMainFrame()) MainActivity.this.error("网络暂时没连上", "连上 Wi-Fi 或移动网络后，再试一次吧。");
+            if (request.isForMainFrame()) MainActivity.this.error("学习乐园还没打开", "请点下面的按钮再试一次。");
         }
         @Override public void onReceivedHttpError(WebView view, WebResourceRequest request, WebResourceResponse response) {
             if (request.isForMainFrame()) error("学习乐园暂时没打开", "等一小会儿，再点重试就好。");
         }
         @Override public void onReceivedSslError(WebView view, SslErrorHandler ssl, SslError error) {
             ssl.cancel();
-            if (error.getUrl() != null && error.getUrl().equals(retryUrl)) MainActivity.this.error("连接还没准备好", "先稍等一下，也可以请大朋友检查网络和设备时间。");
+            if (error.getUrl() != null && error.getUrl().equals(retryUrl)) MainActivity.this.error("学习乐园还没打开", "请点下面的按钮再试一次。");
         }
     }
     private final class ChromeClient extends WebChromeClient {

@@ -42,6 +42,51 @@
     { id: 'rainbow', name: '彩虹小路', icon: '🌈', tempo: 100, kind: '原创小旋律', notes: score('1 3 5 3 2 4 6 4 3 5 8 5 4 6 5:2 5:.5 6:.5 5 3 1 2 3 2:2 1 3 5 8 6 5 3 2 1:4') },
     { id: 'train', name: '小火车出发', icon: '🚂', tempo: 112, kind: '原创小旋律', notes: score('1:.5 1:.5 3 5:.5 5:.5 3 2:.5 2:.5 4 6:.5 6:.5 4 3:.5 3:.5 5 8:.5 8:.5 5 4 3 2:2 1:.5 1:.5 3 5:.5 5:.5 3 2:.5 2:.5 4 6:.5 6:.5 4 5 6 5 3 2 1:3') }
   ];
+  // Forty short original call-and-response tunes for little fingers. Each has a
+  // clear recurring phrase and a tonic ending, so the lit-key guide is learnable.
+  const ORIGINAL_SONG_ROWS = [
+    ['sunshine','太阳醒来','☀️',100,'1 2 3 5 6 5 3 2 1 3 5 6 5 4 3 2'],
+    ['cloud','白云慢慢飘','☁️',84,'1 3 2 1 2 4 3 2 3 5 4 3 2 3 2 1'],
+    ['flower','花儿开了','🌸',96,'1 3 5 3 2 4 6 4 3 5 8 6 5 3 2 1'],
+    ['butterfly','蝴蝶飞舞','🦋',108,'3 5 6 5 3 2 3 1 5 6 8 6 5 3 2 1'],
+    ['rabbit','小兔跳跳','🐰',118,'1 1 3 3 5 3 2 1 2 2 4 4 6 4 3 2'],
+    ['puppy','小狗摇尾巴','🐶',104,'5 5 3 3 2 3 5 1 5 6 5 3 4 3 2 1'],
+    ['kitten','小猫轻轻走','🐱',88,'3 2 1 2 3 5 3 2 1 2 3 4 3 2 1 1'],
+    ['duck','小鸭排队','🦆',112,'1 2 1 2 3 4 5 3 2 3 2 3 4 5 6 5'],
+    ['snowman','堆个雪人','⛄',92,'5 3 2 1 2 3 5 5 6 5 4 3 2 3 2 1'],
+    ['raindrop','小雨滴','🌧️',105,'8 6 5 3 5 3 2 1 6 5 3 2 4 3 2 1'],
+    ['leaf','秋叶转圈','🍁',94,'3 5 6 5 4 3 2 3 5 4 3 2 1 2 3 1'],
+    ['rainbow-bridge','彩虹桥','🌈',102,'1 2 3 4 5 6 8 6 5 4 3 2 4 3 2 1'],
+    ['star-walk','星星散步','✨',86,'1 5 3 5 2 5 4 3 1 3 5 8 6 5 3 1'],
+    ['moon-boat','月亮小船','🌙',80,'1 2 3 2 1 3 5 3 2 3 4 3 2 1 2 1'],
+    ['comet','流星许愿','🌠',106,'5 6 8 6 5 3 2 1 3 5 6 5 4 3 2 1'],
+    ['morning-bird','早起的小鸟','🐦',116,'1 3 5 6 5 3 1 2 3 5 6 8 6 5 3 1'],
+    ['seaside','海边散步','🏖️',92,'1 2 4 5 4 2 1 2 3 5 6 5 3 2 3 1'],
+    ['shell','贝壳的秘密','🐚',82,'3 2 1 3 5 4 3 2 1 2 3 5 4 3 2 1'],
+    ['dolphin','海豚跃起来','🐬',120,'1 3 5 8 6 5 3 1 2 4 6 8 6 4 2 1'],
+    ['island','小小岛','🏝️',90,'5 4 3 2 1 3 5 3 4 3 2 1 2 3 2 1'],
+    ['windmill','风车转呀转','🍃',110,'1 5 1 5 3 5 3 2 2 6 2 6 4 6 4 3'],
+    ['balloon','气球飞上天','🎈',104,'1 2 3 5 6 8 6 5 3 4 5 6 5 3 2 1'],
+    ['kite','小风筝','🪁',108,'3 5 3 2 1 2 3 5 4 6 4 3 2 3 4 5'],
+    ['picnic','森林野餐','🧺',98,'1 3 5 3 4 6 5 4 3 5 6 5 2 4 3 2'],
+    ['carousel','旋转木马','🎠',114,'1 3 5 3 1 3 5 3 2 4 6 4 2 4 6 4'],
+    ['candy','糖果叮咚','🍬',122,'1 2 3 5 3 2 1 1 3 4 5 8 5 4 3 2'],
+    ['cookie','饼干香香','🍪',96,'3 3 2 1 2 2 3 5 4 4 3 2 3 3 2 1'],
+    ['lullaby','晚安小熊','🧸',76,'5 3 2 1 3 2 1 1 4 3 2 1 2 3 2 1'],
+    ['breakfast','早安早餐','🥞',106,'1 3 2 4 3 5 4 6 5 3 2 1 2 4 3 1'],
+    ['garden','花园散步','🌻',90,'1 2 3 5 4 3 2 1 3 4 5 6 5 4 3 2'],
+    ['acorn','松果滚滚','🌰',112,'5 3 5 3 2 1 2 3 4 2 4 2 3 2 1 1'],
+    ['mushroom','蘑菇伞','🍄',94,'1 3 4 5 4 3 2 1 2 4 5 6 5 4 3 1'],
+    ['little-train','山谷小火车','🚞',116,'1 1 2 3 5 5 3 2 2 2 3 4 6 6 4 3'],
+    ['bus','快乐小巴士','🚌',110,'1 3 5 5 3 2 1 2 3 4 6 6 4 3 2 1'],
+    ['rocket','小火箭','🚀',124,'1 2 3 4 5 6 8 8 6 5 4 3 2 3 5 1'],
+    ['castle','彩色城堡','🏰',88,'1 3 5 6 5 3 2 1 4 6 8 6 5 4 3 1'],
+    ['dance','裙摆转圈圈','💃',112,'1 3 5 3 2 4 6 4 3 5 6 5 4 3 2 1'],
+    ['parade','快乐游行','🥁',118,'1 1 5 5 6 5 3 2 4 4 6 6 5 4 3 2'],
+    ['birthday','生日蜡烛','🎂',102,'1 1 2 1 4 3 1 1 2 1 5 4 3 3 6 5'],
+    ['friend','好朋友手拉手','💖',96,'1 3 5 3 2 4 3 2 1 2 3 5 4 3 2 1']
+  ];
+  SONGS.push(...ORIGINAL_SONG_ROWS.map(([id,name,icon,tempo,phrase]) => ({id,name,icon,tempo,kind:'原创跟弹小歌',notes:score(`${phrase} ${phrase} 5 4 3 2 1:2`)})));
   const TEMPLATES = [
     { id: 'rainbow', title: '🌈 彩虹', notes: [60, 64, 67, 64, 62, 65, 69, 67], drums: [true, false, false, false, true, false, false, false] },
     { id: 'train', title: '🚂 火车', notes: [60, 60, 67, 67, 64, 64, 62, 60], drums: [true, false, true, false, true, false, true, false] },
@@ -51,7 +96,7 @@
   const esc = text => String(text).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const clone = value => JSON.parse(JSON.stringify(value));
   const now = () => root.performance?.now?.() ?? Date.now();
-  const baseState = () => ({ mode: 'play', instrument: 'piano', volume: 70, tempo: 100, octave: 0, songId: 'star', transport: '', recording: false, recordStart: 0, events: [], duration: 0, step: 0, grid: clone(TEMPLATES[0]), following: false, followIndex: 0, recordDirty: false, workId: null, workName: '', status: '滑过彩色琴键，弹出自己的音乐' });
+  const baseState = () => ({ mode: 'songs', instrument: 'piano', volume: 70, tempo: 100, octave: 0, songId: 'star', songPage: 0, transport: '', recording: false, recordStart: 0, events: [], duration: 0, step: 0, grid: clone(TEMPLATES[0]), following: true, followIndex: 0, recordDirty: false, workId: null, workName: '', status: '先选一首小歌，再点发亮的琴键跟着弹' });
   let state = baseState(), host = null, mounted = false, muted = false, context = null, master = null, token = 0, removers = [];
   const timers = new Set(), nodes = new Set(), pointers = new Map(), pressed = new Map(), bufferCache = new Map();
   const schedule = (fn, delay, run = token) => {
@@ -157,7 +202,8 @@
   }
   function songsMarkup() {
     const selected = SONGS.find(song => song.id === state.songId) || SONGS[0];
-    return `<section class="ms-song-player"><span class="ms-song-icon">${selected.icon}</span><div><strong>${selected.name}</strong><small>${selected.kind} · 完整小旋律</small></div><div class="ms-action-row"><button class="ms-primary" data-ms-listen>▶ 听一听</button><button data-ms-follow>✨ 跟着弹</button><button data-ms-stop>■ 停止</button></div><div class="ms-song-progress" data-ms-song-progress>点听一听，琴键会跟着发亮</div></section>${pianoMarkup()}<div class="ms-song-grid" aria-label="选择小歌">${SONGS.map(song => `<button data-ms-song="${song.id}" aria-pressed="${state.songId === song.id}"><span>${song.icon}</span><b>${song.name}</b><small>${song.kind}</small></button>`).join('')}</div>`;
+    const page=clamp(state.songPage,0,4),start=page*10;
+    return `<section class="ms-song-player"><span class="ms-song-icon">${selected.icon}</span><div><strong>${selected.name}</strong><small>第 ${SONGS.indexOf(selected)+1} / 50 首 · ${selected.kind}</small></div><div class="ms-action-row"><button class="ms-primary" data-ms-listen>▶ 听一听</button><button data-ms-follow>✨ 从头跟弹</button><button data-ms-stop>■ 停止</button></div><div class="ms-song-progress" data-ms-song-progress>点发亮的琴键，一步一步弹这首歌</div></section>${pianoMarkup()}<div class="ms-song-library-head"><strong>🎵 选一首小歌</strong><span>第 ${page+1} / 5 页</span><button data-ms-song-page="${page-1}" ${page===0?'disabled':''}>‹ 上一页</button><button data-ms-song-page="${page+1}" ${page===4?'disabled':''}>下一页 ›</button></div><div class="ms-song-grid" aria-label="选择小歌">${SONGS.slice(start,start+10).map((song,i) => `<button data-ms-song="${song.id}" aria-pressed="${state.songId === song.id}"><span>${song.icon}</span><b>${song.name}</b><small>第 ${start+i+1} 首</small></button>`).join('')}</div>`;
   }
   function composerMarkup() {
     return `<section class="ms-composer"><div class="ms-card-heading"><div><strong>🎼 我的八拍小乐队</strong><small>点格子选音符，小鼓也能加入</small></div></div><div class="ms-template-row" aria-label="试一段音乐">${TEMPLATES.map(t => `<button data-ms-template="${t.id}">${t.title}</button>`).join('')}<button data-ms-clear-grid>🧹 空白</button></div><div class="ms-steps" aria-label="八拍旋律">${state.grid.notes.map((note, i) => `<div class="ms-step ${state.step === i ? 'is-selected' : ''}" data-ms-step-card="${i}"><button data-ms-step="${i}" aria-label="第 ${i + 1} 拍 ${noteLabel(note)}，选择这格" aria-pressed="${state.step === i}"><small>第 ${i + 1} 拍</small><b>${note == null ? '☁️' : ['🍓', '🍊', '☀️', '🍀', '💧', '🫐', '🍇', '🌸'][note === 72 ? 7 : noteIndex(note)]}</b><span>${noteLabel(note)}</span></button><button class="ms-drum-step" data-ms-drum="${i}" aria-label="第 ${i + 1} 拍加小鼓" aria-pressed="${state.grid.drums[i]}">🥁 ${state.grid.drums[i] ? '咚' : '＋'}</button></div>`).join('')}</div><p class="ms-compose-label">给第 <b>${state.step + 1}</b> 拍选一个音符</p><div class="ms-note-choices">${SCALE.map((pitch, i) => `<button data-ms-compose-note="${60 + pitch}" style="--key:${COLORS[i]}"><b>${NAMES[i]}</b><span>${['🍓', '🍊', '☀️', '🍀', '💧', '🫐', '🍇', '🌸'][i]}</span></button>`).join('')}<button class="ms-rest" data-ms-compose-rest>☁️<b>休息一拍</b></button></div><label class="ms-tempo"><span>🐢 慢一点 <b data-ms-tempo-value>${state.tempo} 拍 / 分</b> 快一点 🐇</span><input data-ms-tempo type="range" min="60" max="140" step="5" value="${state.tempo}" aria-label="小乐队速度"></label><div class="ms-action-row"><button class="ms-primary" data-ms-loop>▶ 循环听听</button><button data-ms-stop>■ 停止</button><button data-ms-save-grid>💾 保存小歌</button></div></section>`;
@@ -175,7 +221,7 @@
     return `<section class="ms-works"><div class="ms-card-heading"><div><strong>💛 我的音乐作品</strong><small>只保存在这台设备，最多 16 首</small></div><span>${works.length} 首</span></div>${works.length ? `<div class="ms-work-list">${works.map(work => `<article class="ms-work"><span>${work.type === 'grid' ? '🎼' : '🎹'}</span><div><b>${esc(work.name)}</b><small>${work.type === 'grid' ? '八拍小乐队' : `${work.events.length} 个音符`}</small></div><div><button data-ms-load="${esc(work.id)}" aria-label="打开 ${esc(work.name)}">打开</button><button data-ms-delete="${esc(work.id)}" aria-label="删除 ${esc(work.name)}">🗑️</button></div></article>`).join('')}</div>` : '<p class="ms-empty">弹一段、编一段，再点保存<br>这里就会留下你的小歌</p>'}</section>`;
   }
   function render() {
-    return `<section class="music-studio" data-music-studio data-ms-view="${state.mode}"><header class="ms-hero"><span>🎹</span><div><small>每个音符，都是你的想象</small><h2>我的音乐小屋</h2></div><button data-ms-help aria-label="听玩法">🔊</button></header><nav class="ms-tabs" aria-label="音乐玩法">${[['play', '🎹', '自由弹'], ['songs', '🎵', '小歌库'], ['compose', '🎼', '小作曲家']].map(([id, icon, name]) => `<button data-ms-mode="${id}" aria-pressed="${state.mode === id}"><span>${icon}</span><b>${name}</b></button>`).join('')}</nav>${controlsMarkup()}<p class="ms-status" data-ms-status role="status" aria-live="polite">${esc(state.status)}</p><div class="ms-panel">${state.mode === 'songs' ? songsMarkup() : state.mode === 'compose' ? composerMarkup() : `${pianoMarkup()}${recordMarkup()}`}</div>${worksMarkup()}<p class="ms-parent-note">音乐音量可以调大，也受手机侧边音量键影响。作品保存在这台设备；清理浏览器数据会清除作品。</p></section>`;
+    return `<section class="music-studio" data-music-studio data-ms-view="${state.mode}"><header class="ms-hero"><span>🎹</span><div><small>选小歌 · 听一听 · 跟着弹</small><h2>我的音乐小屋</h2></div><button data-ms-help aria-label="听玩法">🔊</button></header><nav class="ms-tabs" aria-label="音乐玩法">${[['songs', '🎵', '跟弹小歌'], ['play', '🎹', '自由弹'], ['compose', '🎼', '做小歌']].map(([id, icon, name]) => `<button data-ms-mode="${id}" aria-pressed="${state.mode === id}"><span>${icon}</span><b>${name}</b></button>`).join('')}</nav>${controlsMarkup()}<p class="ms-status" data-ms-status role="status" aria-live="polite">${esc(state.status)}</p><div class="ms-panel">${state.mode === 'songs' ? songsMarkup() : state.mode === 'compose' ? composerMarkup() : `${pianoMarkup()}${recordMarkup()}`}</div>${worksMarkup()}<p class="ms-parent-note">音乐音量可以调大，也受手机侧边音量键影响。作品保存在这台设备；清理浏览器数据会清除作品。</p></section>`;
   }
   function paint() {
     if (!mounted || !host) return;
@@ -190,7 +236,7 @@
   }
   function setMode(mode) {
     if (!['play', 'songs', 'compose'].includes(mode)) return false;
-    halt(); cancelSpeech(); state.mode = mode; state.status = mode === 'play' ? '滑过彩色琴键，弹出自己的音乐' : mode === 'songs' ? '听一首，或者跟着发亮的琴键慢慢弹' : '选音符、加鼓点，编一首自己的小歌'; paint(); say(TEXT[mode]); return true;
+    halt(); cancelSpeech(); state.mode = mode; state.status = mode === 'play' ? '滑过彩色琴键，弹出自己的音乐' : mode === 'songs' ? '点发亮的琴键，慢慢跟着小歌弹' : '选音符、加鼓点，编一首自己的小歌'; paint(); if(mode==='songs'){state.following=true;state.followIndex=0;followTarget()} say(TEXT[mode]); return true;
   }
   function setInstrument(instrument) {
     if (!INSTRUMENTS.some(inst => inst.id === instrument)) return false;
@@ -371,7 +417,8 @@
     host?.querySelectorAll('[data-ms-note]').forEach(el => listen(el, 'click', event => { if (event.detail === 0) press(Number(el.dataset.msNote), `accessible-${el.dataset.msNote}`, false); }));
     host?.querySelectorAll('[data-ms-octave]').forEach(el => listen(el, 'click', () => { halt(); updateOctave(Number(el.dataset.msOctave)); refreshControls(); }));
     host?.querySelectorAll('[data-ms-stop]').forEach(el => listen(el, 'click', stopPlayback));
-    host?.querySelectorAll('[data-ms-song]').forEach(el => listen(el, 'click', () => { halt(); state.songId = el.dataset.msSong; paint(); message('小歌选好啦，点听一听或跟着弹'); }));
+    host?.querySelectorAll('[data-ms-song]').forEach(el => listen(el, 'click', () => { halt(); state.songId = el.dataset.msSong; paint(); playSong(true); }));
+    host?.querySelectorAll('[data-ms-song-page]').forEach(el => listen(el, 'click', () => { state.songPage=clamp(Number(el.dataset.msSongPage),0,4); paint(); if(state.following)followTarget(); }));
     listen(host?.querySelector('[data-ms-listen]'), 'click', () => playSong(false)); listen(host?.querySelector('[data-ms-follow]'), 'click', () => playSong(true));
     listen(host?.querySelector('[data-ms-record]'), 'click', startRecording); listen(host?.querySelector('[data-ms-replay]'), 'click', replay); listen(host?.querySelector('[data-ms-save-record]'), 'click', () => nameDialog('record'));
     host?.querySelectorAll('[data-ms-step]').forEach(el => listen(el, 'click', () => selectStep(Number(el.dataset.msStep))));
@@ -389,9 +436,10 @@
   function mount(container) {
     stop(); host = container?.matches?.('[data-music-studio]') ? container : container?.querySelector?.('[data-music-studio]');
     if (!host) return false; if (root.state && typeof root.state.muted === 'boolean') muted = root.state.muted; mounted = true; root.document?.body?.classList?.add('playing-music-studio'); bind(); refreshControls();
+    if(state.mode==='songs'){state.following=true;state.followIndex=0;followTarget();}
     if (muted) message('声音关掉啦。点上面的喇叭，可以再打开'); else if (state.status.startsWith('声音关掉')) message('声音打开啦，点琴键或播放试试'); return true;
   }
-  function reset() { const volume = state.volume; halt(); state = baseState(); state.volume = volume; paint(); message('新的音乐准备好啦，想怎么弹都可以'); return true; }
+  function reset() { const volume = state.volume; halt(); state = baseState(); state.volume = volume; paint(); if(mounted)followTarget(); return true; }
   root.MUSIC_STUDIO = {
     render, mount, stop, stopPlayback, reset, setMuted, helpText: TEXT.help, texts: Object.values(TEXT), songs: SONGS.map(({ id, name, icon, kind, source }) => ({ id, name, icon, kind, source })),
     _test: { score, timeline, synthesis, drumSynthesis, limiting, frequency, loopTimeline, validEvents, validWork, getState: () => clone(state), stats: () => ({ timers: timers.size, nodes: nodes.size, pointers: pointers.size, pressed: pressed.size, mounted, muted, token }), setMode, setVolume, setTempo, setInstrument, selectStep, putNote, toggleDrum, useTemplate, press, lift, playSong, playLoop, replay, startRecording, finishRecording, saveWork, loadWork, deleteWork, readWorks, updateOctave, pointerDown, pointerMove, pointerUp, setSong: id => { state.songId = id; }, data: { SONGS, TEMPLATES, SCALE, INSTRUMENTS, STORAGE }, mountTest: () => { mounted = true; }, setState: value => { Object.assign(state, value); }, stopPlayback }

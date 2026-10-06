@@ -3,13 +3,12 @@ package cn.leyman.guolicheng;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-/** All in-app pages stay on the two production HTTPS origins. */
+/** Keep the existing trusted origin so an update retains the child's local records. */
 public final class UrlPolicy {
     private UrlPolicy() {}
     public static boolean isOwn(String url) {
         URI uri = https(url);
-        return uri != null && ("leyman.cn".equalsIgnoreCase(uri.getHost())
-                || "www.leyman.cn".equalsIgnoreCase(uri.getHost()));
+        return uri != null && "leyman.cn".equalsIgnoreCase(uri.getHost());
     }
     public static boolean isExternalHttps(String url) {
         return https(url) != null && !isOwn(url);

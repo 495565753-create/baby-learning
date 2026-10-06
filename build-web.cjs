@@ -15,12 +15,12 @@ const scripts = [
   'kids-new-games.js', 'kids-challenge-games.js', 'kids-videos-data.js',
   'kids-home.js', 'creative-voice-map.js', 'kids-art-studio.js',
   'kids-music-studio.js', 'kids-writing-data.js', 'kids-writing.js',
-  'writing-voice-map.js', 'tablet-story-voice-map.js', 'kid.js'
+  'writing-voice-map.js', 'tablet-story-voice-map.js', 'princess.js', 'kid.js'
 ];
 const styles = [
   'kid.css', 'recognition.css', 'kids-new-games.css', 'glass-ui.css',
   'kids-home.css', 'kids-challenge-games.css', 'kids-art-studio.css',
-  'kids-music-studio.css', 'kids-writing.css', 'tablet-ui.css'
+  'kids-music-studio.css', 'kids-writing.css', 'tablet-ui.css', 'princess.css', 'ui-refresh.css'
 ];
 const destination = path.join(root, 'app-assets');
 fs.mkdirSync(destination, { recursive: true });

@@ -37,6 +37,38 @@ test('学完旧物品后每日可讲新概念，三图测验仍采用可辨认�
  for(const q of p.daily.questions)for(const key of q.options){const e=s.KNOW._test.entryFromKey(key);assert.notEqual(e.category.id,'family');assert.notEqual(e.category.quiz,false);assert.notEqual(e.item.quiz,false);}
 });
 
+for(const remainingCount of [1,5,6,0]){
+ test(`每日还剩${remainingCount}张未学卡时，优先学新卡并补足六张不重复的任务`,()=>{
+  const initial=load();
+  const allKeys=initial.RECOGNITION.categories.flatMap(c=>c.items.map(i=>`${c.id}/${i.id}`));
+  // 最后几张第五站卡不能因为数量少而被第一站的复习卡挤掉。
+  const remaining=remainingCount ? allKeys.slice(-remainingCount) : [];
+  const recognized=remainingCount ? allKeys.slice(0,-remainingCount) : allKeys;
+  const s=load(JSON.stringify({version:2,recognized,favorites:[],daily:null}));
+  const html=s.KNOW.renderHub();
+  const daily=s.KNOW._test.getProgress().daily;
+  assert.equal(daily.ids.length,6);
+  assert.equal(new Set(daily.ids).size,6);
+  const firstNew=new Set(daily.ids.slice(0,remainingCount));
+  for(const key of remaining)assert.ok(firstNew.has(key),`未学卡应排在复习卡之前：${key}`);
+  const known=new Set(recognized);
+  for(const key of daily.ids.slice(remainingCount))assert.ok(known.has(key),`补足任务应使用复习卡：${key}`);
+  assert.match(html,/今天看 6 张卡片/);
+  assert.doesNotMatch(html,/认识 6 个新朋友/);
+  assert.equal(daily.questions.length,3);
+  for(const question of daily.questions){
+   assert.equal(new Set(question.options).size,3);
+   assert.ok(question.options.includes(question.target));
+   for(const key of question.options){
+    const entry=s.KNOW._test.entryFromKey(key);
+    assert.notEqual(entry.category.id,'family');
+    assert.notEqual(entry.category.quiz,false);
+    assert.notEqual(entry.item.quiz,false);
+   }
+  }
+ });
+}
+
 test('首页公开入口可打开中国、收藏及统计；独立图不误用旧图集',()=>{
  const s=load();s.KNOW.openModern('中国');assert.match(s.html,/<h1>中国<\/h1>/);assert.match(s.html,/src="assets\/recognition-modern-v1\/china.svg"/);assert.doesNotMatch(s.html,/world_peace.webp/);assert.match(s.lastSpoken,/这是中国/);
  s.KNOW.actions.toggleFavorite();assert.equal(s.KNOW.summary().favoritesCount,1);s.KNOW.openFavorites();assert.match(s.html,/我喜欢的卡片/);assert.match(s.html,/再看中国/);assert.doesNotMatch(s.html,/data-know-category-swipe/);

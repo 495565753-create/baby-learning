@@ -18,12 +18,12 @@ const scriptInputs = [
   'kids-new-games.js', 'kids-challenge-games.js', 'kids-videos-data.js',
   'kids-home.js', 'creative-voice-map.js', 'kids-art-studio.js',
   'kids-music-studio.js', 'kids-writing-data.js', 'kids-writing.js',
-  'writing-voice-map.js', 'tablet-story-voice-map.js', 'kid.js'
+  'writing-voice-map.js', 'tablet-story-voice-map.js', 'princess.js', 'kid.js'
 ];
 const styleInputs = [
   'kid.css', 'recognition.css', 'kids-new-games.css', 'glass-ui.css',
   'kids-home.css', 'kids-challenge-games.css', 'kids-art-studio.css',
-  'kids-music-studio.css', 'kids-writing.css', 'tablet-ui.css'
+  'kids-music-studio.css', 'kids-writing.css', 'tablet-ui.css', 'princess.css', 'ui-refresh.css'
 ];
 const sections = {
   games: /class="game-home"/,
@@ -313,7 +313,7 @@ test('the minified whole bundle preserves data, feature APIs, every game and cla
 
   const sourceGames = gameIds(expected);
   const builtGames = gameIds(actual);
-  assert.equal(builtGames.length, 65);
+  assert.equal(builtGames.length, 66);
   assert.deepEqual(builtGames, sourceGames);
   assert.ok(['ngWaterGarden', 'ngAnimalFeeding', 'cgRobotRoute', 'cgLogicGarden'].every(id => builtGames.includes(id)));
 

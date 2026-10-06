@@ -1,16 +1,16 @@
 {
-  "version": "8c9ba2971619db2c",
-  "totalBytes": 142052534,
+  "version": "f95028c51f5248b2",
+  "totalBytes": 160341762,
   "files": [
     {
-      "url": "/app-assets/app-80fe65521c2757c4.css",
-      "bytes": 187727,
-      "sha256": "80fe65521c2757c4719e2f34f51584a41b159856d1d07caf06a59e8e718cb896"
+      "url": "/app-assets/app-78445f25ba3832e5.js",
+      "bytes": 870669,
+      "sha256": "78445f25ba3832e55b3acdb3b5830bcea283e3c8d1ad5e1d05c2822323942d45"
     },
     {
-      "url": "/app-assets/app-8786ec6e5fe87ae0.js",
-      "bytes": 833974,
-      "sha256": "8786ec6e5fe87ae00169012de2a4d3de8ee06a1ed8cf9da953a7f08af4f767b4"
+      "url": "/app-assets/app-b2ab84b3c564b0c0.css",
+      "bytes": 201149,
+      "sha256": "b2ab84b3c564b0c0dbe001fa070404dc4b605e58de63bb4891f4327ab49f7916"
     },
     {
       "url": "/arcade/app.js",
@@ -4374,8 +4374,8 @@
     },
     {
       "url": "/downloads/ipad-offline-qr.png",
-      "bytes": 54733,
-      "sha256": "5dd45c3bbb7c0a811ae568a649dc1cd82feb8d477d71467696abac265bc4a948"
+      "bytes": 55297,
+      "sha256": "81a337a3a639d06f3e611cfe6b523d51375d7d219f72fe44e73eea64127fb0c3"
     },
     {
       "url": "/img/coloring/butterfly.png",
@@ -4480,7 +4480,142 @@
     {
       "url": "/offline/play.html",
       "bytes": 2133,
-      "sha256": "6d39e75c801dc07d28417d47ab9149afd8eeae178023eb0f89e5820c4c4b4ff8"
+      "sha256": "c2bf60a22133c7d50e54a1e1025020eaa4c8f6a66959800f953041817f78c9de"
+    },
+    {
+      "url": "/princess-assets/ariel-face.png",
+      "bytes": 1164261,
+      "sha256": "ee28ddfe8add7f4c670307fa039f9bcda0afd0ed7b2a85ce6aaa1b5425ac7782"
+    },
+    {
+      "url": "/princess-assets/auburn-updo.png",
+      "bytes": 1413857,
+      "sha256": "1567da5247a695c137be4cb8361b03402c142bc9aa520785c2c7f3e996af7b83"
+    },
+    {
+      "url": "/princess-assets/aurora-face.png",
+      "bytes": 1189132,
+      "sha256": "11c16089618748481695b37423f3daf3fb31d539dcc25514f725af2273f39308"
+    },
+    {
+      "url": "/princess-assets/belle-face.png",
+      "bytes": 1140827,
+      "sha256": "cc44600473277dd10c472a777177364c037b8c6501da5fc3e704dd61aaf00eab"
+    },
+    {
+      "url": "/princess-assets/cinderella-face.png",
+      "bytes": 1149974,
+      "sha256": "36e5a19bf0030a7f6ab0a293abd92d8d9254064249b3b842f45ae3bb15e813ab"
+    },
+    {
+      "url": "/princess-assets/gold-curls.png",
+      "bytes": 1809897,
+      "sha256": "aa19c6ccc704e2637b1655f7e5883381d42dd91c7e5f4c60b3924866d1ac85e7"
+    },
+    {
+      "url": "/princess-assets/ice-braid.png",
+      "bytes": 1127009,
+      "sha256": "212e189b6cb4cd003736cfd4d3315f2754bf8594f89692c899d04c61dee9534e"
+    },
+    {
+      "url": "/princess-assets/ice-face.png",
+      "bytes": 938247,
+      "sha256": "d6ffb8f188e1bb9403ea9b6677b725054eee6073541b628a7b32cfa741b55736"
+    },
+    {
+      "url": "/princess-assets/jasmine-face.png",
+      "bytes": 1265166,
+      "sha256": "fceb59dd4c8e7b9024429f58c635dd1b830d735642bf529b7c8e969ebd08c51c"
+    },
+    {
+      "url": "/princess-assets/mulan-face.png",
+      "bytes": 1207578,
+      "sha256": "d29023908c23eac24979ff9bea4c646937748e02b68f940beea74e3ed7614899"
+    },
+    {
+      "url": "/princess-assets/rapunzel-face.png",
+      "bytes": 1220804,
+      "sha256": "4ba511f0b95c59b98dd7f4cfa937efa8b83bfd04a4dcde861685bd3efabf35e7"
+    },
+    {
+      "url": "/princess-assets/snow-bob.png",
+      "bytes": 1535768,
+      "sha256": "2b9335a77fed65b28c34b6fecc60f10baff75ed90679364ee006b2013be55684"
+    },
+    {
+      "url": "/princess-assets/snow-face.png",
+      "bytes": 1000466,
+      "sha256": "4bd4476193c48e9f67590b2d1fccfa79322f4c8ab297c93a05e8adf48f90e638"
+    },
+    {
+      "url": "/princess-assets/tiana-face.png",
+      "bytes": 1369081,
+      "sha256": "4882e838e2c20892ea2ba8071a36a726fc7936239fcfe48aa6fabcb4f480c753"
+    },
+    {
+      "url": "/princess-voices/ariel-hello.mp3",
+      "bytes": 62764,
+      "sha256": "aa5e64446d6e36a72233e73f1818e5cc9970926cd4dd914573b753aefdfd1c8c"
+    },
+    {
+      "url": "/princess-voices/aurora-hello.mp3",
+      "bytes": 63678,
+      "sha256": "0fee267ca31766a2baa09673d9caefa9062b6b3a0f3deeb8920c01785babd300"
+    },
+    {
+      "url": "/princess-voices/belle-hello.mp3",
+      "bytes": 64409,
+      "sha256": "c1334d2e46d3e8a162163c3fdf1a6941a6e04d9dd6f4645e7ac349dc1530ba78"
+    },
+    {
+      "url": "/princess-voices/cinderella-hello.mp3",
+      "bytes": 63678,
+      "sha256": "e6a2e2a5d74b6160d0cbe30fb5eb165c04f08203bf290adb1bfb0c8320f52d05"
+    },
+    {
+      "url": "/princess-voices/friend-reply.mp3",
+      "bytes": 30947,
+      "sha256": "0ff340ed6a4ca7bbb36fcc6b58475f9455216c0b1dd290914c23470e1722b197"
+    },
+    {
+      "url": "/princess-voices/ice-hello.mp3",
+      "bytes": 54889,
+      "sha256": "13a6d037a43cca1951c058f23aae15fa64d459f95c807cf09bb7fb374d0a8eb5"
+    },
+    {
+      "url": "/princess-voices/ice-reply.mp3",
+      "bytes": 26613,
+      "sha256": "5ff370003074e9c9169ff108456c7780bb99ef87c6c355eedcbb58d5cd4a30e7"
+    },
+    {
+      "url": "/princess-voices/jasmine-hello.mp3",
+      "bytes": 64592,
+      "sha256": "ce0cb39f8f160cc4d9ef1f199a39e495c45e48e7fd2c517951de731aa86ae964"
+    },
+    {
+      "url": "/princess-voices/mulan-hello.mp3",
+      "bytes": 63678,
+      "sha256": "680f6460ea08ed0cde40d2b47ca3b4343d24ef2eeeb46133a6a191a6563459aa"
+    },
+    {
+      "url": "/princess-voices/rapunzel-hello.mp3",
+      "bytes": 65507,
+      "sha256": "a05611cafa1e5118a2f986d05f49d99d2f2e87a35e9e9017ffe3a1c3a2791279"
+    },
+    {
+      "url": "/princess-voices/snow-hello.mp3",
+      "bytes": 56165,
+      "sha256": "106797106a52c2d505f559a51bb2275925da5e3cc827ced703779b2220347898"
+    },
+    {
+      "url": "/princess-voices/snow-reply.mp3",
+      "bytes": 26613,
+      "sha256": "5ff370003074e9c9169ff108456c7780bb99ef87c6c355eedcbb58d5cd4a30e7"
+    },
+    {
+      "url": "/princess-voices/tiana-hello.mp3",
+      "bytes": 62947,
+      "sha256": "07708a9370e1844411695bac2a3fd2f4feca971b0c9f0d0b8d9c7d525e860d51"
     },
     {
       "url": "/voice-adventures-v1/048f75a866c1013fcef8.mp3",
