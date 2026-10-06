@@ -103,7 +103,7 @@ public final class MainActivity extends Activity {
         // installation can hide new games or point at asset names no longer bundled.
         web.clearCache(true);
         settings.setCacheMode(WebSettings.LOAD_NO_CACHE);
-        settings.setUserAgentString(settings.getUserAgentString() + " GuolichengTablet/2.3.1-Offline");
+        settings.setUserAgentString(settings.getUserAgentString() + " GuolichengTablet/2.3.2-Offline");
         CookieManager.getInstance().setAcceptThirdPartyCookies(web, false);
         WebView.setWebContentsDebuggingEnabled(false);
         web.setWebViewClient(new SiteClient());
