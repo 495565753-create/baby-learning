@@ -1,16 +1,16 @@
 {
-  "version": "f95028c51f5248b2",
-  "totalBytes": 160341762,
+  "version": "3a059f08af9f64cb",
+  "totalBytes": 148069662,
   "files": [
     {
-      "url": "/app-assets/app-78445f25ba3832e5.js",
-      "bytes": 870669,
-      "sha256": "78445f25ba3832e55b3acdb3b5830bcea283e3c8d1ad5e1d05c2822323942d45"
+      "url": "/app-assets/app-4ca926c1dc746436.css",
+      "bytes": 204313,
+      "sha256": "4ca926c1dc74643611efbbcd4feb0511d92cd9813f3d67263d0b1ea4101c6562"
     },
     {
-      "url": "/app-assets/app-b2ab84b3c564b0c0.css",
-      "bytes": 201149,
-      "sha256": "b2ab84b3c564b0c0dbe001fa070404dc4b605e58de63bb4891f4327ab49f7916"
+      "url": "/app-assets/app-acc4373e0f50efa6.js",
+      "bytes": 879360,
+      "sha256": "acc4373e0f50efa6f199db05a5b66c5e564dc9b3581ca6961e4242c9bd912f09"
     },
     {
       "url": "/arcade/app.js",
@@ -4479,78 +4479,173 @@
     },
     {
       "url": "/offline/play.html",
-      "bytes": 2133,
-      "sha256": "c2bf60a22133c7d50e54a1e1025020eaa4c8f6a66959800f953041817f78c9de"
+      "bytes": 2307,
+      "sha256": "6f8cc5943d32eda8de97270edd967b2a801a1de6047e95a2778c35e1db424c91"
     },
     {
-      "url": "/princess-assets/ariel-face.png",
-      "bytes": 1164261,
-      "sha256": "ee28ddfe8add7f4c670307fa039f9bcda0afd0ed7b2a85ce6aaa1b5425ac7782"
+      "url": "/princess-assets/ariel-cry-v3.png",
+      "bytes": 230991,
+      "sha256": "2065d3040fadc0b7e9e09e03a2006d3dca8ec92ccfff6cfd4d2bf56ffde895e7"
+    },
+    {
+      "url": "/princess-assets/ariel-face-v3.png",
+      "bytes": 232509,
+      "sha256": "3613bccd94b5cbe900b36f078a68ebccffee5fbbefa99cc26504f246d2bf9e95"
+    },
+    {
+      "url": "/princess-assets/ariel-thumb-v3.png",
+      "bytes": 27366,
+      "sha256": "41c5aee65f14580909b3189cea5b893ea96fa65bc57c51a052a23a654f44f4fa"
     },
     {
       "url": "/princess-assets/auburn-updo.png",
-      "bytes": 1413857,
-      "sha256": "1567da5247a695c137be4cb8361b03402c142bc9aa520785c2c7f3e996af7b83"
+      "bytes": 235484,
+      "sha256": "1590e9e62480bb78dff459af3f8172d663924ab2f7db354be1498360966917f2"
     },
     {
-      "url": "/princess-assets/aurora-face.png",
-      "bytes": 1189132,
-      "sha256": "11c16089618748481695b37423f3daf3fb31d539dcc25514f725af2273f39308"
+      "url": "/princess-assets/aurora-cry-v3.png",
+      "bytes": 205352,
+      "sha256": "17ffffa9593cd8e5b69c182c7e96b0d83a5b955bd0d1475445e9e9febc801ace"
     },
     {
-      "url": "/princess-assets/belle-face.png",
-      "bytes": 1140827,
-      "sha256": "cc44600473277dd10c472a777177364c037b8c6501da5fc3e704dd61aaf00eab"
+      "url": "/princess-assets/aurora-face-v3.png",
+      "bytes": 207283,
+      "sha256": "e582e6d545ec7a09873e072d4c33b3e34f0c0d2ae7c4f2299ffd4a394dbbadb9"
     },
     {
-      "url": "/princess-assets/cinderella-face.png",
-      "bytes": 1149974,
-      "sha256": "36e5a19bf0030a7f6ab0a293abd92d8d9254064249b3b842f45ae3bb15e813ab"
+      "url": "/princess-assets/aurora-thumb-v3.png",
+      "bytes": 24806,
+      "sha256": "fa29fda862422a748fd9c99230911d62b5a8a3696910c8dd3d5104410637602c"
+    },
+    {
+      "url": "/princess-assets/belle-cry-v3.png",
+      "bytes": 183665,
+      "sha256": "0d1a68b408ce2c7fc63cdb42a323094ad441e83c36a05b0e46a8e303e2a15e09"
+    },
+    {
+      "url": "/princess-assets/belle-face-v3.png",
+      "bytes": 183176,
+      "sha256": "32b4c1b6d662ec2e09593c6930555a103f26e411d32435afb20ac91bb7145d88"
+    },
+    {
+      "url": "/princess-assets/belle-thumb-v3.png",
+      "bytes": 26699,
+      "sha256": "26572bbd625340e95d6d7e42b9adfe22d61afa333e68a9aaf380f9e68cd2ac6f"
+    },
+    {
+      "url": "/princess-assets/cinderella-cry-v3.png",
+      "bytes": 186116,
+      "sha256": "91b35ec36cdb2c8992f8fbd9d7c378717b819d237588d130c870a7db287b802b"
+    },
+    {
+      "url": "/princess-assets/cinderella-face-v3.png",
+      "bytes": 184862,
+      "sha256": "9242d18bfcb22b9ceb17404dbdc2f64bc72ee37d2cb4ba860472bc21fd1c9400"
+    },
+    {
+      "url": "/princess-assets/cinderella-thumb-v3.png",
+      "bytes": 25349,
+      "sha256": "5e10fe0d8c412c0599e916d0818cb7f6583cd473fc50df443c33e0bee5098fad"
     },
     {
       "url": "/princess-assets/gold-curls.png",
-      "bytes": 1809897,
-      "sha256": "aa19c6ccc704e2637b1655f7e5883381d42dd91c7e5f4c60b3924866d1ac85e7"
+      "bytes": 296196,
+      "sha256": "cf3dc4ec8ed9eb470578fa1139d2e5c8c5273a32a2b7e4488e1d3ad17c424abc"
     },
     {
       "url": "/princess-assets/ice-braid.png",
-      "bytes": 1127009,
-      "sha256": "212e189b6cb4cd003736cfd4d3315f2754bf8594f89692c899d04c61dee9534e"
+      "bytes": 212019,
+      "sha256": "3fdcf1990252163f9eccc90507ef799d9443a599e9c7e25e12db65e205a96000"
     },
     {
-      "url": "/princess-assets/ice-face.png",
-      "bytes": 938247,
-      "sha256": "d6ffb8f188e1bb9403ea9b6677b725054eee6073541b628a7b32cfa741b55736"
+      "url": "/princess-assets/ice-cry-v3.png",
+      "bytes": 194255,
+      "sha256": "8c039353cad0d279cb58873beb4ddc55e419afba417dba1b6598e0e7c5b23d66"
     },
     {
-      "url": "/princess-assets/jasmine-face.png",
-      "bytes": 1265166,
-      "sha256": "fceb59dd4c8e7b9024429f58c635dd1b830d735642bf529b7c8e969ebd08c51c"
+      "url": "/princess-assets/ice-face-v3.png",
+      "bytes": 193828,
+      "sha256": "01315ed59a135e0caab9012d8a171f530912c0337431538e5299719ae9048d54"
     },
     {
-      "url": "/princess-assets/mulan-face.png",
-      "bytes": 1207578,
-      "sha256": "d29023908c23eac24979ff9bea4c646937748e02b68f940beea74e3ed7614899"
+      "url": "/princess-assets/ice-thumb-v3.png",
+      "bytes": 21615,
+      "sha256": "ef770a72f33ed364e93eeb975bbc608aeb41795344d297ba06afe9218186af73"
     },
     {
-      "url": "/princess-assets/rapunzel-face.png",
-      "bytes": 1220804,
-      "sha256": "4ba511f0b95c59b98dd7f4cfa937efa8b83bfd04a4dcde861685bd3efabf35e7"
+      "url": "/princess-assets/jasmine-cry-v3.png",
+      "bytes": 193771,
+      "sha256": "9b502830e65c372411c91bc4201329ecf254431b68434810ac0cbcd76544213f"
     },
     {
-      "url": "/princess-assets/snow-bob.png",
-      "bytes": 1535768,
-      "sha256": "2b9335a77fed65b28c34b6fecc60f10baff75ed90679364ee006b2013be55684"
+      "url": "/princess-assets/jasmine-face-v3.png",
+      "bytes": 192934,
+      "sha256": "6685f5758e19ddc277962bd812f6d21dc1bbfe9dff2bfa4591936c0a95c3956f"
     },
     {
-      "url": "/princess-assets/snow-face.png",
-      "bytes": 1000466,
-      "sha256": "4bd4476193c48e9f67590b2d1fccfa79322f4c8ab297c93a05e8adf48f90e638"
+      "url": "/princess-assets/jasmine-thumb-v3.png",
+      "bytes": 22455,
+      "sha256": "ab6cfcdb4c2bf6b66abfb5fdd6cc74d29af70749db81f9d1b42754cd201a853e"
     },
     {
-      "url": "/princess-assets/tiana-face.png",
-      "bytes": 1369081,
-      "sha256": "4882e838e2c20892ea2ba8071a36a726fc7936239fcfe48aa6fabcb4f480c753"
+      "url": "/princess-assets/mulan-cry-v3.png",
+      "bytes": 228704,
+      "sha256": "7147e17789368af29d8368457a23cab1afbc0521367e366e39d2516d92d2e0a1"
+    },
+    {
+      "url": "/princess-assets/mulan-face-v3.png",
+      "bytes": 231958,
+      "sha256": "241ac911494a825811885bb5c76d054de7a1dfb7f2653ebcfa6e50c4fbf47b45"
+    },
+    {
+      "url": "/princess-assets/mulan-thumb-v3.png",
+      "bytes": 22473,
+      "sha256": "f52611535c5d47e7ab8add322d90635a75c5fa4712689f39a3410aebe0d51196"
+    },
+    {
+      "url": "/princess-assets/rapunzel-cry-v3.png",
+      "bytes": 257752,
+      "sha256": "986d44aec572acbcfbf5a2e6c8736fd1b3c3cc902f14c6fb443edcded1184b70"
+    },
+    {
+      "url": "/princess-assets/rapunzel-face-v3.png",
+      "bytes": 260772,
+      "sha256": "eeb596660e63f40913c9322a681e4eaddc3648f5d32709092c0fe972c4374eaf"
+    },
+    {
+      "url": "/princess-assets/rapunzel-thumb-v3.png",
+      "bytes": 26076,
+      "sha256": "f0040034957819162f2a3b3c75fbcfb74da33f832865672a954315b675781fbc"
+    },
+    {
+      "url": "/princess-assets/snow-cry-v3.png",
+      "bytes": 212549,
+      "sha256": "ebf921ebde53f8678819fc3cde2cffc05840e0b5bcd6ede2b4e1d7f2ece61d34"
+    },
+    {
+      "url": "/princess-assets/snow-face-v3.png",
+      "bytes": 211793,
+      "sha256": "c6c53e2e1660ba3604754ec39435e0c71c94a51aa305efc1e2b7876157682950"
+    },
+    {
+      "url": "/princess-assets/snow-thumb-v3.png",
+      "bytes": 8818,
+      "sha256": "1ad7b448c9afd17c1f8e01e4b4ee990368a0b8cd7779da351afe613a9d8d289f"
+    },
+    {
+      "url": "/princess-assets/tiana-cry-v3.png",
+      "bytes": 239928,
+      "sha256": "5285a171a1810ed87aaaa3985105bf816a49967a8f1f98ca0d94ac0198169fe0"
+    },
+    {
+      "url": "/princess-assets/tiana-face-v3.png",
+      "bytes": 240814,
+      "sha256": "8f216b15538775ffcb889a81f88566ccacd59353ebc1b65c19ebbb5fe8322c6d"
+    },
+    {
+      "url": "/princess-assets/tiana-thumb-v3.png",
+      "bytes": 25570,
+      "sha256": "b9a4e7b6da288937e442f1c342c99ee6483fd916fbbe6ed7f6f17884e7fd52e8"
     },
     {
       "url": "/princess-voices/ariel-hello.mp3",

@@ -40,3 +40,5 @@
   .game-feature-grid button>span{width:44px;height:44px;font-size:27px}
   .game-feature-grid b{font-size:16px}.game-feature-grid small{font-size:11px}.game-feature-grid i{display:none}
 }
+.app-update-btn{display:grid;place-items:center;width:60px;border-radius:17px;text-decoration:none;color:#48666d;font-size:16px;font-weight:850;position:relative}
+.app-update-btn.has-update::after{content:'';position:absolute;right:3px;top:3px;width:10px;height:10px;border-radius:50%;background:#e85071;border:2px solid #fff}

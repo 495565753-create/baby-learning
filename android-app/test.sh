@@ -8,6 +8,7 @@ mkdir -p "$private_dir/policy-tests"
     "$project_dir/src/main/java/cn/leyman/guolicheng/UrlPolicy.java" \
     "$project_dir/src/main/java/cn/leyman/guolicheng/LocalAssetPolicy.java" \
     "$project_dir/src/main/java/cn/leyman/guolicheng/ExportPolicy.java" \
+    "$project_dir/src/main/java/cn/leyman/guolicheng/UpdatePolicy.java" \
     "$project_dir/src/main/java/cn/leyman/guolicheng/PendingExportStore.java" "$project_dir/tests/PolicyTest.java"
 "$jdk_dir/bin/java" -cp "$private_dir/policy-tests" cn.leyman.guolicheng.PolicyTest "$private_dir/policy-cache"
 node --test "$project_dir/tests/"*.test.cjs

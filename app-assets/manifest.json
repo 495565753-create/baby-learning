@@ -1,10 +1,10 @@
 {
   "format": 1,
   "js": {
-    "file": "app-assets/app-78445f25ba3832e5.js",
-    "sha256": "78445f25ba3832e55b3acdb3b5830bcea283e3c8d1ad5e1d05c2822323942d45",
-    "bytes": 870669,
-    "gzip_bytes": 293053,
+    "file": "app-assets/app-acc4373e0f50efa6.js",
+    "sha256": "acc4373e0f50efa6f199db05a5b66c5e564dc9b3581ca6961e4242c9bd912f09",
+    "bytes": 879360,
+    "gzip_bytes": 295914,
     "inputs": [
       {
         "file": "books.js",
@@ -123,21 +123,21 @@
       },
       {
         "file": "princess.js",
-        "bytes": 34052,
-        "sha256": "bde99bfe865967d61a96818555f5d061513ed9b1ac5489bc1a2d79c1f928022c"
+        "bytes": 42723,
+        "sha256": "fa83a11de11aa0533baf2e9bba6c8e26f5b384f93308c1bb08a9892144b65565"
       },
       {
         "file": "kid.js",
-        "bytes": 98720,
-        "sha256": "133817eb272a330ca6adab2dec3e02ff0d3aa41193fd2f7d2323efa29d82f8c9"
+        "bytes": 98853,
+        "sha256": "d63e483145eeda7c0b7906526c05a4b5c941fafaa399b72ed88bc79687b0c316"
       }
     ]
   },
   "css": {
-    "file": "app-assets/app-b2ab84b3c564b0c0.css",
-    "sha256": "b2ab84b3c564b0c0dbe001fa070404dc4b605e58de63bb4891f4327ab49f7916",
-    "bytes": 201149,
-    "gzip_bytes": 41131,
+    "file": "app-assets/app-4ca926c1dc746436.css",
+    "sha256": "4ca926c1dc74643611efbbcd4feb0511d92cd9813f3d67263d0b1ea4101c6562",
+    "bytes": 204313,
+    "gzip_bytes": 41745,
     "inputs": [
       {
         "file": "kid.css",
@@ -191,13 +191,13 @@
       },
       {
         "file": "princess.css",
-        "bytes": 8696,
-        "sha256": "c9de4c6875bb70c8ff79e635cdd69358ab7cd4f624649c61bc5ffe986943684e"
+        "bytes": 11672,
+        "sha256": "3d89367f97d977823c93bc4db28093ad35a03133acf745484e8cc1e82888b944"
       },
       {
         "file": "ui-refresh.css",
-        "bytes": 4331,
-        "sha256": "d8f00da576b63aeecda5e330201076c9f6d25fd992bcd277fbde9752294304af"
+        "bytes": 4658,
+        "sha256": "07bf28f001fecc7d08f4fd12d2c2053227c3ccf9a33036668bb7caeacea53d60"
       }
     ]
   }

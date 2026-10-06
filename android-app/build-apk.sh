@@ -79,7 +79,7 @@ PY
         -validity 10000 -dname 'CN=Guolicheng Learning, O=Family Learning, C=CN' >/dev/null
 fi
 if [[ ! -f "$password_file" ]]; then printf '签名密码文件缺失，停止；不会换签名覆盖既有应用。\n' >&2; exit 1; fi
-apk="$output_dir/果粒橙学习乐园-安卓平板-离线版-v2.0.0.apk"
+apk="$output_dir/果粒橙学习乐园-安卓平板-离线版-v2.3.0.apk"
 "$jdk_dir/bin/java" -jar "$tools_dir/lib/apksigner.jar" sign --ks "$keystore_file" \
     --ks-key-alias guolicheng-release --ks-pass "file:$password_file" \
     --v1-signing-enabled true --v2-signing-enabled true --v3-signing-enabled true --v4-signing-enabled false \

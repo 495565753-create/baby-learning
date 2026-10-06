@@ -11,16 +11,20 @@ vm.createContext(context);
 vm.runInContext(fs.readFileSync(path.join(root,'princess.js'),'utf8'),context);
 const inspect = expression => vm.runInContext(expression, context);
 
-test('each of the ten princesses has a packaged, nonempty face and greeting', () => {
+test('each of the ten princesses has two packaged expressions and a greeting', () => {
   const characters = inspect('princessCharacters.map(c=>c.id)');
   assert.equal(characters.length, 10);
   for (const id of characters) {
-    const face = path.join(root, 'princess-assets', `${id}-face.png`);
     const greeting = path.join(root, 'princess-voices', `${id}-hello.mp3`);
-    assert.ok(fs.statSync(face).size > 100_000, `${id} face`);
+    for (const expression of ['face','cry']) {
+      const face = path.join(root, 'princess-assets', `${id}-${expression}-v3.png`);
+      assert.ok(fs.statSync(face).size > 100_000, `${id} ${expression}`);
+    }
     assert.ok(fs.statSync(greeting).size > 10_000, `${id} greeting`);
     inspect(`princessState.character=${JSON.stringify(id)}`);
-    assert.match(inspect('princessSvg()'), new RegExp(`princess-assets/${id}-(?:face|bob)\\.png`));
+    assert.match(inspect('princessSvg()'), new RegExp(`princess-assets/${id}-face-v3\\.png`));
+    inspect(`princessState[${JSON.stringify(id)}].expression=1`);
+    assert.match(inspect('princessSvg()'), new RegExp(`princess-assets/${id}-cry-v3\\.png`));
   }
 });
 
@@ -28,12 +32,29 @@ test('all wardrobe categories can be changed and each princess keeps her own out
   const counts = inspect('Object.fromEntries(Object.entries(princessWardrobe).map(([k,v])=>[k,v.length]))');
   assert.equal(counts.dress, 40);
   assert.equal(counts.hair, 12);
+  assert.equal(counts.expression, 2);
   assert.ok(counts.head >= 20 && counts.scene >= 12);
   inspect("princessState.character='ice'; princessState.ice.dress=39; princessPersist()");
   inspect("princessState.character='snow'; princessState.snow.dress=0; princessPersist()");
   const outfits = JSON.parse(saved.get('kid-princess-v2'));
   assert.equal(outfits.ice.dress, 39);
   assert.equal(outfits.snow.dress, 0);
+});
+
+test('every accessory card previews its actual shape and renders without broken SVG values', () => {
+  const categories = ['head','necklace','earrings','wand','shoes','cape','bag','scene','expression'];
+  for (const category of categories) {
+    const count = inspect(`princessWardrobe[${JSON.stringify(category)}].length`);
+    for (let index = 0; index < count; index++) {
+      const preview = inspect(`princessChoicePreview(${JSON.stringify(category)},princessWardrobe[${JSON.stringify(category)}][${index}],${index})`);
+      assert.doesNotMatch(preview, /NaN|undefined|\[object Object\]/, `${category} ${index}`);
+      if (index > 0 || ['scene','shoes','expression'].includes(category))
+        assert.match(preview, /<svg\b/, `${category} ${index} lacks an illustrated preview`);
+      inspect(`princessState.snow[${JSON.stringify(category)}]=${index}`);
+      const stage = inspect('princessSvg()');
+      assert.doesNotMatch(stage, /NaN|undefined|\[object Object\]/, `${category} ${index} stage`);
+    }
+  }
 });
 
 function voiceEnvironment() {

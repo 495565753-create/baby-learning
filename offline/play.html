@@ -10,14 +10,14 @@
   <meta name="apple-mobile-web-app-title" content="果粒橙小朋友乐园">
   <link rel="manifest" href="/offline/manifest.webmanifest">
   <link rel="apple-touch-icon" href="img/icon-180.png">
-  <link rel="stylesheet" href="app-assets/app-b2ab84b3c564b0c0.css">
+  <link rel="stylesheet" href="app-assets/app-4ca926c1dc746436.css">
   <title>果粒橙小朋友成长乐园</title>
 </head>
 <body>
   <header class="topbar">
     <button id="backBtn" class="round-btn hidden" aria-label="返回">←<span>返回</span></button>
     <button id="homeBtn" class="logo" aria-label="回到首页"><span aria-hidden="true">🍊</span><b>果粒橙乐园</b></button>
-    <div class="top-actions"><button id="soundBtn" class="round-btn" aria-label="声音">🔊</button><span class="stars">⭐ <b id="stars">0</b></span></div>
+    <div class="top-actions"><a id="appUpdateBtn" class="round-btn app-update-btn hidden" href="https://leyman.cn/offline/app-update" aria-label="检查应用更新" title="检查应用更新">更新</a><button id="soundBtn" class="round-btn" aria-label="声音">🔊</button><span class="stars">⭐ <b id="stars">0</b></span></div>
   </header>
   <main id="app"><section class="startup-welcome" style="padding:48px 24px;text-align:center" aria-live="polite"><div style="font-size:56px" aria-hidden="true">🍊</div><h1 id="startupMessage">正在打开小乐园…</h1><button id="startupRetry" class="wide-btn" hidden onclick="location.reload()">再试一次</button></section></main>
   <nav id="bottomNav" class="bottom-nav">
@@ -28,6 +28,6 @@
     <button data-go="games"><span>🎮</span>玩游戏</button>
   </nav>
   <audio id="player" playsinline></audio>
-  <script defer src="app-assets/app-78445f25ba3832e5.js" onerror="document.getElementById('startupMessage').textContent='小乐园还没有打开，请再试一次';document.getElementById('startupRetry').hidden=false"></script>
+  <script defer src="app-assets/app-acc4373e0f50efa6.js" onerror="document.getElementById('startupMessage').textContent='小乐园还没有打开，请再试一次';document.getElementById('startupRetry').hidden=false"></script>
 </body>
 </html>

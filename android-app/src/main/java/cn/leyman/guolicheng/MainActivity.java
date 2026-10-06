@@ -47,8 +47,10 @@ import java.util.Collections;
 
 public final class MainActivity extends Activity {
     private static final String HOME = "https://leyman.cn/offline/play.html";
+    private static final String UPDATE_URL = "https://leyman.cn/offline/app-update";
     private static final int SAVE_WORK = 41;
     private WebView web;
+    private AppUpdater updater;
     private LinearLayout panel;
     private TextView panelTitle, panelDescription;
     private Button retry;
@@ -97,16 +99,21 @@ public final class MainActivity extends Activity {
         settings.setSupportZoom(false);
         settings.setSupportMultipleWindows(true);
         settings.setJavaScriptCanOpenWindowsAutomatically(false);
-        settings.setCacheMode(WebSettings.LOAD_DEFAULT);
-        settings.setUserAgentString(settings.getUserAgentString() + " GuolichengTablet/2.0.0-Offline");
+        // Every page and asset is bundled in the APK. A cached page from an older
+        // installation can hide new games or point at asset names no longer bundled.
+        web.clearCache(true);
+        settings.setCacheMode(WebSettings.LOAD_NO_CACHE);
+        settings.setUserAgentString(settings.getUserAgentString() + " GuolichengTablet/2.3.0-Offline");
         CookieManager.getInstance().setAcceptThirdPartyCookies(web, false);
         WebView.setWebContentsDebuggingEnabled(false);
         web.setWebViewClient(new SiteClient());
         web.setWebChromeClient(new ChromeClient());
         web.setDownloadListener(new WorkDownload());
+        updater = new AppUpdater(this, web);
         if (state != null && web.restoreState(state) != null && UrlPolicy.isOwn(web.getUrl())) {
             retryUrl = web.getUrl();
         } else web.loadUrl(HOME);
+        handler.postDelayed(() -> { if (!destroyed) updater.check(false); }, 5000);
     }
 
     private int dp(int n) { return Math.round(n * getResources().getDisplayMetrics().density); }
@@ -144,6 +151,7 @@ public final class MainActivity extends Activity {
     private void toast(String text) { Toast.makeText(this, text, Toast.LENGTH_LONG).show(); }
 
     private boolean navigate(String url, boolean gesture) {
+        if (UPDATE_URL.equals(url)) { if (updater != null) updater.check(true); return true; }
         if (UrlPolicy.isOwn(url)) return false;
         if (gesture && UrlPolicy.isExternalHttps(url)) openBrowser(url);
         return true;
@@ -162,6 +170,7 @@ public final class MainActivity extends Activity {
             try {
                 return new WebResourceResponse(LocalAssetPolicy.mime(path),
                         LocalAssetPolicy.mime(path).startsWith("text/") || path.endsWith(".json") ? "UTF-8" : null,
+                        200, "OK", Collections.singletonMap("Cache-Control", "no-store"),
                         getAssets().open(path));
             } catch (IOException ex) { return missingAsset(); }
         }
@@ -184,7 +193,7 @@ public final class MainActivity extends Activity {
         }
         @Override public void onPageFinished(WebView view, String url) {
             handler.removeCallbacks(loadTimeout);
-            if (!pageError && UrlPolicy.isOwn(url)) { loaded = true; panel.setVisibility(View.GONE); progress.setVisibility(View.GONE); installExportPort(url); }
+            if (!pageError && UrlPolicy.isOwn(url)) { loaded = true; panel.setVisibility(View.GONE); progress.setVisibility(View.GONE); installExportPort(url); if (updater != null) updater.showBadge(); }
         }
         @Override public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
             if (request.isForMainFrame()) MainActivity.this.error("学习乐园还没打开", "请点下面的按钮再试一次。");
@@ -321,6 +330,7 @@ public final class MainActivity extends Activity {
     }
     @Override protected void onResume() {
         super.onResume();
+        if (updater != null) updater.onResume();
         if (web != null) {
             web.onResume(); web.resumeTimers();
             // The legacy coloring canvas lives in its current DOM; rendering it would erase paint.
@@ -330,6 +340,7 @@ public final class MainActivity extends Activity {
     }
     @Override protected void onDestroy() {
         destroyed = true; handler.removeCallbacksAndMessages(null); closeExportPort(); pendingExport = null;
+        if (updater != null) updater.onDestroy();
         if (web != null) { web.stopLoading(); web.setWebChromeClient(null); web.setWebViewClient(null); web.destroy(); }
         super.onDestroy();
     }
