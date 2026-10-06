@@ -15,6 +15,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
 import android.provider.Settings;
+import android.util.Log;
 import android.webkit.WebView;
 import android.widget.Toast;
 
@@ -33,6 +34,7 @@ import java.util.Locale;
 
 /** An adult-triggered update flow. Games remain entirely playable without a connection. */
 final class AppUpdater {
+    private static final String LOG_TAG = "GuolichengUpdater";
     private static final String MIME = "application/vnd.android.package-archive";
     private static final String PREFS = "app-updater";
     private final Activity activity;
@@ -86,13 +88,13 @@ final class AppUpdater {
         new Thread(() -> {
             Candidate found = null; String problem = null;
             try { found = fetchLatest(); }
-            catch (Exception ex) { problem = "现在查不到新版，请连网后再试。"; }
+            catch (Exception ex) { Log.w(LOG_TAG, "Update check failed", ex); problem = "现在查不到新版，请连网后再试。"; }
             final Candidate result = found; final String error = problem;
             handler.post(() -> {
                 if (destroyed) return;
                 checking = false;
-                prefs.edit().putLong("lastCheck", System.currentTimeMillis()).apply();
                 if (error != null) { if (manual) tell(error); return; }
+                prefs.edit().putLong("lastCheck", System.currentTimeMillis()).apply();
                 available = result;
                 if (result != null) { showBadge(); if (manual) offerDownload(result); }
                 else if (manual) new AlertDialog.Builder(activity).setTitle("已经是最新版")
@@ -103,9 +105,10 @@ final class AppUpdater {
     }
 
     private Candidate fetchLatest() throws Exception {
-        HttpURLConnection connection = (HttpURLConnection) new URL(UpdatePolicy.RELEASE_API).openConnection();
+        HttpURLConnection connection = (HttpURLConnection) new URL(UpdatePolicy.RELEASE_FEED).openConnection();
         connection.setConnectTimeout(12000); connection.setReadTimeout(12000);
-        connection.setRequestProperty("Accept", "application/vnd.github+json");
+        connection.setRequestProperty("Accept", "application/json");
+        connection.setRequestProperty("Cache-Control", "no-cache");
         connection.setRequestProperty("User-Agent", "GuolichengTablet-Updater");
         try {
             if (connection.getResponseCode() == 404) return null;

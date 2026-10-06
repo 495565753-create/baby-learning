@@ -7,7 +7,7 @@ import java.security.NoSuchAlgorithmException;
 
 /** Checks the public update source before an APK is offered to Android's installer. */
 public final class UpdatePolicy {
-    public static final String RELEASE_API = "https://api.github.com/repos/495565753-create/baby-learning/releases/latest";
+    public static final String RELEASE_FEED = "https://github.com/495565753-create/baby-learning/releases/latest/download/update.json";
     public static final String ASSET_NAME = "guolicheng-android.apk";
     private static final String RELEASE_BASE = "https://github.com/495565753-create/baby-learning/releases/download/";
     private UpdatePolicy() {}
