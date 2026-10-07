@@ -34,6 +34,8 @@
     suppressClickUntil: 0
   };
   let progress = null;
+  let hubReturn = null;
+  let hubRestoreEpoch = 0;
 
   function data() {
     return root.RECOGNITION || { version: 'missing', categories: [], praise: [] };
@@ -316,14 +318,14 @@
     if (!entries.length) return '';
     return `<section class="know-favorites" aria-labelledby="knowFavoriteTitle">
       <div class="know-section-title"><span>❤️</span><div><h2 id="knowFavoriteTitle">我喜欢的</h2><p>点图片，再看一次</p></div></div>
-      <div class="know-favorite-row">${entries.map(entry => `<button class="know-favorite" onclick="KNOW.actions.openFavorite('${entry.key}')" aria-label="再看${escapeHtml(entry.item.word)}">${picture(entry)}<b>${escapeHtml(entry.item.word)}</b></button>`).join('')}</div>
+      <div class="know-favorite-row">${entries.map(entry => `<button class="know-favorite" data-know-hub-entry="favorite:${entry.key}" onclick="KNOW.actions.openFavorite('${entry.key}',event)" aria-label="再看${escapeHtml(entry.item.word)}">${picture(entry)}<b>${escapeHtml(entry.item.word)}</b></button>`).join('')}</div>
     </section>`;
   }
 
-  function renderCategory(category) {
+  function renderCategory(category, group) {
     const first = { category, item: category.items[0], index: 0 };
     const done = progressFor(category);
-    return `<button class="know-category" onclick="KNOW.openCategory('${category.id}')" aria-label="打开${escapeHtml(category.title)}，已经认识${done}个">
+    return `<button class="know-category" data-know-hub-entry="${group}:${category.id}" onclick="KNOW.openCategory('${category.id}',0,event)" aria-label="打开${escapeHtml(category.title)}，已经认识${done}个">
       ${picture(first, 'know-category-picture')}
       <span class="know-category-copy"><b>${category.icon} ${escapeHtml(category.title)}</b><small>${done ? `会 ${done} 个` : '来看看'}</small></span>
       <span class="know-category-arrow" aria-hidden="true">›</span>
@@ -344,7 +346,7 @@
         <div><small>果粒橙老师</small><h1>今天认什么？</h1><p>看图片，点一下，我读给你听。</p></div>
         <span class="know-total">⭐ 会 ${totalKnown} 个</span>
       </div>
-      <button class="know-daily" onclick="KNOW.openDaily()">
+      <button class="know-daily" data-know-hub-entry="daily" onclick="KNOW.openDaily(event)">
         <span class="know-daily-icon">${finished ? '🏆' : '🎒'}</span>
         <span class="know-daily-copy"><small>今天的小任务</small><b>${finished ? '今天完成啦！' : '今天看 6 张卡片'}</b><span>${finished ? '再看看也可以' : '看卡片，再玩 3 题'}</span></span>
         <span class="know-daily-progress"><strong>${finished ? '✓' : seenCount}</strong><small>${finished ? '完成' : '/ 6'}</small></span>
@@ -352,7 +354,7 @@
       ${renderFavoriteStrip()}
       <section class="know-modern-feature" aria-labelledby="knowModernTitle">
         <div class="know-section-title"><span>✨</span><div><h2 id="knowModernTitle">科技和世界</h2><p>先看科技，再看屏幕，最后认识地球与和平</p></div></div>
-        <div class="know-modern-grid">${data().categories.filter(category => category.modern).map(renderCategory).join('')}</div>
+        <div class="know-modern-grid">${data().categories.filter(category => category.modern).map(category => renderCategory(category, 'modern')).join('')}</div>
       </section>
       <div class="know-route-title"><span>🗺️</span><div><h2>自由看一看</h2><p>从第一站开始，会更轻松</p></div></div>
       ${LEVELS.map(level => {
@@ -360,13 +362,79 @@
         if (!categories.length) return '';
         return `<section class="know-level know-level-${level.id}">
           <div class="know-level-head"><span>${level.icon}</span><div><b>${level.title}</b><small>${level.text}</small></div></div>
-          <div class="know-category-grid">${categories.map(renderCategory).join('')}</div>
+          <div class="know-category-grid">${categories.map(category => renderCategory(category, `level-${level.id}`)).join('')}</div>
         </section>`;
       }).join('')}
     </section>`;
   }
 
-  function openLesson(mode) {
+  function hubEntry(hub, id) {
+    return [...(hub?.querySelectorAll?.('[data-know-hub-entry]') || [])]
+      .find(node => node.getAttribute?.('data-know-hub-entry') === id) || null;
+  }
+
+  function rememberHubReturn(event, defaultEntry) {
+    const shared = rootState();
+    // Moving between recognition lessons keeps the original menu entry.
+    if (shared?.page === 'lesson' && shared.learn === LESSON_KEY && ui.active) return;
+    const hub = root.document?.querySelector?.('.know-hub');
+    if (!hub || (shared ? shared.page !== 'learn' : ui.mode !== 'hub')) {
+      hubReturn = null;
+      return;
+    }
+    let source = event?.currentTarget;
+    if (!source || !hub.contains?.(source)) source = root.document?.activeElement;
+    let anchor = source?.closest?.('[data-know-hub-entry]');
+    if (!anchor || !hub.contains?.(anchor)) anchor = hubEntry(hub, defaultEntry);
+    const y = Number(root.scrollY ?? root.pageYOffset) || 0;
+    const top = anchor?.getBoundingClientRect?.().top;
+    hubReturn = {
+      y: Math.max(0, y),
+      entry: anchor?.getAttribute?.('data-know-hub-entry') || '',
+      top: Number.isFinite(top) ? top : null,
+      pending: false
+    };
+  }
+
+  function restoreHubReturn(hub, epoch) {
+    if (!hubReturn?.pending || !hub) return;
+    const saved = hubReturn;
+    hubReturn = null;
+    const restore = () => {
+      const shared = rootState();
+      if (epoch !== hubRestoreEpoch || ui.active || (shared && shared.page !== 'learn') || root.document?.querySelector?.('.know-hub') !== hub) return;
+      let y = saved.y;
+      // Keep the clicked entry in place after rotation or a new favorites row.
+      if (saved.entry && saved.top !== null) {
+        const anchor = hubEntry(hub, saved.entry);
+        const rect = anchor?.getBoundingClientRect?.();
+        if (Number.isFinite(rect?.top)) {
+          const viewportTop = Math.max(0, Number(root.visualViewport?.offsetTop) || 0);
+          const viewportHeight = Number(root.visualViewport?.height) || Number(root.innerHeight) || 0;
+          let targetTop = saved.top;
+          if (viewportHeight > 0) {
+            const viewportBottom = viewportTop + viewportHeight;
+            let visibleTop = viewportTop + 8;
+            let visibleBottom = viewportBottom - 8;
+            const bar = root.document?.querySelector?.('.topbar')?.getBoundingClientRect?.();
+            const nav = root.document?.querySelector?.('#bottomNav')?.getBoundingClientRect?.();
+            if (bar?.height > 0 && bar.top < viewportBottom && bar.bottom > viewportTop) visibleTop = Math.max(visibleTop, bar.bottom + 8);
+            if (nav?.height > 0 && nav.top < viewportBottom && nav.bottom > viewportTop) visibleBottom = Math.min(visibleBottom, nav.top - 8);
+            visibleBottom = Math.max(visibleTop, visibleBottom);
+            const height = Math.min(Math.max(0, Number(rect.height) || 0), visibleBottom - visibleTop);
+            targetTop = Math.max(visibleTop, Math.min(targetTop, visibleBottom - height));
+          }
+          y = rect.top + (Number(root.scrollY ?? root.pageYOffset) || 0) - targetTop;
+        }
+      }
+      root.scrollTo?.(0, Math.max(0, y));
+    };
+    if (typeof root.requestAnimationFrame === 'function') root.requestAnimationFrame(restore);
+    else restore();
+  }
+
+  function openLesson(mode, event, entry) {
+    rememberHubReturn(event, entry);
     ui.active = true;
     ui.mode = mode;
     ui.reviewing = false;
@@ -376,32 +444,32 @@
     navigate('lesson', true);
   }
 
-  function openCategory(categoryId, index) {
+  function openCategory(categoryId, index, event) {
     init();
     const category = categoryById(categoryId);
     if (!category) return;
     ui.categoryId = categoryId;
     ui.itemIndex = Math.max(0, Math.min(category.items.length - 1, Number(index) || 0));
-    openLesson('category');
+    openLesson('category', event, `level-${category.level}:${category.id}`);
     speakEntry(currentCategoryEntry());
   }
 
-  function openDaily() {
+  function openDaily(event) {
     init();
     const daily = progress.daily;
     if (daily.complete) {
       ui.praiseText = praiseForDaily(daily);
-      openLesson('done');
+      openLesson('done', event, 'daily');
       speak(ui.praiseText);
       return;
     }
     const firstUnseen = daily.ids.findIndex(key => !daily.seen.includes(key));
     if (firstUnseen >= 0) {
       ui.dailyIndex = firstUnseen;
-      openLesson('daily');
+      openLesson('daily', event, 'daily');
       speakEntry(currentDailyEntry());
     } else {
-      openLesson('quiz');
+      openLesson('quiz', event, 'daily');
       actions.speakQuestion();
     }
   }
@@ -419,9 +487,9 @@
     if (categories.length) openCategory(categories[0].id);
   }
 
-  function openFavorites() {
+  function openFavorites(event) {
     init();
-    openLesson('favorites');
+    openLesson('favorites', event);
   }
 
   function renderFavorites() {
@@ -728,12 +796,15 @@
     ui.active = false;
     ui.mode = 'hub';
     ui.reviewing = false;
+    if (hubReturn) hubReturn.pending = true;
     if (shared && Array.isArray(shared.stack) && shared.stack.at(-1)?.page === 'learn') shared.stack.pop();
     navigate('learn', false);
     return true;
   }
 
   function goHome() {
+    hubReturn = null;
+    hubRestoreEpoch += 1;
     clearTimeout(ui.timer);
     ui.timer = 0;
     resetCategorySwipe(true);
@@ -754,9 +825,9 @@
     speakEntry(currentDailyEntry());
   }
 
-  function openFavorite(key) {
+  function openFavorite(key, event) {
     const entry = entryFromKey(key);
-    if (entry) openCategory(entry.category.id, entry.index);
+    if (entry) openCategory(entry.category.id, entry.index, event);
   }
 
   function swipeTurnFor(dx, dy, width) {
@@ -854,6 +925,7 @@
   }
 
   function afterRender() {
+    const epoch = ++hubRestoreEpoch;
     const shared = rootState();
     const isOpen = Boolean(shared && shared.page === 'lesson' && shared.learn === LESSON_KEY && ui.active);
     if (shared && !isOpen) {
@@ -867,6 +939,9 @@
       if (swipe.card && swipe.card !== card) resetCategorySwipe();
       bindCategorySwipe(card);
     } else resetCategorySwipe(true);
+    const hub = root.document?.querySelector?.('.know-hub');
+    if (hub && (!shared || shared.page === 'learn')) restoreHubReturn(hub, epoch);
+    else if (shared && !isOpen) hubReturn = null;
     return isOpen;
   }
 
@@ -924,7 +999,7 @@
       swipeTurnFor,
       bindCategorySwipe,
       getProgress() { init(); return JSON.parse(JSON.stringify(progress)); },
-      reset() { resetCategorySwipe(true); progress = null; Object.assign(ui, { active: false, mode: 'hub', categoryId: '', itemIndex: 0, dailyIndex: 0, reviewing: false, quizLocked: false, wrongKey: '', praiseText: '' }); }
+      reset() { resetCategorySwipe(true); hubReturn = null; hubRestoreEpoch += 1; progress = null; Object.assign(ui, { active: false, mode: 'hub', categoryId: '', itemIndex: 0, dailyIndex: 0, reviewing: false, quizLocked: false, wrongKey: '', praiseText: '' }); }
     }
   };
 

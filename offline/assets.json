@@ -1,16 +1,16 @@
 {
-  "version": "3a059f08af9f64cb",
-  "totalBytes": 148069662,
+  "version": "c204f7f3abc2c99e",
+  "totalBytes": 148073078,
   "files": [
+    {
+      "url": "/app-assets/app-44ff61034d591e52.js",
+      "bytes": 882776,
+      "sha256": "44ff61034d591e52a6929dbc58afbfc32e0069a3b5c407b640fd569eaae9fbe6"
+    },
     {
       "url": "/app-assets/app-4ca926c1dc746436.css",
       "bytes": 204313,
       "sha256": "4ca926c1dc74643611efbbcd4feb0511d92cd9813f3d67263d0b1ea4101c6562"
-    },
-    {
-      "url": "/app-assets/app-acc4373e0f50efa6.js",
-      "bytes": 879360,
-      "sha256": "acc4373e0f50efa6f199db05a5b66c5e564dc9b3581ca6961e4242c9bd912f09"
     },
     {
       "url": "/arcade/app.js",
@@ -4480,7 +4480,7 @@
     {
       "url": "/offline/play.html",
       "bytes": 2307,
-      "sha256": "6f8cc5943d32eda8de97270edd967b2a801a1de6047e95a2778c35e1db424c91"
+      "sha256": "e37b6da3f07687f4422ecb749326d8288e65f3a4931a0de0d8b0f93f32daa92e"
     },
     {
       "url": "/princess-assets/ariel-cry-v3.png",

@@ -1,10 +1,10 @@
 {
   "format": 1,
   "js": {
-    "file": "app-assets/app-acc4373e0f50efa6.js",
-    "sha256": "acc4373e0f50efa6f199db05a5b66c5e564dc9b3581ca6961e4242c9bd912f09",
-    "bytes": 879360,
-    "gzip_bytes": 295914,
+    "file": "app-assets/app-44ff61034d591e52.js",
+    "sha256": "44ff61034d591e52a6929dbc58afbfc32e0069a3b5c407b640fd569eaae9fbe6",
+    "bytes": 882776,
+    "gzip_bytes": 297016,
     "inputs": [
       {
         "file": "books.js",
@@ -63,8 +63,8 @@
       },
       {
         "file": "recognition.js",
-        "bytes": 36627,
-        "sha256": "c3d8a394c056aa75cf09a9c6e572f496212e144604f1a8f919315570c44558ab"
+        "bytes": 40725,
+        "sha256": "62c01038acfbf5502d0394ee8ce673d8b492c608cc5a2e57f15175edb504e466"
       },
       {
         "file": "kids-new-games.js",
@@ -128,8 +128,8 @@
       },
       {
         "file": "kid.js",
-        "bytes": 98853,
-        "sha256": "d63e483145eeda7c0b7906526c05a4b5c941fafaa399b72ed88bc79687b0c316"
+        "bytes": 99382,
+        "sha256": "1ef2b8daba59e546113a1befb1a689deffc3a0e3a1c4879a061504941416eef0"
       }
     ]
   },
