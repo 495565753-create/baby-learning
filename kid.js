@@ -38,13 +38,11 @@ const gameSets={
 };
 for(const entry of window.NEW_GAMES?.entries||[])gameSets[entry.id]={...entry,newRelease:true};
 const gameCategories=[
-  {help:'手指动一动。滑一滑，拖一拖，选一个喜欢的游戏吧。',id:'swipe',icon:'☝️',title:'手指动一动',sub:'滑一滑 · 拖一拖',color:'#4dbb86'},
-  {help:'点一点。轻轻点屏幕，小手也能玩游戏。',id:'tap',icon:'👆',title:'点一点',sub:'轻轻一点就能玩',color:'#f2a347'},
-  {help:'找一找。看看图片，找到一样的朋友。',id:'find',icon:'👀',title:'找一找',sub:'观察 · 配对 · 分类',color:'#599de0'},
-  {help:'想一想。慢慢想，试试看，答错也没有关系。',id:'think',icon:'🧩',title:'想一想',sub:'拼图 · 顺序 · 小挑战',color:'#8b73df'},
-  {help:'小挑战来啦。先选喜欢的游戏，再试试更难的关卡。慢慢想，随时都能重新玩。',id:'challenge',icon:'🏆',title:'进阶挑战',sub:'选难度 · 规划 · 记忆',color:'#657be0'},
-  {help:'自由玩。画画，涂色，弹小琴，选一个喜欢的吧。',id:'create',icon:'🎨',title:'自由玩',sub:'画画 · 涂色 · 音乐',color:'#ec79a8'}
+  {id:'create',icon:'🎨',title:'创作与陪伴',sub:'画画 · 换装 · 养宠物',color:'#d58daf',help:'选择小小画家、公主换装、音乐小琴，或者和小伙伴种菜、玩耍。'},
+  {id:'swipe',icon:'☝️',title:'手指冒险',sub:'滑动 · 拖动 · 拼图',color:'#80b69a',help:'选一个游戏，用小手滑一滑、拖一拖。'},
+  {id:'challenge',icon:'🧩',title:'动脑挑战',sub:'路线 · 记忆 · 逻辑',color:'#a389cf',help:'慢慢想，试试看。可以自己选难度，随时重新玩。'}
 ];
+const curatedGameIds=new Set(['princess','pet','garden','artist','piano','pawMaze','snakeFruit','ngBentoChef','ngAnimalPuzzle','ngBunnyTrail','memory','cgRobotRoute','cgSlidePuzzle','cgMemoryLights','cgLogicGarden']);
 const creativeGames=[
   {id:'pet',title:'宠物小屋',icon:'🐰',desc:'喂饭、洗澡，照顾软萌朋友',category:'create',action:'照顾它'},
   {id:'garden',title:'小小菜园',icon:'🌱',desc:'种下、浇水，收获四种蔬果',category:'create',action:'种一种'},
@@ -114,11 +112,10 @@ function speakWord(en,zh){stopAudio();playSpoken(en,'en-US',()=>playSpoken(zh,'z
 function allGameEntries(){return [
   ...Object.entries(gameSets).map(([id,g])=>({...g,id,type:'local'})),
   ...creativeGames.map(g=>({...g,type:'creative'}))
-].sort((a,b)=>Number(Boolean(b.newRelease))-Number(Boolean(a.newRelease)))}
+].filter(g=>curatedGameIds.has(g.id)).map(g=>({...g,category:g.id.startsWith('cg')||g.id==='memory'?'challenge':g.category})).sort((a,b)=>Number(Boolean(b.newRelease))-Number(Boolean(a.newRelease)))}
 function gameDirectoryCard(g){const fresh=Boolean(g.newRelease)||['fruitBasket','fireflyTrail','colorTrain','bubbleBath','rhythmTap','shadowMatch'].includes(g.id),inside=`<span class="game-card-action">${esc(g.action)}</span><span class="game-card-icon">${g.icon}</span><span class="game-card-copy"><b>${esc(g.title)}</b><small>${esc(g.desc)}</small></span><strong>${fresh?'新游戏':'开始'} ›</strong>`;if(g.type==='creative')return `<button class="game-choice" data-game-id="${g.id}" onclick="${g.id==='artist'?'HOME.openArtist()':`go('${g.id}')`}">${inside}</button>`;return `<button class="game-choice" data-game-id="${g.id}" onclick="openGame('${g.id}')">${inside}</button>`}
-function renderGames(){const entries=allGameEntries(),cat=gameCategories.some(x=>x.id===state.gameCategory)?state.gameCategory:'swipe',active=gameCategories.find(x=>x.id===cat),shown=entries.filter(x=>x.category===cat);state.gameCategory=cat;return `<section class="game-home">
-  <div class="game-hero"><div><small>果粒橙游戏乐园</small><h1>选一个，马上玩</h1><p>换装、弹琴，或者用小手挑战小游戏。</p></div><span>🎮</span></div>
-  <div class="game-feature-grid"><button onclick="openGame('princess')"><span>👑</span><b>公主换装</b><small>10 位公主随心打扮</small><i>去换装 ›</i></button><button onclick="go('piano')"><span>🎹</span><b>音乐小琴</b><small>50 首小歌跟着弹</small><i>去弹琴 ›</i></button></div>
+function renderGames(){const entries=allGameEntries(),cat=gameCategories.some(x=>x.id===state.gameCategory)?state.gameCategory:'create',active=gameCategories.find(x=>x.id===cat),shown=entries.filter(x=>x.category===cat);state.gameCategory=cat;return `<section class="game-home">
+  <div class="game-hero"><div><small>果粒橙游戏乐园</small><h1>只留下好玩的</h1><p>15 个精选玩法，分成三组，点开就能玩。</p></div><span>🎮</span></div>
   <div class="game-category-rail" role="tablist" aria-label="游戏分类">${gameCategories.map(c=>{const count=entries.filter(x=>x.category===c.id).length;return `<button role="tab" aria-selected="${c.id===cat}" class="game-category ${c.id===cat?'active':''}" style="--cat:${c.color}" onclick="selectGameCategory('${c.id}')"><span>${c.icon}</span><b>${c.title}</b><small>${count} 个</small></button>`}).join('')}</div>
   <div class="game-category-head" style="--cat:${active.color}"><span>${active.icon}</span><div><h2>${active.title}</h2><p>${active.sub}</p></div><button class="game-directory-help" onclick="categoryGameHelp()" aria-label="听${esc(active.title)}的玩法">🔊 <span>听一听</span></button></div>
   <div class="game-choice-grid">${shown.map(gameDirectoryCard).join('')}</div>

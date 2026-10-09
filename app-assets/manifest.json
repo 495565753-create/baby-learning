@@ -1,10 +1,10 @@
 {
   "format": 1,
   "js": {
-    "file": "app-assets/app-5f594f8294b78fb2.js",
-    "sha256": "5f594f8294b78fb278274566465ddd86dbbca064c299d60d0bf6dd226e21e182",
-    "bytes": 889071,
-    "gzip_bytes": 299352,
+    "file": "app-assets/app-a57ac74c7b5ac347.js",
+    "sha256": "a57ac74c7b5ac347a06e14433bd58e459bae6844e495ca8019a72e51a9c5a79a",
+    "bytes": 887367,
+    "gzip_bytes": 298858,
     "inputs": [
       {
         "file": "books.js",
@@ -83,8 +83,8 @@
       },
       {
         "file": "kids-home.js",
-        "bytes": 8676,
-        "sha256": "5b3111f80a58c0da89bcf0fb4473922e649f161244835a84a159c76595e5e44e"
+        "bytes": 7339,
+        "sha256": "5e2ac9ccd91aa1a91ac8d2d5773acfcea7edefc04d675e70d38d74a6d68f5287"
       },
       {
         "file": "creative-voice-map.js",
@@ -138,16 +138,16 @@
       },
       {
         "file": "kid.js",
-        "bytes": 95632,
-        "sha256": "b923eab8efca445a1b04fbf9ef9419204ec4a9f5b6d8346e285065d06a958ef1"
+        "bytes": 95160,
+        "sha256": "c7355112f6609b1494fdb01e3c53bc6162d716f1e37640b2bf0ffabfd1280f0a"
       }
     ]
   },
   "css": {
-    "file": "app-assets/app-6a0c9be7fa896177.css",
-    "sha256": "6a0c9be7fa89617714c2ccc1809b40a713cb5a11da6f21ced1cb3aeeb72b39f1",
-    "bytes": 211830,
-    "gzip_bytes": 43564,
+    "file": "app-assets/app-49806abc82bc5bc3.css",
+    "sha256": "49806abc82bc5bc3511f69258bc617984987a672218f5f74a293b95e500e4b6d",
+    "bytes": 214759,
+    "gzip_bytes": 43959,
     "inputs": [
       {
         "file": "kid.css",
@@ -211,8 +211,8 @@
       },
       {
         "file": "cozy-ui.css",
-        "bytes": 7554,
-        "sha256": "223d67954a3b9bcea5051acfbc88d0244f864828634f9afa51f6cc8820d46ddf"
+        "bytes": 10486,
+        "sha256": "bdc0a9ff8acf11f2a44e8594364c1d75089ad8b5ccd62ecc1621ed7dc649d9c2"
       }
     ]
   }

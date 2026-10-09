@@ -18,28 +18,19 @@
     try { return root.KNOW?.summary?.() || {}; } catch { return {}; }
   }
   function render() {
-    const progress = summary();
-    const target = Number(progress.dailyTarget) || 6;
-    const learned = Math.min(target, Math.max(0, Number(progress.dailyLearned) || 0));
     const cards = [
-      ['📚', '听故事', '点开就能连着听', "go('stories')", 'stories'],
-      ['🔎', '认一认', '看图片，听老师说', "go('learn')", 'recognition'],
-      ['🤖', '科技世界', '认识 AI 和新东西', 'HOME.openModern()', 'modern'],
-      ['🎮', '小游戏', '小手滑滑，动脑筋', "go('games')", 'games'],
-      ['👩‍🏫', '老师课堂', '语文 · 数学', "go('school')", 'classroom'],
-      ['▶️', '小影院', '动画 · 科普 · 一起看', "go('videos')", 'videos'],
-      ['🖍️', '自由画画', '画笔、对称、小画廊', "go('draw')", 'drawing'],
-      ['🎹', '音乐小琴', '听小歌，自己作曲', "go('piano')", 'music']
+      ['🐰','宠物小屋','照顾小伙伴',"COZY.open('pet')",'pet'],
+      ['🌱','小小菜园','种菜，收获啦',"COZY.open('garden')",'garden'],
+      ['🎨','小小画家','跟着画，自由画','HOME.openArtist()','drawing'],
+      ['👑','公主换装','打扮我的公主',"openGame('princess')",'princess'],
+      ['📚','听故事','打开就连着讲',"go('stories')",'stories'],
+      ['🧩','精选游戏','滑滑，动脑筋',"go('games')",'games']
     ];
-    const recent = readRecent();
-    return `<section class="home-dashboard">
-      <div class="hero home-hero"><div><small class="home-greeting">你好，果粒橙小朋友</small><h1>欢迎来到甜甜乐园</h1><p>挑一个喜欢的，点开就开始</p></div><button class="home-guide" onclick="HOME.introduce()" aria-label="听首页介绍"><span aria-hidden="true">🐰</span><b>听介绍</b><i aria-hidden="true">🔊</i></button></div>
-      <div class="cozy-entry-grid"><button class="cozy-entry" onclick="COZY.open('pet')"><em>新朋友</em><span>🐰</span><b>宠物小屋</b><small>照顾软萌小伙伴</small></button><button class="cozy-entry" onclick="COZY.open('garden')"><em>新游戏</em><span>🌱</span><b>小小菜园</b><small>种下 · 浇水 · 收获</small></button><button class="cozy-entry" onclick="HOME.openArtist()"><em>完整版</em><span>🎨</span><b>小小画家</b><small>跟画 · 涂色 · 作品册</small></button></div><div class="home-feature-grid"><button class="princess-home-banner" data-home-function="princess" onclick="openGame('princess')"><span aria-hidden="true">👑</span><span><b>公主换装舞会</b><small>10 位公主，礼服、发型和饰品随心换</small></span><strong>开始换装 ›</strong></button>
-      <button class="home-writing-banner" data-home-function="writing" onclick="go('writing')"><span aria-hidden="true">✍️</span><span><b>学写字 · 1 到 10</b><small>看小手示范，跟着描，再认识一个字</small></span><i aria-hidden="true">›</i></button></div>
-      <h2 class="section-title home-title">更多好玩的</h2>
-      <div class="big-grid home-grid home-function-grid">${cards.map(([icon, title, description, action, name]) => `<button class="big-card home-function-card" data-home-function="${name}" onclick="${action}"><span class="icon" aria-hidden="true">${icon}</span><b>${title}</b><small>${description}</small><span class="home-card-arrow" aria-hidden="true">›</span></button>`).join('')}</div>
-      <button class="home-daily-progress" onclick="HOME.openDaily()"><span aria-hidden="true">🌱</span><span>今天认一认：${learned}/${target} 张卡片</span><b>继续 ›</b></button>
-      ${recent ? `<button class="continue home-continue" onclick="HOME.resumeStory()"><span class="resume-icon" aria-hidden="true">📖</span><span><b>接着听故事</b><small>${escape(recent.title)}</small></span><span class="play" aria-hidden="true">▶</span></button>` : ''}
+    const recent=readRecent();
+    return `<section class="home-dashboard home-simple"><div class="hero home-hero"><div><small class="home-greeting">你好，果粒橙小朋友</small><h1>今天想玩什么呀？</h1><p>选一张大卡片，点一下就进去</p></div><button class="home-guide" onclick="HOME.introduce()" aria-label="听首页介绍"><span aria-hidden="true">🐰</span><b>听介绍</b></button></div>
+      <div class="home-simple-grid">${cards.map(([icon,title,description,action,name])=>`<button class="big-card home-function-card" data-home-function="${name}" onclick="${action}"><span class="icon" aria-hidden="true">${icon}</span><b>${title}</b><small>${description}</small></button>`).join('')}</div>
+      <details class="home-more"><summary>🌈 学一学，还有音乐和动画 <span>⌄</span></summary><div class="home-more-grid"><button onclick="go('learn')">🔎 <b>认一认</b></button><button onclick="go('school')">👩‍🏫 <b>老师课堂</b></button><button class="home-writing-banner" onclick="go('writing')">✍️ <b>学写字</b></button><button onclick="go('piano')">🎹 <b>音乐小琴</b></button><button onclick="HOME.openModern()">🤖 <b>科技世界</b></button><button onclick="go('videos')">🎬 <b>小影院</b></button></div></details>
+      ${recent?`<button class="continue home-continue" onclick="HOME.resumeStory()"><span class="resume-icon">📖</span><span><b>接着听故事</b><small>${escape(recent.title)}</small></span><span class="play">▶</span></button>`:''}
     </section>`;
   }
   function videoEntries() {

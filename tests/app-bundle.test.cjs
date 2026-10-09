@@ -313,10 +313,10 @@ test('the minified whole bundle preserves data, feature APIs, every game and cla
 
   const sourceGames = gameIds(expected);
   const builtGames = gameIds(actual);
-  assert.equal(builtGames.length, 38);
+  assert.equal(builtGames.length, 15);
   assert.deepEqual(builtGames, sourceGames);
   assert.ok(!builtGames.some(id => ['traffic50', 'boxes50', 'maze50', 'pipes50', 'slide50', 'parking', 'connect4'].includes(id)));
-  assert.ok(['ngWaterGarden', 'ngAnimalFeeding', 'cgRobotRoute', 'cgLogicGarden'].every(id => builtGames.includes(id)));
+  assert.ok(['ngAnimalPuzzle', 'artist', 'pet', 'garden', 'cgRobotRoute', 'cgLogicGarden'].every(id => builtGames.includes(id)));
 
   const APIs = {
     HOME: ['render', 'renderVideos', 'introduce', 'introduceVideos', 'openDaily', 'openModern', 'openFavorites', 'openChallenge', 'openSubject', 'resumeStory', 'selectVideoCategory'],
