@@ -33,8 +33,8 @@
     ];
     const recent = readRecent();
     return `<section class="home-dashboard">
-      <div class="hero home-hero"><div><small class="home-greeting">你好，果粒橙小朋友</small><h1>今天玩什么？</h1><p>挑一个喜欢的，点开就开始</p></div><button class="home-guide" onclick="HOME.introduce()" aria-label="听首页介绍"><span aria-hidden="true">🍊</span><b>听介绍</b><i aria-hidden="true">🔊</i></button></div>
-      <div class="home-feature-grid"><button class="princess-home-banner" data-home-function="princess" onclick="openGame('princess')"><span aria-hidden="true">👑</span><span><b>公主换装舞会</b><small>10 位公主，礼服、发型和饰品随心换</small></span><strong>开始换装 ›</strong></button>
+      <div class="hero home-hero"><div><small class="home-greeting">你好，果粒橙小朋友</small><h1>欢迎来到甜甜乐园</h1><p>挑一个喜欢的，点开就开始</p></div><button class="home-guide" onclick="HOME.introduce()" aria-label="听首页介绍"><span aria-hidden="true">🐰</span><b>听介绍</b><i aria-hidden="true">🔊</i></button></div>
+      <div class="cozy-entry-grid"><button class="cozy-entry" onclick="COZY.open('pet')"><em>新朋友</em><span>🐰</span><b>宠物小屋</b><small>照顾软萌小伙伴</small></button><button class="cozy-entry" onclick="COZY.open('garden')"><em>新游戏</em><span>🌱</span><b>小小菜园</b><small>种下 · 浇水 · 收获</small></button><button class="cozy-entry" onclick="HOME.openArtist()"><em>完整版</em><span>🎨</span><b>小小画家</b><small>跟画 · 涂色 · 作品册</small></button></div><div class="home-feature-grid"><button class="princess-home-banner" data-home-function="princess" onclick="openGame('princess')"><span aria-hidden="true">👑</span><span><b>公主换装舞会</b><small>10 位公主，礼服、发型和饰品随心换</small></span><strong>开始换装 ›</strong></button>
       <button class="home-writing-banner" data-home-function="writing" onclick="go('writing')"><span aria-hidden="true">✍️</span><span><b>学写字 · 1 到 10</b><small>看小手示范，跟着描，再认识一个字</small></span><i aria-hidden="true">›</i></button></div>
       <h2 class="section-title home-title">更多好玩的</h2>
       <div class="big-grid home-grid home-function-grid">${cards.map(([icon, title, description, action, name]) => `<button class="big-card home-function-card" data-home-function="${name}" onclick="${action}"><span class="icon" aria-hidden="true">${icon}</span><b>${title}</b><small>${description}</small><span class="home-card-arrow" aria-hidden="true">›</span></button>`).join('')}</div>
@@ -67,6 +67,7 @@
   }
   root.HOME = {
     render, renderVideos,
+    openArtist() { root.stopAudio?.(); root.location.href=root.location.pathname.startsWith('/offline/')?'/offline/artist.html':'/little-artist/index.html'; },
     introduce() { root.speak?.(INTRO); },
     introduceVideos() { root.speak?.(VIDEO_INTRO); },
     openDaily() { root.KNOW?.openDaily ? root.KNOW.openDaily() : root.go('learn'); },

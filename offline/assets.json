@@ -1,766 +1,16 @@
 {
-  "version": "c204f7f3abc2c99e",
-  "totalBytes": 148073078,
+  "version": "240734af8b08dca4",
+  "totalBytes": 144591273,
   "files": [
     {
-      "url": "/app-assets/app-44ff61034d591e52.js",
-      "bytes": 882776,
-      "sha256": "44ff61034d591e52a6929dbc58afbfc32e0069a3b5c407b640fd569eaae9fbe6"
+      "url": "/app-assets/app-5f594f8294b78fb2.js",
+      "bytes": 889071,
+      "sha256": "5f594f8294b78fb278274566465ddd86dbbca064c299d60d0bf6dd226e21e182"
     },
     {
-      "url": "/app-assets/app-4ca926c1dc746436.css",
-      "bytes": 204313,
-      "sha256": "4ca926c1dc74643611efbbcd4feb0511d92cd9813f3d67263d0b1ea4101c6562"
-    },
-    {
-      "url": "/arcade/app.js",
-      "bytes": 11770,
-      "sha256": "e00f944aa91271bfbe5238c966cdfa88f1d18294cb3bf826c4254655dffd3ff8"
-    },
-    {
-      "url": "/arcade/assets/fluent/LICENSE",
-      "bytes": 1141,
-      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
-    },
-    {
-      "url": "/arcade/assets/fluent/apple.svg",
-      "bytes": 5577,
-      "sha256": "af1f7c90304096dfc6a05c1e2f25f6e3924ecba50f174c5537a42b4d45e47589"
-    },
-    {
-      "url": "/arcade/assets/fluent/back.svg",
-      "bytes": 6095,
-      "sha256": "7317d856215eefd221dabc5ddcf8d4b614d264a4f5b6fdefdadd2de0f6f65fb5"
-    },
-    {
-      "url": "/arcade/assets/fluent/bear.svg",
-      "bytes": 26330,
-      "sha256": "b75ab3d7d4af67458f39f4d8569af9e0a0ba9b8b28dd706d0e5e280565a5ec38"
-    },
-    {
-      "url": "/arcade/assets/fluent/blue-circle.svg",
-      "bytes": 2760,
-      "sha256": "c775bf275e6323d69e2fd3abf56084c0319a0f57ecaa097bbf0b0d43780ad3d3"
-    },
-    {
-      "url": "/arcade/assets/fluent/box.svg",
-      "bytes": 9535,
-      "sha256": "e48835722b58a57c543a3141e7a8528b0a65bccb415b5ebbac80f407bf8c34e6"
-    },
-    {
-      "url": "/arcade/assets/fluent/breakout.svg",
-      "bytes": 23169,
-      "sha256": "724cbf308b1db9f910cc8cf2374fba2e45c56c740939c24ac0a2ba2ba0756a35"
-    },
-    {
-      "url": "/arcade/assets/fluent/brick.svg",
-      "bytes": 23169,
-      "sha256": "724cbf308b1db9f910cc8cf2374fba2e45c56c740939c24ac0a2ba2ba0756a35"
-    },
-    {
-      "url": "/arcade/assets/fluent/cactus.svg",
-      "bytes": 52528,
-      "sha256": "8c0301c6d5df9a789bcb3ed47a2f4ec704c84347a65350792933be83ef38da71"
-    },
-    {
-      "url": "/arcade/assets/fluent/car.svg",
-      "bytes": 21180,
-      "sha256": "4cb6ea51b7cc1dd81d68995a327cbf507e025364bf031072d5173c4905442555"
-    },
-    {
-      "url": "/arcade/assets/fluent/cat.svg",
-      "bytes": 27510,
-      "sha256": "59398990e360d55f68f46e6b2bd7585068ffa08b0bc0f13f2d50fc66ea0fb351"
-    },
-    {
-      "url": "/arcade/assets/fluent/chick.svg",
-      "bytes": 18437,
-      "sha256": "634a3a8e90e6eefd67336f958e7a8979c5e034a6180613a27c4467579a9337e9"
-    },
-    {
-      "url": "/arcade/assets/fluent/child.svg",
-      "bytes": 44774,
-      "sha256": "6709a5189f864fc4430ae80b8eb95b694f3e1575ab350c56e05bb72d8c3bbad3"
-    },
-    {
-      "url": "/arcade/assets/fluent/connect4.svg",
-      "bytes": 2597,
-      "sha256": "9227285a00691889b5e5d6bc241db8708617660042e17cd1ca0766664b85904b"
-    },
-    {
-      "url": "/arcade/assets/fluent/dino.svg",
-      "bytes": 32036,
-      "sha256": "d9a629e68a49c2e5cc280137d7bcaf40e75887feceec73b6ce23354d70ef4f17"
-    },
-    {
-      "url": "/arcade/assets/fluent/dog.svg",
-      "bytes": 23717,
-      "sha256": "4f1d572ca579b81adc20481f39f8a6348693096f22fcec1f4b2cb7b803c3c559"
-    },
-    {
-      "url": "/arcade/assets/fluent/eater.svg",
-      "bytes": 8689,
-      "sha256": "5b660af1e5ef5b6dde8c10c971be294f4e224dae69ca6ec8b726d47e086e74d0"
-    },
-    {
-      "url": "/arcade/assets/fluent/flappy.svg",
-      "bytes": 15952,
-      "sha256": "e59c33cd8568e48b343a0a01f2205e5a3f2c3f8e763151889851c041206c540f"
-    },
-    {
-      "url": "/arcade/assets/fluent/fox.svg",
-      "bytes": 35209,
-      "sha256": "83292e5983c00597ab3c08e6ceb6a4e66f54df9c5e0c850aa9ea4c5bc8621013"
-    },
-    {
-      "url": "/arcade/assets/fluent/frog.svg",
-      "bytes": 5062,
-      "sha256": "45677b96d78a3bd3915791bd75b18772fa02de1d400768c74d6e6788417bab96"
-    },
-    {
-      "url": "/arcade/assets/fluent/green-circle.svg",
-      "bytes": 2712,
-      "sha256": "10135dfd2a7132dc931df134c3c69ef623d3b1bce4dfe23935d9efea4398da22"
-    },
-    {
-      "url": "/arcade/assets/fluent/hanoi.svg",
-      "bytes": 13569,
-      "sha256": "2e27d282f5b3fdbb78353bd169ba40f70b7ae3c66c15ae083df894ac6c778927"
-    },
-    {
-      "url": "/arcade/assets/fluent/heart.svg",
-      "bytes": 9407,
-      "sha256": "3d9acfe76a88d3a235c777953d90a9b2cad01106fcc80af4e79e7f5b4895c0cc"
-    },
-    {
-      "url": "/arcade/assets/fluent/hole.svg",
-      "bytes": 1098,
-      "sha256": "48cbeb5852ad5b628b4b7d5a5808b1fed8c606fe1c8c8d7906fd26fe788ad413"
-    },
-    {
-      "url": "/arcade/assets/fluent/home.svg",
-      "bytes": 19042,
-      "sha256": "19a59311287d1664c05f8a1a5e4c51674cdde8c4f4cb8fd696df9e3acb7fff38"
-    },
-    {
-      "url": "/arcade/assets/fluent/lion.svg",
-      "bytes": 41568,
-      "sha256": "2cf8e1b46f8611773d25888e25594c74b8af6dbfca030a6cb4650e5939d88638"
-    },
-    {
-      "url": "/arcade/assets/fluent/match3.svg",
-      "bytes": 4669,
-      "sha256": "f9a62aea55fc1a75879093d693b064c2c212e1abda8070863e6e751b8fcf5243"
-    },
-    {
-      "url": "/arcade/assets/fluent/maze.svg",
-      "bytes": 12111,
-      "sha256": "c68e1bc09c12d10ed6b2cf4565b58b73ad7dcb876be3e06b679862c363f7094d"
-    },
-    {
-      "url": "/arcade/assets/fluent/memory.svg",
-      "bytes": 36495,
-      "sha256": "d6966211f67f70be2297b1610e2ff39026651f5048d7803438663bb6f6f2a6c8"
-    },
-    {
-      "url": "/arcade/assets/fluent/merge.svg",
-      "bytes": 45834,
-      "sha256": "fda7a1016cb0bf7d135ddb74f7eb0322addefe6c30ec0ba9d0541cbc85fb7fdd"
-    },
-    {
-      "url": "/arcade/assets/fluent/mole.svg",
-      "bytes": 29898,
-      "sha256": "70a5458fe0bf2c4ddda00d602196917c0290eff9a24ea4a5835dafca8892d73f"
-    },
-    {
-      "url": "/arcade/assets/fluent/music.svg",
-      "bytes": 15983,
-      "sha256": "6dab1458f67497c3922fc31e3403c995c0c928c51109151db084c82d3767c4c7"
-    },
-    {
-      "url": "/arcade/assets/fluent/mute.svg",
-      "bytes": 6127,
-      "sha256": "3e479b6514ebb14ce96ae715abf9ac718adf5e1afdac5c579ceab513822ad09b"
-    },
-    {
-      "url": "/arcade/assets/fluent/pac.svg",
-      "bytes": 16698,
-      "sha256": "95664f8f9e7d4a0fc3fc0d72c2920340fbe5dd1781873feeb4ee76e68c4a3555"
-    },
-    {
-      "url": "/arcade/assets/fluent/panda.svg",
-      "bytes": 21929,
-      "sha256": "324df7304eddd6e4bf7027fd19aa1c5c62de52984ccaaef6b265acdd96194956"
-    },
-    {
-      "url": "/arcade/assets/fluent/pipes.svg",
-      "bytes": 7801,
-      "sha256": "ab7854880715b846aee825ce6712608bbb72960e900ab3702f4ce5a918d21e2f"
-    },
-    {
-      "url": "/arcade/assets/fluent/play.svg",
-      "bytes": 5676,
-      "sha256": "2a7cc69774a8d22d4c338a9f725e0b3a553dc79aae7e4e1845520ac0ca994fc3"
-    },
-    {
-      "url": "/arcade/assets/fluent/pong.svg",
-      "bytes": 153608,
-      "sha256": "6aa31753b1d9ea466075f22d2497c3fef0e710b4f5f8cea8b6099d22406246c3"
-    },
-    {
-      "url": "/arcade/assets/fluent/purple-circle.svg",
-      "bytes": 2549,
-      "sha256": "9b2fa8e53fb2e16aaf1a08e45cefcca5c09e41c6818a0de73b60c71dd8bf10a4"
-    },
-    {
-      "url": "/arcade/assets/fluent/puzzle.svg",
-      "bytes": 27006,
-      "sha256": "2be6da460d1d6c874e601bec66922d5370c76a5250ba2a70ac66f01b9463c714"
-    },
-    {
-      "url": "/arcade/assets/fluent/rabbit.svg",
-      "bytes": 28095,
-      "sha256": "c95eb826b6813fb0fd5acc84d97d6ba1dec523849c87253879f5951b61e0db8d"
-    },
-    {
-      "url": "/arcade/assets/fluent/repeat.svg",
-      "bytes": 7756,
-      "sha256": "4d60cc43fa4d4a7db3f98464613c0e1ebf6c132230e779192fefb8e25215c85a"
-    },
-    {
-      "url": "/arcade/assets/fluent/retry.svg",
-      "bytes": 11269,
-      "sha256": "0d45f7f42154c900500579fe1816dfd35776b7b5e843b15476c0b3f2dd7353ac"
-    },
-    {
-      "url": "/arcade/assets/fluent/right-arrow.svg",
-      "bytes": 6099,
-      "sha256": "9c9cb1ea4979a1187245be8a6fa3184a2865918aacbb01cc69cf9dc32a75a9cf"
-    },
-    {
-      "url": "/arcade/assets/fluent/robot.svg",
-      "bytes": 10026,
-      "sha256": "cf39296b50cd9acee64e1c415dc0a0f6552818e00ff65a316b64c66f8aab0027"
-    },
-    {
-      "url": "/arcade/assets/fluent/rocket.svg",
-      "bytes": 19182,
-      "sha256": "3e759cbfacd8b9fb06df57abaf472bb2dbc1415bd60f21dc9f430e20fa0ca252"
-    },
-    {
-      "url": "/arcade/assets/fluent/simon.svg",
-      "bytes": 15983,
-      "sha256": "6dab1458f67497c3922fc31e3403c995c0c928c51109151db084c82d3767c4c7"
-    },
-    {
-      "url": "/arcade/assets/fluent/slider.svg",
-      "bytes": 27006,
-      "sha256": "2be6da460d1d6c874e601bec66922d5370c76a5250ba2a70ac66f01b9463c714"
-    },
-    {
-      "url": "/arcade/assets/fluent/snake.svg",
-      "bytes": 27166,
-      "sha256": "020a1eb18a45988df616681d780798706560603602f29c6ac61cd58465fa8fcc"
-    },
-    {
-      "url": "/arcade/assets/fluent/sokoban.svg",
-      "bytes": 9535,
-      "sha256": "e48835722b58a57c543a3141e7a8528b0a65bccb415b5ebbac80f407bf8c34e6"
-    },
-    {
-      "url": "/arcade/assets/fluent/sound.svg",
-      "bytes": 5748,
-      "sha256": "9074bcc9bfc3aed394d8c00165da28d294e210b423501271377de8ecc6aa8355"
-    },
-    {
-      "url": "/arcade/assets/fluent/sparkles.svg",
-      "bytes": 9043,
-      "sha256": "27103e1c20965f97432e911bac8f3479af60910cab752cf0a4526ea0a9e892c0"
-    },
-    {
-      "url": "/arcade/assets/fluent/star.svg",
-      "bytes": 12111,
-      "sha256": "c68e1bc09c12d10ed6b2cf4565b58b73ad7dcb876be3e06b679862c363f7094d"
-    },
-    {
-      "url": "/arcade/assets/fluent/tetris.svg",
-      "bytes": 2130,
-      "sha256": "d5150bdaa26e95c301cf78d463f70774a8ab72f0b0320bb1f4cfbf4ffd473550"
-    },
-    {
-      "url": "/arcade/assets/fluent/tictactoe.svg",
-      "bytes": 5483,
-      "sha256": "db4c9e5195ef20467958018f49daa10173cf66eda25c997d0e52884345d6f948"
-    },
-    {
-      "url": "/arcade/assets/fluent/tulip.svg",
-      "bytes": 18923,
-      "sha256": "cee824984f5822e15b377a8184e39b5f82065a927f96dd1e5066cbdc572e4a18"
-    },
-    {
-      "url": "/arcade/assets/fluent/water.svg",
-      "bytes": 7801,
-      "sha256": "ab7854880715b846aee825ce6712608bbb72960e900ab3702f4ce5a918d21e2f"
-    },
-    {
-      "url": "/arcade/assets/fluent/win.svg",
-      "bytes": 14280,
-      "sha256": "0d4c7fec9a8e162b6581732454f4d1eb68945aa2fe078b5275c47a8456e7cfee"
-    },
-    {
-      "url": "/arcade/assets/fluent/yellow-circle.svg",
-      "bytes": 2760,
-      "sha256": "2a74caa2535a1f9beb0ed70504ed197865549c30f1cd07caf3926b5662fa7484"
-    },
-    {
-      "url": "/arcade/games/bubbles.js",
-      "bytes": 10106,
-      "sha256": "305037774e67a9cf6652ec7783d66adf7dd000cd2b8d0a88a88a3d2b8944b234"
-    },
-    {
-      "url": "/arcade/games/car.js",
-      "bytes": 12347,
-      "sha256": "4f3aaf8a0bf045d47ba1959913cf89022591054d19c0362f924029f067c0c7df"
-    },
-    {
-      "url": "/arcade/games/colony.js",
-      "bytes": 8746,
-      "sha256": "15e245a882528105f492851b530df88654f6ab5e769aabb425057c5acc61a698"
-    },
-    {
-      "url": "/arcade/games/parking.js",
-      "bytes": 9873,
-      "sha256": "14545a64fcd068b48d68ce9e772000919354c82286280ced742278029e7af046"
-    },
-    {
-      "url": "/arcade/games/rings.js",
-      "bytes": 9005,
-      "sha256": "b2d9920cd03beaa5cbf26842331509f904af85c0950954d049aadeb0dc44bdd4"
-    },
-    {
-      "url": "/arcade/games/stack.js",
-      "bytes": 6447,
-      "sha256": "50dbaf68c71366ba1b2afcdd207e142c8d311cb329ac5b5fcda6b0eead9843fa"
-    },
-    {
-      "url": "/arcade/glass.css",
-      "bytes": 14976,
-      "sha256": "a3db8d37b6e7a20ebbf24c9d5b507b570a3cb7798b03b3442354eb04c2546d26"
-    },
-    {
-      "url": "/arcade/index.html",
-      "bytes": 10739,
-      "sha256": "47b3fcb9321ff57c8662e1a1064b0ccfd7c17ece1abaf64b24e052fb1e0a0292"
-    },
-    {
-      "url": "/arcade/kids-arcade.js",
-      "bytes": 12638,
-      "sha256": "a6e6c94f36c311fe4f07158f9ec9f8b838110aaba014d42318a64de2c586a0ca"
-    },
-    {
-      "url": "/arcade/kids-grid.js",
-      "bytes": 7368,
-      "sha256": "bb902c43baa363c33725353df15423124b89d01e777d4fa808c3297d44f645d3"
-    },
-    {
-      "url": "/arcade/kids-mind.js",
-      "bytes": 7874,
-      "sha256": "9862d99a973174c80925a8a7e3d90f27ff090f476a376ce2ee85a86c1113f5da"
-    },
-    {
-      "url": "/arcade/kids-puzzle.js",
-      "bytes": 8974,
-      "sha256": "eb29b5966b5d0208b360ad6c307bd9331e44a7e7e989998759bc34e5c80f1835"
-    },
-    {
-      "url": "/arcade/kids.css",
-      "bytes": 18395,
-      "sha256": "7d88a3c73198f8a1a2d4a04a8fee7175407b85c3afb88d414d2fa6d78b802133"
-    },
-    {
-      "url": "/arcade/kids.html",
-      "bytes": 4678,
-      "sha256": "3269f512fc4ca29201f1e8a5a604608ac97af0301c51b206c5bc30a7f6b8d5e6"
-    },
-    {
-      "url": "/arcade/kids.js",
-      "bytes": 14858,
-      "sha256": "a4dba48220c96993fb98d5aa17767162473fd3b7b20d33e43bba57a9b8e2ac60"
-    },
-    {
-      "url": "/arcade/levels-data.js",
-      "bytes": 30612,
-      "sha256": "8f33e78fe4c96b5db03568ffe5c37b313d8f9aad071c515e59992af085ca0474"
-    },
-    {
-      "url": "/arcade/levels.css",
-      "bytes": 6973,
-      "sha256": "cc92980957c8f7fc1120139e191e1236ac17e451c92902a893546bc2ca571eb4"
-    },
-    {
-      "url": "/arcade/levels.html",
-      "bytes": 3676,
-      "sha256": "695c505d37915d3620246fd96601e7f6bb51d16abcfb408bca698c017f70511f"
-    },
-    {
-      "url": "/arcade/levels.js",
-      "bytes": 19336,
-      "sha256": "b6256b1a57898476dd1bcaf409047ef215683bea91edd0335fbca61e489e1da6"
-    },
-    {
-      "url": "/arcade/nav.css",
-      "bytes": 2112,
-      "sha256": "eab451fcf18558fe991ccd23eb601a3bc52210f5454478bc95e225f5cd19e458"
-    },
-    {
-      "url": "/arcade/styles.css",
-      "bytes": 18454,
-      "sha256": "3f2a403271605fe29e5dbc461e06adc5606ab08c5eac29624ce99fce6b2f4eae"
-    },
-    {
-      "url": "/arcade/voice/NOTICE.md",
-      "bytes": 741,
-      "sha256": "1076151f267b4cb3ac8e33bad65bcb0914d49908e05435df875402d8c1f590dc"
-    },
-    {
-      "url": "/arcade/voice/boxes-intro.mp3",
-      "bytes": 45429,
-      "sha256": "02102b433f61fd8ca755714ce704f76cdad4e022cd667b3e6f04e9fd3cd94484"
-    },
-    {
-      "url": "/arcade/voice/breakout-intro.mp3",
-      "bytes": 37533,
-      "sha256": "eed4bffc90c8efbb0d45460b9970eedd23b53cacf74c67b579cf9ba6c0787f95"
-    },
-    {
-      "url": "/arcade/voice/breakout-win.mp3",
-      "bytes": 33669,
-      "sha256": "b42cfa4acd2af9a68899a4ed19b76bb2e136ce3e6186068ca9f988602a9f36f3"
-    },
-    {
-      "url": "/arcade/voice/careful.mp3",
-      "bytes": 28293,
-      "sha256": "3e014707168b0ab65dd700fd570692a71ae3dcc9eb81e50eaa8f6149c2232de8"
-    },
-    {
-      "url": "/arcade/voice/connect4-intro.mp3",
-      "bytes": 38205,
-      "sha256": "82a3c94d411bbdeebd966bf0147daca63449b534a32c8475db0f47c3c1a1372d"
-    },
-    {
-      "url": "/arcade/voice/connect4-win.mp3",
-      "bytes": 33837,
-      "sha256": "395352f92134ae719a55468f855e8282ce899b9bb025048c1471818eec05587f"
-    },
-    {
-      "url": "/arcade/voice/dino-intro.mp3",
-      "bytes": 40389,
-      "sha256": "cfda3223306a36dd7e221a91543122046f1307708cb70095b122155a9515ff69"
-    },
-    {
-      "url": "/arcade/voice/dino-win.mp3",
-      "bytes": 34173,
-      "sha256": "b6ed0503858cf5c99d2dec80e395ee8149253f00f64a08d4e06bf51078f3f53d"
-    },
-    {
-      "url": "/arcade/voice/flappy-intro.mp3",
-      "bytes": 39717,
-      "sha256": "322385d160605c7611e4f8d40cb57ac4761a21a9d471dd5f8dde59da42998167"
-    },
-    {
-      "url": "/arcade/voice/flappy-win.mp3",
-      "bytes": 33501,
-      "sha256": "dcb89f98b06340377ea6442c192d9ff2e00e05b7bd3e2c67f40e8bc293e42920"
-    },
-    {
-      "url": "/arcade/voice/frog-intro.mp3",
-      "bytes": 44640,
-      "sha256": "2f022dcd36a32b34db6164eaf5fc12676f0e5734adb6ab73b27be96ee0de1834"
-    },
-    {
-      "url": "/arcade/voice/frog-win.mp3",
-      "bytes": 33333,
-      "sha256": "4cab67e508bcb1860818082e392b1f6d079fc161fc4c7dd7b2edf1c6b0158ce5"
-    },
-    {
-      "url": "/arcade/voice/great.mp3",
-      "bytes": 18213,
-      "sha256": "55ddc1490088f0371e97ef4f03ce8b35e3c3d16d65ae2434a181c109d527618f"
-    },
-    {
-      "url": "/arcade/voice/hanoi-intro.mp3",
-      "bytes": 55509,
-      "sha256": "1d6c31b4a2735744fd36ba8e921458550bc1ebef8d57f4e8bd952b696c7d68c8"
-    },
-    {
-      "url": "/arcade/voice/hanoi-win.mp3",
-      "bytes": 34005,
-      "sha256": "1103d36ed43661d9db0ae9a16f13384b68c468dc00a2bbddc08a9321424749a5"
-    },
-    {
-      "url": "/arcade/voice/level-boxes-intro.mp3",
-      "bytes": 55584,
-      "sha256": "b8a74adbef2cc1cf8ae1bc2701e470e4b8cefcf302712f9b32dba24b491f9bfe"
-    },
-    {
-      "url": "/arcade/voice/level-maze-intro.mp3",
-      "bytes": 41904,
-      "sha256": "c47183306393acef84ad388051835ad1276eb7bf6a9ba1ac57d4406c9d89c09a"
-    },
-    {
-      "url": "/arcade/voice/level-pipes-intro.mp3",
-      "bytes": 35280,
-      "sha256": "28292bba11bcb02f89839b41cf4188abb17ad5476b2d4948eae0e70022fa51a8"
-    },
-    {
-      "url": "/arcade/voice/level-slide-intro.mp3",
-      "bytes": 43056,
-      "sha256": "51b2fd6ec6064994e5ed952873ad3f219f3d8d57b921b3650b202cf79f3dcead"
-    },
-    {
-      "url": "/arcade/voice/level-traffic-intro.mp3",
-      "bytes": 58464,
-      "sha256": "3fb92a8a13917154555ae662d8fe51002c63a9a828c989f928dff06f0756ba8c"
-    },
-    {
-      "url": "/arcade/voice/levels-final.mp3",
-      "bytes": 29805,
-      "sha256": "0530ce41d8f6f389d120dc51d74227ec6fbf3a3dc66f82d223c36ce660fb9e92"
-    },
-    {
-      "url": "/arcade/voice/levels-next.mp3",
-      "bytes": 32157,
-      "sha256": "06bdf18eb4b0bec03819d7e476f2fb7cb10ede145bc0f11fcf63552963b5c080"
-    },
-    {
-      "url": "/arcade/voice/levels-think.mp3",
-      "bytes": 24093,
-      "sha256": "edd3b416b6067d7a944889263281680dd19a8978ea1591eabc79d2a77a199878"
-    },
-    {
-      "url": "/arcade/voice/levels-win.mp3",
-      "bytes": 32493,
-      "sha256": "ae372e8cc0b8d7759c9ab10d23317cb3e50c22ecd6c24342509ea59f11070e9f"
-    },
-    {
-      "url": "/arcade/voice/look.mp3",
-      "bytes": 21237,
-      "sha256": "b67c3e019f4362ec8de1538b421cebf3a7a72cfefe2cda8b15f6e594c8ccf142"
-    },
-    {
-      "url": "/arcade/voice/match3-intro.mp3",
-      "bytes": 42405,
-      "sha256": "4a9c7b010a5ac6707fa79ca5815bb316f3292e90b49be3a90b5fc432505f3fe5"
-    },
-    {
-      "url": "/arcade/voice/match3-win.mp3",
-      "bytes": 34173,
-      "sha256": "f7ce30d1aec7cf9ecaff77cbbf911cbf5bf89c6db8d2268f98a25368f6261403"
-    },
-    {
-      "url": "/arcade/voice/maze-intro.mp3",
-      "bytes": 37008,
-      "sha256": "ea86d42ab3b689b3b267fe100030185a5c7d49dff05b785f611cd8a7ee6bb157"
-    },
-    {
-      "url": "/arcade/voice/maze-win.mp3",
-      "bytes": 34005,
-      "sha256": "00bf52feb122e216a0f28c8aa8595346c132ae82ef8bea8c5d0ca32f79b0de5a"
-    },
-    {
-      "url": "/arcade/voice/memory-intro.mp3",
-      "bytes": 40053,
-      "sha256": "add6d3e2883453e5d7a94b21d3e50ed4a02afdfcbb316ddeeb14cc089b708738"
-    },
-    {
-      "url": "/arcade/voice/memory-win.mp3",
-      "bytes": 35181,
-      "sha256": "996d676c1cf6fe169fe6dc9d8f7603a85d1c25f992e0447744ac4f1b232675dc"
-    },
-    {
-      "url": "/arcade/voice/merge-intro.mp3",
-      "bytes": 51264,
-      "sha256": "2978502a2d3b8599cf4c8526fe2adcdec4504c3f3ebf3e2aaecd21ba3b1038f9"
-    },
-    {
-      "url": "/arcade/voice/merge-win.mp3",
-      "bytes": 34005,
-      "sha256": "be4ecd1d4f05f3abb8c18145bc8e4a4047b7951fa68b0d1246b526e834b2d604"
-    },
-    {
-      "url": "/arcade/voice/mole-intro.mp3",
-      "bytes": 39381,
-      "sha256": "8e22b21e600a5724195b460ba78a4ce27758fb82c99540a5907204c12c9a6d37"
-    },
-    {
-      "url": "/arcade/voice/mole-win.mp3",
-      "bytes": 35517,
-      "sha256": "a18cce22125f13d8af6e33c73ad9775dc20165bd9022e14f7d1bf2ea0c85ebb7"
-    },
-    {
-      "url": "/arcade/voice/music-off.mp3",
-      "bytes": 14685,
-      "sha256": "154b005f62c75d0bf6ea6884d75da7818ef248b3eeb317c695dcac7fbc22e42c"
-    },
-    {
-      "url": "/arcade/voice/music-on.mp3",
-      "bytes": 14685,
-      "sha256": "8af4e55cadf1a3a773a6aa520170af6fb15cad8751d7c7e04f1c1e57cbacc19e"
-    },
-    {
-      "url": "/arcade/voice/next.mp3",
-      "bytes": 19725,
-      "sha256": "b72b796f4b16740e01f562f049d894021da935371fada73612aa22f8f3d220e3"
-    },
-    {
-      "url": "/arcade/voice/pac-intro.mp3",
-      "bytes": 37872,
-      "sha256": "bb0a50c8afccc627043fe57d605ad3c40dc3a1078347bcf2820e058d1f23073e"
-    },
-    {
-      "url": "/arcade/voice/pac-win.mp3",
-      "bytes": 33837,
-      "sha256": "2b40ffe910dcc1a5a28709de3d7a99c45f4ecb3378696247dfe861d2a02c5ff4"
-    },
-    {
-      "url": "/arcade/voice/pipes-intro.mp3",
-      "bytes": 41184,
-      "sha256": "59723e2b51e36f9e587ac0616f6db58ab7762c9c61a12888e3c3f423c588655c"
-    },
-    {
-      "url": "/arcade/voice/pipes-win.mp3",
-      "bytes": 34509,
-      "sha256": "7131cb5800c9bd44d7c18718c27db9a8388ab8e3909cbf5a98da40ffb71c1587"
-    },
-    {
-      "url": "/arcade/voice/pocket-bubbles-intro.mp3",
-      "bytes": 58032,
-      "sha256": "b26a3c8df55f89bcefbb03cf8b13aa20fb14b22c43b5400014da039570d3ee5d"
-    },
-    {
-      "url": "/arcade/voice/pocket-car-intro.mp3",
-      "bytes": 65520,
-      "sha256": "4ff78c97e3a7325f7a25e549faccaa5c66c51455e52ff507fa82c4f79c4b0e32"
-    },
-    {
-      "url": "/arcade/voice/pocket-colony-intro.mp3",
-      "bytes": 56880,
-      "sha256": "7bf92c0b7fae5274b683f61e1222ca7accd75e1b0fb91abd8294b93acada5b73"
-    },
-    {
-      "url": "/arcade/voice/pocket-parking-intro.mp3",
-      "bytes": 53280,
-      "sha256": "a61beedbc6c5cc3f072cefd320c8503cd87235c57fb07bc2fb4ecddd055eec82"
-    },
-    {
-      "url": "/arcade/voice/pocket-rings-intro.mp3",
-      "bytes": 48384,
-      "sha256": "edab425967568c792148ae12280e700eb83f17d7e5326477b6d598a5cec7c948"
-    },
-    {
-      "url": "/arcade/voice/pocket-stack-intro.mp3",
-      "bytes": 64368,
-      "sha256": "5f586831d5db6f8e90d1cf182a5aa222bd28846fba98d292f99c619f5695a9af"
-    },
-    {
-      "url": "/arcade/voice/pong-intro.mp3",
-      "bytes": 37365,
-      "sha256": "1f03481ec8bb6b34871c7dd50e9e04b6107c714b076fc1c18ac9b41831dbec61"
-    },
-    {
-      "url": "/arcade/voice/pong-win.mp3",
-      "bytes": 35853,
-      "sha256": "1c73fbe30c03198330a70944e0b25d124dd1f8012a995ef976a45f2afeff94d1"
-    },
-    {
-      "url": "/arcade/voice/ready.mp3",
-      "bytes": 31317,
-      "sha256": "08e653182b9d2ed21f50a7065b706cca94f273d759e9eb2d6251b0c566dc4de3"
-    },
-    {
-      "url": "/arcade/voice/simon-intro.mp3",
-      "bytes": 38877,
-      "sha256": "e40623b42d1d0d73085bedc92344790db0b3812efbb4b401790c9de31d055849"
-    },
-    {
-      "url": "/arcade/voice/simon-win.mp3",
-      "bytes": 35349,
-      "sha256": "6b0d57c657a5c62cd20d080e6e7118f37e5c954788db1368c8dc407d96ae53e2"
-    },
-    {
-      "url": "/arcade/voice/slide-intro.mp3",
-      "bytes": 44757,
-      "sha256": "5d90b526a248b6399c16d925a37318444e3430eca989a8a2d9e070cc2a962b54"
-    },
-    {
-      "url": "/arcade/voice/slider-intro.mp3",
-      "bytes": 34005,
-      "sha256": "91107fe356e7a2d47e463548de9c8a6437abe8403075236b7242259bb57c9272"
-    },
-    {
-      "url": "/arcade/voice/slider-win.mp3",
-      "bytes": 34173,
-      "sha256": "d91d2206c6a40e8762dd9913fe4a3ea3ae4dbac3d6d9002aff942549c2a8464b"
-    },
-    {
-      "url": "/arcade/voice/snake-intro.mp3",
-      "bytes": 56016,
-      "sha256": "6f62451a813df3e67c3d8a1140b7a4ccee55690727527a2ce7346dd5f5184979"
-    },
-    {
-      "url": "/arcade/voice/snake-win.mp3",
-      "bytes": 34509,
-      "sha256": "253207fed250087ab8c34bf4480a3cd4cf3f0f1d71117eb54e62b24f1c50f77c"
-    },
-    {
-      "url": "/arcade/voice/sokoban-intro.mp3",
-      "bytes": 43056,
-      "sha256": "63c51a9b35f2b9d958f033111469a28f8cc0d421b5bd718c5577204f7a10cfd9"
-    },
-    {
-      "url": "/arcade/voice/sokoban-win.mp3",
-      "bytes": 36021,
-      "sha256": "c1ce98b67b2698c60666d3fce0767ff3b48c893ac8447ff7b490f187c1e7b976"
-    },
-    {
-      "url": "/arcade/voice/tetris-intro.mp3",
-      "bytes": 45429,
-      "sha256": "ebd3b5fa0778018820ebe9823a83b1c56e228149816a1772d48d27b82ed97284"
-    },
-    {
-      "url": "/arcade/voice/tetris-win.mp3",
-      "bytes": 34845,
-      "sha256": "7970c6f173860db1b4e8a76d85d346df444eb86aa5bfdacccc780c5a18d96798"
-    },
-    {
-      "url": "/arcade/voice/think.mp3",
-      "bytes": 17877,
-      "sha256": "4c0e635c92896f55e17c3fed43a2fedb45aa6bc549d0267d92688573c7c67f58"
-    },
-    {
-      "url": "/arcade/voice/tictactoe-intro.mp3",
-      "bytes": 36525,
-      "sha256": "fab4c8ca057ec2521f5b3741236a76ac34fcec6af31b87593f461b9c1006e4b2"
-    },
-    {
-      "url": "/arcade/voice/tictactoe-win.mp3",
-      "bytes": 36021,
-      "sha256": "184a5244085a61ec665d63aa0f7efc45ffdedff1df3412c345d63595b4b7be29"
-    },
-    {
-      "url": "/arcade/voice/traffic-intro.mp3",
-      "bytes": 48285,
-      "sha256": "f3c5e2353823a7ba2a0480786ddc384cf9a72c3cb845989785b318512d8cdf9f"
-    },
-    {
-      "url": "/arcade/voice/try.mp3",
-      "bytes": 25773,
-      "sha256": "579fa89b72481f78fb368870b564323a05c1ef79c414d9f3d82e81ba83ea2cb1"
-    },
-    {
-      "url": "/arcade/voice/yourturn.mp3",
-      "bytes": 24261,
-      "sha256": "7d7f053043ed3376f337334023f01dd3b2e8b1fc634430ac6d87da304543fa7d"
+      "url": "/app-assets/app-6a0c9be7fa896177.css",
+      "bytes": 211830,
+      "sha256": "6a0c9be7fa89617714c2ccc1809b40a713cb5a11da6f21ced1cb3aeeb72b39f1"
     },
     {
       "url": "/art/adventures-v1/adventure_paw_01/page1.webp",
@@ -4443,19 +3693,29 @@
       "sha256": "d808d93080b6a7afe39663aec27cc51d6f2e942d1698eb4d0cdbd618e67d2812"
     },
     {
-      "url": "/offline/arcade/index.html",
-      "bytes": 10816,
-      "sha256": "d7f64a9b10556174c01caa5ca2027889bb05114aa4d1a03568188bbf6fc81c48"
+      "url": "/little-artist/app.js",
+      "bytes": 22372,
+      "sha256": "bc5fbb3ad1e16d7e2e72f0aad958bf49e02a261c45b40248a7bfaac67e0a4a0c"
     },
     {
-      "url": "/offline/arcade/kids.html",
-      "bytes": 4813,
-      "sha256": "3301e32aae129a090a8e30606a85655ba3c8b15c651de1f3d3f33ae08fc41336"
+      "url": "/little-artist/magnet.js",
+      "bytes": 5757,
+      "sha256": "6ee9ce517d5903666593f8a0e264b1f746e1cca1695571311b87e314f626fb16"
     },
     {
-      "url": "/offline/arcade/levels.html",
-      "bytes": 3733,
-      "sha256": "e0d2457dc9eb59019667a7de59d5970db10c85ecb8987db71962e9b60f6f2240"
+      "url": "/little-artist/style.css",
+      "bytes": 14907,
+      "sha256": "8164bf45bdf82991d6b6fdbc4e3f285f1f2ac159f82fa1d9d809272b72983495"
+    },
+    {
+      "url": "/little-artist/templates.js",
+      "bytes": 15229,
+      "sha256": "a8914441f21a191b1348778f91edee33c93e4ed92bf6d5dce25b8269161e2b3e"
+    },
+    {
+      "url": "/offline/artist.html",
+      "bytes": 5935,
+      "sha256": "68407f83e284cf192d222db57dba65002f11ee029c0ce5feeaefe556bae2fc35"
     },
     {
       "url": "/offline/index.html",
@@ -4480,7 +3740,7 @@
     {
       "url": "/offline/play.html",
       "bytes": 2307,
-      "sha256": "e37b6da3f07687f4422ecb749326d8288e65f3a4931a0de0d8b0f93f32daa92e"
+      "sha256": "d9c5cc9f156d829cdc4fba2e892c2214da7da67b33958b96d235ba7a30a406a2"
     },
     {
       "url": "/princess-assets/ariel-cry-v3.png",
@@ -7211,6 +6471,91 @@
       "url": "/voice-classroom-v1/ffffc67dabc265081c71.mp3",
       "bytes": 77472,
       "sha256": "527e9fc0a09f87e524ca192f5d091ac79e4dc60dcaf53ff15a78511de9061f4e"
+    },
+    {
+      "url": "/voice-cozy-v1/01d977a79990cea564e3.mp3",
+      "bytes": 26640,
+      "sha256": "fe6c6bf98b9a37537c3f01d07064ed94a7946a76c3e301354a08da68385bdfd2"
+    },
+    {
+      "url": "/voice-cozy-v1/2daca627c9ff502e9253.mp3",
+      "bytes": 23328,
+      "sha256": "05b6325cf588a9022a0a16e619aa6a2cc8cfbf39c980c720d120e629bcedd474"
+    },
+    {
+      "url": "/voice-cozy-v1/38effa7159ba2334758f.mp3",
+      "bytes": 16992,
+      "sha256": "a035de461eb24f99ba3947616a230c600acf261edf9785a9e146eb7a63fbc6db"
+    },
+    {
+      "url": "/voice-cozy-v1/3ac37b22627b4f395784.mp3",
+      "bytes": 24192,
+      "sha256": "e0b7c625b792346338776835ea88b0911323d00d9409fee3bf19d9a65264a612"
+    },
+    {
+      "url": "/voice-cozy-v1/3bfae23d574ce68cee35.mp3",
+      "bytes": 19872,
+      "sha256": "9a4b58c1b337f3b8d73400b7b3a2d52095a73b2e1680cb55fa6124e03309fbda"
+    },
+    {
+      "url": "/voice-cozy-v1/608c0cc5373b458b0a43.mp3",
+      "bytes": 20880,
+      "sha256": "08ffc8098c802b49b94fed99a59b3df81efb138a99b7ff8e16f70c32b951fcb3"
+    },
+    {
+      "url": "/voice-cozy-v1/6d5a27a819561b72b5f6.mp3",
+      "bytes": 19296,
+      "sha256": "aee688c51bfb3bfb3c7cba89017a5d807c8bf1665b3fb6e0c112c69957be894f"
+    },
+    {
+      "url": "/voice-cozy-v1/6fc2db50e8d25c47d9e2.mp3",
+      "bytes": 40032,
+      "sha256": "7be08812092829e519cb14fcbaf5d7e7e66937d1ba0592774aa7d3090f837da8"
+    },
+    {
+      "url": "/voice-cozy-v1/7c6a032b108abdd1379e.mp3",
+      "bytes": 26640,
+      "sha256": "42424c2695033d1f5ce48708147b574181e96632ccb185b63b0cb89c96564f78"
+    },
+    {
+      "url": "/voice-cozy-v1/88046686c8f2ffcd7240.mp3",
+      "bytes": 20880,
+      "sha256": "31a7edbf506d786e73148ef35c57e7c68da5a1f27d1acafaf2c19d8cb3aaa0f7"
+    },
+    {
+      "url": "/voice-cozy-v1/9b61090828e2fd2e9970.mp3",
+      "bytes": 21456,
+      "sha256": "5ad1efb6134d93602fcf1e4abf3318b1917d316a40ed65b11939dfb1bf6aeef2"
+    },
+    {
+      "url": "/voice-cozy-v1/a1fd589505cf104c6da7.mp3",
+      "bytes": 17280,
+      "sha256": "4029e6169fe71a4300f07081d8ed67858653072fef392a26fa2045be5fb2e79e"
+    },
+    {
+      "url": "/voice-cozy-v1/a4b96c41b185727c56bf.mp3",
+      "bytes": 21168,
+      "sha256": "97d234880b235cec5c4cc68cbef9adecf009e6051a60416ab74231f0e4b4eb4a"
+    },
+    {
+      "url": "/voice-cozy-v1/c6205178e00fbd35d898.mp3",
+      "bytes": 17712,
+      "sha256": "a3af99b2279d6aff114c0a5eb1bf212b4f813d48174560359df77161dd8c2be3"
+    },
+    {
+      "url": "/voice-cozy-v1/ca43d47027150ff63c7a.mp3",
+      "bytes": 30528,
+      "sha256": "3fd9ecb33c160b47a31a2efa644af2ec7759af72ca684eae4474bdf5790b3d3c"
+    },
+    {
+      "url": "/voice-cozy-v1/cd31f3abbaf8a597f5fe.mp3",
+      "bytes": 26064,
+      "sha256": "443c38055109f720b7ab26f134c5fb6373c440b9d5c5992e7cc721475bd1f3a5"
+    },
+    {
+      "url": "/voice-cozy-v1/eb7e39c54cb8c1ebdb22.mp3",
+      "bytes": 17712,
+      "sha256": "1a28acf3ec22d243fad48f62dc9e663d3caded8ffef7991a0d8c050c768310b5"
     },
     {
       "url": "/voice-creative-v1/1c9748b02b2be527be1a.mp3",

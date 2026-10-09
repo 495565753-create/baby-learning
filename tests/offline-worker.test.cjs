@@ -96,9 +96,6 @@ async function putVersion(h, version = V1, label = 'old') {
     ['/offline/play.html', '<html>play-' + label + '</html>'],
     ['/offline/installer.js', 'installer-' + label],
     ['/offline/installer.css', '.installer-' + label + '{}'],
-    ['/offline/arcade/index.html', '<html>arcade-' + label + '</html>'],
-    ['/offline/arcade/kids.html', '<html>kids-' + label + '</html>'],
-    ['/offline/arcade/levels.html', '<html>levels-' + label + '</html>'],
     ['/app-assets/app-1111111111111111.js', 'bundle-' + label],
     ['/voice/test.mp3', '0123456789abcdefghij'],
     ['/art/test.webp', 'picture-' + label]
@@ -219,15 +216,13 @@ test('manifest rejects unsafe, duplicated, mismatched, and cyclic resources', as
   }
 });
 
-test('offline app and arcade navigation ignore section queries; assets accept only a v cache buster', async () => {
+test('offline app navigation ignores section queries; assets accept only a v cache buster', async () => {
   const h = harness();
   await putVersion(h);
   await activate(h);
   h.state.online = false;
   for (const [url, expected] of [
-    ['/offline/play.html?section=games&v=abc', 'play-old'],
-    ['/offline/arcade/kids.html?level=2', 'kids-old'],
-    ['/offline/arcade/levels.html?theme=forest', 'levels-old']
+    ['/offline/play.html?section=games&v=abc', 'play-old']
   ]) {
     const {response} = await h.request(url, {navigate: true});
     assert.match(await response.text(), new RegExp(expected));

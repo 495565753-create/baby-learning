@@ -2,7 +2,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const { sha256, localPath, loadModels, collectRuntimeAssets, cloneMainHTML, cloneArcadeHTML } = require('../build-offline.cjs');
+const { sha256, localPath, loadModels, collectRuntimeAssets, cloneMainHTML } = require('../build-offline.cjs');
 const root = path.resolve(__dirname, '..');
 
 test('offline assets are resolved from current story and effective voice data', () => {
@@ -19,15 +19,14 @@ test('offline assets are resolved from current story and effective voice data', 
     assert.ok(result.files.includes(localPath(book.cover)), book.cover);
     for (const page of book.pages) assert.ok(result.files.includes(localPath(page.img)), page.img);
   }
-  for (const directory of ['assets', 'img/coloring', 'arcade', 'princess-assets', 'princess-voices']) {
+  for (const directory of ['assets', 'img/coloring', 'princess-assets', 'princess-voices']) {
     for (const file of fs.readdirSync(path.join(root, directory), { recursive: true })) {
       const absolute = path.join(root, directory, file);
       if (!fs.statSync(absolute).isFile() || !/\.(?:webp|svg|png|html|js|css|mp3)$/.test(file)) continue;
       assert.ok(result.files.includes(`${directory}/${file}`.split(path.sep).join('/')), file);
     }
   }
-  assert.ok(result.files.includes('arcade/levels-data.js'));
-  assert.ok(result.files.includes('arcade/assets/fluent/LICENSE'));
+  assert.ok(!result.files.some(file => file.startsWith('arcade/')));
   assert.ok(result.files.includes('img/dino/dino_01/page1.webp'));
   assert.ok(!result.files.some(file => file.startsWith('audio/') || file.startsWith('voice-v3/') || file.endsWith('.py') || file.endsWith('generation-cache.json')));
 });
@@ -42,23 +41,9 @@ test('main offline clone retains root assets and points to separate installation
   assert.throws(() => cloneMainHTML('<head><base href="/"></head>'));
 });
 
-test('arcade clones rewrite page navigation only and keep relative media', () => {
-  const input = '<head></head><a href="../index.html?section=games">Back</a><a href="kids.html#maze">Game</a><a href="levels.html#slide">Levels</a><a href="#play">Jump</a><link href="kids.css?v=7"><script src="kids.js?v=10"></script><img src="assets/fluent/star.svg"><a href="https://example.com/">External</a>';
-  const clone = cloneArcadeHTML(input);
-  assert.match(clone, /<base href="\/arcade\/">/);
-  assert.match(clone, /href="\/offline\/play\.html\?section=games"/);
-  assert.match(clone, /href="\/offline\/arcade\/kids\.html#maze"/);
-  assert.match(clone, /href="\/offline\/arcade\/levels\.html#slide"/);
-  assert.match(clone, /href="\/offline\/arcade\/index\.html#play"/);
-  assert.match(clone, /href="kids\.css\?v=7"/);
-  assert.match(clone, /src="kids\.js\?v=10"/);
-  assert.match(clone, /src="assets\/fluent\/star\.svg"/);
-  assert.match(clone, /href="https:\/\/example\.com\/"/);
-});
-
 test('offline paths ignore known cache query parameters and reject remote resources', () => {
   assert.equal(localPath('voice-writing-v1/example.mp3?v=1'), 'voice-writing-v1/example.mp3');
-  assert.equal(localPath('/arcade/assets/fluent/star.svg?v=2'), 'arcade/assets/fluent/star.svg');
+  assert.equal(localPath('/assets/example.svg?v=2'), 'assets/example.svg');
   assert.throws(() => localPath('https://tv.cctv.com/video.mp4'));
   assert.throws(() => localPath('//remote.example/image.png'));
 });
@@ -78,7 +63,7 @@ test('generated offline manifest is complete, deterministic and excludes self-re
   }
   assert.ok(result.files.some(record => record.url === '/offline/index.html'));
   assert.ok(result.files.some(record => record.url === '/downloads/ipad-offline-qr.png'));
-  assert.ok(result.files.some(record => record.url === '/offline/arcade/levels.html'));
+  assert.ok(!result.files.some(record => record.url.startsWith('/arcade/') || record.url.startsWith('/offline/arcade/')));
   assert.ok(!result.files.some(record => ['/offline/sw.js', '/offline/assets.json'].includes(record.url)));
   const manifest = JSON.parse(fs.readFileSync(path.join(root, 'offline/manifest.webmanifest')));
   assert.equal(manifest.start_url, './index.html');

@@ -13,10 +13,7 @@ const ACTIVE_PATH = '/offline/active.json';
 const INSTALLER_PATHS = new Set([
   '/offline/index.html', '/offline/installer.js', '/offline/installer.css'
 ]);
-const PINNED_NAVIGATIONS = new Set([
-  '/offline/play.html', '/offline/arcade/index.html',
-  '/offline/arcade/kids.html', '/offline/arcade/levels.html'
-]);
+const PINNED_NAVIGATIONS = new Set(['/offline/play.html','/offline/artist.html']);
 const ORIGIN = self.location.origin;
 let activeCopy = null;
 let loadingActive = null;

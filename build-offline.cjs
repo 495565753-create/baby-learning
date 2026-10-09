@@ -10,7 +10,7 @@ const modelInputs = [
   'books.js', 'books-extra.js', 'books-new-adventures.js', 'story-art-map.js',
   'books-tablet-stories.js', 'voice-map.js', 'modern-voice-map.js',
   'challenge-voice-map.js', 'video-voice-map.js', 'creative-voice-map.js',
-  'writing-voice-map.js', 'tablet-story-voice-map.js'
+  'writing-voice-map.js', 'tablet-story-voice-map.js', 'cozy-voice-map.js'
 ];
 
 function assertFile(root, relative) {
@@ -97,8 +97,8 @@ function collectRuntimeAssets(root) {
   for (const file of walkMedia(root, 'img/coloring', new Set(['.png']))) add(file, 'coloring');
   for (const file of walkMedia(root, 'princess-assets', new Set(['.png']))) add(file, 'princess');
   for (const file of walkMedia(root, 'princess-voices', new Set(['.mp3']))) add(file, 'princess');
-  for (const file of walkMedia(root, 'arcade', new Set(['.html', '.js', '.css', '.svg', '.mp3']))) add(file, 'arcade');
-  for (const file of ['arcade/assets/fluent/LICENSE', 'arcade/voice/NOTICE.md']) add(file, 'licences');
+  for (const file of walkMedia(root, 'little-artist', new Set(['.js','.css']))) add(file, 'drawing');
+  add('offline/artist.html','drawing');
   for (const file of ['img/icon-180.png', 'img/icon-512.png', 'img/dino/dino_01/page1.webp', bundle.js.file, bundle.css.file]) add(file, 'shell');
   const files = [...groups.keys()].sort();
   const modules = {};
@@ -116,32 +116,11 @@ function cloneMainHTML(source) {
     .replace(/(<link\b[^>]*\brel=["']manifest["'][^>]*\bhref=)["'][^"']*["']/i, '$1"/offline/manifest.webmanifest"');
 }
 
-function cloneArcadeHTML(source, name = 'index') {
-  if (!['index', 'kids', 'levels'].includes(name)) throw new Error(`Unknown offline arcade page: ${name}`);
-  if (/<base\b/i.test(source)) throw new Error('Arcade HTML already has a base URL; review offline clone');
-  let output = source.replace(/<head>/i, '<head>\n  <base href="/arcade/">');
-  output = output.replace(/(<a\b[^>]*\bhref=)(["'])([^"']*)(\2)/gi, (all, prefix, quote, href) => {
-    if (!href || /^(?:https?:|mailto:|tel:)/i.test(href)) return all;
-    // A fragment-only href would otherwise resolve against /arcade/, leaving
-    // the controlled offline page because this clone has a different base URL.
-    if (href.startsWith('#')) return `${prefix}${quote}/offline/arcade/${name}.html${href}${quote}`;
-    const target = new URL(href, 'https://offline.invalid/arcade/');
-    if (target.origin !== 'https://offline.invalid') return all;
-    let pathname = target.pathname;
-    if (pathname === '/index.html' || pathname === '/') pathname = '/offline/play.html';
-    else if (/^\/arcade\/(?:index|kids|levels)\.html$/.test(pathname)) pathname = '/offline' + pathname;
-    else return all;
-    return `${prefix}${quote}${pathname}${target.search}${target.hash}${quote}`;
-  });
-  return output;
-}
-
 function buildOffline(root = __dirname) {
+  fs.writeFileSync(path.join(root,'offline/artist.html'), fs.readFileSync(assertFile(root,'little-artist/index.html'),'utf8').replace('<head>','<head>\n  <base href="/little-artist/">'));
   const runtime = collectRuntimeAssets(root);
   const offline = path.join(root, 'offline');
-  fs.mkdirSync(path.join(offline, 'arcade'), { recursive: true });
   fs.writeFileSync(path.join(offline, 'play.html'), cloneMainHTML(fs.readFileSync(assertFile(root, 'index.html'), 'utf8')));
-  for (const name of ['index', 'kids', 'levels']) fs.writeFileSync(path.join(offline, 'arcade', `${name}.html`), cloneArcadeHTML(fs.readFileSync(assertFile(root, `arcade/${name}.html`), 'utf8'), name));
   const manifest = {
     id: '/offline/', name: '果粒橙离线学习乐园', short_name: '果粒橙离线乐园',
     description: '完整下载后，故事、认知、课堂和小游戏可在没有网络时使用。外部视频需联网。',
@@ -154,7 +133,7 @@ function buildOffline(root = __dirname) {
   };
   fs.writeFileSync(path.join(offline, 'manifest.webmanifest'), JSON.stringify(manifest, null, 2) + '\n');
   const files = new Set(runtime.files);
-  for (const file of ['offline/index.html', 'offline/installer.js', 'offline/installer.css', 'offline/manifest.webmanifest', 'offline/play.html', 'offline/arcade/index.html', 'offline/arcade/kids.html', 'offline/arcade/levels.html', 'downloads/ipad-offline-qr.png']) {
+  for (const file of ['offline/index.html', 'offline/installer.js', 'offline/installer.css', 'offline/manifest.webmanifest', 'offline/play.html', 'downloads/ipad-offline-qr.png']) {
     assertFile(root, file);
     files.add(file);
   }
@@ -167,5 +146,5 @@ function buildOffline(root = __dirname) {
   return { version: result.version, totalBytes: result.totalBytes, files: records.length, books: runtime.books, pages: runtime.pages, voiceMappings: runtime.voiceMappings, modules: runtime.modules };
 }
 
-module.exports = { sha256, localPath, loadModels, validateBundle, collectRuntimeAssets, cloneMainHTML, cloneArcadeHTML, buildOffline };
+module.exports = { sha256, localPath, loadModels, validateBundle, collectRuntimeAssets, cloneMainHTML, buildOffline };
 if (require.main === module) console.log(JSON.stringify(buildOffline()));

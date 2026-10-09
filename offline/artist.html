@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <base href="/little-artist/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#f8f7f3">
+  <title>小小画家</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="return-garden" class="return-garden">🐰 回到甜甜乐园</button>
+  <div id="home" class="screen active">
+    <header class="home-header">
+      <div class="brand"><span class="brand-mark">✦</span><span>小小画家</span></div>
+      <div class="offline-pill">✦ 小小画家 1.2</div>
+    </header>
+    <main class="home-content">
+      <div class="hero">
+        <div class="hero-copy"><div class="eyebrow">拿起画笔，开始探索</div><h1>今天想画<br><em>什么呀？</em></h1><p>跟着画、涂颜色、练习写字。<br>每一笔都是新的发现。</p></div>
+        <div class="hero-art" aria-hidden="true"><div class="sun">☀</div><div class="cloud">☁</div><div class="hill hill-one"></div><div class="hill hill-two"></div><div class="hero-house">⌂</div><div class="flower flower-one">✿</div><div class="flower flower-two">✿</div><div class="hero-pencil">✎</div></div>
+      </div>
+      <div class="section-title"><h2>开始创作</h2><span>选一个喜欢的玩法吧</span></div>
+      <div class="mode-grid">
+        <button class="mode-card learn" data-mode="trace"><span class="mode-icon">✎</span><span class="mode-text"><strong>学画画</strong><small>26 个图案，跟着线条画</small></span><span class="arrow">↗</span></button>
+        <button class="mode-card color" data-mode="color"><span class="mode-icon">◕</span><span class="mode-text"><strong>涂颜色</strong><small>40 张线稿，给世界上色</small></span><span class="arrow">↗</span></button>
+        <button class="mode-card free" data-mode="free"><span class="mode-icon">✦</span><span class="mode-text"><strong>自由画</strong><small>让想象力画满整张纸</small></span><span class="arrow">↗</span></button>
+        <button class="mode-card write" data-mode="write"><span class="mode-icon">字</span><span class="mode-text"><strong>写写字</strong><small>数字、字母和简单汉字</small></span><span class="arrow">↗</span></button>
+        <button class="mode-card gallery" data-mode="gallery"><span class="mode-icon">▣</span><span class="mode-text"><strong>我的作品</strong><small>看看已经完成的画作</small></span><span class="arrow">↗</span></button>
+      </div>
+    </main>
+  </div>
+
+  <div id="studio" class="screen">
+    <header class="studio-header"><button id="back-home" class="circle-button" aria-label="返回首页">‹</button><div class="studio-heading"><div id="studio-title">自由画</div><small id="studio-hint">拿起画笔，开始创作</small></div><button id="palm-toggle" class="assist-button" aria-label="关闭防误触" aria-pressed="true"><b>✋</b><span>防误触 开</span></button><button id="magnet-toggle" class="assist-button magnet-button" aria-label="关闭磁铁" aria-pressed="true"><b>🧲</b><span>磁铁 开</span></button><button id="export-artwork" class="utility-button">↓ 导出</button><button id="save-top" class="primary-button">✓ 保存作品</button></header>
+    <div id="picker" class="picker"></div>
+    <div class="studio-main">
+      <div class="canvas-area"><div class="paper-wrap"><canvas id="fill-canvas"></canvas><canvas id="base-canvas"></canvas><canvas id="art-canvas" aria-label="画纸"></canvas></div><div class="canvas-tip" id="canvas-tip">用手写笔或手指在画纸上画画</div></div>
+      <aside class="tool-panel">
+        <div class="tool-label">画笔工具</div>
+        <div class="tool-row"><button id="brush-tool" class="tool-button selected"><span>✎</span>画笔</button><button id="eraser-tool" class="tool-button"><span>▰</span>橡皮</button><button id="fill-tool" class="tool-button hidden"><span>◕</span>填色</button></div>
+        <div class="tool-label colors-label">选择颜色</div>
+        <div id="palette" class="palette"></div>
+        <div class="tool-label size-label">线条粗细 <span id="size-value">8</span></div>
+        <input id="size-range" type="range" min="2" max="34" value="8" aria-label="线条粗细">
+        <div class="utility-row"><button id="undo-button" class="utility-button">↶ 撤销</button><button id="clear-button" class="utility-button">⌫ 清空</button></div>
+      </aside>
+    </div>
+  </div>
+
+  <div id="gallery-screen" class="screen"><header class="studio-header"><button id="gallery-back" class="circle-button" aria-label="返回首页">‹</button><div class="studio-heading"><div>我的作品</div><small>每一张都是独一无二的</small></div><span class="gallery-count" id="gallery-count">0 张作品</span></header><main class="gallery-content"><div id="gallery-list" class="gallery-list"></div></main></div>
+
+  <div id="viewer" class="modal hidden"><div class="modal-card"><div class="modal-top"><strong id="viewer-title">我的作品</strong><button id="viewer-close" class="circle-button" aria-label="关闭">×</button></div><img id="viewer-image" alt="我的作品"><div class="modal-bottom"><span id="viewer-time"></span><button id="viewer-delete" class="delete-button">删除这张作品</button></div></div></div>
+  <div id="confirm" class="modal hidden"><div class="confirm-card"><div class="confirm-icon">?</div><h3 id="confirm-title">确定吗？</h3><p id="confirm-text">这一步不能撤销哦</p><div class="confirm-actions"><button id="confirm-no" class="utility-button">再想想</button><button id="confirm-yes" class="primary-button">确定</button></div></div></div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="templates.js"></script><script src="magnet.js"></script><script src="app.js"></script>
+</body>
+</html>
