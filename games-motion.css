@@ -11,3 +11,68 @@
 @keyframes canPour{0%,100%{transform:translate(25px,-30px);opacity:0}20%,75%{transform:rotate(-25deg);opacity:1}}@keyframes rainStream{0%{transform:translateY(-10px);opacity:0}20%{opacity:1}100%{transform:translateY(75px);opacity:0}}@keyframes handSow{0%{transform:translateY(-50px);opacity:0}30%,60%{transform:none;opacity:1}100%{transform:translateY(-50px);opacity:0}}@keyframes seedDrop{0%,35%{transform:translateY(-15px);opacity:0}40%{opacity:1}85%{transform:translateY(55px);opacity:1}100%{transform:translateY(65px);opacity:0}}@keyframes seedReveal{0%,70%{opacity:0;transform:scale(.3)}100%{opacity:1;transform:scale(1)}}@keyframes slowGrow{0%,20%{transform:scale(.2) translateY(25px);opacity:.3}85%{transform:scale(1.08);opacity:1}100%{transform:scale(1)}}@keyframes cropToBasket{0%{transform:scale(.8);opacity:1}35%{transform:translateY(-25px) scale(1.1)}85%{transform:translate(35px,40px) scale(.3);opacity:1}100%{transform:translate(35px,40px) scale(.3);opacity:0}}@keyframes basketCatch{70%{transform:rotate(-8deg) scale(1.13)}}@keyframes gardenCloud{50%{transform:translateX(55px)}}@keyframes gardenSun{50%{transform:rotate(15deg)}}@keyframes butterflyFlight{30%{transform:translate(-45px,-12px) rotate(-12deg)}65%{transform:translate(15px,15px) rotate(12deg)}}
 @media(max-width:600px){.pet-room{height:285px}.room-bed{width:85px;height:49px;bottom:50px}.pet-room-window{right:10%;width:80px;height:78px}.room-caption{left:5%;top:112px;font-size:10px}.room-wall-picture{left:9%;width:48px;height:59px}.room-plant{font-size:39px}.pet-roamer{bottom:22px}.garden-landscape{height:79px}}
 @media(prefers-reduced-motion:reduce){.pet-roamer,.pet-walking-body,.pet-foot,.room-cloud,.room-ball,.room-bowl,.pet-action-wash:after,.garden-landscape span,.garden-plot>span{animation:none!important}.garden-sequence{display:none}}
+/* Stable play viewport: controls never scroll away when a child taps. */
+body.playing-cozy-game{height:100svh;height:100dvh;overflow:hidden;overscroll-behavior:none}
+.playing-cozy-game .topbar,.playing-cozy-game .bottom-nav{display:none!important}
+.playing-cozy-game main{width:100%;height:100%;padding:max(6px,env(safe-area-inset-top)) max(8px,env(safe-area-inset-right)) max(6px,env(safe-area-inset-bottom)) max(8px,env(safe-area-inset-left))}
+.playing-cozy-game .cozy-page{height:100%;max-width:850px;display:flex;flex-direction:column;gap:6px;overflow:hidden}
+.playing-cozy-game .mini-game-nav{position:relative;top:auto;flex:none;margin:0;padding:4px}
+.playing-cozy-game .game-exit{min-height:44px}
+.playing-cozy-game .mini-game-name b{display:inline;font-size:15px}
+.playing-cozy-game .cozy-heading{margin:0;flex:none}
+.playing-cozy-game .cozy-heading small,.playing-cozy-game .cozy-heading p{display:none}
+.playing-cozy-game .cozy-heading h1{font-size:20px;margin:0;line-height:1.3}
+.playing-cozy-game .pet-choices,.playing-cozy-game .garden-seeds{flex:none;flex-wrap:nowrap;gap:5px}
+.playing-cozy-game .pet-choices button,.playing-cozy-game .garden-seeds button{min-height:44px;padding:5px;flex:1;min-width:0;font-size:12px}
+.playing-cozy-game .garden-seeds button{display:flex;align-items:center;justify-content:center}
+.playing-cozy-game .garden-seeds span{font-size:24px}
+.playing-cozy-game .pet-room{flex:1;min-height:120px;height:auto;margin:0;border-radius:25px}
+.playing-cozy-game .pet-needs{gap:5px;flex:none}
+.playing-cozy-game .pet-needs div{padding:5px;gap:0;font-size:12px;border-radius:13px}
+.playing-cozy-game .pet-needs span{font-size:20px}
+.playing-cozy-game .cozy-tools{margin:0;gap:6px;flex:none}
+.playing-cozy-game .cozy-tools button{min-height:56px;padding:5px;gap:0;max-width:none;border-radius:17px}
+.playing-cozy-game .cozy-tools span{font-size:27px}
+.playing-cozy-game .cozy-tools b{font-size:14px}
+.playing-cozy-game .cozy-notice{flex:none;margin:0;height:48px;min-height:48px;padding:5px 8px;display:grid;place-items:center;font-size:13px;line-height:1.4;overflow:hidden}
+.cozy-footer{display:flex;gap:6px}
+.playing-cozy-game .cozy-secondary{flex:1;min-height:44px;margin:0;padding:6px;font-size:12px}
+.playing-cozy-game .garden-summary{margin:0;padding:6px 10px;flex:none;font-size:12px}
+.playing-cozy-game .garden-landscape{height:28px;min-height:28px;flex:none;margin:0}
+.playing-cozy-game .garden-board{flex:1;min-height:120px;gap:8px;padding:8px;grid-template-rows:repeat(2,minmax(0,1fr));border-radius:23px}
+.playing-cozy-game .garden-plot{min-height:0;gap:0;padding:4px;border-radius:18px;overflow:hidden}
+.playing-cozy-game .garden-plot>span{font-size:clamp(27px,6dvh,48px)}
+.playing-cozy-game .garden-plot b{font-size:13px}.playing-cozy-game .garden-plot small{font-size:11px}
+.pet-tears,.pet-smile{display:none}
+.pet-mood-lonely .pet-tears{display:block;animation:tinyTear 3s ease-in-out infinite}
+.pet-mood-lonely .pet-mouth{transform:rotate(180deg);transform-origin:120px 166px}
+.pet-mood-full .pet-smile,.pet-mood-happy .pet-smile{display:block}
+.pet-mood-full .pet-mouth,.pet-mood-happy .pet-mouth{display:none}
+.pet-mood-full .pet-belly-paw{transform-origin:155px 213px;animation:bellyRub 1.5s ease-in-out infinite}
+.pet-species-bunny .pet-tail{stroke-width:26}
+.pet-roamer:has(.pet-species-bunny) .pet-walking-body{animation:bunnyBound 1.4s ease-in-out infinite}
+.room-plant{transform-origin:center bottom;animation:ripeSway 5s ease-in-out infinite}
+.room-sun{animation:sunGlow 4s ease-in-out infinite}.room-ball{animation:ballRoll 8s ease-in-out infinite}
+.pet-room:not(.room-action-idle) .pet-roamer{animation-play-state:paused}
+@keyframes bunnyBound{0%,30%,70%,100%{transform:translateY(0)}48%{transform:translateY(-19px) scale(.96,1.04)}60%{transform:translateY(0) scale(1.04,.96)}}
+@keyframes bellyRub{50%{transform:translate(-14px,3px) rotate(24deg)}}
+@keyframes tinyTear{0%,70%,100%{opacity:0;transform:translateY(0)}35%{opacity:.85;transform:translateY(6px)}}
+@keyframes sunGlow{50%{transform:scale(1.1);opacity:.8}}
+@keyframes ballRoll{50%{transform:translateX(15px) rotate(60deg)}}
+@media(prefers-reduced-motion:reduce){.pet-roamer .pet-walking-body,.pet-tears,.pet-belly-paw,.room-plant,.room-sun,.room-ball{animation:none!important}}
+body.playing-cozy-game{padding:0}
+.playing-cozy-game .pet-roamer{bottom:25px}
+@media(max-height:570px){.playing-cozy-game .cozy-heading{display:none}.playing-cozy-game .cozy-tools button{min-height:48px}.playing-cozy-game .cozy-notice{height:40px;min-height:40px}}
+@media(max-height:500px) and (orientation:landscape){
+.playing-cozy-game .cozy-page{display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,.85fr);grid-template-rows:48px 44px 1fr 44px;gap:4px}
+.playing-cozy-game .mini-game-nav{grid-column:1/-1}.playing-cozy-game .cozy-heading{display:none}
+.cozy-pet-page .pet-choices{grid-column:2;grid-row:2}
+.playing-cozy-game .pet-room{grid-column:1;grid-row:2/5}
+.cozy-pet-page .pet-needs{grid-column:2;grid-row:3;align-self:start}
+.cozy-pet-page .cozy-tools{grid-column:2;grid-row:3;align-self:end}
+.cozy-pet-page .cozy-notice{display:none}.cozy-pet-page .cozy-footer{grid-column:2;grid-row:4}
+.cozy-garden-page .garden-summary{grid-column:1;grid-row:2}.cozy-garden-page .garden-seeds{grid-column:2;grid-row:2}
+.cozy-garden-page .garden-tools{grid-column:2;grid-row:3;align-self:start}
+.cozy-garden-page .garden-landscape{display:none}.cozy-garden-page .garden-board{grid-column:1;grid-row:3/5}
+.cozy-garden-page .cozy-notice{grid-column:2;grid-row:3;align-self:end}.cozy-garden-page>.cozy-secondary{grid-column:2;grid-row:4}
+}

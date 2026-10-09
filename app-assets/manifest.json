@@ -1,10 +1,10 @@
 {
   "format": 1,
   "js": {
-    "file": "app-assets/app-630dbddf962c92c1.js",
-    "sha256": "630dbddf962c92c18b1c54ce770a173fc71676256f0a07e32e9ceffe0928c345",
-    "bytes": 604109,
-    "gzip_bytes": 195280,
+    "file": "app-assets/app-0cec4d451e1dd93e.js",
+    "sha256": "0cec4d451e1dd93e68620178e84c07b6f5ad5a143ddc07dc864ee005e33255c9",
+    "bytes": 604972,
+    "gzip_bytes": 195593,
     "inputs": [
       {
         "file": "voice-loader.js",
@@ -98,21 +98,21 @@
       },
       {
         "file": "cozy-games.js",
-        "bytes": 12203,
-        "sha256": "7bec05748a59dc41cfad2d07731ac790f2ac6f758d83e3dc0458c58c814d0c46"
+        "bytes": 12977,
+        "sha256": "bf055eb203d4b7e6c20e624ebdac8266fe951198a2c62188595c26937f5f31ce"
       },
       {
         "file": "kid.js",
-        "bytes": 95470,
-        "sha256": "967e166b995c2bbca2910ab057cdd855aa18256011e5ed9b5f79a53ad7f6036e"
+        "bytes": 95560,
+        "sha256": "b939fdaacb67fc8085e0a4dbeeb29b13b48a37349ce3db077a6bcdd1ce18933a"
       }
     ]
   },
   "css": {
-    "file": "app-assets/app-c0e61e06f0fc5996.css",
-    "sha256": "c0e61e06f0fc59963fabc38fedf2617dfad0600987a2ef37576219dd4d045920",
-    "bytes": 228806,
-    "gzip_bytes": 47043,
+    "file": "app-assets/app-cd74ad84c6edc030.css",
+    "sha256": "cd74ad84c6edc030b73553d9d83af10494fda23b5bb1437cab320e43d003759e",
+    "bytes": 234303,
+    "gzip_bytes": 48091,
     "inputs": [
       {
         "file": "kid.css",
@@ -181,8 +181,8 @@
       },
       {
         "file": "games-motion.css",
-        "bytes": 14268,
-        "sha256": "3620177c233da82432d5fff8add9073f123718887fce0eb3c71d1c1a13e485fc"
+        "bytes": 19905,
+        "sha256": "36ac569f6a84e0a4387211adc3ec5da11bebc490c14531857019f827971181de"
       }
     ]
   },
