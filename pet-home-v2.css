@@ -1,0 +1,109 @@
+/* Illustrated rooms and articulated, compositor-only pet motion. */
+.cozy-pet-page{--pet-ink:#67544f;--pet-rose:#d9929c;--pet-sage:#9bb69d}
+.cozy-pet-page .cozy-heading h1{color:#72584f}
+.cozy-pet-page .pet-choices button{background:#fffaf2;border-color:#f5e8d6;color:#69594e;box-shadow:0 3px 0 #e7d9c6}
+.cozy-pet-page .pet-choices button[aria-pressed=true]{background:#fbe9e7;border-color:#d69ba5;box-shadow:0 3px 0 #dab0aa}
+.cozy-pet-page .pet-needs div{background:#fffaf2;border:1px solid #f1e3d2;color:#735c53}
+.cozy-pet-page .pet-needs span{color:#d78992}
+.cozy-pet-page .cozy-tools button{background:#f8eee0;border:2px solid #fffaf2;box-shadow:0 4px 0 #ead8c4;color:#6f5c53;transition:transform .13s ease-out}
+.cozy-pet-page .cozy-tools button:nth-child(2){background:#e9f4f1}
+.cozy-pet-page .cozy-tools button:nth-child(3){background:#eaf0df}
+.cozy-pet-page .cozy-tools button:active{transform:translateY(3px) scale(.98);box-shadow:0 1px 0 #ead8c4}
+.cozy-pet-page .cozy-notice{background:#fffaf2;color:#735d55}
+.cozy-pet-page .cozy-secondary{background:#fff9ee;color:#6b6253}
+
+.cozy-pet-page .pet-room{border:3px solid #fffaf1;background-color:#e9dcc9;background-size:cover;background-position:center;box-shadow:0 9px 24px #9f7c5940,inset 0 0 0 1px #fff9ef;isolation:isolate}
+.cozy-pet-page .pet-room:not(.pet-scene){background-image:url('/art/pet-home-v2/home.webp')}
+.cozy-pet-page .scene-dining{background-image:url('/art/pet-home-v2/dining.webp')}
+.cozy-pet-page .scene-bath{background-image:url('/art/pet-home-v2/bath.webp')}
+.cozy-pet-page .scene-sport{background-image:url('/art/pet-home-v2/sport.webp')}
+.cozy-pet-page .scene-backdrop,.cozy-pet-page .pet-floor,.cozy-pet-page .pet-room-window,
+.cozy-pet-page .room-wall-picture,.cozy-pet-page .room-rug,.cozy-pet-page .room-bed,
+.cozy-pet-page .room-plant{display:none}
+.cozy-pet-page .room-caption{top:14%;left:7%;max-width:28%;padding:9px 13px;border:1px solid #fff;background:#fffaf2e8;color:#84645a;border-radius:17px;box-shadow:0 4px 12px #95725827;font-size:13px;line-height:1.35}
+.cozy-pet-page .room-bowl{left:10%;bottom:10%;font-size:34px;filter:drop-shadow(0 3px 3px #82685a66)}
+.cozy-pet-page .room-ball{right:10%;bottom:12%;font-size:33px;filter:drop-shadow(0 3px 3px #82685a66)}
+.cozy-pet-page .scene-label{background:#fffaf2e9;color:#70584d;box-shadow:0 3px 12px #8a776242}
+.cozy-pet-page .scene-home{background:#fffaf2ec;box-shadow:0 3px 12px #8a776242}
+.cozy-pet-page .scene-sport::after{content:'';position:absolute;z-index:1;pointer-events:none;left:14%;right:14%;top:43%;bottom:10%;border:3px solid #fff9e8a8;border-radius:50%;transform:perspective(240px) rotateX(35deg)}
+
+.playing-cozy-game .cozy-pet-page .pet-room .pet-roamer{left:50%;bottom:1%;width:clamp(160px,30%,240px);height:auto;max-height:none;aspect-ratio:320/360;transform:translateX(-50%);z-index:3}
+.playing-cozy-game .cozy-pet-page .pet-room:not(.pet-scene) .pet-roamer{animation:petHomeWanderV2 10s ease-in-out infinite}
+.playing-cozy-game .cozy-pet-page .pet-scene .pet-roamer{width:clamp(155px,28%,215px);bottom:5%;animation:none}
+.playing-cozy-game .cozy-pet-page .pet-scene.scene-dining .pet-roamer{bottom:23%}
+.playing-cozy-game .cozy-pet-page .pet-scene.scene-bath .pet-roamer{bottom:22%}
+.playing-cozy-game .cozy-pet-page .pet-scene.scene-sport.scene-active .pet-roamer{animation:motionPetFetch 9s ease-in-out both}
+.cozy-pet-page .pet-roamer .pet-walking-body{width:100%;height:100%;animation:petIdleBobV2 3.6s ease-in-out infinite}
+.cozy-pet-page .pet-roamer .cozy-pet-art,.cozy-pet-page .pet-roamer .cozy-pet-svg{width:100%;height:100%;max-width:none}
+.cozy-pet-page .pet-roamer .cozy-pet-art{position:relative;left:auto;top:auto;transform:none}
+.cozy-pet-page .pet-roamer .pet-foot{animation:none}
+.pet-character-v2.pet-species-bunny .pet-tail{stroke-width:4}
+
+.pet-character-v2 .pet-body{transform-origin:160px 321px;animation:petBreatheV2 3.6s ease-in-out infinite}
+.pet-character-v2 .pet-head{transform-origin:160px 221px;animation:petCuriousV2 5.6s ease-in-out infinite}
+.pet-character-v2 .pet-eyes{transform-origin:160px 160px;animation:petBlinkV2 5.4s ease-in-out infinite}
+.pet-character-v2 .pet-ear-left{transform-origin:111px 112px;animation:petEarV2 6.5s ease-in-out infinite}
+.pet-character-v2 .pet-ear-right{transform-origin:208px 112px;animation:petEarV2 6.5s ease-in-out -.5s infinite reverse}
+.pet-character-v2 .pet-tail{transform-origin:229px 270px;animation:petTailV2 2.8s ease-in-out infinite}
+.pet-character-v2 .pet-smile,.pet-character-v2 .pet-tears,.pet-character-v2 .pet-sleep-eyes{display:none;opacity:0}
+.pet-character-v2.pet-mood-full .pet-smile,.pet-character-v2.pet-mood-happy .pet-smile{display:block;opacity:1}
+.pet-character-v2.pet-mood-full .pet-mouth,.pet-character-v2.pet-mood-happy .pet-mouth{display:none}
+.pet-character-v2.pet-mood-lonely .pet-tears{display:none}
+.pet-character-v2.pet-mood-lonely .pet-mouth{transform:rotate(180deg);transform-origin:160px 202px}
+.pet-character-v2.pet-mood-full .pet-belly-paw{transform-origin:208px 279px;animation:petBellyPatV2 1.9s ease-in-out infinite}
+.pet-character-v2.pet-action-pat .pet-head{animation:petLeanV2 .8s ease-in-out 3}
+.pet-character-v2.pet-action-pat .pet-eyes,.pet-character-v2.pet-action-wash .pet-eyes{opacity:0}
+.pet-character-v2.pet-action-pat .pet-sleep-eyes,.pet-character-v2.pet-action-wash .pet-sleep-eyes{display:block;opacity:1}
+.pet-character-v2.pet-action-eat .pet-head{animation:petNibbleV2 .6s ease-in-out 8}
+.pet-character-v2.pet-action-eat .pet-arm-left{transform-origin:98px 246px;animation:petFeedV2 .8s ease-in-out 6}
+.pet-character-v2.pet-action-wash .pet-head{animation:petShakeV2 .38s ease-in-out 6}
+.pet-character-v2.pet-action-wash .pet-ear-left,.pet-character-v2.pet-action-wash .pet-ear-right{animation:petEarV2 .38s ease-in-out 6}
+.pet-character-v2.pet-action-play .pet-arm-left{transform-origin:98px 246px;animation:petPlayPawV2 .5s ease-in-out 8}
+.pet-character-v2.pet-action-play .pet-arm-right{transform-origin:222px 246px;animation:petPlayPawV2 .5s ease-in-out -.25s 8 reverse}
+.pet-character-v2.pet-action-play .pet-body{animation:petJumpV2 .65s ease-in-out 7}
+.cozy-pet-page .scene-dining .pet-body{animation:petSitV2 3.6s ease-in-out infinite}
+.cozy-pet-page .scene-sport.scene-active .pet-walking-body{animation:petRunV2 .42s ease-in-out infinite}
+.cozy-pet-page .scene-sport.scene-active .pet-character-v2 .pet-head{animation:petSportLookV2 1.3s ease-in-out infinite}
+.cozy-pet-page .scene-bath .pet-character-v2 .pet-head{animation:petBathLookV2 4s ease-in-out infinite}
+
+@keyframes petHomeWanderV2{0%,100%{transform:translateX(-50%)}28%{transform:translateX(calc(-50% + 24px))}68%{transform:translateX(calc(-50% - 22px))}}
+@keyframes petIdleBobV2{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes petBreatheV2{0%,100%{transform:scale(1)}50%{transform:scale(1.018,1.025)}}
+@keyframes petCuriousV2{0%,72%,100%{transform:rotate(0)}80%{transform:rotate(-4deg)}89%{transform:rotate(3deg)}}
+@keyframes petBlinkV2{0%,90%,95%,100%{transform:scaleY(1)}92%,93%{transform:scaleY(.06)}}
+@keyframes petEarV2{0%,70%,100%{transform:rotate(0)}81%{transform:rotate(-5deg)}90%{transform:rotate(4deg)}}
+@keyframes petTailV2{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(12deg)}}
+@keyframes petBellyPatV2{50%{transform:translate(-8px,2px) rotate(14deg)}}
+@keyframes petLeanV2{0%,100%{transform:rotate(0)}50%{transform:rotate(-10deg) translateY(5px)}}
+@keyframes petNibbleV2{50%{transform:translateY(8px) rotate(-3deg)}}
+@keyframes petFeedV2{50%{transform:translate(16px,-40px) rotate(-18deg)}}
+@keyframes petShakeV2{0%,100%{transform:rotate(0)}25%{transform:rotate(-5deg)}75%{transform:rotate(5deg)}}
+@keyframes petPlayPawV2{50%{transform:translate(-10px,-23px) rotate(-25deg)}}
+@keyframes petJumpV2{0%,100%{transform:translateY(0)}45%{transform:translateY(-12px) scale(1.02)}}
+@keyframes petSitV2{0%,100%{transform:translateY(9px) scale(1,.91)}50%{transform:translateY(7px) scale(1.015,.93)}}
+@keyframes petRunV2{50%{transform:translateY(-9px) rotate(2deg)}}
+@keyframes petSportLookV2{50%{transform:rotate(5deg)}}
+@keyframes petBathLookV2{50%{transform:rotate(-3deg)}}
+
+@media(max-width:600px){
+  .cozy-pet-page .pet-room{background-position:center}
+  .playing-cozy-game .cozy-pet-page .pet-room .pet-roamer{width:clamp(140px,48%,190px)}
+  .playing-cozy-game .cozy-pet-page .pet-scene .pet-roamer{width:clamp(128px,41%,166px)}
+  .cozy-pet-page .room-caption{top:15%;left:5%;max-width:35%;font-size:11px;padding:6px 8px}
+  .cozy-pet-page .room-bowl{left:7%;bottom:9%;font-size:27px}
+  .cozy-pet-page .room-ball{right:7%;bottom:10%;font-size:27px}
+}
+@media(min-width:601px) and (min-height:900px) and (orientation:portrait){
+  .playing-cozy-game .cozy-pet-page{justify-content:center}
+  .playing-cozy-game .cozy-pet-page .pet-room{flex:none;height:auto;aspect-ratio:16/10;max-height:560px;margin:0}
+  .playing-cozy-game .cozy-pet-page .pet-scene.scene-dining .pet-roamer,
+  .playing-cozy-game .cozy-pet-page .pet-scene.scene-bath .pet-roamer{bottom:43%}
+}
+@media(max-height:570px){.playing-cozy-game .cozy-pet-page .pet-room .pet-roamer{width:clamp(115px,26%,170px)}.cozy-pet-page .room-caption{display:none}}
+@media(prefers-reduced-motion:reduce){
+  .cozy-pet-page .pet-room .pet-roamer,.cozy-pet-page .pet-roamer .pet-walking-body,
+  .pet-character-v2 .pet-body,.pet-character-v2 .pet-head,.pet-character-v2 .pet-eyes,
+  .pet-character-v2 .pet-ear-left,.pet-character-v2 .pet-ear-right,.pet-character-v2 .pet-tail,
+  .pet-character-v2 .pet-arm-left,.pet-character-v2 .pet-arm-right{animation:none!important}
+  .pet-character-v2.pet-action-pat .pet-sleep-eyes{display:block;opacity:1}
+}

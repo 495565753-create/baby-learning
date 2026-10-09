@@ -1,21 +1,21 @@
 {
-  "version": "f41b10a15cf1c4b2",
-  "totalBytes": 175217401,
+  "version": "aba9cd18b6fd9458",
+  "totalBytes": 175709826,
   "files": [
     {
-      "url": "/app-assets/app-4d989635e9324df3.css",
-      "bytes": 245552,
-      "sha256": "4d989635e9324df3a980c63269887e25df5afbd8675bc0625966c49cb5cbd04a"
-    },
-    {
-      "url": "/app-assets/app-740eafe17588a719.js",
-      "bytes": 652144,
-      "sha256": "740eafe17588a719e5aaa4d6c3afbe0cced4b55107a738c858f13850a2ab2653"
+      "url": "/app-assets/app-0003ca1fb0c4ed7c.css",
+      "bytes": 254966,
+      "sha256": "0003ca1fb0c4ed7cedb929a1c0409d7d7ae1e71927bb54cf86c46bc5fcdb00cb"
     },
     {
       "url": "/app-assets/app-a040def3cfa5c958.js",
       "bytes": 365667,
       "sha256": "a040def3cfa5c958933b381c62a5a49b6f0176eee0be34ae4e159a0f5ba656bb"
+    },
+    {
+      "url": "/app-assets/app-a7b78b9a11ee33d7.js",
+      "bytes": 654755,
+      "sha256": "a7b78b9a11ee33d7dc29a55eab06a47bffd12ac532072633e2be06a2a12591d7"
     },
     {
       "url": "/art/adventures-v1/adventure_paw_01/page1.webp",
@@ -916,6 +916,26 @@
       "url": "/art/adventures-v1/adventure_zootopia_10/page6.webp",
       "bytes": 65512,
       "sha256": "bf729b2de56b41e3b2dc6f7965463677038384438de07c20217e660db364b5b2"
+    },
+    {
+      "url": "/art/pet-home-v2/bath.webp",
+      "bytes": 92334,
+      "sha256": "9565a5a18cbfbbed5fc34dba853825e7e6925685163b7ee47a049b5d8ff95666"
+    },
+    {
+      "url": "/art/pet-home-v2/dining.webp",
+      "bytes": 101444,
+      "sha256": "ed867e373ffc9298d0828442748af19fe1dc753216e0d92001f186bbe233870b"
+    },
+    {
+      "url": "/art/pet-home-v2/home.webp",
+      "bytes": 124672,
+      "sha256": "a29ad963f4a3bc776a38586da112946e031929ba60a6dc9ed411e938e9ac505d"
+    },
+    {
+      "url": "/art/pet-home-v2/sport.webp",
+      "bytes": 161950,
+      "sha256": "be7207ebc2619f8ea455c81927825fabe83e355644337661a36780eb4902613d"
     },
     {
       "url": "/art/story-expansion-v1/expansion_20261009_0/cover.webp",
@@ -4765,7 +4785,7 @@
     {
       "url": "/offline/play.html",
       "bytes": 2365,
-      "sha256": "45c08fd648ccc359784b96433b9e199d0cc1790a2530ee77a7e8c5588d5c647e"
+      "sha256": "8e9de65ca5b5fae3efb9f041f1254d8bda9607d180f7266ef6d26e975982e5b7"
     },
     {
       "url": "/princess-assets/ariel-cry-v3.png",

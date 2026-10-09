@@ -1,10 +1,10 @@
 {
   "format": 1,
   "js": {
-    "file": "app-assets/app-740eafe17588a719.js",
-    "sha256": "740eafe17588a719e5aaa4d6c3afbe0cced4b55107a738c858f13850a2ab2653",
-    "bytes": 652144,
-    "gzip_bytes": 212583,
+    "file": "app-assets/app-a7b78b9a11ee33d7.js",
+    "sha256": "a7b78b9a11ee33d7dc29a55eab06a47bffd12ac532072633e2be06a2a12591d7",
+    "bytes": 654755,
+    "gzip_bytes": 213326,
     "inputs": [
       {
         "file": "voice-loader.js",
@@ -102,9 +102,14 @@
         "sha256": "4f98c74d8ad6546c95f6018cef484bd83702910e6a506e6c6a8a956252259bf9"
       },
       {
+        "file": "pet-character-v2.js",
+        "bytes": 7113,
+        "sha256": "e4809806cdef3e7987711e56430120619cc3266512fb3d932b329a4583223a65"
+      },
+      {
         "file": "cozy-games.js",
-        "bytes": 23789,
-        "sha256": "ed7fccf4847dcac8a3d5e28ee34d85917f73b5fb1dd9aa6ec8b3dc8822329d4e"
+        "bytes": 19656,
+        "sha256": "1d29b3c673667a163dc6f287adf69debdcd1e28903d5eea4b0a1bf33a29052a8"
       },
       {
         "file": "motion-feedback.js",
@@ -119,10 +124,10 @@
     ]
   },
   "css": {
-    "file": "app-assets/app-4d989635e9324df3.css",
-    "sha256": "4d989635e9324df3a980c63269887e25df5afbd8675bc0625966c49cb5cbd04a",
-    "bytes": 245552,
-    "gzip_bytes": 50414,
+    "file": "app-assets/app-0003ca1fb0c4ed7c.css",
+    "sha256": "0003ca1fb0c4ed7cedb929a1c0409d7d7ae1e71927bb54cf86c46bc5fcdb00cb",
+    "bytes": 254966,
+    "gzip_bytes": 52075,
     "inputs": [
       {
         "file": "kid.css",
@@ -203,6 +208,11 @@
         "file": "motion-feedback.css",
         "bytes": 4525,
         "sha256": "b63e5358e052e17e4ccdf3fe23d0b4f375763b5ea4fb47bd303e0d8d1b98e203"
+      },
+      {
+        "file": "pet-home-v2.css",
+        "bytes": 9694,
+        "sha256": "ec2ce32bab95c2cb27437c209e51e70f765bb58f028761bf47ebad1e54074c0d"
       }
     ]
   },

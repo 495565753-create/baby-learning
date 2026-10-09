@@ -15,14 +15,14 @@ const scripts = [
   'kids-new-games.js', 'kids-challenge-games.js', 'kids-videos-data.js',
   'kids-home.js', 'creative-voice-map.js', 'kids-art-studio.js',
   'kids-music-studio.js', 'kids-writing-data.js', 'kids-writing.js',
-  'writing-voice-map.js', 'expansion-voice-map.js', 'tablet-story-voice-map.js', 'princess.js', 'cozy-voice-map.js', 'natural-game-voice-map.js', 'cozy-games.js', 'motion-feedback.js', 'kid.js'
+  'writing-voice-map.js', 'expansion-voice-map.js', 'tablet-story-voice-map.js', 'princess.js', 'cozy-voice-map.js', 'natural-game-voice-map.js', 'pet-character-v2.js', 'cozy-games.js', 'motion-feedback.js', 'kid.js'
 ];
 const voiceInputs=scripts.filter(file=>file==='voice-map.js'||file.endsWith('-voice-map.js'));
 const coreInputs=['voice-loader.js', ...scripts.filter(file=>!voiceInputs.includes(file))];
 const styles = [
   'kid.css', 'recognition.css', 'kids-new-games.css', 'glass-ui.css',
   'kids-home.css', 'kids-challenge-games.css', 'kids-art-studio.css',
-  'kids-music-studio.css', 'kids-writing.css', 'tablet-ui.css', 'princess.css', 'ui-refresh.css', 'cozy-ui.css', 'games-motion.css', 'pet-scenes.css', 'motion-feedback.css'
+  'kids-music-studio.css', 'kids-writing.css', 'tablet-ui.css', 'princess.css', 'ui-refresh.css', 'cozy-ui.css', 'games-motion.css', 'pet-scenes.css', 'motion-feedback.css', 'pet-home-v2.css'
 ];
 const destination = path.join(root, 'app-assets');
 fs.mkdirSync(destination, { recursive: true });

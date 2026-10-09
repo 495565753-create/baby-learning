@@ -98,6 +98,7 @@ function collectRuntimeAssets(root) {
   for (const file of walkMedia(root, 'princess-assets', new Set(['.png']))) add(file, 'princess');
   for (const file of walkMedia(root, 'voice-princess-v4', new Set(['.mp3']))) add(file, 'princess');
   for (const file of walkMedia(root, 'little-artist', new Set(['.js','.css']))) add(file, 'drawing');
+  for (const file of walkMedia(root, 'art/pet-home-v2', new Set(['.webp']))) add(file, 'shell');
   add('offline/artist.html','drawing');
   for (const file of ['img/icon-180.png', 'img/icon-512.png', 'img/dino/dino_01/page1.webp', bundle.js.file, bundle.css.file, bundle.voices.file]) add(file, 'shell');
   const files = [...groups.keys()].sort();
