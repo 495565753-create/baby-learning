@@ -1,0 +1,47 @@
+/* Activity scenes share the fixed mobile play area. Props surround the pet instead of replacing controls. */
+.pet-scene{isolation:isolate;overflow:hidden;animation:petSceneEnter .32s ease-out}
+.scene-backdrop{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.scene-home{position:absolute;top:8px;left:8px;z-index:9;border:0;border-radius:50%;background:#ffffffdd;width:44px;height:44px;font-size:24px;touch-action:manipulation}
+.scene-label{position:absolute;right:10px;top:12px;z-index:9;background:#ffffffdc;border-radius:16px;padding:5px 12px;color:#715071;font-size:13px;font-weight:800}
+.playing-cozy-game .pet-scene .pet-roamer{left:50%;bottom:13%;width:auto;height:65%;max-height:205px;aspect-ratio:240/260;transform:translateX(-50%);animation:none;animation-play-state:running;z-index:3}
+.pet-scene .pet-roamer .pet-walking-body{width:100%;height:100%;animation:none}
+.pet-scene .pet-roamer .cozy-pet-art,.pet-scene .pet-roamer .cozy-pet-svg{width:100%;height:100%;max-width:none}
+.pet-scene .pet-play-prop,.pet-scene .pet-footsteps{display:none}
+.pet-scene .pet-action-wash:after{display:none}
+.scene-chair,.scene-table,.scene-tub,.scene-shower{position:absolute;pointer-events:none}
+.scene-chair{width:58%;height:75%;left:21%;bottom:3%;z-index:1}
+.scene-table{width:88%;height:49%;left:6%;bottom:-2%;z-index:5}
+.scene-spoon{position:absolute;left:53%;bottom:26%;width:34px;height:34px;z-index:6;transform:rotate(-15deg);pointer-events:none}
+.scene-active .scene-spoon{animation:petSpoon 1.5s ease-in-out 6}
+.scene-tub{width:92%;height:55%;left:4%;bottom:0;z-index:5}
+.scene-shower{width:100%;height:65%;left:0;top:-4%;z-index:4}
+.scene-water{position:absolute;left:40%;top:20%;width:20%;height:50%;z-index:4;pointer-events:none}
+.scene-water i{position:absolute;left:calc(var(--drop)*11%);top:0;background:#9dddfbcc;width:3px;height:12px;border-radius:90%;opacity:0}
+.scene-active .scene-water i{animation:petShower .7s linear infinite;animation-delay:calc(var(--drop)*-.1s)}
+.scene-bubbles{position:absolute;left:18%;width:64%;bottom:16%;height:60%;z-index:6;pointer-events:none}
+.scene-bubbles i{position:absolute;bottom:0;left:calc(var(--bubble)*15%);width:14px;height:14px;border-radius:50%;border:2px solid #ffffffd9;background:#d0f1ff66;opacity:0}
+.scene-active .scene-bubbles i{animation:petBubble 2.5s ease-out infinite;animation-delay:calc(var(--bubble)*-.4s)}
+.scene-ball{position:absolute;left:62%;bottom:14%;width:36px;height:36px;z-index:6;transform:translateX(-50%);pointer-events:none;filter:drop-shadow(0 3px 2px #314b5533)}
+.playing-cozy-game .scene-sport.scene-active .pet-roamer{animation:petFetch 9s ease-in-out both;animation-play-state:running}
+.scene-sport.scene-active .scene-ball{animation:petCourtBall 9s ease-in-out both}
+.scene-sport.scene-active .pet-walking-body{animation:petRun .35s ease-in-out infinite}
+.scene-sport.scene-active:has(.pet-species-bunny) .pet-walking-body{animation:petHop .55s ease-in-out infinite}
+.scene-rest .scene-spoon{opacity:.7}
+@keyframes petSceneEnter{from{opacity:.5;filter:brightness(1.08)}to{opacity:1;filter:none}}
+@keyframes petShower{0%{transform:translateY(-5px);opacity:0}15%,80%{opacity:.8}100%{transform:translateY(110px);opacity:0}}
+@keyframes petBubble{0%{transform:translateY(0) scale(.5);opacity:0}20%{opacity:.8}100%{transform:translateY(-95px) scale(1.4);opacity:0}}
+@keyframes petFetch{0%,8%{left:50%}25%{left:76%}48%{left:24%}65%{left:70%}78%,100%{left:50%}}
+@keyframes petCourtBall{0%{left:62%;bottom:14%;transform:translateX(-50%) rotate(0)}10%{left:78%;bottom:42%}20%{left:78%;bottom:12%}32%{left:22%;bottom:38%}43%{left:22%;bottom:12%}55%{left:72%;bottom:33%}63%{left:72%;bottom:14%}70%{left:58%;bottom:31%}78%,85%{left:50%;bottom:31%}100%{left:62%;bottom:14%;transform:translateX(-50%) rotate(720deg)}}
+@keyframes petRun{50%{transform:translateY(-4px) rotate(2deg)}}
+@keyframes petHop{50%{transform:translateY(-13px) rotate(-2deg)}}
+@media(max-height:570px){.playing-cozy-game .pet-scene .pet-roamer{max-height:165px}.scene-spoon{width:28px;height:28px}}
+@media(prefers-reduced-motion:reduce){.pet-scene,.pet-scene *{animation:none!important}.scene-water i,.scene-bubbles i{opacity:.5}.scene-water i{top:calc(var(--drop)*7px)}}
+.scene-chair svg,.scene-table svg,.scene-tub svg,.scene-shower svg{width:100%;height:100%;display:block}
+.scene-chair{width:100%;height:100%;left:0;bottom:-8%}
+.scene-table{width:100%;height:80%;left:0;bottom:-16%}
+.scene-tub{width:100%;height:80%;left:0;bottom:-12%}
+.playing-cozy-game .pet-scene.scene-dining .pet-roamer,.playing-cozy-game .pet-scene.scene-bath .pet-roamer{bottom:26%}
+.playing-cozy-game .pet-scene.playing-cozy-game .pet-scene.scene-bath .pet-roamer{bottom:38%}
+.playing-cozy-game .pet-scene.scene-dining .pet-roamer{bottom:38%}
+.scene-spoon{bottom:33%}
+@keyframes petSpoon{0%,100%{bottom:33%;transform:rotate(-15deg)}45%,65%{bottom:49%;transform:translateX(-20px) rotate(12deg)}}

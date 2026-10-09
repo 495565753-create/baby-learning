@@ -176,3 +176,7 @@ button:focus-visible, a:focus-visible { outline:3px solid #365c9a; outline-offse
 .reillustrated-story img { object-fit:contain; padding:9px; }
 
 .adventure-story {aspect-ratio:1}
+
+/* Newly drawn square book panels stay complete on phones, without cropping characters. */
+.story-picture.story-expansion{aspect-ratio:1;max-height:480px;background:#fffaf3}
+.story-picture.story-expansion img{object-fit:contain}

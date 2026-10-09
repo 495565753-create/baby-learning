@@ -1,10 +1,10 @@
 {
   "format": 1,
   "js": {
-    "file": "app-assets/app-104d6c3fa60b5224.js",
-    "sha256": "104d6c3fa60b522454daf19a21f7a00da474fa58e59873e88e44391e20f3b8c9",
-    "bytes": 641127,
-    "gzip_bytes": 208678,
+    "file": "app-assets/app-740eafe17588a719.js",
+    "sha256": "740eafe17588a719e5aaa4d6c3afbe0cced4b55107a738c858f13850a2ab2653",
+    "bytes": 652144,
+    "gzip_bytes": 212583,
     "inputs": [
       {
         "file": "voice-loader.js",
@@ -38,8 +38,8 @@
       },
       {
         "file": "books-expansion.js",
-        "bytes": 27011,
-        "sha256": "e79739dcedd42f3342adf2f119c7e3ba2f1b540935058ac6c541894000f7defa"
+        "bytes": 27316,
+        "sha256": "8fd5dd67e0c2ec711ae21215d966ee2992550ee192a187b54e0a36e4d4e304a5"
       },
       {
         "file": "courses.js",
@@ -103,26 +103,31 @@
       },
       {
         "file": "cozy-games.js",
-        "bytes": 15260,
-        "sha256": "f8e67a439636e9dd33f4970fe0d696b0475d89f79a6e8fed25ae5b69bfd18527"
+        "bytes": 23789,
+        "sha256": "ed7fccf4847dcac8a3d5e28ee34d85917f73b5fb1dd9aa6ec8b3dc8822329d4e"
+      },
+      {
+        "file": "motion-feedback.js",
+        "bytes": 2272,
+        "sha256": "06c60b7165ef4c7b0deb35ad714276353667793bfc03e8f3b54a42dd1b0bba88"
       },
       {
         "file": "kid.js",
-        "bytes": 95771,
-        "sha256": "682e5383f9bf09bd3f44a58a7134b8f4929f180cd1936394f822bd90308715f1"
+        "bytes": 96311,
+        "sha256": "518507330e9cd55d566351b54dbd3baa202c661812a72894cd417fb5a2313f47"
       }
     ]
   },
   "css": {
-    "file": "app-assets/app-f5549f31be3762a5.css",
-    "sha256": "f5549f31be3762a58a78d1fdecfeb7b8df6cf063e78e94cd9df96ee665542139",
-    "bytes": 236471,
-    "gzip_bytes": 48526,
+    "file": "app-assets/app-4d989635e9324df3.css",
+    "sha256": "4d989635e9324df3a980c63269887e25df5afbd8675bc0625966c49cb5cbd04a",
+    "bytes": 245552,
+    "gzip_bytes": 50414,
     "inputs": [
       {
         "file": "kid.css",
-        "bytes": 65565,
-        "sha256": "8502dc072a7be17b85cf4887a8948e44b3645781643d06132ed0222f3f945551"
+        "bytes": 65795,
+        "sha256": "e861bcb67a79c28a6e089be2c21709870194953587cba386cbbe1b6a8fc116b0"
       },
       {
         "file": "recognition.css",
@@ -188,6 +193,16 @@
         "file": "games-motion.css",
         "bytes": 20523,
         "sha256": "4db51336f92322e77a90e4a044f7c11cdd8a31906f90946035519698c9bb56fa"
+      },
+      {
+        "file": "pet-scenes.css",
+        "bytes": 4933,
+        "sha256": "bcfb14b6568f6abe60679fedf168bab55dfb3551dd34732b8b87fc288091890c"
+      },
+      {
+        "file": "motion-feedback.css",
+        "bytes": 4525,
+        "sha256": "b63e5358e052e17e4ccdf3fe23d0b4f375763b5ea4fb47bd303e0d8d1b98e203"
       }
     ]
   },
