@@ -18,12 +18,12 @@ const scriptInputs = [
   'kids-new-games.js', 'kids-challenge-games.js', 'kids-videos-data.js',
   'kids-home.js', 'creative-voice-map.js', 'kids-art-studio.js',
   'kids-music-studio.js', 'kids-writing-data.js', 'kids-writing.js',
-  'writing-voice-map.js', 'tablet-story-voice-map.js', 'princess.js', 'cozy-voice-map.js', 'cozy-games.js', 'kid.js'
+  'writing-voice-map.js', 'tablet-story-voice-map.js', 'princess.js', 'cozy-voice-map.js', 'natural-game-voice-map.js', 'cozy-games.js', 'kid.js'
 ];
 const styleInputs = [
   'kid.css', 'recognition.css', 'kids-new-games.css', 'glass-ui.css',
   'kids-home.css', 'kids-challenge-games.css', 'kids-art-studio.css',
-  'kids-music-studio.css', 'kids-writing.css', 'tablet-ui.css', 'princess.css', 'ui-refresh.css', 'cozy-ui.css'
+  'kids-music-studio.css', 'kids-writing.css', 'tablet-ui.css', 'princess.css', 'ui-refresh.css', 'cozy-ui.css', 'games-motion.css'
 ];
 const sections = {
   games: /class="game-home"/,
@@ -206,6 +206,7 @@ function runSources(section = 'home') {
 function runBundle(section = 'home') {
   const harness = browserContext(section);
   const info = manifest();
+  vm.runInContext(fs.readFileSync(path.join(root, info.voices.file), 'utf8'), harness.context);
   vm.runInContext(fs.readFileSync(path.join(root, info.js.file), 'utf8'), harness.context, {
     filename: info.js.file,
     timeout: 5000
@@ -243,9 +244,10 @@ function onclickCalls() {
 test('content-hashed bundles exactly cover every required source and built byte', () => {
   const info = manifest();
   assert.equal(info.format, 1);
-  for (const [kind, expected] of [['js', scriptInputs], ['css', styleInputs]]) {
+  for (const [kind, expected] of [['js', ['voice-loader.js', ...scriptInputs.filter(f => f !== 'voice-map.js' && !f.endsWith('-voice-map.js'))]], ['css', styleInputs], ['voices', scriptInputs.filter(f => f === 'voice-map.js' || f.endsWith('-voice-map.js'))]]) {
     const record = info[kind];
-    assert.match(record.file, new RegExp(`^app-assets/app-[a-f0-9]{16}\\.${kind}$`));
+    const extension = kind === 'voices' ? 'js' : kind;
+    assert.match(record.file, new RegExp(`^app-assets/app-[a-f0-9]{16}\\.${extension}$`));
     assert.deepEqual(record.inputs.map(input => input.file), expected, `${kind} input order`);
     for (const input of record.inputs) {
       const bytes = fs.readFileSync(path.join(root, input.file));
@@ -255,11 +257,11 @@ test('content-hashed bundles exactly cover every required source and built byte'
     const output = fs.readFileSync(path.join(root, record.file));
     assert.equal(record.bytes, output.length, record.file);
     assert.equal(record.sha256, sha256(output), record.file);
-    assert.equal(path.basename(record.file), `app-${record.sha256.slice(0, 16)}.${kind}`);
+    assert.equal(path.basename(record.file), `app-${record.sha256.slice(0, 16)}.${extension}`);
     assert.equal(record.gzip_bytes, zlib.gzipSync(output).length, `${record.file} gzip bytes`);
   }
   const owned = fs.readdirSync(assetRoot).filter(file => /^app-[a-f0-9]{16}\.(?:js|css)$/.test(file)).sort();
-  assert.deepEqual(owned, [path.basename(info.css.file), path.basename(info.js.file)].sort(), 'stale bundles must be removed');
+  assert.deepEqual(owned, [path.basename(info.css.file), path.basename(info.js.file), path.basename(info.voices.file)].sort(), 'stale bundles must be removed');
 });
 
 test('built index loads only the two deferred app assets and exposes a working retry on failure', () => {

@@ -15,22 +15,24 @@ const scripts = [
   'kids-new-games.js', 'kids-challenge-games.js', 'kids-videos-data.js',
   'kids-home.js', 'creative-voice-map.js', 'kids-art-studio.js',
   'kids-music-studio.js', 'kids-writing-data.js', 'kids-writing.js',
-  'writing-voice-map.js', 'tablet-story-voice-map.js', 'princess.js', 'cozy-voice-map.js', 'cozy-games.js', 'kid.js'
+  'writing-voice-map.js', 'tablet-story-voice-map.js', 'princess.js', 'cozy-voice-map.js', 'natural-game-voice-map.js', 'cozy-games.js', 'kid.js'
 ];
+const voiceInputs=scripts.filter(file=>file==='voice-map.js'||file.endsWith('-voice-map.js'));
+const coreInputs=['voice-loader.js', ...scripts.filter(file=>!voiceInputs.includes(file))];
 const styles = [
   'kid.css', 'recognition.css', 'kids-new-games.css', 'glass-ui.css',
   'kids-home.css', 'kids-challenge-games.css', 'kids-art-studio.css',
-  'kids-music-studio.css', 'kids-writing.css', 'tablet-ui.css', 'princess.css', 'ui-refresh.css', 'cozy-ui.css'
+  'kids-music-studio.css', 'kids-writing.css', 'tablet-ui.css', 'princess.css', 'ui-refresh.css', 'cozy-ui.css', 'games-motion.css'
 ];
 const destination = path.join(root, 'app-assets');
 fs.mkdirSync(destination, { recursive: true });
-function bundle(files, extension) {
+function bundle(files, extension, footer="") {
   const inputs = files.map(file => {
     const contents = fs.readFileSync(path.join(root, file));
     return { file, bytes: contents.length, sha256: sha(contents) };
   });
   const source = files.map(file => fs.readFileSync(path.join(root, file), 'utf8'))
-    .join(extension === 'js' ? '\n;\n' : '\n');
+    .join(extension === 'js' ? '\n;\n' : '\n') + footer;
   const output = esbuild.transformSync(source, {
     loader: extension, target: ['es2020'], minifyWhitespace: true,
     minifySyntax: true, minifyIdentifiers: false, legalComments: 'none',
@@ -42,21 +44,22 @@ function bundle(files, extension) {
   return { file: `app-assets/${file}`, sha256: sha(contents), bytes: contents.length,
     gzip_bytes: zlib.gzipSync(contents).length, inputs };
 }
-const js = bundle(scripts, 'js');
+const voices=bundle(voiceInputs,'js','\n;window.VOICE_CATALOGUE_READY=true;');
+const js = bundle(coreInputs, 'js');
 const css = bundle(styles, 'css');
-const manifest = { format: 1, js, css };
+const manifest = { format: 1, js, css, voices };
 fs.writeFileSync(path.join(destination, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
 let html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 html = html.replace(/  <link rel="stylesheet"[^>]*>\n/g, '');
 html = html.replace('  <title>', `  <link rel="stylesheet" href="${css.file}">\n  <title>`);
 html = html.replace(/  <script[^>]*src="[^"]+"[^>]*><\/script>\n/g, '');
-html = html.replace('</body>', `  <script defer src="${js.file}" onerror="document.getElementById('startupMessage').textContent='小乐园还没有打开，请再试一次';document.getElementById('startupRetry').hidden=false"></script>\n</body>`);
+html = html.replace('</body>', `  <script defer data-voice-catalogue="${voices.file}" src="${js.file}" onerror="document.getElementById('startupMessage').textContent='小乐园还没有打开，请再试一次';document.getElementById('startupRetry').hidden=false"></script>\n</body>`);
 fs.writeFileSync(path.join(root, 'index.html'), html);
 // Only remove reproducible bundle outputs owned by this builder.
 for (const file of fs.readdirSync(destination)) {
-  if (/^app-[a-f0-9]{16}\.(js|css)$/.test(file) && ![path.basename(js.file), path.basename(css.file)].includes(file)) {
+  if (/^app-[a-f0-9]{16}\.(js|css)$/.test(file) && ![path.basename(js.file), path.basename(css.file),path.basename(voices.file)].includes(file)) {
     fs.unlinkSync(path.join(destination, file));
   }
 }
 console.log(JSON.stringify({ js: js.file, css: css.file,
-  startup_asset_requests: 2, gzip_bytes: js.gzip_bytes + css.gzip_bytes }));
+  voices:voices.file, lazy_voice_gzip_bytes:voices.gzip_bytes, startup_asset_requests: 2, gzip_bytes: js.gzip_bytes + css.gzip_bytes }));

@@ -15,7 +15,7 @@ test('each of the ten princesses has two packaged expressions and a greeting', (
   const characters = inspect('princessCharacters.map(c=>c.id)');
   assert.equal(characters.length, 10);
   for (const id of characters) {
-    const greeting = path.join(root, 'princess-voices', `${id}-hello.mp3`);
+    const greeting = path.join(root, 'voice-princess-v4', `${id}-hello.mp3`);
     for (const expression of ['face','cry']) {
       const face = path.join(root, 'princess-assets', `${id}-${expression}-v3.png`);
       assert.ok(fs.statSync(face).size > 100_000, `${id} ${expression}`);
@@ -85,12 +85,12 @@ const flushVoice = async () => { await Promise.resolve(); await Promise.resolve(
 test('successful princess playback keeps the selected fixed audio and never starts fallback speech', async () => {
   const {attempts, fallbacks, call} = voiceEnvironment();
   call("princessState.character='ice'; princessPlayVoice()");
-  assert.equal(attempts[0].src, 'princess-voices/ice-hello.mp3');
+  assert.equal(attempts[0].src, 'voice-princess-v4/ice-hello.mp3');
   attempts[0].resolve();
   await flushVoice();
   assert.equal(fallbacks.length, 0);
   call("princessState.character='belle'; princessState.step=1; princessPlayVoice()");
-  assert.equal(attempts[1].src, 'princess-voices/friend-reply.mp3');
+  assert.equal(attempts[1].src, 'voice-princess-v4/friend-reply.mp3');
   attempts[1].resolve();
   await flushVoice();
   assert.equal(fallbacks.length, 0);

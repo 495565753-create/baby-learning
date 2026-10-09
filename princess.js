@@ -201,7 +201,7 @@ function princessPlayVoice(){
     usedFallback=true;
     fallbackSpeech(greeting,'zh-CN',undefined,run);
   };
-  player.src=`princess-voices/${name}-${suffix}.mp3`;
+  player.src=`voice-princess-v4/${name}-${suffix}.mp3`;
   player.onerror=fallback;
   player.play().catch(fallback);
 }

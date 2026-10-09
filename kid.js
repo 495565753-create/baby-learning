@@ -63,18 +63,23 @@ function voiceKey(text,lang){return `${String(lang).toLowerCase().startsWith('en
 function playSpoken(text,lang='zh-CN',onend=null){
   const run=++voiceRun;
   if(state.muted){onend?.();return}
-  const src=window.VOICE_MAP?.[voiceKey(text,lang)];
+
   let fallbackStarted=false,finished=false;
   const finish=()=>{if(run!==voiceRun||finished)return;finished=true;onend?.()};
   const fallback=()=>{if(run!==voiceRun||fallbackStarted||finished)return;fallbackStarted=true;fallbackSpeech(text,lang,finish,run)};
-  if(src){
-    player.onended=finish;player.onerror=fallback;player.src=src;player.play().catch(error=>{if(error?.name==='AbortError'&&state.page==='reader'&&state.readerPaused)return;fallback()});return;
-  }
-  fallback();
+  const start=()=>{
+    if(run!==voiceRun||state.muted)return;
+    const src=window.VOICE_MAP?.[voiceKey(text,lang)];
+    if(src){player.onended=finish;player.onerror=fallback;player.src=src;player.play().catch(error=>{if(error?.name==='AbortError'&&state.page==='reader'&&state.readerPaused)return;fallback()});return}
+    fallback();
+  };
+  if(window.ensureVoiceCatalogue&&!window.VOICE_CATALOGUE_READY){window.ensureVoiceCatalogue().then(start,()=>fallback());return}
+  start();
 }
 function fallbackSpeech(text,lang,onend,run=voiceRun){
   if(run!==voiceRun)return;
   player.onended=null;player.onerror=null;player.pause();player.removeAttribute('src');
+  if(['game','games','pet','garden','piano','draw','coloring'].includes(state.page)){onend?.();return}
   if(!window.speechSynthesis){onend?.();return}const u=new SpeechSynthesisUtterance(text);u.lang=lang;u.rate=.82;u.pitch=1.08;u.onend=()=>{if(run===voiceRun)onend?.()};speechSynthesis.speak(u)
 }
 function speak(text,lang='zh-CN'){stopAudio();playSpoken(text,lang)}

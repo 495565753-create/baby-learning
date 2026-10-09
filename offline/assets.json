@@ -1,16 +1,21 @@
 {
-  "version": "0a236c5d489c8929",
-  "totalBytes": 144592500,
+  "version": "b424e5f16a5d9eae",
+  "totalBytes": 144597215,
   "files": [
     {
-      "url": "/app-assets/app-49806abc82bc5bc3.css",
-      "bytes": 214759,
-      "sha256": "49806abc82bc5bc3511f69258bc617984987a672218f5f74a293b95e500e4b6d"
+      "url": "/app-assets/app-7b13112209dae0c4.css",
+      "bytes": 220910,
+      "sha256": "7b13112209dae0c4814d20eb8765d557f939bf6a58f4c347eb178c48ac51d6cf"
     },
     {
-      "url": "/app-assets/app-61baea9f0d65ab3a.js",
-      "bytes": 887369,
-      "sha256": "61baea9f0d65ab3a0674879b6fcf963218be765a6661be3acf4e4de397770ce6"
+      "url": "/app-assets/app-9640cd9ca62b58fb.js",
+      "bytes": 296141,
+      "sha256": "9640cd9ca62b58fbc08b136872c88cf962e33a9da7e7666e658c1e44e0a759d2"
+    },
+    {
+      "url": "/app-assets/app-b123a01d20e72210.js",
+      "bytes": 602947,
+      "sha256": "b123a01d20e722100e1206dd210a96de661e7bb09471840a172ee54215a998b4"
     },
     {
       "url": "/art/adventures-v1/adventure_paw_01/page1.webp",
@@ -3739,8 +3744,8 @@
     },
     {
       "url": "/offline/play.html",
-      "bytes": 2307,
-      "sha256": "cec8351cb57a723dea37683c38d0c3005820372ff2ea8f37923c8b6d652028fa"
+      "bytes": 2365,
+      "sha256": "18536983956120936cf971b2a20d312fe54bd16cf44457837fe70dcd23fd8cf8"
     },
     {
       "url": "/princess-assets/ariel-cry-v3.png",
@@ -3906,71 +3911,6 @@
       "url": "/princess-assets/tiana-thumb-v3.png",
       "bytes": 25570,
       "sha256": "b9a4e7b6da288937e442f1c342c99ee6483fd916fbbe6ed7f6f17884e7fd52e8"
-    },
-    {
-      "url": "/princess-voices/ariel-hello.mp3",
-      "bytes": 62764,
-      "sha256": "aa5e64446d6e36a72233e73f1818e5cc9970926cd4dd914573b753aefdfd1c8c"
-    },
-    {
-      "url": "/princess-voices/aurora-hello.mp3",
-      "bytes": 63678,
-      "sha256": "0fee267ca31766a2baa09673d9caefa9062b6b3a0f3deeb8920c01785babd300"
-    },
-    {
-      "url": "/princess-voices/belle-hello.mp3",
-      "bytes": 64409,
-      "sha256": "c1334d2e46d3e8a162163c3fdf1a6941a6e04d9dd6f4645e7ac349dc1530ba78"
-    },
-    {
-      "url": "/princess-voices/cinderella-hello.mp3",
-      "bytes": 63678,
-      "sha256": "e6a2e2a5d74b6160d0cbe30fb5eb165c04f08203bf290adb1bfb0c8320f52d05"
-    },
-    {
-      "url": "/princess-voices/friend-reply.mp3",
-      "bytes": 30947,
-      "sha256": "0ff340ed6a4ca7bbb36fcc6b58475f9455216c0b1dd290914c23470e1722b197"
-    },
-    {
-      "url": "/princess-voices/ice-hello.mp3",
-      "bytes": 54889,
-      "sha256": "13a6d037a43cca1951c058f23aae15fa64d459f95c807cf09bb7fb374d0a8eb5"
-    },
-    {
-      "url": "/princess-voices/ice-reply.mp3",
-      "bytes": 26613,
-      "sha256": "5ff370003074e9c9169ff108456c7780bb99ef87c6c355eedcbb58d5cd4a30e7"
-    },
-    {
-      "url": "/princess-voices/jasmine-hello.mp3",
-      "bytes": 64592,
-      "sha256": "ce0cb39f8f160cc4d9ef1f199a39e495c45e48e7fd2c517951de731aa86ae964"
-    },
-    {
-      "url": "/princess-voices/mulan-hello.mp3",
-      "bytes": 63678,
-      "sha256": "680f6460ea08ed0cde40d2b47ca3b4343d24ef2eeeb46133a6a191a6563459aa"
-    },
-    {
-      "url": "/princess-voices/rapunzel-hello.mp3",
-      "bytes": 65507,
-      "sha256": "a05611cafa1e5118a2f986d05f49d99d2f2e87a35e9e9017ffe3a1c3a2791279"
-    },
-    {
-      "url": "/princess-voices/snow-hello.mp3",
-      "bytes": 56165,
-      "sha256": "106797106a52c2d505f559a51bb2275925da5e3cc827ced703779b2220347898"
-    },
-    {
-      "url": "/princess-voices/snow-reply.mp3",
-      "bytes": 26613,
-      "sha256": "5ff370003074e9c9169ff108456c7780bb99ef87c6c355eedcbb58d5cd4a30e7"
-    },
-    {
-      "url": "/princess-voices/tiana-hello.mp3",
-      "bytes": 62947,
-      "sha256": "07708a9370e1844411695bac2a3fd2f4feca971b0c9f0d0b8d9c7d525e860d51"
     },
     {
       "url": "/voice-adventures-v1/048f75a866c1013fcef8.mp3",
@@ -4883,11 +4823,6 @@
       "sha256": "de2c37054982d873ffd9da98f1d4162ca190d4bb8b2dd93c486a092ed14b8791"
     },
     {
-      "url": "/voice-challenge-v1/190b284fa5f3cfc2d498.mp3",
-      "bytes": 85536,
-      "sha256": "6c7e531f6ea11b6144f8ba8760d94a4c290c2b2801746e4562d33977ed276c06"
-    },
-    {
       "url": "/voice-challenge-v1/1d7696a90bdf1a25d98b.mp3",
       "bytes": 17856,
       "sha256": "f437b3223d85b37255b95036d7ac1ff276df28aee24829b106e7121fd68c3f9e"
@@ -4911,11 +4846,6 @@
       "url": "/voice-challenge-v1/3e1147bad551eaf6b455.mp3",
       "bytes": 20736,
       "sha256": "9331bf7fc6cfcf146813440c434004189e71e679ec440d12954130cc2a0a3264"
-    },
-    {
-      "url": "/voice-challenge-v1/4e3c5e3ab52c4d8d06fb.mp3",
-      "bytes": 69120,
-      "sha256": "8863d6a8f46b1a00e1c4c94f31dbbad4cc9e3aca194c3323126bbe673a1b8764"
     },
     {
       "url": "/voice-challenge-v1/5d18de2dc992f5d06896.mp3",
@@ -4988,11 +4918,6 @@
       "sha256": "a68c5d9dab5067b1f006f9932dfb827eae7d5db5b96b9dfe45051f9e8c5dcbd0"
     },
     {
-      "url": "/voice-challenge-v1/c34034b7e216fe2c10f4.mp3",
-      "bytes": 69120,
-      "sha256": "a4c5a58d1cf8fd252ab29caa87078579084d6066a5b236f72a811820a9228eb4"
-    },
-    {
       "url": "/voice-challenge-v1/ce2fb1cfa71998671028.mp3",
       "bytes": 24624,
       "sha256": "12185e0d939646f1ffbe86a4c2f43c41434f7aebd4bdeee268ed79f116798e84"
@@ -5006,11 +4931,6 @@
       "url": "/voice-challenge-v1/efe6f73d357082165310.mp3",
       "bytes": 33264,
       "sha256": "43f2930959c8fa08b53bf2956a45325b04a476ab301d8b22b7319865ec7b30e8"
-    },
-    {
-      "url": "/voice-challenge-v1/f245bc7f5fbcdc60aa3b.mp3",
-      "bytes": 84096,
-      "sha256": "a9bd26d2438e29bd0071c63305e83487f79a841b1a08de7683b50e9e0e8d6cd7"
     },
     {
       "url": "/voice-classroom-v1/0044f54f61267b874793.mp3",
@@ -6473,91 +6393,6 @@
       "sha256": "527e9fc0a09f87e524ca192f5d091ac79e4dc60dcaf53ff15a78511de9061f4e"
     },
     {
-      "url": "/voice-cozy-v1/01d977a79990cea564e3.mp3",
-      "bytes": 26640,
-      "sha256": "fe6c6bf98b9a37537c3f01d07064ed94a7946a76c3e301354a08da68385bdfd2"
-    },
-    {
-      "url": "/voice-cozy-v1/2daca627c9ff502e9253.mp3",
-      "bytes": 23328,
-      "sha256": "05b6325cf588a9022a0a16e619aa6a2cc8cfbf39c980c720d120e629bcedd474"
-    },
-    {
-      "url": "/voice-cozy-v1/38effa7159ba2334758f.mp3",
-      "bytes": 16992,
-      "sha256": "a035de461eb24f99ba3947616a230c600acf261edf9785a9e146eb7a63fbc6db"
-    },
-    {
-      "url": "/voice-cozy-v1/3ac37b22627b4f395784.mp3",
-      "bytes": 24192,
-      "sha256": "e0b7c625b792346338776835ea88b0911323d00d9409fee3bf19d9a65264a612"
-    },
-    {
-      "url": "/voice-cozy-v1/3bfae23d574ce68cee35.mp3",
-      "bytes": 19872,
-      "sha256": "9a4b58c1b337f3b8d73400b7b3a2d52095a73b2e1680cb55fa6124e03309fbda"
-    },
-    {
-      "url": "/voice-cozy-v1/608c0cc5373b458b0a43.mp3",
-      "bytes": 20880,
-      "sha256": "08ffc8098c802b49b94fed99a59b3df81efb138a99b7ff8e16f70c32b951fcb3"
-    },
-    {
-      "url": "/voice-cozy-v1/6d5a27a819561b72b5f6.mp3",
-      "bytes": 19296,
-      "sha256": "aee688c51bfb3bfb3c7cba89017a5d807c8bf1665b3fb6e0c112c69957be894f"
-    },
-    {
-      "url": "/voice-cozy-v1/6fc2db50e8d25c47d9e2.mp3",
-      "bytes": 40032,
-      "sha256": "7be08812092829e519cb14fcbaf5d7e7e66937d1ba0592774aa7d3090f837da8"
-    },
-    {
-      "url": "/voice-cozy-v1/7c6a032b108abdd1379e.mp3",
-      "bytes": 26640,
-      "sha256": "42424c2695033d1f5ce48708147b574181e96632ccb185b63b0cb89c96564f78"
-    },
-    {
-      "url": "/voice-cozy-v1/88046686c8f2ffcd7240.mp3",
-      "bytes": 20880,
-      "sha256": "31a7edbf506d786e73148ef35c57e7c68da5a1f27d1acafaf2c19d8cb3aaa0f7"
-    },
-    {
-      "url": "/voice-cozy-v1/9b61090828e2fd2e9970.mp3",
-      "bytes": 21456,
-      "sha256": "5ad1efb6134d93602fcf1e4abf3318b1917d316a40ed65b11939dfb1bf6aeef2"
-    },
-    {
-      "url": "/voice-cozy-v1/a1fd589505cf104c6da7.mp3",
-      "bytes": 17280,
-      "sha256": "4029e6169fe71a4300f07081d8ed67858653072fef392a26fa2045be5fb2e79e"
-    },
-    {
-      "url": "/voice-cozy-v1/a4b96c41b185727c56bf.mp3",
-      "bytes": 21168,
-      "sha256": "97d234880b235cec5c4cc68cbef9adecf009e6051a60416ab74231f0e4b4eb4a"
-    },
-    {
-      "url": "/voice-cozy-v1/c6205178e00fbd35d898.mp3",
-      "bytes": 17712,
-      "sha256": "a3af99b2279d6aff114c0a5eb1bf212b4f813d48174560359df77161dd8c2be3"
-    },
-    {
-      "url": "/voice-cozy-v1/ca43d47027150ff63c7a.mp3",
-      "bytes": 30528,
-      "sha256": "3fd9ecb33c160b47a31a2efa644af2ec7759af72ca684eae4474bdf5790b3d3c"
-    },
-    {
-      "url": "/voice-cozy-v1/cd31f3abbaf8a597f5fe.mp3",
-      "bytes": 26064,
-      "sha256": "443c38055109f720b7ab26f134c5fb6373c440b9d5c5992e7cc721475bd1f3a5"
-    },
-    {
-      "url": "/voice-cozy-v1/eb7e39c54cb8c1ebdb22.mp3",
-      "bytes": 17712,
-      "sha256": "1a28acf3ec22d243fad48f62dc9e663d3caded8ffef7991a0d8c050c768310b5"
-    },
-    {
       "url": "/voice-creative-v1/1c9748b02b2be527be1a.mp3",
       "bytes": 54576,
       "sha256": "8e650552870c8a2c397be0d76c5205c8f960acbf78d2bcf4732c11fe8d59ebcf"
@@ -6588,19 +6423,9 @@
       "sha256": "50aec4a0a3df6ff0974cf3b66b8dfa9867ff34637d7620fb262300a69e1288e3"
     },
     {
-      "url": "/voice-creative-v1/c8038f11800c7248f782.mp3",
-      "bytes": 43920,
-      "sha256": "73bdf3268a18ff4c13ec2ba4a70f96a508949e657191d102e1cc5b5121d7769e"
-    },
-    {
       "url": "/voice-creative-v1/da5c65b47acad34201b4.mp3",
       "bytes": 37008,
       "sha256": "1835b6edc690f88b86c3ee35803befdd4d98deaaa183cf39a14fd6645157321f"
-    },
-    {
-      "url": "/voice-creative-v1/ed252dc71a1c5e14431e.mp3",
-      "bytes": 87408,
-      "sha256": "763200f3ecb85de2a57f11d86889fad10e69c07abc8454c09d10687f78019e1f"
     },
     {
       "url": "/voice-extra-story-v1/02af973ff00a8d72776a.mp3",
@@ -6963,14 +6788,299 @@
       "sha256": "781064c7efd6163391af6c2cfe8271c3e07590b771bc96bb6eeb1ae8ef96d218"
     },
     {
-      "url": "/voice-game-v1/0363ccc2e3ec99b577b7.mp3",
-      "bytes": 35712,
-      "sha256": "d66cea7ef40ab4c0e27e7c32ab62cab9724b39847bfdb5513c1f92f08b4bac43"
+      "url": "/voice-game-natural-v2/0b10947cb39d9bedfcac.mp3",
+      "bytes": 18144,
+      "sha256": "bed774259e1905b00cced355e57e2b2b2a5497cec86f3b825fb84c16ff6a7794"
     },
     {
-      "url": "/voice-game-v1/06ed5951f0f0bce49937.mp3",
-      "bytes": 24048,
-      "sha256": "a9e5edb70a3ef0411b2a23c91194bd9704c9aa582d8599b77e53b5e919b91b18"
+      "url": "/voice-game-natural-v2/0c0b58021ec7d3d3e91c.mp3",
+      "bytes": 34272,
+      "sha256": "16255f5966e8d0bc69f9b676ab88e406529f74288144e57d4ab87c12cc7311fb"
+    },
+    {
+      "url": "/voice-game-natural-v2/120e33acc07be229cd79.mp3",
+      "bytes": 40752,
+      "sha256": "af327da23f99902cce9985ad6c1148e1070b32f2c36283a4ba86bda08bea7aed"
+    },
+    {
+      "url": "/voice-game-natural-v2/1d575419ea5542cdfd9b.mp3",
+      "bytes": 18288,
+      "sha256": "e79066e8f6719dde90299875acd798d3653013e296dfe2023f2a149f5c5dd5e0"
+    },
+    {
+      "url": "/voice-game-natural-v2/25e0752a509c4b729db1.mp3",
+      "bytes": 64944,
+      "sha256": "eff4c27dad2c31893002e73add82d9d9c31c8ee65216ca1895de145be664b404"
+    },
+    {
+      "url": "/voice-game-natural-v2/31e8942ab5699bbe0e36.mp3",
+      "bytes": 31536,
+      "sha256": "7d96aa2cfc7b539c441355a2f246740e1c56e5437e7035700eb064dcf71d593a"
+    },
+    {
+      "url": "/voice-game-natural-v2/353bebf4bed58d3e232f.mp3",
+      "bytes": 12816,
+      "sha256": "7f8ae1c82fe6fde8e58a978214739b4e2dc7369db338e6e50170341ad4d91478"
+    },
+    {
+      "url": "/voice-game-natural-v2/36c389b79f0350f02004.mp3",
+      "bytes": 26640,
+      "sha256": "bbe032e2e7ced7c6fba97ccd417b219ec22ada498df58f8711a7eb465264cbfe"
+    },
+    {
+      "url": "/voice-game-natural-v2/373106265dfff778bb45.mp3",
+      "bytes": 24192,
+      "sha256": "6e45c3361da1a2244e36bebf6c064fd5275bbd0f07def858097e3868ee7c9747"
+    },
+    {
+      "url": "/voice-game-natural-v2/3a2cd02693996efa2d4c.mp3",
+      "bytes": 40608,
+      "sha256": "617374ab6da6766a8326dcb30e84943e43e827b9bb589eca788b5738a026514f"
+    },
+    {
+      "url": "/voice-game-natural-v2/3c3c5bd557b85b8d4b16.mp3",
+      "bytes": 14832,
+      "sha256": "fb4ed5507e13de0f9e7035e2cf24f06c2efd15084fdce93730083520149e2ff4"
+    },
+    {
+      "url": "/voice-game-natural-v2/49a1e5f47d132e118b91.mp3",
+      "bytes": 16272,
+      "sha256": "4faee8f0e5a64c3f2fded656dc629caab6fe5251b608341f1a08a8173a87ca44"
+    },
+    {
+      "url": "/voice-game-natural-v2/58d7cc09f403b55c8571.mp3",
+      "bytes": 25776,
+      "sha256": "c855c6b7860a6abf90c81751ef98d6f8226707e95e79ef6ce3c9b49fb54288cb"
+    },
+    {
+      "url": "/voice-game-natural-v2/5e159436f6c4870494bc.mp3",
+      "bytes": 16992,
+      "sha256": "81e29a146d674c4a8b0f6ae1cea51279fd81770d7b97f4e8b373048c23169776"
+    },
+    {
+      "url": "/voice-game-natural-v2/672cebc95acfe8cb8e46.mp3",
+      "bytes": 37584,
+      "sha256": "e04d0ae8ea1309017587c898c7d7cd8d41f2706ce9fcfff3d87a12ec71a3fb9d"
+    },
+    {
+      "url": "/voice-game-natural-v2/67665e78f8accb775869.mp3",
+      "bytes": 34704,
+      "sha256": "4be683bd20eb0e9f0a13559d8bacb3877c61dea5c349c85b830730dcb63d1fb5"
+    },
+    {
+      "url": "/voice-game-natural-v2/699fb1a250ebffb38683.mp3",
+      "bytes": 19584,
+      "sha256": "60181b07be5c51716707ae9b548a0599daa7c97a3bc2b124eeb724feaa4939fa"
+    },
+    {
+      "url": "/voice-game-natural-v2/6af4cfb8f2c45cb53a7e.mp3",
+      "bytes": 16560,
+      "sha256": "b44d86227720b567f145efca7b28616cb7a7928f49f7d4b575d181e36c6abf60"
+    },
+    {
+      "url": "/voice-game-natural-v2/6fb1137d6dd38a72ae58.mp3",
+      "bytes": 28656,
+      "sha256": "f5d3aabc62fefd5201adfc32adb156d7a40cee2c00416bb98fddbb376286d88a"
+    },
+    {
+      "url": "/voice-game-natural-v2/71186203bf878f642df1.mp3",
+      "bytes": 42048,
+      "sha256": "6cf029856eb29a461e3501528c7892a9ec4741f56f27141749dd28c233d8b5b7"
+    },
+    {
+      "url": "/voice-game-natural-v2/71f5000ed46cb5a1480b.mp3",
+      "bytes": 21888,
+      "sha256": "1ff13b84cb9d014433c0773c15562d2b9bda2f872a2e7ce32a9a2fb6f304a1ec"
+    },
+    {
+      "url": "/voice-game-natural-v2/721b670c15b968994269.mp3",
+      "bytes": 24480,
+      "sha256": "4c630e445ab7e086548a74a1abf4b8a03d73b613d4602dced75d71546d59dd66"
+    },
+    {
+      "url": "/voice-game-natural-v2/739222401680e1deae2f.mp3",
+      "bytes": 82080,
+      "sha256": "38d1195cae4e58fe4e38aa473ecfb2244ee0cb516eca594e0850b335bad18495"
+    },
+    {
+      "url": "/voice-game-natural-v2/76478b1f578b89be09fa.mp3",
+      "bytes": 22752,
+      "sha256": "f83aa3e7c315ef831f125bc97b1ec43bb4bb5c3294bfb320503a9172eb44eaf7"
+    },
+    {
+      "url": "/voice-game-natural-v2/771951dbfcbd6458587a.mp3",
+      "bytes": 24336,
+      "sha256": "031603fd868f1ca646c6d07e4c9d368d27884ea54300038923c5dac8cdf00dde"
+    },
+    {
+      "url": "/voice-game-natural-v2/7a359369e0f98bd335ea.mp3",
+      "bytes": 20160,
+      "sha256": "0bb085db0f93a658a12de2b58ce4efd8d4aff4586e5905fce020e66aaf40b281"
+    },
+    {
+      "url": "/voice-game-natural-v2/7ec731a8b4e7acfa01c6.mp3",
+      "bytes": 33120,
+      "sha256": "c5d5ed3b58482880ba037a7464bb00a8dc9f3ea44495cdf58804280448076c33"
+    },
+    {
+      "url": "/voice-game-natural-v2/7fc08882b0745493a6d9.mp3",
+      "bytes": 50256,
+      "sha256": "a2ae7948e291679fd33c8fd9d1b742bc3b69e86ec80c6918c2a4d70102673c6d"
+    },
+    {
+      "url": "/voice-game-natural-v2/857cf7775a271ed9f72a.mp3",
+      "bytes": 79056,
+      "sha256": "334335cb58db42f067091a5938aca53760bd23f56d393c36abd262b2affd0c84"
+    },
+    {
+      "url": "/voice-game-natural-v2/87181e3dc97fa4270702.mp3",
+      "bytes": 18720,
+      "sha256": "c275580b403803868a1951100eddbe8bf1dec9574e15bd6f5e52ea43753b08b9"
+    },
+    {
+      "url": "/voice-game-natural-v2/882e6066a957a4efb6bb.mp3",
+      "bytes": 44640,
+      "sha256": "0fb5747c2453ebf88369a75a2af39e5bf0259e091fcb3e58ceac362335a6579d"
+    },
+    {
+      "url": "/voice-game-natural-v2/899f35191132d8f3d00b.mp3",
+      "bytes": 80208,
+      "sha256": "07c1d637767eecefc068ea57c74b682ca53c7c8b71f984296edeec4b079cb091"
+    },
+    {
+      "url": "/voice-game-natural-v2/89db24f01173b4bae68d.mp3",
+      "bytes": 31824,
+      "sha256": "6ec625d5aef18885de5539369839bce0feec971fc4f692f7782634488d73b81a"
+    },
+    {
+      "url": "/voice-game-natural-v2/8ae20657ac2c8b0b79c8.mp3",
+      "bytes": 52560,
+      "sha256": "feb2bb80e8bd35f9de38d9b1a19ce3fc231544d69ef92522bee39076444a021d"
+    },
+    {
+      "url": "/voice-game-natural-v2/8ee2b0979025f788ab4a.mp3",
+      "bytes": 41328,
+      "sha256": "d31695ffcc0c165b720d8fe6e3b7a82d76b86afc0a8133b854b9ff548bf3beb4"
+    },
+    {
+      "url": "/voice-game-natural-v2/905f21be8c930597988b.mp3",
+      "bytes": 33408,
+      "sha256": "c60a45b0bf3e487d0b96715882497006e5a61a426c3fff665bb21dbd48f13cb0"
+    },
+    {
+      "url": "/voice-game-natural-v2/9200c69afe6388f13f1e.mp3",
+      "bytes": 41328,
+      "sha256": "003f6dcce8dfa3a3cd85a7082954c4b7e403b9c53e9877552b1d58176b4d98b7"
+    },
+    {
+      "url": "/voice-game-natural-v2/9589cf7814f8a3a0c781.mp3",
+      "bytes": 29664,
+      "sha256": "3b3a8247b52a66333a88e61dc323b2924e3436909bf8516eee37f2eee6740b0a"
+    },
+    {
+      "url": "/voice-game-natural-v2/95a7f964747f47715fee.mp3",
+      "bytes": 49680,
+      "sha256": "d9c48c789041e1591c1f0a12a9bf3b7a3913677d44959793ae3c9930c8e91984"
+    },
+    {
+      "url": "/voice-game-natural-v2/ad27b2188de317517e42.mp3",
+      "bytes": 16704,
+      "sha256": "f74ba01dd05b3d87b896c921f5e53bb2055c16424201f9e9b98c10ed2bc6789a"
+    },
+    {
+      "url": "/voice-game-natural-v2/ae5bc4434579ba254846.mp3",
+      "bytes": 15984,
+      "sha256": "7c24c2c23e291bdb330b9f5f53be45641689269cb7df918cef6e1d9ca7b50ae0"
+    },
+    {
+      "url": "/voice-game-natural-v2/b13324b1eff0dddfe7ab.mp3",
+      "bytes": 29088,
+      "sha256": "3bc785129d14164f04f3834fdac99148c910e5d1e15674efbfda66545a16579c"
+    },
+    {
+      "url": "/voice-game-natural-v2/b204cc1295a112225a6f.mp3",
+      "bytes": 42336,
+      "sha256": "34598874234e1e8dbfb37a66cb5e3e4f2b3cbb1c556229c7fd4d90f1a694383e"
+    },
+    {
+      "url": "/voice-game-natural-v2/b94de95912f65ebc9850.mp3",
+      "bytes": 16704,
+      "sha256": "7f26769128abb87d938b59e369a27207b6186345f59afd3a228da2e6d3458e74"
+    },
+    {
+      "url": "/voice-game-natural-v2/bc0843455e4ad72ea055.mp3",
+      "bytes": 34848,
+      "sha256": "e5e508c14c43da36c79b85580a72a83bd9c4366a28ad1b0d14d1ac899443223d"
+    },
+    {
+      "url": "/voice-game-natural-v2/beb478a6e8c74a18a7a2.mp3",
+      "bytes": 30528,
+      "sha256": "ca6e5195f28afa58d65a7c638ff0ba0cc838cbd47497190b51c718894453fa3e"
+    },
+    {
+      "url": "/voice-game-natural-v2/bf4080c0cd0ee15c7e57.mp3",
+      "bytes": 33552,
+      "sha256": "81615ceb4e18aa3577ac9a6007e5fd4538a44964aafe82323a47381dc46f7e2c"
+    },
+    {
+      "url": "/voice-game-natural-v2/cb3dd08fa648b4a56b33.mp3",
+      "bytes": 37584,
+      "sha256": "b610468acd6f0c579525d7797e2a5782d9ff13c1907230c0fcffbdc503079716"
+    },
+    {
+      "url": "/voice-game-natural-v2/cf4995c000484938e7b4.mp3",
+      "bytes": 25056,
+      "sha256": "4a43e2a39dcc409428c6cfdbfcbdf93d38d33fb682906c5c0dc4c7484a7c44db"
+    },
+    {
+      "url": "/voice-game-natural-v2/cfb09f5bc1c14cba043a.mp3",
+      "bytes": 25056,
+      "sha256": "7abddd864bd3bdcb0d8e5a557a7c7ed7bbab0bc7b9c725fee478ddbe2d05e85b"
+    },
+    {
+      "url": "/voice-game-natural-v2/d4424fdb6643c70033c3.mp3",
+      "bytes": 20016,
+      "sha256": "0f31f899b38deb71fb35d4dceba7430e0f482677607528d01fef39a116751d4f"
+    },
+    {
+      "url": "/voice-game-natural-v2/dd7759e0fa1552550443.mp3",
+      "bytes": 49248,
+      "sha256": "2ea4df5faca6bd4e04a89335589f284a89960a5c78efd1c9afa1e6e75751fc33"
+    },
+    {
+      "url": "/voice-game-natural-v2/df0a1d029171945140ba.mp3",
+      "bytes": 30960,
+      "sha256": "b57d7bc07dd9a470536048d56c3a21bf51c9195e9523dd381ae8c08d05bb7c32"
+    },
+    {
+      "url": "/voice-game-natural-v2/e12f744e8bd89cf7d2ac.mp3",
+      "bytes": 40176,
+      "sha256": "061a1625f969334cd308e6800913774ea96af5b564a5af8c99554ac300308d0a"
+    },
+    {
+      "url": "/voice-game-natural-v2/e775333c958d2ca648ae.mp3",
+      "bytes": 19584,
+      "sha256": "b52b994bf1d5553356444b7d0a9f1b2657a4c8d6ef30497353d932297fa5bcba"
+    },
+    {
+      "url": "/voice-game-natural-v2/eb383bb601a67d37626c.mp3",
+      "bytes": 22608,
+      "sha256": "9e589e7d3973b1ba12584b97f76b3aa0dcb8403d4d677e05a6f241b7580bbb4f"
+    },
+    {
+      "url": "/voice-game-natural-v2/f099d6b6f4f98d0a6501.mp3",
+      "bytes": 32112,
+      "sha256": "74d09d7924eaca0fb14f124232c069a8e0fb4d8801228a13bdf17e00063c237b"
+    },
+    {
+      "url": "/voice-game-natural-v2/f8bafc4deef8f71e91fc.mp3",
+      "bytes": 33552,
+      "sha256": "b9c926a05fff7ae4326659c77d36725ff37c24631e9d03ebba3be6557988418a"
+    },
+    {
+      "url": "/voice-game-natural-v2/faa335b8af6b9c49ad5c.mp3",
+      "bytes": 64944,
+      "sha256": "3e247202a7cc0e534e3dc93dd7e2f9f082e94f14415a01b623a8bf9bd6dd3250"
     },
     {
       "url": "/voice-game-v1/07f6e8dec481dea8e6dd.mp3",
@@ -6978,19 +7088,9 @@
       "sha256": "a51c92a3a8b5fc048905214f185327a2d14279a2979164b7f54ac0c40e7555a6"
     },
     {
-      "url": "/voice-game-v1/0e785a085c7dea5040a1.mp3",
-      "bytes": 28368,
-      "sha256": "0840d96af9f084309d0612a61933097899539e64d75997751250e34ec14ed161"
-    },
-    {
       "url": "/voice-game-v1/2e71a0f8a5144f55f855.mp3",
       "bytes": 17712,
       "sha256": "cf4d049ba0f2578444b4a849d292c46785595ad8e28f85223ad7467917774d6d"
-    },
-    {
-      "url": "/voice-game-v1/340737114f0c751e1877.mp3",
-      "bytes": 44064,
-      "sha256": "b97f5f349fadb7055ed43d7e738192ddd5d42f31b3f28b6e1bfaf02f9528ba13"
     },
     {
       "url": "/voice-game-v1/3aa48d8227c08ca963bb.mp3",
@@ -7003,44 +7103,14 @@
       "sha256": "d5f6aa380c57e458f3aef8703cc5bdd64dd852610e12e3de0b7dec774630280a"
     },
     {
-      "url": "/voice-game-v1/3d610193296bafa26780.mp3",
-      "bytes": 37008,
-      "sha256": "79769c9102bce835f1e34c89ebd9ba72d64fff3cb53c4e5fa6e1675d431b284c"
-    },
-    {
-      "url": "/voice-game-v1/4423c54dbd1e854ab368.mp3",
-      "bytes": 25776,
-      "sha256": "f86416b38c8081bfe8dcc110f32099fcd1fa940a95619e06bebdbc847de7c7e0"
-    },
-    {
-      "url": "/voice-game-v1/49ae85e422ae034b3c5b.mp3",
-      "bytes": 32832,
-      "sha256": "c783934306fbd8bc3e9d44a63b32df00d1b331cf14a764628ecdb30e2fa3216c"
-    },
-    {
       "url": "/voice-game-v1/4b77a79acc3cca652f88.mp3",
       "bytes": 12528,
       "sha256": "8c9b3b0784051b9f16fb4cf0af94d21d8770fc8bb990bf75118783b6c320eb31"
     },
     {
-      "url": "/voice-game-v1/4d3d9d80eb1834b36015.mp3",
-      "bytes": 18000,
-      "sha256": "8778e6abe09f4bfd3b275223e2cd11b6a92af4622f78e91febe2caf1f1f22ad6"
-    },
-    {
       "url": "/voice-game-v1/53d488d3033f3abf130c.mp3",
       "bytes": 23472,
       "sha256": "0e161c87489ca38ed2ad2d9b9c26003675942c9f8000403fc31618eaa899fb1b"
-    },
-    {
-      "url": "/voice-game-v1/5567276b53c2ea629892.mp3",
-      "bytes": 31536,
-      "sha256": "83740694aa1d601dd73b68478dd813c833b27fbcf4e3cd1c6afe220d44c77976"
-    },
-    {
-      "url": "/voice-game-v1/588d2e758eb2be8b1a7a.mp3",
-      "bytes": 35280,
-      "sha256": "ccba3fbc5a54e3152a42be13fafdf8640a66239d928d89334004ac1d7031d2c7"
     },
     {
       "url": "/voice-game-v1/5fece442d650d9561a59.mp3",
@@ -7051,36 +7121,6 @@
       "url": "/voice-game-v1/66f6176a0771c8a18512.mp3",
       "bytes": 21456,
       "sha256": "921eff203af26bbb7fbf79242bbcae6aa980d65e376b5f1211d2b6471f785777"
-    },
-    {
-      "url": "/voice-game-v1/67294d21e6cf8cba3c5e.mp3",
-      "bytes": 34128,
-      "sha256": "c3cfb0968ff7091fcb05bd4a3fe67b1d19c3fe68f827bbec8b687aa8057cfbb8"
-    },
-    {
-      "url": "/voice-game-v1/687a1c8a4ad267c13b94.mp3",
-      "bytes": 17856,
-      "sha256": "e615c4f4440f96da103e51daff074c5673a3100ac1c3e1ab0ca148d180f61bf2"
-    },
-    {
-      "url": "/voice-game-v1/6c3daa81698a0ac01359.mp3",
-      "bytes": 43200,
-      "sha256": "14d475659b8744cf752284cef86071d3bad0d964d0235fef99dca05035a18d00"
-    },
-    {
-      "url": "/voice-game-v1/6c5ef216cd2dbb5a2ee4.mp3",
-      "bytes": 19584,
-      "sha256": "dcdcbf6a3a38d627339fc4deec2eb6a512ddaa8798c9cd9c6deb20b3aacffe7b"
-    },
-    {
-      "url": "/voice-game-v1/7130c197fea1ae61730a.mp3",
-      "bytes": 42768,
-      "sha256": "660df7be4d6f9f8e11eb181de5914a70859d3dd44386f1ab6196bb8a2bd72821"
-    },
-    {
-      "url": "/voice-game-v1/86d2ce8a00b80b471877.mp3",
-      "bytes": 37152,
-      "sha256": "ad84110661aef2a714a48e8f7d063c713b5bb4cbc460528dca12832d35de45dc"
     },
     {
       "url": "/voice-game-v1/8786e3e30b4542e78400.mp3",
@@ -7098,11 +7138,6 @@
       "sha256": "18feb8242b7f214404a26fb240425f1b68f2c0415ee891e532e8542cba601302"
     },
     {
-      "url": "/voice-game-v1/a3f8cf391e3aceca4aef.mp3",
-      "bytes": 32400,
-      "sha256": "7ba12bc54b6b19bdef03785e3adf3d495401750b3e06e4e3a33eb095aebb716a"
-    },
-    {
       "url": "/voice-game-v1/a682a5fe0bfe37eece58.mp3",
       "bytes": 15408,
       "sha256": "bd07bed5c91f9d17879246bfe8404ee3513ec16a21e01d2a9d13bb483ea46ffe"
@@ -7113,24 +7148,9 @@
       "sha256": "45c3ccbe13d7c95d6a91365fab2b547760fd4c03d3d1b6aa946096c006046bf0"
     },
     {
-      "url": "/voice-game-v1/ae01f9e50c929948ef5b.mp3",
-      "bytes": 14205,
-      "sha256": "bad9f9aa4ee7b7439163d0c3d35ec061495e27bb772a0b1d5101dedd28d38eaa"
-    },
-    {
       "url": "/voice-game-v1/b2a5dabef451b25f969c.mp3",
       "bytes": 15696,
       "sha256": "9953742604cf2bcffe23777464466dca1cb38dfb3116f922fdebd807d4884808"
-    },
-    {
-      "url": "/voice-game-v1/b3540fa234d65d205ce5.mp3",
-      "bytes": 33552,
-      "sha256": "67c3fab8da1c59c2dfcf42e1fb4627813472323603945dd6b6b827d0fa37f2a4"
-    },
-    {
-      "url": "/voice-game-v1/bd2b010843f5b2241886.mp3",
-      "bytes": 36432,
-      "sha256": "70c62e85d2123c5ebf9bcc571862bf076889261d6da82d5b7370ca538c408670"
     },
     {
       "url": "/voice-game-v1/c1f2f5fa98cda6dbff78.mp3",
@@ -7143,11 +7163,6 @@
       "sha256": "66b10b844f5e082e5629ff3e2eda599f80e397917b2b7b0dc1e196d6b2a760f8"
     },
     {
-      "url": "/voice-game-v1/c6b7db9ab0b926753af0.mp3",
-      "bytes": 27360,
-      "sha256": "da8443653bdcd9afb3df7c8bf4ff720abb9de67ab7be4b94b939f040233bb767"
-    },
-    {
       "url": "/voice-game-v1/d16c04b9e2b916b8d666.mp3",
       "bytes": 30816,
       "sha256": "d0a555af5aa791399defe811cc8784c427c7e994aa385e4b7a56018ce79cb7ae"
@@ -7158,24 +7173,9 @@
       "sha256": "c3eab0d680047f982bb66ba5710019d19942d038d4dfe261d873acbe4d2b97de"
     },
     {
-      "url": "/voice-game-v1/e3adf796eeeab7b8a23a.mp3",
-      "bytes": 35712,
-      "sha256": "42a449878b1501d3193a2f11358f7dabb98ffe9cfb7abf2003fa82093c14b57d"
-    },
-    {
       "url": "/voice-game-v1/e5735cee5c9021873d6c.mp3",
       "bytes": 21600,
       "sha256": "83fc0e3571637c44123b0fdcd330051c3df353b25eec8f8fe75275408860d3c0"
-    },
-    {
-      "url": "/voice-game-v1/e6b14dc135f2f8cb77ec.mp3",
-      "bytes": 33840,
-      "sha256": "f21be2c16921dec9f48ab4e849ff148883e2d21d39d5047adab21b248ce26bb0"
-    },
-    {
-      "url": "/voice-game-v1/e97b93cb97bedbc3e163.mp3",
-      "bytes": 15696,
-      "sha256": "0a4c4cfb03835c371914c98ff4fa2bcfdc76d9bcba78def9e960810c02b0d74e"
     },
     {
       "url": "/voice-game-v1/e996ccf0c18a2a537964.mp3",
@@ -7188,11 +7188,6 @@
       "sha256": "0b53ec5820ca0d4ba00b108cc131678445e33f5d65e216e5d716f6695b2e0c91"
     },
     {
-      "url": "/voice-game-v1/f4c5924528f73f8d5d4b.mp3",
-      "bytes": 43344,
-      "sha256": "8421ab639dd88c3c2422fed8f5318f00ec25a8fdd6a81e9321acde8922eb6eff"
-    },
-    {
       "url": "/voice-game-v1/fba9219de2506c11876d.mp3",
       "bytes": 12528,
       "sha256": "3d2a2815d4007fe70fcec900de430135ba7e27ba6e45177f1f4f808bfc771859"
@@ -7201,11 +7196,6 @@
       "url": "/voice-game-v1/fe232c7e02a636321eca.mp3",
       "bytes": 12528,
       "sha256": "2feddf33cee80d72b6a2dff0e8d791d4e2f3e1b36a0c9b6e80efa8c7351d6689"
-    },
-    {
-      "url": "/voice-game-v1/fedbf96bcd0133ccd990.mp3",
-      "bytes": 30960,
-      "sha256": "e9cdf91b7ef3c1a03912ef425aef961e29fb3f445794b2b7ce5d05ef8a236628"
     },
     {
       "url": "/voice-home-video-v1/1aee0713bbe222df7b99.mp3",
@@ -7528,11 +7518,6 @@
       "sha256": "2fe96ddbb24d9d7b3169381a31e22e4d34095d5dc52cfc8f5215ef12a0ec84f2"
     },
     {
-      "url": "/voice-new-games-v1/22239f5d5fd646849da8.mp3",
-      "bytes": 40032,
-      "sha256": "877f115b543fa32e614f4ea7867b96b8a1deb713261e543b30751259b365497e"
-    },
-    {
       "url": "/voice-new-games-v1/39407d906bbc38b84c5a.mp3",
       "bytes": 11520,
       "sha256": "e57d069c92e1513e230f7855b19a03beb3e53753f07accbca5d6b65ab6381dac"
@@ -7553,11 +7538,6 @@
       "sha256": "83e705a8e2a709ede5ce4702cddd1faff3b6e9fdb0916d2ff580ecac6a011aa0"
     },
     {
-      "url": "/voice-new-games-v1/51ac8394f054245ece80.mp3",
-      "bytes": 52848,
-      "sha256": "90ba0800b5c39384f9b47d54670119613f429fe947e6b6dfc998c37e2086c28a"
-    },
-    {
       "url": "/voice-new-games-v1/56411e9abd51cbedb616.mp3",
       "bytes": 21600,
       "sha256": "1faad9cc719d92a7794e1b993bfac7f3b2965462186cfcafa518eb391f7e462f"
@@ -7568,19 +7548,9 @@
       "sha256": "dd6767fcdeee658e666792b8a4e4f6600b62c5140b94477147d780dd9717228f"
     },
     {
-      "url": "/voice-new-games-v1/77563a3ab0120c78779a.mp3",
-      "bytes": 47520,
-      "sha256": "a6c0f83f741764a9524c6ceb2c12c4f3ffcab0f298cbae83202f571c33cae107"
-    },
-    {
       "url": "/voice-new-games-v1/81c7ff59e579e973b269.mp3",
       "bytes": 25776,
       "sha256": "ba08ec456546ad997fac612b256a435584a9df30eb7f0a822ce32a824cfc2a26"
-    },
-    {
-      "url": "/voice-new-games-v1/93a9c8bb060d0b5e9cea.mp3",
-      "bytes": 55872,
-      "sha256": "3e685fe23d5117fcbddeaefa69d6acdc7c0c34912f59704a641c11e3d435d2b0"
     },
     {
       "url": "/voice-new-games-v1/94cabe424f143abe7028.mp3",
@@ -7591,16 +7561,6 @@
       "url": "/voice-new-games-v1/9607693de4249e19e966.mp3",
       "bytes": 25488,
       "sha256": "bbfe2fc3376fdfec77cf734e5590de148db6db07ddaa1c953b9fee31ac64b6d7"
-    },
-    {
-      "url": "/voice-new-games-v1/9f268c92ccd55c8f3c5b.mp3",
-      "bytes": 44784,
-      "sha256": "e2564e8ff28c06f146600c14d9b13134167f6df5fea5cd3c196e0a96c13da5bb"
-    },
-    {
-      "url": "/voice-new-games-v1/a3ed81dafe9c0475a0ed.mp3",
-      "bytes": 53424,
-      "sha256": "52868bae05dbd23894848c351d5d4c2915ae4439957c2dd6f53789f7a5c3b996"
     },
     {
       "url": "/voice-new-games-v1/a4c42012ad8d53b924e6.mp3",
@@ -7636,6 +7596,71 @@
       "url": "/voice-new-games-v1/f4142d9fec42f97fdc1e.mp3",
       "bytes": 18576,
       "sha256": "e16afba0a8cb37601049b85d69cf3d410773a497736ba534a629f7be66de41b1"
+    },
+    {
+      "url": "/voice-princess-v4/ariel-hello.mp3",
+      "bytes": 56448,
+      "sha256": "7cee8969151d3719c62b948f5e57365bea1a09bdaf4f8d0dca3a66188f78133b"
+    },
+    {
+      "url": "/voice-princess-v4/aurora-hello.mp3",
+      "bytes": 57600,
+      "sha256": "bdb91a101227370701092317639f520130bcc5befd17353780730cb97764e694"
+    },
+    {
+      "url": "/voice-princess-v4/belle-hello.mp3",
+      "bytes": 57600,
+      "sha256": "4861895df6e8d0c2c56d41fdbb1499f46f135f84d5c9e68cdc91a8a81abf22c5"
+    },
+    {
+      "url": "/voice-princess-v4/cinderella-hello.mp3",
+      "bytes": 57312,
+      "sha256": "babd389cb1d6f6e2587384709eb62052dc518d3e9bd4cac83e81f243cd728b07"
+    },
+    {
+      "url": "/voice-princess-v4/friend-reply.mp3",
+      "bytes": 27648,
+      "sha256": "8fe28fc99eb445abbfd382961f0902bbc0e1486b10585264772991e1c0bc5537"
+    },
+    {
+      "url": "/voice-princess-v4/ice-hello.mp3",
+      "bytes": 58896,
+      "sha256": "2ab0be48ff1672a99b40c5ee2972a10b6a4c26ca1dd79a7ac0ed3aa444af66fd"
+    },
+    {
+      "url": "/voice-princess-v4/ice-reply.mp3",
+      "bytes": 27648,
+      "sha256": "8fe28fc99eb445abbfd382961f0902bbc0e1486b10585264772991e1c0bc5537"
+    },
+    {
+      "url": "/voice-princess-v4/jasmine-hello.mp3",
+      "bytes": 58608,
+      "sha256": "b1c256147c251860aa5a0b0c7896a0a9e8aa046aee14f159d1e91f7cd7d3e5cc"
+    },
+    {
+      "url": "/voice-princess-v4/mulan-hello.mp3",
+      "bytes": 57168,
+      "sha256": "09861e133ffa640ad7f51eebccc42fc2e120c7263af349de257cdee27c54741f"
+    },
+    {
+      "url": "/voice-princess-v4/rapunzel-hello.mp3",
+      "bytes": 58608,
+      "sha256": "6f062629cf11c521adc64ba350ffee773076a6f0b4fdd8fb25ad4355a9fff353"
+    },
+    {
+      "url": "/voice-princess-v4/snow-hello.mp3",
+      "bytes": 58752,
+      "sha256": "2d6ac9388df03dce4ef5a71e95386de7729d5fcbc0d2347edf0769b7d2e3999e"
+    },
+    {
+      "url": "/voice-princess-v4/snow-reply.mp3",
+      "bytes": 27648,
+      "sha256": "8fe28fc99eb445abbfd382961f0902bbc0e1486b10585264772991e1c0bc5537"
+    },
+    {
+      "url": "/voice-princess-v4/tiana-hello.mp3",
+      "bytes": 57168,
+      "sha256": "3d35c3f8d9968a1a12feeb50cc87b89053999d27fa3e90af172cc192f66df29a"
     },
     {
       "url": "/voice-recognition-v1/004f4817e623b72318da.mp3",

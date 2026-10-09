@@ -10,7 +10,7 @@ const modelInputs = [
   'books.js', 'books-extra.js', 'books-new-adventures.js', 'story-art-map.js',
   'books-tablet-stories.js', 'voice-map.js', 'modern-voice-map.js',
   'challenge-voice-map.js', 'video-voice-map.js', 'creative-voice-map.js',
-  'writing-voice-map.js', 'tablet-story-voice-map.js', 'cozy-voice-map.js'
+  'writing-voice-map.js', 'tablet-story-voice-map.js', 'cozy-voice-map.js', 'natural-game-voice-map.js'
 ];
 
 function assertFile(root, relative) {
@@ -55,7 +55,7 @@ function walkMedia(root, folder, extensions) {
 
 function validateBundle(root) {
   const bundle = JSON.parse(fs.readFileSync(assertFile(root, 'app-assets/manifest.json'), 'utf8'));
-  for (const record of [bundle.js, bundle.css]) {
+  for (const record of [bundle.js, bundle.css, bundle.voices]) {
     if (!record || !/^app-assets\/app-[a-f0-9]{16}\.(js|css)$/.test(record.file)) throw new Error('Content-hashed browser bundle is required');
     if (sha256(fs.readFileSync(assertFile(root, record.file))) !== record.sha256) throw new Error(`Browser bundle hash differs: ${record.file}`);
     for (const input of record.inputs) {
@@ -96,10 +96,10 @@ function collectRuntimeAssets(root) {
   for (const file of walkMedia(root, 'assets', new Set(['.webp', '.svg']))) add(file, 'recognition');
   for (const file of walkMedia(root, 'img/coloring', new Set(['.png']))) add(file, 'coloring');
   for (const file of walkMedia(root, 'princess-assets', new Set(['.png']))) add(file, 'princess');
-  for (const file of walkMedia(root, 'princess-voices', new Set(['.mp3']))) add(file, 'princess');
+  for (const file of walkMedia(root, 'voice-princess-v4', new Set(['.mp3']))) add(file, 'princess');
   for (const file of walkMedia(root, 'little-artist', new Set(['.js','.css']))) add(file, 'drawing');
   add('offline/artist.html','drawing');
-  for (const file of ['img/icon-180.png', 'img/icon-512.png', 'img/dino/dino_01/page1.webp', bundle.js.file, bundle.css.file]) add(file, 'shell');
+  for (const file of ['img/icon-180.png', 'img/icon-512.png', 'img/dino/dino_01/page1.webp', bundle.js.file, bundle.css.file, bundle.voices.file]) add(file, 'shell');
   const files = [...groups.keys()].sort();
   const modules = {};
   for (const [file, names] of groups) for (const name of names) {
