@@ -1,0 +1,68 @@
+/* Short, compositor-friendly cues keep answers clear without delaying play. */
+:where(.home-function-card,.game-choice,.game-category,.answer,.course-answers button,
+  .cozy-tools button,.garden-tools button,.princess-choice,.bottom-nav button,
+  .topbar .round-btn,.home-guide,.book,.ws-top-actions button,
+  .ws-number-menu button,.ws-board-tools button,.ws-bottom-nav button,
+  .ms-action-row button){touch-action:manipulation;
+  transition:transform .16s cubic-bezier(.2,.8,.2,1)}
+:where(.home-function-card,.game-choice,.game-category,.answer,.course-answers button,
+  .cozy-tools button,.garden-tools button,.princess-choice,.bottom-nav button,
+  .topbar .round-btn,.home-guide,.book,.ws-top-actions button,
+  .ws-number-menu button,.ws-board-tools button,.ws-bottom-nav button,
+  .ms-action-row button):active{transform:scale(.97)}
+.answer.good,.course-answers button.good{animation:answerHappy .34s cubic-bezier(.2,.8,.2,1)}
+.answer.bad,.course-answers button.bad{animation:answerEncourage .32s ease-out}
+.stars b{display:inline-block;transform-origin:center}
+.reward-count-pop{animation:rewardCount .42s cubic-bezier(.2,.8,.2,1)}
+.reward-burst{position:fixed;left:50%;top:37%;z-index:120;width:0;height:0;
+  pointer-events:none;user-select:none;color:#ffbd39;text-shadow:0 2px 4px #9158224d}
+.reward-burst span,.reward-burst b{position:absolute;left:0;top:0;display:block;
+  transform:translate(-50%,-50%);font-style:normal}
+.reward-burst span{font-size:27px;opacity:0;
+  animation:rewardParticle .76s cubic-bezier(.18,.7,.2,1) var(--delay) both}
+.reward-burst b{font-size:61px;animation:rewardCenter .68s cubic-bezier(.2,.8,.2,1) both}
+@keyframes answerHappy{35%{transform:scale(1.045)}70%{transform:scale(.985)}}
+@keyframes answerEncourage{35%{transform:translateX(-4px)}70%{transform:translateX(3px)}}
+@keyframes rewardCount{45%{transform:scale(1.3)}}
+@keyframes rewardParticle{0%{opacity:0;transform:translate(-50%,-50%) scale(.45)}
+  20%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(1.05)}}
+@keyframes rewardCenter{0%{opacity:0;transform:translate(-50%,-50%) scale(.5)}
+  42%{opacity:1;transform:translate(-50%,-50%) scale(1.15)}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(1)}}
+/* Keep the pet's chase and the ball on compositor-friendly transforms. */
+.scene-sport{--pet-run:clamp(56px,17vw,120px);--ball-hop:90px;
+  --ball-hop-mid:76px;--ball-hop-small:60px}
+.playing-cozy-game .scene-sport.scene-active .pet-roamer{
+  animation:motionPetFetch 9s ease-in-out both}
+.scene-sport.scene-active .scene-ball{animation:motionCourtBall 9s ease-in-out both}
+.scene-active .scene-spoon{animation:motionSpoon 1.5s ease-in-out 6}
+@keyframes motionPetFetch{
+  0%,8%,78%,100%{transform:translateX(-50%)}
+  25%,65%{transform:translateX(calc(-50% + var(--pet-run)))}
+  48%{transform:translateX(calc(-50% - var(--pet-run)))}
+}
+@keyframes motionCourtBall{
+  0%,100%{transform:translateX(-50%) rotate(0)}
+  10%{transform:translateX(calc(-50% + clamp(52px,16vw,128px))) translateY(calc(0px - var(--ball-hop))) rotate(70deg)}
+  20%{transform:translateX(calc(-50% + clamp(52px,16vw,128px))) rotate(140deg)}
+  32%{transform:translateX(calc(-50% - clamp(128px,40vw,320px))) translateY(calc(0px - var(--ball-hop-mid))) rotate(220deg)}
+  43%{transform:translateX(calc(-50% - clamp(128px,40vw,320px))) rotate(280deg)}
+  55%{transform:translateX(calc(-50% + clamp(32px,10vw,80px))) translateY(calc(0px - var(--ball-hop-mid))) rotate(360deg)}
+  63%{transform:translateX(calc(-50% + clamp(32px,10vw,80px))) rotate(420deg)}
+  70%{transform:translateX(calc(-50% - clamp(12px,4vw,32px))) translateY(calc(0px - var(--ball-hop-small))) rotate(510deg)}
+  78%,85%{transform:translateX(calc(-50% - clamp(40px,12vw,96px))) translateY(calc(0px - var(--ball-hop-small))) rotate(600deg)}
+}
+@keyframes motionSpoon{0%,100%{transform:rotate(-15deg)}
+  45%,65%{transform:translate(-20px,-45px) rotate(12deg)}}
+@media(max-width:600px){.scene-sport{--ball-hop:74px;--ball-hop-mid:63px;
+  --ball-hop-small:50px}}
+body.motion-paused *,body.motion-paused *::before,body.motion-paused *::after{
+  animation-play-state:paused!important}
+body.motion-lite *,body.motion-lite *::before,body.motion-lite *::after{
+  animation-iteration-count:1!important}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;
+    animation-iteration-count:1!important;transition-duration:.01ms!important;
+    scroll-behavior:auto!important}
+  .reward-burst{display:none}
+}
