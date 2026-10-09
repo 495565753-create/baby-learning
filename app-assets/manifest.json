@@ -1,10 +1,10 @@
 {
   "format": 1,
   "js": {
-    "file": "app-assets/app-0cec4d451e1dd93e.js",
-    "sha256": "0cec4d451e1dd93e68620178e84c07b6f5ad5a143ddc07dc864ee005e33255c9",
-    "bytes": 604972,
-    "gzip_bytes": 195593,
+    "file": "app-assets/app-cba16d8bbced9d51.js",
+    "sha256": "cba16d8bbced9d5174f73daefcae60506b21616814a5d1e6ff0469bf76f760c5",
+    "bytes": 605273,
+    "gzip_bytes": 195669,
     "inputs": [
       {
         "file": "voice-loader.js",
@@ -98,8 +98,8 @@
       },
       {
         "file": "cozy-games.js",
-        "bytes": 12977,
-        "sha256": "bf055eb203d4b7e6c20e624ebdac8266fe951198a2c62188595c26937f5f31ce"
+        "bytes": 13281,
+        "sha256": "913ab9a546f2cf79ab01e5ecc567ea82f44d95ce83e2712c4cd9205e6a349e07"
       },
       {
         "file": "kid.js",
