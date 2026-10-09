@@ -1,10 +1,10 @@
 {
   "format": 1,
   "js": {
-    "file": "app-assets/app-a57ac74c7b5ac347.js",
-    "sha256": "a57ac74c7b5ac347a06e14433bd58e459bae6844e495ca8019a72e51a9c5a79a",
-    "bytes": 887367,
-    "gzip_bytes": 298858,
+    "file": "app-assets/app-61baea9f0d65ab3a.js",
+    "sha256": "61baea9f0d65ab3a0674879b6fcf963218be765a6661be3acf4e4de397770ce6",
+    "bytes": 887369,
+    "gzip_bytes": 298854,
     "inputs": [
       {
         "file": "books.js",
@@ -133,8 +133,8 @@
       },
       {
         "file": "cozy-games.js",
-        "bytes": 7854,
-        "sha256": "1b49caab66c1e6634f9b77fe7ec7995556c2011cb3d40412a262c21686d5110a"
+        "bytes": 7856,
+        "sha256": "d571e967d19ac3780ff2be286b4116e19a14ce975a06cc1042fca29eadd7b6ee"
       },
       {
         "file": "kid.js",

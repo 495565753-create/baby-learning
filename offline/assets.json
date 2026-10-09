@@ -1,6 +1,6 @@
 {
-  "version": "658bea29ab134e20",
-  "totalBytes": 144592498,
+  "version": "0a236c5d489c8929",
+  "totalBytes": 144592500,
   "files": [
     {
       "url": "/app-assets/app-49806abc82bc5bc3.css",
@@ -8,9 +8,9 @@
       "sha256": "49806abc82bc5bc3511f69258bc617984987a672218f5f74a293b95e500e4b6d"
     },
     {
-      "url": "/app-assets/app-a57ac74c7b5ac347.js",
-      "bytes": 887367,
-      "sha256": "a57ac74c7b5ac347a06e14433bd58e459bae6844e495ca8019a72e51a9c5a79a"
+      "url": "/app-assets/app-61baea9f0d65ab3a.js",
+      "bytes": 887369,
+      "sha256": "61baea9f0d65ab3a0674879b6fcf963218be765a6661be3acf4e4de397770ce6"
     },
     {
       "url": "/art/adventures-v1/adventure_paw_01/page1.webp",
@@ -3740,7 +3740,7 @@
     {
       "url": "/offline/play.html",
       "bytes": 2307,
-      "sha256": "d4de6a2c384b407543c11525e4f09232726500f4477776cd0a8bfe5b682ee6f2"
+      "sha256": "cec8351cb57a723dea37683c38d0c3005820372ff2ea8f37923c8b6d652028fa"
     },
     {
       "url": "/princess-assets/ariel-cry-v3.png",
