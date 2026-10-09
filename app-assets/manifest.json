@@ -1,10 +1,10 @@
 {
   "format": 1,
   "js": {
-    "file": "app-assets/app-a7b78b9a11ee33d7.js",
-    "sha256": "a7b78b9a11ee33d7dc29a55eab06a47bffd12ac532072633e2be06a2a12591d7",
-    "bytes": 654755,
-    "gzip_bytes": 213326,
+    "file": "app-assets/app-d53b08c20729838d.js",
+    "sha256": "d53b08c20729838d574ef85ecf2ee5e788fd02604d5321cab08eb81d8e1b070e",
+    "bytes": 654929,
+    "gzip_bytes": 213404,
     "inputs": [
       {
         "file": "voice-loader.js",
@@ -108,8 +108,8 @@
       },
       {
         "file": "cozy-games.js",
-        "bytes": 19656,
-        "sha256": "1d29b3c673667a163dc6f287adf69debdcd1e28903d5eea4b0a1bf33a29052a8"
+        "bytes": 19831,
+        "sha256": "51e946c16690c6f40ff87923c010ca8d8f7affd1cfe30fef00a4af04af68efca"
       },
       {
         "file": "motion-feedback.js",
@@ -124,10 +124,10 @@
     ]
   },
   "css": {
-    "file": "app-assets/app-0003ca1fb0c4ed7c.css",
-    "sha256": "0003ca1fb0c4ed7cedb929a1c0409d7d7ae1e71927bb54cf86c46bc5fcdb00cb",
-    "bytes": 254966,
-    "gzip_bytes": 52075,
+    "file": "app-assets/app-770ed39fce4dd2da.css",
+    "sha256": "770ed39fce4dd2da04b45d075f8cb15286d270a07a7d590037fc67ce434c9091",
+    "bytes": 256706,
+    "gzip_bytes": 52348,
     "inputs": [
       {
         "file": "kid.css",
@@ -211,8 +211,8 @@
       },
       {
         "file": "pet-home-v2.css",
-        "bytes": 9694,
-        "sha256": "ec2ce32bab95c2cb27437c209e51e70f765bb58f028761bf47ebad1e54074c0d"
+        "bytes": 11504,
+        "sha256": "633fa2c09e5dad0028a5140832a39fb74d2668f20880feb10074d186bf0a6dc4"
       }
     ]
   },
