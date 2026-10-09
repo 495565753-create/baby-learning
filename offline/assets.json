@@ -1,21 +1,21 @@
 {
-  "version": "aba9cd18b6fd9458",
-  "totalBytes": 175709826,
+  "version": "f14b8940b870280d",
+  "totalBytes": 177121895,
   "files": [
     {
-      "url": "/app-assets/app-0003ca1fb0c4ed7c.css",
-      "bytes": 254966,
-      "sha256": "0003ca1fb0c4ed7cedb929a1c0409d7d7ae1e71927bb54cf86c46bc5fcdb00cb"
+      "url": "/app-assets/app-2c4debe88ac35094.css",
+      "bytes": 255417,
+      "sha256": "2c4debe88ac35094f04b1bc19c1994616bc442564119f0bba19f1d15fd6104c4"
+    },
+    {
+      "url": "/app-assets/app-45018626b93dbe38.js",
+      "bytes": 656329,
+      "sha256": "45018626b93dbe38d0c339cdcd428805eecb7969c4f66d9ccd396827e7487336"
     },
     {
       "url": "/app-assets/app-a040def3cfa5c958.js",
       "bytes": 365667,
       "sha256": "a040def3cfa5c958933b381c62a5a49b6f0176eee0be34ae4e159a0f5ba656bb"
-    },
-    {
-      "url": "/app-assets/app-a7b78b9a11ee33d7.js",
-      "bytes": 654755,
-      "sha256": "a7b78b9a11ee33d7dc29a55eab06a47bffd12ac532072633e2be06a2a12591d7"
     },
     {
       "url": "/art/adventures-v1/adventure_paw_01/page1.webp",
@@ -796,36 +796,6 @@
       "url": "/art/adventures-v1/adventure_zootopia_06/page6.webp",
       "bytes": 55468,
       "sha256": "52c52ac4fb76b0a9dbf2bc865f1d98cf32f4ba3f4c84e942aa5d6a80be57d675"
-    },
-    {
-      "url": "/art/adventures-v1/adventure_zootopia_07/page1.webp",
-      "bytes": 42754,
-      "sha256": "c4a6277c3727f443e148278af591f83fae38e573fe73af746768b41722d6feec"
-    },
-    {
-      "url": "/art/adventures-v1/adventure_zootopia_07/page2.webp",
-      "bytes": 48122,
-      "sha256": "7be6a5f6362e1735dc0038600ce775c31b15040221a168d6754f2a57f72eaf70"
-    },
-    {
-      "url": "/art/adventures-v1/adventure_zootopia_07/page3.webp",
-      "bytes": 51376,
-      "sha256": "62222df72cf56ad90083c9364a76f06e56e550d4eaeb01fb764839f0264922f9"
-    },
-    {
-      "url": "/art/adventures-v1/adventure_zootopia_07/page4.webp",
-      "bytes": 24940,
-      "sha256": "8efd3d975b585dd9e3ac70ce1713887577da5259b7a8476ff3b35a015bb915f0"
-    },
-    {
-      "url": "/art/adventures-v1/adventure_zootopia_07/page5.webp",
-      "bytes": 49756,
-      "sha256": "3e6aebd15a6070630d52e06cf068ba55a6c5b7236f428f48ee6c83e3a54f9b17"
-    },
-    {
-      "url": "/art/adventures-v1/adventure_zootopia_07/page6.webp",
-      "bytes": 41520,
-      "sha256": "a5ec4b66c67a41f36f634340420bf1638a8099a2d68665e8d8b24bbd66237322"
     },
     {
       "url": "/art/adventures-v1/adventure_zootopia_08/page1.webp",
@@ -1958,6 +1928,181 @@
       "sha256": "6a80a6f93512f996e0da91ce3ff19e3855bb055c05f168ce3e5c65bcbe4a2467"
     },
     {
+      "url": "/art/story-quality-v2/adventure_zootopia_07/cover.webp",
+      "bytes": 18606,
+      "sha256": "128124814aabccfeb7c4ce839eeb6b6fa6c0cd499235e8ea97807b6366de5024"
+    },
+    {
+      "url": "/art/story-quality-v2/adventure_zootopia_07/page1.webp",
+      "bytes": 66178,
+      "sha256": "8b9169f4a964a958f7959f73ca517fcedef5157fad71b42e52c6509535a5f46e"
+    },
+    {
+      "url": "/art/story-quality-v2/adventure_zootopia_07/page2.webp",
+      "bytes": 76364,
+      "sha256": "145018c733a882d9445d839b5dff438b4a1391d721c6e435028c321e00935952"
+    },
+    {
+      "url": "/art/story-quality-v2/adventure_zootopia_07/page3.webp",
+      "bytes": 62756,
+      "sha256": "77b4b287ace068579f04c507cf89d75f19dda5534e90cb717e6118523812fd75"
+    },
+    {
+      "url": "/art/story-quality-v2/adventure_zootopia_07/page4.webp",
+      "bytes": 68774,
+      "sha256": "c188fba651f659ea0e837d3746bc6c4d4aed32b98ec43a1c0758ca8396fac6a4"
+    },
+    {
+      "url": "/art/story-quality-v2/adventure_zootopia_07/page5.webp",
+      "bytes": 62976,
+      "sha256": "e7e8ea4991e4a3ce8112fb6884c0a258f266463ee45ebf7977a3bd1d0e83eb06"
+    },
+    {
+      "url": "/art/story-quality-v2/adventure_zootopia_07/page6.webp",
+      "bytes": 70598,
+      "sha256": "54405797b4e954895eb53c551bb7011aaf1b333cee371f5ee22d1fd038a4794c"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_elsa_snowfox/cover.webp",
+      "bytes": 29992,
+      "sha256": "a1aa12d2135b8b63f07c832e91936693787a7b11b69dda6c2183b40017c11cc7"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_elsa_snowfox/page1.webp",
+      "bytes": 118090,
+      "sha256": "aa595bcdea551f31856b0b780bde8c581f1948edf6914fff7a21b1b25192e43b"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_elsa_snowfox/page2.webp",
+      "bytes": 122226,
+      "sha256": "63f5e4f075667b33a953a116a51c86b3f01934e2ebccb3086c194d85ffd8900c"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_elsa_snowfox/page3.webp",
+      "bytes": 126312,
+      "sha256": "b6b1380989f97974f23ec4f7a3f54e5ad380cecd08f2e63f4ec6c5e76c6a9d82"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_elsa_snowfox/page4.webp",
+      "bytes": 123268,
+      "sha256": "9f5eacc680747a06e02b6c395ae44a0102e7e6cde8fefb6cda78987301b06a24"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_elsa_snowfox/page5.webp",
+      "bytes": 120850,
+      "sha256": "dce07391ab0afd8a1101c47872a49acacddee997851c34f3ad7a6cea87c08c84"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_elsa_snowfox/page6.webp",
+      "bytes": 137400,
+      "sha256": "99539302fcdc17f6251e3637da9071fc46b4b70debd7ef15ca81e5c0ac98e807"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_elsa_snowlight/cover.webp",
+      "bytes": 35228,
+      "sha256": "bd88688eef6960c0786c49775ea20c419cc875e6e0291e8644aef2a0f26fac7c"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_elsa_snowlight/page1.webp",
+      "bytes": 138676,
+      "sha256": "db34a17171d4d76f5b0bae24223e34603c57d00e8d4c5b38930ed4a669347e96"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_elsa_snowlight/page2.webp",
+      "bytes": 95212,
+      "sha256": "9e858fe3119d35ec605a4b1b4a814a2f07469fd8a03291ec6aad6b2c825f9546"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_elsa_snowlight/page3.webp",
+      "bytes": 156730,
+      "sha256": "8b3f7bb6f100076008c4a47539a70d578977dc9e87d3f5df20534c2b61799e81"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_elsa_snowlight/page4.webp",
+      "bytes": 94996,
+      "sha256": "fcc9493a4e0afdeef76a686338087efa799aa6ac88c91a71b7197e3680601edd"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_elsa_snowlight/page5.webp",
+      "bytes": 118166,
+      "sha256": "0a819027557fb75bade1ac2715dda1819723a99ef20043e1ff3764f033017d43"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_elsa_snowlight/page6.webp",
+      "bytes": 111692,
+      "sha256": "3b706963f6875542b62adee8b67927a882c71bfbd83e9dafeceea39f74dab11a"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_princess_cinderella/cover.webp",
+      "bytes": 25406,
+      "sha256": "a0d449f4a57773afcfdcdd15f864f7450dbce1026afb244991c87d21e95788a5"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_princess_cinderella/page1.webp",
+      "bytes": 103410,
+      "sha256": "4e02a85fd00457c8200634571ec3d48403d9ec70b153f603d68ce78c7537fd6b"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_princess_cinderella/page2.webp",
+      "bytes": 158354,
+      "sha256": "079cf851d4a7dbbeb8ce733c6265a1a8489809250e6cd25e3e183b262d587e06"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_princess_cinderella/page3.webp",
+      "bytes": 114152,
+      "sha256": "110e7e2a3ca644b22fb4008e6d25ab8f9ab65323eca4ea290116c321c42fc97f"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_princess_cinderella/page4.webp",
+      "bytes": 120880,
+      "sha256": "313ebac1dda337f0d90b516c18126d5010f59f83fcc33ddcb3f1b5e10189aae1"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_princess_cinderella/page5.webp",
+      "bytes": 101848,
+      "sha256": "1284a0ccbca3ded810c786dfa96bb1e761c7891855a385438c8d925b660b1184"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_princess_cinderella/page6.webp",
+      "bytes": 147404,
+      "sha256": "41a0fbac40a44442729cc50e65605b8723b94b5014b1d48184e9ba78d00403b8"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_princess_snowwhite/cover.webp",
+      "bytes": 27430,
+      "sha256": "ae7cee0cda8fcb7b273c4324430095ef3cecdd1f534d40bf253c477f7d0e6a79"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_princess_snowwhite/page1.webp",
+      "bytes": 97752,
+      "sha256": "f0a5371f90035a30b96b7683f47d19367c9f45c087fb90cbdd7a73a94f5b2c65"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_princess_snowwhite/page2.webp",
+      "bytes": 98402,
+      "sha256": "b466203f54ce4eec353c4974a7419c7dcc88864a862eea13acaa46e6a9f6f6ec"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_princess_snowwhite/page3.webp",
+      "bytes": 123430,
+      "sha256": "41798d3018e9e56e5510559cb7cadb1acaf04b27291b2fe5d1bc31da3d7cb17f"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_princess_snowwhite/page4.webp",
+      "bytes": 92534,
+      "sha256": "c94a5198f9421c426288bdf9dd43edcf7dacf7429bfdc8ec03efb13948ecd413"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_princess_snowwhite/page5.webp",
+      "bytes": 100274,
+      "sha256": "df802c311e5156d0199ab3d22106103ad106420c8cc469a55f589f4c87004945"
+    },
+    {
+      "url": "/art/story-quality-v2/extra_princess_snowwhite/page6.webp",
+      "bytes": 96178,
+      "sha256": "65b519c8987f30e9fb8fe5534e085743cdb6ea1f816271a080864a3ad8d9f5da"
+    },
+    {
       "url": "/art/story-refresh-v1/dino_01/page1.webp",
       "bytes": 53460,
       "sha256": "09825973f5811cae71631e6dc7cef7e7a45db9ecdba26fb654341f465a0f3d92"
@@ -2168,66 +2313,6 @@
       "sha256": "fba37e6deac929142d78a135d3748c7296c83c6d3a94d4ad4a6503c182376e04"
     },
     {
-      "url": "/art/story-refresh-v1/extra_elsa_snowfox/page1.webp",
-      "bytes": 63164,
-      "sha256": "f16500a8ff876ee7738eafa1901216c80b8e6e5474b454744a56e98d11337f17"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_elsa_snowfox/page2.webp",
-      "bytes": 55634,
-      "sha256": "fb0b0a79b077d3fdca33ab00ca278cf99dbf493b17bbe574e7acb80b52ad2251"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_elsa_snowfox/page3.webp",
-      "bytes": 65648,
-      "sha256": "88e864dce20faf3a2a7aa6ac12d49c71be2f4869960bc3b7476c9e5ec7e17713"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_elsa_snowfox/page4.webp",
-      "bytes": 49928,
-      "sha256": "280fadb63570af442bbede5d0324226338fb450ef5a0a97bdac5950f6a6a57bd"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_elsa_snowfox/page5.webp",
-      "bytes": 51398,
-      "sha256": "6c49c51b6df7bffebca054a1cd4a06997b0d60b35ff5b8c5d731645a37fd51ce"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_elsa_snowfox/page6.webp",
-      "bytes": 64708,
-      "sha256": "74ffdf6b5348f668d4db051e3f727e26b1d2e7989b7af18a9dfc7bb587e0dc36"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_elsa_snowlight/page1.webp",
-      "bytes": 57350,
-      "sha256": "8a32070c9f49968a6734504150c624702d2bdad096a935e4cc3208b661df8318"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_elsa_snowlight/page2.webp",
-      "bytes": 35658,
-      "sha256": "81b670b00db31f322c2d2a3451d1598f4ba1636df54055a51d5b9b79f09cc22b"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_elsa_snowlight/page3.webp",
-      "bytes": 61234,
-      "sha256": "854002d48b967510843730563e3b9c9176adaee181674f3495096db549ed1651"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_elsa_snowlight/page4.webp",
-      "bytes": 37302,
-      "sha256": "93dbab54c990c1ce1df259c34f4fbd901f31bd5a3e2771751facdd1eb553efb1"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_elsa_snowlight/page5.webp",
-      "bytes": 56146,
-      "sha256": "13900eb08bf51a2da08dfe875efe6eee9913e78cf9e672574f4b750463ed0763"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_elsa_snowlight/page6.webp",
-      "bytes": 38016,
-      "sha256": "f762b3de8a8a71aa5666c6a20daf40d9602f1c06dabdc3ef21500f3912fb18b5"
-    },
-    {
       "url": "/art/story-refresh-v1/extra_life_backpack/page1.webp",
       "bytes": 50524,
       "sha256": "ab82b2235d1527c284a9567c3cc46636a2e812376e69c6dcbe0096f4d0f0bedb"
@@ -2376,66 +2461,6 @@
       "url": "/art/story-refresh-v1/extra_poem_yonge/page6.webp",
       "bytes": 64028,
       "sha256": "53967117b0498d43955d75672d9a2c2e93537b4d49ce225b048869574fdfceb2"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_princess_cinderella/page1.webp",
-      "bytes": 64626,
-      "sha256": "e6f49344d47f1efb99d4f385ad874fa905530e1739f71d492b958dea4af0d073"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_princess_cinderella/page2.webp",
-      "bytes": 97892,
-      "sha256": "93f7c11e20e518639ef2ec494b43d37b79a862a6ac470c59ef80ae9f83d4ec3c"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_princess_cinderella/page3.webp",
-      "bytes": 92686,
-      "sha256": "95a7998f53011aaae37a3c9c84e96ed6e6b2e478014b84b2a561bddb14a4621a"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_princess_cinderella/page4.webp",
-      "bytes": 66338,
-      "sha256": "51865c85ade989564fc0fbfa72bb4dcd9a6f156d67434080f41c506d4f0e3d8d"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_princess_cinderella/page5.webp",
-      "bytes": 66186,
-      "sha256": "858261af428c954f677cbd61a1ee7a330f9a8c613de1591ee341838820326bed"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_princess_cinderella/page6.webp",
-      "bytes": 99806,
-      "sha256": "a9e971cf91b478175e18f7c89ecdfb717c28e74d42adf397adbc1bf1e6175cde"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_princess_snowwhite/page1.webp",
-      "bytes": 103470,
-      "sha256": "e61bfb3b773d227976989e6b0434107a66b10b8f3b3cc5a97572f51977888b37"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_princess_snowwhite/page2.webp",
-      "bytes": 94226,
-      "sha256": "077239b37cebcc416fee64f3b7ce7d516bf38207a1cc71982b7bd419b6cf10b4"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_princess_snowwhite/page3.webp",
-      "bytes": 96888,
-      "sha256": "38010e76a8a63a266ddca8419f3f749e604c525a1938995c526326aced8ca9b8"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_princess_snowwhite/page4.webp",
-      "bytes": 77746,
-      "sha256": "b6ecf7c6abb2a7ece9e272dcbfbd0b45db2d8f18d7d3b33d35db92fd1e83cea4"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_princess_snowwhite/page5.webp",
-      "bytes": 85534,
-      "sha256": "4924198a92f1bfc7471256b2603bc22ec40791c054de5bbf3cabf3c2dbe9a70f"
-    },
-    {
-      "url": "/art/story-refresh-v1/extra_princess_snowwhite/page6.webp",
-      "bytes": 112448,
-      "sha256": "bddd94443d5bad45fe43b68745efc426d995f46ffc7dd0b805247e28470678f5"
     },
     {
       "url": "/art/story-refresh-v1/extra_zoo_bluehat/page1.webp",
@@ -4785,7 +4810,7 @@
     {
       "url": "/offline/play.html",
       "bytes": 2365,
-      "sha256": "8e9de65ca5b5fae3efb9f041f1254d8bda9607d180f7266ef6d26e975982e5b7"
+      "sha256": "1a716b75da05b72bc37f6c197840d357236399adda0e7085d7333e06f5e099b7"
     },
     {
       "url": "/princess-assets/ariel-cry-v3.png",

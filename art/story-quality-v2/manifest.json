@@ -1,0 +1,748 @@
+{
+  "generator": "built-in image_gen",
+  "style": "original picture-book interpretations; consistent character designs",
+  "book_count": 5,
+  "page_count": 30,
+  "files": [
+    {
+      "book": "adventure_zootopia_07",
+      "page": 1,
+      "text": "动物城儿童剧场要演《月亮回家》，可彩排到最后一幕时，圆圆的月亮影偶怎么也找不到。小演员们举着空空的木杆，舞台帷幕后只剩一片黑色。离正式演出只剩一个小时。",
+      "file": "art/story-quality-v2/adventure_zootopia_07/page1.webp",
+      "bytes": 66178,
+      "sha256": "8b9169f4a964a958f7959f73ca517fcedef5157fad71b42e52c6509535a5f46e",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "adventure_zootopia_07",
+      "page": 2,
+      "text": "朱迪检查道具清单，月亮昨晚还在。尼克注意到工作台上有一圈银色亮粉，亮粉一路延伸到装彩色滤光片的盒子，却没有任何东西掉在地上。这条亮亮的线索很特别。",
+      "file": "art/story-quality-v2/adventure_zootopia_07/page2.webp",
+      "bytes": 76364,
+      "sha256": "145018c733a882d9445d839b5dff438b4a1391d721c6e435028c321e00935952",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "adventure_zootopia_07",
+      "page": 3,
+      "text": "盒子里叠着红、蓝、黄色薄片，最下面还粘着一片透明圆纸。朱迪把它举到灯前，幕布上出现淡淡的圆影。原来月亮不是丢了，而是和透明滤片贴在一起。尼克终于认出了它。",
+      "file": "art/story-quality-v2/adventure_zootopia_07/page3.webp",
+      "bytes": 62756,
+      "sha256": "77b4b287ace068579f04c507cf89d75f19dda5534e90cb717e6118523812fd75",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "adventure_zootopia_07",
+      "page": 4,
+      "text": "尼克把透明圆片装回木杆，可灯一亮，月亮仍然太淡。小演员有点失望。朱迪在圆片边缘贴一圈深色纸，再让灯光稍微靠近，轮廓终于清清楚楚。淡淡的月亮重新变得醒目。",
+      "file": "art/story-quality-v2/adventure_zootopia_07/page4.webp",
+      "bytes": 68774,
+      "sha256": "c188fba651f659ea0e837d3746bc6c4d4aed32b98ec43a1c0758ca8396fac6a4",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "adventure_zootopia_07",
+      "page": 5,
+      "text": "最后一幕重新彩排：透明月亮先躲在蓝云后，慢慢露出银色边缘。尼克轻轻转动滤片，月光从蓝色变成暖黄，小演员们顺利说完了告别台词。舞台帷幕后的伙伴都松了口气。",
+      "file": "art/story-quality-v2/adventure_zootopia_07/page5.webp",
+      "bytes": 62976,
+      "sha256": "e7e8ea4991e4a3ce8112fb6884c0a258f266463ee45ebf7977a3bd1d0e83eb06",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "adventure_zootopia_07",
+      "page": 6,
+      "text": "正式演出时，观众为会变颜色的月亮鼓掌。朱迪把透明道具放进有月亮图案的独立袋。尼克说，有些东西不是消失了，只是和背景太像，需要换个光看看。小演员们也牢牢记住了。",
+      "file": "art/story-quality-v2/adventure_zootopia_07/page6.webp",
+      "bytes": 70598,
+      "sha256": "54405797b4e954895eb53c551bb7011aaf1b333cee371f5ee22d1fd038a4794c",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_elsa_snowfox",
+      "page": 1,
+      "text": "雪后，艾莎和安娜在松林散步，听见树丛里传来细细的叫声。一只小雪狐找不到回家的脚印了。",
+      "file": "art/story-quality-v2/extra_elsa_snowfox/page1.webp",
+      "bytes": 118090,
+      "sha256": "aa595bcdea551f31856b0b780bde8c581f1948edf6914fff7a21b1b25192e43b",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_elsa_snowfox",
+      "page": 2,
+      "text": "艾莎想铺出一条冰路，可小雪狐一踩就打滑。她马上停下，蹲下来看看雪地里还有什么线索。",
+      "file": "art/story-quality-v2/extra_elsa_snowfox/page2.webp",
+      "bytes": 122226,
+      "sha256": "63f5e4f075667b33a953a116a51c86b3f01934e2ebccb3086c194d85ffd8900c",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_elsa_snowfox",
+      "page": 3,
+      "text": "安娜发现松枝上粘着白色绒毛，雪地里还有半个梅花形脚印。她们决定沿着线索慢慢找，不漏掉一处。",
+      "file": "art/story-quality-v2/extra_elsa_snowfox/page3.webp",
+      "bytes": 126312,
+      "sha256": "b6b1380989f97974f23ec4f7a3f54e5ad380cecd08f2e63f4ec6c5e76c6a9d82",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_elsa_snowfox",
+      "page": 4,
+      "text": "风又吹来，脚印快看不见了。艾莎做出一排低低的冰晶路标，让小雪狐能看见方向，却不会滑倒。",
+      "file": "art/story-quality-v2/extra_elsa_snowfox/page4.webp",
+      "bytes": 123268,
+      "sha256": "9f5eacc680747a06e02b6c395ae44a0102e7e6cde8fefb6cda78987301b06a24",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_elsa_snowfox",
+      "page": 5,
+      "text": "越过小山坡，一只大雪狐正在洞口焦急等待。小雪狐跑回妈妈身边，用尾巴向姐妹俩道谢。",
+      "file": "art/story-quality-v2/extra_elsa_snowfox/page5.webp",
+      "bytes": 120850,
+      "sha256": "dce07391ab0afd8a1101c47872a49acacddee997851c34f3ad7a6cea87c08c84",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_elsa_snowfox",
+      "page": 6,
+      "text": "回城的路上，艾莎说，帮助别人要先了解它真正需要什么。安娜点头，把这句话记进了旅行本。",
+      "file": "art/story-quality-v2/extra_elsa_snowfox/page6.webp",
+      "bytes": 137400,
+      "sha256": "99539302fcdc17f6251e3637da9071fc46b4b70debd7ef15ca81e5c0ac98e807",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_elsa_snowlight",
+      "page": 1,
+      "text": "阿伦黛尔要办冬日灯会，艾莎用冰晶做了六盏雪花灯。清晨，她发现最小的一盏正在慢慢融化。",
+      "file": "art/story-quality-v2/extra_elsa_snowlight/page1.webp",
+      "bytes": 138676,
+      "sha256": "db34a17171d4d76f5b0bae24223e34603c57d00e8d4c5b38930ed4a669347e96",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_elsa_snowlight",
+      "page": 2,
+      "text": "艾莎想用更强的寒气冻住它，安娜却指着窗外说，今天阳光很暖，也许小灯需要一把遮阳伞。",
+      "file": "art/story-quality-v2/extra_elsa_snowlight/page2.webp",
+      "bytes": 95212,
+      "sha256": "9e858fe3119d35ec605a4b1b4a814a2f07469fd8a03291ec6aad6b2c825f9546",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_elsa_snowlight",
+      "page": 3,
+      "text": "姐妹俩把雪花灯搬到树荫下，又请孩子们用彩纸做小伞。小灯终于停止融化，大家开心地笑了。",
+      "file": "art/story-quality-v2/extra_elsa_snowlight/page3.webp",
+      "bytes": 156730,
+      "sha256": "8b3f7bb6f100076008c4a47539a70d578977dc9e87d3f5df20534c2b61799e81",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_elsa_snowlight",
+      "page": 4,
+      "text": "傍晚云朵遮住太阳，艾莎只用一点点魔法补好裂纹。她发现细心观察，比一味加大力量更有用。",
+      "file": "art/story-quality-v2/extra_elsa_snowlight/page4.webp",
+      "bytes": 94996,
+      "sha256": "fcc9493a4e0afdeef76a686338087efa799aa6ac88c91a71b7197e3680601edd",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_elsa_snowlight",
+      "page": 5,
+      "text": "六盏灯在广场亮起，冰面映着蓝白色的光。孩子们围着最小的雪花灯，轻轻唱起冬日歌，歌声暖暖的。",
+      "file": "art/story-quality-v2/extra_elsa_snowlight/page5.webp",
+      "bytes": 118166,
+      "sha256": "0a819027557fb75bade1ac2715dda1819723a99ef20043e1ff3764f033017d43",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_elsa_snowlight",
+      "page": 6,
+      "text": "艾莎把小伞留在灯旁，提醒自己先看清需要，再使用魔法。温柔和耐心，也能保护美丽的东西。",
+      "file": "art/story-quality-v2/extra_elsa_snowlight/page6.webp",
+      "bytes": 111692,
+      "sha256": "3b706963f6875542b62adee8b67927a882c71bfbd83e9dafeceea39f74dab11a",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_princess_cinderella",
+      "page": 1,
+      "text": "从前有位善良的姑娘灰姑娘，她每天辛勤做家务，却常被继母和姐姐们欺负，连参加舞会的衣服也没有。",
+      "file": "art/story-quality-v2/extra_princess_cinderella/page1.webp",
+      "bytes": 103410,
+      "sha256": "4e02a85fd00457c8200634571ec3d48403d9ec70b153f603d68ce78c7537fd6b",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_princess_cinderella",
+      "page": 2,
+      "text": "舞会那天，一位仙女教母来到花园。她把南瓜变成马车，又为灰姑娘准备了闪亮的礼服和水晶鞋。",
+      "file": "art/story-quality-v2/extra_princess_cinderella/page2.webp",
+      "bytes": 158354,
+      "sha256": "079cf851d4a7dbbeb8ce733c6265a1a8489809250e6cd25e3e183b262d587e06",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_princess_cinderella",
+      "page": 3,
+      "text": "仙女提醒她，魔法会在午夜十二点消失。灰姑娘来到王宫，与王子跳舞，度过了快乐的夜晚。",
+      "file": "art/story-quality-v2/extra_princess_cinderella/page3.webp",
+      "bytes": 114152,
+      "sha256": "110e7e2a3ca644b22fb4008e6d25ab8f9ab65323eca4ea290116c321c42fc97f",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_princess_cinderella",
+      "page": 4,
+      "text": "钟声响起，灰姑娘急忙离开，一只水晶鞋落在台阶上。马车变回南瓜，她平安跑回了家，没有受伤。",
+      "file": "art/story-quality-v2/extra_princess_cinderella/page4.webp",
+      "bytes": 120880,
+      "sha256": "313ebac1dda337f0d90b516c18126d5010f59f83fcc33ddcb3f1b5e10189aae1",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_princess_cinderella",
+      "page": 5,
+      "text": "王子带着水晶鞋寻找主人。许多人都穿不上，直到灰姑娘轻轻把脚放进去，鞋子正好合适。",
+      "file": "art/story-quality-v2/extra_princess_cinderella/page5.webp",
+      "bytes": 101848,
+      "sha256": "1284a0ccbca3ded810c786dfa96bb1e761c7891855a385438c8d925b660b1184",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_princess_cinderella",
+      "page": 6,
+      "text": "王子认出了舞会上的姑娘。灰姑娘勇敢开始新生活，也始终保持善良，尊重每一位帮助过她的人。",
+      "file": "art/story-quality-v2/extra_princess_cinderella/page6.webp",
+      "bytes": 147404,
+      "sha256": "41a0fbac40a44442729cc50e65605b8723b94b5014b1d48184e9ba78d00403b8",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_princess_snowwhite",
+      "page": 1,
+      "text": "从前有位心地善良的公主，大家叫她白雪公主。王后嫉妒她受人喜爱，命令她离开王宫，独自走进森林。",
+      "file": "art/story-quality-v2/extra_princess_snowwhite/page1.webp",
+      "bytes": 97752,
+      "sha256": "f0a5371f90035a30b96b7683f47d19367c9f45c087fb90cbdd7a73a94f5b2c65",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_princess_snowwhite",
+      "page": 2,
+      "text": "白雪公主走进森林，天黑时发现一座整洁的小屋。屋里住着七位勤劳的小矮人，他们热情收留了她。",
+      "file": "art/story-quality-v2/extra_princess_snowwhite/page2.webp",
+      "bytes": 98402,
+      "sha256": "b466203f54ce4eec353c4974a7419c7dcc88864a862eea13acaa46e6a9f6f6ec",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_princess_snowwhite",
+      "page": 3,
+      "text": "小矮人每天去山里工作，临走前提醒她不要给陌生人开门。白雪公主答应留在屋里等他们回来。",
+      "file": "art/story-quality-v2/extra_princess_snowwhite/page3.webp",
+      "bytes": 123430,
+      "sha256": "41798d3018e9e56e5510559cb7cadb1acaf04b27291b2fe5d1bc31da3d7cb17f",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_princess_snowwhite",
+      "page": 4,
+      "text": "王后乔装成卖苹果的老妇人，递来一个有毒的红苹果。白雪公主忘了提醒，咬一口后沉沉睡去。",
+      "file": "art/story-quality-v2/extra_princess_snowwhite/page4.webp",
+      "bytes": 92534,
+      "sha256": "c94a5198f9421c426288bdf9dd43edcf7dacf7429bfdc8ec03efb13948ecd413",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_princess_snowwhite",
+      "page": 5,
+      "text": "小矮人悲伤地守着她。邻国王子听说后赶来帮忙，抬动水晶棺时，卡在喉咙里的苹果掉了出来。",
+      "file": "art/story-quality-v2/extra_princess_snowwhite/page5.webp",
+      "bytes": 100274,
+      "sha256": "df802c311e5156d0199ab3d22106103ad106420c8cc469a55f589f4c87004945",
+      "size": [
+        720,
+        720
+      ]
+    },
+    {
+      "book": "extra_princess_snowwhite",
+      "page": 6,
+      "text": "白雪公主醒来，感谢朋友们的守护。她也记住了重要的安全规则：不能随便接受陌生人的食物。",
+      "file": "art/story-quality-v2/extra_princess_snowwhite/page6.webp",
+      "bytes": 96178,
+      "sha256": "65b519c8987f30e9fb8fe5534e085743cdb6ea1f816271a080864a3ad8d9f5da",
+      "size": [
+        720,
+        720
+      ]
+    }
+  ],
+  "framed_pages": [
+    {
+      "book": "peppa_05",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_05/page1.webp",
+      "width": 627,
+      "height": 380,
+      "sourceHeight": 418,
+      "sha256": "d012838e0a07d8327c9aab3e8760f620cc4a213e1ad805c47af1e3e53b2f26d7"
+    },
+    {
+      "book": "peppa_05",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_05/page2.webp",
+      "width": 627,
+      "height": 379,
+      "sourceHeight": 418,
+      "sha256": "6fc3c8e7638322d71f5001247158f4dbb89fc6936b2a993fe364189cf62a292e"
+    },
+    {
+      "book": "peppa_05",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_05/page3.webp",
+      "width": 627,
+      "height": 362,
+      "sourceHeight": 418,
+      "sha256": "2d8918b50ab3c8b76394e29af5d63404ac78b14e177f1cb9bb83bb8b0a5aca04"
+    },
+    {
+      "book": "peppa_05",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_05/page4.webp",
+      "width": 627,
+      "height": 362,
+      "sourceHeight": 418,
+      "sha256": "4328d7c2308bf423ed319111e5aff418040db4dfe508a7be993fe3fafd98121a"
+    },
+    {
+      "book": "peppa_07",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_07/page1.webp",
+      "width": 627,
+      "height": 413,
+      "sourceHeight": 418,
+      "sha256": "63327be84495fc5388e549581a4f902ca555d5c62b5b2112c9a09ee8655cccaa"
+    },
+    {
+      "book": "peppa_07",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_07/page2.webp",
+      "width": 627,
+      "height": 413,
+      "sourceHeight": 418,
+      "sha256": "1fb06a6c2f1f499d52d55d5ac3cb041b03f77c4ae39251b0a770c87516922f2b"
+    },
+    {
+      "book": "peppa_07",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_07/page3.webp",
+      "width": 627,
+      "height": 409,
+      "sourceHeight": 418,
+      "sha256": "61c507dbd13d208214f5e8328186ffcdf896fb4031e5bd53dde512fcdd1e5040"
+    },
+    {
+      "book": "peppa_07",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_07/page4.webp",
+      "width": 627,
+      "height": 409,
+      "sourceHeight": 418,
+      "sha256": "119132246dbf70daa61b9cd82e9efdba0dbdaf38f7a65ab04e74bf9d731fc430"
+    },
+    {
+      "book": "peppa_08",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_08/page3.webp",
+      "width": 627,
+      "height": 402,
+      "sourceHeight": 418,
+      "sha256": "416013e23ed247e9da5615a3d9d6ecb99f4af1c247b4ad145081f7225367b1b2"
+    },
+    {
+      "book": "peppa_08",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_08/page4.webp",
+      "width": 627,
+      "height": 402,
+      "sourceHeight": 418,
+      "sha256": "52f4ae1f917df8d9dcdb902a1ba88409872bc57dc99f33d6f8cf9d8504ce4893"
+    },
+    {
+      "book": "peppa_09",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_09/page1.webp",
+      "width": 627,
+      "height": 398,
+      "sourceHeight": 418,
+      "sha256": "16ed78a7145da7dc541d51fe4b8833dba7c27a95f4f1bd25b622d81205b21a39"
+    },
+    {
+      "book": "peppa_09",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_09/page2.webp",
+      "width": 627,
+      "height": 398,
+      "sourceHeight": 418,
+      "sha256": "6b565dbbcc2e148aba794fada8ff8e744a0c8ca3eb2f22b3548ebe8065d6d30d"
+    },
+    {
+      "book": "peppa_09",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_09/page3.webp",
+      "width": 627,
+      "height": 356,
+      "sourceHeight": 418,
+      "sha256": "9a6a0738c6b5a92468fbbd38f0b2b743a057cd72994cf947945c9630e79e1e2b"
+    },
+    {
+      "book": "peppa_09",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_09/page4.webp",
+      "width": 627,
+      "height": 356,
+      "sourceHeight": 418,
+      "sha256": "6d657f785cd6005af704745d41e888d6e403cae001f28d9177ad6cea53c88af2"
+    },
+    {
+      "book": "peppa_10",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_10/page1.webp",
+      "width": 627,
+      "height": 383,
+      "sourceHeight": 418,
+      "sha256": "0600a41d821f422566586dc7e8be20ec39b2f9af7b854a9181d9f0467ec8e51c"
+    },
+    {
+      "book": "peppa_10",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_10/page2.webp",
+      "width": 627,
+      "height": 383,
+      "sourceHeight": 418,
+      "sha256": "6fe4da7303e2d12b2e5b21edac472e00b2fc16c6955b228bae17c585787fe5c9"
+    },
+    {
+      "book": "peppa_10",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_10/page3.webp",
+      "width": 627,
+      "height": 365,
+      "sourceHeight": 418,
+      "sha256": "b6460a67fc4073859cc035631c48462e576789dc91b74da8ca4b2e6280598d9a"
+    },
+    {
+      "book": "peppa_10",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_10/page4.webp",
+      "width": 627,
+      "height": 365,
+      "sourceHeight": 418,
+      "sha256": "a101d23e0e3c420d1148a780babbb37148adb1281e6b5d745e8abc8e85f1e10f"
+    },
+    {
+      "book": "peppa_16",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_16/page1.webp",
+      "width": 627,
+      "height": 408,
+      "sourceHeight": 418,
+      "sha256": "18c595d03c2c6d36b5fa14dbe7623c96d63f48837b335843431e8c3ca470e3bf"
+    },
+    {
+      "book": "peppa_16",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_16/page2.webp",
+      "width": 627,
+      "height": 408,
+      "sourceHeight": 418,
+      "sha256": "2b7c77a46666d2e260c963ccf3ed5220d093619386ec9909856d0749481cfbb5"
+    },
+    {
+      "book": "peppa_16",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_16/page3.webp",
+      "width": 627,
+      "height": 394,
+      "sourceHeight": 418,
+      "sha256": "496c425849be5f283449107c672ea78a44329ae75f5a9c65dafddde684c9c40e"
+    },
+    {
+      "book": "peppa_16",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_16/page4.webp",
+      "width": 627,
+      "height": 394,
+      "sourceHeight": 418,
+      "sha256": "8134845361459939402f521713bc83a2c461c0efae89a82f985150ccef2b747a"
+    },
+    {
+      "book": "peppa_20",
+      "page": 1,
+      "file": "art/story-refresh-v1/peppa_20/page1.webp",
+      "width": 627,
+      "height": 412,
+      "sourceHeight": 418,
+      "sha256": "858cf4feee503a7960c242b494f42849b96819de6ff7d4cd4340191d900c16c7"
+    },
+    {
+      "book": "peppa_20",
+      "page": 2,
+      "file": "art/story-refresh-v1/peppa_20/page2.webp",
+      "width": 627,
+      "height": 412,
+      "sourceHeight": 418,
+      "sha256": "e7425fb2568da79a9f4418431cc5da3f44b44ad06d8a154ad3fdd04d32c69d8b"
+    },
+    {
+      "book": "peppa_20",
+      "page": 3,
+      "file": "art/story-refresh-v1/peppa_20/page3.webp",
+      "width": 627,
+      "height": 397,
+      "sourceHeight": 418,
+      "sha256": "0e071b540e44c7a6eb3536c81343b5d2ef6ffa400654f3a7b9c9322e5af15ebe"
+    },
+    {
+      "book": "peppa_20",
+      "page": 4,
+      "file": "art/story-refresh-v1/peppa_20/page4.webp",
+      "width": 627,
+      "height": 396,
+      "sourceHeight": 418,
+      "sha256": "100d946204add20ea0af1ad11146fdc8f908234edcf99b2667b422003d13450f"
+    },
+    {
+      "book": "dino_01",
+      "page": 3,
+      "file": "art/story-refresh-v1/dino_01/page3.webp",
+      "width": 627,
+      "height": 402,
+      "sourceHeight": 418,
+      "sha256": "95e7232d198f10793db4f12652aafe365b831776b20b95202e156ac57108ca63"
+    },
+    {
+      "book": "dino_01",
+      "page": 4,
+      "file": "art/story-refresh-v1/dino_01/page4.webp",
+      "width": 627,
+      "height": 402,
+      "sourceHeight": 418,
+      "sha256": "1b81ef9658aba74465febc8519d4a878a98d63324728fba1e16c73587a60c200"
+    },
+    {
+      "book": "dino_02",
+      "page": 3,
+      "file": "art/story-refresh-v1/dino_02/page3.webp",
+      "width": 627,
+      "height": 391,
+      "sourceHeight": 418,
+      "sha256": "cb913ae641ea8433f278bdb5a4c135921e1836373df35bba4d50bc50a6fd1587"
+    },
+    {
+      "book": "dino_02",
+      "page": 4,
+      "file": "art/story-refresh-v1/dino_02/page4.webp",
+      "width": 627,
+      "height": 391,
+      "sourceHeight": 418,
+      "sha256": "0b1cfb33785610ab7faf93567616b6e4dc0631b5fa7c82f6f070d61c32c79523"
+    },
+    {
+      "book": "dino_03",
+      "page": 1,
+      "file": "art/story-refresh-v1/dino_03/page1.webp",
+      "width": 627,
+      "height": 391,
+      "sourceHeight": 418,
+      "sha256": "5dd6f521d26ea31281aa843a1316086a08d980b337d2deb2f077971c95570e50"
+    },
+    {
+      "book": "dino_03",
+      "page": 2,
+      "file": "art/story-refresh-v1/dino_03/page2.webp",
+      "width": 627,
+      "height": 389,
+      "sourceHeight": 418,
+      "sha256": "742bd28aaf2e440a10e3493dffdc8cadeb404ce5a7080af52a7c4a696ebfb722"
+    },
+    {
+      "book": "dino_03",
+      "page": 3,
+      "file": "art/story-refresh-v1/dino_03/page3.webp",
+      "width": 627,
+      "height": 385,
+      "sourceHeight": 418,
+      "sha256": "36a4390b91cf1cc28da754fc5a969a5c828539797c6832b089c7866a6161a619"
+    },
+    {
+      "book": "dino_03",
+      "page": 4,
+      "file": "art/story-refresh-v1/dino_03/page4.webp",
+      "width": 627,
+      "height": 385,
+      "sourceHeight": 418,
+      "sha256": "1f5e52d66cedc6ba88068e9a669f2d1c8498dd6ae7db0712acb1e99604d01b00"
+    },
+    {
+      "book": "dino_04",
+      "page": 1,
+      "file": "art/story-refresh-v1/dino_04/page1.webp",
+      "width": 627,
+      "height": 412,
+      "sourceHeight": 418,
+      "sha256": "c638b7ada44790f8b580edd3bcd7431d8ee39baf9e72965d91fd8912749ca7c7"
+    },
+    {
+      "book": "dino_04",
+      "page": 2,
+      "file": "art/story-refresh-v1/dino_04/page2.webp",
+      "width": 627,
+      "height": 412,
+      "sourceHeight": 418,
+      "sha256": "1460b3a6f1b17d87bbfe080b7acf6b2617064311014b8dba20c494a81d4b78c4"
+    },
+    {
+      "book": "dino_04",
+      "page": 3,
+      "file": "art/story-refresh-v1/dino_04/page3.webp",
+      "width": 627,
+      "height": 403,
+      "sourceHeight": 418,
+      "sha256": "f732e1b2bb18f49a73d9c160b0fbaeb8f729bce1bfcdfffa24c290064495fcb3"
+    },
+    {
+      "book": "dino_04",
+      "page": 4,
+      "file": "art/story-refresh-v1/dino_04/page4.webp",
+      "width": 627,
+      "height": 403,
+      "sourceHeight": 418,
+      "sha256": "3bc901e15c933f1bdd78103b86bbe6823b3e89a27d4aaa779c4c0ac3fa8e5a9c"
+    },
+    {
+      "book": "extra_life_dentist",
+      "page": 3,
+      "file": "art/story-refresh-v1/extra_life_dentist/page3.webp",
+      "width": 627,
+      "height": 404,
+      "sourceHeight": 418,
+      "sha256": "cc0c9be5da955f90b8b2bdd661ed1205b066a02720ebf2b6fe2057cc4d0450a6"
+    },
+    {
+      "book": "extra_life_dentist",
+      "page": 4,
+      "file": "art/story-refresh-v1/extra_life_dentist/page4.webp",
+      "width": 627,
+      "height": 404,
+      "sourceHeight": 418,
+      "sha256": "43fa7e48308d4b68c60ddc2d489790e9be939c182b7ffad9b6be659147bb58e8"
+    },
+    {
+      "book": "extra_poem_chunxiao",
+      "page": 3,
+      "file": "art/story-refresh-v1/extra_poem_chunxiao/page3.webp",
+      "width": 627,
+      "height": 400,
+      "sourceHeight": 418,
+      "sha256": "9226fcb6a737be991a4bc79cb1de0402e3057e6f5132791c784588d6b52ff482"
+    },
+    {
+      "book": "extra_poem_chunxiao",
+      "page": 4,
+      "file": "art/story-refresh-v1/extra_poem_chunxiao/page4.webp",
+      "width": 627,
+      "height": 400,
+      "sourceHeight": 418,
+      "sha256": "586f4eab7342f11b9526542b8fcfbf6c86123ade25d0fea9bdac1896969f6107"
+    }
+  ]
+}

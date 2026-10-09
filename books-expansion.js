@@ -2,3 +2,9 @@ window.BOOKS_EXPANSION=[{"id": "expansion_20261009_0", "title": "成语：画蛇
 window.BOOKS.push(...window.BOOKS_EXPANSION);
 // Checked story illustrations: each illustrated scene follows its existing narration page.
 for(const book of window.BOOKS_EXPANSION){const dir="art/story-expansion-v1/"+book.id+"/";book.reillustrated=true;book.cover=dir+"cover.webp";book.pages.forEach((page,index)=>page.img=dir+"page"+(index+1)+".webp");}
+
+// Reviewed display windows hide neighbouring panels left by older sheet slicing.
+(function(){const frames={"peppa_05":{"1":380,"2":379,"3":362,"4":362},"peppa_07":{"1":413,"2":413,"3":409,"4":409},"peppa_08":{"3":402,"4":402},"peppa_09":{"1":398,"2":398,"3":356,"4":356},"peppa_10":{"1":383,"2":383,"3":365,"4":365},"peppa_16":{"1":408,"2":408,"3":394,"4":394},"peppa_20":{"1":412,"2":412,"3":397,"4":396},"dino_01":{"3":402,"4":402},"dino_02":{"3":391,"4":391},"dino_03":{"1":391,"2":389,"3":385,"4":385},"dino_04":{"1":412,"2":412,"3":403,"4":403},"extra_life_dentist":{"3":404,"4":404},"extra_poem_chunxiao":{"3":400,"4":400}};for(const b of window.BOOKS||[]){const heights=frames[b.id];if(!heights)continue;b.pages.forEach((p,i)=>{const h=heights[i+1];if(h)p.artFrame={width:627,height:h,sourceHeight:418};});}})();
+
+// Character-led scenes replace older prop-only illustrations after the base maps load.
+(function(){const ids=["adventure_zootopia_07", "extra_elsa_snowfox", "extra_elsa_snowlight", "extra_princess_cinderella", "extra_princess_snowwhite"];for(const b of window.BOOKS||[]){if(!ids.includes(b.id))continue;const dir=`art/story-quality-v2/${b.id}/`;b.artRefresh=true;b.reillustrated=true;b.cover=dir+'cover.webp';b.pages.forEach((p,i)=>{p.img=dir+`page${i+1}.webp`;});}})();
