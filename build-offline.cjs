@@ -8,9 +8,9 @@ const vm = require('node:vm');
 const sha256 = value => crypto.createHash('sha256').update(value).digest('hex');
 const modelInputs = [
   'books.js', 'books-extra.js', 'books-new-adventures.js', 'story-art-map.js',
-  'books-tablet-stories.js', 'voice-map.js', 'modern-voice-map.js',
+  'books-tablet-stories.js', 'books-expansion.js', 'voice-map.js', 'modern-voice-map.js',
   'challenge-voice-map.js', 'video-voice-map.js', 'creative-voice-map.js',
-  'writing-voice-map.js', 'tablet-story-voice-map.js', 'cozy-voice-map.js', 'natural-game-voice-map.js'
+  'writing-voice-map.js', 'tablet-story-voice-map.js', 'cozy-voice-map.js', 'natural-game-voice-map.js', 'expansion-voice-map.js'
 ];
 
 function assertFile(root, relative) {

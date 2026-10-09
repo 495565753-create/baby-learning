@@ -13,12 +13,12 @@ const assetRoot = path.join(root, 'app-assets');
 // the builder must fail here even if the generated manifest is internally valid.
 const scriptInputs = [
   'books.js', 'books-extra.js', 'books-new-adventures.js', 'story-art-map.js',
-  'books-tablet-stories.js', 'courses.js', 'voice-map.js', 'modern-voice-map.js',
+  'books-tablet-stories.js', 'books-expansion.js', 'courses.js', 'voice-map.js', 'modern-voice-map.js',
   'challenge-voice-map.js', 'video-voice-map.js', 'recognition-data.js', 'recognition.js',
   'kids-new-games.js', 'kids-challenge-games.js', 'kids-videos-data.js',
   'kids-home.js', 'creative-voice-map.js', 'kids-art-studio.js',
   'kids-music-studio.js', 'kids-writing-data.js', 'kids-writing.js',
-  'writing-voice-map.js', 'tablet-story-voice-map.js', 'princess.js', 'cozy-voice-map.js', 'natural-game-voice-map.js', 'cozy-games.js', 'kid.js'
+  'writing-voice-map.js', 'expansion-voice-map.js', 'tablet-story-voice-map.js', 'princess.js', 'cozy-voice-map.js', 'natural-game-voice-map.js', 'cozy-games.js', 'kid.js'
 ];
 const styleInputs = [
   'kid.css', 'recognition.css', 'kids-new-games.css', 'glass-ui.css',
@@ -305,9 +305,9 @@ test('the minified whole bundle preserves data, feature APIs, every game and cla
   const actual = built.context;
   const expected = source.context;
 
-  assert.equal(actual.BOOKS.length, 128);
-  assert.equal(actual.BOOKS.reduce((sum, book) => sum + book.pages.length, 0), 654);
-  assert.equal(actual.GRADE_ONE_COURSES.length, 60);
+  assert.equal(actual.BOOKS.length, 177);
+  assert.equal(actual.BOOKS.reduce((sum, book) => sum + book.pages.length, 0), 809);
+  assert.equal(actual.GRADE_ONE_COURSES.length, 68);
   assert.deepEqual(plain(actual.BOOKS), plain(expected.BOOKS));
   assert.deepEqual(plain(actual.GRADE_ONE_COURSES), plain(expected.GRADE_ONE_COURSES));
   assert.deepEqual(plain(actual.KIDS_VIDEOS), plain(expected.KIDS_VIDEOS));

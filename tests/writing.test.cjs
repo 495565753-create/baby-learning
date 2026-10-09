@@ -33,8 +33,8 @@ function dom(env, initialRect = { left: 0, top: 0, width: 400, height: 400 }) {
 }
 function trace(ui, points, canceled = false) { ui.board().dispatch('pointerdown', ui.event(points[0])); points.slice(1).forEach(point => ui.board().dispatch('pointermove', ui.event(point))); ui.board().dispatch(canceled ? 'pointercancel' : 'pointerup', ui.event(points.at(-1))); }
 
-test('all ten data lessons are valid independent writing paths and every correct path completes', () => {
-  const { root, t } = load(); assert.equal(root.WRITING_LESSONS.length, 10);
+test('all number and character lessons are valid independent writing paths and every correct path completes', () => {
+  const { root, t } = load(); assert.equal(root.WRITING_LESSONS.length, 18);
   for (const lesson of root.WRITING_LESSONS) {
     assert.equal(lesson.coordinateSize, 400); assert.ok(lesson.guide && lesson.meaning && lesson.completion);
     for (const stroke of lesson.strokes) {
@@ -113,7 +113,7 @@ test('local progress and stars count at most once per number per day, including 
 test('number navigation and replaying hints preserve correct word meaning and original illustrations', () => {
   const env = load(), ui = dom(env); env.t.selectLesson('number-4', false); assert.equal(env.t.selectNeighbor(-1), true); assert.equal(env.t.getState().lessonId, 'number-3');
   env.t.selectLesson('number-4', false); env.root.WRITING_LESSONS[3].strokes.forEach(stroke => trace(ui, stroke.points));
-  const html = env.api.render(); assert.match(html, /再认识一个汉字/); assert.match(html, /ws-hanzi">口/); assert.match(html, /<svg xmlns="http:\/\/www.w3.org\/2000\/svg"/); assert.doesNotMatch(html, /口表示四/);
+  const html = env.api.render(); assert.match(html, /听听这个字的意思/); assert.match(html, /ws-hanzi">口/); assert.match(html, /<svg xmlns="http:\/\/www.w3.org\/2000\/svg"/); assert.doesNotMatch(html, /口表示四/);
   ui.host().querySelector('[data-ws-meaning]').dispatch('click'); assert.equal(env.spoken.at(-1), env.root.WRITING_LESSONS[3].meaning);
   ui.host().querySelector('[data-ws-home]').dispatch('click'); assert.deepEqual(env.navigated, ['home']); assert.equal(env.t.stats().timers, 0);
 });

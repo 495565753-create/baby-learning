@@ -76,3 +76,8 @@ body.playing-cozy-game{padding:0}
 .cozy-garden-page .garden-landscape{display:none}.cozy-garden-page .garden-board{grid-column:1;grid-row:3/5}
 .cozy-garden-page .cozy-notice{grid-column:2;grid-row:3;align-self:end}.cozy-garden-page>.cozy-secondary{grid-column:2;grid-row:4}
 }
+
+.pet-choices{flex-wrap:nowrap;overflow-x:auto;max-width:100%;scroll-snap-type:x proximity}.pet-choices button{flex:0 0 auto;scroll-snap-align:center}.cozy-pet-art[role=button]{cursor:pointer;touch-action:manipulation}.cozy-pet-art:focus-visible{outline:3px solid #d882af;border-radius:40px}
+.playing-cozy-game .pet-choices{overflow-x:auto;scrollbar-width:thin;min-height:46px}.playing-cozy-game .pet-choices button{flex:0 0 85px;min-width:85px}.playing-cozy-game .cozy-notice{overflow:auto;display:block;text-align:center;-webkit-overflow-scrolling:touch}
+
+.playing-cozy-game .pet-choices{justify-content:flex-start}

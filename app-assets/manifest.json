@@ -1,10 +1,10 @@
 {
   "format": 1,
   "js": {
-    "file": "app-assets/app-cba16d8bbced9d51.js",
-    "sha256": "cba16d8bbced9d5174f73daefcae60506b21616814a5d1e6ff0469bf76f760c5",
-    "bytes": 605273,
-    "gzip_bytes": 195669,
+    "file": "app-assets/app-104d6c3fa60b5224.js",
+    "sha256": "104d6c3fa60b522454daf19a21f7a00da474fa58e59873e88e44391e20f3b8c9",
+    "bytes": 641127,
+    "gzip_bytes": 208678,
     "inputs": [
       {
         "file": "voice-loader.js",
@@ -37,9 +37,14 @@
         "sha256": "99fd6b731449e0e40cca26ebf619230e721a646d0c4d8b5faa2d93789842309b"
       },
       {
+        "file": "books-expansion.js",
+        "bytes": 27011,
+        "sha256": "e79739dcedd42f3342adf2f119c7e3ba2f1b540935058ac6c541894000f7defa"
+      },
+      {
         "file": "courses.js",
-        "bytes": 19088,
-        "sha256": "b8c1623a84c47d6a6430fc04bc2b1bfdb6f13f4320f2bf9c1f2c65553d52a48d"
+        "bytes": 23246,
+        "sha256": "07da97f5dc4d2922a9aabfcd3277897e000f799911337ab27cef0d9af1660847"
       },
       {
         "file": "recognition-data.js",
@@ -68,8 +73,8 @@
       },
       {
         "file": "kids-home.js",
-        "bytes": 7339,
-        "sha256": "5e2ac9ccd91aa1a91ac8d2d5773acfcea7edefc04d675e70d38d74a6d68f5287"
+        "bytes": 7514,
+        "sha256": "ad93bfaa8d2270a925639dc663ac321533b9052ad60f8d08a8c3f3b0089859b5"
       },
       {
         "file": "kids-art-studio.js",
@@ -83,36 +88,36 @@
       },
       {
         "file": "kids-writing-data.js",
-        "bytes": 12377,
-        "sha256": "4d98f052e74efd477e6a8a6a060b6820b71adb263fb8978b1ee0780a6b141caf"
+        "bytes": 14684,
+        "sha256": "cb9ae77ca51cb302d61371ad7ab6486bdc656251afed3c220514886e0f61c6ef"
       },
       {
         "file": "kids-writing.js",
-        "bytes": 25955,
-        "sha256": "82c6a15e30974531f6e557458f2f160f5c75afaa3244d477e6b0f3aa40ab078c"
+        "bytes": 26012,
+        "sha256": "0e9bb9600ae0307e6db06c6b02d2781efa9d4a0ed52cef55c9cc85cb4cb09c05"
       },
       {
         "file": "princess.js",
-        "bytes": 42725,
-        "sha256": "9ecedb7a42a8700607b3638af84f8eb61834f7cd8cee16b04ba06667903820e3"
+        "bytes": 45753,
+        "sha256": "4f98c74d8ad6546c95f6018cef484bd83702910e6a506e6c6a8a956252259bf9"
       },
       {
         "file": "cozy-games.js",
-        "bytes": 13281,
-        "sha256": "913ab9a546f2cf79ab01e5ecc567ea82f44d95ce83e2712c4cd9205e6a349e07"
+        "bytes": 15260,
+        "sha256": "f8e67a439636e9dd33f4970fe0d696b0475d89f79a6e8fed25ae5b69bfd18527"
       },
       {
         "file": "kid.js",
-        "bytes": 95560,
-        "sha256": "b939fdaacb67fc8085e0a4dbeeb29b13b48a37349ce3db077a6bcdd1ce18933a"
+        "bytes": 95771,
+        "sha256": "682e5383f9bf09bd3f44a58a7134b8f4929f180cd1936394f822bd90308715f1"
       }
     ]
   },
   "css": {
-    "file": "app-assets/app-cd74ad84c6edc030.css",
-    "sha256": "cd74ad84c6edc030b73553d9d83af10494fda23b5bb1437cab320e43d003759e",
-    "bytes": 234303,
-    "gzip_bytes": 48091,
+    "file": "app-assets/app-f5549f31be3762a5.css",
+    "sha256": "f5549f31be3762a58a78d1fdecfeb7b8df6cf063e78e94cd9df96ee665542139",
+    "bytes": 236471,
+    "gzip_bytes": 48526,
     "inputs": [
       {
         "file": "kid.css",
@@ -156,8 +161,8 @@
       },
       {
         "file": "kids-writing.css",
-        "bytes": 11832,
-        "sha256": "fbfa16b90c447d9d6f750723509648da7a58d60023edf611c2a1220870270664"
+        "bytes": 13006,
+        "sha256": "3836e04bf9929e5220ff302405fa7835c7c43aedbbaf2c155fe969fdc971aa3d"
       },
       {
         "file": "tablet-ui.css",
@@ -166,8 +171,8 @@
       },
       {
         "file": "princess.css",
-        "bytes": 11672,
-        "sha256": "3d89367f97d977823c93bc4db28093ad35a03133acf745484e8cc1e82888b944"
+        "bytes": 12139,
+        "sha256": "1bd0852dd6a305c18e0253f126d96077944756ebd86c9faf069527563be3f566"
       },
       {
         "file": "ui-refresh.css",
@@ -181,16 +186,16 @@
       },
       {
         "file": "games-motion.css",
-        "bytes": 19905,
-        "sha256": "36ac569f6a84e0a4387211adc3ec5da11bebc490c14531857019f827971181de"
+        "bytes": 20523,
+        "sha256": "4db51336f92322e77a90e4a044f7c11cdd8a31906f90946035519698c9bb56fa"
       }
     ]
   },
   "voices": {
-    "file": "app-assets/app-9640cd9ca62b58fb.js",
-    "sha256": "9640cd9ca62b58fbc08b136872c88cf962e33a9da7e7666e658c1e44e0a759d2",
-    "bytes": 296141,
-    "gzip_bytes": 111520,
+    "file": "app-assets/app-a040def3cfa5c958.js",
+    "sha256": "a040def3cfa5c958933b381c62a5a49b6f0176eee0be34ae4e159a0f5ba656bb",
+    "bytes": 365667,
+    "gzip_bytes": 135294,
     "inputs": [
       {
         "file": "voice-map.js",
@@ -221,6 +226,11 @@
         "file": "writing-voice-map.js",
         "bytes": 16729,
         "sha256": "097f2e2fcbd6fba185920b29147f642e10df7e2f26a6d188bdd9e9016965f960"
+      },
+      {
+        "file": "expansion-voice-map.js",
+        "bytes": 70660,
+        "sha256": "933ed7e655bb9c2b6a572d4bd42ae1c6bfd7212b9ea0af5fe36fddc2ae3bfc7b"
       },
       {
         "file": "tablet-story-voice-map.js",

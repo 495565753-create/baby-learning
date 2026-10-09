@@ -101,6 +101,19 @@
     const character=chars[number],guide=`我们来写数字${SPELLED[number]}。先看小手怎么写，再从亮亮的小点开始，慢慢跟着画。`,meaning=meanings[number],completion=`数字${SPELLED[number]}，写好啦！你认真地完成了！`;
     lessons.push({id:'number-'+number,number,display:String(number),title:'数字'+number,label:'数字'+number,spokenName:SPELLED[number],coordinateSize:COORDINATE_SIZE,character,pinyin:pinyin[number],characterIcon:characterIcons[number],characterSvg:artwork(character),guide,meaning,counting:{...counts[number],count:number},strokes:rows,strokeHints:[...hints[number]],completion,word:{char:character,pinyin:pinyin[number],meaning,intro:meaning,icon:characterIcons[number],svg:artwork(character)}});
   }
+
+  const simpleWords=[
+    ['一','yī','一表示一个。一个苹果，一只小鸟，都是一。',[[[85,200],[315,200]]]],
+    ['二','èr','二表示两个。两只小兔子，两只小手，都是二。',[[[110,135],[290,135]],[[75,270],[325,270]]]],
+    ['三','sān','三表示三个。三朵花，三颗星星，都是三。',[[[105,105],[295,105]],[[120,195],[280,195]],[[75,290],[325,290]]]],
+    ['十','shí','十表示十个。把两只小手展开，一共有十根手指。',[[[85,180],[315,180]],[[200,80],[200,325]]]],
+    ['人','rén','人就是我们。爸爸妈妈、小朋友和老师，都是人。',[[[215,85],[190,185],[150,265],[85,320]],[[195,180],[245,265],[315,320]]]],
+    ['口','kǒu','口就是嘴巴。我们用嘴巴说话，吃饭，唱歌。',[[[110,95],[110,305]],[[110,95],[295,95],[295,305]],[[110,305],[295,305]]]],
+    ['日','rì','日可以表示太阳，也可以表示一天。日出，就是太阳升起来。',[[[110,75],[110,325]],[[110,75],[290,75],[290,325]],[[110,200],[290,200]],[[110,325],[290,325]]]],
+    ['山','shān','山是高高的地形。山上有树木，登山要和大人一起。',[[[200,75],[200,300]],[[90,160],[90,300],[310,300]],[[310,160],[310,300]]]]
+  ];
+  simpleWords.forEach(([char,pinyin,meaning,lines],index)=>lessons.push({id:'hanzi-'+index,number:1,display:char,title:'汉字'+char,label:'汉字'+char,character:char,pinyin,coordinateSize:400,guide:'我们来写汉字，'+char+'。先看示范，再按笔顺慢慢描。',completion:'汉字'+char+'，写好啦！',meaning,counting:{emoji:'🌟',name:'星星',unit:'颗'},strokes:lines.map((points,i)=>({points,hint:'从亮点开始，写第'+(i+1)+'笔，顺着小路慢慢走。'})),word:{char,pinyin,meaning,intro:meaning,icon:'🌟'}}));
+  lessons.forEach(lesson=>{lesson.strokes.forEach(stroke=>{const fine=[stroke.points[0]];for(let i=1;i<stroke.points.length;i++){const a=stroke.points[i-1],b=stroke.points[i],n=Math.ceil(Math.hypot(b[0]-a[0],b[1]-a[1])/6);for(let j=1;j<=n;j++)fine.push([a[0]+(b[0]-a[0])*j/n,a[1]+(b[1]-a[1])*j/n]);}stroke.points=fine;});lesson.strokeHints=lesson.strokes.map(s=>s.hint);lesson.spokenName=lesson.spokenName||lesson.character;lesson.characterIcon=lesson.characterIcon||lesson.word.icon;lesson.characterSvg=lesson.characterSvg||'';});
   global.WRITING_LESSONS=lessons;
   global.WRITING_LESSON_TEXTS=[...new Set(lessons.flatMap(lesson=>[lesson.guide,...lesson.strokeHints,lesson.completion,lesson.meaning]))];
   global.WRITING_SOURCES={method:'通用儿童数字手写法，非指定教材笔顺标准',checked:'2026-10-04',links:[{title:'Oxford University Press — Numbers handwriting practice (字形参考，无笔順箭头)',url:'https://cdn.oxfordowl.co.uk/2013/07/18/15/54/56/399/OxOwl_Writing_numbers.pdf'},{title:'教育部《中小学书法教育指导纲要》（适龄练习原则）',url:'https://www.moe.gov.cn/srcsite/A26/s8001/201301/t20130125_147389.html'}]};

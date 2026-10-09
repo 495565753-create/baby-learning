@@ -24,6 +24,8 @@
       ['🎨','小小画家','跟着画，自由画','HOME.openArtist()','drawing'],
       ['👑','公主换装','打扮我的公主',"openGame('princess')",'princess'],
       ['📚','听故事','打开就连着讲',"go('stories')",'stories'],
+      ['✍️','学写字','数字描写，汉字笔顺',"go('writing')",'writing'],
+      ['👩‍🏫','老师课堂','看图学语文和数学',"go('school')",'school'],
       ['🧩','精选游戏','滑滑，动脑筋',"go('games')",'games']
     ];
     const recent=readRecent();

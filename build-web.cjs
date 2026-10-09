@@ -10,12 +10,12 @@ const argument = process.argv.indexOf('--esbuild');
 const esbuild = require(argument >= 0 ? path.resolve(process.argv[argument + 1]) : 'esbuild');
 const scripts = [
   'books.js', 'books-extra.js', 'books-new-adventures.js', 'story-art-map.js',
-  'books-tablet-stories.js', 'courses.js', 'voice-map.js', 'modern-voice-map.js',
+  'books-tablet-stories.js', 'books-expansion.js', 'courses.js', 'voice-map.js', 'modern-voice-map.js',
   'challenge-voice-map.js', 'video-voice-map.js', 'recognition-data.js', 'recognition.js',
   'kids-new-games.js', 'kids-challenge-games.js', 'kids-videos-data.js',
   'kids-home.js', 'creative-voice-map.js', 'kids-art-studio.js',
   'kids-music-studio.js', 'kids-writing-data.js', 'kids-writing.js',
-  'writing-voice-map.js', 'tablet-story-voice-map.js', 'princess.js', 'cozy-voice-map.js', 'natural-game-voice-map.js', 'cozy-games.js', 'kid.js'
+  'writing-voice-map.js', 'expansion-voice-map.js', 'tablet-story-voice-map.js', 'princess.js', 'cozy-voice-map.js', 'natural-game-voice-map.js', 'cozy-games.js', 'kid.js'
 ];
 const voiceInputs=scripts.filter(file=>file==='voice-map.js'||file.endsWith('-voice-map.js'));
 const coreInputs=['voice-loader.js', ...scripts.filter(file=>!voiceInputs.includes(file))];

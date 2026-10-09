@@ -189,8 +189,9 @@ function princessSwitch(character){if(!princessState[character])return;princessS
 function princessReset(){princessClose();princessState[princessState.character]={...princessDefaults[princessState.character]};princessState.category='dress';princessPersist();render()}
 function princessRandom(){const s=princessSelection();for(const key of Object.keys(princessWardrobe))s[key]=Math.floor(Math.random()*princessWardrobe[key].length);princessPersist();princessRefresh();if(!state.muted){tone(523,.11);setTimeout(()=>tone(659,.11),110);setTimeout(()=>tone(784,.15),220)}}
 function princessGreeting(step){const who=princessCharacter().name;if(step===0)return `你好，果粒橙小朋友！我是${who}。你帮我挑的衣服真漂亮！我们以后做好朋友，好吗？`;return '太好啦！果粒橙小朋友，我们一起跳舞吧！'}
-function princessShowCelebration(){const el=document.querySelector('#princessCelebration');if(!el)return;const step=princessState.step;el.classList.remove('hidden');el.innerHTML=`<div class="princess-confetti" aria-hidden="true">${Array.from({length:22},(_,i)=>`<i style="--n:${i};--x:${(i*47)%100}%;--delay:${(i%6)*.17}s">${i%3===0?'✨':i%3===1?'💖':'⭐'}</i>`).join('')}</div><div class="princess-dialog"><button class="princess-dialog-close" onclick="princessClose()" aria-label="关闭">×</button><div class="princess-dialog-avatar">${princessSvg().replace('viewBox="0 0 360 600"','viewBox="85 70 190 190"')}</div><h2>${step===0?'公主来找你啦！':'我们是好朋友！'}</h2><p>${princessGreeting(step)}</p><div class="princess-dialog-actions">${step===0?'<button class="princess-yes" onclick="princessReply()">💖 好呀，做好朋友！</button>':'<button class="princess-yes" onclick="princessClose()">👗 继续换装</button>'}<button onclick="princessPlayVoice()">🔊 再听一遍</button></div></div>`}
+function princessShowCelebration(){const el=document.querySelector('#princessCelebration');if(!el)return;const step=princessState.step;el.classList.remove('hidden');el.innerHTML=`<div class="princess-confetti" aria-hidden="true">${Array.from({length:22},(_,i)=>`<i style="--n:${i};--x:${(i*47)%100}%;--delay:${(i%6)*.17}s">${i%3===0?'✨':i%3===1?'💖':'⭐'}</i>`).join('')}</div><div class="princess-dialog"><button class="princess-dialog-close" onclick="princessClose()" aria-label="关闭">×</button><div class="princess-dialog-avatar">${princessSvg().replace('viewBox="0 0 360 600"','viewBox="85 70 190 190"')}</div><h2>${step===0?'公主来找你啦！':'我们是好朋友！'}</h2><p>${princessGreeting(step)}</p><div class="princess-dialog-actions">${step===0?'<button class="princess-yes" onclick="princessReply()">💖 好呀，做好朋友！</button>':'<button class="princess-yes" onclick="princessClose()">👗 继续换装</button>'}<button onclick="princessPlayVoice()">🔊 再听一遍</button><button onclick="princessTellStory()">📖 听我的舞会故事</button><button onclick="princessChat()">💬 再聊一聊</button></div></div>`}
 function princessPlayVoice(){
+  if(princessState.storyMode){speak(document.querySelector('.princess-dialog p').textContent);return;}
   if(state.muted)return;
   stopAudio();
   const run=voiceRun,page=state.page,game=state.game,character=princessState.character,step=princessState.step,greeting=princessGreeting(step);
@@ -205,7 +206,19 @@ function princessPlayVoice(){
   player.onerror=fallback;
   player.play().catch(fallback);
 }
-function princessFinish(){princessState.step=0;princessState.celebrating=true;const signature=princessState.character+JSON.stringify(princessSelection());if(princessState.lastRewarded!==signature){princessState.lastRewarded=signature;reward()}princessShowCelebration();princessPlayVoice()}
-function princessReply(){princessState.step=1;princessShowCelebration();princessPlayVoice();if(!state.muted){setTimeout(()=>tone(659,.12),100);setTimeout(()=>tone(784,.18),250)}}
+function princessFinish(){princessState.storyMode=false;princessState.storyIndex=((princessState.storyIndex??-1)+1)%6;princessState.step=0;princessState.celebrating=true;const signature=princessState.character+JSON.stringify(princessSelection());if(princessState.lastRewarded!==signature){princessState.lastRewarded=signature;reward()}princessShowCelebration();princessTellStory()}
+function princessReply(){princessState.step=1;princessShowCelebration();princessTellStory();if(!state.muted){setTimeout(()=>tone(659,.12),100);setTimeout(()=>tone(784,.18),250)}}
 function princessClose(){princessState.celebrating=false;stopAudio();document.querySelector('#princessCelebration')?.classList.add('hidden')}
-Object.assign(window,{renderPrincessGame,princessPick,princessCategory,princessSwitch,princessReset,princessRandom,princessFinish,princessReply,princessPlayVoice,princessClose});
+
+const PRINCESS_STORIES=[
+ '舞会开始了，小公主发现门边站着一个害羞的女孩。她走过去说，你好，愿意和我一起跳舞吗？女孩轻轻点头。她们先慢慢走两步，再转一个小圈。不会跳也没关系，笑着试一试，就是美好的开始。你愿意向新朋友挥挥手吗？',
+ '小公主戴上漂亮的蝴蝶结，却发现朋友的丝带松开了。她停下来，轻轻帮朋友系好。朋友说，谢谢你。小公主笑着回答，不客气。舞会上最闪亮的，不只是裙子，还有彼此照顾的温柔。我们也一起说一句谢谢你吧。',
+ '花园舞会上，两位小朋友都想戴同一顶花冠。小公主提议，我们轮流戴，一人跳完一首歌再交换。大家都得到了机会。花冠没有变多，笑脸却多了。轮流和商量，可以让每个人都开心。',
+ '小公主转圈时不小心踩到了朋友的鞋。她马上停下，说，对不起，我不是故意的，你疼吗？朋友说没关系。她们调整了距离，继续跳舞。发现自己做错了，真诚地道歉和改正，就是勇敢。',
+ '舞会快结束时，小公主有点累了。她告诉朋友，我想坐一会儿，等休息好了再玩。朋友递来水杯，坐在旁边陪她。照顾自己的身体，也可以大方地说出来。我们一起慢慢呼吸，休息一下吧。',
+ '小公主准备了一朵小花，想送给帮忙的老师。她说，谢谢你教我们跳舞。老师说，你们认真尝试，我也很开心。回家的路上，小公主把今天的快乐讲给家人听。分享和感谢，让一个普通的晚上变得温暖。'
+];
+const PRINCESS_CHAT=['你好呀，今天你选的衣服很有自己的想法。你最喜欢哪一种颜色呢？可以说给旁边的家人听。','见到新朋友，我们可以先笑一笑，再说你好。现在和我一起挥挥小手吧。','如果不想继续玩，可以说，我想休息一下。照顾自己的感受，也是一件很棒的事。','朋友帮助了你，可以说，谢谢你。你帮助了朋友，也可以说，不客气。'];
+function princessTellStory(){princessState.storyMode=true;const el=document.querySelector('.princess-dialog p');if(!el)return;const text=PRINCESS_STORIES[princessState.storyIndex||0];el.textContent=text;document.querySelector('.princess-dialog')?.classList.add('princess-storytime');speak(text)}
+function princessChat(){princessState.storyMode=true;const el=document.querySelector('.princess-dialog p');if(!el)return;princessState.chatIndex=((princessState.chatIndex??-1)+1)%PRINCESS_CHAT.length;el.textContent=PRINCESS_CHAT[princessState.chatIndex];speak(el.textContent)}
+Object.assign(window,{princessTellStory,princessChat,renderPrincessGame,princessPick,princessCategory,princessSwitch,princessReset,princessRandom,princessFinish,princessReply,princessPlayVoice,princessClose});

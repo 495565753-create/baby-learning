@@ -42,7 +42,7 @@ test('language and equation questions show the actual question without revealing
 
 test('question illustrations are complete for all five picture-based math prompts',()=>{
   const expected={'数一数':'⭐⭐⭐','比多少':'🍎🍎　🍌🍌','认识1—5':'🐟🐟🐟🐟','认识加法':'🐰🐰　＋　🐰','找规律':'⭐🌙⭐🌙　？'};
-  assert.equal(courses.length,60);
+  assert.equal(courses.length,68);
   for(const [title,visual] of Object.entries(expected)){
     const course=courses.find(x=>x.subject==='数学'&&x.title===title);
     assert.equal(context.courseVisual(course,2),visual,title);

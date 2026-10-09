@@ -40,3 +40,5 @@
 .princess-tabs button{min-width:0;min-height:46px;padding:7px 3px;overflow:hidden;text-overflow:ellipsis}
 @media(max-width:700px){.princess-tabs{grid-template-columns:repeat(4,minmax(0,1fr))}.princess-mode .princess-choice{min-height:127px}.princess-choice-preview{height:67px}.princess-choice b{font-size:13px}}
 @media(max-width:390px){.princess-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+.princess-storytime p{font-size:17px;font-weight:600;line-height:1.7;max-height:30dvh;overflow:auto;text-align:left}.princess-dialog{max-height:calc(100dvh - 24px);overflow:auto}.princess-dialog-actions{grid-template-columns:1fr 1fr}.princess-dialog-actions button{font-size:14px;min-height:46px}.princess-storytime .princess-dialog-avatar{animation:princessStoryNod 2s ease-in-out infinite}@keyframes princessStoryNod{50%{transform:rotate(-4deg) translateY(-3px)}}
