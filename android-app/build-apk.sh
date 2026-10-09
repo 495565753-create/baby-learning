@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
+mode="${1:-offline}"
+[[ "$mode" == offline || "$mode" == --online ]] || { echo "Usage: build-apk.sh [--online]" >&2; exit 1; }
 project_dir="$(cd "$(dirname "$0")" && pwd)"
 site_dir="$(cd "$project_dir/.." && pwd)"
 tool_root="${GC_TOOL_ROOT:-$HOME/Desktop/deepseek/tools}"
@@ -22,15 +24,20 @@ python3 - "$build_dir" <<'PY'
 from pathlib import Path
 import shutil, sys
 build = Path(sys.argv[1])
+(build / 'online-MainActivity.java').unlink(missing_ok=True)
 for name in ['classes', 'gen', 'dex', 'site-assets']:
     shutil.rmtree(build / name, ignore_errors=True)
     (build / name).mkdir()
 PY
 rm -f "$build_dir/classes.jar" "$build_dir/resources.apk" "$build_dir/unsigned.apk" "$build_dir/aligned.apk" "$build_dir/compiled.zip" "$build_dir/dex/classes.dex"
-python3 - "$site_dir" "$project_dir" "$build_dir/site-assets" <<'PY'
+python3 - "$site_dir" "$project_dir" "$build_dir/site-assets" "$mode" <<'PY'
 from pathlib import Path
 import hashlib, json, os, shutil, sys
-site, project, destination = map(Path, sys.argv[1:])
+site, project, destination = map(Path, sys.argv[1:4])
+if sys.argv[4] == '--online':
+    shutil.copy2(project / 'src/main/assets/web-export.js', destination / 'web-export.js')
+    print('Online app: website resources load from https://leyman.cn/')
+    sys.exit(0)
 manifest = json.loads((site / 'offline/assets.json').read_text())
 for record in manifest['files']:
     relative = record['url'].removeprefix('/')
@@ -46,8 +53,14 @@ for record in manifest['files']:
 shutil.copy2(project / 'src/main/assets/web-export.js', destination / 'web-export.js')
 print(f"Packaged {len(manifest['files'])} verified offline files into the Android app")
 PY
+manifest_file="$project_dir/src/main/AndroidManifest.xml"
+if [[ "$mode" == --online ]]; then
+    [[ -f "$private_dir/guolicheng-release.p12" && -f "$private_dir/signing-password.txt" ]] || { echo '原签名缺失，停止联网版构建' >&2; exit 1; }
+    python3 "$project_dir/prepare-online.py" "$project_dir" "$build_dir"
+    manifest_file="$build_dir/online-manifest.xml"
+fi
 "$tools_dir/aapt2" compile --dir "$project_dir/src/main/res" -o "$build_dir/compiled.zip"
-"$tools_dir/aapt2" link -I "$platform_jar" --manifest "$project_dir/src/main/AndroidManifest.xml" \
+"$tools_dir/aapt2" link -I "$platform_jar" --manifest "$manifest_file" \
     --java "$build_dir/gen" -A "$build_dir/site-assets" -o "$build_dir/resources.apk" "$build_dir/compiled.zip"
 python3 - "$project_dir" "$build_dir" <<'PY'
 from pathlib import Path
@@ -55,7 +68,9 @@ import sys
 project, build = map(Path, sys.argv[1:])
 with (build / 'sources.txt').open('w') as out:
     for base in [project / 'src/main/java', build / 'gen']:
-        for file in sorted(base.rglob('*.java')): out.write('"' + str(file) + '"\n')
+        for file in sorted(base.rglob('*.java')):
+            if file.name == 'MainActivity.java' and (build / 'online-MainActivity.java').is_file(): file = build / 'online-src/cn/leyman/guolicheng/MainActivity.java'
+            out.write('"' + str(file) + '"\n')
 PY
 "$jdk_dir/bin/javac" --release 8 -encoding UTF-8 -classpath "$platform_jar" -d "$build_dir/classes" "@$build_dir/sources.txt"
 "$jdk_dir/bin/jar" cf "$build_dir/classes.jar" -C "$build_dir/classes" .
@@ -80,6 +95,7 @@ PY
 fi
 if [[ ! -f "$password_file" ]]; then printf '签名密码文件缺失，停止；不会换签名覆盖既有应用。\n' >&2; exit 1; fi
 apk="$output_dir/果粒橙学习乐园-安卓平板-离线版-v2.3.2.apk"
+if [[ "$mode" == --online ]]; then apk="$output_dir/果粒橙学习乐园-联网同步版-v3.0.0.apk"; fi
 "$jdk_dir/bin/java" -jar "$tools_dir/lib/apksigner.jar" sign --ks "$keystore_file" \
     --ks-key-alias guolicheng-release --ks-pass "file:$password_file" \
     --v1-signing-enabled true --v2-signing-enabled true --v3-signing-enabled true --v4-signing-enabled false \

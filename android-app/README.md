@@ -32,3 +32,9 @@ bash android-app/build-apk.sh
 - [Android 本地内容加载](https://developer.android.com/develop/ui/views/layout/webapps/load-local-content)
 - [WebView 资源拦截](https://developer.android.com/reference/android/webkit/WebViewClient#shouldInterceptRequest(android.webkit.WebView,%20android.webkit.WebResourceRequest))
 - [APK 签名](https://developer.android.com/tools/apksigner)
+
+## 联网同步版（2026-10-09）
+
+`bash android-app/build-apk.sh --online` 使用现有签名生成 v3.0.0（versionCode 8）。启动地址为 `https://leyman.cn/`，不打包或拦截网站资料，使用服务器缓存策略；仍保持严格 HTTPS、返回键、横屏和作品导出。网页更新不需要重打 APK；原离线版用户需要安装一次联网版。默认构建仍保留离线版行为。缺失原签名时联网构建停止，不创建替代签名。
+
+上海 Lighthouse 已开始复制当前发布资料。域名尚未备案，不能在备案完成前切换 DNS 开通大陆服务器站点。备案完成并核验 HTTPS 后，同一地址可换到新服务器，联网 App 无需再修改地址。
