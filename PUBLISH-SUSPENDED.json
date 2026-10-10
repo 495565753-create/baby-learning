@@ -1,0 +1,9 @@
+{
+  "active": true,
+  "requestedDate": "2026-10-10",
+  "reason": "用户要求网站先停用，备案期间不准登入使用。",
+  "requireExplicitUserResume": true,
+  "noticeDeployment": "dppg5mchtk0t",
+  "previousUsableDeployment": "dpzh1ebiqz28",
+  "instructions": "不得自动恢复，即使备案获批也须先通知用户并等待明确恢复指令。仅允许发布停用提示，不开放上海服务器或切换 DNS。"
+}
