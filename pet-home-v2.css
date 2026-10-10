@@ -17,9 +17,6 @@
 .cozy-pet-page .scene-dining{background-image:url('/art/pet-home-v2/dining.webp')}
 .cozy-pet-page .scene-bath{background-image:url('/art/pet-home-v2/bath.webp')}
 .cozy-pet-page .scene-sport{background-image:url('/art/pet-home-v2/sport.webp')}
-.cozy-pet-page .scene-backdrop,.cozy-pet-page .pet-floor,.cozy-pet-page .pet-room-window,
-.cozy-pet-page .room-wall-picture,.cozy-pet-page .room-rug,.cozy-pet-page .room-bed,
-.cozy-pet-page .room-plant{display:none}
 .cozy-pet-page .room-caption{top:14%;left:7%;max-width:28%;padding:9px 13px;border:1px solid #fff;background:#fffaf2e8;color:#84645a;border-radius:17px;box-shadow:0 4px 12px #95725827;font-size:13px;line-height:1.35}
 .cozy-pet-page .room-bowl{left:10%;bottom:10%;font-size:34px;filter:drop-shadow(0 3px 3px #82685a66)}
 .cozy-pet-page .room-ball{right:10%;bottom:12%;font-size:33px;filter:drop-shadow(0 3px 3px #82685a66)}
