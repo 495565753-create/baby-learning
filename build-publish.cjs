@@ -1,6 +1,10 @@
 // Build a runtime-only deployment folder, including online entries absent from the offline manifest.
 const fs=require('node:fs'),path=require('node:path');
 const root=__dirname,destination=process.argv[2];
+const suspensionFile=path.join(root,'PUBLISH-SUSPENDED.json');
+if(fs.existsSync(suspensionFile)&&JSON.parse(fs.readFileSync(suspensionFile,'utf8')).active){
+  throw new Error('网站已按用户要求停用：备案期间禁止发布可用程序。只有用户明确要求恢复后才能解除 PUBLISH-SUSPENDED.json。');
+}
 if(!destination)throw new Error('Usage: node build-publish.cjs /absolute/output-directory');
 const out=path.resolve(destination);
 if(out===root||out.startsWith(root+path.sep))throw new Error('Use an output directory outside the source tree');

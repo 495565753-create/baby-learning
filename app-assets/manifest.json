@@ -1,10 +1,10 @@
 {
   "format": 1,
   "js": {
-    "file": "app-assets/app-d53b08c20729838d.js",
-    "sha256": "d53b08c20729838d574ef85ecf2ee5e788fd02604d5321cab08eb81d8e1b070e",
-    "bytes": 654929,
-    "gzip_bytes": 213404,
+    "file": "app-assets/app-1e34c66fd485bb1d.js",
+    "sha256": "1e34c66fd485bb1d81164c0c7a717be9de8a57149e1934d85cf988184ab14a2e",
+    "bytes": 656503,
+    "gzip_bytes": 214065,
     "inputs": [
       {
         "file": "voice-loader.js",
@@ -38,8 +38,8 @@
       },
       {
         "file": "books-expansion.js",
-        "bytes": 27316,
-        "sha256": "8fd5dd67e0c2ec711ae21215d966ee2992550ee192a187b54e0a36e4d4e304a5"
+        "bytes": 28611,
+        "sha256": "b4ed8635e07fa21b27c8f537385e62efd1350c58b53cb6c98fd2b90d0cf39cf3"
       },
       {
         "file": "courses.js",
@@ -118,21 +118,21 @@
       },
       {
         "file": "kid.js",
-        "bytes": 96311,
-        "sha256": "518507330e9cd55d566351b54dbd3baa202c661812a72894cd417fb5a2313f47"
+        "bytes": 96920,
+        "sha256": "0d1ef182985795da55546942a79ea5518869d73af523f6e70fae10f3f9c7dad9"
       }
     ]
   },
   "css": {
-    "file": "app-assets/app-770ed39fce4dd2da.css",
-    "sha256": "770ed39fce4dd2da04b45d075f8cb15286d270a07a7d590037fc67ce434c9091",
-    "bytes": 256706,
-    "gzip_bytes": 52348,
+    "file": "app-assets/app-ccfc513b6f90e5e7.css",
+    "sha256": "ccfc513b6f90e5e7d1721ba8acf50893b07506b8b3220203cdb044e1ae2e231a",
+    "bytes": 257157,
+    "gzip_bytes": 52447,
     "inputs": [
       {
         "file": "kid.css",
-        "bytes": 65795,
-        "sha256": "e861bcb67a79c28a6e089be2c21709870194953587cba386cbbe1b6a8fc116b0"
+        "bytes": 66329,
+        "sha256": "eea4c8a60d49621ef4cd7bd0446ddd5cd10c530aa0288f64f34ffc2e260ee974"
       },
       {
         "file": "recognition.css",
